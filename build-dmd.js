@@ -1,50 +1,67 @@
 // 將 dmd-gene-therapy-articles 的 5 篇 .md 轉成站內風格 HTML 頁面
+// 自帶極簡 markdown 轉換器（涵蓋本系列用到的語法），無外部相依
 const fs = require('fs');
 const path = require('path');
 
 const SRC = 'D:/claudecode/dmd-gene-therapy-articles';
 const OUT = __dirname;
-const SERIES = 'AAN 2025 Elevidys Evidence in Focus 導讀';
+const SERIES_TAG = 'AAN 2025 Elevidys Evidence in Focus 導讀';
 
 const articles = [
-  { md: '01-what-is-delandistrogene.md',                 out: 'dmd01.html', nav: '① 藥物本身' },
-  { md: '02-efficacy-evidence.md',                       out: 'dmd02.html', nav: '② 療效證據' },
-  { md: '03-corticosteroid-confounder-biomarkers.md',    out: 'dmd03.html', nav: '③ 類固醇與生標' },
-  { md: '04-safety-monitoring.md',                       out: 'dmd04.html', nav: '④ 安全監測' },
-  { md: '05-regulatory-cost-future.md',                  out: 'dmd05.html', nav: '⑤ 法規與成本' },
+  { md: '01-what-is-delandistrogene.md', out: 'dmd01.html', nav: '① 藥物本身' },
+  { md: '02-efficacy-evidence.md', out: 'dmd02.html', nav: '② 療效證據' },
+  { md: '03-corticosteroid-confounder-biomarkers.md', out: 'dmd03.html', nav: '③ 類固醇與生標' },
+  { md: '04-safety-monitoring.md', out: 'dmd04.html', nav: '④ 安全監測' },
+  { md: '05-regulatory-cost-future.md', out: 'dmd05.html', nav: '⑤ 法規與成本' },
 ];
 
 function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
 function inline(s){
-  // code span -> 私用區字元標記，避免與內文數字衝突
+  // code -> placeholder
   const codes = [];
-  s = s.replace(/`([^`]+)`/g, (m,c)=>{ codes.push(c); return `${codes.length-1}`; });
+  s = s.replace(/`([^`]+)`/g, (m,c)=>{ codes.push(c); return `\x00${codes.length-1}\x00`; });
   s = esc(s);
   s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
   s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
   s = s.replace(/\*([^*]+)\*/g, '<em>$1</em>');
+  s = s.replace(/\x00(\d+)\x00/g, (m,i)=>`<code>${esc(codes[+i])}</code>`);
   return s;
 }
 
 function renderBlocks(lines){
-  let html = ''; let i = 0;
+  let html = '';
+  let i = 0;
   while (i < lines.length){
     let line = lines[i];
+
     if (/^\s*$/.test(line)){ i++; continue; }
+
+    // hr
     if (/^---\s*$/.test(line)){ html += '<hr>\n'; i++; continue; }
+
+    // headings
     let m;
     if ((m = line.match(/^(#{1,3})\s+(.*)$/))){
       const lvl = m[1].length;
-      html += `<h${lvl}>${inline(m[2].trim())}</h${lvl}>\n`; i++; continue;
+      html += `<h${lvl}>${inline(m[2].trim())}</h${lvl}>\n`;
+      i++; continue;
     }
+
+    // blockquote
     if (/^>/.test(line)){
       const buf = [];
-      while (i < lines.length && /^>/.test(lines[i])){ buf.push(lines[i].replace(/^>\s?/, '')); i++; }
+      while (i < lines.length && /^>/.test(lines[i])){
+        buf.push(lines[i].replace(/^>\s?/, ''));
+        i++;
+      }
       const raw = buf.join('\n');
       const cls = raw.includes('🩺') ? ' class="commentary"' : '';
-      html += `<blockquote${cls}>\n${renderBlocks(buf)}</blockquote>\n`; continue;
+      html += `<blockquote${cls}>\n${renderBlocks(buf)}</blockquote>\n`;
+      continue;
     }
+
+    // table
     if (line.includes('|') && i+1 < lines.length && /^\s*\|?[\s:|-]+\|?\s*$/.test(lines[i+1]) && lines[i+1].includes('-')){
       const rows = [];
       while (i < lines.length && lines[i].includes('|')){ rows.push(lines[i]); i++; }
@@ -56,16 +73,26 @@ function renderBlocks(lines){
       t += '</tbody></table>\n';
       html += t; continue;
     }
+
+    // ordered list
     if (/^\d+\.\s+/.test(line)){
       let l = '<ol>\n';
-      while (i < lines.length && /^\d+\.\s+/.test(lines[i])){ l += `<li>${inline(lines[i].replace(/^\d+\.\s+/,''))}</li>\n`; i++; }
+      while (i < lines.length && /^\d+\.\s+/.test(lines[i])){
+        l += `<li>${inline(lines[i].replace(/^\d+\.\s+/,''))}</li>\n`; i++;
+      }
       l += '</ol>\n'; html += l; continue;
     }
+
+    // unordered list
     if (/^[-*]\s+/.test(line)){
       let l = '<ul>\n';
-      while (i < lines.length && /^[-*]\s+/.test(lines[i])){ l += `<li>${inline(lines[i].replace(/^[-*]\s+/,''))}</li>\n`; i++; }
+      while (i < lines.length && /^[-*]\s+/.test(lines[i])){
+        l += `<li>${inline(lines[i].replace(/^[-*]\s+/,''))}</li>\n`; i++;
+      }
       l += '</ul>\n'; html += l; continue;
     }
+
+    // paragraph
     const p = [];
     while (i < lines.length && !/^\s*$/.test(lines[i]) && !/^(#{1,3}\s|>|---\s*$|\d+\.\s|[-*]\s)/.test(lines[i])
            && !(lines[i].includes('|') && i+1 < lines.length && /^\s*\|?[\s:|-]+\|?\s*$/.test(lines[i+1]))){
@@ -78,12 +105,14 @@ function renderBlocks(lines){
 
 function parse(src){
   let title = '';
+  // strip frontmatter
   const fm = src.match(/^---\n([\s\S]*?)\n---\n/);
   if (fm){
     const t = fm[1].match(/title:\s*"?(.*?)"?\s*$/m);
     if (t) title = t[1];
     src = src.slice(fm[0].length);
   }
+  // 移除內文第一個 H1（頁首已有大標題）
   const lines = src.split(/\r?\n/);
   const h1 = lines.findIndex(l => /^#\s+/.test(l));
   if (h1 !== -1) lines.splice(h1, 1);
@@ -141,7 +170,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <header>
   <div class="header-inner">
     <div class="site-name">BrainTaiwan · MD</div>
-    <div class="series-tag">${esc(SERIES)}</div>
+    <div class="series-tag">${esc(SERIES_TAG)}</div>
     <div class="site-title">${esc(title)}</div>
     <nav class="header-nav">
       <a href="/" class="nav-link">← 臨床工具</a>
@@ -160,14 +189,17 @@ ${contentHtml}
 </html>`;
 }
 
+// 解析全部，取得標題
 const parsed = articles.map(a => {
   const src = fs.readFileSync(path.join(SRC, a.md), 'utf8');
   return { ...a, ...parse(src) };
 });
 
+// 寫出每頁
 parsed.forEach((a, idx) => {
   const html = page(a.title, a.body, parsed, idx);
   fs.writeFileSync(path.join(OUT, a.out), html, 'utf8');
   console.log('寫出', a.out, '—', a.title);
 });
+
 console.log('完成');
