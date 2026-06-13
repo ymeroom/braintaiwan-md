@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>急性缺血性中風治療決策矩陣</title>
+<style>
+@page { size: A4 portrait; margin: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  width: 210mm;
+  height: 297mm;
+  overflow: hidden;
+  font-family: 'Segoe UI', 'Microsoft JhengHei', 'PingFang TC', Arial, sans-serif;
+  background: white;
+  color: #1c1c2e;
+  display: flex;
+  flex-direction: column;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* ── HEADER ── */
+header {
+  background: linear-gradient(135deg, #0f2142 0%, #1a3975 55%, #1565c0 100%);
+  padding: 4mm 8mm 3.5mm;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  min-height: 18mm;
+}
+.h-title { font-size: 15pt; font-weight: 700; letter-spacing: 0.3px; line-height: 1.25; }
+.h-subtitle { font-size: 8pt; font-weight: 300; opacity: 0.82; margin-top: 2px; letter-spacing: 0.2px; }
+.h-badge {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 4px;
+  padding: 3px 9px;
+  font-size: 7pt;
+  text-align: right;
+  line-height: 1.7;
+}
+.h-badge strong { font-size: 7.5pt; }
+
+/* ── TIME BAR ── */
+.time-bar {
+  display: flex;
+  min-height: 13mm;
+  flex-shrink: 0;
+}
+.tz {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+.tz + .tz::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 18%; bottom: 18%;
+  width: 1px;
+  background: rgba(255,255,255,0.28);
+}
+.tz-green  { background: linear-gradient(135deg, #1b5e20, #2e7d32); }
+.tz-orange { background: linear-gradient(135deg, #bf360c, #e64a19); }
+.tz-purple { background: linear-gradient(135deg, #4a148c, #7b1fa2); }
+.tz-name { font-size: 10.5pt; font-weight: 700; }
+.tz-desc { font-size: 6.5pt; opacity: 0.88; margin-top: 1px; }
+
+/* ── CONTENT ── */
+.content {
+  flex: 1;
+  padding: 3.5mm 6mm 2mm;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5mm;
+  overflow: hidden;
+}
+
+.section-label {
+  font-size: 7pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #0f2142;
+  border-left: 3px solid #1565c0;
+  padding-left: 5px;
+}
+
+/* ── TABLE ── */
+table { width: 100%; border-collapse: collapse; font-size: 7pt; }
+
+table thead th {
+  color: white;
+  padding: 3.5px 5px;
+  font-size: 7pt;
+  font-weight: 600;
+  text-align: center;
+}
+thead th:nth-child(1) { background: #162952; text-align: left; width: 24%; }
+thead th:nth-child(2) { background: #1b5220; width: 26%; }
+thead th:nth-child(3) { background: #8b3000; width: 26%; }
+thead th:nth-child(4) { background: #3c116e; width: 24%; }
+
+tbody tr:nth-child(even) { background: #f7f9ff; }
+tbody td {
+  padding: 3.5px 5px;
+  border-bottom: 1px solid #dde4f5;
+  vertical-align: top;
+}
+tbody td:first-child { font-weight: 600; color: #0f2142; }
+.td-sub { font-size: 6pt; color: #607d8b; font-weight: 400; margin-top: 1px; line-height: 1.3; }
+
+/* ── BADGES ── */
+.b {
+  display: inline-block;
+  padding: 1.5px 5px;
+  border-radius: 3px;
+  font-size: 6pt;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 1px 0;
+}
+.b-ivt  { background: #dce8ff; color: #0a3b96; border: 1px solid #90b4ff; }
+.b-evt  { background: #fce4ec; color: #880e4f; border: 1px solid #f48fb1; }
+.b-both { background: #e1f6e4; color: #1b5820; border: 1px solid #81c784; }
+.b-apt  { background: #fff3cd; color: #7d4e00; border: 1px solid #ffc107; }
+.b-sup  { background: #ede7f6; color: #4a148c; border: 1px solid #b39ddb; }
+.b-no   { background: #ffebee; color: #b71c1c; border: 1px solid #ef9a9a; }
+
+.cor {
+  display: inline-block;
+  padding: 1px 3.5px;
+  border-radius: 2px;
+  font-size: 5.5pt;
+  font-weight: 700;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+.c1  { background: #1565c0; color: #fff; }
+.c2a { background: #2e7d32; color: #fff; }
+.c2b { background: #e65100; color: #fff; }
+.c3  { background: #b71c1c; color: #fff; }
+
+.note     { font-size: 5.5pt; color: #6d7b8d; margin-top: 1.5px; line-height: 1.35; }
+.red-note { font-size: 5.5pt; color: #b71c1c; margin-top: 1.5px; }
+
+/* ── BOTTOM GRID ── */
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3mm;
+}
+
+.card {
+  background: #f7f9ff;
+  border: 1px solid #c5cae9;
+  border-radius: 5px;
+  padding: 3mm;
+}
+.card-title {
+  font-size: 7.5pt;
+  font-weight: 700;
+  color: #0f2142;
+  margin-bottom: 2mm;
+  padding-bottom: 1.5mm;
+  border-bottom: 1.5px solid #c5cae9;
+}
+
+.drug-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 2mm; }
+.drug-box {
+  background: white;
+  border-radius: 3px;
+  padding: 2mm;
+  border-left: 3px solid #1565c0;
+  font-size: 6.5pt;
+}
+.drug-box.alt { border-left-color: #78909c; }
+.drug-name { font-size: 8pt; font-weight: 700; color: #0f2142; line-height: 1.3; }
+.drug-name.alt { color: #455a64; }
+.new-tag {
+  display: inline-block;
+  background: #1565c0;
+  color: white;
+  font-size: 5.5pt;
+  padding: 1px 3px;
+  border-radius: 2px;
+  font-weight: 700;
+  margin-left: 3px;
+  vertical-align: middle;
+}
+.drug-info { color: #546e7a; margin-top: 2px; line-height: 1.5; }
+.contra {
+  margin-top: 2mm;
+  font-size: 5.5pt;
+  background: #fff3e0;
+  border-left: 3px solid #e65100;
+  padding: 2px 5px;
+  border-radius: 0 3px 3px 0;
+  color: #bf360c;
+  line-height: 1.4;
+}
+
+.flow-item {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 2mm;
+  font-size: 6.5pt;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+.dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: #1565c0;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.dot.o { background: #e65100; }
+.dot.p { background: #7b1fa2; }
+
+/* ── LEGEND ── */
+.legend {
+  flex-shrink: 0;
+  background: #eef2ff;
+  border-top: 1.5px solid #c5cae9;
+  padding: 1.8mm 6mm;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3mm;
+  font-size: 6pt;
+  min-height: 8.5mm;
+}
+.leg-item { display: flex; align-items: center; gap: 2.5px; color: #37474f; }
+.leg-sep { color: #c5cae9; }
+
+/* ── FOOTER ── */
+footer {
+  flex-shrink: 0;
+  background: #0f2142;
+  color: rgba(255,255,255,0.62);
+  font-size: 5.5pt;
+  padding: 2mm 8mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 7mm;
+}
+footer em { font-style: italic; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div>
+    <div class="h-title">急性缺血性中風 治療決策矩陣</div>
+    <div class="h-subtitle">Acute Ischemic Stroke — Time-Based Treatment Algorithm</div>
+  </div>
+  <div class="h-badge">
+    <strong>2026 AHA/ASA Guidelines</strong><br>
+    Prabhakaran et al. · <em>Stroke</em> 2026
+  </div>
+</header>
+
+<!-- TIME BAR -->
+<div class="time-bar">
+  <div class="tz tz-green">
+    <div class="tz-name">0 – 4.5 小時</div>
+    <div class="tz-desc">黃金治療窗 · IVT ± EVT</div>
+  </div>
+  <div class="tz tz-orange">
+    <div class="tz-name">4.5 – 24 小時</div>
+    <div class="tz-desc">延長窗 · EVT；rTPA 至 9h（CTP mismatch）</div>
+  </div>
+  <div class="tz tz-purple">
+    <div class="tz-name">醒後 / 不明發病</div>
+    <div class="tz-desc">DWI(+) FLAIR(−) → IVT 可給</div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="content">
+
+  <div class="section-label">決策矩陣 · Decision Matrix</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>病人特徵 / Patient Profile</th>
+        <th>0 – 4.5 小時</th>
+        <th>4.5 – 24 小時</th>
+        <th>醒後 / 不明</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td>
+          輕微症狀，非致殘
+          <div class="td-sub">NIHSS 0–5，無致殘症狀，無 LVO</div>
+        </td>
+        <td>
+          <span class="b b-apt">DAPT 21 天</span><span class="cor c2b">2b</span>
+          <div class="note">IVT 效益不確定，可個案討論</div>
+        </td>
+        <td>
+          <span class="b b-apt">DAPT 21 天</span>
+        </td>
+        <td>
+          <span class="b b-apt">DAPT 21 天</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          中度症狀，無 LVO
+          <div class="td-sub">NIHSS ≥5 或有致殘症狀，CTA 無大血管閉塞</div>
+        </td>
+        <td>
+          <span class="b b-ivt">IVT（TNK / tPA）</span><span class="cor c1">1A</span>
+        </td>
+        <td>
+          <div style="font-size:5.5pt;font-weight:700;color:#546e7a;margin-bottom:1.5px;">4.5–9h + CTP mismatch</div>
+          <span class="b b-ivt">rTPA（alteplase）</span><span class="cor c2b">2b</span>
+          <div class="note">EXTEND trial；ratio ≥1.2，core ≤70 mL</div>
+          <div style="font-size:5.5pt;font-weight:700;color:#546e7a;margin-top:2.5px;margin-bottom:1.5px;">&gt; 9h 或無 mismatch</div>
+          <span class="b b-sup">支持性治療</span>
+        </td>
+        <td>
+          <span class="b b-ivt">IVT 可給</span><span class="cor c2a">2a</span>
+          <div class="note">DWI(+) FLAIR(−) 確認</div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          LVO，小／中梗塞
+          <div class="td-sub">ASPECTS ≥ 6，penumbra 完整</div>
+        </td>
+        <td>
+          <span class="b b-both">IVT + EVT</span><span class="cor c1">1A</span>
+          <div class="note">橋接或直接取栓（依中心能力）</div>
+        </td>
+        <td>
+          <span class="b b-evt">EVT</span><span class="cor c1">1A</span>
+          <div class="note">DAWN / DEFUSE-3 影像篩選</div>
+        </td>
+        <td>
+          <span class="b b-both">IVT + EVT</span>
+          <div class="note">DWI-FLAIR mismatch 確認</div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          LVO，大梗塞（有 penumbra）
+          <div class="td-sub">ASPECTS 3–5，core &lt;70 mL，ratio &gt;1.8</div>
+        </td>
+        <td>
+          <span class="b b-both">IVT + EVT</span><span class="cor c2a">2a</span>
+          <div class="note">TESLA trial，需 CTP / MRI 確認</div>
+        </td>
+        <td>
+          <span class="b b-evt">EVT</span><span class="cor c2a">2a</span>
+          <div class="note">SELECT2 / TESLA，影像篩選必要</div>
+        </td>
+        <td>
+          <span class="b b-evt">EVT（個案評估）</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          LVO，巨大梗塞
+          <div class="td-sub">ASPECTS 0–2，core &gt;100 mL</div>
+        </td>
+        <td>
+          <span class="b b-ivt">IVT（可給）</span>
+          <span class="b b-no">EVT 不建議</span><span class="cor c3">3</span>
+        </td>
+        <td>
+          <span class="b b-sup">支持性治療</span>
+        </td>
+        <td>
+          <span class="b b-sup">支持性治療</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          基底動脈 LVO（後循環）
+          <div class="td-sub">Basilar artery occlusion，症狀多樣</div>
+        </td>
+        <td>
+          <span class="b b-both">IVT + EVT</span><span class="cor c1">1A</span>
+        </td>
+        <td>
+          <span class="b b-evt">EVT 至 24h</span><span class="cor c1">1A</span>
+          <div class="note">BASICS trial，臨床-影像不匹配</div>
+        </td>
+        <td>
+          <span class="b b-evt">EVT 可考慮</span>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <!-- Imaging Criteria -->
+  <div style="background:#f7f9ff;border:1px solid #c5cae9;border-radius:5px;padding:3mm;">
+    <div style="font-size:7.5pt;font-weight:700;color:#0f2142;margin-bottom:2mm;padding-bottom:1.5mm;border-bottom:1.5px solid #c5cae9;">
+      影像篩選標準 · Imaging Selection Criteria
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1px 1fr;gap:0 3mm;">
+
+      <!-- Large Core EVT -->
+      <div style="font-size:6.5pt;">
+        <div style="font-weight:700;color:#880e4f;margin-bottom:1.5mm;font-size:7pt;">
+          大梗塞 EVT 篩選（ASPECTS 3–5）
+          <span style="font-size:5.5pt;color:#555;font-weight:400;"> — TESLA / SELECT2 trials</span>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5mm;">
+          <div style="background:white;border-left:3px solid #880e4f;padding:2px 5px;border-radius:0 3px 3px 0;">
+            <div style="font-weight:700;color:#880e4f;font-size:6pt;">NCCT / DWI</div>
+            <div style="color:#37474f;line-height:1.55;">
+              ASPECTS <strong>3–5</strong><br>
+              大範圍梗塞但 <strong>有殘留 penumbra</strong>
+            </div>
+          </div>
+          <div style="background:white;border-left:3px solid #e65100;padding:2px 5px;border-radius:0 3px 3px 0;">
+            <div style="font-weight:700;color:#e65100;font-size:6pt;">CTP 量化標準</div>
+            <div style="color:#37474f;line-height:1.55;">
+              Core（rCBF &lt;30%）<strong>&lt;70 mL</strong><br>
+              Penumbra ratio <strong>≥ 1.8</strong><br>
+              Mismatch volume <strong>≥ 15 mL</strong>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:1.5mm;font-size:5.5pt;color:#546e7a;">
+          ✓ NIHSS ≥ 6 且 premorbid mRS ≤ 2 &nbsp;|&nbsp;
+          ✗ ASPECTS 0–2 或 core &gt;100 mL 不建議 EVT（COR 3）
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div style="background:#c5cae9;"></div>
+
+      <!-- Wake-up Stroke -->
+      <div style="font-size:6.5pt;">
+        <div style="font-weight:700;color:#4a148c;margin-bottom:1.5mm;font-size:7pt;">
+          Wake-up / 不明發病 IVT 篩選
+          <span style="font-size:5.5pt;color:#555;font-weight:400;"> — WAKE-UP trial (Thomalla 2018)</span>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5mm;">
+          <div style="background:white;border-left:3px solid #2e7d32;padding:2px 5px;border-radius:0 3px 3px 0;">
+            <div style="font-weight:700;color:#2e7d32;font-size:6pt;">✓ IVT 可給（mismatch）</div>
+            <div style="color:#37474f;line-height:1.55;">
+              DWI <strong>陽性</strong>（急性限水擴散）<br>
+              FLAIR <strong>陰性</strong>（無 T2 訊號）<br>
+              <span style="color:#1b5820;">→ 等同 &lt;4.5h 發病</span>
+            </div>
+          </div>
+          <div style="background:white;border-left:3px solid #b71c1c;padding:2px 5px;border-radius:0 3px 3px 0;">
+            <div style="font-weight:700;color:#b71c1c;font-size:6pt;">✗ IVT 不建議（no mismatch）</div>
+            <div style="color:#37474f;line-height:1.55;">
+              DWI <strong>陽性</strong> + FLAIR <strong>陽性</strong><br>
+              → 發病可能 &gt;4.5h<br>
+              <span style="color:#b71c1c;">不應給予 IVT</span>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:1.5mm;font-size:5.5pt;color:#546e7a;">
+          替代方案：CTP perfusion mismatch（Tmax &gt;6s / core ≥ 1.2）亦可作為篩選依據
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Mismatch Definition -->
+    <div style="margin-top:2mm;padding-top:2mm;border-top:1px dashed #c5cae9;">
+      <div style="font-size:7pt;font-weight:700;color:#0f2142;margin-bottom:1.5mm;">
+        Penumbra / Core Mismatch 定義
+      </div>
+      <div style="display:grid;grid-template-columns:30mm 1fr;gap:3mm;align-items:start;">
+
+        <!-- Visual bar diagram -->
+        <div>
+          <div style="display:flex;height:13mm;border-radius:3px;overflow:hidden;border:1px solid #ccc;">
+            <div style="flex:2;background:#ef9a9a;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+              <div style="font-size:5.5pt;font-weight:700;color:#7f0000;line-height:1.3;text-align:center;">CORE<br>已死亡</div>
+            </div>
+            <div style="flex:3;background:#ffe082;display:flex;flex-direction:column;align-items:center;justify-content:center;border-left:1px dashed #e65100;">
+              <div style="font-size:5.5pt;font-weight:700;color:#bf360c;line-height:1.3;text-align:center;">PENUMBRA<br>可搶救</div>
+            </div>
+            <div style="flex:2;background:#c8e6c9;display:flex;flex-direction:column;align-items:center;justify-content:center;border-left:1px solid #aaa;">
+              <div style="font-size:5.5pt;font-weight:700;color:#1b5e20;line-height:1.3;text-align:center;">正常</div>
+            </div>
+          </div>
+          <div style="display:flex;font-size:5pt;color:#546e7a;margin-top:1.5px;">
+            <div style="flex:2;text-align:center;">rCBF&lt;30%</div>
+            <div style="flex:3;text-align:center;">Tmax&gt;6s</div>
+            <div style="flex:2;"></div>
+          </div>
+          <div style="margin-top:2mm;display:grid;grid-template-columns:1fr 1fr;gap:1.5mm;">
+            <div style="background:#fff3e0;padding:2px 4px;border-radius:3px;text-align:center;font-size:5.5pt;">
+              <div style="color:#888;">Ratio</div>
+              <div style="font-weight:700;color:#e65100;">P ÷ C ≥ 1.8</div>
+            </div>
+            <div style="background:#e8eaf6;padding:2px 4px;border-radius:3px;text-align:center;font-size:5.5pt;">
+              <div style="color:#888;">Volume</div>
+              <div style="font-weight:700;color:#3949ab;">P − C ≥ 15 mL</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trial thresholds table -->
+        <div>
+          <table style="width:100%;font-size:5.5pt;border-collapse:collapse;">
+            <thead>
+              <tr>
+                <th style="background:#0f2142;color:white;padding:2px 4px;text-align:left;border-radius:3px 0 0 0;">試驗</th>
+                <th style="background:#0f2142;color:white;padding:2px 4px;text-align:center;">適用情境</th>
+                <th style="background:#0f2142;color:white;padding:2px 4px;text-align:center;">Core 上限</th>
+                <th style="background:#0f2142;color:white;padding:2px 4px;text-align:center;">Ratio</th>
+                <th style="background:#0f2142;color:white;padding:2px 4px;text-align:center;border-radius:0 3px 0 0;">Vol</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="background:#dce8ff;">
+                <td style="padding:2px 4px;font-weight:700;color:#0a3b96;">EXTEND</td>
+                <td style="padding:2px 4px;text-align:center;color:#37474f;">IVT 4.5–9h（已知）</td>
+                <td style="padding:2px 4px;text-align:center;">≤ 70 mL</td>
+                <td style="padding:2px 4px;text-align:center;font-weight:700;color:#e65100;">≥ 1.2</td>
+                <td style="padding:2px 4px;text-align:center;">≥ 10 mL</td>
+              </tr>
+              <tr style="background:#fce4ec;">
+                <td style="padding:2px 4px;font-weight:700;color:#880e4f;">DEFUSE-3</td>
+                <td style="padding:2px 4px;text-align:center;color:#37474f;">EVT 6–16h</td>
+                <td style="padding:2px 4px;text-align:center;">&lt; 70 mL</td>
+                <td style="padding:2px 4px;text-align:center;font-weight:700;color:#e65100;">≥ 1.8</td>
+                <td style="padding:2px 4px;text-align:center;">≥ 15 mL</td>
+              </tr>
+              <tr style="background:#fce4ec;">
+                <td style="padding:2px 4px;font-weight:700;color:#880e4f;">TESLA</td>
+                <td style="padding:2px 4px;text-align:center;color:#37474f;">EVT large core（3–5）</td>
+                <td style="padding:2px 4px;text-align:center;">&lt; 70 mL</td>
+                <td style="padding:2px 4px;text-align:center;font-weight:700;color:#e65100;">≥ 1.8</td>
+                <td style="padding:2px 4px;text-align:center;">≥ 15 mL</td>
+              </tr>
+            </tbody>
+          </table>
+          <div style="margin-top:1.5mm;font-size:5.5pt;color:#546e7a;">
+            ⚙ 測量工具：CT Perfusion → RAPID / Viz.ai 自動輸出 core mL、penumbra mL、ratio
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Cards -->
+  <div class="bottom-grid">
+
+    <div class="card">
+      <div class="card-title">靜脈血栓溶解劑選擇 (IVT)</div>
+      <div class="drug-pair">
+        <div class="drug-box">
+          <div class="drug-name">Tenecteplase (TNK)<span class="new-tag">2026</span></div>
+          <div class="drug-info">
+            0.25 mg/kg IV bolus（最高 25 mg）<br>
+            ✓ 單次靜推，操作簡便<br>
+            ✓ LVO 接 EVT 時<strong>優先選用</strong><br>
+            <span class="cor c1" style="font-size:6pt">COR 1 · LOE A</span>
+          </div>
+        </div>
+        <div class="drug-box alt">
+          <div class="drug-name alt">Alteplase (tPA)</div>
+          <div class="drug-info">
+            0.9 mg/kg（最高 90 mg）<br>
+            10% bolus + 90% 持續輸注 60 min<br>
+            ✓ 效果等同 TNK，仍可用<br>
+            <span class="cor c1" style="font-size:6pt">COR 1 · LOE A</span>
+          </div>
+        </div>
+      </div>
+      <div class="contra">
+        ⚠ 主要禁忌：近期手術／顱內出血史／凝血異常／SBP &gt;185 mmHg（未控制）
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">到院路徑與轉院決策</div>
+      <div class="flow-item">
+        <div class="dot"></div>
+        <div>已在 <strong>EVT 中心</strong> → CTA 確認 LVO → 直接取栓 ± TNK</div>
+      </div>
+      <div class="flow-item">
+        <div class="dot o"></div>
+        <div>
+          非 EVT 中心，懷疑 LVO：<br>
+          • 轉院 &lt;30 min → 直接轉（不等 IVT）<br>
+          • 轉院 &gt;30 min → 先給 IVT，再轉（drip-and-ship）
+        </div>
+      </div>
+      <div class="flow-item">
+        <div class="dot p"></div>
+        <div>
+          <strong>Mobile Stroke Unit（MSU）</strong>：院前給 IVT，到院直接進 angio suite
+          <br><span style="color:#7b1fa2;font-size:6pt">COR 2a — 改善 outcomes（2026 新增推薦）</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- LEGEND -->
+<div class="legend">
+  <span style="font-weight:700;color:#0f2142;font-size:6.5pt">推薦等級：</span>
+  <span class="leg-item"><span class="cor c1">COR 1</span> 強烈建議</span>
+  <span class="leg-item"><span class="cor c2a">COR 2a</span> 適度建議</span>
+  <span class="leg-item"><span class="cor c2b">COR 2b</span> 可考慮</span>
+  <span class="leg-item"><span class="cor c3">COR 3</span> 不建議</span>
+  <span class="leg-sep">｜</span>
+  <span style="font-weight:700;color:#0f2142;font-size:6.5pt">縮寫：</span>
+  <span class="leg-item">LVO = Large Vessel Occlusion</span>
+  <span class="leg-item">EVT = Endovascular Thrombectomy</span>
+  <span class="leg-item">IVT = IV Thrombolysis</span>
+  <span class="leg-item">ASPECTS = Alberta Stroke Program Early CT Score</span>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <span>Prabhakaran S et al. 2026 Guideline for the Early Management of Patients with Acute Ischemic Stroke. <em>Stroke</em>. 2026;57. DOI: 10.1161/STR.0000000000000513</span>
+  <span>僅供教學參考 · 臨床決策請依個案評估</span>
+</footer>
+
+</body>
+</html>
