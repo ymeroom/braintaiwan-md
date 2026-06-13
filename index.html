@@ -37,17 +37,40 @@ header {
   border-color: rgba(255,255,255,0.45);
 }
 
-main { max-width: 900px; margin: 0 auto; padding: 32px 24px; }
+main { max-width: 900px; margin: 0 auto; padding: 24px 24px 8px; }
 
-.section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
-.section-label { font-size: 11pt; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #546e7a; white-space: nowrap; }
-.section-line { flex: 1; height: 1px; background: #dde4f0; }
+/* 可摺疊主題分類 */
+.topic { border-bottom: 1px solid #dde4f0; }
+.topic:last-of-type { border-bottom: none; }
+.topic-head {
+  display: flex; align-items: center; gap: 12px;
+  padding: 18px 6px; cursor: pointer; list-style: none; user-select: none;
+}
+.topic-head::-webkit-details-marker { display: none; }
+.topic-head:hover .topic-label { color: #1565c0; }
+.chev {
+  color: #1565c0; font-size: 12pt; line-height: 1;
+  transition: transform 0.2s ease; flex-shrink: 0;
+}
+details[open] > .topic-head .chev { transform: rotate(90deg); }
+.topic-dot { width: 11px; height: 11px; border-radius: 3px; flex-shrink: 0; }
+.d-blue   { background: #1565c0; }
+.d-purple { background: #7b1fa2; }
+.d-amber  { background: #ef6c00; }
+.d-green  { background: #2e7d32; }
+.topic-label { font-size: 15pt; font-weight: 700; color: #0f2142; letter-spacing: 0.5px; }
+.topic-en { font-size: 9.5pt; font-weight: 400; color: #90a4ae; letter-spacing: 1px; }
+.topic-count {
+  font-size: 9.5pt; color: #90a4ae; font-weight: 600;
+  margin-left: auto; white-space: nowrap;
+}
+.topic-body { padding: 2px 0 22px; }
 
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
   gap: 18px;
-  margin-bottom: 36px;
+  margin-bottom: 18px;
 }
 
 .card {
@@ -65,6 +88,7 @@ main { max-width: 900px; margin: 0 auto; padding: 32px 24px; }
 .b-teal   { background: linear-gradient(90deg,#00838f,#26c6da); }
 .b-purple { background: linear-gradient(90deg,#4a148c,#ab47bc); }
 .b-red    { background: linear-gradient(90deg,#b71c1c,#ef5350); }
+.b-green  { background: linear-gradient(90deg,#2e7d32,#66bb6a); }
 
 .card-body { padding: 20px; flex: 1; display: flex; flex-direction: column; }
 .card-cat { font-size: 10pt; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #90a4ae; margin-bottom: 8px; }
@@ -117,230 +141,340 @@ footer a { color: rgba(255,255,255,0.55); text-decoration: none; }
 
 <main>
 
-  <div class="section-header">
-    <span class="section-label">急性缺血性中風 · Acute Ischemic Stroke</span>
-    <div class="section-line"></div>
-  </div>
+  <!-- 腦中風 -->
+  <details class="topic" open>
+    <summary class="topic-head">
+      <span class="chev">▸</span>
+      <span class="topic-dot d-blue"></span>
+      <span class="topic-label">腦中風 <span class="topic-en">Stroke</span></span>
+      <span class="topic-count">4 項資源</span>
+    </summary>
+    <div class="topic-body">
 
-  <div class="card-grid">
+      <div class="card-grid">
 
-    <a href="ais_infographic.html" class="card">
-      <div class="card-banner b-blue"></div>
-      <div class="card-body">
-        <div class="card-cat">決策矩陣</div>
-        <div class="card-title">治療決策矩陣</div>
-        <div class="card-desc">以時間窗為主軸，整合 LVO、ASPECTS、NIHSS 的完整治療流程，含 IVT 藥物選擇、影像篩選標準與轉院路徑。</div>
-        <div class="card-foot">
-          <div><span class="tag tag-blue">2026 AHA/ASA</span><span class="tag tag-green">A4 可列印</span></div>
-          <span class="arrow">→</span>
+        <a href="ais_infographic.html" class="card">
+          <div class="card-banner b-blue"></div>
+          <div class="card-body">
+            <div class="card-cat">決策矩陣</div>
+            <div class="card-title">治療決策矩陣</div>
+            <div class="card-desc">以時間窗為主軸，整合 LVO、ASPECTS、NIHSS 的完整治療流程，含 IVT 藥物選擇、影像篩選標準與轉院路徑。</div>
+            <div class="card-foot">
+              <div><span class="tag tag-blue">2026 AHA/ASA</span><span class="tag tag-green">A4 可列印</span></div>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="post_evt_infographic.html" class="card">
+          <div class="card-banner b-teal"></div>
+          <div class="card-body">
+            <div class="card-cat">術後處置</div>
+            <div class="card-title">Post-EVT 醫療處置</div>
+            <div class="card-desc">取栓術後血壓管理（含 2026 積極目標更新）、抗血栓時機 timeline、血糖體溫、影像追蹤與早期復健。</div>
+            <div class="card-foot">
+              <div><span class="tag tag-blue">2026 AHA/ASA</span><span class="tag tag-green">A4 可列印</span></div>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+
+        <div class="card soon">
+          <div class="card-banner b-purple"></div>
+          <div class="card-body">
+            <div class="card-cat">影像判讀</div>
+            <div class="card-title">ASPECTS 評分指南</div>
+            <div class="card-desc">NCCT 與 DWI ASPECTS 評分方法、各區域解剖對應、臨床決策門檻整合。</div>
+            <div class="card-foot">
+              <div><span class="tag tag-purple">Coming Soon</span></div>
+            </div>
+          </div>
         </div>
-      </div>
-    </a>
 
-    <a href="post_evt_infographic.html" class="card">
-      <div class="card-banner b-teal"></div>
-      <div class="card-body">
-        <div class="card-cat">術後處置</div>
-        <div class="card-title">Post-EVT 醫療處置</div>
-        <div class="card-desc">取栓術後血壓管理（含 2026 積極目標更新）、抗血栓時機 timeline、血糖體溫、影像追蹤與早期復健。</div>
-        <div class="card-foot">
-          <div><span class="tag tag-blue">2026 AHA/ASA</span><span class="tag tag-green">A4 可列印</span></div>
-          <span class="arrow">→</span>
+        <div class="card soon">
+          <div class="card-banner b-red"></div>
+          <div class="card-body">
+            <div class="card-cat">影像篩選</div>
+            <div class="card-title">CTP 判讀與 Mismatch</div>
+            <div class="card-desc">RAPID 報告解讀、penumbra/core mismatch 計算、DAWN / DEFUSE-3 / TESLA 篩選標準整合。</div>
+            <div class="card-foot">
+              <div><span class="tag tag-red">Coming Soon</span></div>
+            </div>
+          </div>
         </div>
-      </div>
-    </a>
 
-    <div class="card soon">
-      <div class="card-banner b-purple"></div>
-      <div class="card-body">
-        <div class="card-cat">影像判讀</div>
-        <div class="card-title">ASPECTS 評分指南</div>
-        <div class="card-desc">NCCT 與 DWI ASPECTS 評分方法、各區域解剖對應、臨床決策門檻整合。</div>
-        <div class="card-foot">
-          <div><span class="tag tag-purple">Coming Soon</span></div>
-        </div>
       </div>
+
+      <div class="guideline-note">
+        <strong>資料來源</strong>：Prabhakaran S et al. 2026 Guideline for the Early Management of Patients with Acute Ischemic Stroke. <em>Stroke</em>. 2026;57. DOI: 10.1161/STR.0000000000000513
+        <br><br>
+        本頁資源僅供醫療專業人員教學參考，臨床決策請依個案評估。建議或錯誤回報請至 <a href="https://braintaiwan.com">braintaiwan.com</a>。
+      </div>
+
     </div>
+  </details>
 
-    <div class="card soon">
-      <div class="card-banner b-red"></div>
-      <div class="card-body">
-        <div class="card-cat">影像篩選</div>
-        <div class="card-title">CTP 判讀與 Mismatch</div>
-        <div class="card-desc">RAPID 報告解讀、penumbra/core mismatch 計算、DAWN / DEFUSE-3 / TESLA 篩選標準整合。</div>
-        <div class="card-foot">
-          <div><span class="tag tag-red">Coming Soon</span></div>
-        </div>
+  <!-- 癲癇 -->
+  <details class="topic">
+    <summary class="topic-head">
+      <span class="chev">▸</span>
+      <span class="topic-dot d-purple"></span>
+      <span class="topic-label">癲癇 <span class="topic-en">Epilepsy</span></span>
+      <span class="topic-count">功能性癲癇發作 · 5 篇</span>
+    </summary>
+    <div class="topic-body">
+
+      <div class="card-grid">
+
+        <a href="fs01.html" class="card">
+          <div class="card-banner b-purple"></div>
+          <div class="card-body">
+            <div class="card-cat">系列導讀 ①</div>
+            <div class="card-title">重新認識功能性癲癇發作</div>
+            <div class="card-desc">定義、命名沿革、生物心理社會 3P 病因，以及為何診斷延誤平均長達 7–8 年——這個長期被誤解疾病的全貌。</div>
+            <div class="card-foot">
+              <div><span class="tag tag-purple">AAN 2025</span><span class="tag tag-blue">導論</span></div>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="fs02.html" class="card">
+          <div class="card-banner b-purple"></div>
+          <div class="card-body">
+            <div class="card-cat">系列導讀 ②</div>
+            <div class="card-title">診斷實務</div>
+            <div class="card-desc">從病史與症狀學、手機影片、急診發作期身體檢查，到 video-EEG 的分級診斷路徑（definite／clinically established／probable）。</div>
+            <div class="card-foot">
+              <div><span class="tag tag-purple">AAN 2025</span><span class="tag tag-blue">Rec 1</span></div>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="fs03.html" class="card">
+          <div class="card-banner b-purple"></div>
+          <div class="card-body">
+            <div class="card-cat">系列導讀 ③</div>
+            <div class="card-title">共病評估與一般管理</div>
+            <div class="card-desc">精神共病與癲癇共病的盛行率與鑑別、避免汙名化的醫病溝通、診斷標籤的給予，以及連續性照護。</div>
+            <div class="card-foot">
+              <div><span class="tag tag-purple">AAN 2025</span><span class="tag tag-blue">Rec 2–4</span></div>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="fs04.html" class="card">
+          <div class="card-banner b-purple"></div>
+          <div class="card-body">
+            <div class="card-cat">系列導讀 ④</div>
+            <div class="card-title">心理治療的實證</div>
+            <div class="card-desc">12 項研究系統性回顧：發作緩解 RR 1.87、CBT 次分析、各結果指標的效果量與確信度，以及家庭參與的角色。</div>
+            <div class="card-foot">
+              <div><span class="tag tag-purple">AAN 2025</span><span class="tag tag-blue">Rec 5</span></div>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="fs05.html" class="card">
+          <div class="card-banner b-purple"></div>
+          <div class="card-body">
+            <div class="card-cat">系列導讀 ⑤</div>
+            <div class="card-title">藥物治療的明確立場</div>
+            <div class="card-desc">為何不該對無共病者開抗癲癇藥與苯二氮平、停藥前該確認的「其他適應症」，以及安全減藥的實務考量。</div>
+            <div class="card-foot">
+              <div><span class="tag tag-purple">AAN 2025</span><span class="tag tag-blue">Rec 6</span></div>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+
       </div>
+
+      <div class="guideline-note">
+        <strong>資料來源</strong>：Tolchin B, Goldstein LH, Reuber M, et al. Management of Functional Seizures Practice Guideline Executive Summary. <em>Neurology</em>. 2026;106:e214466. DOI: 10.1212/WNL.0000000000214466
+        <br><br>
+        本系列為指引導讀整理，供醫療專業人員教學參考，臨床決策請依個案評估。
+      </div>
+
     </div>
+  </details>
 
-  </div>
+  <!-- 罕病 -->
+  <details class="topic">
+    <summary class="topic-head">
+      <span class="chev">▸</span>
+      <span class="topic-dot d-amber"></span>
+      <span class="topic-label">罕病 <span class="topic-en">Rare Disease</span></span>
+      <span class="topic-count">DMD 基因治療 · 5 篇</span>
+    </summary>
+    <div class="topic-body">
 
-  <div class="guideline-note">
-    <strong>資料來源</strong>：Prabhakaran S et al. 2026 Guideline for the Early Management of Patients with Acute Ischemic Stroke. <em>Stroke</em>. 2026;57. DOI: 10.1161/STR.0000000000000513
-    <br><br>
-    本頁資源僅供醫療專業人員教學參考，臨床決策請依個案評估。建議或錯誤回報請至 <a href="https://braintaiwan.com">braintaiwan.com</a>。
-  </div>
+      <div class="card-grid">
 
-  <div class="section-header" style="margin-top:40px;">
-    <span class="section-label">功能性癲癇發作 · Functional Seizures</span>
-    <div class="section-line"></div>
-  </div>
+        <a href="dmd01.html" class="card">
+          <div class="card-banner b-red"></div>
+          <div class="card-body">
+            <div class="card-cat">系列導讀 ①</div>
+            <div class="card-title">delandistrogene moxeparvovec 是什麼</div>
+            <div class="card-desc">microdystrophin 設計原理、rAAVrh74 載體、單次輸注劑量、FDA 兩階段批准歷程，以及 exon 8/9 缺失禁忌。</div>
+            <div class="card-foot">
+              <div><span class="tag tag-red">AAN 2025</span><span class="tag tag-blue">Evidence in Focus</span></div>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
 
-  <div class="card-grid">
+        <a href="dmd02.html" class="card">
+          <div class="card-banner b-red"></div>
+          <div class="card-body">
+            <div class="card-cat">系列導讀 ②</div>
+            <div class="card-title">療效證據：兩個 Class I 都沒達標</div>
+            <div class="card-desc">NSAA 主要終點解析、安慰劑對照 vs 外部對照的數據落差、統合差異 0.69 分、次族群陷阱與解盲風險。</div>
+            <div class="card-foot">
+              <div><span class="tag tag-red">AAN 2025</span><span class="tag tag-blue">EMBARK</span></div>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
 
-    <a href="fs01.html" class="card">
-      <div class="card-banner b-purple"></div>
-      <div class="card-body">
-        <div class="card-cat">系列導讀 ①</div>
-        <div class="card-title">重新認識功能性癲癇發作</div>
-        <div class="card-desc">定義、命名沿革、生物心理社會 3P 病因，以及為何診斷延誤平均長達 7–8 年——這個長期被誤解疾病的全貌。</div>
-        <div class="card-foot">
-          <div><span class="tag tag-purple">AAN 2025</span><span class="tag tag-blue">導論</span></div>
-          <span class="arrow">→</span>
-        </div>
+        <a href="dmd03.html" class="card">
+          <div class="card-banner b-red"></div>
+          <div class="card-body">
+            <div class="card-cat">系列導讀 ③</div>
+            <div class="card-title">類固醇干擾與替代終點之謎</div>
+            <div class="card-desc">基因治療強制併用高劑量類固醇的混淆效應、microdystrophin 作為加速批准基石的三大爭議、CPK 為何不可靠。</div>
+            <div class="card-foot">
+              <div><span class="tag tag-red">AAN 2025</span><span class="tag tag-blue">生物標記</span></div>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="dmd04.html" class="card">
+          <div class="card-banner b-red"></div>
+          <div class="card-body">
+            <div class="card-cat">系列導讀 ④</div>
+            <div class="card-title">安全性與監測基礎建設</div>
+            <div class="card-desc">急性肝損傷、心肌炎、免疫媒介性肌炎、血小板低下、1 例死亡；給藥前後必須到位的監測與團隊準備。</div>
+            <div class="card-foot">
+              <div><span class="tag tag-red">AAN 2025</span><span class="tag tag-blue">安全監測</span></div>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="dmd05.html" class="card">
+          <div class="card-banner b-red"></div>
+          <div class="card-body">
+            <div class="card-cat">系列導讀 ⑤</div>
+            <div class="card-title">法規爭議、天價與未來</div>
+            <div class="card-desc">FDA 內部審查被 CBER 主任兩度否決、單次 320 萬美元成本與 ICER 評論、適用族群遠大於試驗證據、未解的研究問題。</div>
+            <div class="card-foot">
+              <div><span class="tag tag-red">AAN 2025</span><span class="tag tag-blue">健康政策</span></div>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+
       </div>
-    </a>
 
-    <a href="fs02.html" class="card">
-      <div class="card-banner b-purple"></div>
-      <div class="card-body">
-        <div class="card-cat">系列導讀 ②</div>
-        <div class="card-title">診斷實務</div>
-        <div class="card-desc">從病史與症狀學、手機影片、急診發作期身體檢查，到 video-EEG 的分級診斷路徑（definite／clinically established／probable）。</div>
-        <div class="card-foot">
-          <div><span class="tag tag-purple">AAN 2025</span><span class="tag tag-blue">Rec 1</span></div>
-          <span class="arrow">→</span>
-        </div>
+      <div class="guideline-note">
+        <strong>資料來源</strong>：Oskoui M, Caller TA, Parsons JA, et al. Delandistrogene Moxeparvovec Gene Therapy in Individuals With Duchenne Muscular Dystrophy: Evidence in Focus. <em>Neurology</em>. 2025;104:e213604. DOI: 10.1212/WNL.0000000000213604
+        <br><br>
+        本系列為 Evidence in Focus 導讀整理，供醫療專業人員教學參考，臨床決策請依個案評估。
       </div>
-    </a>
 
-    <a href="fs03.html" class="card">
-      <div class="card-banner b-purple"></div>
-      <div class="card-body">
-        <div class="card-cat">系列導讀 ③</div>
-        <div class="card-title">共病評估與一般管理</div>
-        <div class="card-desc">精神共病與癲癇共病的盛行率與鑑別、避免汙名化的醫病溝通、診斷標籤的給予，以及連續性照護。</div>
-        <div class="card-foot">
-          <div><span class="tag tag-purple">AAN 2025</span><span class="tag tag-blue">Rec 2–4</span></div>
-          <span class="arrow">→</span>
-        </div>
+    </div>
+  </details>
+
+  <!-- 失智症 -->
+  <details class="topic">
+    <summary class="topic-head">
+      <span class="chev">▸</span>
+      <span class="topic-dot d-green"></span>
+      <span class="topic-label">失智症 <span class="topic-en">Dementia</span></span>
+      <span class="topic-count">衛教系列 · 5 篇</span>
+    </summary>
+    <div class="topic-body">
+
+      <div class="card-grid">
+
+        <a href="dem01.html" class="card">
+          <div class="card-banner b-green"></div>
+          <div class="card-body">
+            <div class="card-cat">衛教系列 ①</div>
+            <div class="card-title">破解最普遍的失智迷思</div>
+            <div class="card-desc">「能對答、能寫字就不是失智」？早期失智保留的社交門面與舊技能，以及為何「三個詞」測驗能露餡。</div>
+            <div class="card-foot">
+              <div><span class="tag tag-green">衛教</span><span class="tag tag-blue">破解迷思</span></div>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="dem02.html" class="card">
+          <div class="card-banner b-green"></div>
+          <div class="card-body">
+            <div class="card-cat">衛教系列 ②</div>
+            <div class="card-title">「簽名漂亮、寫信潦草」的書寫密碼</div>
+            <div class="card-desc">為何簽名與寫信的落差是重要警訊——失寫症、額葉-皮質下迴路，與血管性、額顳葉、阿茲海默的鑑別概念。</div>
+            <div class="card-foot">
+              <div><span class="tag tag-green">衛教</span><span class="tag tag-blue">神經機制</span></div>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="dem03.html" class="card">
+          <div class="card-banner b-green"></div>
+          <div class="card-body">
+            <div class="card-cat">衛教系列 ③</div>
+            <div class="card-title">為什麼失智者常「不覺得自己生病」</div>
+            <div class="card-desc">病識感缺乏（anosognosia）是生理性症狀而非嘴硬、家屬最常踩的盲點，以及面對否認長輩的因應之道。</div>
+            <div class="card-foot">
+              <div><span class="tag tag-green">衛教</span><span class="tag tag-blue">病識感</span></div>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="dem04.html" class="card">
+          <div class="card-banner b-green"></div>
+          <div class="card-body">
+            <div class="card-cat">衛教系列 ④</div>
+            <div class="card-title">早期警訊與及早就醫</div>
+            <div class="card-desc">十大警訊、正常老化 vs 該警覺的退化、該掛哪一科、MMSE／MoCA 與抽血影像的評估流程。</div>
+            <div class="card-foot">
+              <div><span class="tag tag-green">衛教</span><span class="tag tag-blue">早期警訊</span></div>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="dem05.html" class="card">
+          <div class="card-banner b-green"></div>
+          <div class="card-body">
+            <div class="card-cat">衛教系列 ⑤</div>
+            <div class="card-title">當失智遇上法律</div>
+            <div class="card-desc">遺囑能力、監護宣告 vs 輔助宣告，為何遺產官司常打成「立遺囑時清不清楚」之戰，以及如何及早準備。</div>
+            <div class="card-foot">
+              <div><span class="tag tag-green">衛教</span><span class="tag tag-blue">失智與法律</span></div>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+
       </div>
-    </a>
 
-    <a href="fs04.html" class="card">
-      <div class="card-banner b-purple"></div>
-      <div class="card-body">
-        <div class="card-cat">系列導讀 ④</div>
-        <div class="card-title">心理治療的實證</div>
-        <div class="card-desc">12 項研究系統性回顧：發作緩解 RR 1.87、CBT 次分析、各結果指標的效果量與確信度，以及家庭參與的角色。</div>
-        <div class="card-foot">
-          <div><span class="tag tag-purple">AAN 2025</span><span class="tag tag-blue">Rec 5</span></div>
-          <span class="arrow">→</span>
-        </div>
+      <div class="guideline-note">
+        <strong>資料來源</strong>：本系列為失智症衛教整理，供民眾健康教育參考，不針對任何特定個人之病情，亦不取代專業醫療診斷或個案法律意見。醫學內容參考台灣失智症協會「失智症十大警訊」與衛生福利部資料，法律內容參考中華民國民法相關條文；新聞事實引自公開報導。
       </div>
-    </a>
 
-    <a href="fs05.html" class="card">
-      <div class="card-banner b-purple"></div>
-      <div class="card-body">
-        <div class="card-cat">系列導讀 ⑤</div>
-        <div class="card-title">藥物治療的明確立場</div>
-        <div class="card-desc">為何不該對無共病者開抗癲癇藥與苯二氮平、停藥前該確認的「其他適應症」，以及安全減藥的實務考量。</div>
-        <div class="card-foot">
-          <div><span class="tag tag-purple">AAN 2025</span><span class="tag tag-blue">Rec 6</span></div>
-          <span class="arrow">→</span>
-        </div>
-      </div>
-    </a>
-
-  </div>
-
-  <div class="guideline-note">
-    <strong>資料來源</strong>：Tolchin B, Goldstein LH, Reuber M, et al. Management of Functional Seizures Practice Guideline Executive Summary. <em>Neurology</em>. 2026;106:e214466. DOI: 10.1212/WNL.0000000000214466
-    <br><br>
-    本系列為指引導讀整理，供醫療專業人員教學參考，臨床決策請依個案評估。
-  </div>
-
-  <div class="section-header" style="margin-top:40px;">
-    <span class="section-label">DMD 基因治療 · Duchenne Muscular Dystrophy</span>
-    <div class="section-line"></div>
-  </div>
-
-  <div class="card-grid">
-
-    <a href="dmd01.html" class="card">
-      <div class="card-banner b-red"></div>
-      <div class="card-body">
-        <div class="card-cat">系列導讀 ①</div>
-        <div class="card-title">delandistrogene moxeparvovec 是什麼</div>
-        <div class="card-desc">microdystrophin 設計原理、rAAVrh74 載體、單次輸注劑量、FDA 兩階段批准歷程，以及 exon 8/9 缺失禁忌。</div>
-        <div class="card-foot">
-          <div><span class="tag tag-red">AAN 2025</span><span class="tag tag-blue">Evidence in Focus</span></div>
-          <span class="arrow">→</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="dmd02.html" class="card">
-      <div class="card-banner b-red"></div>
-      <div class="card-body">
-        <div class="card-cat">系列導讀 ②</div>
-        <div class="card-title">療效證據：兩個 Class I 都沒達標</div>
-        <div class="card-desc">NSAA 主要終點解析、安慰劑對照 vs 外部對照的數據落差、統合差異 0.69 分、次族群陷阱與解盲風險。</div>
-        <div class="card-foot">
-          <div><span class="tag tag-red">AAN 2025</span><span class="tag tag-blue">EMBARK</span></div>
-          <span class="arrow">→</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="dmd03.html" class="card">
-      <div class="card-banner b-red"></div>
-      <div class="card-body">
-        <div class="card-cat">系列導讀 ③</div>
-        <div class="card-title">類固醇干擾與替代終點之謎</div>
-        <div class="card-desc">基因治療強制併用高劑量類固醇的混淆效應、microdystrophin 作為加速批准基石的三大爭議、CPK 為何不可靠。</div>
-        <div class="card-foot">
-          <div><span class="tag tag-red">AAN 2025</span><span class="tag tag-blue">生物標記</span></div>
-          <span class="arrow">→</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="dmd04.html" class="card">
-      <div class="card-banner b-red"></div>
-      <div class="card-body">
-        <div class="card-cat">系列導讀 ④</div>
-        <div class="card-title">安全性與監測基礎建設</div>
-        <div class="card-desc">急性肝損傷、心肌炎、免疫媒介性肌炎、血小板低下、1 例死亡；給藥前後必須到位的監測與團隊準備。</div>
-        <div class="card-foot">
-          <div><span class="tag tag-red">AAN 2025</span><span class="tag tag-blue">安全監測</span></div>
-          <span class="arrow">→</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="dmd05.html" class="card">
-      <div class="card-banner b-red"></div>
-      <div class="card-body">
-        <div class="card-cat">系列導讀 ⑤</div>
-        <div class="card-title">法規爭議、天價與未來</div>
-        <div class="card-desc">FDA 內部審查被 CBER 主任兩度否決、單次 320 萬美元成本與 ICER 評論、適用族群遠大於試驗證據、未解的研究問題。</div>
-        <div class="card-foot">
-          <div><span class="tag tag-red">AAN 2025</span><span class="tag tag-blue">健康政策</span></div>
-          <span class="arrow">→</span>
-        </div>
-      </div>
-    </a>
-
-  </div>
-
-  <div class="guideline-note">
-    <strong>資料來源</strong>：Oskoui M, Caller TA, Parsons JA, et al. Delandistrogene Moxeparvovec Gene Therapy in Individuals With Duchenne Muscular Dystrophy: Evidence in Focus. <em>Neurology</em>. 2025;104:e213604. DOI: 10.1212/WNL.0000000000213604
-    <br><br>
-    本系列為 Evidence in Focus 導讀整理，供醫療專業人員教學參考，臨床決策請依個案評估。
-  </div>
+    </div>
+  </details>
 
 </main>
 
