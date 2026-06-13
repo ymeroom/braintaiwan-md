@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>癲癇重積狀態（五）：難治性 SE 與 NORSE——ICU 決策與免疫療法 — BrainTaiwan MD</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI','Microsoft JhengHei','PingFang TC',Arial,sans-serif;background:#f0f4f8;color:#1c1c2e;line-height:1.85}
+header{background:linear-gradient(135deg,#0f2142 0%,#1a3975 55%,#1565c0 100%);color:#fff;padding:36px 32px 28px}
+.header-inner{max-width:860px;margin:0 auto}
+.site-name{font-size:11pt;font-weight:600;opacity:.65;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
+.series-tag{font-size:10pt;opacity:.8;margin-bottom:6px}
+.site-title{font-size:22pt;font-weight:700;line-height:1.35}
+.header-nav{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.nav-link{color:rgba(255,255,255,.65);text-decoration:none;font-size:11pt;padding:5px 14px;border:1px solid rgba(255,255,255,.22);border-radius:20px;transition:all .2s}
+.nav-link:hover{background:rgba(255,255,255,.18);color:#fff;border-color:rgba(255,255,255,.45)}
+main{max-width:860px;margin:0 auto;padding:28px 24px}
+.series-nav{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px}
+.series-link{font-size:10pt;text-decoration:none;color:#546e7a;background:#fff;border:1px solid #e0e8f5;padding:5px 13px;border-radius:20px}
+.series-link:hover{color:#2e7d32;border-color:#2e7d32}
+.series-link.active{background:#2e7d32;color:#fff;border-color:#2e7d32;font-weight:600}
+.article{background:#fff;border:1px solid #e0e8f5;border-radius:12px;padding:40px 46px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.article h2{font-size:15pt;color:#0f2142;margin:1.8em 0 .7em;padding-left:12px;border-left:4px solid #2e7d32;line-height:1.4}
+.article h3{font-size:12.5pt;color:#1b5e20;margin:1.5em 0 .4em}
+.article p{margin:.85em 0;font-size:12pt;color:#263238}
+.article hr{border:none;border-top:1px solid #e0e8f5;margin:2em 0}
+.article strong{color:#0f2142}
+blockquote{margin:1.5em 0;padding:16px 20px;background:#e8f5e9;border-left:4px solid #2e7d32;border-radius:0 8px 8px 0;color:#37474f;font-size:11pt}
+blockquote.warn{background:#fff3e0;border-left-color:#e65100}
+blockquote.red{background:#ffebee;border-left-color:#c62828}
+table{width:100%;border-collapse:collapse;margin:1.3em 0;font-size:11pt;border:1px solid #e0e8f5;border-radius:8px;overflow:hidden}
+th,td{padding:10px 13px;text-align:left;border-bottom:1px solid #eef2f7}
+th{background:#0f2142;color:#fff;font-weight:600}
+tr:nth-child(even) td{background:#f6f9fd}
+ol,ul{padding-left:1.5em;margin:.6em 0}
+li{margin:.3em 0;font-size:12pt;color:#263238}
+.drug-card{background:#1a2b4a;border-radius:10px;padding:20px 24px;margin:1.2em 0;color:#e8edf5}
+.drug-name{font-size:14pt;font-weight:700;color:#64b5f6;margin-bottom:6px}
+.drug-dose{font-size:15pt;font-weight:700;color:#fff;margin-bottom:6px}
+.drug-note{font-size:11pt;color:#90a4ae;line-height:1.5}
+.norse-box{background:#4a0f5a;border-radius:10px;padding:22px 26px;margin:1.5em 0;color:#e8d5f5}
+.norse-title{font-size:15pt;font-weight:700;color:#ce93d8;margin-bottom:10px}
+.stage-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:1.5em 0}
+.stage-card{border-radius:8px;padding:16px;border:1px solid}
+.stage-rse{background:#fff3e0;border-color:#e65100}
+.stage-srse{background:#fce4ec;border-color:#c62828}
+.stage-title{font-size:12.5pt;font-weight:700;margin-bottom:8px}
+.stage-rse .stage-title{color:#e65100}
+.stage-srse .stage-title{color:#c62828}
+footer{background:#0f2142;color:rgba(255,255,255,.45);text-align:center;padding:20px;font-size:10pt;margin-top:40px}
+footer a{color:rgba(255,255,255,.55);text-decoration:none}
+@media(max-width:600px){.article{padding:24px 18px}.stage-row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="site-name">BrainTaiwan · MD</div>
+    <div class="series-tag">癲癇重積狀態系列導讀</div>
+    <div class="site-title">癲癇重積狀態（五）：難治性 SE 與 NORSE——ICU 決策與免疫療法</div>
+    <nav class="header-nav">
+      <a href="/" class="nav-link">← 臨床工具</a>
+      <a href="https://braintaiwan.com" class="nav-link">首頁</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="series-nav">
+    <a href="se01.html" class="series-link">① 定義與分類</a>
+    <a href="se02.html" class="series-link">② 診斷與 EEG</a>
+    <a href="se03.html" class="series-link">③ 苯二氮平</a>
+    <a href="se04.html" class="series-link">④ 第二線藥物</a>
+    <a href="se05.html" class="series-link active">⑤ 難治性 SE</a>
+  </div>
+  <article class="article">
+
+<blockquote>
+<p><strong>系列導讀．第 5 篇</strong>　參考文獻：Ferlisi M, Shorvon S. The outcome of therapies in refractory and super-refractory convulsive status epilepticus. <em>Epilepsia</em>. 2012;53(8):1505–1513. ／ Hirsch LJ, et al. American Clinical Neurophysiology Society's Standardized Critical Care EEG Terminology. <em>J Clin Neurophysiol</em>. 2021. ／ Gaspard N, et al. New-onset refractory status epilepticus (NORSE). <em>Epilepsia</em>. 2018;59(11):2004–2013.</p>
+</blockquote>
+
+<hr>
+
+<p>當兩劑苯二氮平加上第二線抗癲癇藥物均無效，SE 進入最困難的領域：<strong>難治性 SE（refractory SE，RSE）</strong>。這個階段的治療核心轉向麻醉藥物，並需要 ICU 連續腦電圖監測。更棘手的是超難治性 SE（super-refractory SE，SRSE），以及病因未明的 NORSE——這些情境每一個都可能讓臨床醫師面對最沉重的決定。</p>
+
+<hr>
+
+<h2>一、定義：難治性 vs. 超難治性</h2>
+
+<div class="stage-row">
+  <div class="stage-card stage-rse">
+    <div class="stage-title">難治性 SE（RSE）</div>
+    <p style="font-size:12pt;color:#37474f;">BZD + 至少一種第二線 AED 後，發作仍持續；或臨床停止後 24 小時內再發</p>
+    <p style="font-size:11pt;color:#bf360c;margin-top:8px;">死亡率：約 16–39%</p>
+  </div>
+  <div class="stage-card stage-srse">
+    <div class="stage-title">超難治性 SE（SRSE）</div>
+    <p style="font-size:12pt;color:#37474f;">麻醉藥物治療超過 24 小時後，發作仍持續或停藥即再發</p>
+    <p style="font-size:11pt;color:#7f0000;margin-top:8px;">死亡率：50% 以上；神經功能預後差</p>
+  </div>
+</div>
+
+<hr>
+
+<h2>二、麻醉藥物——第三線治療</h2>
+
+<p>RSE 確診後，應立即準備氣管插管、ICU 轉入，並啟動連續靜脈麻醉藥物：</p>
+
+<div class="drug-card">
+  <div class="drug-name">Midazolam（咪達唑侖）點滴 — 多數機構的首選</div>
+  <div class="drug-dose">負荷劑量：0.2 mg/kg IV（最大 10 mg）<br>維持：0.05–2 mg/kg/hr 點滴，依 EEG 調整</div>
+  <div class="drug-note">
+    優點：短效、可快速調整、停藥後恢復快<br>
+    注意：高劑量長時間使用可能出現耐藥性（需逐漸增加劑量）<br>
+    監測：連續 EEG 確認發作是否完全控制
+  </div>
+</div>
+
+<div class="drug-card">
+  <div class="drug-name">Propofol（丙泊酚）點滴</div>
+  <div class="drug-dose">負荷：1–2 mg/kg IV bolus（可重複）<br>維持：1–5 mg/kg/hr（成人 &lt; 5 mg/kg/hr，避免 PRIS）</div>
+  <div class="drug-note">
+    優點：起效快、停藥恢復快、可同時降顱內壓<br>
+    重要警告：<strong>Propofol infusion syndrome（PRIS）</strong>——高劑量（>4 mg/kg/hr）或長時間（>48h）使用可能導致代謝性酸中毒、橫紋肌溶解、心律不整<br>
+    禁忌：兒童 ICU 鎮靜（FDA 警告）；監測血清肌酸激酶、三酸甘油酯、血氣
+  </div>
+</div>
+
+<div class="drug-card">
+  <div class="drug-name">Pentobarbital / Thiopental（戊巴比妥 / 硫噴妥鈉）</div>
+  <div class="drug-dose">Pentobarbital：5 mg/kg IV 負荷（1 mg/kg/min），維持 1–10 mg/kg/hr<br>Thiopental：3–5 mg/kg IV 負荷，維持 3–7 mg/kg/hr</div>
+  <div class="drug-note">
+    優點：強力鎮靜、可達到 EEG 爆發抑制（burst suppression）<br>
+    缺點：長效、停藥後意識恢復慢（數天）；低血壓（常需升壓藥）；免疫抑制<br>
+    臨床地位：Midazolam 或 propofol 失效後的升級選擇
+  </div>
+</div>
+
+<hr>
+
+<h2>三、EEG 監測目標：到底要壓多深？</h2>
+
+<p>麻醉藥物的劑量調整以 EEG 為依據。目前主流共識的<strong>治療目標依嚴重程度遞增</strong>：</p>
+
+<table>
+  <thead><tr><th>EEG 目標</th><th>定義</th><th>臨床情境</th></tr></thead>
+  <tbody>
+    <tr><td>發作控制（seizure suppression）</td><td>EEG 上無癲癇樣放電</td><td>多數 RSE 的初步目標</td></tr>
+    <tr><td>爆發抑制（burst suppression）</td><td>每分鐘爆發次數 &lt; 6，抑制期 &gt; 50%</td><td>難治性 SE 未能達發作控制時</td></tr>
+    <tr><td>完全平坦（EEG suppression）</td><td>近乎等電位</td><td>極重度 RSE；副作用最大</td></tr>
+  </tbody>
+</table>
+
+<blockquote class="warn">
+<p>⚠️ 「壓越深越好」並非正確策略。完全平坦的 EEG 並不代表更好的預後，且相關的低血壓、感染、長期臥床風險更高。多數指引建議以「發作控制」為初始目標，再依臨床反應調整。</p>
+</blockquote>
+
+<hr>
+
+<h2>四、超難治性 SE 的多模式治療</h2>
+
+<p>SRSE 的治療缺乏高品質 RCT，多為個案報告與觀察性研究。以下為現有文獻支持的選項：</p>
+
+<ul>
+  <li><strong>Ketamine（氯胺酮）</strong>：0.5–5 mg/kg/hr 點滴；NMDA 受體拮抗，可繞過 GABA 系統；與 BZD 耐藥性無交叉；有案例支持。</li>
+  <li><strong>吸入麻醉（isoflurane / desflurane）</strong>：需特殊 ICU 設備；強力 EEG 抑制；用於其他選項均失敗時。</li>
+  <li><strong>硫酸鎂（MgSO₄）</strong>：輔助性 NMDA 拮抗；合理輔助選項，無強力試驗支持。</li>
+  <li><strong>輕度低溫療法（33–35°C）</strong>：降低神經元代謝需求，有個案報告支持。</li>
+  <li><strong>生酮飲食（ketogenic diet）</strong>：ICU 可以鼻胃管執行；對兒童 SRSE 有較多文獻支持；機制可能涉及 KATP 通道與 GABA 代謝。</li>
+  <li><strong>免疫療法</strong>：見下節。</li>
+</ul>
+
+<hr>
+
+<h2>五、NORSE 與 FIRES——病因未明的惡夢</h2>
+
+<div class="norse-box">
+  <div class="norse-title">NORSE（New Onset Refractory Status Epilepticus）</div>
+  <p style="font-size:12pt;">NORSE 是指<strong>無既往癲癇病史、無明確急性或活動性結構性病灶</strong>的難治性 SE。初期病因未明，可持續數週至數月，死亡率高達 30%，存活者中 60–70% 有重大神經功能障礙。</p>
+  <p style="font-size:12pt;margin-top:10px;"><strong>FIRES（Febrile Infection-Related Epilepsy Syndrome）</strong>：NORSE 的兒童亞型，以發燒後 2 週內突發 SE 為特徵，常發生於學齡兒童，病程極為嚴重。</p>
+</div>
+
+<h3>NORSE 的病因分佈</h3>
+
+<table>
+  <thead><tr><th>病因類別</th><th>佔比</th><th>主要代表</th></tr></thead>
+  <tbody>
+    <tr><td>自體免疫性腦炎</td><td>~30–40%</td><td>抗 NMDAR、LGI1、CASPR2、AMPAR、GABA-B 等抗體</td></tr>
+    <tr><td>副腫瘤性</td><td>~10%</td><td>Hu、Yo、ANNA-2</td></tr>
+    <tr><td>感染性腦炎（找到確定病因）</td><td>~15%</td><td>HSV、HHV-6、其他病毒</td></tr>
+    <tr><td>不明原因（Cryptogenic）</td><td>~40–50%</td><td>在初期評估中找不到病因</td></tr>
+  </tbody>
+</table>
+
+<blockquote class="red">
+<p>🔴 <strong>自體免疫性 SE 的重要性</strong>：約 40% 的 NORSE 最終確認為自體免疫性病因，其中許多在 CSF 自體免疫抗體結果回報前已死亡或發生不可逆損傷。<br>→ 考慮<strong>盡早啟動經驗性免疫治療</strong>，不應等待抗體確認。</p>
+</blockquote>
+
+<h3>免疫療法的時機與選擇</h3>
+
+<p>當 NORSE/SRSE 病因不明，或高度懷疑自體免疫性腦炎時，應考慮：</p>
+
+<ol>
+  <li><strong>第一線</strong>（同步）：
+    <ul>
+      <li>甲基普尼松龍（methylprednisolone）1,000 mg/day × 3–5 天</li>
+      <li>IVIG 2 g/kg × 2–5 天（可與類固醇同步）</li>
+      <li>血漿交換（PE/PLEX）：5 次，隔天一次</li>
+    </ul>
+  </li>
+  <li><strong>第二線</strong>（若第一線無效，2–4 週後）：
+    <ul>
+      <li>Rituximab 375 mg/m² 或 1,000 mg × 2 次</li>
+      <li>Cyclophosphamide</li>
+    </ul>
+  </li>
+</ol>
+
+<hr>
+
+<h2>六、停藥策略與長期管理</h2>
+
+<p>當發作控制超過 24–48 小時，應開始<strong>逐步減少</strong>麻醉藥物：</p>
+
+<ul>
+  <li>連續 EEG 監測下緩慢撤藥（每 6–12 小時減量 10–25%）</li>
+  <li>同步確認口服或靜脈 AED 達到治療濃度</li>
+  <li>撤藥過程中出現 EEG 再發作 → 恢復先前劑量，穩定後再嘗試</li>
+</ul>
+
+<p>長期管理：幾乎所有 RSE 存活者都需要長期抗癲癇治療。病因決定是否需要免疫維持治療（如 rituximab 每 6 個月一次，用於自體免疫性腦炎）。</p>
+
+<hr>
+
+<h2>系列總結</h2>
+
+<p>從第一篇的 5 分鐘法則，到第五篇的 NORSE 免疫治療——癲癇重積狀態是一個從分鐘到週，從急診到 ICU，跨越神經學、重症醫學與免疫學的複合性疾病。</p>
+
+<p>臨床實踐的核心原則從未改變：<strong>早期識別、分秒必爭、依序升級、積極尋找病因</strong>。每一次在黃金時間窗內及時給藥，就是對一個大腦的救援。</p>
+
+</article>
+</main>
+<footer>
+  © 2026 BrainTaiwan MD · 本頁為臨床教學參考，不構成個別醫療建議 · <a href="/">回臨床工具首頁</a>
+</footer>
+</body>
+</html>

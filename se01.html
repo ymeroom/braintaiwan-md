@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>癲癇重積狀態（一）：定義、分類與時間軸 — BrainTaiwan MD</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI','Microsoft JhengHei','PingFang TC',Arial,sans-serif;background:#f0f4f8;color:#1c1c2e;line-height:1.85}
+header{background:linear-gradient(135deg,#0f2142 0%,#1a3975 55%,#1565c0 100%);color:#fff;padding:36px 32px 28px}
+.header-inner{max-width:860px;margin:0 auto}
+.site-name{font-size:11pt;font-weight:600;opacity:.65;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
+.series-tag{font-size:10pt;opacity:.8;margin-bottom:6px}
+.site-title{font-size:22pt;font-weight:700;line-height:1.35}
+.header-nav{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.nav-link{color:rgba(255,255,255,.65);text-decoration:none;font-size:11pt;padding:5px 14px;border:1px solid rgba(255,255,255,.22);border-radius:20px;transition:all .2s}
+.nav-link:hover{background:rgba(255,255,255,.18);color:#fff;border-color:rgba(255,255,255,.45)}
+main{max-width:860px;margin:0 auto;padding:28px 24px}
+.series-nav{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px}
+.series-link{font-size:10pt;text-decoration:none;color:#546e7a;background:#fff;border:1px solid #e0e8f5;padding:5px 13px;border-radius:20px}
+.series-link:hover{color:#2e7d32;border-color:#2e7d32}
+.series-link.active{background:#2e7d32;color:#fff;border-color:#2e7d32;font-weight:600}
+.article{background:#fff;border:1px solid #e0e8f5;border-radius:12px;padding:40px 46px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.article h1{font-size:20pt;color:#0f2142;line-height:1.4;margin:.1em 0 .5em}
+.article h2{font-size:15pt;color:#0f2142;margin:1.8em 0 .7em;padding-left:12px;border-left:4px solid #2e7d32;line-height:1.4}
+.article h3{font-size:12.5pt;color:#1b5e20;margin:1.5em 0 .4em}
+.article p{margin:.85em 0;font-size:12pt;color:#263238}
+.article a{color:#2e7d32;text-decoration:none}
+.article hr{border:none;border-top:1px solid #e0e8f5;margin:2em 0}
+.article strong{color:#0f2142}
+blockquote{margin:1.5em 0;padding:16px 20px;background:#e8f5e9;border-left:4px solid #2e7d32;border-radius:0 8px 8px 0;color:#37474f;font-size:11pt}
+blockquote.warn{background:#fff3e0;border-left-color:#e65100}
+table{width:100%;border-collapse:collapse;margin:1.3em 0;font-size:11pt;border:1px solid #e0e8f5;border-radius:8px;overflow:hidden}
+th,td{padding:10px 13px;text-align:left;border-bottom:1px solid #eef2f7}
+th{background:#0f2142;color:#fff;font-weight:600}
+tr:nth-child(even) td{background:#f6f9fd}
+ol,ul{padding-left:1.5em;margin:.6em 0}
+li{margin:.3em 0;font-size:12pt;color:#263238}
+.key-box{background:#e8f5e9;border:1px solid #a5d6a7;border-radius:8px;padding:16px 20px;margin:1.5em 0}
+.key-box h3{color:#1b5e20;margin-top:0}
+.time-bar{display:flex;margin:1.5em 0;border-radius:8px;overflow:hidden;font-size:11pt;font-weight:600}
+.t-seg{padding:12px 10px;text-align:center;flex:1;color:#fff;display:flex;flex-direction:column;gap:4px}
+.t-seg span{font-size:9pt;font-weight:400;opacity:.85}
+.t-e{background:#4caf50}
+.t-s{background:#fb8c00}
+.t-r{background:#e53935}
+.t-sr{background:#7b1fa2}
+footer{background:#0f2142;color:rgba(255,255,255,.45);text-align:center;padding:20px;font-size:10pt;margin-top:40px}
+footer a{color:rgba(255,255,255,.55);text-decoration:none}
+@media(max-width:600px){.article{padding:24px 18px}.time-bar{flex-direction:column}}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="site-name">BrainTaiwan · MD</div>
+    <div class="series-tag">癲癇重積狀態系列導讀</div>
+    <div class="site-title">癲癇重積狀態（一）：定義、分類與時間軸</div>
+    <nav class="header-nav">
+      <a href="/" class="nav-link">← 臨床工具</a>
+      <a href="https://braintaiwan.com" class="nav-link">首頁</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="series-nav">
+    <a href="se01.html" class="series-link active">① 定義與分類</a>
+    <a href="se02.html" class="series-link">② 診斷與 EEG</a>
+    <a href="se03.html" class="series-link">③ 苯二氮平</a>
+    <a href="se04.html" class="series-link">④ 第二線藥物</a>
+    <a href="se05.html" class="series-link">⑤ 難治性 SE</a>
+  </div>
+  <article class="article">
+
+<blockquote>
+<p><strong>系列導讀．第 1 篇</strong>　參考文獻：Trinka E, et al. A definition and classification of status epilepticus. <em>Epilepsia</em>. 2015;56(10):1515–1523. ／ Brophy GM, et al. Guidelines for the Evaluation and Management of Status Epilepticus. <em>Neurocrit Care</em>. 2012;17:3–23.</p>
+</blockquote>
+
+<hr>
+
+<p>癲癇重積狀態（status epilepticus，SE）不只是「一次很長的癲癇發作」——它是一種神經急症，代表大腦的抑制機制已失效，無法自行終止發作。每多延誤一分鐘，就有更多神經元在持續的電氣風暴中不可逆地死亡。理解 SE 的定義與分類，是臨床快速反應的第一步。</p>
+
+<hr>
+
+<h2>一、為什麼是 5 分鐘？——操作定義的由來</h2>
+
+<p>傳統定義將 SE 設在「發作持續 30 分鐘以上」，但臨床研究早已指出，大多數癲癇發作在 <strong>2 分鐘內自行停止</strong>；若持續超過 5 分鐘，自然終止的機率急速下降。等到 30 分鐘才啟動治療，等同於讓大腦在火中燒了半小時。</p>
+
+<p>2015 年，ILAE（國際抗癲癇聯盟）工作小組正式更新操作定義，引入雙時間點概念：</p>
+
+<div class="key-box">
+  <h3>ILAE 2015 操作定義</h3>
+  <p><strong>t₁（開始治療的時間點）</strong>：發作持續超過正常同類型發作應終止的時間，即視為 SE 並啟動治療：</p>
+  <ul>
+    <li>全面性強直陣攣性發作（GTCS）：<strong>5 分鐘</strong></li>
+    <li>局灶性伴有意識障礙的發作：<strong>10 分鐘</strong></li>
+    <li>失神發作型 SE：<strong>10–15 分鐘</strong></li>
+  </ul>
+  <p style="margin-top:10px"><strong>t₂（長期後遺症發生的時間點）</strong>：超過此時間點，發生神經元損傷或死亡的風險明顯升高：</p>
+  <ul>
+    <li>GTCS 型：<strong>30 分鐘</strong></li>
+    <li>局灶性伴意識障礙型：<strong>60 分鐘</strong></li>
+  </ul>
+</div>
+
+<h3>GABA 受體內化——為什麼越晚治療越難治</h3>
+
+<p>苯二氮平類藥物（benzodiazepines）透過增強 GABA<sub>A</sub> 受體功能來終止發作。但在持續發作的狀態下，突觸後膜的 GABA<sub>A</sub> 受體會逐漸<strong>從細胞表面被內化（internalization）</strong>至胞內，導致：</p>
+<ol>
+  <li>BZD 的結合位點減少，療效大幅下降</li>
+  <li>NMDA 受體（谷氨酸興奮性受體）則在細胞表面上調，使興奮性訊號增強</li>
+  <li>形成「越晚治療，藥越難用」的惡性循環</li>
+</ol>
+
+<p>這正是 <strong>時間就是大腦</strong> 的分子機制基礎，也是為什麼 SE 的處置必須分秒必爭。</p>
+
+<hr>
+
+<h2>二、SE 的類型分類</h2>
+
+<p>SE 的臨床表現多樣，從最戲劇性的全身抽搐到幾乎無外顯動作的意識障礙，都可以是 SE。依據主要症狀特徵，分為兩大類：</p>
+
+<table>
+  <thead><tr><th>類型</th><th>臨床特徵</th><th>識別難度</th></tr></thead>
+  <tbody>
+    <tr><td><strong>驚厥性 SE（CSE）</strong></td><td>全身強直陣攣、肌肉持續強直或陣攣</td><td>低（容易識別）</td></tr>
+    <tr><td><strong>非驚厥性 SE（NCSE）</strong></td><td>意識改變、凝視、細微動作（眨眼、口動）、無明顯抽搐</td><td>高（容易被忽略）</td></tr>
+    <tr><td><strong>局灶運動性 SE</strong></td><td>單肢或單側持續性節律性運動（Epilepsia partialis continua）</td><td>中</td></tr>
+  </tbody>
+</table>
+
+<blockquote class="warn">
+<p>⚠️ <strong>NCSE 是被低估的殺手</strong>：ICU 中 8–48% 的不明原因昏迷患者，病因是非驚厥性 SE。無外顯抽搐不代表大腦沒有發作，持續意識障礙都應考慮緊急 EEG。</p>
+</blockquote>
+
+<hr>
+
+<h2>三、ILAE 2015 四軸分類系統</h2>
+
+<p>Trinka 等人提出的分類系統以<strong>四個維度</strong>來描述每個 SE 患者，協助治療決策與預後評估：</p>
+
+<table>
+  <thead><tr><th>軸</th><th>描述面向</th><th>主要類別</th></tr></thead>
+  <tbody>
+    <tr><td>軸 1（症狀學）</td><td>臨床表現</td><td>驚厥性 / 非驚厥性 / 局灶性</td></tr>
+    <tr><td>軸 2（病因）</td><td>誘發原因</td><td>已知（急性症狀性、遠端症狀性、進行性）/ 未知</td></tr>
+    <tr><td>軸 3（腦波相關）</td><td>EEG 型態</td><td>局灶性 / 廣泛性 / 無 EEG 相關</td></tr>
+    <tr><td>軸 4（年齡與特殊狀況）</td><td>患者背景</td><td>新生兒、兒童期、成人、老年；特殊症候群</td></tr>
+  </tbody>
+</table>
+
+<p>軸 2 的病因分類對預後影響最大：<strong>急性症狀性 SE</strong>（如腦炎、代謝危機、急性中風）死亡率最高；<strong>已知慢性癲癇患者的 SE</strong>（如抗癲癇藥物突然停藥）預後相對較好。</p>
+
+<hr>
+
+<h2>四、時間軸分期——從早期到超難治</h2>
+
+<p>SE 的嚴重程度依治療反應與時間進行分期，每個分期對應不同的治療強度：</p>
+
+<div class="time-bar">
+  <div class="t-seg t-e"><strong>早期 SE</strong><span>5–30 min</span><span>第一線：苯二氮平</span></div>
+  <div class="t-seg t-s"><strong>確立期 SE</strong><span>30–60 min</span><span>第二線：AED 靜脈給藥</span></div>
+  <div class="t-seg t-r"><strong>難治性 SE</strong><span>&gt;60 min 或 2 種藥失敗</span><span>第三線：麻醉藥物</span></div>
+  <div class="t-seg t-sr"><strong>超難治性 SE</strong><span>&gt;24h 麻醉仍無效</span><span>多模式免疫治療</span></div>
+</div>
+
+<p>這個時間分期不是絕對的——實際上，<strong>「失敗兩種適當劑量的藥物」</strong>比「到達某個時間點」更能定義是否進入難治性 SE。無論何時，只要患者在兩種藥物後仍未停止發作，就應視為難治性 SE 並升級治療。</p>
+
+<hr>
+
+<h2>五、流行病學與死亡率</h2>
+
+<p>SE 的年發生率約為 <strong>10–40 / 100,000 人</strong>，依各國定義與統計方式略有差異。成人 SE 的整體院內死亡率為 <strong>10–20%</strong>，難治性 SE 則上升至 <strong>30–40%</strong>。影響預後的最重要因素包括：</p>
+
+<ul>
+  <li><strong>病因</strong>：腦炎、缺氧性腦病、急性中風死亡率最高</li>
+  <li><strong>年齡</strong>：老年患者死亡率顯著較高</li>
+  <li><strong>發作持續時間</strong>：治療越晚介入，功能預後越差</li>
+  <li><strong>EEG 型態</strong>：廣泛性週期性放電（GPDs）與不良預後相關</li>
+</ul>
+
+<hr>
+
+<h2>小結：為下一篇做準備</h2>
+
+<p>理解 SE 的定義，有助於臨床快速啟動治療；了解分類，有助於針對病因制定更精準的策略。下一篇將討論如何在急性期識別 SE——包括容易被忽略的非驚厥性 SE，以及何時、如何使用緊急腦電圖。</p>
+
+</article>
+</main>
+<footer>
+  © 2026 BrainTaiwan MD · 本頁為臨床教學參考，不構成個別醫療建議 · <a href="/">回臨床工具首頁</a>
+</footer>
+</body>
+</html>
