@@ -1,4 +1,9 @@
-// 將 dementia-articles 的 5 篇 .md 轉成站內風格 HTML 頁面
+// ⚠ 已停用：失智症衛教系列已搬至 Media。請改用 braintaiwan-media/build-dem-media.js。
+// 保留本檔僅供參考；直接執行會立即中止，以免覆蓋 MD 站的轉址頁 dem01–05.html。
+console.error('build-dem.js 已停用：失智症已搬至 Media，請改用 braintaiwan-media/build-dem-media.js。');
+process.exit(0);
+
+// 將 dementia-articles 的 5 篇 .md 轉成站內風格 HTML 頁面（原 MD 版產生器，已停用）
 // 自帶極簡 markdown 轉換器（涵蓋本系列用到的語法），無外部相依
 const fs = require('fs');
 const path = require('path');
