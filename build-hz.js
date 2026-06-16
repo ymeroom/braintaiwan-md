@@ -116,18 +116,48 @@ function parse(src){
   const lines = src.split(/\r?\n/);
   const h1 = lines.findIndex(l => /^#\s+/.test(l));
   if (h1 !== -1) lines.splice(h1, 1);
-  return { title, body: renderBlocks(lines) };
+  // 取第一段引言做 og:description
+  let desc = '';
+  const bqStart = lines.findIndex(l => /^>/.test(l));
+  if (bqStart !== -1){
+    let j = bqStart; const buf = [];
+    while (j < lines.length && /^>/.test(lines[j])){ buf.push(lines[j].replace(/^>\s?/, '')); j++; }
+    desc = buf.join(' ')
+      .replace(/[*_`>#]/g, '')
+      .replace(/系列導讀．第\s*\d+\s*篇/, '')
+      .replace(/^[\s　]+/, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+    if (desc.length > 110) desc = desc.slice(0, 110) + '…';
+  }
+  return { title, desc, body: renderBlocks(lines) };
 }
 
-function page(title, contentHtml, navItems, activeIdx){
+function page(title, contentHtml, navItems, activeIdx, desc){
   const navHtml = navItems.map((n,i)=>
     `<a href="${n.out}" class="series-link${i===activeIdx?' active':''}">${n.nav}</a>`).join('');
+  const url = `https://md.braintaiwan.com/${navItems[activeIdx].out}`;
+  const d = desc || SERIES_TAG;
   return `<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${esc(title)} — BrainTaiwan MD</title>
+<meta name="description" content="${esc(d)}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="BrainTaiwan">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:url" content="${url}">
+<meta property="og:title" content="${esc(title)}">
+<meta property="og:description" content="${esc(d)}">
+<meta property="og:image" content="https://md.braintaiwan.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://md.braintaiwan.com/og.png">
+<meta name="twitter:title" content="${esc(title)}">
+<meta name="twitter:description" content="${esc(d)}">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Segoe UI','Microsoft JhengHei','PingFang TC',Arial,sans-serif;background:#f0f4f8;color:#1c1c2e;line-height:1.85}
@@ -207,7 +237,7 @@ const parsed = articles.map(a => {
 
 // 寫出每頁
 parsed.forEach((a, idx) => {
-  const html = page(a.title, a.body, parsed, idx);
+  const html = page(a.title, a.body, parsed, idx, a.desc);
   fs.writeFileSync(path.join(OUT, a.out), html, 'utf8');
   console.log('寫出', a.out, '—', a.title);
 });
