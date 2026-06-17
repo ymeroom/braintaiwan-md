@@ -5,7 +5,7 @@ const path = require('path');
 
 const SRC = 'D:/claudecode/parkinson-articles';
 const OUT = __dirname;
-const SERIES_TAG = '巴金森病 2023 台灣治療共識導讀（TMDS）';
+const SERIES_TAG = '巴金森氏症 2023 台灣治療共識導讀（TMDS）';
 
 const articles = [
   { md: '01-intro-early-treatment.md',   out: 'pd01.html', nav: '① 疾病全貌與治療啟動' },
