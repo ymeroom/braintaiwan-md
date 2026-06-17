@@ -222,6 +222,18 @@ footer {
   min-height: 7mm;
 }
 footer em { font-style: italic; }
+
+@media print {
+  .no-print { display: none !important; }
+}
+.toolbar-btn {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 7px 15px; border-radius: 20px; font-size: 13px; cursor: pointer;
+  font-family: 'Segoe UI', 'Microsoft JhengHei', Arial, sans-serif;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.35); text-decoration: none;
+  transition: opacity .15s;
+}
+.toolbar-btn:hover { opacity: .85; }
 </style>
 </head>
 <body>
@@ -423,6 +435,12 @@ footer em { font-style: italic; }
   <span>Prabhakaran S et al. 2026 Guideline for the Early Management of Patients with Acute Ischemic Stroke. <em>Stroke</em>. 2026;57. DOI: 10.1161/STR.0000000000000513</span>
   <span>僅供教學參考 · 臨床決策請依個案評估 · 免授權，歡迎自由列印與分享</span>
 </footer>
+
+
+<div class="no-print" style="position:fixed;bottom:18px;right:18px;z-index:9999;display:flex;gap:9px;align-items:center;">
+  <a href="/" class="toolbar-btn" style="background:#0f2142;color:rgba(255,255,255,.9);border:1px solid rgba(255,255,255,.2);">← 臨床MD</a>
+  <button onclick="window.print()" class="toolbar-btn" style="background:#1565c0;color:#fff;border:none;">🖨 列印 A4</button>
+</div>
 
 </body>
 </html>
