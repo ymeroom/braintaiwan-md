@@ -93,8 +93,7 @@ function parse(src){
     src = src.slice(fm[0].length);
   }
   const lines = src.split(/\r?\n/);
-  const h1 = lines.findIndex(l => /^#\s+/.test(l));
-  if (h1 !== -1) lines.splice(h1, 1);
+  // 保留 H1 標題
   let desc = '';
   const bqStart = lines.findIndex(l => /^>/.test(l));
   if (bqStart !== -1){
