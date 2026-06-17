@@ -212,7 +212,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
     <div class="series-tag">${esc(SERIES_TAG)}</div>
     <div class="site-title">${esc(title)}</div>
     <nav class="header-nav">
-      <a href="/" class="nav-link">← 臨床工具</a>
+      <a href="/" class="nav-link">←</a> 臨床MD
       <a href="https://braintaiwan.com" class="nav-link">首頁</a>
     </nav>
   </div>
