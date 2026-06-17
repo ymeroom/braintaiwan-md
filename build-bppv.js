@@ -86,7 +86,7 @@ function renderBlocks(lines){
 
 function parse(src){
   let title = '';
-  const fm = src.match(/^---\n([\s\S]*?)\n---\n/);
+  const fm = src.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n/);
   if (fm){
     const t = fm[1].match(/title:\s*"?(.*?)"?\s*$/m);
     if (t) title = t[1];
