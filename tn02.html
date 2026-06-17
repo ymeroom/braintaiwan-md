@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>三叉神經痛導讀 ②：拆解痛覺傳遞的 3D 迴路 — BrainTaiwan MD</title>
+<meta name="description" content="過去我們認為，三叉神經痛的傳遞是一條從臉部到大腦的單向高速公路。但最新研究證實，這其實是一個橫跨多個腦區、充滿並行支線與正向回饋放大的複雜 3D 網路，這也解釋了為何患者常陷入「越痛越憂鬱，越憂鬱越痛」的惡性循環。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="BrainTaiwan">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:url" content="https://md.braintaiwan.com/tn02.html">
+<meta property="og:title" content="三叉神經痛導讀 ②：拆解痛覺傳遞的 3D 迴路">
+<meta property="og:description" content="過去我們認為，三叉神經痛的傳遞是一條從臉部到大腦的單向高速公路。但最新研究證實，這其實是一個橫跨多個腦區、充滿並行支線與正向回饋放大的複雜 3D 網路，這也解釋了為何患者常陷入「越痛越憂鬱，越憂鬱越痛」的惡性循環。">
+<meta property="og:image" content="https://md.braintaiwan.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://md.braintaiwan.com/og.png">
+<meta name="twitter:title" content="三叉神經痛導讀 ②：拆解痛覺傳遞的 3D 迴路">
+<meta name="twitter:description" content="過去我們認為，三叉神經痛的傳遞是一條從臉部到大腦的單向高速公路。但最新研究證實，這其實是一個橫跨多個腦區、充滿並行支線與正向回饋放大的複雜 3D 網路，這也解釋了為何患者常陷入「越痛越憂鬱，越憂鬱越痛」的惡性循環。">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI','Microsoft JhengHei','PingFang TC',Arial,sans-serif;background:#f0f4f8;color:#1c1c2e;line-height:1.85}
+header{background:linear-gradient(135deg,#0f2142 0%,#1a3975 55%,#1565c0 100%);color:#fff;padding:36px 32px 28px}
+.header-inner{max-width:860px;margin:0 auto}
+.site-name{font-size:11pt;font-weight:600;opacity:.65;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
+.series-tag{font-size:11pt;opacity:.8;margin-bottom:6px}
+.site-title{font-size:24pt;font-weight:700;line-height:1.35}
+.header-nav{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.nav-link{color:rgba(255,255,255,.65);text-decoration:none;font-size:11pt;padding:4px 12px;border:1px solid rgba(255,255,255,.22);border-radius:20px;transition:all .2s}
+.nav-link:hover{background:rgba(255,255,255,.18);color:#fff;border-color:rgba(255,255,255,.45)}
+main{max-width:860px;margin:0 auto;padding:28px 24px}
+.series-nav{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px}
+.series-link{font-size:11pt;text-decoration:none;color:#546e7a;background:#fff;border:1px solid #e0e8f5;padding:5px 12px;border-radius:20px}
+.series-link:hover{color:#1565c0;border-color:#1565c0}
+.series-link.active{background:#1565c0;color:#fff;border-color:#1565c0;font-weight:600}
+.pager{display:flex;justify-content:space-between;gap:14px;margin-top:30px}
+.pager-link{display:flex;flex-direction:column;gap:4px;max-width:48%;text-decoration:none;background:#fff;border:1px solid #e0e8f5;border-radius:10px;padding:12px 18px;transition:all .2s}
+.pager-link:hover{border-color:#1565c0;box-shadow:0 4px 14px rgba(21,101,192,.12)}
+.pager-link.next{align-items:flex-end;text-align:right}
+.pager-dir{font-size:11pt;color:#90a4ae;font-weight:600}
+.pager-ttl{font-size:13.5pt;color:#0f2142;font-weight:700}
+.article{background:#fff;border:1px solid #e0e8f5;border-radius:12px;padding:40px 46px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.article h1{font-size:23pt;color:#0f2142;line-height:1.4;margin:.1em 0 .5em}
+.article h2{font-size:18pt;color:#0f2142;margin:1.8em 0 .7em;padding-left:12px;border-left:4px solid #1565c0;line-height:1.4}
+.article h3{font-size:15pt;color:#1a3975;margin:1.5em 0 .4em}
+.article p{margin:.85em 0;font-size:14pt;color:#263238}
+.article a{color:#1565c0;text-decoration:none}
+.article hr{border:none;border-top:1px solid #e0e8f5;margin:2em 0}
+.article strong{color:#0f2142}
+blockquote{margin:1.5em 0;padding:16px 20px;background:#eef4fb;border-left:4px solid #1565c0;border-radius:0 8px 8px 0;color:#37474f;font-size:13pt}
+table{width:100%;border-collapse:collapse;margin:1.3em 0;font-size:12.5pt;border:1px solid #e0e8f5;border-radius:8px;overflow:hidden}
+th,td{padding:10px 13px;text-align:left;border-bottom:1px solid #eef2f7}
+th{background:#0f2142;color:#fff;font-weight:600}
+tr:nth-child(even) td{background:#f6f9fd}
+code{background:#eef2f7;padding:1px 6px;border-radius:5px;font-size:.9em}
+ol,ul{padding-left:1.5em;margin:.6em 0}
+li{margin:.3em 0;font-size:14pt;color:#263238}
+footer{background:#0f2142;color:rgba(255,255,255,.45);text-align:center;padding:20px;font-size:10.5pt;margin-top:40px}
+footer a{color:rgba(255,255,255,.55);text-decoration:none}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="site-name">BrainTaiwan · MD</div>
+    <div class="series-tag">三叉神經痛：從臨床困境到分子新知</div>
+    <div class="site-title">三叉神經痛導讀 ②：拆解痛覺傳遞的 3D 迴路</div>
+    <nav class="header-nav">
+      <a href="/" class="nav-link">← 臨床工具</a>
+      <a href="https://braintaiwan.com" class="nav-link">首頁</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="series-nav"><a href="tn01.html" class="series-link">① 臨床困境與分類</a><a href="tn02.html" class="series-link active">② 痛覺傳遞的 3D 迴路</a><a href="tn03.html" class="series-link">③ 離子通道微觀戰場</a><a href="tn04.html" class="series-link">④ 神經免疫與表觀遺傳</a><a href="tn05.html" class="series-link">⑤ 藥物進展與未來</a></div>
+  <article class="article">
+<h1>三叉神經痛導讀 ②：拆解痛覺傳遞的 3D 迴路</h1>
+<blockquote>
+<p><strong>系列導讀．第 2 篇</strong> 過去我們認為，三叉神經痛的傳遞是一條從臉部到大腦的單向高速公路。但最新研究證實，這其實是一個橫跨多個腦區、充滿並行支線與正向回饋放大的複雜 3D 網路，這也解釋了為何患者常陷入「越痛越憂鬱，越憂鬱越痛」的惡性循環。</p>
+</blockquote>
+<h2>打破線性思維：不只是單向傳導</h2>
+<p>傳統的三叉神經痛覺傳遞路徑被描述為「三叉神經節 (TG) → 脊髓三叉神經尾核 (Sp5C) → 視丘 (Thalamus) → 大腦皮質 (Cortex)」。然而，2026 年的網絡模型告訴我們，這個路徑早已演化出複雜的分支。</p>
+<p>作為痛覺的第一站，<strong>三叉神經節 (TG)</strong> 的神經元在 TN 狀態下會表現出異常的過度興奮。更重要的是，TG 的神經訊號不僅會傳給傳統的 Sp5C，它還會<strong>直接投射到臂旁核 (Parabrachial Nucleus, PBN)</strong>，這是一條參與「情緒痛覺處理」的捷徑。</p>
+<h2>橋樑與放大器：腦幹到中腦的調控</h2>
+<p><strong>脊髓三叉神經尾核 (Sp5C)</strong> 扮演著關鍵的中繼站與放大器。 在 TN 動物模型中，Sp5C 內的星狀膠質細胞會被活化，釋放發炎介質來維持痛覺訊號。此外，Sp5C 還會發出分支投射：</p>
+<ol>
+<li><strong>往上投射至臂旁核 (PBN)</strong>：形成 <code>TG → Sp5C → PBN</code> 的路徑，進一步活化情緒與厭惡反應。</li>
+<li><strong>往下調控與放大</strong>：Sp5C 透過投射至外側臂旁核 (LPBN)，活化吻側延髓腹內側區 (RVM)，而 RVM 又會發出「下行易化 (descending facilitation)」訊號回到 Sp5C，形成一個<strong>自我強化的正回饋放大迴路</strong>，促使疼痛慢性化。</li>
+</ol>
+<h2>情緒與痛覺的死結：皮質與視丘的共病網路</h2>
+<p>TN 最令人痛苦的特徵之一，是它常伴隨嚴重的焦慮與憂鬱。這並非單純的心理反應，而是腦神經迴路被「劫持」的結果。</p>
+<ul>
+<li><strong>視丘 (Thalamus) 的分流</strong>：視丘不只是感覺中繼站。它的腹後內側核 (VPM) 負責處理痛覺的部位與強度，而<strong>背內側核 (MD)</strong> 與<strong>室旁核 (PVT)</strong> 則深深捲入了情緒與厭惡的處理，並與杏仁核 (Amygdala) 緊密連結，負責將痛覺轉化為恐懼記憶。</li>
+<li><strong>前扣帶迴 (ACC) 的核心地位</strong>：ACC 是痛覺情緒處理的總樞紐。在 TN 狀態下，ACC 的神經元興奮性會發生改變，並與腹側被蓋區 (VTA) 形成另一個正回饋迴路：<code>ACC → VTA → ACC</code>。這個迴路的過度活化，會導致痛覺與情緒症狀的雙重惡化。</li>
+</ul>
+<h2>臨床意義：為什麼需要抗憂鬱劑？</h2>
+<p>當我們了解這套涵蓋 Sp5C, PBN, VTA, ACC 與視丘的 3D 痛覺迴路後，就能明白為何單靠阻斷周邊的鈉離子通道（如 Carbamazepine）有時無法完全解決問題。這也是為什麼在臨床實務上，對於慢性化、合併嚴重情緒困擾的 TN 患者，適時介入具有中樞神經調節作用的藥物（例如抗憂鬱劑或抗焦慮藥物）不僅是「治療心情」，更是直接在「切斷痛覺放大迴路」。</p>
+<p>下一篇，我們將鏡頭拉到分子層次，進入離子通道的微觀戰場。</p>
+<hr>
+<p><strong>資料來源</strong>：Xu Y, Fan Y, Li R, et al. Trigeminal neuralgia: from clinical challenges to molecular insights. <em>J Headache Pain</em>. 2026. DOI: 10.1186/s10194-026-02408-w</p>
+
+  </article>
+  <nav class="pager">
+    <a class="pager-link prev" href="tn01.html"><span class="pager-dir">← 上一篇</span><span class="pager-ttl">① 臨床困境與分類</span></a>
+    <a class="pager-link next" href="tn03.html"><span class="pager-dir">下一篇 →</span><span class="pager-ttl">③ 離子通道微觀戰場</span></a>
+  </nav>
+</main>
+<footer>© 2026 BrainTaiwan MD · <a href="https://braintaiwan.com">braintaiwan.com</a></footer>
+</body>
+</html>
