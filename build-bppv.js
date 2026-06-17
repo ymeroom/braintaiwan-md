@@ -4,7 +4,7 @@ const path = require('path');
 
 const SRC = 'D:/claudecode/bppv-articles';
 const OUT = __dirname;
-const SERIES_TAG = 'BPPV 臨床診斷與復位全攻略';
+const SERIES_TAG = 'BPPV（良性陣發性姿勢性眩暈／耳石症）臨床診斷與復位全攻略';
 
 const articles = [
   { md: '01-pathophysiology.md',      out: 'bppv01.html', nav: '① 病生理與風險' },
