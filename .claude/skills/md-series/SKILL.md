@@ -12,6 +12,7 @@ description: 全自動產生一個 BrainTaiwan MD 臨床導讀系列——讀來
 - `--prefix`：檔名前綴（未給則由主題推一個短英文前綴，與既有系列不衝突）
 - `--dry-run`：跑到 build 為止，**不 commit/不 push**
 - `--no-gate`：跳過驗證閘門（報告與 commit 訊息標記「⚠ 未經驗證」）
+- 預設為全自動含 push；要保守請加 --dry-run（跑到 build 為止，不 commit/不 push）。
 
 ## 流程（嚴格依序）
 
@@ -25,10 +26,10 @@ description: 全自動產生一個 BrainTaiwan MD 臨床導讀系列——讀來
    - `const { evaluateGate } = require('<repo>/lib/gate')`（用 Bash `node -e` 或直接在會話以 node 執行）
    - `const gate = evaluateGate(ledgers, { noGate: <--no-gate> })`
 
-4. 寫報告：`const md = require('<repo>/lib/report').renderReport(ledgers, gate)` → 寫到 `<srcDir>/_verification-report.md`。
+4. 寫報告：`const md = require('<repo>/lib/report').renderReport(ledgers, gate)` → 寫到 `<srcDir>/_verification-report.md`（無論通過與否皆寫，供抽查）。
 
 5. **閘門判定**：
-   - 若 `gate.pass === false`（且非 --no-gate）：**停**。不寫草稿正文、不 build、不 commit/push。回報阻擋摘要 + 報告路徑。結束。
+   - 若 `gate.pass === false`：**停**。不寫草稿正文、不 build、不 commit/push。回報阻擋摘要 + 報告路徑。結束。（--no-gate 時 gate.pass 已為 true，不會進此分支；但報告與 commit 會標記未經驗證。）
    - 若 `gate.pass === true`：續。
 
 6. 寫檔：把 `drafts` 各篇 `content` 寫到 `<srcDir>/<md>`；把 `series`（已含 srcDir/outDir/byline 等；若缺由 skill 補齊）寫到 `<srcDir>/series.json`。
