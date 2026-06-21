@@ -1,0 +1,8 @@
+{
+  "name": "braintaiwan-md-build",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --test"
+  }
+}
