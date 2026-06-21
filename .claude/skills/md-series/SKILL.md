@@ -22,6 +22,8 @@ description: 全自動產生一個 BrainTaiwan MD 臨床導讀系列——讀來
    `Workflow({ name: 'md-series-pipeline', args: { srcPaths, topic, n, prefix } })`
    等待回傳 `{ series, drafts, ledgers }`。
 
+   確認 drafts.length === n（規劃篇數）；若不符，停下並回報「規劃篇數不符」，不續行。
+
 3. 閘門評估（決定論，主會話）：
    - `const { evaluateGate } = require('<repo>/lib/gate')`（用 Bash `node -e` 或直接在會話以 node 執行）
    - `const gate = evaluateGate(ledgers, { noGate: <--no-gate> })`
@@ -39,6 +41,7 @@ description: 全自動產生一個 BrainTaiwan MD 臨床導讀系列——讀來
 8. 結構驗證：`node -e "const{validateDetailsBalance}=require('./lib/apply-index');const fs=require('fs');const r=validateDetailsBalance(fs.readFileSync('index.html','utf8'));if(!r.balanced)process.exit(1)"`。不平衡 → 停、不 push、回報。
 
 9. 發佈（除非 --dry-run）：
+   - （首次正式發佈前先 git status 確認哪些路徑會進 commit——草稿與 series.json 在 srcDir 可能在 repo 外，只有 <prefix>NN.html 與 index.html 在本 repo。）
    - commit 訊息：`新增 <topic> 臨床導讀 <n> 篇（<prefix>）`；--no-gate 時前綴 `⚠ 未經驗證：`。
    - `git add <out 頁面> index.html`（series.json 與草稿在 srcDir，視是否同 repo 決定是否納入）→ `git commit` → `git push origin main`。
    - --dry-run：到第 8 步為止，回報「已 build、未 push」。
