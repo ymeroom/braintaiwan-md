@@ -83,6 +83,15 @@ test('pickColor counts only topic-dot usages, not CSS definitions', () => {
   assert.ok(PALETTE.includes(c));
 });
 
+test('pickColor excludes CSS defs: a color present only in CSS is treated as unused', () => {
+  // 7 colors each used by a real topic-dot; teal appears ONLY as a CSS definition.
+  const used = PALETTE.filter(c => c !== 'teal');
+  const dots = used.map(c => `<span class="topic-dot d-${c}"></span>`).join('');
+  const html = `<style>.d-teal{}</style>` + dots;
+  // Old regex (counts CSS) → teal looks used → saturated → 'amber'. New regex → teal unused → 'teal'.
+  assert.strictEqual(pickColor(html, 'auto'), 'teal');
+});
+
 test('pickColor falls back to least-used when palette saturated', () => {
   // 每色都被 topic-dot 用一次，再讓 red 多用一次 → 不應回傳 red
   const dots = PALETTE.map(c => `<span class="topic-dot d-${c}"></span>`).join('')
