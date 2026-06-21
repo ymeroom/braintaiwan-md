@@ -73,3 +73,20 @@ test('applySection idempotent when pre-marker line ends with </details> (no trai
   assert.match(once, /<!-- SERIES:demo START -->/);
   assert.strictEqual(validateDetailsBalance(once).balanced, true);
 });
+
+test('pickColor counts only topic-dot usages, not CSS definitions', () => {
+  // 含 8 色的 CSS 定義，但只有 green 真的被 topic-dot 使用
+  const css = '.d-amber{}.d-blue{}.d-coral{}.d-green{}.d-indigo{}.d-purple{}.d-red{}.d-teal{}';
+  const html = `<style>${css}</style><span class="topic-dot d-green"></span>`;
+  const c = pickColor(html, 'auto');
+  assert.notStrictEqual(c, 'green');           // green 已被 topic-dot 使用
+  assert.ok(PALETTE.includes(c));
+});
+
+test('pickColor falls back to least-used when palette saturated', () => {
+  // 每色都被 topic-dot 用一次，再讓 red 多用一次 → 不應回傳 red
+  const dots = PALETTE.map(c => `<span class="topic-dot d-${c}"></span>`).join('')
+    + '<span class="topic-dot d-red"></span>';
+  const c = pickColor(dots, 'auto');
+  assert.notStrictEqual(c, 'red');
+});
