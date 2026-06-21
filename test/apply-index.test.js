@@ -43,3 +43,28 @@ test('applySection is idempotent (run twice → identical)', () => {
   const twice = applySection(once, series);
   assert.strictEqual(twice, once);
 });
+
+test('applySection idempotent when pre-marker line ends with </details> (no trailing spaces)', () => {
+  // Build an index where the line before </main> ends with </details> (no trailing spaces)
+  const indexWithDetails = `<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta name="description" content="既有描述：中風、癲癇。">
+</head>
+<body>
+<main>
+  <details class="topic">
+    <summary class="topic-head"><span class="topic-dot d-blue"></span></summary>
+    <div class="topic-body"></div>
+  </details>
+</main>
+</body>
+</html>`;
+  const once = applySection(indexWithDetails, series);
+  const twice = applySection(once, series);
+  // (a) idempotent
+  assert.strictEqual(twice, once, 'Re-apply must be byte-identical');
+  // (b) marker present and details balanced
+  assert.match(once, /<!-- SERIES:demo START -->/);
+  assert.strictEqual(validateDetailsBalance(once).balanced, true);
+});
