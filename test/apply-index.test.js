@@ -30,6 +30,11 @@ test('validateDetailsBalance detects balance and imbalance', () => {
   assert.strictEqual(validateDetailsBalance('<details class="topic"><summary>x</summary>').balanced, false);
 });
 
+test('validateDetailsBalance counts <details class="topic" open> (with attribute)', () => {
+  const html = '<details class="topic" open>x</details>\n<details class="topic">y</details>';
+  assert.deepStrictEqual(validateDetailsBalance(html), { balanced: true, open: 2, close: 2 });
+});
+
 test('applySection inserts a marked section before </main> with meta keyword', () => {
   const out = applySection(fixture, series);
   assert.match(out, /<!-- SERIES:demo START -->/);
