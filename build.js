@@ -2,6 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 const { escapeHtml: esc, parseArticle } = require('./lib/md-render');
+const { applySection } = require('./lib/apply-index');
 
 function loadSeries(jsonPath){
   const s = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
@@ -135,10 +136,18 @@ function writePages(series){
   }
 }
 
-module.exports = { loadSeries, renderPage, renderPages, writePages };
+function applyIndex(series){
+  const idxPath = path.join(series.outDir, 'index.html');
+  const html = fs.readFileSync(idxPath, 'utf8');
+  fs.writeFileSync(idxPath, applySection(html, series), 'utf8');
+  console.log('已更新 index.html 區塊', series.prefix);
+}
+
+module.exports = { loadSeries, renderPage, renderPages, writePages, applyIndex };
 
 if (require.main === module){
   const series = loadSeries(process.argv[2]);
   writePages(series);
+  applyIndex(series);
   console.log('完成');
 }
