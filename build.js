@@ -18,9 +18,15 @@ function renderPage(parsed, series, activeIdx){
     `<a href="${n.out}" class="series-link${i===activeIdx?' active':''}">${n.nav}</a>`).join('');
   const url = `https://md.braintaiwan.com/${navItems[activeIdx].out}`;
   const d = desc || SERIES_TAG;
-  // byline: bold first token, rest as-is (matches committed HTML structure)
-  const bylineParts = series.byline.split(' ');
-  const bylineHtml = `<b>${esc(bylineParts[0])}</b> ${esc(bylineParts.slice(1).join(' '))}`;
+  // byline: series.byline的首個以空白分隔的 token 以粗體 <b>…</b> 渲染，
+  // 餘下部分以純文字接續。若無空白或為空，則回退為純文字（無粗體、無尾隨空白）。
+  let bylineHtml;
+  if (series.byline && series.byline.includes(' ')) {
+    const bylineParts = series.byline.split(' ');
+    bylineHtml = `<b>${esc(bylineParts[0])}</b> ${esc(bylineParts.slice(1).join(' '))}`;
+  } else {
+    bylineHtml = esc(series.byline);
+  }
   return `<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
