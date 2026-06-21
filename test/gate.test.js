@@ -46,3 +46,9 @@ test('noGate → pass true but unverified, blockers still computed', () => {
 test('HIGH_RISK is the four categories', () => {
   assert.deepStrictEqual([...HIGH_RISK].sort(), ['criterion','cutoff','dose','percent']);
 });
+
+test('evaluateGate without opts still gates (CONTRADICTED blocks, not unverified)', () => {
+  const r = evaluateGate([ledger('a', [claim({ classification: 'CONTRADICTED' })])]);
+  assert.strictEqual(r.pass, false);
+  assert.strictEqual(r.unverified, false);
+});
