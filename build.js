@@ -3,9 +3,11 @@ const fs = require('fs');
 const path = require('path');
 const { escapeHtml: esc, parseArticle } = require('./lib/md-render');
 const { applySection } = require('./lib/apply-index');
+const { assertSeriesShape } = require('./lib/series-schema');
 
 function loadSeries(jsonPath){
   const s = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+  assertSeriesShape(s);
   return s; // srcDir/outDir 已是絕對路徑
 }
 
