@@ -49,7 +49,8 @@ const PLAN_SCHEMA = {
   },
 };
 
-const { srcPaths, topic, n, prefix } = args;
+const _args = typeof args === 'string' ? JSON.parse(args) : (args || {});
+const { srcPaths, topic, n, prefix } = _args;
 const srcList = srcPaths.join(', ');
 
 phase('Plan');
