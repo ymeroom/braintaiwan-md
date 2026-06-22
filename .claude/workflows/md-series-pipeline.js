@@ -80,7 +80,8 @@ const ledgers = (await parallel(drafted.map(d => () =>
     `你是嚴格的查核者。用 Read 工具重讀來源 PDF（${srcList}）逐條查核下面這篇草稿。` +
     `把每一個可查核斷言（數字、劑量、百分比、切點、診斷準則、藥名、流病數據）抽成一條 claim：` +
     `classification 標 SUPPORTED（源文支持，附 sourceQuote）／NOT_FOUND（源文找不到）／CONTRADICTED（與源文矛盾，附 sourceQuote）；` +
-    `claimType 從列舉選；value 填斷言中的數值或關鍵詞。寧可多抽，不要漏掉任何數字。草稿全文：\n\n${d.content}`,
+    `claimType 從列舉選——但**純背景生理／教科書常識**（如 IgG 半衰期、補體機轉等非源文特定的一般醫學知識）一律歸 other，不要歸 dose/percent/cutoff/criterion；高風險類別（dose/percent/cutoff/criterion）只保留給源文特定的臨床數值、劑量、切點與診斷準則；` +
+    `value 填斷言中的數值或關鍵詞。寧可多抽，不要漏掉任何數字。草稿全文：\n\n${d.content}`,
     { label: `verify:${d.out}`, phase: 'Verify', schema: LEDGER_SCHEMA }
   ).then(lg => ({ ...lg, article: d.out }))
 ))).filter(Boolean);
