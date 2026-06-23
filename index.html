@@ -141,6 +141,27 @@ details[open] > .topic-head .chev { transform: rotate(90deg); }
 .guideline-note strong { color: #0f2142; }
 .guideline-note a { color: #1565c0; }
 
+.subscribe-note {
+  background: white; border: 1px solid #c8d7ee; border-left: 4px solid #1565c0;
+  border-radius: 0 8px 8px 0; padding: 18px 20px; margin-bottom: 26px;
+  display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 18px; align-items: center;
+  box-shadow: 0 2px 8px rgba(21,101,192,0.07);
+}
+.subscribe-note .eyebrow {
+  font-size: 10pt; font-weight: 800; letter-spacing: 1.5px;
+  text-transform: uppercase; color: #1565c0; margin-bottom: 6px;
+}
+.subscribe-note strong { display: block; font-size: 16pt; color: #0f2142; margin-bottom: 5px; }
+.subscribe-note span { display: block; font-size: 12.5pt; color: #546e7a; line-height: 1.6; }
+.subscribe-note a {
+  display: inline-flex; align-items: center; justify-content: center;
+  background: #1565c0; color: white; text-decoration: none;
+  border-radius: 7px; padding: 11px 18px; font-size: 11pt; font-weight: 800;
+  white-space: nowrap;
+}
+.subscribe-note a:hover { background: #0f4f9f; }
+@media(max-width:640px){ .subscribe-note{grid-template-columns:1fr}.subscribe-note a{width:100%} }
+
 footer {
   background: #0f2142; color: rgba(255,255,255,0.45);
   text-align: center; padding: 20px; font-size: 11pt; margin-top: 40px;
@@ -160,11 +181,21 @@ footer a { color: rgba(255,255,255,0.55); text-decoration: none; }
       <a href="/" class="nav-link active">臨床 MD</a>
       <a href="https://er.braintaiwan.com" class="nav-link">急重症 ER</a>
       <a href="https://media.braintaiwan.com" class="nav-link">衛教 Media</a>
+      <a href="https://media.braintaiwan.com/subscribe.html" class="nav-link">訂閱</a>
     </nav>
   </div>
 </header>
 
 <main>
+
+  <section class="subscribe-note" aria-label="訂閱 BrainTaiwan 臨床導讀更新">
+    <div>
+      <div class="eyebrow">Clinical Updates</div>
+      <strong>訂閱臨床導讀更新</strong>
+      <span>收到 BrainTaiwan MD 指引導讀、神經科工具與 ER 更新通知。訂閱頁可選「醫療人員」與感興趣主題。</span>
+    </div>
+    <a href="https://media.braintaiwan.com/subscribe.html">訂閱更新</a>
+  </section>
 
   <!-- 腦中風 -->
   <details class="topic" open>
@@ -2335,7 +2366,7 @@ footer a { color: rgba(255,255,255,0.55); text-decoration: none; }
 </main>
 
 <footer>
-  © 2026 BrainTaiwan MD · 整理：<a href="https://braintaiwan.com/cv.html">施懿恩 醫師</a> · <a href="https://braintaiwan.com">braintaiwan.com</a> · <a href="https://www.facebook.com/FBbraintaiwan" target="_blank" rel="noopener">Facebook</a>
+  © 2026 BrainTaiwan MD · 整理：<a href="https://braintaiwan.com/cv.html">施懿恩 醫師</a> · <a href="https://braintaiwan.com">braintaiwan.com</a> · <a href="https://media.braintaiwan.com/subscribe.html">訂閱臨床導讀更新</a> · <a href="https://www.facebook.com/FBbraintaiwan" target="_blank" rel="noopener">Facebook</a>
 </footer>
 
 </body>
