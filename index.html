@@ -3,21 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BrainTaiwan MD — 臨床神經學資源</title>
+<title>BrainTaiwan MD — 神經科指引導讀與臨床整理</title>
 <meta name="description" content="BrainTaiwan MD｜給醫療專業人員的臨床神經學資源：中風決策、癲癇、顏面神經麻痺、神經痛（PHN）、周邊神經（CIDP）、罕病（DMD、Fabry）的指引導讀與決策圖、睡眠障礙（猝睡症、不寧腿）、神經肌肉接合處（重症肌無力）。">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='88'%3E🧠%3C/text%3E%3C/svg%3E">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="BrainTaiwan">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:url" content="https://md.braintaiwan.com">
-<meta property="og:title" content="BrainTaiwan MD — 臨床神經學資源">
+<meta property="og:title" content="BrainTaiwan MD — 神經科指引導讀與臨床整理">
 <meta property="og:description" content="給醫療專業人員的臨床神經學資源：中風決策、癲癇、罕病的指引導讀與決策圖。">
 <meta property="og:image" content="https://md.braintaiwan.com/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://md.braintaiwan.com/og.png">
-<meta name="twitter:title" content="BrainTaiwan MD — 臨床神經學資源">
+<meta name="twitter:title" content="BrainTaiwan MD — 神經科指引導讀與臨床整理">
 <meta name="twitter:description" content="中風、癲癇、罕病的指引導讀與臨床決策資源">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -40,7 +40,7 @@ header {
   letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;
 }
 .site-title { font-size: 30pt; font-weight: 700; line-height: 1.2; }
-.site-subtitle { font-size: 13pt; font-weight: 300; opacity: 0.78; margin-top: 6px; }
+.site-subtitle { font-size: 13pt; font-weight: 300; opacity: 0.78; margin-top: 6px; max-width: 720px; }
 .header-nav { display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap; }
 .nav-link {
   color: rgba(255,255,255,0.65); text-decoration: none; font-size: 12pt;
@@ -162,6 +162,58 @@ details[open] > .topic-head .chev { transform: rotate(90deg); }
 .subscribe-note a:hover { background: #0f4f9f; }
 @media(max-width:640px){ .subscribe-note{grid-template-columns:1fr}.subscribe-note a{width:100%} }
 
+.learning-path {
+  background: white; border: 1px solid #d8e3f3; border-radius: 10px;
+  padding: 24px; margin-bottom: 28px; box-shadow: 0 2px 8px rgba(21,101,192,0.06);
+}
+.path-head {
+  display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 18px;
+  align-items: end; margin-bottom: 18px; padding-bottom: 16px; border-bottom: 1px solid #eef3f8;
+}
+.path-kicker {
+  font-size: 10pt; font-weight: 800; letter-spacing: 1.5px;
+  text-transform: uppercase; color: #1565c0; margin-bottom: 6px;
+}
+.path-head h2 { font-size: 19pt; line-height: 1.35; color: #0f2142; margin-bottom: 6px; }
+.path-head p { font-size: 12.5pt; color: #546e7a; line-height: 1.65; }
+.path-meta {
+  color: #1565c0; font-size: 11pt; font-weight: 800; white-space: nowrap;
+}
+.path-grid {
+  display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px;
+}
+.path-card {
+  border: 1px solid #e1e9f4; border-radius: 8px; padding: 18px;
+  background: #fbfdff; min-height: 100%; display: flex; flex-direction: column;
+}
+.path-level {
+  font-size: 10pt; color: #1565c0; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;
+}
+.path-card h3 { font-size: 15pt; color: #0f2142; line-height: 1.35; margin-bottom: 8px; }
+.path-card p { font-size: 12pt; color: #546e7a; line-height: 1.65; margin-bottom: 14px; flex: 1; }
+.path-card a { color: #1565c0; text-decoration: none; font-size: 11.5pt; font-weight: 800; }
+.path-card a:hover { text-decoration: underline; }
+.path-links { display: grid; gap: 8px; }
+.path-links a { display: inline-flex; align-items: center; min-height: 28px; }
+.path-note {
+  margin-top: 16px; padding-top: 16px; border-top: 1px solid #eef3f8;
+  color: #546e7a; font-size: 12pt; line-height: 1.7;
+}
+.path-note strong { color: #0f2142; }
+@media(max-width:760px){
+  .path-head{grid-template-columns:1fr}
+  .path-grid{grid-template-columns:1fr}
+  .path-meta{white-space:normal}
+}
+@media(max-width:640px){
+  .topic-head{align-items:flex-start;flex-wrap:wrap}
+  .topic-label{min-width:0;max-width:calc(100% - 44px)}
+  .topic-count{width:100%;margin-left:36px;white-space:normal;line-height:1.5}
+  .topic-body > div[style*="display:flex"]{align-items:flex-start!important;flex-wrap:wrap}
+  .topic-body > div[style*="display:flex"] > span[style*="white-space:nowrap"]{white-space:normal!important}
+}
+
 footer {
   background: #0f2142; color: rgba(255,255,255,0.45);
   text-align: center; padding: 20px; font-size: 11pt; margin-top: 40px;
@@ -174,8 +226,8 @@ footer a { color: rgba(255,255,255,0.55); text-decoration: none; }
 <header>
   <div class="header-inner">
     <div class="site-name">BrainTaiwan · MD</div>
-    <div class="site-title">臨床神經學資源中心</div>
-    <div class="site-subtitle">Clinical Neurology Resources for Medical Professionals</div>
+    <div class="site-title">神經科指引導讀與臨床整理</div>
+    <div class="site-subtitle">給醫療專業人員的臨床神經學學習路徑、決策工具與主題更新</div>
     <nav class="header-nav">
       <a href="https://braintaiwan.com" class="nav-link">首頁</a>
       <a href="/" class="nav-link active">臨床 MD</a>
@@ -197,8 +249,56 @@ footer a { color: rgba(255,255,255,0.55); text-decoration: none; }
     <a href="https://media.braintaiwan.com/subscribe.html">訂閱更新</a>
   </section>
 
+  <section class="learning-path" aria-labelledby="learning-path-title">
+    <div class="path-head">
+      <div>
+        <div class="path-kicker">Suggested Learning Path</div>
+        <h2 id="learning-path-title">給醫療專業人員的神經科指引導讀與臨床整理</h2>
+        <p>先用工具建立臨床決策框架，再進入指引導讀，最後依主題追蹤更新。每個系列都可從入門重點、臨床判讀、工具圖表三個層次閱讀。</p>
+      </div>
+      <div class="path-meta">入門 → 臨床重點 → 工具 / 圖表</div>
+    </div>
+
+    <div class="path-grid">
+      <div class="path-card">
+        <div class="path-level">Start Here</div>
+        <h3>先建立急性決策框架</h3>
+        <p>適合第一次進站或需要快速複習流程的人。先從中風決策矩陣與取栓後照護開始，建立時間窗、影像、血壓與抗栓的共同語言。</p>
+        <div class="path-links">
+          <a href="ais_infographic.html">治療決策矩陣</a>
+          <a href="post_evt_infographic.html">Post-EVT 醫療處置</a>
+        </div>
+      </div>
+
+      <div class="path-card">
+        <div class="path-level">Guideline Reading</div>
+        <h3>照系列順序讀指引</h3>
+        <p>每個主題以系列導讀拆解實務問題。建議從腦中風、癲癇、偏頭痛與失智診斷開始，再依門診或病房需求延伸到罕病與周邊神經。</p>
+        <div class="path-links">
+          <a href="ais01.html">急性缺血性中風導讀 ①</a>
+          <a href="se01.html">癲癇導讀 ①</a>
+          <a href="mig01.html">偏頭痛預防導讀 ①</a>
+          <a href="adx01.html">失智症診斷導讀 ①</a>
+        </div>
+      </div>
+
+      <div class="path-card">
+        <div class="path-level">Clinical Updates</div>
+        <h3>依照臨床問題回來查</h3>
+        <p>已經熟悉基礎流程後，可把 MD 當成臨床參考入口。用主題分類找到藥物選擇、鑑別診斷、追蹤策略與病人溝通重點。</p>
+        <div class="path-links">
+          <a href="#rare-disease">罕病系列</a>
+          <a href="#dementia-diagnosis">失智症診斷</a>
+          <a href="#sleep-disorders">睡眠障礙</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="path-note"><strong>定位：</strong>BrainTaiwan MD 是給醫療專業人員的神經科指引導讀與臨床整理；急診現場工具請使用 ER，病人衛教與一般讀者文章請使用 Media。</div>
+  </section>
+
   <!-- 腦中風 -->
-  <details class="topic" open>
+  <details class="topic" id="stroke" open>
     <summary class="topic-head">
       <span class="chev">▸</span>
       <span class="topic-dot d-blue"></span>
@@ -639,7 +739,7 @@ footer a { color: rgba(255,255,255,0.55); text-decoration: none; }
   </details>
 
   <!-- 罕病 -->
-  <details class="topic">
+  <details class="topic" id="rare-disease">
     <summary class="topic-head">
       <span class="chev">▸</span>
       <span class="topic-dot d-amber"></span>
@@ -1593,7 +1693,7 @@ footer a { color: rgba(255,255,255,0.55); text-decoration: none; }
   </details>
 
   <!-- 失智症診斷 -->
-  <details class="topic">
+  <details class="topic" id="dementia-diagnosis">
     <summary class="topic-head">
       <span class="chev">▸</span>
       <span class="topic-dot d-indigo"></span>
@@ -2270,7 +2370,7 @@ footer a { color: rgba(255,255,255,0.55); text-decoration: none; }
   <!-- SERIES:cidp END -->
 
   <!-- SERIES:narc START -->
-  <details class="topic">
+  <details class="topic" id="sleep-disorders">
     <summary class="topic-head">
       <span class="chev">▸</span>
       <span class="topic-dot d-blue"></span>
