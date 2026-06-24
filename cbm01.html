@@ -60,6 +60,15 @@ ol,ul{padding-left:1.5em;margin:.6em 0}
 li{margin:.3em 0;font-size:14pt;color:#263238}
 footer{background:#0f2142;color:rgba(255,255,255,.45);text-align:center;padding:20px;font-size:10.5pt;margin-top:40px}
 footer a{color:rgba(255,255,255,.55);text-decoration:none}
+.md-foot{margin:26px 0 0}
+.md-foot-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.md-foot-item{background:#fff;border:1px solid #e0e8f5;border-left:4px solid #1565c0;border-radius:10px;padding:13px 16px}
+.md-foot-k{font-size:9.5pt;font-weight:800;letter-spacing:.4px;color:#1565c0;margin-bottom:5px}
+.md-foot-v{font-size:10.5pt;line-height:1.55;color:#46506a}
+.md-foot-cta{display:inline-flex;align-items:center;gap:6px;margin-top:16px;padding:9px 18px;border-radius:22px;background:#0f2142;color:#fff;text-decoration:none;font-size:10.5pt;font-weight:700}
+.md-foot-cta:hover{background:#1a3975}
+.md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
+@media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -201,6 +210,17 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <p><em>本文為血液生物標記於失智症診斷應用之臨床導讀整理，供醫療專業人員與關心此議題的讀者參考，不取代原始指引、產品仿單或個別臨床判斷。台灣各項檢測之可近性、法規身分與自費規範請依當地醫療體系與主管機關公告為準。</em></p>
 
   </article>
+<!-- bt-md-footer -->
+<section class="md-foot" aria-label="版本與訂閱">
+  <div class="md-foot-grid">
+    <div class="md-foot-item"><div class="md-foot-k">指引版本／來源</div><div class="md-foot-v">失智症血液生物標記之臨床導讀（批判性整理）</div></div>
+    <div class="md-foot-item"><div class="md-foot-k">最後更新</div><div class="md-foot-v">2026.06</div></div>
+    <div class="md-foot-item"><div class="md-foot-k">適用對象</div><div class="md-foot-v">醫療人員與關心失智檢測的讀者</div></div>
+  </div>
+  <a class="md-foot-cta" href="https://media.braintaiwan.com/subscribe.html">訂閱臨床導讀更新 →</a>
+  <p class="md-foot-note">本導讀為教育用途，不取代原始指引全文、最新仿單或個別臨床判斷。</p>
+</section>
+<!-- /bt-md-footer -->
 </main>
 <footer>© 2026 BrainTaiwan MD · <a href="https://braintaiwan.com">braintaiwan.com</a></footer>
 </body>

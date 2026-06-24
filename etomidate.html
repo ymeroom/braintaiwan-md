@@ -45,6 +45,15 @@ li{margin:.3em 0;font-size:14pt;color:#263238}
 .refs li{font-size:11.5pt;color:#546e7a;line-height:1.7}
 footer{background:#0f2142;color:rgba(255,255,255,.45);text-align:center;padding:20px;font-size:10.5pt;margin-top:40px}
 footer a{color:rgba(255,255,255,.55);text-decoration:none}
+.md-foot{margin:26px 0 0}
+.md-foot-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.md-foot-item{background:#fff;border:1px solid #e0e8f5;border-left:4px solid #1565c0;border-radius:10px;padding:13px 16px}
+.md-foot-k{font-size:9.5pt;font-weight:800;letter-spacing:.4px;color:#1565c0;margin-bottom:5px}
+.md-foot-v{font-size:10.5pt;line-height:1.55;color:#46506a}
+.md-foot-cta{display:inline-flex;align-items:center;gap:6px;margin-top:16px;padding:9px 18px;border-radius:22px;background:#0f2142;color:#fff;text-decoration:none;font-size:10.5pt;font-weight:700}
+.md-foot-cta:hover{background:#1a3975}
+.md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
+@media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -182,6 +191,17 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <p><em>本文為神經毒理臨床整理，供醫療專業人員教學參考，不取代個別臨床判斷。劑量與處置請依最新藥典與機構指引核對。緊急情況請循當地急救與毒物諮詢流程。</em></p>
 
   </article>
+<!-- bt-md-footer -->
+<section class="md-foot" aria-label="版本與訂閱">
+  <div class="md-foot-grid">
+    <div class="md-foot-item"><div class="md-foot-k">指引版本／來源</div><div class="md-foot-v">依託咪酯中毒之神經毒理臨床整理</div></div>
+    <div class="md-foot-item"><div class="md-foot-k">最後更新</div><div class="md-foot-v">2026.06</div></div>
+    <div class="md-foot-item"><div class="md-foot-k">適用對象</div><div class="md-foot-v">急診、毒物與神經科醫療人員</div></div>
+  </div>
+  <a class="md-foot-cta" href="https://media.braintaiwan.com/subscribe.html">訂閱臨床導讀更新 →</a>
+  <p class="md-foot-note">本導讀為教育用途，不取代原始指引全文、最新仿單或個別臨床判斷。</p>
+</section>
+<!-- /bt-md-footer -->
 </main>
 <footer>© 2026 BrainTaiwan MD · 整理：<a href="https://braintaiwan.com/cv.html">施懿恩 醫師</a> · <a href="https://braintaiwan.com">braintaiwan.com</a></footer>
 </body>
