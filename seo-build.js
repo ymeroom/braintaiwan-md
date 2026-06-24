@@ -69,6 +69,34 @@ for (const rel of walk(root)) {
     html = html.replace(/<\/head>/i, `${block}\n</head>`);
   }
 
+  // 4) fill remaining share/SEO meta (og:type, og:title, description, og:description, twitter:card)
+  const esc = s => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  const titleM = html.match(/<title>([^<]+)<\/title>/i);
+  const titleTxt = titleM ? titleM[1].trim() : domain;       // already HTML-escaped text
+  const isArticle = /<article[\s>]/i.test(html);
+
+  // description: keep existing (already attribute-encoded), else derive from .tool-sub / first <p> / title
+  const descM = html.match(/name=["']description["']\s+content=["']([^"']*)["']/i);
+  let descSafe;
+  if (descM) {
+    descSafe = descM[1];
+  } else {
+    const sub = html.match(/class=["']tool-sub["'][^>]*>([^<]+)</i);
+    const p = html.match(/<p[^>]*>([\s\S]*?)<\/p>/i);
+    let raw = sub ? sub[1] : (p ? p[1].replace(/<[^>]+>/g, '') : titleTxt);
+    raw = raw.replace(/\s+/g, ' ').trim().slice(0, 150);
+    descSafe = esc(raw);
+    html = html.replace(/<\/head>/i, `<meta name="description" content="${descSafe}">\n</head>`);
+  }
+  if (!/property=["']og:type["']/i.test(html))
+    html = html.replace(/<\/head>/i, `<meta property="og:type" content="${isArticle ? 'article' : 'website'}">\n</head>`);
+  if (!/property=["']og:title["']/i.test(html))
+    html = html.replace(/<\/head>/i, `<meta property="og:title" content="${titleTxt}">\n</head>`);
+  if (!/property=["']og:description["']/i.test(html))
+    html = html.replace(/<\/head>/i, `<meta property="og:description" content="${descSafe}">\n</head>`);
+  if (/property=["']og:image["']/i.test(html) && !/name=["']twitter:card["']/i.test(html))
+    html = html.replace(/<\/head>/i, `<meta name="twitter:card" content="summary_large_image">\n</head>`);
+
   if (html !== before) { fs.writeFileSync(file, html, 'utf8'); enhanced++; }
   pages.push(url);
 }
