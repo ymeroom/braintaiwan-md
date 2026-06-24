@@ -70,6 +70,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 .md-foot-cta:hover{background:#1a3975}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/cidp10.html">
 </head>
@@ -97,12 +104,12 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <hr>
 <h2>一、FcRn 抑制劑：把致病抗體「丟進垃圾桶」</h2>
 <p>身體有個叫<strong>新生兒 Fc 受體（FcRn）</strong>的回收機制，會把 IgG 抗體不斷回收再利用、延長它的壽命。FcRn 抑制劑的概念很聰明：<strong>擋住這個回收，讓 IgG（包括致病自體抗體）加速被分解、整體血中 IgG 濃度下降。</strong></p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>設計</th><th>關鍵結果</th></tr></thead>
 <tbody>
 <tr><td>Efgartigimod（ADHERE 試驗）</td><td>人源化 IgG1 Fc 片段，每週皮下</td><td>A 期 66% 有臨床改善；B 期相較安慰劑降低復發風險 61%</td></tr>
 <tr><td>Rozanolixizumab</td><td>高親和力抗 FcRn 單抗，每週皮下</td><td>第 2a 期為陰性——iRODS 無顯著差異，儘管 IgG 降 &gt;80%</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>Efgartigimod 的 ADHERE 試驗成功了，但有兩個耐人尋味的細節提醒我們別過度樂觀：開放標籤期就有約 <strong>32% 原本打免疫球蛋白的人因惡化退出</strong>；另有報告指出，9 位從 IVIg 轉換的穩定病人中，<strong>4 位在轉換後 2–9 天內快速惡化</strong>。這暗示了一件深刻的事——<strong>有些 CIDP 病人的病，可能不是由 IgG 自體抗體驅動的</strong>，所以單純降 IgG 對他們沒用，甚至更糟。Rozanolixizumab 的陰性結果（IgG 都降了八成，臨床卻沒進步）也指向同一個訊息。</p>
 <hr>
 <h2>二、補體抑制劑：擋住「收尾的那一刀」</h2>
@@ -126,14 +133,14 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <p>但 ADHERE 與 rozanolixizumab 那些不一致的結果，也誠實地揭露了 CIDP 最根本的難題：<strong>它是一個異質的光譜，不同病人由不同機轉驅動，而我們現在還沒有生物標記能事先分辨誰是誰。</strong>有人靠 IgG 抗體驅動（適合 FcRn），有人靠補體（適合 riliprubart），有人靠別的。這也讓整個系列繞回了起點——CIDP 至今仍是個臨床診斷，找到能標出個別病人致病機轉的可靠生物標記，會是讓這些精準武器真正用對人的那把鑰匙。</p>
 <hr>
 <h2>臨床要點摘要</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>類別</th><th>代表藥</th><th>機轉</th><th>現況</th></tr></thead>
 <tbody>
 <tr><td>FcRn 抑制劑</td><td>efgartigimod</td><td>加速 IgG 分解、降致病抗體</td><td>ADHERE 陽性；rozanolixizumab 陰性；部分病人非 IgG 驅動</td></tr>
 <tr><td>補體抑制劑</td><td>riliprubart / eculizumab</td><td>擋補體傷害（C1s / C5）</td><td>riliprubart 第 2 期佳、NfL↓35%，第 3 期進行中</td></tr>
 <tr><td>CAR-T</td><td>抗 BCMA / 抗 CD19</td><td>清除 B 細胞/漿細胞</td><td>個案層級，難治與結性神經病值得研究</td></tr>
 <tr><td>共同課題</td><td>—</td><td>—</td><td>CIDP 異質，缺生物標記預測機轉 → 難「依機轉選藥」</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

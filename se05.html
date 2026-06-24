@@ -75,6 +75,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 .md-foot-cta:hover{background:#1a3975}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/se05.html">
 </head>
@@ -168,14 +175,14 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 
 <p>麻醉藥物的劑量調整以 EEG 為依據。目前主流共識的<strong>治療目標依嚴重程度遞增</strong>：</p>
 
-<table>
+<div class="bt-tablewrap"><table>
   <thead><tr><th>EEG 目標</th><th>定義</th><th>臨床情境</th></tr></thead>
   <tbody>
     <tr><td>發作控制（seizure suppression）</td><td>EEG 上無癲癇樣放電</td><td>多數 RSE 的初步目標</td></tr>
     <tr><td>爆發抑制（burst suppression）</td><td>每分鐘爆發次數 &lt; 6，抑制期 &gt; 50%</td><td>難治性 SE 未能達發作控制時</td></tr>
     <tr><td>完全平坦（EEG suppression）</td><td>近乎等電位</td><td>極重度 RSE；副作用最大</td></tr>
   </tbody>
-</table>
+</table></div>
 
 <blockquote class="warn">
 <p>⚠️ 「壓越深越好」並非正確策略。完全平坦的 EEG 並不代表更好的預後，且相關的低血壓、感染、長期臥床風險更高。多數指引建議以「發作控制」為初始目標，再依臨床反應調整。</p>
@@ -208,7 +215,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 
 <h3>NORSE 的病因分佈</h3>
 
-<table>
+<div class="bt-tablewrap"><table>
   <thead><tr><th>病因類別</th><th>佔比</th><th>主要代表</th></tr></thead>
   <tbody>
     <tr><td>自體免疫性腦炎</td><td>~30–40%</td><td>抗 NMDAR、LGI1、CASPR2、AMPAR、GABA-B 等抗體</td></tr>
@@ -216,7 +223,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
     <tr><td>感染性腦炎（找到確定病因）</td><td>~15%</td><td>HSV、HHV-6、其他病毒</td></tr>
     <tr><td>不明原因（Cryptogenic）</td><td>~40–50%</td><td>在初期評估中找不到病因</td></tr>
   </tbody>
-</table>
+</table></div>
 
 <blockquote class="red">
 <p>🔴 <strong>自體免疫性 SE 的重要性</strong>：約 40% 的 NORSE 最終確認為自體免疫性病因，其中許多在 CSF 自體免疫抗體結果回報前已死亡或發生不可逆損傷。<br>→ 考慮<strong>盡早啟動經驗性免疫治療</strong>，不應等待抗體確認。</p>

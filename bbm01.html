@@ -69,6 +69,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 .md-foot-cta:hover{background:#1a3975}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/bbm01.html">
 </head>
@@ -96,12 +103,12 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <p>近幾年血液生物標記快速興起，因為相對 PET 與 CSF：<strong>成本更低、可近性更高、病人接受度更好</strong>。但問題是：市售 BBM 檢測的診斷表現差異很大，臨床整合也不一致。2022 年 Alzheimer's Association 曾發布第一份 BBM 適當使用建議，但<strong>始終缺乏一份正式、依循 GRADE 方法的臨床指引（Clinical Practice Guideline）</strong>——這正是本指引要填補的空缺。</p>
 <h2>二、兩個核心臨床問題</h2>
 <p>指引小組（11 位成員：臨床神經科醫師、老年醫學科醫師、護理師、醫師助理與方法學專家）鎖定兩個問題：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>問題</th><th>定義</th></tr></thead>
 <tbody>
 <tr><td><strong>初篩測試（triaging test）</strong></td><td>陰性結果可高機率排除阿茲海默症病理；陽性結果仍需用 CSF 或 amyloid PET 確認</td></tr>
 <tr><td><strong>確診測試（confirmatory test）</strong></td><td>陰性結果排除病理，陽性結果即可高機率確診——<strong>可直接取代 CSF 或 amyloid PET</strong></td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>這個區分非常關鍵：<strong>不是所有 BBM 檢測都夠準到能取代 PET/CSF</strong>，有些只夠格當「先篩一輪、陽性再確認」的初篩工具。</p>
 <h2>三、這份指引只給「專科記憶門診」用</h2>
 <p>指引明確界定目標對象：<strong>至少 25% 臨床工作時間用於照護認知障礙/失智症病人的醫療提供者</strong>（通常是神經科、精神科或老年醫學科，但不限於這些科別）。基層醫療目前<strong>不在本次指引範圍內</strong>，留待未來版本處理。</p>
@@ -119,7 +126,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <p>指引列出明確的警示情境，提醒臨床人員審慎評估：</p>
 <p><strong>共享決策後判斷檢測效益不大</strong>：若病人與醫師討論後，認為知道是否有阿茲海默症病理對病人沒有實際幫助（例如不影響治療決策、病人本身不想知道）。</p>
 <p><strong>需特別審慎或謹慎解讀的情境</strong>：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>情境</th><th>原因</th></tr></thead>
 <tbody>
 <tr><td>有明顯可逆/暫時性病因可解釋認知症狀</td><td>應先處理可逆因子，而非急著做 BBM</td></tr>
@@ -127,13 +134,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>曾有影響腦部但研究不足的病史</td><td>例如腦囊蟲症、HIV、化療/放療病史、慢性創傷性腦病變（CTE）</td></tr>
 <tr><td>有可能影響 BBM 數值的內科疾病</td><td>例如急性腦損傷、嚴重慢性腎臟病、肌萎縮性側索硬化症（ALS）</td></tr>
 <tr><td>使用可能影響 BBM 數值的藥物</td><td>例如腦啡肽酶抑制劑（neprilysin inhibitors）、破壞血腦屏障的藥物</td></tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote>
 <p>這份清單的精神很清楚：<strong>BBM 不是「驗一下就準」的萬用工具，檢測前的臨床判斷，跟檢測本身的準確度同等重要</strong>。</p>
 </blockquote>
 <hr>
 <h2>臨床要點摘要</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
 <tr><td>兩個核心問題</td><td>初篩測試（陰性排除，陽性需確認）vs 確診測試（可直接取代 CSF/PET）</td></tr>
@@ -141,7 +148,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>研究族群</td><td>已完成完整評估、有客觀認知缺損（MCI/失智）者，不含主觀認知衰退或認知正常者</td></tr>
 <tr><td>研究分析物</td><td>p-tau217、%p-tau217、p-tau181、p-tau231、Aβ42/40</td></tr>
 <tr><td>不適合做BBM</td><td>共享決策判斷效益低；可逆病因、預期壽命有限、特殊病史、特定內科疾病、特定藥物使用中</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

@@ -70,6 +70,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 .md-foot-cta:hover{background:#1a3975}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/rmt01.html">
 </head>
@@ -98,12 +105,12 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <p>人體的生理時鐘住在下視丘的<strong>視交叉上核（<code>SCN</code>，suprachiasmatic nucleus）</strong>。<code>SCN</code> 接收視網膜傳來的光線訊號，再透過交感神經路徑控制松果體分泌褪黑激素：天黑、光線減少時分泌上升，清晨光照時被壓制。所以褪黑激素本質上是一個<strong>夜晚的化學標記</strong>，它的高峰標示了「生理上的夜間」。</p>
 <p>關鍵在於褪黑激素回頭作用在 <code>SCN</code> 上的方式。<code>SCN</code> 在傍晚到夜間其實會送出一股<strong>促醒訊號（alerting signal）</strong>，這也是為什麼睡前兩三個小時常是一天最清醒的「清醒維持區（wake-maintenance zone）」。褪黑激素的作用，就是去<strong>壓低這股促醒訊號</strong>，等於把「保持清醒」的力道鬆掉，讓睡意得以浮現。</p>
 <p>這件事透過兩個高親和力的 G 蛋白偶聯受體完成：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>受體</th><th>主要角色</th><th>與睡眠的關係</th></tr></thead>
 <tbody>
 <tr><td><strong><code>MT1</code></strong>（MTNR1A）</td><td>抑制 <code>SCN</code> 神經元放電、壓低促醒訊號</td><td>偏向<strong>促進入睡</strong>（誘導睡意）</td></tr>
 <tr><td><strong><code>MT2</code></strong>（MTNR1B）</td><td>介導生理時鐘的<strong>相位位移（phase shift）</strong></td><td>偏向<strong>調節晝夜節律</strong>（校時）</td></tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote class="commentary">
 <p>🩺 <strong>臨床重點</strong>：常被提到的「<code>MT3</code>」其實不是真正的褪黑激素受體，而是一個酵素（quinone reductase 2，醌還原酶），與睡眠調節無關。一支「乾淨」的助眠用褪黑激素藥物，理想上應該只打 <code>MT1</code>／<code>MT2</code>，不要去碰 <code>MT3</code> 與其他系統——這正是 Ramelteon 設計時的訴求。</p>
 </blockquote>
@@ -134,13 +141,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <p>接著要回答「該用幾毫克」。Erman 等人在慢性原發性失眠病人身上做隨機、雙盲、安慰劑對照的<strong>劑量反應研究</strong>，測試 4、8、16、32 mg 等劑量，以多項睡眠檢查（<code>PSG</code>）測 <code>LPS</code>。重點發現是：<strong>各劑量都能縮短 <code>LPS</code>，但加大到 8 mg 以上並沒有換來一致、額外的好處</strong>。這直接決定了後來上市的標準劑量——<strong>8 mg</strong>。</p>
 <h3>3. 樞紐療效——Zammit 2007（pivotal RCT）</h3>
 <p>這是「Ramelteon 被建立在其上」最具代表性的一篇樞紐試驗。設計為<strong>隨機、多中心、雙盲、安慰劑對照</strong>，納入 <strong>405 位</strong>慢性原發性失眠的成人，給予每晚 Ramelteon <strong>8 mg 或 16 mg</strong>，療程 5 週，以 <code>PSG</code> 測量。<strong>主要指標是第 1 週的 <code>LPS</code></strong>：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>組別</th><th>第 1 週 <code>LPS</code>（入睡潛伏期）</th></tr></thead>
 <tbody>
 <tr><td>安慰劑</td><td>47.9 分鐘</td></tr>
 <tr><td>Ramelteon 8 mg</td><td><strong>32.2 分鐘</strong></td></tr>
 <tr><td>Ramelteon 16 mg</td><td><strong>28.9 分鐘</strong></td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>兩個劑量都顯著優於安慰劑，效果落在<strong>縮短約 15～19 分鐘</strong>的量級；停藥後<strong>沒有觀察到反彈性失眠（rebound insomnia）或戒斷症狀</strong>。要注意的是，<strong>16 mg 相對 8 mg 並沒有換來臨床上有意義的額外效益</strong>，呼應了 Erman 2006 的劑量結論。</p>
 <h3>4. 長期安全——Mayer 2009（6 個月）</h3>
 <p>最後要證明「長期吃也不會上癮」。Mayer 等人做了一個橫跨美、歐、俄、澳數十個中心、納入 <strong>451 位</strong>慢性原發性失眠成人的<strong>六個月</strong>隨機、雙盲、安慰劑對照試驗，每晚 8 mg。結果：療效在第 1 週到第 6 個月<strong>持續存在</strong>、無明顯隔日殘餘效應，停藥後<strong>同樣未見反彈性失眠或戒斷</strong>。這篇是 Ramelteon「可長期、非管制」定位最直接的支撐。</p>
@@ -158,18 +165,18 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <hr>
 <h2>六、臨床上把它放在哪裡</h2>
 <p>回到開藥的現場，Ramelteon 最合適的位置是：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>適合考慮</th><th>理由</th></tr></thead>
 <tbody>
 <tr><td><strong>長者</strong></td><td>不走 GABA，避開苯二氮平類的跌倒、認知混亂、隔日宿醉風險</td></tr>
 <tr><td><strong>有物質使用／依賴顧慮者</strong></td><td>非管制藥、無依賴性，安全邊際高</td></tr>
 <tr><td><strong>以入睡困難為主的失眠</strong></td><td>試驗證據集中在縮短 <code>LPS</code></td></tr>
 <tr><td><strong>需要較長期助眠者</strong></td><td>六個月資料支持長期使用且無反彈</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>而它不適合的場景同樣清楚：以<strong>睡眠維持困難</strong>為主、需要強效快速鎮靜、或正在使用 <code>fluvoxamine</code> 的病人。和整個失眠系列一致的底色是——<strong>藥只是替 CBT-I 爭取時間的橋樑</strong>，Ramelteon 也不例外。</p>
 <hr>
 <h2>臨床要點摘要</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
 <tr><td>機轉</td><td><code>SCN</code> 促醒訊號被褪黑激素壓低 → <code>MT1</code> 促入睡、<code>MT2</code> 校時</td></tr>
@@ -178,7 +185,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>證據鏈</td><td>Roth 2005 概念 → Erman 2006 選 8 mg → Zammit 2007 樞紐 → Mayer 2009 六個月</td></tr>
 <tr><td>樞紐療效</td><td>n=405，第 1 週 <code>LPS</code> 8 mg 32.2 vs 安慰劑 47.9 分；無反彈／戒斷</td></tr>
 <tr><td>定位</td><td>效果溫和、勝在安全；AASM 2017 弱建議，適入睡困難與長者</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

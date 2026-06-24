@@ -69,6 +69,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 .md-foot-cta:hover{background:#1a3975}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/adx04.html">
 </head>
@@ -93,7 +100,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <hr>
 <h2>一、共病與用藥史：找出「會讓認知更差」的因子</h2>
 <p>許多常見慢性病與藥物本身就會影響認知功能，必須在病史中明確記錄：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>類別</th><th>具體項目</th><th>影響機轉</th></tr></thead>
 <tbody>
 <tr><td>血管危險因子</td><td>高血壓、糖尿病、高血脂、心房顫動</td><td>累積性血管損傷，常與 AD 病理共存（混合型失智症）</td></tr>
@@ -101,48 +108,48 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>感官功能</td><td>聽力受損、視力受損</td><td>減少認知刺激輸入，且增加社交孤立</td></tr>
 <tr><td>精神科病史</td><td>憂鬱症、焦慮症（尤其晚發型）</td><td>可表現為「假性失智」，亦可為失智症前驅症狀</td></tr>
 <tr><td>用藥史</td><td>抗膽鹼藥物、長效鎮靜安眠藥、多重用藥</td><td>直接抑制認知功能，常是「可逆性」認知下降的元凶</td></tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote>
 <p>指引特別提醒：<strong>抗膽鹼藥物（如某些抗組織胺、三環抗憂鬱劑、膀胱過動藥物）的累積負擔應主動檢視並考慮減量或替換</strong>，這是基層醫師最容易立即介入、立竿見影的一步。</p>
 </blockquote>
 <hr>
 <h2>二、家族史與遺傳因子</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>情境</th><th>處置建議</th></tr></thead>
 <tbody>
 <tr><td>一般晚發型失智症（&gt;65 歲發病）</td><td>家族史仍應詢問，但通常非單一基因決定，APOE ε4 為風險因子非確診工具</td></tr>
 <tr><td>早發型失智症（&lt;65 歲）合併明確家族史（多代、年輕發病）</td><td>應考慮體染色體顯性遺傳型阿茲海默症（PSEN1/PSEN2/APP 突變），建議轉診遺傳諮詢</td></tr>
 <tr><td>家族中有額顳葉退化症</td><td>約 1/3 為遺傳性，C9orf72、MAPT、GRN 基因為常見突變</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>指引不建議將 APOE 基因型檢測作為一般診斷常規項目，但在特定情境（如評估抗類澀蛋白單株抗體治療適應性，見第⑥篇）下，基因型資訊具有臨床意義。</p>
 <hr>
 <h2>三、12 項可調節危險因子（腦健康行為）</h2>
 <p>指引引用 Lancet Commission 的失智症可調節危險因子架構，作為<strong>所有評估都應同時進行的衛教與介入機會</strong>：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>生命階段</th><th>可調節危險因子</th></tr></thead>
 <tbody>
 <tr><td>中年前</td><td>教育程度低</td></tr>
 <tr><td>中年期</td><td>聽力受損、高血壓、肥胖、過度飲酒、頭部創傷、吸菸</td></tr>
 <tr><td>晚年期</td><td>憂鬱症、社交孤立、缺乏身體活動、空氣污染、糖尿病</td></tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote>
 <p>估計約 <strong>40% 以上</strong>的失智症風險與這些可調節因子相關。即使病人已確診失智症，介入這些因子仍有助於延緩功能退化——這不是「沒有特效藥就沒事可做」的領域，而是基層醫療最能立即發揮影響力的部分。</p>
 </blockquote>
 <hr>
 <h2>四、健康公平：評估過程中容易被忽略的系統性落差</h2>
 <p>指引特別納入健康公平（health equity）的討論，提醒臨床人員留意以下落差可能導致<strong>延誤診斷或誤診</strong>：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>落差來源</th><th>臨床影響</th></tr></thead>
 <tbody>
 <tr><td>語言/文化差異</td><td>標準化認知測驗常以英語/西方文化常模設計，可能低估或高估非母語/不同文化背景病人的表現</td></tr>
 <tr><td>教育程度差異</td><td>低教育程度者在某些紙筆測驗上的「正常值」需校正，否則容易被誤判為認知障礙</td></tr>
 <tr><td>醫療資源近用性</td><td>偏鄉、低收入族群轉診專科與接受進階檢查（如類澀蛋白 PET）的機會較低</td></tr>
 <tr><td>種族/族群差異</td><td>部分族群的失智症被系統性地較晚診斷，且較少進入臨床試驗</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>指引建議：<strong>選用經本地化驗證的認知測驗工具，並在判讀分數時主動納入教育/語言背景的校正</strong>，避免把「文化或教育差異」誤判為「病理性認知障礙」，反之亦然。</p>
 <hr>
 <h2>臨床要點摘要</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
 <tr><td>共病與用藥</td><td>主動篩查抗膽鹼藥物負擔、OSA、感官缺損、晚發型憂鬱症</td></tr>
@@ -150,7 +157,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>可調節因子</td><td>Lancet Commission 12 項因子，貫穿中年前到晚年，約佔 40%+ 風險</td></tr>
 <tr><td>健康公平</td><td>留意語言/文化/教育對標準化測驗的影響，避免系統性誤判</td></tr>
 <tr><td>基層可介入處</td><td>用藥調整、風險因子衛教，是無需等待專科轉診即可立即進行的介入</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

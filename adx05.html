@@ -69,6 +69,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 .md-foot-cta:hover{background:#1a3975}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/adx05.html">
 </head>
@@ -93,30 +100,30 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <hr>
 <h2>一、簡短認知測驗：篩檢工具的選擇與限制</h2>
 <p>指引建議所有疑似認知障礙的病人都應接受<strong>簡短、標準化的認知測驗</strong>作為客觀量化基礎，但測驗結果必須與病史、功能影響合併判讀，<strong>單一分數不能單獨用於確診或排除失智症</strong>。</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>工具</th><th>施測時間</th><th>特點</th></tr></thead>
 <tbody>
 <tr><td>Mini-Cog</td><td>約 3 分鐘</td><td>三項詞語記憶 + 畫鐘測驗，極快速，適合初篩</td></tr>
 <tr><td>MMSE（簡易智能狀態測驗）</td><td>約 7–10 分鐘</td><td>廣泛使用，但對輕度/執行功能/視覺空間障礙敏感度較低</td></tr>
 <tr><td>MoCA（蒙特利爾認知評估）</td><td>約 10–15 分鐘</td><td>對 MCI 與執行功能障礙的敏感度優於 MMSE，現為多數指引偏好工具</td></tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote>
 <p>切點判讀務必依<strong>教育程度校正</strong>（見第④篇健康公平討論），且測驗當下的情緒狀態、疼痛、聽力/視力障礙都可能影響表現，應在報告中註明測驗情境。</p>
 </blockquote>
 <hr>
 <h2>二、一般醫學檢查：找出可逆病因的身體線索</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>檢查重點</th><th>目的</th></tr></thead>
 <tbody>
 <tr><td>生命徵象（血壓、心率、體溫）</td><td>排除急性病程（感染、心律不整）導致的認知功能波動</td></tr>
 <tr><td>一般理學檢查</td><td>甲狀腺腫大、皮膚/黏膜變化（提示營養缺乏）、心肺聽診</td></tr>
 <tr><td>體重變化</td><td>不明原因體重下降可能提示惡性疾病、嚴重憂鬱或晚期失智症</td></tr>
 <tr><td>感官功能快篩</td><td>簡易聽力/視力篩檢，避免感官缺損被誤判為認知缺損</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>三、神經學檢查：尋找局部或非典型徵象</h2>
 <p>一般阿茲海默症的神經學檢查在疾病早期通常「相對正常」，因此<strong>任何顯著的局部神經學徵象，都應提高對非典型病因的警覺</strong>：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>發現</th><th>提示病因</th></tr></thead>
 <tbody>
 <tr><td>巴金森氏症候群（僵硬、動作遲緩、姿勢不穩、運動遲緩）</td><td>路易氏體失智、皮質基底退化症候群、進行性上眼神經核麻痺</td></tr>
@@ -124,7 +131,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>步態障礙（寬基底、小碎步）</td><td>血管性失智、常壓性水腦症</td></tr>
 <tr><td>肌躥（myoclonus）</td><td>提示快速進展型失智症，需考慮 CJD、晚期 AD、代謝因素</td></tr>
 <tr><td>眼球運動障礙（垂直性凝視麻痺）</td><td>進行性上眼神經核麻痺</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>四、精神科檢查：與第三篇的神經精神症狀互相對照</h2>
 <p>身體評估的精神科部分，重點在於<strong>當下狀態的客觀觀察</strong>，與第③篇病史中的神經精神症狀報告相互佐證：</p>
@@ -139,7 +146,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 </blockquote>
 <hr>
 <h2>臨床要點摘要</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
 <tr><td>認知測驗</td><td>Mini-Cog／MMSE／MoCA 為篩檢輔助，需教育程度校正，不可單獨確診</td></tr>
@@ -147,7 +154,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>神經學檢查</td><td>早期 AD 通常相對正常；局部徵象、巴金森氏症候群、肌躥為非典型病因紅旗</td></tr>
 <tr><td>精神科檢查</td><td>客觀觀察情緒/思考/病識感，與病史中的 NPS 報告互相佐證</td></tr>
 <tr><td>急症排除</td><td>注意力/警覺度波動須優先排除譫妄，處置邏輯與失智症不同</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

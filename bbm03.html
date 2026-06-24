@@ -69,6 +69,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 .md-foot-cta:hover{background:#1a3975}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/bbm03.html">
 </head>
@@ -99,17 +106,17 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <p>跟初篩測試比較，最大差異在<strong>特異度從 75% 提高到 90%</strong>——因為確診測試的陽性結果會直接拿來做診斷與治療決策，<strong>容錯空間必須大幅縮小</strong>。</p>
 <h2>二、PPV／NPV：確診門檻下的實際意義</h2>
 <p>同樣以三種檢測前機率呈現 90%/90% 門檻下的預測值：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>檢測前機率</th><th>PPV（陽性後的確診機率）</th><th>NPV（陰性後的排除機率）</th></tr></thead>
 <tbody>
 <tr><td>20%</td><td>69%</td><td>97%</td></tr>
 <tr><td>50%</td><td>90%</td><td>90%</td></tr>
 <tr><td>80%</td><td>97%</td><td>69%</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>跟初篩測試的表格對照就能看出差異：<strong>同樣是檢測前機率 20%，確診測試的 PPV（69%）明顯高於初篩測試的 PPV（47%）</strong>——這就是特異度從 75% 提升到 90% 帶來的實際效果。也因此，確診測試在低檢測前機率族群中陽性結果的可信度，仍然遠優於初篩測試。</p>
 <h2>三、31 種市售檢測組合：表現差異很大</h2>
 <p>指引彙整了納入分析的 49 篇研究中，<strong>31 種不同的分析物／檢測平台／品牌組合</strong>，涵蓋五大分析物：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>分析物</th><th>檢測平台／品牌（部分舉例）</th></tr></thead>
 <tbody>
 <tr><td>Aβ42/40</td><td>IP-MS（WashU）、Amyloid MS（Shimadzu）、Precivity™（C2N）、UGOT、HPLC-DMS-MS（Araclon）、Simoa（Quanterix 多種試劑）、Lumipulse（Fujirebio）、Elecsys（Roche）、HISCL（Sysmex）</td></tr>
@@ -117,7 +124,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>p-tau231</td><td>Simoa（UGOT）</td></tr>
 <tr><td>p-tau217</td><td>IP-MS（WashU）、Precivity™（C2N）、Lilly-MSD、S-PLEX-MSD、Simoa（Janssen、ALZpath）、Elecsys prototype（已停產）、Lumipulse</td></tr>
 <tr><td>%p-tau217</td><td>IP-MS（WashU）、Precivity™（C2N）</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>整體而言，這 31 種組合的<strong>整體（pooled）診斷準確度範圍相當寬</strong>：</p>
 <ul>
 <li><strong>敏感度：49.31% – 91.41%</strong></li>
@@ -126,14 +133,14 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <p><strong>這個範圍的意義非常重要：不是所有「血液生物標記檢測」都互相等同。</strong> 同一個分析物（例如 p-tau217），用不同平台、不同抗體、不同檢測流程測出來的表現可能差異很大。指引特別點名：<strong>p-tau217 與 %p-tau217 整體表現相對最穩定、最常達到指引門檻</strong>，但即使如此，仍要看具體是哪個平台、哪篇研究的數據。</p>
 <h2>四、為什麼證據等級偏低，建議仍是「條件性」</h2>
 <p>兩條建議的證據等級都被評為<strong>低（low）</strong>，部分檢測甚至落到<strong>極低（very low）</strong>。主要原因：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>降級理由</th><th>說明</th></tr></thead>
 <tbody>
 <tr><td>偏誤風險（risk of bias）</td><td>多數研究沒有事先指定診斷閾值（threshold），也缺乏判讀者盲性設計</td></tr>
 <tr><td>不一致性（inconsistency）</td><td>同一分析物在不同研究/平台間的表現差異大</td></tr>
 <tr><td>不精確性（imprecision）</td><td>部分組合的信賴區間寬，樣本量不足</td></tr>
 <tr><td>未偵測到出版偏誤</td><td>這點是唯一沒有被扣分的領域</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>儘管證據等級偏低，指引小組仍選擇給出條件性建議（而非「無法給建議」），理由是：<strong>現有最佳證據雖不完美，但已足以指引臨床決策方向</strong>，且不建議會讓臨床人員缺乏方向、各自為政地使用這些已經廣泛上市的檢測。</p>
 <h2>五、單一切點法的侵限：未評估的兩種進階模式</h2>
 <p>指引明確說明這次建議<strong>只評估「單一切點（single cutoff）」的判讀方式</strong>，還有兩種臨床上逐漸受關注的進階模式<strong>未被納入評估</strong>，原因是同行評審證據仍不足：</p>
@@ -144,7 +151,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <p>這兩點也是指引明確列出的未來研究方向。</p>
 <hr>
 <h2>臨床要點摘要</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
 <tr><td>確診門檻</td><td>敏感度 ≥90%、特異度 ≥90%（條件性建議，證據等級低）</td></tr>
@@ -153,7 +160,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>表現相對穩定的分析物</td><td>p-tau217、%p-tau217</td></tr>
 <tr><td>證據降級主因</td><td>偏誤風險（缺乏預設閾值/盲性）、不一致性、不精確性</td></tr>
 <tr><td>未評估的進階模式</td><td>雙切點法（不確定區）、生物標記組合，留待未來研究</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

@@ -70,6 +70,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 .md-foot-cta:hover{background:#1a3975}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/ins02.html">
 </head>
@@ -97,14 +104,14 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <hr>
 <h2>一、為什麼第一線是 CBT-I，而不是安眠藥？</h2>
 <p>ACP 2016 寫得很明確：所有成人慢性失眠應「先以 CBT-I 作為初始治療」（strong recommendation），藥物僅在 CBT-I 失敗後、與患者共同決策下短期使用。AASM 2021、VA/DoD 2019 與歐洲指引立場一致。背後有三個理由：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>CBT-I</th><th>助眠藥物</th></tr></thead>
 <tbody>
 <tr><td>短期療效</td><td>可與藥物相當（改善 <code>SOL</code>、<code>WASO</code>、睡眠效率）</td><td>起效較快，短期有效</td></tr>
 <tr><td>長期療效</td><td><strong>停止療程後仍持續維持</strong>數月至數年</td><td>停藥後效果多隨之消失，部分反彈性失眠</td></tr>
 <tr><td>安全性</td><td>無藥理副作用、無依賴與耐受性</td><td>跌倒、日間殘餘鎮靜、依賴（第 5 篇）</td></tr>
 <tr><td>共病處理</td><td>可連帶改善共病憂鬱、疼痛之睡眠</td><td>多需另行處理</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>關鍵差異在<strong>療效的時間軸</strong>：藥物像把症狀「壓下去」，停藥即反彈；CBT-I 改變的是維持失眠的行為與認知（Spielman 3P 模型的 perpetuating factors），療程結束後效果仍在。對一個本質慢性、易復發的疾病，能「帶得走」的療效格外重要。</p>
 <blockquote class="commentary">
 <p>🩺 <strong>臨床重點</strong>：CBT-I 的優勢不在「短期睡得比較好」，而在<strong>長期與停藥後仍維持</strong>。當患者問「這跟吃藥差在哪？」，最有力的回答是：藥停了通常就回到原點，CBT-I 學會的東西會留下來。</p>
@@ -112,7 +119,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <hr>
 <h2>二、CBT-I 的核心組成</h2>
 <p>CBT-I 是一套<strong>多組成</strong>（multicomponent）的結構式療法，通常 4–8 次療程，由行為、認知與衛教組合而成：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>組成</th><th>核心原理</th><th>實務重點</th></tr></thead>
 <tbody>
 <tr><td><strong>刺激控制</strong>（stimulus control）</td><td>重建「床＝睡眠」連結</td><td>床只用於睡覺與性；睏了才上床；固定起床時間</td></tr>
@@ -120,7 +127,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td><strong>認知重建</strong>（cognitive restructuring）</td><td>挑戰對睡眠的災難化與不合理信念</td><td>以 <code>DBAS</code> 評估，處理「睡不夠明天就完了」</td></tr>
 <tr><td><strong>放鬆訓練</strong>（relaxation）</td><td>降低生理與認知過度警醒</td><td>漸進式肌肉放鬆、腹式呼吸</td></tr>
 <tr><td><strong>睡眠衛生</strong>（sleep hygiene）</td><td>移除干擾睡眠的環境與習慣</td><td><strong>必要但不充分</strong>，僅為輔助</td></tr>
-</tbody></table>
+</tbody></table></div>
 <ul>
 <li><strong>刺激控制</strong>：床（與臥室）只用於睡覺與性；有睏意才上床；<strong>躺著清醒約 15–20 分鐘就離床</strong>，到他處做安靜活動，再睏再回床；<strong>固定起床時間</strong>（不論前晚睡多少）；不補眠、白天不小睡。目的是讓床重新成為睡眠訊號，而非焦慮觸發點。</li>
 <li><strong>睡眠限制</strong>：依睡眠日記算出實際睡眠時間，把<strong>臥床時間壓縮到接近實際睡眠時間</strong>（一般不低於 5–5.5 小時），藉輕度睡眠剝奪提高睡眠驅力與睡眠效率；待睡眠效率穩定（約 85–90%）再每週逐步放寬。短期可能日間嗜睡，須事前告知。</li>
@@ -134,7 +141,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <hr>
 <h2>三、AASM 2021 的建議力度：多組成 strong，單一組成 conditional</h2>
 <p>AASM 2021 以 GRADE 方法評估各療法，層次很清楚：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>介入</th><th>AASM 2021 建議力度</th></tr></thead>
 <tbody>
 <tr><td><strong>多組成 CBT-I</strong></td><td><strong>strong recommendation</strong>（強建議）</td></tr>
@@ -143,7 +150,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>單用睡眠限制</td><td>conditional</td></tr>
 <tr><td>單用放鬆訓練</td><td>conditional</td></tr>
 <tr><td>單用睡眠衛生</td><td><strong>不建議單獨使用</strong></td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>唯有<strong>完整的多組成 CBT-I</strong> 拿到強建議；任一組成單獨抽出，證據力度都降到 conditional——臨床意義是：<strong>組合才是療效來源</strong>。對人力或時間受限的場域，AASM 也認可較精簡的<strong>簡式行為治療（BTIs／BBTI）</strong>，通常聚焦刺激控制與睡眠限制兩大核心、療程更短，作為擴大可近性的折衷。</p>
 <hr>
 <h2>四、可近性問題與數位 CBT-I（dCBT-I）</h2>
@@ -155,7 +162,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <hr>
 <h2>五、評估與追蹤工具</h2>
 <p>CBT-I 的評估與療效追蹤仰賴標準化工具，臨床應至少熟悉 <code>ISI</code> 與睡眠日記：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>工具</th><th>全名</th><th>用途</th></tr></thead>
 <tbody>
 <tr><td><code>ISI</code></td><td>失眠嚴重度量表</td><td>量化嚴重度、追蹤療效（最常用）</td></tr>
@@ -163,7 +170,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td><code>SHI</code></td><td>睡眠衛生指數</td><td>評估睡眠衛生行為</td></tr>
 <tr><td><code>PSAS</code></td><td>睡前激發量表</td><td>評估就寢時生理／認知過度警醒</td></tr>
 <tr><td>睡眠日記</td><td>Consensus Sleep Diary</td><td>計算 <code>SOL</code>、<code>WASO</code>、睡眠效率</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>睡眠日記是 CBT-I 的「儀表板」——睡眠限制的臥床時間處方、放寬時機，全依日記數據決定，而非單靠 <code>PSG</code>（失眠診斷本身不常規需要 <code>PSG</code>，僅在懷疑 <code>OSA</code>、<code>RLS</code> 等共病時安排）。</p>
 <hr>
 <h2>六、適用範圍與族群調整</h2>
@@ -178,7 +185,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <p>對這些族群，可採較溫和的臥床限制、加強監測，或以刺激控制為主軸。</p>
 <hr>
 <h2>臨床要點摘要</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
 <tr><td>治療順位</td><td>所有慢性失眠成人，CBT-I 為第一線（ACP/AASM/VA-DoD 一致）</td></tr>
@@ -187,7 +194,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>建議力度</td><td>多組成 CBT-I = strong；單一組成多為 conditional</td></tr>
 <tr><td>可近性</td><td>治療師不足，dCBT-I／簡式 BTI 擴大觸及；台灣多以衛教＋簡式行為介入替代</td></tr>
 <tr><td>族群調整</td><td>共病可做；睡眠限制在雙相、癲癇、嗜睡駕駛者需謹慎</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

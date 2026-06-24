@@ -70,6 +70,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 .md-foot-cta:hover{background:#1a3975}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/ins01.html">
 </head>
@@ -118,25 +125,25 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <hr>
 <h2>三、三大診斷系統怎麼說</h2>
 <p><code>DSM-5</code>、<code>ICSD-3</code>、<code>ICD-11</code> 對慢性失眠症的核心門檻幾乎一致——<strong>頻率每週 ≥3 次、病程 ≥3 個月、有日間後果、且需排除其他更能解釋的原因</strong>。差異主要在編碼與分類用語：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>系統（年份）</th><th>診斷名稱</th><th>頻率</th><th>病程</th><th>必備要件</th><th>短期型</th></tr></thead>
 <tbody>
 <tr><td><strong>DSM-5</strong>（2013）</td><td>Insomnia Disorder</td><td>每週 ≥3 晚</td><td>≥3 個月</td><td>有日間困擾/損害；有足夠睡眠機會；<strong>非</strong>其他睡眠/精神/物質因素更能解釋</td><td>病程 &lt;3 個月可註明「episodic」</td></tr>
 <tr><td><strong>ICSD-3</strong>（2014）</td><td>慢性失眠症（準則 A–F）</td><td>每週 ≥3 次</td><td>≥3 個月</td><td>夜間症狀＋日間後果；排除睡眠機會不足；排除其他睡眠障礙更能解釋</td><td><strong>短期失眠症</strong>（病程 &lt;3 個月，不要求頻率門檻）</td></tr>
 <tr><td><strong>ICD-11</strong>（2022）</td><td>7A00 慢性失眠症 / 7A01 短期失眠症</td><td>每週 ≥3 次（慢性）</td><td>≥3 個月（慢性）</td><td>概念對齊 ICSD-3：夜間症狀＋日間損害＋足夠機會</td><td>7A01 短期失眠症</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>三者的共通骨架可記成四件事：<strong>頻率、病程、日間後果、排除其他原因</strong>。值得注意的是，DSM-5 已<strong>取消「原發性 vs 次發性失眠」的二分</strong>，改以單一 Insomnia Disorder 涵蓋，並允許在合併其他疾病時並列診斷——這正呼應下一節「共病性失眠」的觀念轉變。</p>
 <hr>
 <h2>四、失眠很少獨來：從「次發」到「共病性失眠」</h2>
 <p>臨床上純粹、孤立存在的失眠是少數；絕大多數失眠都與其他狀況交織。需要主動搜尋的共病可分四類：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>類別</th><th>常見元凶</th></tr></thead>
 <tbody>
 <tr><td><strong>身體疾病</strong></td><td>慢性疼痛、心衰竭（夜間端坐呼吸）、夜尿、甲狀腺功能異常、COPD、胃食道逆流</td></tr>
 <tr><td><strong>精神疾病</strong></td><td>憂鬱症、焦慮症、創傷後壓力症</td></tr>
 <tr><td><strong>物質與藥物</strong></td><td>咖啡因、酒精、尼古丁；部分 SSRI、類固醇、利尿劑（夜尿）、支氣管擴張劑</td></tr>
 <tr><td><strong>其他睡眠障礙</strong></td><td>阻塞型睡眠呼吸中止（<code>OSA</code>）、不寧腿症候群（<code>RLS</code>）/週期性肢體運動障礙（PLMD）、晝夜節律障礙、異睡症（parasomnia）</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>過去把失眠分成「原發」與「次發」，預設只要治好背後的病、失眠就會自動緩解。<strong>現代睡眠醫學已轉向「共病性失眠（comorbid insomnia）」的概念：共病要治，失眠本身也常需要同時治療</strong>，因為失眠一旦被維持因子固化，往往不會隨共病改善而消失。</p>
 <blockquote class="commentary">
 <p>🩺 <strong>臨床重點</strong>：把所有「睡不著」都當原發性失眠，是門診最常見的陷阱。<strong>開助眠藥之前，先問三件事</strong>——有沒有打鼾／目擊呼吸中止／晨起頭痛（篩 <code>OSA</code>）、傍晚有沒有下肢難以名狀的不適且一動就緩解（篩 <code>RLS</code>）、最近情緒與興趣如何（篩憂鬱）。漏掉 OSA 而長期給鎮靜安眠藥，可能讓呼吸事件惡化。</p>
@@ -157,17 +164,17 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <hr>
 <h2>六、3P 模式：理解失眠如何被「維持」</h2>
 <p>Spielman 的 <strong>3P 模式</strong>是理解慢性失眠的經典框架，也是銜接治療的關鍵：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>因子</th><th>內容</th><th>臨床意義</th></tr></thead>
 <tbody>
 <tr><td><strong>Predisposing（易感體質）</strong></td><td>過度警醒特質、焦慮性格、女性、家族傾向</td><td>決定基礎風險，多半無法改變</td></tr>
 <tr><td><strong>Precipitating（誘發事件）</strong></td><td>壓力事件、急性疾病、喪親、輪班、住院</td><td>多為一次性；急性期過後本應自行緩解</td></tr>
 <tr><td><strong>Perpetuating（維持因子）</strong></td><td>補眠與賴床、過早上床/過晚起床導致臥床時間過長、在床上滑手機與煩惱、對睡眠的災難化想法（「今晚再睡不著明天就完了」）</td><td><strong>讓急性失眠變成慢性的真正元凶</strong></td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>關鍵洞見是：誘發事件常已遠去，失眠卻持續，靠的就是這些<strong>維持因子</strong>自我強化。而這些行為與認知層面的維持因子，<strong>正是失眠認知行為治療（CBT-I）中睡眠限制（sleep restriction）、刺激控制（stimulus control）與認知重建所要鬆動的標的</strong>——這也是為什麼第一線治療不是藥，而是 CBT-I。<strong>詳見本系列第 2 篇（CBT-I）。</strong></p>
 <hr>
 <h2>臨床要點摘要</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
 <tr><td>定義</td><td>有足夠睡眠機會仍睡不好 ＋ 日間損害；看主觀抱怨與功能，不看時數</td></tr>
@@ -176,7 +183,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>共病觀念</td><td>已從「原發 vs 次發」轉向「共病性失眠」；共病與失眠常需並治</td></tr>
 <tr><td>評估</td><td>病史＋睡眠日記（1–2 週）為主；<code>ISI</code>/<code>PSQI</code> 量化；<code>PSG</code> 非常規，僅疑 OSA/PLMD 時做</td></tr>
 <tr><td>鑑別</td><td>開藥前先排除 <code>OSA</code>、<code>RLS</code>、憂鬱；3P 模式中「維持因子」是慢性化主因</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

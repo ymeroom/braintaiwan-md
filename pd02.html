@@ -69,6 +69,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 .md-foot-cta:hover{background:#1a3975}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/pd02.html">
 </head>
@@ -107,13 +114,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <hr>
 <h3>2. Levodopa（左旋多巴）</h3>
 <p>Levodopa 是目前<strong>療效最強的巴金森氏症藥物</strong>，也是衡量其他藥物的黃金標準。</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>劑型</th><th>特性</th></tr></thead>
 <tbody>
 <tr><td><strong>IR（即時釋放）</strong>　Levodopa/carbidopa or benserazide</td><td>起效快、彈性高；是目前最常用的基礎劑型</td></tr>
 <tr><td><strong>CR（控制釋放）</strong>　Sinemet CR</td><td>藥物濃度較平穩，但生物可用率稍低</td></tr>
 <tr><td><strong>ER（延伸釋放）</strong>　CD-LD ER（Numient/IPX066）</td><td>每日服藥次數減少、波動更平；台灣 2023 年健保尚未收載</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>早期 levodopa 的爭議：「honeymoon period」</strong> 長期使用 levodopa 後，大多數患者在 5–10 年內會出現運動併發症（wearing-off、dyskinesia）。但研究顯示這主要反映<strong>疾病本身的進程</strong>，而非 levodopa 的毒性——因此<strong>不應為了「延後 levodopa」而讓患者忍受可控制的症狀</strong>。</p>
 <blockquote>
 <p>對於<strong>年齡 &gt; 60–70 歲</strong>、ICD 風險較低、症狀影響功能的患者，TMDS 共識建議 <strong>levodopa 作為優先選擇</strong>。</p>
@@ -122,13 +129,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <h3>3. Dopamine Agonists（多巴胺促效劑）</h3>
 <p>代表藥：<strong>Pramipexole IR/ER</strong>、<strong>Ropinirole IR/PR</strong>、<strong>Rotigotine 貼片</strong></p>
 <p>多巴胺促效劑直接作用於多巴胺受體，半衰期較 levodopa 長，理論上對運動波動的影響較小。對<strong>年齡 &lt; 60–70 歲</strong>的患者，共識傾向優先考量。</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>劑型</th><th>給藥</th></tr></thead>
 <tbody>
 <tr><td>Pramipexole</td><td>IR 或 ER</td><td>口服，每日 1–3 次（IR）或 1 次（ER）</td></tr>
 <tr><td>Ropinirole</td><td>IR 或 PR</td><td>口服，每日 3 次（IR）或 1 次（PR）</td></tr>
 <tr><td>Rotigotine</td><td>貼片</td><td>每日 1 次更換，適合吞嚥困難患者</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>最大警告：衝動控制障礙（ICD）</strong></p>
 <p>這是多巴胺促效劑最重要的安全顧慮：</p>
 <ul>
@@ -150,14 +157,14 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <hr>
 <h2>二、年齡為主軸的選藥框架</h2>
 <p>TMDS 共識提供了一個實用的臨床決策框架：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>族群</th><th>優先考量</th><th>理由</th></tr></thead>
 <tbody>
 <tr><td><strong>&lt; 60–70 歲</strong></td><td>Dopamine agonist 優先</td><td>運動波動出現較晚，避免早期高劑量 levodopa；需謹慎評估 ICD 風險</td></tr>
 <tr><td><strong>&gt; 60–70 歲</strong></td><td>Levodopa 優先</td><td>認知功能下降風險較高，對 DA 的精神副作用更敏感；ICD 風險相對低</td></tr>
 <tr><td><strong>輕微症狀</strong></td><td>MAO-B 抑制劑（selegiline/rasagiline）</td><td>療效較溫和，兼顧可能的疾病修飾潛力</td></tr>
 <tr><td><strong>以震顫為主、藥物效果不佳</strong></td><td>考慮抗膽鹼藥物（anticholinergics）</td><td>適用較年輕患者；高齡患者避免用（認知、泌尿副作用）</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>三、其他補充藥物</h2>
 <h3>Amantadine</h3>
@@ -175,7 +182,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 </ul>
 <hr>
 <h2>四、早期藥物選擇的證據等級總覽</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>改善症狀</th><th>相關證據等級（TMDS 共識）</th></tr></thead>
 <tbody>
 <tr><td>Levodopa IR</td><td>核心療效</td><td>A 級</td></tr>
@@ -186,10 +193,10 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>Selegiline</td><td>輕度有效</td><td>B 級</td></tr>
 <tr><td>Amantadine</td><td>輔助療效</td><td>B 級</td></tr>
 <tr><td>Entacapone（輔助）</td><td>改善 wearing-off</td><td>A 級</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>臨床要點摘要</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>共識重點</th></tr></thead>
 <tbody>
 <tr><td>核心原則</td><td>個人化選藥；年齡是首要決策軸</td></tr>
@@ -197,7 +204,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>Dopamine agonists</td><td>&lt; 60–70 歲優先；ICD 盛行率 5.6–13.8%，需主動評估</td></tr>
 <tr><td>MAO-B 抑制劑</td><td>輕微症狀的初始選項，兼顧可能的疾病修飾作用</td></tr>
 <tr><td>抗膽鹼藥</td><td>震顫輔助；年齡 &gt; 60–70 歲禁忌</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

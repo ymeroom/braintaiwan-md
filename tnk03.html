@@ -76,6 +76,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 .md-foot-cta:hover{background:#1a3975}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/tnk03.html">
 </head>
@@ -131,12 +138,12 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 </ul>
 <p>推注後以 0.9% 氯化鈉溶液沖洗管路，確保完整輸送。若既有管路正在輸注不相容溶液或其他藥物，應依院內 protocol 處理，不要為求快而直接共管。</p>
 <h2>四、最危險的錯誤：把 STEMI 劑量帶進腦中風流程</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>適應症</th><th>TNK 劑量</th><th>最大劑量</th></tr></thead>
 <tbody>
 <tr><td>急性缺血性腦中風</td><td>0.25 mg/kg</td><td>25 mg</td></tr>
 <tr><td>STEMI</td><td>0.5 mg/kg</td><td>50 mg</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>腦中風若誤用 STEMI 劑量，相當於把劑量加倍。最有效的防呆不是「提醒大家小心」，而是讓錯誤更難發生：</p>
 <ul>
 <li>電子醫囑名稱直接寫出適應症與 0.25 mg/kg。</li>

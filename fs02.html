@@ -70,6 +70,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 .md-foot-cta:hover{background:#1a3975}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/fs02.html">
 </head>
@@ -108,7 +115,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <h2>二、病史採集：患者與目擊者的資訊同等重要</h2>
 <p>詳細病史是診斷基石。指引（<strong>1B，Level B</strong>）建議：應從<strong>患者本人與目擊者雙方</strong>收集發作的歷史與症狀學（semiology）資訊。</p>
 <p><strong>有助於指向功能性癲癇發作的臨床特徵</strong>（綜合多項系統性回顧）：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>特徵</th><th>說明</th></tr></thead>
 <tbody>
 <tr><td>發作時閉眼</td><td>與多數癲癇性發作的張眼相反</td></tr>
@@ -117,7 +124,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>發作時間長、意識相對保留</td><td>常達數分鐘以上</td></tr>
 <tr><td>發作後無明顯混亂期</td><td>postictal confusion 少見</td></tr>
 <tr><td>由情緒誘發</td><td>情境相關性高</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>關鍵提醒：</strong> 沒有任何單一症狀學特徵具有足夠特異性，診斷須綜合多項資訊（Gilmour et al., <em>Epilepsy Behav.</em> 2021）。</p>
 <p><strong>智慧型手機影片</strong>：Tatum et al.（<em>JAMA Neurol.</em> 2020）顯示，神經科醫師透過患者自錄的手機影片，能在多數病例做出準確診斷。指引（<strong>1F，Level B</strong>）建議在無法進行 VEEG 時善用手機影片。</p>
 <hr>
@@ -130,27 +137,27 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <p>指引（<strong>1D，Level C</strong>）：完成病史與症狀學評估後仍存在診斷模糊性時，<strong>可（may）</strong> 在可行條件下安排 VEEG。此處用 Level C 而非 Level B，反映 VEEG 實際可及性的現實考量。</p>
 <p><strong>VEEG 的取得方式</strong>：癲癇監測病房、門診/住院 30–60 分鐘同步影像腦電圖、持續住院監測、居家影像腦電圖。</p>
 <p><strong>當 VEEG 無法取得時的分級診斷路徑</strong>（<strong>1F，Level B</strong>；架構源自 ILAE 工作小組，LaFrance et al., <em>Epilepsia</em> 2013）：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>診斷層級</th><th>所需條件</th></tr></thead>
 <tbody>
 <tr><td>定義性（definite）</td><td>VEEG 捕捉典型發作</td></tr>
 <tr><td>臨床確立（clinically established）</td><td>病史＋症狀學＋動態 EEG 捕捉（無影像）＋獨立影片錄影</td></tr>
 <tr><td>可能性（probable）</td><td>病史＋症狀學＋發作間期 EEG</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>五、暈厥型功能性癲癇發作：勿忘心臟評估</h2>
 <p>若症狀學貌似暈厥，指引（<strong>1E，Level B</strong>）建議同步進行長程心電圖監測（ECG）與傾斜試驗（tilt-table），以排除真正的心因性或神經心臟性暈厥。</p>
 <hr>
 <h2>六、其他診斷相關建議</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>建議</th><th>內容</th><th>層級</th></tr></thead>
 <tbody>
 <tr><td>1G</td><td>確診時應篩查其他功能性神經症狀，以利及早治療</td><td>Level B</td></tr>
 <tr><td>1H</td><td>超出自身專業範疇時應轉介至適當專科</td><td>Level B</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>臨床要點摘要</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>建議</th><th>層級</th></tr></thead>
 <tbody>
 <tr><td>類癲癇/類暈厥發作均應鑑別功能性癲癇發作</td><td>B</td></tr>
@@ -159,7 +166,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>診斷模糊時可安排 VEEG</td><td>C</td></tr>
 <tr><td>類暈厥型應排除心律失常（ECG／傾斜試驗）</td><td>B</td></tr>
 <tr><td>確診時篩查其他功能性神經症狀；超範疇時轉介</td><td>B</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

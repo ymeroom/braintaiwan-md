@@ -70,6 +70,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 .md-foot-cta:hover{background:#1a3975}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/dmd02.html">
 </head>
@@ -99,17 +106,17 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <h2>一、主要終點：North Star Ambulatory Assessment（NSAA）</h2>
 <p>NSAA 是一個包含 17 項可行走功能的量表，每項評分為 0–2 分（0 分為無法執行、1 分為勉強或需協助、2 分為可獨立完成），評估範圍涵蓋從地板起身、行走、跑步等日常動作。</p>
 <p>在解讀試驗數據前，我們必須先了解 NSAA 的自然病程：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>參考指標</th><th>數值表現</th></tr></thead>
 <tbody>
 <tr><td><strong>健康男童 4 歲達高峰</strong></td><td>約 34 分</td></tr>
 <tr><td><strong>DMD 男童</strong></td><td>運動功能通常進步至約 6 歲；7 歲後平均<strong>每年下降約 3.7 分</strong></td></tr>
 <tr><td><strong>最小臨床重要差異（MCID）</strong></td><td><strong>2.3–3.5 分</strong>（依計算方式而定）</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>這個 MCID 數字是判斷療效的關鍵門檻</strong>——後續我們將看到，試驗組間的差異幾乎都落在這個門檻之下。</p>
 <hr>
 <h2>二、NSAA 療效數據總覽（≥4 至 &lt;8 歲可行走男童）</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>試驗名稱</th><th>試驗設計</th><th>對照組</th><th>證據等級</th><th>評估時間點</th><th>NSAA LSM 差異（95% CI）</th></tr></thead>
 <tbody>
 <tr><td>101 cohort B</td><td>phase 1/2a 開放標籤</td><td>外部對照</td><td>Class III</td><td>4 年</td><td><strong>9.4</strong>（2.02–16.78）p=0.0125</td></tr>
@@ -118,7 +125,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>102 part 2</td><td>phase 2 RCT</td><td>外部對照</td><td>Class III</td><td>48 週</td><td>2.0（0.82–3.18）p=0.0009</td></tr>
 <tr><td>103 cohort 1 (ENDEAVOR)</td><td>phase 1b 開放標籤</td><td>外部對照</td><td>Class III</td><td>1 年</td><td>3.2（1.59–4.81）p&lt;0.0001</td></tr>
 <tr><td><strong>301 part 1 (EMBARK)</strong></td><td><strong>phase 3 RCT</strong></td><td><strong>安慰劑</strong></td><td><strong>Class I（主要）</strong></td><td><strong>52 週</strong></td><td><strong>0.65</strong>（–0.45 to 1.75）p=0.24</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>請特別留意數據背後的「證據等級」：</strong> 凡是採用<strong>安慰劑對照的 Class I 數據（102 part 1、301）</strong>，組間差異不僅極小，且皆未達統計顯著（僅差 0.8 與 0.65 分）。相對地，那些看起來效果顯著的漂亮數字（如 9.4 分、3.2 分），全部來自採用<strong>外部對照（external control）的 Class III</strong> 試驗設計——這正是解讀此份報告時最容易踩入的陷阱。</p>
 <blockquote>
 <p><strong>💡 兩個 Class I 結果的統合分析：</strong> 在 48–52 週時，NSAA 的組間差異僅為 <strong>0.69 分（95% CI –0.24 to 1.62，I²=20%）</strong>——這個數值遠低於 2.3–3.5 分的 MCID 門檻。</p>
@@ -134,7 +141,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <hr>
 <h2>四、次要運動終點：數值微小，且皆未通過階層分析</h2>
 <p>在 EMBARK 試驗中，部分次要終點雖然顯示出偏向治療組的小幅度數值優勢，但在預設的階層分析（hierarchical analysis）標準下，<strong>全數未達統計顯著</strong>：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>次要終點指標</th><th>LSM 差異（95% CI）</th></tr></thead>
 <tbody>
 <tr><td>Time to rise（起身時間）</td><td>−0.64 秒（–1.06 to –0.23）</td></tr>
@@ -143,7 +150,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>爬 4 階時間</td><td>−0.36 秒（–0.71 to –0.01）</td></tr>
 <tr><td>100 公尺走 / 跑</td><td>無差異（–3.29，–8.28 to 1.70）</td></tr>
 <tr><td>PROMIS 行動／上肢</td><td>無差異</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>值得注意的是：</strong> TTR（起身時間）與 10MWR（10公尺走/跑）本身就與 NSAA 的評估項目高度重疊。這暗示了 <strong>NSAA 作為一個序數量表，可能不夠敏感</strong>，以至於無法精準捕捉組間極細微的差異。但反過來說，這些次要終點由於未經過多重比較校正，在嚴格的實證標準下，同樣不能直接被視為具備療效。</p>
 <hr>
 <h2>五、一個不可忽視的潛在解盲風險</h2>

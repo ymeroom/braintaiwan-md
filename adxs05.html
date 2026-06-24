@@ -69,6 +69,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 .md-foot-cta:hover{background:#1a3975}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/adxs05.html">
 </head>
@@ -94,7 +101,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <h2>一、核心原則：精準勝過全面</h2>
 <p>指引建議 15（證據強度 A）明確指出：<strong>額外的 Tier 2–4 檢測應依個人風險輪廓選擇性加做，而非「散彈打鳥」式的全面篩檢</strong>。這個原則的臨床理由很實際——許多 Tier 3–4 檢測昂貴、有侵入性，或特異度有限，盲目擴大篩檢範圍只會增加偽陽性、增加病人負擔，卻不一定提高診斷準確性。</p>
 <h2>二、五層檢測架構總覽</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>層級</th><th>對象</th><th>內容類型</th></tr></thead>
 <tbody>
 <tr><td><strong>Tier 1</strong></td><td>幾乎所有疑似認知障礙病人</td><td>基礎血液檢查（CBC、電解質、肝腎功能、甲狀腺功能、B12）、結構性腦影像（CT 或 MRI）</td></tr>
@@ -102,7 +109,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td><strong>Tier 3</strong></td><td>較少數病人，多由專科啟動或會診</td><td>甲狀腺自體抗體、梅毒快速血漿反應素試驗、血管收縮酶、ANCA、病毒血清學、尿蛋白電泳、阿茲海默症 CSF 套組、MR/CT 血管攝影、FDG PET、類澀蛋白 PET、腦電圖、多巴胺轉運體 SPECT（DAT-SPECT）、心臟核醫顯影</td></tr>
 <tr><td><strong>Tier 4</strong></td><td>罕見/不典型/快速進展病例</td><td>副腫瘤與自體免疫腦炎抗體套組、重金屬篩檢、組織切片、基因檢測</td></tr>
 <tr><td><strong>Tier X</strong></td><td>臨床新興、尚未完全驗證</td><td>血液/CSF 新興生物標記、皮膚切片 α-突觸核蛋白檢測、tau PET 等</td></tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote>
 <p>各層的劃分邏輯是<strong>可近性遞減、特異度與侵入性遞增</strong>：Tier 1 幾乎人人可做、Tier 4/X 則保留給高度不確定或非典型的病例。</p>
 </blockquote>
@@ -110,7 +117,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <p>延續<a href="adx06.html">基層篇第⑥篇</a>的內容，Tier 1–2 的價值在於<strong>用最低成本排除常見可逆病因，並縮小症候群分類的不確定性</strong>。專科介入的價值，通常出現在 Tier 1–2 已完成、結果仍無法充分解釋臨床表現的病例。</p>
 <h2>四、Tier 3：專科決策的主戰場</h2>
 <p>Tier 3 是本系列後續幾篇（<a href="adxs06.html">第⑥篇 FDG PET</a>、<a href="adxs07.html">第⑦篇 CSF 與類澀蛋白 PET</a>）會深入討論的層級，這裡先建立整體脈絡：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>用途分類</th><th>對應檢測</th></tr></thead>
 <tbody>
 <tr><td>排除少見可逆/感染性病因</td><td>甲狀腺自體抗體、梅毒快速血漿反應素試驗、病毒血清學</td></tr>
@@ -118,7 +125,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>分子影像鑑別</td><td>FDG PET（症候群鑑別）、類澀蛋白 PET（病理確認）</td></tr>
 <tr><td>路易氏體相關</td><td>DAT-SPECT、心臟核醫顯影（MIBG）</td></tr>
 <tr><td>癲癇/腦病變相關</td><td>腦電圖</td></tr>
-</tbody></table>
+</tbody></table></div>
 <h2>五、Tier 4：罕見、不典型、快速進展時才動用</h2>
 <p>Tier 4 檢測的共同特徵是：<strong>目標病因發生率低，但漏診代價高</strong>（如可治療的自體免疫腦炎、CJD）。啟動 Tier 4 的典型情境包括：</p>
 <ul>
@@ -130,7 +137,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <p>Tier X 涵蓋目前仍在快速發展、尚未完全標準化進入常規臨床使用的項目，例如血液生物標記（如 p-tau217）、皮膚切片 α-突觸核蛋白檢測，以及 tau PET。指引的態度是<strong>承認其潛力，但目前仍建議在具備適當判讀能力的中心、依適當使用標準謹慎導入</strong>，而非作為常規篩檢工具。</p>
 <hr>
 <h2>臨床要點摘要</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
 <tr><td>核心原則</td><td>依個人風險輪廓選擇性加做檢測，不做散彈打鳥式全面篩檢（證據強度 A）</td></tr>
@@ -139,7 +146,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>Tier 3</td><td>專科主戰場：FDG PET、類澀蛋白 PET、CSF 生物標記、DAT-SPECT 等</td></tr>
 <tr><td>Tier 4</td><td>罕見/不典型/快速進展：自體免疫/副腫瘤抗體、重金屬、切片、基因檢測</td></tr>
 <tr><td>Tier X</td><td>新興但尚未完全驗證：血液生物標記、皮膚切片、tau PET</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

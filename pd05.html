@@ -69,6 +69,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 .md-foot-cta:hover{background:#1a3975}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/pd05.html">
 </head>
@@ -101,7 +108,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <li>很多患者將憂鬱症狀歸因於「生病很正常」而未主動求助</li>
 </ul>
 <h3>藥物治療</h3>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>藥物類別</th><th>代表藥</th><th>TMDS 共識評語</th></tr></thead>
 <tbody>
 <tr><td><strong>DA（多巴胺促效劑）</strong></td><td>Pramipexole、Ropinirole、Rotigotine</td><td>不只改善運動症狀，對憂鬱也有幫助；pramipexole 有多篇 RCT 支持</td></tr>
@@ -110,7 +117,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td><strong>TCAs</strong></td><td>Nortriptyline、Amitriptyline</td><td>有效，但抗膽鹼副作用（老年患者慎用）</td></tr>
 <tr><td><strong>MAO-B 抑制劑</strong></td><td>Selegiline、Rasagiline、Safinamide</td><td>兼顧運動症狀；safinamide 2017 RCT 顯示改善憂鬱和非運動症狀</td></tr>
 <tr><td><strong>MAOI</strong></td><td>Moclobemide（reversible）</td><td>有效，但需注意與 MAOBi 合用的交互作用</td></tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote>
 <p>注意：<strong>MAO-B 抑制劑與 SSRIs/SNRIs 合用</strong>需謹慎，理論上有血清素症候群風險，但臨床報告罕見；用前需評估。</p>
 </blockquote>
@@ -128,7 +135,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <li>評估工具：Fatigue Severity Scale（FSS）、Multidimensional Fatigue Inventory（MFI）</li>
 </ul>
 <h3>藥物治療</h3>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>評語</th></tr></thead>
 <tbody>
 <tr><td><strong>Methylphenidate</strong></td><td>有小型研究支持，但 TMDS 證據等級有限</td></tr>
@@ -136,7 +143,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>Rasagiline、Safinamide</td><td>附帶改善疲憊的 RCT 報告</td></tr>
 <tr><td>Levodopa 劑量優化</td><td>改善 OFF 期相關疲憊</td></tr>
 <tr><td>TCAs（Doxepin）</td><td>對睡眠相關疲憊有幫助</td></tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote>
 <p><strong>運動介入也對疲憊有效</strong>：多篇研究顯示有規律有氧運動的患者，疲憊感降低幅度顯著（見第三篇運動復健章節）。</p>
 </blockquote>
@@ -160,7 +167,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <li>需緩慢減量並提供心理支持</li>
 </ul>
 <h3>ICD 與 DDS 處理流程</h3>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>步驟</th><th>行動</th></tr></thead>
 <tbody>
 <tr><td>1</td><td>主動評估（每次回診用 QUIP 篩查）</td></tr>
@@ -168,7 +175,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>3</td><td>Punding 或 DDS → 減 levodopa，緩慢減量避免 DAWS</td></tr>
 <tr><td>4</td><td>嚴重病例 → 轉介精神科，考慮 naltrexone 或 CBT</td></tr>
 <tr><td>5</td><td>DBS 可作為難治性 ICD 的選項</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>四、巴金森氏症失智（PDD）與精神症狀（Psychosis）</h2>
 <h3>失智（PDD）</h3>
@@ -177,14 +184,14 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <li>輕度認知功能障礙（PD-MCI）在疾病早中期即可出現</li>
 </ul>
 <p><strong>藥物治療（TMDS 共識）：</strong></p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>適應症</th><th>證據等級</th></tr></thead>
 <tbody>
 <tr><td><strong>Rivastigmine</strong></td><td>PDD 首選（MMSE 10–24）；RCT 顯示 ADAS-Cog 顯著改善</td><td>A 級</td></tr>
 <tr><td>Donepezil</td><td>有效，但台灣多數健保適應症是 AD</td><td>A 級</td></tr>
 <tr><td>Galantamine</td><td>有效</td><td>B 級</td></tr>
 <tr><td>Memantine（NMDA 拮抗劑）</td><td>中重度 PDD 的補充選項</td><td>B 級</td></tr>
-</tbody></table>
+</tbody></table></div>
 <blockquote>
 <p><strong>Rivastigmine 是 PDD 最有證據的藥物</strong>（Emre 2004 試驗，541 位患者，8.6 mg/day 貼片在 24 週的 ADAS-Cog 顯著優於安慰劑）。</p>
 </blockquote>
@@ -206,7 +213,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <li><strong>若幻覺持續且困擾</strong>：加入膽鹼酯酶抑制劑（rivastigmine/donepezil）</li>
 <li><strong>抗精神病藥物</strong>（謹慎選擇）：</li>
 </ol>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>建議</th></tr></thead>
 <tbody>
 <tr><td><strong>Clozapine（低劑量）</strong></td><td>金標準，但需監測血球（agranulocytosis 0.38%）</td></tr>
@@ -214,7 +221,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>Olanzapine</td><td>會惡化運動症狀，<strong>不建議</strong></td></tr>
 <tr><td>Risperidone</td><td>同上，<strong>不建議</strong></td></tr>
 <tr><td><strong>Pimavanserin</strong></td><td>高選擇性 5-HT2A 拮抗劑；2016 年 FDA 核准；台灣 <strong>2023 年尚未核准</strong></td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>五、自律神經功能障礙（Autonomic Dysfunction）</h2>
 <h3>姿勢性低血壓（Orthostatic Hypotension, OH）</h3>
@@ -228,7 +235,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <li>床頭抬高 30 度，啟動腎素-血管緊縮素系統</li>
 </ol>
 <p><strong>藥物治療（TMDS 共識）：</strong></p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>說明</th><th>台灣現況</th></tr></thead>
 <tbody>
 <tr><td><strong>Midodrine</strong> 2.5–15 mg/次</td><td>周邊血管收縮劑；一線藥物</td><td>健保收載</td></tr>
@@ -236,20 +243,20 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>Pyridostigmine</td><td>膽鹼酯酶抑制；不加重仰臥高血壓</td><td>可取得</td></tr>
 <tr><td>Domperidone</td><td>注意 QT 間期延長和室性心律不整風險</td><td>需謹慎</td></tr>
 <tr><td><strong>Droxidopa</strong></td><td>新型選擇性升壓藥；FDA 2014 年核准</td><td><strong>台灣 2023 尚未上市</strong></td></tr>
-</tbody></table>
+</tbody></table></div>
 <h3>便秘（Constipation）</h3>
 <ul>
 <li>盛行率：約 <strong>79%</strong></li>
 <li>腸道神經退化（Lewy body 沉積）是病理基礎</li>
 </ul>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>治療</th><th>說明</th></tr></thead>
 <tbody>
 <tr><td>纖維飲食 + 充分水分</td><td>基本非藥物介入</td></tr>
 <tr><td>瀉劑（macrogol、bisacodyl 等）</td><td>一線藥物</td></tr>
 <tr><td>Lubiprostone</td><td>氯離子通道促效劑；有效</td></tr>
 <tr><td>益生菌 / 益生元</td><td>初步研究有效；台灣 2023 年尚未正式適應症</td></tr>
-</tbody></table>
+</tbody></table></div>
 <h3>泌尿障礙（Lower Urinary Tract Symptoms）</h3>
 <ul>
 <li>頻尿、急迫感最常見（逼尿肌過動）</li>
@@ -261,22 +268,22 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <h2>六、睡眠障礙（Sleep Disorders）</h2>
 <p>巴金森氏症的睡眠問題多樣，需針對不同類型分別處理：</p>
 <h3>失眠</h3>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>治療</th><th>說明</th><th>證據等級</th></tr></thead>
 <tbody>
 <tr><td>Eszopiclone</td><td>Z-type 安眠藥</td><td>A 級</td></tr>
 <tr><td>Melatonin 3–5 mg</td><td>安全、適合長期使用</td><td>A 級</td></tr>
 <tr><td>調整 levodopa 時程（CR 睡前）</td><td>維持夜間多巴胺濃度</td><td>B 級</td></tr>
 <tr><td>CBT-i（失眠認知行為治療）</td><td>長期效果最佳</td><td>A 級</td></tr>
-</tbody></table>
+</tbody></table></div>
 <h3>REM 睡眠行為障礙（RBD）</h3>
 <p>RBD 是巴金森氏症最特殊的睡眠共病，也是<strong>前驅症狀標誌</strong>（可早於運動症狀多年出現）。特徵：睡眠中大聲說話、做出動作甚至傷人。</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>治療</th><th>說明</th></tr></thead>
 <tbody>
 <tr><td><strong>Clonazepam</strong></td><td>首選；0.25–1 mg 睡前</td></tr>
 <tr><td><strong>Melatonin 3–12 mg</strong></td><td>安全性高，老年患者可優先考量</td></tr>
-</tbody></table>
+</tbody></table></div>
 <h3>不寧腿症候群（RLS）與週期性肢體抽動（PLM）</h3>
 <ul>
 <li><strong>Rotigotine 貼片</strong>：FDA 核准用於 RLS；對巴金森氏症合併 RLS 理想（同時改善運動症狀）</li>
@@ -295,7 +302,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 </ul>
 <hr>
 <h2>臨床要點摘要</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>症狀</th><th>首選藥物</th><th>需特別注意</th></tr></thead>
 <tbody>
 <tr><td>憂鬱</td><td>Venlafaxine、Pramipexole、Rasagiline</td><td>MAOBi + SSRI 交互作用</td></tr>
@@ -308,7 +315,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>RBD</td><td>Clonazepam、Melatonin</td><td>先確保床旁安全環境</td></tr>
 <tr><td>EDS</td><td>Modafinil、Caffeine</td><td>回顧所有 DA 類藥物</td></tr>
 <tr><td>OSA</td><td>CPAP</td><td>篩查率低，主動評估</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

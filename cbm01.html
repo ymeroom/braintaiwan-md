@@ -69,6 +69,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 .md-foot-cta:hover{background:#1a3975}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/cbm01.html">
 </head>
@@ -102,12 +109,12 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <p>這是整篇文章最重要的觀念，值得反覆強調。</p>
 <p><strong>失智症（dementia）是一個臨床診斷</strong>：指認知功能（記憶、語言、執行、視空間等）相較於過去明顯退步，且已經影響到日常生活與自理能力。它要靠病史、知情者報告、認知測驗與功能評估才能成立——沒有任何一管血可以單獨告訴你「這個人失智了」。</p>
 <p><strong>血液生物標記驗的是「阿茲海默病理」</strong>：也就是腦中是否有異常堆積的 β 類澱粉蛋白（amyloid）與磷酸化 tau 蛋白。這跟「失智症」是兩件不同層次的事：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th></th><th>它是什麼</th><th>怎麼確定</th></tr></thead>
 <tbody>
 <tr><td><strong>失智症</strong></td><td>臨床症候群（認知退步且影響生活功能）</td><td>病史＋認知與功能評估，由醫師綜合判斷</td></tr>
 <tr><td><strong>阿茲海默病理</strong></td><td>生物學上的腦病變（類澱粉蛋白／tau 堆積）</td><td>生物標記：BBM、CSF、amyloid PET</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>由此衍生出兩個方向都會錯的情況：</p>
 <ul>
 <li><strong>病理陽性 ≠ 失智症。</strong> 一位認知完全正常的長者，血液檢測可能呈現類澱粉蛋白陽性——這代表的是「腦中已有病理、未來風險較高（臨床前期阿茲海默症）」，<strong>不是</strong>「他現在失智了」。很多類澱粉蛋白陽性者終其一生都不會進展到失智。</li>
@@ -116,14 +123,14 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <p>所以「抽血驗失智症」這句話，從定義上就是過度宣稱。它頂多能說「抽血評估腦中是否已有阿茲海默病理」，而且還要附上一大堆前提。</p>
 <h2>三、市面上到底有哪些檢測？</h2>
 <p>目前可取得的血漿阿茲海默生物標記檢測，主要圍繞幾種分析物：<strong>p-tau217、%p-tau217、p-tau181、Aβ42/40 比值</strong>，部分加上 <strong>GFAP、NfL</strong>。要分辨手上這份報告的份量，先看兩件事：<strong>測哪個分析物</strong>，以及<strong>法規身分是「FDA 核准」還是「實驗室自建檢測（LDT）」</strong>。</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>類型</th><th>代表</th><th>主要分析物</th><th>法規身分</th><th>標示用途</th></tr></thead>
 <tbody>
 <tr><td>FDA 核准</td><td>Fujirebio Lumipulse 血漿 pTau217／Aβ42 比值</td><td>p-tau217 ／ Aβ42 比值</td><td>2025 美國 FDA 核准（De Novo）</td><td><strong>輔助</strong>診斷，限 <strong>≥55 歲、已有認知症狀</strong>且正在接受評估者</td></tr>
 <tr><td>實驗室自建檢測</td><td>C2N PrecivityAD2</td><td>%p-tau217＋Aβ42/40（質譜）</td><td>LDT</td><td>協助評估類澱粉蛋白狀態</td></tr>
 <tr><td>實驗室自建檢測</td><td>ALZpath／各大實驗室 pTau217</td><td>p-tau217</td><td>LDT</td><td>協助評估</td></tr>
 <tr><td>直接面對消費者（DTC）</td><td>部分檢驗公司的「民眾自費版」</td><td>p-tau217、Aβ42/40</td><td>LDT，民眾可自行下單</td><td>行銷上常訴求「及早發現」，<strong>爭議最大</strong></td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>幾個重點：</p>
 <ul>
 <li><strong>「FDA 核准」的份量跟「LDT」不同。</strong> FDA 核准代表經過正式審查，且<strong>標示用途寫得很保守</strong>——只用於「已有症狀、正在被評估」的人，而且是<strong>輔助</strong>工具，不是單獨下診斷。多數市售檢測其實是 LDT（實驗室自建檢測），品質與驗證程度差異很大，沒有統一的把關標準。</li>
@@ -141,13 +148,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <h2>五、為什麼換個對象、準確度就崩盤？貝氏定理在作怪</h2>
 <p>這是民眾最難直覺理解、卻最致命的一點。一個檢測的「敏感度／特異度」是固定的，但<strong>報告陽性時「真的有病理」的機率（陽性預測值 PPV）會隨著受檢族群的「檢測前機率」而大幅改變</strong>。</p>
 <p>以一個敏感度、特異度都假設為 90% 的不錯檢測為例，套進不同對象：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>受檢對象（檢測前機率）</th><th>陽性預測值 PPV</th><th>白話</th></tr></thead>
 <tbody>
 <tr><td>記憶門診、明顯認知退步者（約 50%）</td><td>約 90%</td><td>報告陽性，大多是真的有病理</td></tr>
 <tr><td>基層、輕微抱怨者（約 25%）</td><td>約 75%</td><td>約 1/4 的陽性是假警報</td></tr>
 <tr><td>無症狀、單純擔心的健康人（約 10%）</td><td>約 50%</td><td><strong>陽性者有一半是偽陽性</strong></td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>（上表為固定 90%／90% 的示意計算，用來說明趨勢；實際數字隨檢測與族群而異。）</p>
 <p>看出問題了嗎？<strong>同一支檢測，用在記憶門診的症狀病人身上很有用；用在無症狀的健康人身上，每兩個陽性就有一個是錯的。</strong> 而 DTC 自費版瞄準的，正是這群「沒症狀、但很擔心」的人——這也是專家強烈反對把這類檢測當「健檢／篩檢」項目的核心理由。</p>
 <p>反過來說，這類檢測在<strong>低機率族群「陰性」時的排除力（NPV）很高</strong>——這也是為什麼指引把它定位成「初篩排除」工具，而不是「篩檢確診」工具。</p>
@@ -179,7 +186,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <li><strong>誠實面對「知道了能怎樣」。</strong> 在已有疾病修飾治療（如抗類澱粉蛋白單株抗體）的時代，確認病理確實更有意義；但對不打算或不適合治療的人，也要尊重「不一定要知道」的選擇。</li>
 </ol>
 <h2>臨床要點摘要</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
 <tr><td>核心觀念</td><td>BBM 驗的是「阿茲海默病理」，不是「失智症」這個臨床診斷</td></tr>
@@ -190,7 +197,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>法規身分</td><td>2025 FDA 核准的 Lumipulse 僅限 ≥55 歲、有症狀、評估中者，且為輔助用途；多數市售為 LDT</td></tr>
 <tr><td>最大爭議</td><td>DTC 自費版把為「有症狀者」設計的工具賣給無症狀健康人</td></tr>
 <tr><td>干擾因素</td><td>腎功能、BMI、年齡、共病、抽血與檢體處理流程</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

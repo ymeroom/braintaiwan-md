@@ -70,6 +70,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 .md-foot-cta:hover{background:#1a3975}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/dmd03.html">
 </head>
@@ -98,23 +105,23 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <h2>一、被低估的干擾因子：類固醇暴露</h2>
 <p>基因治療為了壓制人體對 AAV 病毒載體的免疫反應（如常見的肝臟轉氨酶升高與免疫排斥），<strong>必須併用較高劑量的類固醇</strong>。問題在於——類固醇本身就是 DMD 的標準治療，能實質改善患者的肌力、運動功能、肺與心臟功能、延緩脊椎側彎並延長存活期。</p>
 <h3>類固醇給藥方案</h3>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>病人狀況</th><th>方案</th></tr></thead>
 <tbody>
 <tr><td>已使用穩定劑量類固醇者</td><td>額外加 1 mg/kg/day（prednisolone equivalent，上限 60 mg/day）</td></tr>
 <tr><td>未使用類固醇者</td><td>輸注前 1 週起始 1.5 mg/kg/day</td></tr>
 <tr><td>起始時間</td><td>輸注前 1 天開始，持續至少 60 天</td></tr>
-</tbody></table>
+</tbody></table></div>
 <h3>EMBARK 中的類固醇暴露差異</h3>
 <p>EMBARK 試驗裡，治療組與安慰劑組的類固醇暴露<strong>並不對等</strong>：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>時間區間</th><th>治療組相對安慰劑的每日劑量差（RMD）</th></tr></thead>
 <tbody>
 <tr><td>基線與輸注後 2 週內</td><td>0.01 mg/kg（無臨床顯著差異）</td></tr>
 <tr><td>第 2 週至第 60 天</td><td><strong>+0.22 mg/kg</strong>（95% CI 0.05–0.38）</td></tr>
 <tr><td>第 60 天至第 12 週</td><td><strong>+0.28 mg/kg</strong>（95% CI 0.05–0.51）</td></tr>
 <tr><td>第 12 週後</td><td>回到相當水準</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>臨床意涵</strong>：較高的類固醇暴露會直接影響數月後測得的功能結果。換言之，治療組在次要終點上觀察到的那些「小幅優勢」，<strong>有多少是歸功於基因治療、有多少其實是高劑量類固醇的效應</strong>，在統計上無法清楚切割。</p>
 <blockquote>
 <p>這份文件直接點名：使用外部對照組的研究，<strong>並未校正這個重要干擾因子的劑量與暴露時間差異</strong>。這也是為何在判讀外部對照的 Class III 證據時，必須抱持極度謹慎的態度。</p>
@@ -123,13 +130,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <h2>二、microdystrophin：FDA 加速批准的基石，卻面臨三大核心爭議</h2>
 <p>microdystrophin（微小肌縮蛋白）的表現量是本藥物開發過程中的主要生物標記。試驗中以 Western blot 測量肌肉切片（治療前與治療後 12 週），並與健康男性的全長 dystrophin 進行對比。</p>
 <h3>測得的 microdystrophin 表現量</h3>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>試驗／時間點</th><th>microdystrophin（佔正常 dystrophin 比例）</th></tr></thead>
 <tbody>
 <tr><td>102 part 1（12 週）</td><td>23.82%（安慰劑組 0.14%）</td></tr>
 <tr><td>102 part 2（12 週）</td><td>39.8%</td></tr>
 <tr><td>102 part 1（60 個月後）</td><td>19.10%</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>這些數值顯著高於基線，且落在學理上「推論可能有臨床效益」的範圍內——<strong>正是這個推論構成了 FDA 原始加速批准的部分基礎</strong>。</p>
 <h3>為什麼仍需保留態度？三個關鍵爭議 (Caveats)</h3>
 <ol>
@@ -147,7 +154,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 </ul>
 <hr>
 <h2>臨床要點摘要</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>議題</th><th>重點</th></tr></thead>
 <tbody>
 <tr><td>類固醇干擾</td><td>基因治療為抗 AAV 免疫反應須併用高劑量類固醇；而類固醇本身即為 DMD 有效療法</td></tr>
@@ -155,7 +162,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>外部對照盲點</td><td>先前研究未校正類固醇劑量／使用時程差異，高估療效風險大</td></tr>
 <tr><td>microdystrophin</td><td>為加速批准基石，但其與臨床實質效益的關聯性已遭 EMBARK 試驗結果質疑</td></tr>
 <tr><td>臨床測量</td><td>microdystrophin (需切片) 與 CPK (波動大) 皆不適合作為診間的常規臨床監測指標</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

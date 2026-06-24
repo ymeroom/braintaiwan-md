@@ -70,6 +70,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 .md-foot-cta:hover{background:#1a3975}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/dmd01.html">
 </head>
@@ -99,16 +106,16 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <h2>一、為什麼 DMD 需要「microdystrophin」這種設計</h2>
 <p>DMD 是 X 染色體性聯遺傳的進行性肌肉疾病，肇因於 <em>DMD</em> 基因的致病變異，導致無功能性的失養蛋白 (dystrophin)。多專科照護與類固醇雖已改善預後，但患者壽命仍顯著縮短。</p>
 <p>基因置換治療面臨一個嚴峻的物理限制：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>項目</th><th>數值</th></tr></thead>
 <tbody>
 <tr><td>野生型 <em>DMD</em> 基因</td><td>79 個 exon，14-kb 轉錄本</td></tr>
 <tr><td>腺相關病毒（AAV）載體裝載容量</td><td>約 5 kb</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>完整的 <em>DMD</em> 基因遠超過 AAV 的裝載上限。因此所有針對 DMD 的基因置換療法，都必須使用重新設計的<strong>微型失養蛋白（microdystrophin）</strong>——切除大量結構，僅保留最關鍵的力學傳導功能區段。</p>
 <hr>
 <h2>二、delandistrogene moxeparvovec 的構造</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>特性</th><th>內容</th></tr></thead>
 <tbody>
 <tr><td>載體</td><td>非複製型重組 AAV 猴源血清型 74（rAAVrh74）</td></tr>
@@ -116,16 +123,16 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>產物</td><td>微型失養蛋白，分子量約 <strong>138-kDa</strong>（正常全長蛋白為 427-kDa）</td></tr>
 <tr><td>給藥方式</td><td>單次靜脈輸注（one-dose gene transfer）</td></tr>
 <tr><td>類別</td><td>First-in-class 基因療法</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>建議劑量</strong>：體重 &lt; 70 kg 者為 1.33 × 10¹⁴ vg/kg（或 10 mL/kg）；≥ 70 kg 者為 9.31 × 10¹⁵ vg 固定總劑量。</p>
 <hr>
 <h2>三、FDA 批准歷程：兩階段、且伴隨內部爭議</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>時間</th><th>決定</th></tr></thead>
 <tbody>
 <tr><td>2023-06-22</td><td><strong>加速批准（accelerated approval）</strong>，用於 4–5 歲可行走男童</td></tr>
 <tr><td>2024-06-20</td><td><strong>完全批准</strong>用於 ≥4 歲可行走者；<strong>加速批准</strong>用於 ≥4 歲不可行走者</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>擴大適應症的依據來自 phase 3（EMBARK）與 phase 1b（ENDEAVOR）的補充資料。</p>
 <p><strong>關鍵爭議</strong>：FDA 內部的臨床、臨床藥理與統計審查團隊原本認為臨床證據不足，建議發出「完全回應函（complete response，即不予批准）」，但此決定被生物製劑評估與研究中心（CBER）主任<strong>否決（override）</strong>。主任的理由是：<strong>基於替代終點（微型蛋白的表現量）有望預測臨床效益</strong>，加上這是不治之症。這一點將在本系列第五篇詳述。</p>
 <hr>
@@ -142,7 +149,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 </blockquote>
 <hr>
 <h2>臨床要點摘要</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
 <tr><td>設計原理</td><td><em>DMD</em> 基因過大，AAV 只能裝載截短的 microdystrophin（138 vs 427 kDa）</td></tr>
@@ -151,7 +158,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>批准</td><td>2023 加速批准 → 2024 擴大；CBER 主任兩度否決內部審查團隊決議</td></tr>
 <tr><td>禁忌</td><td>exon 8/9 缺失者禁用</td></tr>
 <tr><td>定位</td><td>非治癒性；確切臨床療效仍待時間與真實世界數據確立</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

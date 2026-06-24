@@ -69,6 +69,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 .md-foot-cta:hover{background:#1a3975}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/ais03.html">
 </head>
@@ -94,12 +101,12 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <p>靜脈溶栓的目標是<strong>溶開血栓、恢復血流</strong>。過去三十年的基石是 alteplase（rt-PA）；2026 指引最受矚目的更新，是把單次推注、操作更簡便的 tenecteplase 推上同等地位。但指引也清楚劃出邊界：<strong>溶栓越快越好、但不是人人都該打</strong>。</p>
 <hr>
 <h2>一、用藥選擇：TNK 與 alteplase 並列首選（COR 1）</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>劑量</th><th>給藥方式</th></tr></thead>
 <tbody>
 <tr><td><strong>Tenecteplase（TNK）</strong></td><td>0.25 mg/kg（上限 25 mg）</td><td><strong>單次靜脈推注</strong>（約 5–10 秒）</td></tr>
 <tr><td><strong>Alteplase（rt-PA）</strong></td><td>0.9 mg/kg（上限 90 mg）</td><td>10% 推注 + 其餘 1 小時點滴</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>2026 指引建議：4.5 小時內、符合溶栓條件的成人，<strong>使用 TNK 0.25 mg/kg 或 alteplase 0.9 mg/kg 皆可</strong>（COR 1）。</p>
 <p><strong>為什麼 TNK 是進展？</strong></p>
 <ul>
@@ -119,13 +126,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <hr>
 <h2>三、延伸時間窗：影像選對人，4.5 小時不是終點（COR 2a）</h2>
 <p>對發病已超過 4.5 小時、或醒後中風（發病時間不明）者，只要影像顯示<strong>可挽救的半暗帶</strong>，仍可能從溶栓獲益：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>情境</th><th>條件</th></tr></thead>
 <tbody>
 <tr><td>醒後中風</td><td>自睡眠中點起算 <strong>9 小時內</strong>，且自動化灌流影像顯示可挽救半暗帶</td></tr>
 <tr><td>已知發病 4.5–9 小時</td><td>同樣需灌流不匹配（penumbra）</td></tr>
 <tr><td>影像工具</td><td>自動化灌流分析，或 MRI <strong>DWI-FLAIR 不匹配</strong></td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>支持證據來自 <strong>EXTEND、WAKE-UP、EPITHET</strong> 等試驗：用影像「挑出時間軸雖晚、但組織還活著」的病人，把治療窗從僵硬的時鐘改成<strong>以組織為準</strong>。</p>
 <hr>
 <h2>四、反向結論：非致殘性輕中風，溶栓不一定划算</h2>
@@ -144,15 +151,15 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 </ul>
 <hr>
 <h2>六、兩個必須會處理的溶栓併發症</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>併發症</th><th>處置重點</th></tr></thead>
 <tbody>
 <tr><td>症狀性顱內出血（sICH）</td><td>停藥；急驗 CBC/PT/aPTT/fibrinogen；冷凍沉澱品（cryoprecipitate）維持 fibrinogen ≥150；tranexamic acid／ε-aminocaproic acid；血液科與神外會診</td></tr>
 <tr><td>口舌血管性水腫</td><td>多與 ACE 抑制劑相關；停溶栓與 ACEi；methylprednisolone、抗組織胺；嚴重時 epinephrine、icatibant；保護呼吸道</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>臨床要點摘要</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>2026 指引重點</th></tr></thead>
 <tbody>
 <tr><td>用藥選擇</td><td>TNK 0.25 mg/kg 或 alteplase 0.9 mg/kg 並列首選（COR 1）；台灣使用依最新仿單與院內流程確認</td></tr>
@@ -161,7 +168,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>延伸窗</td><td>4.5–9h 或醒後 9h 內 + 灌流可挽救半暗帶（COR 2a）</td></tr>
 <tr><td>非致殘性輕中風</td><td>溶栓無額外效益，改以 DAPT 為優先</td></tr>
 <tr><td>輔助抗栓</td><td>argatroban／eptifibatide 無益，不建議</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

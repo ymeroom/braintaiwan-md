@@ -68,6 +68,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 .md-foot-cta:hover{background:#1a3975}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/se03.html">
 </head>
@@ -157,7 +164,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 
 <h2>四、給藥的時間與流程</h2>
 
-<table>
+<div class="bt-tablewrap"><table>
   <thead><tr><th>時間點</th><th>處置</th><th>重點</th></tr></thead>
   <tbody>
     <tr><td>0–5 分鐘</td><td>穩定（ABC）、床旁血糖、O₂</td><td>補 thiamine（飲酒者）；疑低血糖立即補糖</td></tr>
@@ -165,7 +172,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
     <tr><td>10–20 分鐘</td><td>第一劑 BZD 後仍未停止 → 重複一次</td><td>BZD 總劑量達到上限後，準備第二線藥物</td></tr>
     <tr><td>20–40 分鐘（確立期 SE）</td><td>第二線 AED 靜脈給藥</td><td>見第四篇</td></tr>
   </tbody>
-</table>
+</table></div>
 
 <blockquote class="warn">
 <p>⚠️ <strong>重複給藥的限制</strong>：BZD 不應無限重複——呼吸抑制風險隨劑量遞增。一般原則是同一種 BZD 最多使用<strong>兩次</strong>，仍未控制應進入第二線藥物，而非繼續追加 BZD。</p>

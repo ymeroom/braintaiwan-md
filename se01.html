@@ -72,6 +72,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 .md-foot-cta:hover{background:#1a3975}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/se01.html">
 </head>
@@ -146,14 +153,14 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 
 <p>SE 的臨床表現多樣，從最戲劇性的全身抽搐到幾乎無外顯動作的意識障礙，都可以是 SE。依據主要症狀特徵，分為兩大類：</p>
 
-<table>
+<div class="bt-tablewrap"><table>
   <thead><tr><th>類型</th><th>臨床特徵</th><th>識別難度</th></tr></thead>
   <tbody>
     <tr><td><strong>驚厥性 SE（CSE）</strong></td><td>全身強直陣攣、肌肉持續強直或陣攣</td><td>低（容易識別）</td></tr>
     <tr><td><strong>非驚厥性 SE（NCSE）</strong></td><td>意識改變、凝視、細微動作（眨眼、口動）、無明顯抽搐</td><td>高（容易被忽略）</td></tr>
     <tr><td><strong>局灶運動性 SE</strong></td><td>單肢或單側持續性節律性運動（Epilepsia partialis continua）</td><td>中</td></tr>
   </tbody>
-</table>
+</table></div>
 
 <blockquote class="warn">
 <p>⚠️ <strong>NCSE 是被低估的殺手</strong>：ICU 中 8–48% 的不明原因昏迷患者，病因是非驚厥性 SE。無外顯抽搐不代表大腦沒有發作，持續意識障礙都應考慮緊急 EEG。</p>
@@ -165,7 +172,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 
 <p>Trinka 等人提出的分類系統以<strong>四個維度</strong>來描述每個 SE 患者，協助治療決策與預後評估：</p>
 
-<table>
+<div class="bt-tablewrap"><table>
   <thead><tr><th>軸</th><th>描述面向</th><th>主要類別</th></tr></thead>
   <tbody>
     <tr><td>軸 1（症狀學）</td><td>臨床表現</td><td>驚厥性 / 非驚厥性 / 局灶性</td></tr>
@@ -173,7 +180,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
     <tr><td>軸 3（腦波相關）</td><td>EEG 型態</td><td>局灶性 / 廣泛性 / 無 EEG 相關</td></tr>
     <tr><td>軸 4（年齡與特殊狀況）</td><td>患者背景</td><td>新生兒、兒童期、成人、老年；特殊症候群</td></tr>
   </tbody>
-</table>
+</table></div>
 
 <p>軸 2 的病因分類對預後影響最大：<strong>急性症狀性 SE</strong>（如腦炎、代謝危機、急性中風）死亡率最高；<strong>已知慢性癲癇患者的 SE</strong>（如抗癲癇藥物突然停藥）預後相對較好。</p>
 

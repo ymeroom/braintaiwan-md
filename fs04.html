@@ -70,6 +70,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 .md-foot-cta:hover{background:#1a3975}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/fs04.html">
 </head>
@@ -97,7 +104,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <hr>
 <h2>一、系統性回顧的範疇</h2>
 <p>指引搜尋 Medline、Embase、PsychINFO、CINAHL 四大資料庫，涵蓋至 2025 年 2 月的文獻，最終納入 <strong>12 項 Class II–III 研究</strong>。評估的心理介入包括：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>介入類型</th><th>代表研究</th></tr></thead>
 <tbody>
 <tr><td>功能性癲癇發作特異性認知行為治療（CBT）</td><td>Goldstein 2010, 2020</td></tr>
@@ -108,13 +115,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>團體心理教育</td><td>Chen 2014</td></tr>
 <tr><td>身體聚焦團體治療（CORDIS）</td><td>Senf-Beckenbach 2022</td></tr>
 <tr><td>錄影回饋心理治療</td><td>Aboukasm 1998</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>二、核心療效結論（整體心理介入）</h2>
 <blockquote>
 <p>指引對所有結論的確信度（confidence）多為「低」或「極低」，主因是納入研究多屬 Class III。「possibly effective（可能有效）」即反映此一證據強度。</p>
 </blockquote>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>結果指標</th><th>統合估計值</th><th>95% CI</th><th>I²</th><th>結論</th></tr></thead>
 <tbody>
 <tr><td>達到發作緩解（7 研究）</td><td>RR <strong>1.87</strong></td><td>1.36–2.56</td><td>3%</td><td>可能增加</td></tr>
@@ -123,7 +130,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>社會心理功能 WSAS（3 研究）</td><td>SMD <strong>−0.44</strong></td><td>−0.64 to −0.24</td><td>0%</td><td>可能改善</td></tr>
 <tr><td>焦慮（5 研究）</td><td>SMD <strong>−0.68</strong></td><td>−1.30 to −0.07</td><td>87%</td><td>可能降低</td></tr>
 <tr><td>憂鬱（4 研究）</td><td>SMD −0.43</td><td>−0.98 to 0.12</td><td>84%</td><td>證據不足</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p><strong>重點解讀</strong>：</p>
 <ul>
 <li>「達到發作緩解」RR 1.87，異質性極低（I²=3%），結果穩健；排除唯一的非隨機研究後大小與顯著性不變。</li>
@@ -134,7 +141,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <hr>
 <h2>三、認知行為治療（CBT）次分析</h2>
 <p>因介入異質性高，指引另針對<strong>唯一有多項研究支持</strong>的功能性癲癇發作特異性 CBT 進行次分析：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>結果指標</th><th>結果</th><th>確信度</th></tr></thead>
 <tbody>
 <tr><td>達到發作緩解</td><td>RR <strong>1.76</strong>（1.10–2.80，I²=0%）</td><td>低</td></tr>
@@ -142,7 +149,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>生活品質</td><td>單一研究，平均差 6.16（1.48–10.84）</td><td>極低</td></tr>
 <tr><td>社會心理功能</td><td>SMD <strong>−0.40</strong>（−0.61 to −0.19，I²=0%）</td><td>低</td></tr>
 <tr><td>焦慮</td><td>SMD −0.19（−0.40 to 0.02，I²=0%）</td><td>低</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>CBT 是目前研究數量最多的單一模式，代表方案包括 Goldstein 等人的 CODES 方案（12 次、4–5 個月）。</p>
 <hr>
 <h2>四、兩個重要限制</h2>
@@ -153,15 +160,15 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <hr>
 <h2>五、家庭與照護者的角色</h2>
 <p>治療成效取決於社會支持網絡的參與：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>建議</th><th>內容</th><th>層級</th></tr></thead>
 <tbody>
 <tr><td>5D</td><td>在患者同意下，邀請成人患者的家屬／重要他人參與治療</td><td>Level B</td></tr>
 <tr><td>5E</td><td>兒童患者的心理治療<strong>必須</strong>納入家庭</td><td>Level B</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <h2>六、指引的臨床建議（Recommendation 5）</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>建議</th><th>內容</th><th>層級</th></tr></thead>
 <tbody>
 <tr><td>5A</td><td>告知患者心理治療的效益與風險，促進共同決策</td><td>Level B</td></tr>
@@ -169,7 +176,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>5C</td><td>積極轉介適合且有意願的患者接受心理治療</td><td>Level B</td></tr>
 <tr><td>5D</td><td>在患者同意下，邀請成人重要他人參與</td><td>Level B</td></tr>
 <tr><td>5E</td><td>兒童患者治療必須納入家庭</td><td>Level B</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

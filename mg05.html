@@ -69,6 +69,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 .md-foot-cta:hover{background:#1a3975}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/mg05.html">
 </head>
@@ -126,7 +133,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 </ul>
 <hr>
 <h2>臨床要點摘要</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>層級</th><th>代表治療</th><th>機轉／定位</th><th>重點備註</th></tr></thead>
 <tbody>
 <tr><td>症狀</td><td>pyridostigmine</td><td>抑制乙醯膽鹼酯酶、延長 ACh 作用</td><td>不改病程；MuSK 型反應差、需較高劑量</td></tr>
@@ -136,7 +143,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>結構</td><td>胸腺切除</td><td>移除胸腺</td><td>胸腺瘤必做；AChR 全身型 15–50 歲、1–2 年內；MuSK／單純眼型不建議</td></tr>
 <tr><td>標靶 FcRn</td><td>efgartigimod／rozanolixizumab</td><td>降低致病性 IgG</td><td>efgartigimod 首個用於血清陰性；rozanolixizumab 同涵蓋 AChR 與 MuSK</td></tr>
 <tr><td>標靶 C5</td><td>eculizumab／ravulizumab／zilucoplan</td><td>阻斷終末補體破壞</td><td>ravulizumab 間隔 8 週；zilucoplan 每日皮下自打</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>
