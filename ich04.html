@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICH（四）：開不開刀，看四個座標——位置、體積、時間窗、技術 — BrainTaiwan MD</title>
+<meta name="description" content="以 ESO/EANS 2025 指引 PICO 4 系列為主軸 「腦出血要不要開刀」這題沒有一刀切的答案，指引乾脆把它拆成一張座標圖：血塊在哪裡（葉狀還是深部）、有多大、出血多久了、用哪種技術。這四個軸交叉之後，才知道某…">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="BrainTaiwan">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:url" content="https://md.braintaiwan.com/ich04.html">
+<meta property="og:title" content="ICH（四）：開不開刀，看四個座標——位置、體積、時間窗、技術">
+<meta property="og:description" content="以 ESO/EANS 2025 指引 PICO 4 系列為主軸 「腦出血要不要開刀」這題沒有一刀切的答案，指引乾脆把它拆成一張座標圖：血塊在哪裡（葉狀還是深部）、有多大、出血多久了、用哪種技術。這四個軸交叉之後，才知道某…">
+<meta property="og:image" content="https://md.braintaiwan.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://md.braintaiwan.com/og.png">
+<meta name="twitter:title" content="ICH（四）：開不開刀，看四個座標——位置、體積、時間窗、技術">
+<meta name="twitter:description" content="以 ESO/EANS 2025 指引 PICO 4 系列為主軸 「腦出血要不要開刀」這題沒有一刀切的答案，指引乾脆把它拆成一張座標圖：血塊在哪裡（葉狀還是深部）、有多大、出血多久了、用哪種技術。這四個軸交叉之後，才知道某…">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI','Microsoft JhengHei','PingFang TC',Arial,sans-serif;background:#f0f4f8;color:#1c1c2e;line-height:1.85}
+header{background:linear-gradient(135deg,#0f2142 0%,#1a3975 55%,#1565c0 100%);color:#fff;padding:36px 32px 28px}
+.header-inner{max-width:860px;margin:0 auto}
+.site-name{font-size:11pt;font-weight:600;opacity:.65;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
+.series-tag{font-size:11pt;opacity:.8;margin-bottom:6px}
+.site-title{font-size:24pt;font-weight:700;line-height:1.35}
+.header-nav{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.byline{font-size:10.5pt;color:rgba(255,255,255,.62);margin-top:10px;font-weight:500}.byline b{color:rgba(255,255,255,.9);font-weight:700}
+.nav-link{color:rgba(255,255,255,.65);text-decoration:none;font-size:11pt;padding:4px 12px;border:1px solid rgba(255,255,255,.22);border-radius:20px;transition:all .2s}
+.nav-link:hover{background:rgba(255,255,255,.18);color:#fff;border-color:rgba(255,255,255,.45)}
+main{max-width:860px;margin:0 auto;padding:28px 24px}
+.series-nav{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px}
+.series-link{font-size:11pt;text-decoration:none;color:#546e7a;background:#fff;border:1px solid #e0e8f5;padding:5px 12px;border-radius:20px}
+.series-link:hover{color:#1565c0;border-color:#1565c0}
+.series-link.active{background:#1565c0;color:#fff;border-color:#1565c0;font-weight:600}
+.pager{display:flex;justify-content:space-between;gap:14px;margin-top:30px}
+.pager-link{display:flex;flex-direction:column;gap:4px;max-width:48%;text-decoration:none;background:#fff;border:1px solid #e0e8f5;border-radius:10px;padding:12px 18px;transition:all .2s}
+.pager-link:hover{border-color:#1565c0;box-shadow:0 4px 14px rgba(21,101,192,.12)}
+.pager-link.next{align-items:flex-end;text-align:right}
+.pager-dir{font-size:11pt;color:#90a4ae;font-weight:600}
+.pager-ttl{font-size:13.5pt;color:#0f2142;font-weight:700}
+.article{background:#fff;border:1px solid #e0e8f5;border-radius:12px;padding:40px 46px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.article h1{font-size:23pt;color:#0f2142;line-height:1.4;margin:.1em 0 .5em}
+.article h2{font-size:18pt;color:#0f2142;margin:1.8em 0 .7em;padding-left:12px;border-left:4px solid #1565c0;line-height:1.4}
+.article h3{font-size:15pt;color:#1a3975;margin:1.5em 0 .4em}
+.article p{margin:.85em 0;font-size:14pt;color:#263238}
+.article a{color:#1565c0;text-decoration:none}
+.article hr{border:none;border-top:1px solid #e0e8f5;margin:2em 0}
+.article strong{color:#0f2142}
+blockquote{margin:1.5em 0;padding:16px 20px;background:#eef4fb;border-left:4px solid #1565c0;border-radius:0 8px 8px 0;color:#37474f;font-size:13pt}
+blockquote h3{margin-top:.1em;color:#0f2142}
+blockquote.commentary{background:#fff7e8;border-left:4px solid #f5a623}
+table{width:100%;border-collapse:collapse;margin:1.3em 0;font-size:12.5pt;border:1px solid #e0e8f5;border-radius:8px;overflow:hidden}
+th,td{padding:10px 13px;text-align:left;border-bottom:1px solid #eef2f7}
+th{background:#0f2142;color:#fff;font-weight:600}
+tr:nth-child(even) td{background:#f6f9fd}
+code{background:#eef2f7;padding:1px 6px;border-radius:5px;font-size:.9em}
+ol,ul{padding-left:1.5em;margin:.6em 0}
+li{margin:.3em 0;font-size:14pt;color:#263238}
+footer{background:#0f2142;color:rgba(255,255,255,.45);text-align:center;padding:20px;font-size:10.5pt;margin-top:40px}
+footer a{color:rgba(255,255,255,.55);text-decoration:none}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="site-name">BrainTaiwan · MD</div>
+    <div class="series-tag">自發性腦出血 ICH ESO/EANS 2025 指引導讀</div>
+    <div class="site-title">ICH（四）：開不開刀，看四個座標——位置、體積、時間窗、技術</div>
+    <div class="byline"><b>施懿恩</b> 醫師．神經內科 · 導讀整理 2026 年</div>
+    <nav class="header-nav">
+      <a href="/" class="nav-link">← 臨床工具</a>
+      <a href="https://braintaiwan.com" class="nav-link">首頁</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="series-nav"><a href="ich01.html" class="series-link">① 概論、查因與預後</a><a href="ich02.html" class="series-link">② 急性血壓控制</a><a href="ich03.html" class="series-link">③ 止血與抗凝逆轉</a><a href="ich04.html" class="series-link active">④ 外科處置</a><a href="ich05.html" class="series-link">⑤ 併發症與次級預防</a></div>
+  <article class="article">
+<blockquote>
+<p><strong>系列導讀．第 4 篇</strong>　以 ESO/EANS 2025 指引 PICO 4 系列為主軸 「腦出血要不要開刀」這題沒有一刀切的答案，指引乾脆把它拆成一張座標圖：血塊在哪裡（葉狀還是深部）、有多大、出血多久了、用哪種技術。這四個軸交叉之後，才知道某一刀划不划得來。而且先講好——這整片地圖上，幾乎沒有一條是強建議。</p>
+</blockquote>
+<hr>
+<p>腦出血開刀的核心邏輯只有一句：把血塊清掉、解除壓迫、減少後續的二次傷害。問題是這把刀划不划得來，完全看四件事——血塊在哪、多大、多久、用什麼方法。指引把外科這一整章拆成一連串 PICO，乍看像迷宮，其實就是沿著這四個座標走一圈。而且幾乎每一站的結論都掛著同一塊牌子：<strong>證據很弱、弱建議、要不要做請個別判斷</strong>。先把這個基調吃進去，後面所有數字才不會被當成保證。</p>
+<hr>
+<h2>一、先看大方向：清血塊「整體」是有幫助的</h2>
+<p>把所有清血塊的手術（不分技術）合在一起跟「不開刀」比，方向是好的。17 個隨機試驗、近 4000 人，<strong>清血塊手術把死亡風險壓下來</strong>（OR 0.75），也<strong>改善了功能預後</strong>（OR 1.68）。聽起來很漂亮，但證據品質被評為「極低」，意思是這個數字只能當大方向，不能當承諾。</p>
+<p>真正有用的，是藏在這堆試驗裡的三條線索。第一，<strong>體積要降得夠</strong>——MISTIE-III 的探索性分析顯示，把治療結束時的血塊體積壓到 15 mL 以下，一年後 mRS 0–3 的比例會多出一成。換句話說，清血塊不是「有開就好」，是「清得夠乾淨」才有意義。第二，<strong>早一點動手</strong>——一個納入 8 個老試驗、2186 人的個別病患資料統合分析發現，發病 8 小時內隨機分派、加上 GCS 落在 9–12 之間的病人，術後預後比較好。第三，<strong>位置會修飾結果</strong>——但這條線索方向打架，留到後面講。</p>
+<p>所以「整體有幫助」這句話要打個折：它真正的意思是，<strong>在對的位置、夠大的血塊、夠早的時機、把它清得夠乾淨</strong>，才看得到那個好處。</p>
+<hr>
+<h2>二、葉狀 vs 深部：這是第一個分水嶺</h2>
+<p>把出血位置攤開，葉狀（lobar，靠近皮質表淺處）跟深部（基底節、視丘）走的是兩條命運完全不同的路。</p>
+<p><strong>葉狀</strong>是目前證據最站得住腳的一邊。微創清除在葉狀 ICH 看得到效果，那條「整體有益」的訊號，拆開來看大半是葉狀貢獻的。<strong>深部</strong>則一路碰壁——ENRICH 試驗在期中分析時，因為深部那一組做不出效果（無效），直接把深部病人停收。深部出血卡在功能要害區，刀進去的代價往往抵銷了清血塊的好處。</p>
+<p>這就是為什麼指引一講到外科，先問的不是「要不要開」，而是「血塊在哪」。<strong>葉狀傾向積極、深部傾向保留</strong>，這條分水嶺貫穿後面每一種技術。</p>
+<hr>
+<h2>三、技術四選一：開顱、微創、導管纖溶、減壓</h2>
+<p>同樣是「清血塊」，用哪把工具差很多。指引把四種技術各自評了一遍，結論彼此不一樣。</p>
+<p><strong>開顱（craniotomy）</strong>是最傳統的那把刀，但它的成績單最尷尬。STICH 和 STICH-II 兩個大型試驗都沒做出明確好處，統合 6 個試驗、1827 人，<strong>對死亡 OR 0.82——方向偏好開刀，但不顯著</strong>。指引給的位置很窄：只在<strong>非昏迷、葉狀、而且沒有微創可用</strong>的時候，才考慮早期開顱清除。STICH 失敗常被歸因於收了太多腦室擴展的病人、加上動手太晚；換句話說，不是開顱本身全錯，是它被用在了不對的人身上。</p>
+<p><strong>微創手術（MIS）</strong>是這四個裡證據最好的一個（品質「低」，已經算高分了）。4 個試驗、637 人，<strong>葉狀 ICH 在 24 小時內微創清除，降死亡 OR 0.49、改善功能 OR 1.84</strong>。撐起這個建議的是 ENRICH——它用經腦溝（trans-sulcal）、沿白質纖維走向（parafascicular）的管狀裝置進去，把手術當成「在切一顆功能區腫瘤」那樣小心。它的適用範圍卡得很死：體積 30–80 mL、GCS 5–14、發病 24 小時內，而且深部那組已經因無效停收。所以 MIS 的好處，目前只能說在葉狀、早期、選對病人的前提下成立。</p>
+<p><strong>導管置入＋纖溶（catheter + thrombolysis）</strong>是另一條路——鑽個小孔放導管，反覆灌纖溶藥把血塊慢慢溶掉、引流出來。但它的成績「不確定」，指引乾脆把它丟回隨機試驗裡繼續收案。最大的試驗 MISTIE III，<strong>對死亡 OR 0.76、不顯著</strong>。它留下的真正價值是那句老話的另一個版本：<strong>體積降到 15 mL 以下跟較好功能相關</strong>——但 MISTIE III 自己沒做到早期，手術中位數拖到發病後 58 小時才開始，這可能正是它沒打出顯著效果的原因之一。</p>
+<p><strong>減壓性顱骨切除（decompressive craniectomy）</strong>走的是完全不同的思路——它<strong>不清血塊</strong>，只是把顱骨拿掉、給腫脹的腦組織讓出空間。對象很特定：18–75 歲、72 小時內、深部嚴重 ICH（GCS 8–13、NIHSS 10–30、體積 30–100 mL）。唯一的試驗 SWITCH（還提早停收）顯示<strong>死亡 OR 0.55</strong>，方向偏好減壓。但這裡有個必須講清楚的代價：<strong>死亡率降下來，換來的是 mRS 5（嚴重失能、臥床、需全時照護）的人變多</strong>。減壓救的是命，不一定救得回生活品質——這個取捨在深部嚴重出血幾乎無法迴避。</p>
+<hr>
+<h2>四、合併腦室出血（IVH）：另開一條戰線</h2>
+<p>血塊破進腦室，是另一個獨立的局面。腦室裡的血加上水腦，會讓意識直直往下掉，這時候的處置邏輯跟清腦實質血塊不太一樣。</p>
+<p><strong>腦室外引流（EVD）</strong>在這裡是救命的急救動作。沒有任何 RCT 比過「放 EVD vs 不放」，但這恰恰是因為——當 IVH 合併水腦、意識下降時放 EVD 降死亡，是臨床上不證自明的急救，沒人忍心拿來隨機分派。它快速降腦壓，這一點是共識（15/15 票通過）。</p>
+<p><strong>EVD 加上腦室內纖溶</strong>就複雜了。4 個試驗合起來，<strong>纖溶降死亡 OR 0.46</strong>——數字很亮。但最大、品質最好的 CLEAR-III 把這個亮點戳破了：<strong>死亡是降了，可是換來 mRS 5 的存活者變多，整體功能跟分流依賴都沒改善</strong>。又是同一個故事——救活了，但救回來的不少是嚴重失能。CLEAR-III 自己也拖太晚（發病 52 小時才隨機），早一點、清得乾淨一點（&gt;80% 清除）的人在次分析裡似乎好一些，但這還得靠未來試驗去驗。</p>
+<p><strong>內視鏡清除腦室血</strong>反而走出了不一樣的成績。5 個小試驗、品質極低，但方向漂亮：<strong>改善功能 OR 3.51、降分流依賴 OR 0.17</strong>。把血直接洗出來、而不只是溶掉慢慢流，理論上更釜底抽薪。只是這些試驗都太小、偏差風險很高，一個夠力的「內視鏡＋EVD vs 單純 EVD」試驗目前還是缺的。</p>
+<hr>
+<h2>五、小腦出血：唯一接近「該開就開」的地方</h2>
+<p>幕下（infratentorial）的小腦出血，是這整章裡邏輯最直觀的一站。</p>
+<p>理由是解剖——小腦窩空間極小，血塊一大就容易壓迫腦幹、塞住腦室造成水腦、最後腦疝。所以這裡常常<strong>沒等到隨機證據就先開了</strong>。指引建議：<strong>清除大於 15 mL 的血塊以提升存活</strong>（OR 0.44），靠的是觀察性資料和專家意見，連一個 RCT 都沒有。要注意的是，<strong>存活有改善，但功能預後沒有顯著差別</strong>——清血塊在小腦救的同樣偏向「命」這一端。</p>
+<p>還有一個搭配動作：當合併腦幹壓迫或水腦時，指引建議<strong>EVD 合併清除一起做</strong>，而不是單放 EVD。原因是單放 EVD 在基底池受壓時可能反而有害，光引流壓不住那個把血流擋在腦幹外的高壓。</p>
+<hr>
+<h2>臨床要點摘要</h2>
+<table>
+<thead><tr><th>情境／技術</th><th>指引立場（品質／強度）</th><th>關鍵數字與條件</th></tr></thead>
+<tbody>
+<tr><td>任何清血塊手術（整體）</td><td>弱建議偏好（極低）</td><td>降死亡 OR 0.75、改善功能 OR 1.68；EOT 體積 ≤15 mL、8h 內、GCS 9–12 預後較佳</td></tr>
+<tr><td>開顱 craniotomy</td><td>弱建議偏好（極低）</td><td>限非昏迷葉狀、無微創可用；STICH/STICH-II 無明確好處、死亡 OR 0.82 不顯著</td></tr>
+<tr><td>微創手術 MIS</td><td>弱建議偏好（低）</td><td>葉狀、24h 內：降死亡 OR 0.49、改善功能 OR 1.84；ENRICH 體積 30–80 mL、GCS 5–14，深部停收</td></tr>
+<tr><td>導管置入＋纖溶</td><td>不確定，收進 RCT（極低）</td><td>MISTIE III 死亡 OR 0.76 不顯著；體積降到 15 mL 與較好功能相關，但動手太晚（58h）</td></tr>
+<tr><td>減壓性顱骨切除</td><td>弱建議偏好（低）</td><td>18–75 歲、72h 內、深部嚴重 ICH（GCS 8–13／NIHSS 10–30／30–100 mL）；SWITCH 死亡 OR 0.55，代價是 mRS 5 增加</td></tr>
+<tr><td>IVH：EVD ±腰椎引流</td><td>共識（救命急救）</td><td>IVH＋水腦致意識下降時放 EVD 降死亡</td></tr>
+<tr><td>IVH：EVD＋腦室內纖溶</td><td>弱建議偏好（極低）</td><td>降死亡 OR 0.46，但 CLEAR-III 換來 mRS 5 增加、功能與分流依賴未改善</td></tr>
+<tr><td>IVH：內視鏡清除腦室血</td><td>弱建議偏好（極低）</td><td>改善功能 OR 3.51、降分流依賴 OR 0.17</td></tr>
+<tr><td>幕下／小腦</td><td>弱建議偏好（極低）</td><td>清除 &gt;15 mL 提升存活 OR 0.44，功能無顯著差異；腦幹壓迫／水腦時 EVD 合併清除</td></tr>
+</tbody></table>
+<hr>
+<blockquote class="commentary">
+<h3>🩺 神經專科醫師　施懿恩・小評論</h3>
+<p>這一章我帶學弟妹讀的時候，會先把所有 OR 蓋掉，只留四個字在白板上：<strong>位置、體積、時間、技術。</strong> 腦出血開刀最容易誤導人的地方，是大家想要一個「該不該開」的是非題答案，但指引從頭到尾給的是一張座標圖——同一個血塊，換個位置、換個時機，結論就翻面。把這四軸記住，比死背任何一個 OR 都有用。</p>
+<p>我自己床邊判斷的第一刀永遠先落在位置上：<strong>葉狀我會積極想辦法清，深部我會非常保留。</strong> ENRICH 把深部停收、SWITCH 在深部嚴重出血只能救命卻救不回功能——這兩件事我覺得是整章最該記死的訊號。深部出血的刀，太多時候是把死亡換成 mRS 5，這個取捨在跟家屬談話前，自己心裡要先算清楚。</p>
+<p>還有一條我反覆強調的暗線是「清得夠不夠乾淨」。MISTIE III 和 CLEAR-III 都拖太晚，結果都不顯著，但它們不約而同指向同一句話：<strong>把體積壓到 15 mL 以下、而且早一點動手，才是真正的療效來源。</strong> 我們很容易把「有開刀」當成終點，但血塊清到一半、又拖到五十幾小時，那刀的價值就被稀釋光了。</p>
+<p>最後留一個我自己也還沒想透的問題：小腦出血幾乎沒人敢做 RCT，因為大到一定程度不開就會腦疝，我們是憑解剖直覺在開。可是腦室內纖溶這條，明明也是降死亡，卻在 CLEAR-III 換來一堆嚴重失能。同樣是「救命」，為什麼小腦那一刀我們做得心安理得，腦室纖溶那一管卻爭議不休？差別大概就在——<strong>救回來的那條命，後來過著什麼樣的日子。</strong> 這個問題沒被任何一個 OR 回答，但它其實才是每次決定開不開刀時，真正壓在手上的那塊重量。</p>
+</blockquote>
+<hr>
+<p><em>本篇為自發性腦出血之臨床導讀整理，主要參考 Steiner 等人 2025 ESO/EANS 指引（PICO 4 外科處置系列），供醫療專業人員教學參考，不取代個別臨床判斷或原文。文中表格為原創整理。</em></p>
+
+  </article>
+  <nav class="pager">
+    <a class="pager-link prev" href="ich03.html"><span class="pager-dir">← 上一篇</span><span class="pager-ttl">③ 止血與抗凝逆轉</span></a>
+    <a class="pager-link next" href="ich05.html"><span class="pager-dir">下一篇 →</span><span class="pager-ttl">⑤ 併發症與次級預防</span></a>
+  </nav>
+</main>
+<footer>© 2026 BrainTaiwan MD · <a href="https://braintaiwan.com">braintaiwan.com</a></footer>
+</body>
+</html>
