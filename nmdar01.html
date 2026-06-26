@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>anti-NMDAR（一）：抗體把受體一個個拔掉——認識疾病與致病機轉 — BrainTaiwan MD</title>
+<meta name="description" content="從致病抗體、抗原表位、可逆性機轉，到流行病學與腫瘤、HSV 觸發——先把「這是什麼病」講清楚，後面幾篇才好談病程、診斷與治療。 一個二十出頭、原本好端端的年輕女性，突然開始講話怪怪的、被當成思覺失調送進精神科——背後可能…">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="BrainTaiwan">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:url" content="https://md.braintaiwan.com/nmdar01.html">
+<meta property="og:title" content="anti-NMDAR（一）：抗體把受體一個個拔掉——認識疾病與致病機轉">
+<meta property="og:description" content="從致病抗體、抗原表位、可逆性機轉，到流行病學與腫瘤、HSV 觸發——先把「這是什麼病」講清楚，後面幾篇才好談病程、診斷與治療。 一個二十出頭、原本好端端的年輕女性，突然開始講話怪怪的、被當成思覺失調送進精神科——背後可能…">
+<meta property="og:image" content="https://md.braintaiwan.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://md.braintaiwan.com/og.png">
+<meta name="twitter:title" content="anti-NMDAR（一）：抗體把受體一個個拔掉——認識疾病與致病機轉">
+<meta name="twitter:description" content="從致病抗體、抗原表位、可逆性機轉，到流行病學與腫瘤、HSV 觸發——先把「這是什麼病」講清楚，後面幾篇才好談病程、診斷與治療。 一個二十出頭、原本好端端的年輕女性，突然開始講話怪怪的、被當成思覺失調送進精神科——背後可能…">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI','Microsoft JhengHei','PingFang TC',Arial,sans-serif;background:#f0f4f8;color:#1c1c2e;line-height:1.85}
+header{background:linear-gradient(135deg,#0f2142 0%,#1a3975 55%,#1565c0 100%);color:#fff;padding:36px 32px 28px}
+.header-inner{max-width:860px;margin:0 auto}
+.site-name{font-size:11pt;font-weight:600;opacity:.65;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
+.series-tag{font-size:11pt;opacity:.8;margin-bottom:6px}
+.site-title{font-size:24pt;font-weight:700;line-height:1.35}
+.header-nav{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.byline{font-size:10.5pt;color:rgba(255,255,255,.62);margin-top:10px;font-weight:500}.byline b{color:rgba(255,255,255,.9);font-weight:700}
+.nav-link{color:rgba(255,255,255,.65);text-decoration:none;font-size:11pt;padding:4px 12px;border:1px solid rgba(255,255,255,.22);border-radius:20px;transition:all .2s}
+.nav-link:hover{background:rgba(255,255,255,.18);color:#fff;border-color:rgba(255,255,255,.45)}
+main{max-width:860px;margin:0 auto;padding:28px 24px}
+.series-nav{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px}
+.series-link{font-size:11pt;text-decoration:none;color:#546e7a;background:#fff;border:1px solid #e0e8f5;padding:5px 12px;border-radius:20px}
+.series-link:hover{color:#1565c0;border-color:#1565c0}
+.series-link.active{background:#1565c0;color:#fff;border-color:#1565c0;font-weight:600}
+.pager{display:flex;justify-content:space-between;gap:14px;margin-top:30px}
+.pager-link{display:flex;flex-direction:column;gap:4px;max-width:48%;text-decoration:none;background:#fff;border:1px solid #e0e8f5;border-radius:10px;padding:12px 18px;transition:all .2s}
+.pager-link:hover{border-color:#1565c0;box-shadow:0 4px 14px rgba(21,101,192,.12)}
+.pager-link.next{align-items:flex-end;text-align:right}
+.pager-dir{font-size:11pt;color:#90a4ae;font-weight:600}
+.pager-ttl{font-size:13.5pt;color:#0f2142;font-weight:700}
+.article{background:#fff;border:1px solid #e0e8f5;border-radius:12px;padding:40px 46px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.article h1{font-size:23pt;color:#0f2142;line-height:1.4;margin:.1em 0 .5em}
+.article h2{font-size:18pt;color:#0f2142;margin:1.8em 0 .7em;padding-left:12px;border-left:4px solid #1565c0;line-height:1.4}
+.article h3{font-size:15pt;color:#1a3975;margin:1.5em 0 .4em}
+.article p{margin:.85em 0;font-size:14pt;color:#263238}
+.article a{color:#1565c0;text-decoration:none}
+.article hr{border:none;border-top:1px solid #e0e8f5;margin:2em 0}
+.article strong{color:#0f2142}
+blockquote{margin:1.5em 0;padding:16px 20px;background:#eef4fb;border-left:4px solid #1565c0;border-radius:0 8px 8px 0;color:#37474f;font-size:13pt}
+blockquote h3{margin-top:.1em;color:#0f2142}
+blockquote.commentary{background:#fff7e8;border-left:4px solid #f5a623}
+table{width:100%;border-collapse:collapse;margin:1.3em 0;font-size:12.5pt;border:1px solid #e0e8f5;border-radius:8px;overflow:hidden}
+th,td{padding:10px 13px;text-align:left;border-bottom:1px solid #eef2f7}
+th{background:#0f2142;color:#fff;font-weight:600}
+tr:nth-child(even) td{background:#f6f9fd}
+code{background:#eef2f7;padding:1px 6px;border-radius:5px;font-size:.9em}
+ol,ul{padding-left:1.5em;margin:.6em 0}
+li{margin:.3em 0;font-size:14pt;color:#263238}
+footer{background:#0f2142;color:rgba(255,255,255,.45);text-align:center;padding:20px;font-size:10.5pt;margin-top:40px}
+footer a{color:rgba(255,255,255,.55);text-decoration:none}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="site-name">BrainTaiwan · MD</div>
+    <div class="series-tag">anti-NMDA 受體腦炎（autoimmune encephalitis）臨床導讀：Dalmau 2019 機轉、Graus 2016 診斷準則與 Titulaer 2013 預後世代</div>
+    <div class="site-title">anti-NMDAR（一）：抗體把受體一個個拔掉——認識疾病與致病機轉</div>
+    <div class="byline"><b>施懿恩</b> 醫師．神經內科 · 導讀整理 2026 年</div>
+    <nav class="header-nav">
+      <a href="/" class="nav-link">← 臨床工具</a>
+      <a href="https://braintaiwan.com" class="nav-link">首頁</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="series-nav"><a href="nmdar01.html" class="series-link active">① 認識疾病與抗體機轉</a><a href="nmdar02.html" class="series-link">② 臨床五幕病程</a><a href="nmdar03.html" class="series-link">③ 診斷與檢查</a><a href="nmdar04.html" class="series-link">④ 治療策略</a><a href="nmdar05.html" class="series-link">⑤ 預後、復發與復健</a></div>
+  <article class="article">
+<blockquote>
+<p><strong>系列導讀．第 1 篇</strong>　從致病抗體、抗原表位、可逆性機轉，到流行病學與腫瘤、HSV 觸發——先把「這是什麼病」講清楚，後面幾篇才好談病程、診斷與治療。 一個二十出頭、原本好端端的年輕女性，突然開始講話怪怪的、被當成思覺失調送進精神科——背後可能是一群抗體，正不動聲色地把她腦子裡的 NMDA 受體一個一個從神經元表面拔下來。</p>
+</blockquote>
+<hr>
+<p>先講最核心的那件事：這個病的兇手，是一種專門針對 NMDA 受體 <strong>GluN1（也就是 NR1）次單元</strong> 的 IgG 抗體。Dalmau 在 2008 年就把抗原的位置定得很清楚——抗體咬的不是受體隨便哪個地方，而是 NR1 次單元伸在細胞膜外、最外側的那段 <strong>N 端胺基端區域</strong>。換句話說，抗體攻擊的是受體露在神經元外面、最容易被血裡或腦脊髓液裡的抗體碰到的部分。</p>
+<p>這個定位很重要，因為它直接決定了這個病「為什麼還救得回來」。</p>
+<hr>
+<h2>一、抗體不是把受體殺掉，而是把它「藏起來」</h2>
+<p>很多人第一次聽到「自體抗體攻擊腦子」，會直覺以為是抗體把神經元打死了，像中風那樣留下一塊壞死。anti-NMDAR 腦炎偏偏不是這樣。</p>
+<p>抗體做的事情比較像是「綁架」而不是「謀殺」。當這群 NR1 抗體黏到神經元表面的 NMDA 受體上，會把兩兩相鄰的受體<strong>交聯（cross-link）</strong>起來、聚成一團（這個現象叫 capping），接著整團被細胞<strong>內化（internalisation）</strong>吞進去——受體還在，只是從表面被收走、藏進細胞裡，神經元表面能用的受體數量就大幅下降。</p>
+<p>Dalmau 2008 用一個很漂亮的實驗證明這件事是<strong>可逆的</strong>：把神經元泡在病人的腦脊髓液裡三天，表面受體叢集明顯減少；接著把病人的 CSF 換成對照組的 CSF、再養四天，受體叢集數量就回升到接近正常的水準。受體沒死，把抗體拿走，它就自己長回來。2019 年那篇機轉回顧又把這條路徑再確認一次：抗體結合 GluN1 → 交聯／內化 → 表面受體可逆下降——這是一個<strong>可治療、可逆</strong>的疾病。</p>
+<p>這就是為什麼這個病明明可以重到插管住進加護病房，最後卻有機會幾乎完全康復——只要把抗體壓下去，被藏起來的受體會回來。</p>
+<hr>
+<h2>二、抗體多寡和病情是平行的</h2>
+<p>更有說服力的是「劑量」這件事。受體被拔掉的程度，是隨抗體濃度（titre）走的——抗體愈多，表面受體掉得愈兇，這叫<strong>濃度依賴（titre-dependent）</strong>。</p>
+<p>Dalmau 2008 在病人身上也看到對應的臨床版本：</p>
+<ul>
+<li>後來死亡的病人，落在 CSF 抗體效價<strong>最高</strong>的那一群；</li>
+<li>症狀相對輕的病人，效價<strong>最低</strong>；</li>
+<li>臨床有改善的人，血清抗體效價會<strong>跟著平行下降</strong>；沒改善的人，則維持在高效價。</li>
+</ul>
+<p>把實驗室裡的「抗體多→受體少」和臨床上的「抗體高→病情重」擺在一起看，整條因果鏈就閉合了：抗體是因，受體被藏起來是中介，症狀是果，而且三者是連動的。這也預告了後面治療那篇的邏輯——治療的本質就是「把抗體拉下來」。</p>
+<hr>
+<h2>三、誰會得這個病：年輕、女性為主</h2>
+<p>知道機轉之後，下一個臨床上最實用的問題是：這病長在誰身上。</p>
+<p>Dalmau 2008 那篇奠基性的病例系列收了 <strong>100 名</strong> NR1–NR2 抗體腦炎病人，其中女性 <strong>91 名（91%）</strong>，中位年齡 <strong>23 歲</strong>，範圍從 5 歲到 76 歲。後來 Titulaer 2013 的大型觀察性世代把數字撐到 <strong>577 名</strong>，女性 <strong>468 名（81%）</strong>，中位年齡 <strong>21 歲</strong>，範圍 1 到 85 歲。</p>
+<p>兩個世代講的是同一件事：<strong>這是一個壓倒性偏向年輕女性的病</strong>。Titulaer 2013 把年齡攤開來看更清楚——兒童（&lt;18 歲）佔了 <strong>37%（211 名）</strong>，而年長（≥45 歲）只佔 <strong>5%（28 名）</strong>。也就是說，當你面前是一個四十五歲以上、第一次發作的「腦炎」，統計上反而要多想想別的可能。</p>
+<table>
+<thead><tr><th>世代</th><th>人數</th><th>女性比例</th><th>中位年齡（範圍）</th></tr></thead>
+<tbody>
+<tr><td>Dalmau 2008</td><td>100</td><td>91%（91 名）</td><td>23 歲（5–76）</td></tr>
+<tr><td>Titulaer 2013</td><td>577</td><td>81%（468 名）</td><td>21 歲（1–85）</td></tr>
+</tbody></table>
+<hr>
+<h2>四、卵巢畸胎瘤：藏在骨盆腔裡的引信</h2>
+<p>為什麼偏偏是年輕女性？腫瘤這條線給了一部分答案。</p>
+<p>Titulaer 2013 的 577 人裡，合併腫瘤的佔 <strong>38%（220/577）</strong>，而這些腫瘤裡約 <strong>94%（207/220）是卵巢畸胎瘤</strong>——一種好發在青年女性骨盆腔的生殖細胞腫瘤。畸胎瘤組織裡帶有神經樣成分、會表現 NMDA 受體，被認為是引爆這場免疫反應的「異位抗原」：免疫系統本來在攻擊腫瘤裡的 NMDA 受體，結果連腦子裡正版的受體一起打了。</p>
+<p>這條關聯把流行病學和臨床串了起來——「年輕女性＋畸胎瘤好發」剛好疊在「這個病的主要族群」上。所以一旦診斷成立，骨盆腔的腫瘤搜索就成了不能省的一步（這留到診斷與治療那兩篇細談）。</p>
+<hr>
+<h2>五、它其實沒那麼罕見——而且病毒腦炎之後也可能冒出來</h2>
+<p>「自體免疫腦炎」聽起來很罕見，但在年輕族群裡，它的份量可能超乎一般人的印象。</p>
+<p>California Encephalitis Project（Gable 2012）這個專門收腦炎病人的計畫發現：在年輕患者中，抗 NMDA 受體腦炎的盛行率<strong>超過任何單一一種病毒病因</strong>（包括 HSV-1、西尼羅病毒、VZV、腸病毒），被辨識出來的頻率大約是 <strong>HSV-1 的四倍以上</strong>。同一份資料裡，約 <strong>65% 的個案發生在 ≤18 歲</strong>，而且有顯著的女性偏向——這跟病毒性腦炎不分性別的特性正好相反。換句話說，遇到一個年輕人的腦炎，「免疫」這條路不該排在「病毒」後面當備胎，它本身就是主角之一。</p>
+<p>更有意思的是兩者還會接力。Armangué 2018 的前瞻世代追蹤單純疱疹病毒（HSV）腦炎的病人，發現約 <strong>27%（14/51）</strong> 會在 HSV 腦炎之後的數週內，再冒出一場自體免疫腦炎——病毒先把腦組織打開一個缺口，免疫系統接著認錯目標。而這些 HSV 後的自體免疫腦炎裡，<strong>最常見的就是 anti-NMDAR</strong>，佔約 <strong>64%（9/14）</strong>；從 HSV 發病到自體免疫症狀上場，中位間隔約 <strong>32 天（IQR 22–43）</strong>。</p>
+<p>所以臨床上有一條很實際的提醒：一個原本在好轉的 HSV 腦炎病人，幾週後又突然惡化、行為大變，別只想著「病毒復發」——很可能是抗體接棒了。</p>
+<hr>
+<h2>臨床要點摘要</h2>
+<table>
+<thead><tr><th>面向</th><th>重點</th></tr></thead>
+<tbody>
+<tr><td>致病抗體</td><td>針對 NMDA 受體 <strong>GluN1（NR1）次單元的 IgG</strong>；抗原表位在 NR1 細胞外 N 端胺基端區域（Dalmau 2008）</td></tr>
+<tr><td>機轉</td><td>抗體交聯／內化（capping/internalisation）受體，使表面受體<strong>濃度依賴地可逆下降</strong>；換對照 CSF 後受體叢集回復 → 可治療、可逆（Dalmau 2008、Dalmau 2019）</td></tr>
+<tr><td>抗體與病情</td><td>titre 與病情／預後平行：死亡者 CSF 效價最高、症狀輕者最低；臨床改善者血清效價平行下降（Dalmau 2008）</td></tr>
+<tr><td>流行病學</td><td>Dalmau 2008：100 例，女性 91%、中位 23 歲（5–76）；Titulaer 2013：577 例，女性 81%、中位 21 歲（1–85），兒童 &lt;18 歲 37%、≥45 歲僅 5%</td></tr>
+<tr><td>腫瘤關聯</td><td>Titulaer 2013：合併腫瘤 38%（220/577），其中約 94%（207/220）為卵巢畸胎瘤，好發青年女性</td></tr>
+<tr><td>相對盛行</td><td>California Encephalitis Project：年輕患者中盛行率超過任一單一病毒病因、約 HSV-1 的 4 倍以上；約 65% 發生於 ≤18 歲且女性偏向（Gable 2012）</td></tr>
+<tr><td>HSV 觸發</td><td>HSV 腦炎後約 27%（14/51）數週內發生自體免疫腦炎，其中 anti-NMDAR 最常見約 64%（9/14），中位間隔約 32 天（IQR 22–43）（Armangué 2018）</td></tr>
+</tbody></table>
+<hr>
+<blockquote class="commentary">
+<h3>🩺 神經專科醫師　施懿恩・小評論</h3>
+<p>我每次跟學生講這個病，都會先停在「可逆」這兩個字上。它跟我們對「腦子被攻擊」的直覺很不一樣——抗體不是把神經元燒成灰，而是把受體偷偷收進細胞裡藏起來。Dalmau 那個換 CSF、受體就長回來的實驗，第一次看到的時候我是真的有點起雞皮疙瘩：原來這場仗只要把抗體拉下來，戰場是會自己復原的。這也是為什麼我願意對一個插了管、躺在加護病房裡躁動到要綁起來的年輕病人，仍然抱著很高的期待。</p>
+<p>流行病學那幾個數字，我建議直接背進反射裡：年輕、女性、想到卵巢畸胎瘤。當一個二十幾歲的女生被當成「急性思覺失調」送進來，我腦子裡那條警報線就會亮。反過來，四十五歲以上才第一次發作的「自體免疫腦炎」只佔 5%，這個少數本身就值得停下來多問幾句。</p>
+<p>最後那條 HSV 接力的線索，是我覺得最容易在臨床現場吃虧的地方——一個正在康復的疱疹腦炎病人又突然壞下去，很容易被順手歸成病毒沒清乾淨。但有四分之一會在幾週內冒出自體免疫腦炎，而且多半就是 anti-NMDAR。那個約 32 天的間隔，值得放在心裡當一條隱形的計時器。</p>
+</blockquote>
+<hr>
+<p><em>本系列為抗 NMDA 受體腦炎之臨床導讀整理，主要參考 Dalmau 2019（Lancet Neurol 2019;18:1045–1057）、Graus 2016（Lancet Neurol 2016;15:391–404）與 Titulaer 2013（Lancet Neurol 2013;12:157–165），並引用 Dalmau 2008、Gable 2012、Armangué 2018 之原始數據，供醫療專業人員教學參考，不取代個別臨床判斷或原文。臨床決策請依個案評估。文中表格為原創整理。</em></p>
+
+  </article>
+  <nav class="pager">
+    <span></span>
+    <a class="pager-link next" href="nmdar02.html"><span class="pager-dir">下一篇 →</span><span class="pager-ttl">② 臨床五幕病程</span></a>
+  </nav>
+</main>
+<footer>© 2026 BrainTaiwan MD · <a href="https://braintaiwan.com">braintaiwan.com</a></footer>
+</body>
+</html>
