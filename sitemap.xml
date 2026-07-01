@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://md.braintaiwan.com/</loc></url>
+  <url><loc>https://md.braintaiwan.com/aat01.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/aat02.html</loc></url>
   <url><loc>https://md.braintaiwan.com/adx01.html</loc></url>
   <url><loc>https://md.braintaiwan.com/adx02.html</loc></url>
   <url><loc>https://md.braintaiwan.com/adx03.html</loc></url>
@@ -30,6 +32,11 @@
   <url><loc>https://md.braintaiwan.com/apd01.html</loc></url>
   <url><loc>https://md.braintaiwan.com/apd02.html</loc></url>
   <url><loc>https://md.braintaiwan.com/apd03.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/b1201.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/b1202.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/b1203.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/b1204.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/b1205.html</loc></url>
   <url><loc>https://md.braintaiwan.com/bbm01.html</loc></url>
   <url><loc>https://md.braintaiwan.com/bbm02.html</loc></url>
   <url><loc>https://md.braintaiwan.com/bbm03.html</loc></url>
@@ -76,11 +83,21 @@
   <url><loc>https://md.braintaiwan.com/fs03.html</loc></url>
   <url><loc>https://md.braintaiwan.com/fs04.html</loc></url>
   <url><loc>https://md.braintaiwan.com/fs05.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/gbs01.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/gbs02.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/gbs03.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/gbs04.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/gbs05.html</loc></url>
   <url><loc>https://md.braintaiwan.com/hz01.html</loc></url>
   <url><loc>https://md.braintaiwan.com/hz02.html</loc></url>
   <url><loc>https://md.braintaiwan.com/hz03.html</loc></url>
   <url><loc>https://md.braintaiwan.com/hz04.html</loc></url>
   <url><loc>https://md.braintaiwan.com/hz05.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/ich01.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/ich02.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/ich03.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/ich04.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/ich05.html</loc></url>
   <url><loc>https://md.braintaiwan.com/ins01.html</loc></url>
   <url><loc>https://md.braintaiwan.com/ins02.html</loc></url>
   <url><loc>https://md.braintaiwan.com/ins03.html</loc></url>
@@ -106,6 +123,18 @@
   <url><loc>https://md.braintaiwan.com/narc03.html</loc></url>
   <url><loc>https://md.braintaiwan.com/narc04.html</loc></url>
   <url><loc>https://md.braintaiwan.com/narc05.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/nmdar01.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/nmdar02.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/nmdar03.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/nmdar04.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/nmdar05.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/nph01.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/nph02.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/nph03.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/nph04.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/nph05.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/nph06.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/nph07.html</loc></url>
   <url><loc>https://md.braintaiwan.com/pd01.html</loc></url>
   <url><loc>https://md.braintaiwan.com/pd02.html</loc></url>
   <url><loc>https://md.braintaiwan.com/pd03.html</loc></url>
@@ -128,6 +157,11 @@
   <url><loc>https://md.braintaiwan.com/se03.html</loc></url>
   <url><loc>https://md.braintaiwan.com/se04.html</loc></url>
   <url><loc>https://md.braintaiwan.com/se05.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/thy01.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/thy02.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/thy03.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/thy04.html</loc></url>
+  <url><loc>https://md.braintaiwan.com/thy05.html</loc></url>
   <url><loc>https://md.braintaiwan.com/tn01.html</loc></url>
   <url><loc>https://md.braintaiwan.com/tn02.html</loc></url>
   <url><loc>https://md.braintaiwan.com/tn03.html</loc></url>

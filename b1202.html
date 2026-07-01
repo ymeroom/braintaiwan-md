@@ -61,7 +61,13 @@ ol,ul{padding-left:1.5em;margin:.6em 0}
 li{margin:.3em 0;font-size:14pt;color:#263238}
 footer{background:#0f2142;color:rgba(255,255,255,.45);text-align:center;padding:20px;font-size:10.5pt;margin-top:40px}
 footer a{color:rgba(255,255,255,.55);text-decoration:none}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
+<link rel="canonical" href="https://md.braintaiwan.com/b1202.html">
 </head>
 <body>
 <header>
@@ -90,13 +96,13 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <p>還有兩件抽血前一定要做的事。第一，<strong>血一定要在開始補充 B12 之前抽</strong>（1.3.4）——先補了再抽，數字就沒意義了。第二，<strong>問清楚他有沒有在吃市售的 B12</strong>（1.3.5），連同劑型（口服錠、注射、貼片）和劑量一起問。這件事等一下講判讀干擾時你會知道為什麼這麼重要。</p>
 <h2>那張門檻表，怎麼讀</h2>
 <p>驗出來的數字，對照 Table 1（1.3.9）。我把它擺成一張表：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>總 B12 濃度</th><th>活性 B12 濃度</th><th>判讀</th></tr></thead>
 <tbody>
 <tr><td>&lt; 180 ng/L（133 pmol/L）</td><td>&lt; 25 pmol/L</td><td>確診 B12 缺乏</td></tr>
 <tr><td>180–350 ng/L（133–258 pmol/L）</td><td>25–70 pmol/L</td><td>模糊，可能缺乏</td></tr>
 <tr><td>&gt; 350 ng/L（258 pmol/L）</td><td>&gt; 70 pmol/L</td><td>不太可能缺乏</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>門檻低的那格是確診，中間那格是「indeterminate」——中文我習慣叫它模糊地帶，因為它就是那種上不上、下不下，看了讓人不知道該怎麼辦的結果。上面那格則是「大概不是」。</p>
 <p>要提醒的是，總 B12 的市面上有四家主要廠商的檢驗，其中三家的門檻跟指引接近，但有一家不一樣。所以如果你們實驗室用的是那家、有經過驗證的在地門檻，就用實驗室自己的（1.3.9）。至於 MMA 和同半胱胺酸，這兩個沒有公認的通用參考範圍，一律用實驗室給的參考值來讀（1.3.10、1.3.11）——而且同半胱胺酸還要記得，葉酸缺乏之類的因素也會把它墊高，不是只有 B12 缺才會升。</p>
 <h2>數字會騙人的兩種情況</h2>
@@ -110,7 +116,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <p>那模糊、但<strong>完全沒症狀</strong>的人呢？這種常常是抽別的血順便驗到的意外發現。答案是不治療，衛教他有症狀再回來就好（1.3.15）。</p>
 <p>至於數字落在「不太可能」那格的人（1.3.16），別就此打住——去查他症狀的其他原因，畢竟那些症狀本來就不專屬於 B12 缺乏。然後留一個尾巴：如果 3 到 6 個月後他還是有症狀，回頭把初檢再驗一次，以防最初那次是偽陰性。</p>
 <h2>臨床要點摘要</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>項目</th><th>重點</th></tr></thead>
 <tbody>
 <tr><td>大前提</td><td>無金標準檢驗，數字只是輔助，不能單獨確診或排除（NG239 §1.3）</td></tr>
@@ -125,7 +131,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>先治不等 MMA</td><td>快速惡化／不可逆病因／相關手術／孕哺者可在等 MMA 前先補（1.3.14）</td></tr>
 <tr><td>模糊無症狀</td><td>不治療，衛教有症狀再回診（1.3.15）</td></tr>
 <tr><td>不太可能者</td><td>查其他病因；3–6 個月仍有症狀可重驗初檢（1.3.16）</td></tr>
-</tbody></table>
+</tbody></table></div>
 <h2>🩺 施懿恩小評論</h2>
 <p>我最想先把「沒有金標準」這句話釘在牆上。神經科醫師很習慣被一個數字牽著走——看到 B12 低就補、看到正常就放，但這個病偏偏不吃這一套。那張門檻表最誠實的地方，是它中間留了一大格叫「模糊」，等於明明白白告訴你：很多人驗完，答案就是「不知道」。臨床上最考驗判斷的，從來不是黑白分明的那兩格，是中間那格你要不要動手。而 NG239 的取捨其實很務實——補 B12 便宜、又沒什麼壞處，所以碰到有症狀又有風險的人卡在模糊地帶，它傾向讓你先治，而不是讓病人乾等一個未必更清楚的 MMA。</p>
 <p>另一個我一定會提的，是那句「抽血前先問吃了什麼」。市售 B12 把數字墊高、掩蓋一個沒治好的缺乏，這種假性正常在門診比想像中常見，尤其現在保健品這麼普及。一個吃了三個月綜合維他命的人，總 B12 漂漂亮亮，你若沒問，就這樣把一個真正的缺乏放走了。笑氣那條也是同樣的道理——濃度正常不代表沒事，因為分子已經被廢掉了。說到底，這一篇教的不是怎麼看數字，是怎麼不被數字騙。至於黑人族群參考值偏高這件事，用的還是同一套切點，這個縫隙目前只能靠臨床醫師自己補——一個「正常」的數字，在不同的人身上，重量其實不一樣。</p>

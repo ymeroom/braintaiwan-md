@@ -61,7 +61,13 @@ ol,ul{padding-left:1.5em;margin:.6em 0}
 li{margin:.3em 0;font-size:14pt;color:#263238}
 footer{background:#0f2142;color:rgba(255,255,255,.45);text-align:center;padding:20px;font-size:10.5pt;margin-top:40px}
 footer a{color:rgba(255,255,255,.55);text-decoration:none}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
+<link rel="canonical" href="https://md.braintaiwan.com/ich01.html">
 </head>
 <body>
 <header>
@@ -97,14 +103,14 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <p>腦出血是個異質性很高的病，臨床上該不該花力氣去挖背後的大血管病因（動靜脈畸形、顱內動脈瘤、硬腦膜動靜脈瘻管、海綿狀血管瘤、腦靜脈栓塞），決定了急性處置與次級預防的方向。</p>
 <h3>用不用評分工具來導引查因（PICO 1.2.1）</h3>
 <p>指引建議用 <strong>DIAGRAM</strong> 這類演算法來「有目標地」查因，而不是漫無章法（弱建議、低品質證據）。DIAGRAM 的設計很實用，它用四個變項去估算「背後藏著大血管病因」的機率：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>DIAGRAM 變項</th><th>內容</th></tr></thead>
 <tbody>
 <tr><td>年齡</td><td>18–50 歲 vs 51–70 歲</td></tr>
 <tr><td>出血位置</td><td>葉狀（lobar）／後顱窩／深部</td></tr>
 <tr><td>小血管病變徵象</td><td>平掃 CT 上有無小血管病變的跡象</td></tr>
 <tr><td>CT 血管攝影（CTA）</td><td>異常 vs 正常</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>它在推導世代表現不錯（c-statistic 0.83），到外部驗證世代掉到中等（0.66），但只要把 CTA 結果加進去，表現就回升到 0.88–0.91。實務上的轉譯是：做完非增強 CT 後，<strong>年輕、葉狀或小腦出血、又沒有高血壓病史的人，應該進一步做 CTA、MRI／MRA 或 IADSA</strong>。不過指引也提醒，與其用「有沒有高血壓」來篩（因為高血壓太普遍了，篩不太動），不如直接看腦影像上的小血管病變標記更合理。</p>
 <h3>該選哪種影像（PICO 1.2.2）</h3>
 <p>金標準仍然是<strong>經動脈數位減影血管攝影（IADSA）</strong>。指引坦白承認沒有 RCT 或合格的診斷準確度研究能比較 CTA／CTV、MRA／MRV 與 IADSA 的高下，所以正式建議是「招募進診斷準確度研究」。但專家共識聲明（15/15 票）給了可操作的方向：<strong>用 CTA／CTV 或 MRA／MRV 來篩選病人，再決定誰去做 IADSA</strong>。</p>
@@ -114,7 +120,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <h3>預後工具到底準不準（PICO 1.3.1）</h3>
 <p>指引對「預後評分能不能贏過臨床醫師的判斷」這題其實沒給定論——沒有直接對比的研究，所以正式建議是招募進比較性預測研究（證據品質極低）。它系統性地評了 97 個預測工具，判別力（AUROC）從 0.64 一路散到 0.93，工具多到本身就說明了「大家對怎麼預測腦出血結局沒有共識」。</p>
 <p>在所有工具裡，最廣為外部驗證的是經典的 <strong>ICH score</strong>（六篇研究、AUROC 0.82–0.92），它由五個變項組成：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>ICH score 變項</th></tr></thead>
 <tbody>
 <tr><td>年齡</td></tr>
@@ -122,7 +128,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>是否幕下（infratentorial）</td></tr>
 <tr><td>格拉斯哥昏迷量表（GCS）</td></tr>
 <tr><td>是否有腦室內出血（IVH）</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>接著是 max-ICH score（AUROC 0.77–0.88），它一樣含年齡、出血體積、IVH，另外再加上 NIHSS 與是否使用口服抗凝劑。</p>
 <h3>那個陷阱：自我實現的預言</h3>
 <p>這是這篇最該記住的一句話。預後工具的「準度」可能是<strong>被人為灌水</strong>的——因為臨床上常對「預測會很差」的病人撤除或限制治療，結果他就真的死了，於是工具看起來「預測得很準」。這就是<strong>自我實現的預言（self-fulfilling prophecy）</strong>。原始 ICH score 在 2001 年發展、2002 年驗證時根本沒考慮這個效應，而且那個年代還沒有普及的中風病房照護、死亡率本來就更高，這意味著它的「表現」未必反映今天的真實情境。max-ICH score 倒是有意識地把早期就被限制治療的病人排除掉。</p>
@@ -132,7 +138,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <p>共識聲明（15/15 票）因此明確：<strong>在發病 24 小時內，不要實施一概而論的治療限制政策或 DNR 政策。</strong> 觀察資料也佐證了早期畫線的代價：24 小時內下 DNR 與「較少接受指引建議治療（例如收中風病房、深部靜脈栓塞預防）」相關；而 ABC-ICH 照護組合（care bundle，本身並不含 DNR 政策）的研究發現，它能減少早期 DNR 醫囑，而這個減少正是「組合介入→降低 30 天死亡」之間的關鍵中介。把人救活的第一步，有時候只是先別在第一天就把可能性關掉。</p>
 <hr>
 <h2>臨床要點摘要</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
 <tr><td>定義</td><td>非外傷性腦實質出血、假定源於腦小血管病變、排除大血管／腫瘤／感染／血流動力學病因；佔全球中風 28.8%，2019 年 341 萬新發、289 萬死亡</td></tr>
@@ -142,7 +148,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>PICO 1.2.2 影像選擇</td><td>IADSA 仍為金標準；CTA／MRA／CTV／MRV 篩選病人再做 IADSA（共識 15/15）；DIAGRAM 中 CTA/CTV 敏感度 74%、特異度 91%</td></tr>
 <tr><td>PICO 1.3.1 預後評分</td><td>ICH score＝年齡＋體積＋幕下＋GCS＋IVH；max-ICH 另加 NIHSS 與口服抗凝；只供預後資訊、勿當唯一判定，慎防自我實現的預言</td></tr>
 <tr><td>PICO 1.3.2 治療限制</td><td>發病 24 小時內不實施一般性治療限制或 DNR 政策（共識 15/15）；ABC-ICH care bundle 減少早期 DNR，與降 30 天死亡相關</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

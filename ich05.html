@@ -61,7 +61,13 @@ ol,ul{padding-left:1.5em;margin:.6em 0}
 li{margin:.3em 0;font-size:14pt;color:#263238}
 footer{background:#0f2142;color:rgba(255,255,255,.45);text-align:center;padding:20px;font-size:10.5pt;margin-top:40px}
 footer a{color:rgba(255,255,255,.55);text-decoration:none}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
 </style>
+<link rel="canonical" href="https://md.braintaiwan.com/ich05.html">
 </head>
 <body>
 <header>
@@ -110,14 +116,14 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <h2>六、Care bundle：把上面那堆「弱」綁在一起，死亡率降了（PICO 5.2）</h2>
 <p>讀到這裡你應該已經很納悶：單項全是弱、是反對，那急性照護到底還剩什麼能做？答案就是這一節——<strong>把那些單獨看不出效果的措施，打包成一個 care bundle 同時做，反而做出了臨床效益。</strong></p>
 <p>指引<strong>建議實施 care bundle 來降低死亡或依賴（Low／弱建議使用）</strong>。撐起這條的是 <strong>INTERACT-3</strong>——一個收了 6255 人的階梯式群集隨機試驗。它的 bundle 只有四個元素，每一個前面章節都單獨評過、單獨看都不怎麼樣：</p>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>Bundle 四元素</th><th>目標</th></tr></thead>
 <tbody>
 <tr><td>早期積極降壓</td><td>輕中度 ICH，治療開始 1 小時內 SBP &lt; 140 mmHg</td></tr>
 <tr><td>控血糖</td><td>無糖尿病 110–141 mg/dL；有糖尿病 141–180 mg/dL，避免低血糖</td></tr>
 <tr><td>退燒</td><td>1 小時內體溫 &lt; 37.5°C</td></tr>
 <tr><td>逆轉抗凝</td><td>吃 VKA 者用 PCC，1 小時內 INR &lt; 1.5；吃 DOAC 者用專一逆轉劑</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p>結果是：<strong>好功能預後（mRS 0–2）的機率上升（OR 1.16，95% CI 1.05–1.28），死亡下降（OR 0.80，95% CI 0.70–0.92）。</strong> 同一批「降壓、控糖、退燒、逆轉抗凝」，拆開來一個一個評是「弱、反對、反對」，綁成一包、卡著時間一起上，就把死亡率拉下來兩成。這就是整章想講透的第一條主線——<strong>ICH 急性照護的價值，藏在「組合」與「時效」裡，不在任何單一神藥。</strong></p>
 <p>附帶兩個提醒。bundle 還可以加上幾項「可能有益」的元素：頭 24 小時別輕易下 DNR、常規吞嚥篩檢、大血腫／腦室出血／後顱窩出血早點找神經外科。但反過來，指引<strong>反對預防性退燒藥、預防性促動力止吐藥、預防性抗生素（Low／弱反對）</strong>——這來自 PRECIOUS 試驗：對還沒發燒、還沒感染的人預先給 paracetamol、metoclopramide、ceftriaxone，並沒有改善預後。「預防性」和「目標導向治療」是兩回事：bundle 是「燒起來了 1 小時內壓下去」，不是「先吃顆退燒藥防著」。</p>
 <hr>
@@ -134,7 +140,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <p><strong>statin（PICO 6.5）</strong>：又回到「不確定，請收進試驗」。一邊是 <strong>SPARCL</strong> 的警訊——高劑量 atorvastatin 增加 ICH 風險；一邊是觀察性 meta 的漂亮數字——<strong>死亡 OR 0.34、再出血 OR 0.78</strong>，但這些數字偏誤大到不能當真（會吃 statin 的人本來就因為有心血管適應症，跟不吃的人根本不可比）。共識的落點很務實：<strong>有 statin 適應症、又是高心血管風險的人，個別權衡後可以用。</strong> 答案要等 <strong>SATURN</strong> 這個直接隨機「續用 vs 停用」的試驗。</p>
 <hr>
 <h2>臨床要點摘要</h2>
-<table>
+<div class="bt-tablewrap"><table>
 <thead><tr><th>議題</th><th>建議</th><th>等級／關鍵數字</th></tr></thead>
 <tbody>
 <tr><td>物理防 VTE（5.1.1）</td><td>不能動者用 IPC 30 天防近端 DVT；彈性襪無用，效果靠 IPC（CLOTS-3）</td><td>Very low／弱建議</td></tr>
@@ -150,7 +156,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <tr><td>LAAO（6.3）</td><td>不確定；不適合長期 OAC 者（如 CAA）可考慮</td><td>Very low／－</td></tr>
 <tr><td>抗血小板（6.4）</td><td>曾用者重啟可能安全；RESTART 再出血 OR 0.50</td><td>Moderate／弱建議</td></tr>
 <tr><td>statin（6.5）</td><td>不確定；有適應症且高心血管風險者個別權衡；SPARCL 增 ICH 風險</td><td>Very low／－</td></tr>
-</tbody></table>
+</tbody></table></div>
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

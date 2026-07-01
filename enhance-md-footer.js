@@ -41,6 +41,7 @@ const SERIES = {
   rls:  { source: 'RLS 臨床導讀（流行病學與診斷準則彙編）' },
   rmt:  { source: '鎮靜安眠藥理之臨床導讀' },
   se:   { source: 'Neurocritical Care Society 癲癇重積狀態指引' },
+  thy:  { source: 'Lee & Pearce, Hyperthyroidism: A Review, JAMA 2023' },
   tn:   { source: '三叉神經痛分子機轉導讀（J Headache Pain 2026）' },
   tnk:  { source: '台灣腦中風學會 2026 TNK 共識' },
 };
