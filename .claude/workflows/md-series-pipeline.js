@@ -68,9 +68,11 @@ phase('Draft');
 const drafted = (await parallel(plan.briefs.map(brief => () =>
   agent(
     `撰寫第「${brief.nav}」篇 markdown（檔名 ${brief.md}）。系列主題：${topic}。本篇重點：${brief.sourceFocus}。` +
-    `用 Read 工具讀來源 PDF（${srcList}）取材。只輸出 markdown 全文，不要任何說明或前後綴。` +
+    `用 Read 工具讀來源 PDF（${srcList}）取材。` +
     `嚴格遵守 BrainTaiwan 寫作規則：費曼咖啡廳語氣、第一句直接切入核心、不寫前言開場白、不用條列開場、` +
-    `結尾停在一個觀察或未解問題、不呼籲讀者行動、避免禁用詞；保留 frontmatter＋臨床要點摘要表＋🩺 施懿恩小評論＋免責聲明。`,
+    `結尾停在一個觀察或未解問題、不呼籲讀者行動、避免禁用詞；保留 frontmatter＋臨床要點摘要表＋🩺 施懿恩小評論＋免責聲明。` +
+    `完成後，用 Write 工具把 markdown 全文寫到絕對路徑 ${srcDir}/${brief.md}（供後續查核步驟讀取）。` +
+    `最後只回傳 markdown 全文（即你寫入檔案的同一份內容），不要任何說明或前後綴。`,
     { label: `draft:${brief.out}`, phase: 'Draft' }
   ).then(content => ({ md: brief.md, out: brief.out, nav: brief.nav, content }))
 ))).filter(Boolean);
