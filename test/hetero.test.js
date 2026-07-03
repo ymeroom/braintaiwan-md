@@ -32,6 +32,15 @@ test('非法 JSON → 回 null（觸發重試）', () => {
   assert.strictEqual(parseReviewIssues('[{broken'), null);
 });
 
+test('陣列非空但全被丟棄（如僅含引註噪音）→ 回 null（觸發重試，不可當作「無問題」）', () => {
+  assert.strictEqual(parseReviewIssues('抱歉我無法審查，請見參考 [1]。'), null);
+  assert.strictEqual(parseReviewIssues('[1, 2, 3]'), null);
+});
+
+test('真正的空陣列 → 仍回 []（合法：無問題，非全丟棄）', () => {
+  assert.deepStrictEqual(parseReviewIssues('[]'), []);
+});
+
 test('非字串輸入 → null', () => {
   assert.strictEqual(parseReviewIssues(undefined), null);
   assert.strictEqual(parseReviewIssues(null), null);
@@ -79,4 +88,22 @@ test('buildReviewPrompt 要求只挑真問題、不改寫全文', () => {
   const p = buildReviewPrompt({ draftMd: 'd', briefMd: 'b', sourceExcerpt: 's' });
   assert.ok(p.includes('不確定就不要報'));
   assert.ok(p.includes('不要幫忙改寫全文'));
+});
+
+test('buildReviewPrompt 帶 styleRulesMd → 內含風格規則內文與標題', () => {
+  const p = buildReviewPrompt({ draftMd: 'd', briefMd: 'b', sourceExcerpt: 's', styleRulesMd: 'STYLE-XYZ' });
+  assert.ok(p.includes('STYLE-XYZ'));
+  assert.ok(p.includes('寫作風格規則'));
+});
+
+test('buildReviewPrompt 不帶 styleRulesMd → 不含風格規則標題，且原有斷言不變', () => {
+  const p = buildReviewPrompt({ draftMd: 'DRAFT-BODY', briefMd: 'BRIEF-BODY', sourceExcerpt: 'SOURCE-BODY' });
+  assert.ok(!p.includes('寫作風格規則（審查依據）'));
+  assert.ok(p.includes('clinical'));
+  assert.ok(p.includes('style'));
+  assert.ok(p.includes('structure'));
+  assert.ok(p.includes(REVIEW_JSON_CONTRACT));
+  assert.ok(p.includes('BRIEF-BODY'));
+  assert.ok(p.includes('SOURCE-BODY'));
+  assert.ok(p.includes('DRAFT-BODY'));
 });

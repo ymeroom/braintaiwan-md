@@ -56,7 +56,7 @@ codex exec --skip-git-repo-check -s workspace-write "讀取本目錄的 _tickets
 
 ## 4. Review（agy，可並行）
 每篇：
-1. 用 `buildReviewPrompt({ draftMd, briefMd, sourceExcerpt })` 產 `_review/<NN>-input.md`。
+1. 用 `buildReviewPrompt({ draftMd, briefMd, sourceExcerpt, styleRulesMd })` 產 `_review/<NN>-input.md`（`styleRulesMd` 傳與 §2 `buildDraftTicket` 相同的「寫作風格禁忌」全文，讓 agy 有依據可查風格違規，不可省略）。
 2. 呼叫（模板逐字取自煙霧測試結果檔，非 stdin 管入的「讀取 X 檔」寫法**已實測失敗，不可使用**）：
 
    ```bash
