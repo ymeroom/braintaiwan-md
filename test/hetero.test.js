@@ -52,3 +52,31 @@ test('suggestion 缺省 → 空字串', () => {
   const raw = JSON.stringify([{ quote: 'q', type: 'style', severity: 'low', description: 'd' }]);
   assert.strictEqual(parseReviewIssues(raw)[0].suggestion, '');
 });
+
+const { buildDraftTicket, buildReviewPrompt, REVIEW_JSON_CONTRACT } = require('../lib/hetero');
+
+test('buildDraftTicket 含輸出檔名、工單、風格規則與硬性限制', () => {
+  const t = buildDraftTicket({ briefMd: 'BRIEF-BODY', styleRulesMd: 'STYLE-BODY', outFile: '01-intro.md' });
+  assert.ok(t.includes('01-intro.md'));
+  assert.ok(t.includes('BRIEF-BODY'));
+  assert.ok(t.includes('STYLE-BODY'));
+  assert.ok(t.includes('只准建立/覆寫'));
+  assert.ok(t.includes('禁區'));
+});
+
+test('buildReviewPrompt 含三審查面向、JSON 契約、工單、源文、草稿', () => {
+  const p = buildReviewPrompt({ draftMd: 'DRAFT-BODY', briefMd: 'BRIEF-BODY', sourceExcerpt: 'SOURCE-BODY' });
+  assert.ok(p.includes('clinical'));
+  assert.ok(p.includes('style'));
+  assert.ok(p.includes('structure'));
+  assert.ok(p.includes(REVIEW_JSON_CONTRACT));
+  assert.ok(p.includes('BRIEF-BODY'));
+  assert.ok(p.includes('SOURCE-BODY'));
+  assert.ok(p.includes('DRAFT-BODY'));
+});
+
+test('buildReviewPrompt 要求只挑真問題、不改寫全文', () => {
+  const p = buildReviewPrompt({ draftMd: 'd', briefMd: 'b', sourceExcerpt: 's' });
+  assert.ok(p.includes('不確定就不要報'));
+  assert.ok(p.includes('不要幫忙改寫全文'));
+});
