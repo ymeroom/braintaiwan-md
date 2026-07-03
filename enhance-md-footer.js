@@ -27,6 +27,7 @@ const SERIES = {
   ch:   { source: '台灣頭痛學會 2022 叢發性頭痛治療準則' },
   cidp: { source: 'EAN/PNS 2021 指引與 2024–2025 綜述' },
   dmd:  { source: 'AAN 2025 Evidence in Focus（Oskoui et al.）' },
+  dmdx: { source: 'ADA Standards of Care in Diabetes 2026 · 第 2 章 診斷與分類', audience: '內科、家醫、內分泌及相關專科醫療人員（教學與臨床參考）' },
   etomidate: { source: '依託咪酯中毒之神經毒理臨床整理', audience: '急診、毒物與神經科醫療人員' },
   fab:  { source: 'Germain et al. 2022 classic Fabry disease 專家共識' },
   fs:   { source: 'AAN 2026 功能性癲癇發作實踐指引（Tolchin et al.）' },
