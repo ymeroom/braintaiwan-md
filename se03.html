@@ -75,6 +75,12 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+.pager{display:flex;justify-content:space-between;gap:14px;margin-top:30px}
+.pager-link{display:flex;flex-direction:column;gap:4px;max-width:48%;text-decoration:none;background:#fff;border:1px solid #e0e8f5;border-radius:10px;padding:12px 18px;transition:all .2s}
+.pager-link:hover{border-color:#2e7d32;box-shadow:0 4px 14px rgba(46,125,50,.12)}
+.pager-link.next{align-items:flex-end;text-align:right}
+.pager-dir{font-size:11pt;color:#90a4ae;font-weight:600}
+.pager-ttl{font-size:13.5pt;color:#0f2142;font-weight:700}
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/se03.html">
 </head>
@@ -211,6 +217,10 @@ article, article *{overflow-wrap:break-word}
   <p class="md-foot-note">本導讀為教育用途，不取代原始指引全文、最新仿單或個別臨床判斷。</p>
 </section>
 <!-- /bt-md-footer -->
+<nav class="pager">
+    <a class="pager-link prev" href="se02.html"><span class="pager-dir">← 上一篇</span><span class="pager-ttl">② 診斷與 EEG</span></a>
+    <a class="pager-link next" href="se04.html"><span class="pager-dir">下一篇 →</span><span class="pager-ttl">④ 第二線藥物</span></a>
+  </nav>
 </main>
 <footer>
   © 2026 BrainTaiwan MD · 本頁為臨床教學參考，不構成個別醫療建議 · <a href="/">回臨床工具首頁</a>
