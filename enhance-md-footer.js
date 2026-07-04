@@ -21,6 +21,7 @@ const SERIES = {
   ais:  { source: '2026 AHA/ASA 急性缺血性中風指引' },
   apd:  { source: 'CurePSP 2024 非典型巴金森症候群診斷共識' },
   bbm:  { source: "2025 Alzheimer's Association 血液生物標記臨床指引" },
+  bm:   { source: 'EANO–ESMO 2021 實體腫瘤腦轉移臨床實務指引（Le Rhun et al., Ann Oncol）', audience: '神經內外科、腫瘤科、放射腫瘤科及相關專科醫療人員（教學與臨床參考）' },
   bp:   { source: "AAO-HNS 2013 Bell's palsy 臨床實務指引" },
   bppv: { source: 'BPPV 病生理與復位治療臨床整理' },
   cbm:  { source: '失智症血液生物標記之臨床導讀（批判性整理）', audience: '醫療人員與關心失智檢測的讀者' },
