@@ -26,6 +26,7 @@ const SERIES = {
   bppv: { source: 'BPPV 病生理與復位治療臨床整理' },
   cbm:  { source: '失智症血液生物標記之臨床導讀（批判性整理）', audience: '醫療人員與關心失智檢測的讀者' },
   ch:   { source: '台灣頭痛學會 2022 叢發性頭痛治療準則' },
+  cts:  { source: 'Wippermann & Goerl, Carpal Tunnel Syndrome: Diagnosis and Management, Am Fam Physician 2016', audience: '家醫、復健、神經、骨科及相關專科醫療人員（教學與臨床參考）' },
   cidp: { source: 'EAN/PNS 2021 指引與 2024–2025 綜述' },
   dmd:  { source: 'AAN 2025 Evidence in Focus（Oskoui et al.）' },
   dmdx: { source: 'ADA Standards of Care in Diabetes 2026 · 第 2 章 診斷與分類', audience: '內科、家醫、內分泌及相關專科醫療人員（教學與臨床參考）' },
