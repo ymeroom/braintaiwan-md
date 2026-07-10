@@ -35,6 +35,7 @@ const SERIES = {
   fs:   { source: 'AAN 2026 功能性癲癇發作實踐指引（Tolchin et al.）' },
   hz:   { source: '帶狀皰疹當代臨床整理（綜合多項權威來源）' },
   ins:  { source: '失眠症國際指引彙編' },
+  lsvd: { source: 'Han et al., Cranial Arterial Stenosis and Dolichoectasia for cSVD Etiopathogenesis (Mild Stroke Study 3), Circulation 2026;153:1813–1826', audience: '神經內科、中風及影像相關專科醫療人員（教學與臨床參考）' },
   mg:   { source: 'StatPearls 重症肌無力（NCBI NBK559331）' },
   mig:  { source: '台灣頭痛學會 2022 偏頭痛預防性治療準則' },
   miga: { source: '台灣頭痛學會 2022 偏頭痛急性治療準則' },

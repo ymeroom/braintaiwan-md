@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>腦小血管疾病（二）：怎麼量「狹窄」與「變寬」——決定結論能不能信的方法學 — BrainTaiwan MD</title>
+<meta name="description" content="一篇觀察性研究的結論能不能信，八成藏在它怎麼定義暴露、怎麼量測、怎麼校正。這篇先不看結果，把狹窄怎麼判、擴張怎麼量、cSVD 怎麼評分、統計怎麼防干擾拆開來——順便標出一個你讀結論時要一直記在心裡的方法學代價。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="BrainTaiwan">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:url" content="https://md.braintaiwan.com/lsvd02.html">
+<meta property="og:title" content="腦小血管疾病（二）：怎麼量「狹窄」與「變寬」——決定結論能不能信的方法學">
+<meta property="og:description" content="一篇觀察性研究的結論能不能信，八成藏在它怎麼定義暴露、怎麼量測、怎麼校正。這篇先不看結果，把狹窄怎麼判、擴張怎麼量、cSVD 怎麼評分、統計怎麼防干擾拆開來——順便標出一個你讀結論時要一直記在心裡的方法學代價。">
+<meta property="og:image" content="https://md.braintaiwan.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://md.braintaiwan.com/og.png">
+<meta name="twitter:title" content="腦小血管疾病（二）：怎麼量「狹窄」與「變寬」——決定結論能不能信的方法學">
+<meta name="twitter:description" content="一篇觀察性研究的結論能不能信，八成藏在它怎麼定義暴露、怎麼量測、怎麼校正。這篇先不看結果，把狹窄怎麼判、擴張怎麼量、cSVD 怎麼評分、統計怎麼防干擾拆開來——順便標出一個你讀結論時要一直記在心裡的方法學代價。">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI','Microsoft JhengHei','PingFang TC',Arial,sans-serif;background:#f0f4f8;color:#1c1c2e;line-height:1.85}
+header{background:linear-gradient(135deg,#0f2142 0%,#1a3975 55%,#1565c0 100%);color:#fff;padding:36px 32px 28px}
+.header-inner{max-width:860px;margin:0 auto}
+.site-name{font-size:11pt;font-weight:600;opacity:.65;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
+.series-tag{font-size:11pt;opacity:.8;margin-bottom:6px}
+.site-title{font-size:24pt;font-weight:700;line-height:1.35}
+.header-nav{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.byline{font-size:10.5pt;color:rgba(255,255,255,.62);margin-top:10px;font-weight:500}.byline b{color:rgba(255,255,255,.9);font-weight:700}
+.nav-link{color:rgba(255,255,255,.65);text-decoration:none;font-size:11pt;padding:4px 12px;border:1px solid rgba(255,255,255,.22);border-radius:20px;transition:all .2s}
+.nav-link:hover{background:rgba(255,255,255,.18);color:#fff;border-color:rgba(255,255,255,.45)}
+main{max-width:860px;margin:0 auto;padding:28px 24px}
+.series-nav{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px}
+.series-link{font-size:11pt;text-decoration:none;color:#546e7a;background:#fff;border:1px solid #e0e8f5;padding:5px 12px;border-radius:20px}
+.series-link:hover{color:#1565c0;border-color:#1565c0}
+.series-link.active{background:#1565c0;color:#fff;border-color:#1565c0;font-weight:600}
+.pager{display:flex;justify-content:space-between;gap:14px;margin-top:30px}
+.pager-link{display:flex;flex-direction:column;gap:4px;max-width:48%;text-decoration:none;background:#fff;border:1px solid #e0e8f5;border-radius:10px;padding:12px 18px;transition:all .2s}
+.pager-link:hover{border-color:#1565c0;box-shadow:0 4px 14px rgba(21,101,192,.12)}
+.pager-link.next{align-items:flex-end;text-align:right}
+.pager-dir{font-size:11pt;color:#90a4ae;font-weight:600}
+.pager-ttl{font-size:13.5pt;color:#0f2142;font-weight:700}
+.article{background:#fff;border:1px solid #e0e8f5;border-radius:12px;padding:40px 46px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.article h1{font-size:23pt;color:#0f2142;line-height:1.4;margin:.1em 0 .5em}
+.article h2{font-size:18pt;color:#0f2142;margin:1.8em 0 .7em;padding-left:12px;border-left:4px solid #1565c0;line-height:1.4}
+.article h3{font-size:15pt;color:#1a3975;margin:1.5em 0 .4em}
+.article p{margin:.85em 0;font-size:14pt;color:#263238}
+.article a{color:#1565c0;text-decoration:none}
+.article hr{border:none;border-top:1px solid #e0e8f5;margin:2em 0}
+.article strong{color:#0f2142}
+blockquote{margin:1.5em 0;padding:16px 20px;background:#eef4fb;border-left:4px solid #1565c0;border-radius:0 8px 8px 0;color:#37474f;font-size:13pt}
+blockquote h3{margin-top:.1em;color:#0f2142}
+blockquote.commentary{background:#fff7e8;border-left:4px solid #f5a623}
+table{width:100%;border-collapse:collapse;margin:1.3em 0;font-size:12.5pt;border:1px solid #e0e8f5;border-radius:8px;overflow:hidden}
+th,td{padding:10px 13px;text-align:left;border-bottom:1px solid #eef2f7}
+th{background:#0f2142;color:#fff;font-weight:600}
+tr:nth-child(even) td{background:#f6f9fd}
+code{background:#eef2f7;padding:1px 6px;border-radius:5px;font-size:.9em}
+ol,ul{padding-left:1.5em;margin:.6em 0}
+li{margin:.3em 0;font-size:14pt;color:#263238}
+footer{background:#0f2142;color:rgba(255,255,255,.45);text-align:center;padding:20px;font-size:10.5pt;margin-top:40px}
+footer a{color:rgba(255,255,255,.55);text-decoration:none}
+.md-foot{margin:26px 0 0}
+.md-foot-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.md-foot-item{background:#fff;border:1px solid #e0e8f5;border-left:4px solid #1565c0;border-radius:10px;padding:13px 16px}
+.md-foot-k{font-size:9.5pt;font-weight:800;letter-spacing:.4px;color:#1565c0;margin-bottom:5px}
+.md-foot-v{font-size:10.5pt;line-height:1.55;color:#46506a}
+.md-foot-cta{display:inline-flex;align-items:center;gap:6px;margin-top:16px;padding:9px 18px;border-radius:22px;background:#0f2142;color:#fff;text-decoration:none;font-size:10.5pt;font-weight:700}
+.md-foot-cta:hover{background:#1a3975}
+.md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
+@media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
+</style>
+<link rel="canonical" href="https://md.braintaiwan.com/lsvd02.html">
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="site-name">BrainTaiwan · MD</div>
+    <div class="series-tag">腦小血管疾病 cSVD 臨床導讀：Circulation 2026 Han et al.（狹窄 vs 擴張的病因意涵）</div>
+    <div class="site-title">腦小血管疾病（二）：怎麼量「狹窄」與「變寬」——決定結論能不能信的方法學</div>
+    <div class="byline"><b>施懿恩</b> 醫師．神經內科 · 導讀整理 2026 年</div>
+    <nav class="header-nav">
+      <a href="/" class="nav-link">← 臨床工具</a>
+      <a href="https://braintaiwan.com" class="nav-link">首頁</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="series-nav"><a href="lsvd01.html" class="series-link">① 病因命題與研究設計</a><a href="lsvd02.html" class="series-link active">② 影像與統計方法學</a><a href="lsvd03.html" class="series-link">③ 大動脈狹窄站在 nonlacunar 那邊</a><a href="lsvd04.html" class="series-link">④ 梗塞位置說出身世</a><a href="lsvd05.html" class="series-link">⑤ Dolichoectasia＝cSVD 表型</a><a href="lsvd06.html" class="series-link">⑥ 變寬與小血管崩解為何同源</a><a href="lsvd07.html" class="series-link">⑦ 系統性回顧與 meta 分析</a><a href="lsvd08.html" class="series-link">⑧ 機制導向的診斷與治療</a></div>
+  <article class="article">
+<blockquote>
+<p><strong>系列導讀．第 2 篇</strong>　一篇觀察性研究的結論能不能信，八成藏在它怎麼定義暴露、怎麼量測、怎麼校正。這篇先不看結果，把狹窄怎麼判、擴張怎麼量、cSVD 怎麼評分、統計怎麼防干擾拆開來——順便標出一個你讀結論時要一直記在心裡的方法學代價。</p>
+</blockquote>
+<p>上一篇說這個 cohort 憑對照組與縱向設計，有機會分辨共病與因果。但「有機會」是一回事，量得準不準是另一回事。狹窄判鬆了，兩組差異會被稀釋；擴張的閾值訂錯了，關聯會憑空出現或消失。所以在看那些漂亮的 OR 之前，先把尺拿出來檢查。</p>
+<h2>狹窄怎麼判：一個要記住的取捨</h2>
+<p>因為這個 cohort 沒有常規做磁振血管攝影（MRA），顱內動脈粥狀狹窄（intracranial atherosclerotic stenosis, ICAS）是<strong>在動脈相的動態對比強化磁振（arterial-phase DCE-MRI）上判讀</strong>，多平面檢視、在最窄處以標準法分級。評估的顱內動脈包括內頸動脈、中大腦動脈、前與後大腦動脈、椎動脈、基底動脈。頸段內頸動脈狹窄另用超音波、以 NASCET 標準分級，有 CTA／MRA 時一併參考。</p>
+<p>定義上，<strong>ICAS＝任一顱內動脈 ≥50% 狹窄；LAS＝ICAS 或頸動脈 ≥50% 狹窄</strong>。潛在栓子來源則涵蓋 LAS 或主要心臟異常（心房顫動、開放性卵圓孔、缺血性心臟病、瓣膜疾病、心衰竭）。</p>
+<p>這裡有一個<strong>你讀後續所有 LAS 結論時都要掛在心上的代價</strong>：用 DCE-MRI 而非專用血管攝影，對「輕度」狹窄可能較不敏感。作者的辯護是——慢速注射技術提供的管腔顯影品質可比常規 bolus MRA，不太可能漏掉中至重度狹窄。這個辯護對「中重度狹窄」成立，但對輕度狹窄的偵測力，仍是這篇的一個結構性限制。</p>
+<h2>擴張怎麼量：直徑加上兩把量尺</h2>
+<p>基底動脈、雙側內頸動脈（海綿竇垂直段）、中大腦動脈（M1 段）的最大直徑，在軸切 T2 影像上量到 <strong>0.01 mm</strong>；遇到狹窄段就量受影響最小的節段。直徑用顱內體積做殘差校正，雙側 ICA／MCA 取平均。基底動脈另用一個驗證過的四分量表評分分叉高度與側移。</p>
+<p><strong>基底動脈擴張（basilar artery dolichoectasia, BADE）定義為：BA 直徑 &gt;4.5 mm、分叉高度 ≥2、或側移 ≥2</strong>（三者符合其一即算）。</p>
+<div class="bt-tablewrap"><table>
+<thead><tr><th>量尺</th><th>分級</th></tr></thead>
+<tbody>
+<tr><td>分叉高度</td><td>0＝在鞍背或以下；1＝鞍上池內；2＝第三腦室底高度；3＝頂入並抬高第三腦室底</td></tr>
+<tr><td>側移</td><td>0＝正中；1＝內於斜坡／鞍背緣；2＝外於此緣；3＝橋小腦角池</td></tr>
+</tbody></table></div>
+<p>值得注意的方法學巧思是：BADE 是二元判定，但後面的 sensitivity analysis 會<strong>把 BADE 換成連續的 ICA／MCA／BA 直徑</strong>再跑一次——如果連續管徑也給出同向關聯，就比單一閾值更難用「切點訂得剛好」來質疑。</p>
+<h2>cSVD 怎麼評分，梗塞怎麼分類</h2>
+<p>cSVD markers 依 <strong>STRIVE-2</strong> 標準評估：數 lacunes 與微出血，並組成一個 summary cSVD score。定量 MRI 用半自動 pipeline 分割顱內體積、正常白質、WMH、血管周圍間隙（PVS）與梗塞體積。<strong>WMH 進展</strong>定義為基線的正常白質在一年時轉為 WMH。腦體積、WMH、梗塞體積都對顱內體積正規化；PVS 對其感興趣區體積正規化。</p>
+<p>梗塞分兩種：<strong>index infarct</strong> 是診斷影像上與此次中風症狀相符的急性病灶；<strong>incident infarct</strong> 是 index 中風到一年追蹤之間新出現、在 DWI／FLAIR／T2 上可見、且先前掃描沒有的新梗塞。病灶再分皮質下或皮質，皮質下的再依形狀分圓／卵圓形或管狀。這個「index 對 incident」的區分很重要——incident infarct 多數是<strong>隱匿性（covert）</strong>的，它和「症狀性再中風」是兩個不同的臨床概念，後面第三篇會看到這個區分怎麼救回一個容易誤讀的結論。</p>
+<h2>統計怎麼防干擾</h2>
+<p>個人層級用多變項迴歸評估 LAS 與 BADE 和 index 亞型、梗塞數與體積、incident infarct、再中風／TIA 的關聯：連續變項用線性迴歸、序位變項（summary cSVD score）用序位邏輯迴歸，比例勝算假設以 Brant test 驗證。<strong>所有模型校正年齡、性別、抽菸、高血壓、糖尿病、高血脂、BMI</strong>；變異膨脹因子（VIF）全 &lt;1.3，沒有共線性問題。WMH 與 PVS 體積取 log10。病灶層級用 Rao-Scott cluster 校正的卡方，處理同一人多顆梗塞。</p>
+<p>穩健性由多組 sensitivity analysis 撐住：(1) 用 ICAS、任何栓子來源、心房顫動替換 LAS；(2) 額外校正 baseline cSVD score；(3) 用連續動脈直徑替換 BADE；(4) 放入 LAS 與 BADE 的交互作用項看有沒有效果修飾。量測本身的可信度也交代了——直徑的組內相關係數為 <strong>0.95（BA）、0.85（ICA）、0.9（MCA）</strong>，加權 kappa 為 <strong>0.81（ICAS）、0.85（BADE）</strong>。</p>
+<p>系統性回顧另跑（第七篇細談）：MEDLINE 檢索至 2025-06-22，用隨機效應 meta 分析估計 LAS 在腔隙中風的盛行率與 laterality。</p>
+<blockquote class="commentary">
+<h3>🩺 神經專科醫師　施懿恩・小評論</h3>
+<p>我會建議你把這篇的方法學讀成「一組互相牽制的設計」，而不是流水帳。它最聰明的兩個地方：一是把 BADE 這個二元判定，額外用連續管徑再驗一次——這等於預先擋掉「你切點訂得剛好才有結果」的攻擊；二是嚴格分開 index 與 incident 梗塞，讓「隱匿性新病灶」不會和「症狀性再中風」混為一談。這兩個設計選擇，直接決定了後面結論的說服力。</p>
+<p>但我也要你把那個 DCE-MRI 的代價記牢。用非專用血管攝影去判狹窄，對中重度大概沒問題，可是對輕度狹窄的敏感度就是打了折。這意味著「LAS 與 cSVD 無關」這個結論，理論上有被輕度狹窄漏判稀釋的可能。作者有意識到、也辯護了，但這不是能靠辯護完全消掉的限制——所以第八篇談限制時，我們會再回來算這筆帳。</p>
+</blockquote>
+<hr>
+<p><em>本系列為臨床導讀整理，供醫療專業人員教學參考，臨床決策請依個案評估。</em></p>
+
+  </article>
+<!-- bt-md-footer -->
+<section class="md-foot" aria-label="版本與訂閱">
+  <div class="md-foot-grid">
+    <div class="md-foot-item"><div class="md-foot-k">指引版本／來源</div><div class="md-foot-v">Han et al., Cranial Arterial Stenosis and Dolichoectasia for cSVD Etiopathogenesis (Mild Stroke Study 3), Circulation 2026;153:1813–1826</div></div>
+    <div class="md-foot-item"><div class="md-foot-k">最後更新</div><div class="md-foot-v">2026.06</div></div>
+    <div class="md-foot-item"><div class="md-foot-k">適用對象</div><div class="md-foot-v">神經內科、中風及影像相關專科醫療人員（教學與臨床參考）</div></div>
+  </div>
+  <a class="md-foot-cta" href="https://media.braintaiwan.com/subscribe.html">訂閱臨床導讀更新 →</a>
+  <p class="md-foot-note">本導讀為教育用途，不取代原始指引全文、最新仿單或個別臨床判斷。</p>
+</section>
+<!-- /bt-md-footer -->
+<nav class="pager">
+    <a class="pager-link prev" href="lsvd01.html"><span class="pager-dir">← 上一篇</span><span class="pager-ttl">① 病因命題與研究設計</span></a>
+    <a class="pager-link next" href="lsvd03.html"><span class="pager-dir">下一篇 →</span><span class="pager-ttl">③ 大動脈狹窄站在 nonlacunar 那邊</span></a>
+  </nav>
+</main>
+<footer>© 2026 BrainTaiwan MD · <a href="https://braintaiwan.com">braintaiwan.com</a></footer>
+</body>
+</html>
