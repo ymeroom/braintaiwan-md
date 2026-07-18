@@ -33,6 +33,7 @@ const SERIES = {
   etomidate: { source: '依託咪酯中毒之神經毒理臨床整理', audience: '急診、毒物與神經科醫療人員' },
   fab:  { source: 'Germain et al. 2022 classic Fabry disease 專家共識' },
   fabf: { source: 'Hopkin RJ, Laney D, Kazemi S, Walter A. Fabry disease in females, Orphanet J Rare Dis 2025;20:433', audience: '神經內科、心臟科、腎臟科、遺傳與相關專科醫療人員（教學與臨床參考）' },
+  fcmb: { source: 'Hsieh P-F et al., Lobar-predominant cerebral microbleeds in Fabry disease, J Formos Med Assoc 2026;125(6):815–822', audience: '神經內科、心臟科、遺傳與相關專科醫療人員（教學與臨床參考）' },
   fs:   { source: 'AAN 2026 功能性癲癇發作實踐指引（Tolchin et al.）' },
   hz:   { source: '帶狀皰疹當代臨床整理（綜合多項權威來源）' },
   ins:  { source: '失眠症國際指引彙編' },
