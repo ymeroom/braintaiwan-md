@@ -20,6 +20,7 @@ const SERIES = {
   adxt: { source: '2025 AA DETeCD-ADRD 指引（臨床評估工具附錄）' },
   ais:  { source: '2026 AHA/ASA 急性缺血性中風指引' },
   apd:  { source: 'CurePSP 2024 非典型巴金森症候群診斷共識' },
+  asdh: { source: 'Shin DS, Hwang SC. Neurocritical management of traumatic acute subdural hematomas, Korean J Neurotrauma 2020;16(2):113–125（review，非指引）', audience: '神經外科、神經內科、急診、重症及相關專科醫療人員（教學與臨床參考）' },
   bbm:  { source: "2025 Alzheimer's Association 血液生物標記臨床指引" },
   bm:   { source: 'EANO–ESMO 2021 實體腫瘤腦轉移臨床實務指引（Le Rhun et al., Ann Oncol）', audience: '神經內外科、腫瘤科、放射腫瘤科及相關專科醫療人員（教學與臨床參考）' },
   bp:   { source: "AAO-HNS 2013 Bell's palsy 臨床實務指引" },
