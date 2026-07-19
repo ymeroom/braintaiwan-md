@@ -34,6 +34,7 @@ const SERIES = {
   csvd: { source: 'Chojdak-Łukasiewicz J, Dziadkowiak E, Zimny A, Paradowski B. Cerebral small vessel disease: A review, Adv Clin Exp Med 2021;30(3):349–356（narrative review，非指引）', audience: '神經內科、中風、老年醫學、影像及相關專科醫療人員（教學與臨床參考）' },
   dmd:  { source: 'AAN 2025 Evidence in Focus（Oskoui et al.）' },
   dmdx: { source: 'ADA Standards of Care in Diabetes 2026 · 第 2 章 診斷與分類', audience: '內科、家醫、內分泌及相關專科醫療人員（教學與臨床參考）' },
+  edh:  { source: 'Bullock MR, Chesnut R, Ghajar J, et al. Surgical management of acute epidural hematomas, Neurosurgery 2006;58(3 Suppl):S2-7–S2-15（Brain Trauma Foundation 手術治療指引，證據等級 Class III）', audience: '神經外科、神經內科、急診、重症及相關專科醫療人員（教學與臨床參考）' },
   etomidate: { source: '依託咪酯中毒之神經毒理臨床整理', audience: '急診、毒物與神經科醫療人員' },
   fab:  { source: 'Germain et al. 2022 classic Fabry disease 專家共識' },
   fabf: { source: 'Hopkin RJ, Laney D, Kazemi S, Walter A. Fabry disease in females, Orphanet J Rare Dis 2025;20:433', audience: '神經內科、心臟科、腎臟科、遺傳與相關專科醫療人員（教學與臨床參考）' },
