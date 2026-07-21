@@ -19,7 +19,7 @@
 - **由 Fable 本尊起草，不外包 codex。** 既有教訓：codex 會把英文引號與亂碼寫進正文。
 - **醫師小評論寫成 `### h3`**（不是 `##`，不是粗體段落）。
 - **claim-gate 放行門檻為全部斷言 `SUPPORTED`。** 任何 `CONTRADICTED` 或查無出處者，須修正文章或在文中明確標註原文限制後才放行，不得以「比例夠高」放過。
-- **`_source.md` 中 `<!-- page 2 -->` 的 graphical abstract 區塊不可作為字面比對來源。** OCR 把該頁圖片中的 `≥`／`≤` 轉寫為 `"> or ="`／`"< or ="`；語意無誤但字面不符，ledger 的 `sourceQuote` 必須取自正文而非該段。
+- **`_source.md` 第 3 頁的 graphical abstract 區塊不可作為字面比對來源。** OCR 把該頁圖片中的 `≥`／`≤` 轉寫為 `"> or ="`／`"< or ="`；語意無誤但字面不符，ledger 的 `sourceQuote` 必須取自正文而非該段。（撰寫任何說明文字時，勿寫出字面的頁碼標記語法 —— 驗證用的正則會把它一起數進去。）
 - **`card.tags` 必須恰好 2 個字串**，`lib/series-schema.js` 會在 build 時驗證，少一個或多一個直接拋錯。
 - **寫作風格**：依 `feedback_writing-style` —— 不用開場白、不濫用條列、不呼籲行動，避免 AI 塑膠文。
 - **本次範圍不含** FB 圖卡、media 站大眾衛教版、其他系列的改動。
@@ -146,7 +146,7 @@ node -e "const fs=require('fs');const a=fs.readFileSync('D:/claudecode/keae152.o
 
 - [ ] **Step 3: 在 `_source.md` 開頭寫入來源與引擎記錄**
 
-在檔案最前面插入以下區塊（置於第一個 `<!-- page 1 -->` 之前）：
+在檔案最前面插入以下區塊（置於第一個頁碼標記之前）：
 
 ```markdown
 <!--
@@ -155,10 +155,12 @@ source: Price EJ, Benjamin S, Bombardieri M, et al. British Society for Rheumato
         Rheumatology (Oxford). 2025;64(2):409-439. doi:10.1093/rheumatology/keae152
 ocr-engine: mistral-ocr-4-0
 ocr-date: 2026-07-21
-caveat: <!-- page 2 --> 的 graphical abstract 為圖片，OCR 將 ≥／≤ 轉寫為
+caveat: 第 3 頁的 graphical abstract 為圖片，OCR 將 ≥／≤ 轉寫為
         "> or =" ／ "< or ="。語意無誤但字面不符，不可作為 ledger 的 sourceQuote 來源。
 -->
 ```
+
+**注意**：此區塊刻意不寫出字面的頁碼標記語法。Step 5 的驗證指令以正則 `<!-- page \d+ -->` 計算頁數，標頭若含該語法會被一併計入而使頁數多一。
 
 - [ ] **Step 4: 複製原始 PDF 留存**
 
@@ -615,7 +617,7 @@ node D:\claudecode\sjogren-articles\_gate.js
 
 - [ ] **Step 3: 追加 claim ledger**
 
-pilocarpine 劑量務必以 `dose` 型別入帳（HIGH_RISK）。源文 summary sheet 寫 `pilocarpine 5mg once daily increasing step-wise to 5mg 3 times per day (max 5mg x 6 daily)` —— 但該段位於 `<!-- page 2 -->` graphical abstract 區塊，依 Global Constraints **不可作為 `sourceQuote`**。
+pilocarpine 劑量務必以 `dose` 型別入帳（HIGH_RISK）。源文 summary sheet 寫 `pilocarpine 5mg once daily increasing step-wise to 5mg 3 times per day (max 5mg x 6 daily)` —— 但該段位於第 3 頁的 graphical abstract 區塊，依 Global Constraints **不可作為 `sourceQuote`**。
 
 **且兩處數值本身不一致**：graphical abstract 的上限是每日 6 次，Q9a 正文建議卻是 `tds/qds`（每日 3–4 次）。**採正文版本**，並在文中標註原文此處不一致。
 
