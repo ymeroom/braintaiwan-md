@@ -57,6 +57,7 @@ const SERIES = {
   se:   { source: 'Neurocritical Care Society 癲癇重積狀態指引' },
   thy:  { source: 'Lee & Pearce, Hyperthyroidism: A Review, JAMA 2023' },
   tn:   { source: '三叉神經痛分子機轉導讀（J Headache Pain 2026）' },
+  tth:  { source: 'Bendtsen L, Evers S, Linde M, et al. EFNS guideline on the treatment of tension-type headache, Eur J Neurol 2010;17(11):1318–1325；Lee HJ, Cho SJ, Seo JG, Schytz HW. Update on tension-type headache, Headache Pain Res 2025;26(1):38–47', audience: '神經內科、家醫、疼痛科、復健科及基層醫療人員（教學與臨床參考）' },
   trep: { source: 'Kanner AM, Ashman E, Gloss D, et al. Practice guideline update summary: Efficacy and tolerability of the new antiepileptic drugs II: Treatment-resistant epilepsy, Epilepsy Currents 2018;18(4):269–278（AAN／AES 實務指引更新）', audience: '神經內科、小兒神經、家醫及相關專科醫療人員（教學與臨床參考）' },
   tnk:  { source: '台灣腦中風學會 2026 TNK 共識' },
 };
