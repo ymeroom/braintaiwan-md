@@ -23,6 +23,8 @@
 - **`card.tags` 必須恰好 2 個字串**，`lib/series-schema.js` 會在 build 時驗證，少一個或多一個直接拋錯。
 - **寫作風格**：依 `feedback_writing-style` —— 不用開場白、不濫用條列、不呼籲行動，避免 AI 塑膠文。
 - **本次範圍不含** FB 圖卡、media 站大眾衛教版、其他系列的改動。
+- **版控結構**：`D:\claudecode` 不是 git repository，`sjogren-articles\` 因此不受版控（與所有既有 `*-articles\` 目錄一致）。Tasks 1–8 **不執行任何 git 指令**；系列的唯一 commit 在 Task 9，內容為 `braintaiwan-md` 內的建置產物（與 fm 系列 commit `597842b` 一致）。Task 0 是不相關的既有測試修正，另行單獨提交。
+- **不得改動既有系列的已提交 HTML**（`cidp*.html`、`fm*.html` 等）。這些檔案含 enhancer 產物，覆蓋會破壞線上頁面。
 
 ## File Structure
 
@@ -35,9 +37,80 @@
 | `D:\claudecode\sjogren-articles\_gate.js` | claim ledger 與閘門執行器 |
 | `D:\claudecode\sjogren-articles\_ledgers\01..07.json` | `_gate.js` 產出的逐篇 ledger，勿手改 |
 | `D:\claudecode\sjogren-articles\_verification-report.md` | `_gate.js` 產出，勿手改 |
+| `D:\claudecode\braintaiwan-md\test\build-golden.test.js` | 修改（Task 0）：解除與 enhancer 產物的耦合 |
 | `D:\claudecode\braintaiwan-md\enhance-md-footer.js` | 修改：`SERIES` map 加 `sjd` 一筆 |
 | `D:\claudecode\braintaiwan-md\sjd01..07.html` | build 產物，勿手改 |
 | `D:\claudecode\braintaiwan-md\index.html` | build 產物（`<!-- SERIES:sjd -->` 區塊） |
+
+---
+
+### Task 0: 修好既有的 build-golden 測試失敗（先做）
+
+本 Task 與 sjd 系列無關，但必須先做：測試基線不綠，後面每個 Task 的驗證都失去意義。
+
+**Files:**
+- Modify: `D:\claudecode\braintaiwan-md\test\build-golden.test.js`
+- Possibly create: `D:\claudecode\braintaiwan-md\test\fixtures\`（若採快照方案）
+
+**問題診斷（已確認，不需重新調查）：**
+
+測試斷言 `renderPages()` 的輸出與已提交的 `cidp01.html`–`cidp10.html` 逐位元組相同。但已提交的檔案是**跑過三個 enhancer 之後**的版本，含 `build.js` 不會產生的內容：
+
+- `.md-foot*` 樣式與頁尾區塊（`enhance-md-footer.js`）
+- `/* bt-mobile:start */` 區塊與 `<div class="bt-tablewrap">` 表格外層（`enhance-md-mobile.js`）
+- `<link rel="canonical">`（`seo-build.js`）
+
+因此這個測試對任何走過 enhancer 的系列都必然失敗。這是測試設計問題。
+
+**絕對禁止的「修法」：** 跑 `node build.js cidp-articles/series.json` 覆蓋 `cidp01-10.html` 讓測試通過。那會把線上網站的頁尾、行動版樣式與 canonical 標籤全部洗掉。**`cidp01.html`–`cidp10.html` 在本 Task 中不得有任何變更。**
+
+- [ ] **Step 1: 確認失敗現況與範圍**
+
+```powershell
+cd D:\claudecode\braintaiwan-md
+npm test 2>&1 | Select-String -Pattern "^# (tests|pass|fail)|^not ok|✖ " | Select-Object -First 12
+```
+
+預期：僅 `renderPages reproduces committed cidp01-10.html byte-for-byte` 一項失敗。若還有其他失敗項，一併記錄後回報 —— 不要擅自擴大修改範圍。
+
+- [ ] **Step 2: 確認 cidp 頁面的 enhancer 內容確實存在**
+
+```powershell
+node -e "const h=require('fs').readFileSync('D:/claudecode/braintaiwan-md/cidp01.html','utf8');console.log('md-foot',h.includes('.md-foot'));console.log('bt-mobile',h.includes('bt-mobile:start'));console.log('canonical',h.includes('rel=\"canonical\"'))"
+```
+
+預期三項皆 `true`。這證實了診斷，也證實了為何不能覆蓋這些檔案。
+
+- [ ] **Step 3: 改寫測試，與 enhancer 產物解耦**
+
+測試的真正意圖是「`renderPage` 的渲染輸出不要無意間改變」。golden fixture 應該是**測試資料**，而不是線上產物。
+
+採快照方案：把 `renderPages` 對 cidp 的原始輸出存成 `test/fixtures/cidp-render/*.html`，測試改為比對該 fixture。首次建立 fixture 時，必須人工確認其內容是「build 的合理輸出」（有完整 header／series-nav／article／pager／footer），而不是把當下的錯誤輸出固化。
+
+若 10 份 fixture 體積過大（每份約 30 KB），可縮減為代表性子集（如 cidp01 與 cidp10，涵蓋首篇與末篇的 pager 邊界情況），但仍須保留 `assert.strictEqual(pages.length, 10)` 以偵測系列長度變動。子集方案需在測試檔加一行註解說明為何只取子集。
+
+- [ ] **Step 4: 跑測試確認通過**
+
+```powershell
+npm test 2>&1 | Select-String -Pattern "^# (tests|pass|fail)|✖ " | Select-Object -First 12
+```
+
+預期：`fail 0`，無 `✖` 項目。
+
+- [ ] **Step 5: 確認 cidp 線上檔案未被改動**
+
+```powershell
+git status --porcelain cidp*.html
+```
+
+預期：**無任何輸出**。若有輸出代表誤改了線上頁面，必須 `git checkout -- cidp*.html` 還原後重做 Step 3。
+
+- [ ] **Step 6: Commit**
+
+```powershell
+git add test/
+git commit -m "test: 修正 build-golden 與 enhancer 產物耦合導致的既有失敗"
+```
 
 ---
 
@@ -103,21 +176,11 @@ node -e "const s=require('fs').readFileSync('D:/claudecode/sjogren-articles/_sou
 
 三個數字任一不符就停下來查，不要往下走 —— 後面七篇都建立在這份檔案上。
 
-- [ ] **Step 6: Commit**
+- [ ] **Step 6: 不提交（源檔目錄不受版控）**
 
-`sjogren-articles` 位於 workspace 根目錄，不在 `braintaiwan-md` repo 內。確認它是否已納入版控：
+已確認 `D:\claudecode` 不是 git repository，因此 `sjogren-articles\` 與 `fm-articles\`、`cvt-articles\` 等既有系列的源檔目錄一樣不受版控。**本 Task 不執行任何 git 指令。**
 
-```powershell
-cd D:\claudecode\sjogren-articles
-git status --porcelain .
-```
-
-若回傳 `fatal: not a git repository`，表示源檔目錄不受版控（與 fm-articles 等既有系列一致），跳過本步驟。若在版控內則提交：
-
-```powershell
-git add D:\claudecode\sjogren-articles\_source.md D:\claudecode\sjogren-articles\_source.pdf
-git commit -m "chore(sjd): 加入 BSR 2025 Sjögren 指引源文（mistral-ocr-4-0）"
-```
+系列的唯一 commit 在 Task 9，內容為 `braintaiwan-md` 內的建置產物（與 fm 系列 commit `597842b` 的做法一致）。
 
 ---
 
@@ -370,7 +433,18 @@ node build.js D:\claudecode\sjogren-articles\series.json
 
 預期輸出：`寫出 sjd01.html` … `寫出 sjd07.html`、`已更新 index.html 區塊 sjd`、`完成`
 
-此時 sjd02–07 的 md 尚未建立，`build.js` 的 `renderPages` 會在 `readFileSync` 該檔時拋 `ENOENT`。因此本步驟先把 `series.json` 的 `articles` 暫時裁到只剩第一筆再跑，確認單篇通得過；Task 9 會用完整七篇重跑。
+此時 sjd02–07 的 md 尚未建立，`build.js` 的 `renderPages` 會在 `readFileSync` 該檔時拋 `ENOENT`。
+
+**不要修改 `series.json`**。改為建立一份只含第一筆文章的冒煙用副本，正式檔全程維持完整七筆：
+
+```powershell
+node -e "const s=require('D:/claudecode/sjogren-articles/series.json');s.articles=s.articles.slice(0,1);require('fs').writeFileSync('D:/claudecode/sjogren-articles/series.smoke.json',JSON.stringify(s,null,2),'utf8')"
+node build.js D:\claudecode\sjogren-articles\series.smoke.json
+```
+
+預期輸出：`寫出 sjd01.html`、`已更新 index.html 區塊 sjd`、`完成`
+
+冒煙用副本是暫時檔，Task 9 Step 1 會確認它已刪除。
 
 - [ ] **Step 7: 驗證 index 區塊與顏色**
 
@@ -381,13 +455,9 @@ node -e "const h=require('fs').readFileSync('D:/claudecode/braintaiwan-md/index.
 預期：`marker true`、`color true`、`dup 1`。
 `dup` 若大於 1 表示分類被重複插入 —— 停下來檢查 `applySection` 的標記是否配對正確。
 
-- [ ] **Step 8: Commit**
+- [ ] **Step 8: 不提交**
 
-```powershell
-cd D:\claudecode\braintaiwan-md
-git add enhance-md-footer.js sjd01.html index.html
-git commit -m "feat(sjd): 新增修格連氏症候群分類與第 01 篇（診斷與分類準則）"
-```
+`enhance-md-footer.js` 的改動先留在工作區，與其餘產物於 Task 9 一併提交。本 Task 不執行 git 指令。
 
 ---
 
@@ -453,13 +523,7 @@ node D:\claudecode\sjogren-articles\_gate.js
 
 - [ ] **Step 6: Commit**
 
-```powershell
-cd D:\claudecode\sjogren-articles
-git add 02-lymphoma-comorbidity.md _gate.js series.json _verification-report.md
-git commit -m "feat(sjd): 第 02 篇 淋巴瘤風險分層與共病篩檢"
-```
-
-（若 `sjogren-articles` 不在版控內 —— 見 Task 1 Step 6 —— 跳過本步驟，改於 Task 9 一併提交 `braintaiwan-md` 的產物。）
+源檔目錄不受版控（見 Task 1 Step 6），本 Task 不執行 git 指令。交付物為 `02-lymphoma-comorbidity.md`、更新後的 `_gate.js` 與 `series.json`，以及 `_gate.js` 重新產生的 `_ledgers/02.json`。
 
 ---
 
@@ -520,10 +584,7 @@ node D:\claudecode\sjogren-articles\_gate.js
 
 - [ ] **Step 6: Commit**
 
-```powershell
-git add 03-dry-eye.md _gate.js series.json _verification-report.md
-git commit -m "feat(sjd): 第 03 篇 乾眼處置"
-```
+源檔目錄不受版控，本 Task 不執行 git 指令。交付物為 `03-dry-eye.md`、更新後的 `_gate.js` 與 `series.json`，以及 `_ledgers/03.json`。
 
 ---
 
@@ -583,10 +644,7 @@ node D:\claudecode\sjogren-articles\_gate.js
 
 - [ ] **Step 6: Commit**
 
-```powershell
-git add 04-dry-mouth-dental.md _gate.js series.json _verification-report.md
-git commit -m "feat(sjd): 第 04 篇 乾口、其他乾燥與牙科預防"
-```
+源檔目錄不受版控，本 Task 不執行 git 指令。交付物為 `04-dry-mouth-dental.md`、更新後的 `_gate.js` 與 `series.json`，以及 `_ledgers/04.json`。
 
 ---
 
@@ -662,10 +720,7 @@ node -e "const s=require('fs').readFileSync('D:/claudecode/sjogren-articles/05-s
 
 - [ ] **Step 7: Commit**
 
-```powershell
-git add 05-systemic-neuro.md _gate.js series.json _verification-report.md
-git commit -m "feat(sjd): 第 05 篇 全身性疾病用藥與神經侵犯"
-```
+源檔目錄不受版控，本 Task 不執行 git 指令。交付物為 `05-systemic-neuro.md`、更新後的 `_gate.js` 與 `series.json`，以及 `_ledgers/05.json`。
 
 ---
 
@@ -725,10 +780,7 @@ node D:\claudecode\sjogren-articles\_gate.js
 
 - [ ] **Step 6: Commit**
 
-```powershell
-git add 06-pregnancy.md _gate.js series.json _verification-report.md
-git commit -m "feat(sjd): 第 06 篇 懷孕與胎兒心臟傳導阻滯"
-```
+源檔目錄不受版控，本 Task 不執行 git 指令。交付物為 `06-pregnancy.md`、更新後的 `_gate.js` 與 `series.json`，以及 `_ledgers/06.json`。
 
 ---
 
@@ -781,10 +833,7 @@ node D:\claudecode\sjogren-articles\_gate.js
 
 - [ ] **Step 6: Commit**
 
-```powershell
-git add 07-juvenile-followup.md _gate.js series.json _verification-report.md
-git commit -m "feat(sjd): 第 07 篇 兒童 jSD、非藥物治療與長期追蹤"
-```
+源檔目錄不受版控，本 Task 不執行 git 指令。交付物為 `07-juvenile-followup.md`、更新後的 `_gate.js` 與 `series.json`，以及 `_ledgers/07.json`。
 
 ---
 
@@ -797,15 +846,16 @@ git commit -m "feat(sjd): 第 07 篇 兒童 jSD、非藥物治療與長期追蹤
 **Interfaces:**
 - Consumes: Task 2–8 的全部 md、`series.json`、`_gate.js`
 
-- [ ] **Step 1: 還原 series.json 的完整 articles 陣列**
+- [ ] **Step 1: 確認 series.json 完整、無佔位，並清除冒煙用副本**
 
-Task 2 Step 6 曾把 `articles` 裁到只剩第一筆以便冒煙測試。確認現在是完整 7 筆，且每筆 `card.title` / `card.desc` 都已回填實際內容（沒有殘留「起草後回填」字樣）：
+`series.json` 全程維持 7 筆（Task 2 的冒煙測試用的是獨立副本 `series.smoke.json`）。確認每筆 `card.title` / `card.desc` 都已回填實際內容，沒有殘留「起草後回填」字樣：
 
 ```powershell
 node -e "const s=require('D:/claudecode/sjogren-articles/series.json');console.log('count',s.articles.length);console.log('placeholders',s.articles.filter(a=>/回填/.test(a.card.title+a.card.desc)).length);console.log('tags-ok',s.articles.every(a=>a.card.tags.length===2))"
+Remove-Item -Force D:\claudecode\sjogren-articles\series.smoke.json -ErrorAction SilentlyContinue
 ```
 
-預期：`count 7`、`placeholders 0`、`tags-ok true`
+預期：`count 7`、`placeholders 0`、`tags-ok true`，且冒煙副本已刪除。
 
 - [ ] **Step 2: 跑全系列閘門**
 
@@ -856,10 +906,12 @@ node -e "const h=require('fs').readFileSync('D:/claudecode/braintaiwan-md/index.
 
 ```powershell
 cd D:\claudecode\braintaiwan-md
-npm test
+npm test 2>&1 | Select-String -Pattern "^# (tests|pass|fail)|✖ " | Select-Object -First 12
 ```
 
-預期全數通過。本系列未改動 `lib/`，若有測試失敗表示改到了不該改的地方。
+預期 `fail 0`。Task 0 已修好先前既有的 `build-golden` 失敗，因此此處基線應為全綠；本系列未改動 `lib/`，若有測試失敗表示改到了不該改的地方。
+
+注意：`build-golden` 測試比對的是 `renderPages` 的原始輸出。Step 4 的三個 enhancer 會改寫 `sjd*.html`，若日後有人把 sjd 加進該測試的比對範圍，會重蹈 cidp 的覆轍 —— 本 Task 不要把 sjd 加進去。
 
 - [ ] **Step 7: 目視檢查**
 
@@ -874,8 +926,16 @@ npm test
 
 - [ ] **Step 8: Commit**
 
+本系列的唯一 commit（Task 0 的測試修正已另行提交）。先確認沒有夾帶不相干的改動：
+
 ```powershell
 cd D:\claudecode\braintaiwan-md
+git status --porcelain
+```
+
+除 `sjd01-07.html`、`index.html`、`sitemap.xml`、`enhance-md-footer.js` 外不應有其他變更。特別確認 `cidp*.html` 等既有系列頁面未被 enhancer 重寫 —— 若有，表示 enhancer 對既有檔案也產生了改動，需先釐清是否為預期行為再決定是否納入。
+
+```powershell
 git add sjd0*.html index.html sitemap.xml enhance-md-footer.js
 git commit -m "feat(sjd): 修格連氏症候群 BSR 2025 指引導讀系列上線（sjd01-07）"
 ```
