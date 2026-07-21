@@ -917,7 +917,7 @@ npm test 2>&1 | Select-String -Pattern "^# (tests|pass|fail)|✖ " | Select-Obje
 
 注意：`build-golden` 測試比對的是 `renderPages` 的原始輸出。Step 4 的三個 enhancer 會改寫 `sjd*.html`，若日後有人把 sjd 加進該測試的比對範圍，會重蹈 cidp 的覆轍 —— 本 Task 不要把 sjd 加進去。
 
-- [ ] **Step 7: 目視檢查**（未做：Chrome remote debugging 未啟用，browser-cli 連線失敗。改以 node 腳本做結構驗證——七張卡片齊全、d-green 圓點、div 開閉平衡、七個檔案存在、無亂碼、七頁的 series-link 各七個且含來源區塊。瀏覽器目視待補）
+- [x] **Step 7: 目視檢查**（2026-07-21 以 browser-cli 於 Chrome 完成：分類為第 27／27 個、圓點 d-green、七張卡片齊全且為實際標題摘要；sjd01 頁首七個 series-link、當前篇 active；頁尾三格「指引版本／來源‧最後更新‧適用對象」齊全）
 
 用瀏覽器開啟 `D:\claudecode\braintaiwan-md\index.html`，確認：
 
