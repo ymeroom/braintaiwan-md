@@ -1,0 +1,10 @@
+# test/build-golden.test.js 用 assert.strictEqual 逐位元組比對 renderPages()
+# 的即時輸出（只含 \n）與這兩個 fixture。build.js 的模板字面量從不產生 \r，
+# 所以 fixture 必須永遠是純 LF，否則 core.autocrlf=true 會在任何一次
+# fresh clone / git checkout -- / 切分支時把它們轉成 CRLF，讓測試對著假故障紅掉，
+# 跟 renderPage 本身有沒有壞掉完全無關（Task 0 就是為了消滅這種假紅才存在的）。
+#
+# 只鎖定這個子目錄，刻意不動 test/fixtures/index-min.html（它是另一個既有
+# fixture，被 apply-index.test.js / build-integration.test.js 用正規表達式
+# 與結構性斷言消費，目前在工作目錄中是 CRLF 且測試已經綠燈；沒有理由連動它）。
+test/fixtures/cidp-render/*.html text eol=lf
