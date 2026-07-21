@@ -8,7 +8,7 @@ const glob = (dir, re) => fs.readdirSync(dir).filter(f => re.test(f));
 const root = __dirname;
 const START = '<!-- bt-md-footer -->';
 const END = '<!-- /bt-md-footer -->';
-const UPDATED = '2026.06';
+const UPDATED = '2026.07';
 const SUBSCRIBE = 'https://media.braintaiwan.com/subscribe.html';
 
 // Source strings are summarised from each series' own published end-of-article
