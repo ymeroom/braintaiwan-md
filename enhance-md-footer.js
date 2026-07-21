@@ -55,6 +55,7 @@ const SERIES = {
   rls:  { source: 'RLS 臨床導讀（流行病學與診斷準則彙編）' },
   rmt:  { source: '鎮靜安眠藥理之臨床導讀' },
   se:   { source: 'Neurocritical Care Society 癲癇重積狀態指引' },
+  sjd:  { source: 'Price EJ, Benjamin S, Bombardieri M, et al. British Society for Rheumatology guideline on management of adult and juvenile onset Sjögren disease, Rheumatology (Oxford) 2025;64(2):409–439', audience: '風濕免疫科、神經內科、眼科、口腔醫學、牙科及基層醫療人員（教學與臨床參考）' },
   thy:  { source: 'Lee & Pearce, Hyperthyroidism: A Review, JAMA 2023' },
   tn:   { source: '三叉神經痛分子機轉導讀（J Headache Pain 2026）' },
   tth:  { source: 'Bendtsen L, Evers S, Linde M, et al. EFNS guideline on the treatment of tension-type headache, Eur J Neurol 2010;17(11):1318–1325；Lee HJ, Cho SJ, Seo JG, Schytz HW. Update on tension-type headache, Headache Pain Res 2025;26(1):38–47', audience: '神經內科、家醫、疼痛科、復健科及基層醫療人員（教學與臨床參考）' },
