@@ -25,6 +25,7 @@
 - **本次範圍不含** FB 圖卡、media 站大眾衛教版、其他系列的改動。
 - **版控結構**：`D:\claudecode` 不是 git repository，`sjogren-articles\` 因此不受版控（與所有既有 `*-articles\` 目錄一致）。Tasks 1–8 **不執行任何 git 指令**；系列的唯一 commit 在 Task 9，內容為 `braintaiwan-md` 內的建置產物（與 fm 系列 commit `597842b` 一致）。Task 0 是不相關的既有測試修正，另行單獨提交。
 - **不得改動既有系列的已提交 HTML**（`cidp*.html`、`fm*.html` 等）。這些檔案含 enhancer 產物，覆蓋會破壞線上頁面。
+- **行號引用一律視為約略值。** 各 Task 中的 `_source.md` 行號是以加標頭前的 `keae152.ocr.md` 計算的，Task 1 加入的來源標頭使全檔位移 **+10 行**。**定位段落請用標題文字搜尋**（例如 `grep -n "diagnostic accuracy of ANA"`），不要依賴行號。
 
 ## File Structure
 
