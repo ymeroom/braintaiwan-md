@@ -1,119 +1,140 @@
 ---
 name: md-series
-description: 全自動產生一個 BrainTaiwan MD 臨床導讀系列——異質多代理版：Codex 起草、Antigravity 審查、Fable 仲裁、claim-ledger 驗證閘門，通過才 build+commit+push。觸發：使用者輸入 /md-series 或要求「自動做一個 X 系列」。
+description: 產生一個 BrainTaiwan MD 臨床導讀系列——由主 agent（Opus）自己讀源文、自己寫每一篇，claim-ledger 逐條釘回源文，通過閘門才 build+commit+push。觸發：使用者輸入 /md-series 或要求「做一個 X 系列」。
 ---
 
-# md-series v3：異質多代理臨床導讀產線
+# md-series v4：單一代理（Opus）臨床導讀產線
 
-主控→執行→審查→仲裁：Fable（主會話）切工單與仲裁、`codex exec` 起草、`agy -p` 異質審查、
-現有 claim-gate 對「仲裁後」文本查核。閘門在仲裁之後——Fable 的修正也要過查核。
+**這條產線沒有外包環節。** 讀源文、起草、查核、build 全部由當下這個主 agent 在自己的
+loop 裡完成。
+
+## 為什麼不外包
+
+歷史上試過兩種外包，兩種都退回來了：
+
+| 做法 | 結果 |
+|---|---|
+| **異質多代理**（v3：`codex exec` 起草 → `agy -p` 審查 → 仲裁） | 2026-07-03 糖尿病系列實測，品質被使用者評為「超級爛」——英文源文引號與 pdftotext 亂碼被原封抄進正文，事後清理又清出斷裂接縫。事實是準的，但抓不到房子語氣。 |
+| **subagent 逐篇跑**（`superpowers:subagent-driven-development`） | 2026-07-21 sjd 系列實測，**燒完整個 5 小時 usage window，7 篇只完成 1 篇**。改由主 agent 直寫後，同一個 session 內補完其餘 6 篇並完成 build/commit/push。 |
+
+原因是同一個：一個系列的每一篇**共用同一份源文與同一套慣例**（英文引文格式、
+`(1, C) (SOA 98.75%)` 標記、🩺 小評論的 h3 寫法、判讀重點表欄位、前後篇的伏筆）。
+切給獨立 context 就是每篇重讀一次幾百 KB 的源文、重新推導一次慣例，再由主 agent
+讀報告核對一次。而主 agent 寫到第 5 篇時，前 4 篇的用語與伏筆都還在手上。
+
+**模型用 Opus。** 這條產線的瓶頸是判斷力（抓原文自相矛盾、決定哪個版本可信、
+把證據等級的語氣翻對），不是產出量。
 
 ## 參數
-`/md-series --src <pdf...> --topic "<主題>" --n <篇數> [--dry-run] [--no-gate] [--no-hetero] [--prefix <前綴>]`
-- `--src`、`--topic`、`--n`、`--prefix`、`--dry-run`、`--no-gate`：同 v2 語意不變
-- `--no-hetero`：跳過 Codex/agy，全退回純 Claude 模式（v2 流程：呼叫 Workflow `md-series-pipeline`）
 
-## 0. Preflight（--no-hetero 時跳過）
-- `codex login status` 輸出須含 `Logged in`
-- `agy -p "Reply with exactly one word: OK" </dev/null` 須回 OK
-- 任一失敗 → 告知使用者，詢問改用 `--no-hetero` 或中止。**不得默默降級整條產線。**
-- **stdin 規則（依 2026-07-03 煙霧測試結果，兩種呼叫不一致，不可套用同一條規則）**：
-  - `codex exec` 起草呼叫、上面的 agy preflight ping，一律 `</dev/null` 關閉 stdin，否則掛住。
-  - **例外：§4 的 `agy -p` 審查呼叫不可加 `</dev/null`**，必須改成把審查輸入檔內容整份透過
-    stdin 管入（`< _review/<NN>-input.md`）。原因：agy 在無 `--dangerously-skip-permissions`
-    時**無法自行讀本機檔案**——不是卡住，而是直接回覆「不知道目前工作目錄」並反問使用者要
-    絕對路徑，於是永遠讀不到檔案、也不會輸出 JSON。這點已實測驗證（見煙霧測試結果檔變體 A vs B）。
+`/md-series --src <pdf...> --topic "<主題>" --n <篇數> [--prefix <前綴>] [--dry-run] [--no-gate]`
+
+- `--src`：來源 PDF 路徑（可多份，多源文時指定主軸）
+- `--topic`／`--n`／`--prefix`：主題、篇數、輸出前綴（`<prefix>01.html`…）
+- `--dry-run`：做到 build 為止，不 commit/push
+- `--no-gate`：跳過閘門（僅在明確知情時；commit 訊息須加前綴「⚠ 未經驗證：」）
 
 ## 1. Ingest
-- 解析參數；`srcDir` 建議 `D:/claudecode/<prefix>-articles/`；確認來源 PDF 存在。
-- `pdftotext` 轉出源文 txt。**已知瑕疵**：Lancet 風格 PDF 的小數點「·」常被吃成連字號
-  （0.3–3.7% → 0–3% and 3–7%），數字類斷言查核前必須對照 PDF 人工核校 txt。
 
-## 2. Plan（Fable，主會話）
-- 讀源文 txt → 產 `series.json` 骨架（prefix/section/articles，欄位同 v2）。
-- 每篇寫工單 `_tickets/<NN>-ticket.txt`：用 `lib/hetero.js` 的
-  `buildDraftTicket({ briefMd, styleRulesMd, outFile })`。
-  - `briefMd` 必含：範圍（涵蓋哪些源文段落）、必述事實（逐條附源文引文）、
-    禁區（不得展開的相鄰主題）、長度與篇章結構。
-  - `styleRulesMd`：注入「寫作風格禁忌」全文（不開場白、不呼籲行動、禁用詞清單、
-    非咖啡廳閒聊語氣；摘要表＋🩺 小評論＋免責聲明必備）。
+- `srcDir` = `D:/claudecode/<prefix>-articles/`，原始 PDF 一併留存。
+- **源文一律走 Mistral OCR**：`python D:/claudecode/tools/mistral-ocr.py`（引擎版本釘住並寫進
+  `_source.md` 開頭）。**不要用 pdftotext 當 ground truth**——它會靜默吃掉 `≥`／`≤`／`±`，
+  也會把 Lancet 風格的小數點「·」讀成連字號（`0.3–3.7%` → `0–3% and 3–7%`），而句子仍然通順。
+- 多份源文時分開存（`_source_<label>.md`），並在每篇文章的「主要來源」區同時列出。
+- **關鍵數字要轉圖核校**：`pdftoppm -r 150 -png -f <頁> -l <頁> x.pdf pg`，用 Read 看圖，
+  逐格比對表格與百分比。表格、劑量、建議等級這三類必核。
 
-## 3. Draft（codex exec，可並行）
-每篇（cwd = srcDir）：
+## 2. Plan
 
-```bash
-codex exec --skip-git-repo-check -s workspace-write "讀取本目錄的 _tickets/<NN>-ticket.txt，依工單內容執行。" </dev/null
+讀完源文後決定架構，寫進 `series.json`（欄位由 `lib/series-schema.js` 驗證，
+`card.tags` 必須**恰好 2 個**字串，少一個或多一個 build 時直接拋錯）。
+
+同時決定 index 掛法——**這一步錯了會弄壞線上頁面**：
+
+| 情況 | 做法 |
+|---|---|
+| **全新獨立分類** | 可正常用 `build.js` 的 applyIndex（會自動插 `<!-- SERIES:xxx -->` 區塊） |
+| **併入既有分類**（成為第 N 個子系列） | **手動嵌入 index.html，絕對不要跑 applyIndex**——它會把子系列插成一個重複的獨立分類。改寫一支只呼叫 `writePages()` 的 `build-pages.js`（範例見 `tth-articles/`、`fus-articles/`） |
+
+併入既有分類時，同時要改該分類的 `topic-count` 與 `guideline-note` 的資料來源區。
+
+## 3. Draft（主 agent 自己寫，一篇一篇來）
+
+每一篇的節奏固定五步，做完才進下一篇：
+
+1. 讀源文的對應段落（用標題文字搜尋定位，不要依賴行號）
+2. 寫 `<NN>-<slug>.md`
+3. 追加該篇的 claim ledger 到 `_gate.js`
+4. 跑閘門確認這一篇全過
+5. 回填 `series.json` 的該筆 `card.title` / `card.desc`
+
+**全部寫完才 build 一次**，不要每篇 build。
+
+寫作規格：
+
+- 語氣依 `feedback_writing-style`，並比照站上既有頁（如 https://md.braintaiwan.com/ais02.html）：
+  開門見山、費曼式提問、粗體點題、有標題有表格、結尾停在一個觀察而不呼籲行動。
+- frontmatter 只有 `title`；接一段 `> **系列導讀．第 NN 篇**　…` 的導言。
+- 小評論寫成 `> ### 🩺 神經專科醫師　施懿恩・小評論`（h3 才會是粗體深藍）。
+- 每篇結尾固定「臨床判讀重點」表（常見印象 vs 文獻實際說法）＋「主要來源」＋免責聲明。
+- **原文自相矛盾要標出來，不要靜靜挑一個寫**。這是這個系列最有價值的部分——歷來抓到的包括
+  劑量單位錯置、量詞方向相反（at least vs up to）、摘要圖與正文的劑量上限不一致、
+  引註編號指向錯誤文獻、參考文獻頁碼倒序。標註時說明採用哪個版本與理由。
+- **不外借源文以外的文獻**。原文薄的地方就寫薄，並明說它薄——把空白畫準本身就是資訊。
+
+## 4. Verify + Gate
+
+`_gate.js` 建 ledger，每條斷言 `{ sentence, claimType, value, classification, sourceQuote }`，
+並對 `_source.md` 做**字面 `includes` 回查**（比 `lib/gate.js` 的 HIGH_RISK 判定更嚴：
+任何一條 sourceQuote 對不上就擋，不分 claimType）。範例實作見 `sjogren-articles/_gate.js`。
+
+- 判定用實際比對結果**覆寫** `c()` 裡寫死的 SUPPORTED——落盤的是查證結果，不是宣稱。
+- 放行門檻：**全部斷言 SUPPORTED**。任何 CONTRADICTED 或查無出處者，改文章或在文中
+  明確標註原文限制後才放行，**不得以「比例夠高」放過**。
+- 產物：`_ledgers/NN.json`（勿手改）、`_verification-report.md`。
+- 閘門未過 → **停**：不 build、不 commit/push，回報阻擋摘要。
+
+## 5. Assemble + Publish
+
+```
+node build.js <srcDir>/series.json      # 併入既有分類時改用 build-pages.js
+node enhance-md-footer.js               # 需先在 SERIES map 註冊 prefix，否則整個系列被 skip
+node enhance-md-mobile.js
+node seo-build.js
+node --test                             # 既有測試須全綠
 ```
 
-- **必須加 `-s workspace-write`**（或等效允許寫入的 sandbox 設定）。原因：codex exec 預設
-  sandbox 是 `read-only`，且 `approval: never` 不會跳出核准提示，缺這個旗標時 codex 雖能正確
-  讀工單、正確產出草稿內容，但寫檔一律被 `apply patch` 拒絕（`writing is blocked by read-only
-  sandbox`），輸出檔案不會建立。這點已實測驗證（煙霧測試變體 A 失敗、A2 加旗標後成功）。
-- `--skip-git-repo-check` 本身沒有問題，維持不變。
-- stdin 仍須關閉（`</dev/null`），否則會卡住等待輸入。
-- 完成檢查：`<NN>.md` 存在、非空、含 frontmatter。不合格重試 1 次。
-- 連敗 2 次 → **Fable 親自起草該篇**，並於最終報告標記「該篇為 Claude 起草」。
+三個 enhancer 的順序不可調換。跑完檢查：分類內卡片數、`<div>` 開閉平衡、每張卡對應的
+HTML 檔存在、無亂碼（搜 `�`）。
 
-## 4. Review（agy，可並行）
-每篇：
-1. 用 `buildReviewPrompt({ draftMd, briefMd, sourceExcerpt, styleRulesMd })` 產 `_review/<NN>-input.md`（`styleRulesMd` 傳與 §2 `buildDraftTicket` 相同的「寫作風格禁忌」全文，讓 agy 有依據可查風格違規，不可省略）。
-2. 呼叫（模板逐字取自煙霧測試結果檔，非 stdin 管入的「讀取 X 檔」寫法**已實測失敗，不可使用**）：
+commit 前確認沒有夾帶不相干的改動。**若 worktree 裡有別人未完成的工作共用同幾個檔案**
+（index.html、enhance-md-footer.js、sitemap.xml），用
+`git hash-object -w` ＋ `git update-index --cacheinfo` 把「抽掉對方區塊的版本」寫進暫存區，
+工作目錄完全不動——比 `git add -p` 或 patch 手術安全。
 
-   ```bash
-   agy -p "依 stdin 內容中的指示輸出 JSON。" < _review/<NN>-input.md > _review/<NN>-raw.txt
-   ```
-
-   建議包一層逾時保護：
-
-   ```bash
-   timeout 240 agy -p "依 stdin 內容中的指示輸出 JSON。" < _review/<NN>-input.md > _review/<NN>-raw.txt
-   ```
-
-   - `_review/<NN>-input.md` 為 `buildReviewPrompt()` 產出的審查提示全文（已內含 JSON 輸出契約、
-     工單、源文摘錄、草稿全文），整份當 stdin 灌入，**不是**在 `-p` 字串裡叫 agy 去讀這個檔案。
-   - 這是唯一允許不加 `</dev/null` 的呼叫型式——檔案本身就是 stdin，agy 無法自行讀本機路徑
-     （見 §0 stdin 規則例外說明），只能靠 stdin 拿到待審內容。
-   - stdout（純 JSON，無多餘文字）仍照原設計導向 `_review/<NN>-raw.txt`。
-3. `parseReviewIssues(raw)`（讀 `_review/<NN>-raw.txt`）解析 → 成功則存 `_review/<NN>-issues.json`。
-4. 解析回 null → 重試 1 次（仍走 stdin 管入同一份輸入檔，prompt 追加 REVIEW_JSON_CONTRACT 強調只輸出 JSON）。
-5. 連敗 2 次 → 該篇標記「⚠ 未經異質審查」記入最終報告，不擋流程。
-
-## 5. Arbitrate（Fable，主會話）
-- 逐條 issue 判定 ACCEPT / REJECT ＋ 一句理由。準繩：源文為最高權威；
-  風格類以「寫作風格禁忌」為準；suggestion 僅供參考，修法由 Fable 自定。
-- ACCEPT → Fable 直接編輯該篇 `.md` 套用修正（不回 Codex，只一輪）。
-- 全程寫 `_review-ledger.md`：每條 issue｜判定｜理由｜實際修改摘要。
-
-## 6. Verify + Gate（現有機制，對「仲裁後」文本）
-- 每篇派一個 Claude 子代理：讀最終 `.md` ＋ 源文 txt → 抽 claim ledger
-  （`{ sentence, claimType, value, classification, sourceQuote }`，欄位同 v2）→
-  寫 `_ledgers/<NN>.json`。
-- 閘門（決定論）：`evaluateGate(ledgers, { noGate })`（`lib/gate.js`，不動）。
-- 報告：`renderReport(ledgers, gate)` → `_verification-report.md`（無論過不過都寫）。
-- `gate.pass === false` → **停**：不 build、不 commit/push，回報阻擋摘要。
-
-## 7. Assemble + Publish（同 v2 不變）
-- `node build.js <srcDir>/series.json` → 結構驗證（`validateDetailsBalance`）→
-  （除非 --dry-run）git add／commit／push。commit 訊息同 v2 規則；
-  --no-gate 時前綴「⚠ 未經驗證：」。
+commit 訊息要寫明：掛哪個分類、index 是手動還是 applyIndex、來源完整書目、閘門數字、
+標註了原文哪幾處瑕疵。發布（push）需使用者在當次對話明確同意。
 
 ## 稽核產物
+
 | 檔案 | 內容 |
 |---|---|
-| `_tickets/NN-ticket.txt` | 低熵工單 |
-| `_review/NN-input.md` / `NN-raw.txt` / `NN-issues.json` | 審查輸入（透過 stdin 灌給 agy）／原始輸出／解析後意見 |
-| `_review-ledger.md` | 仲裁帳本（issue｜判定｜理由｜修改） |
-| `_ledgers/NN.json`、`_verification-report.md` | claim ledger 與閘門報告 |
+| `_source*.md` | OCR 源文，全系列唯一 ground truth（含引擎版本標頭） |
+| `_source.pdf` | 原始 PDF，符號存疑時轉圖目視核對 |
+| `NN-*.md` | 各篇原稿 |
+| `_gate.js` | claim ledger 與閘門執行器 |
+| `_ledgers/NN.json`、`_verification-report.md` | 查證結果與閘門報告（自動產生，勿手改） |
 
 ## 失敗行為
+
 | 失敗點 | 行為 |
 |---|---|
-| preflight 不過 | 詢問 --no-hetero 或中止，不默默降級 |
-| codex 起草連敗 2 次 | Fable 代打該篇，報告標記 |
-| agy 審查連敗 2 次 | 該篇「⚠ 未經異質審查」，不擋流程 |
-| Gate 未過 | 不 build、不 push，留全部稽核產物 |
-| build／結構驗證／push 失敗 | 同 v2：不繼續，回報具體失敗點 |
+| OCR 缺字或符號存疑 | 轉圖核校；確認是原文如此才寫進 ledger |
+| 閘門未過 | 不 build、不 push，留全部稽核產物 |
+| build／enhancer／測試失敗 | 不繼續，回報具體失敗點 |
+| 使用者未同意發布 | 停在 commit，不 push |
 
 ## 醫療安全但書
-驗證閘門只查「數字是否與源文相符」；異質審查補「語境與風格」層但只審一輪。
-即使全過也產出報告與仲裁帳本供抽查。`--no-gate` 僅在明確知情時使用。
+
+閘門只查「文字是否與源文相符」，不查源文本身對不對。即使全過也產出報告供抽查。
+`--no-gate` 僅在明確知情時使用。
