@@ -46,6 +46,7 @@ const SERIES = {
   ins:  { source: '失眠症國際指引彙編' },
   lsvd: { source: 'Han et al., Cranial Arterial Stenosis and Dolichoectasia for cSVD Etiopathogenesis (Mild Stroke Study 3), Circulation 2026;153:1813–1826', audience: '神經內科、中風及影像相關專科醫療人員（教學與臨床參考）' },
   mg:   { source: 'StatPearls 重症肌無力（NCBI NBK559331）' },
+  mgp:  { source: 'Brown GC, St George-Hyslop P, Paolicelli RC, Lemke G. Microglial phagocytosis in Alzheimer disease, Nat Rev Neurol 2026;22:54–69', audience: '神經內科、精神科及相關專科醫療人員（教學與臨床參考）' },
   mig:  { source: '台灣頭痛學會 2022 偏頭痛預防性治療準則' },
   miga: { source: '台灣頭痛學會 2022 偏頭痛急性治療準則' },
   naed: { source: 'Kanner AM, Ashman E, Gloss D, et al. Practice guideline update summary: Efficacy and tolerability of the new antiepileptic drugs I: Treatment of new-onset epilepsy, Epilepsy Currents 2018;18(4):260–268（AAN／AES 實務指引更新）', audience: '神經內科、小兒神經、家醫及相關專科醫療人員（教學與臨床參考）' },
