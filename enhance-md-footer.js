@@ -45,6 +45,7 @@ const SERIES = {
   fus:  { source: 'Krumholz A, Wiebe S, Gronseth GS, et al. Evidence-based guideline: Management of an unprovoked first seizure in adults, Neurology 2015;84(16):1705–1713（AAN／AES 實證指引）', audience: '神經內科、急診、家醫及相關專科醫療人員（教學與臨床參考）' },
   hz:   { source: '帶狀皰疹當代臨床整理（綜合多項權威來源）' },
   ins:  { source: '失眠症國際指引彙編' },
+  lbp:  { source: 'Cashin AG, Chou R, Weimer MB, McAuley JH. Low Back Pain: A Review, JAMA 2026. doi:10.1001/jama.2026.9631（JAMA Clinical Review 臨床綜論）', audience: '家醫、復健科、骨科、神經內科、疼痛科、急診及相關專科醫療人員（教學與臨床參考）' },
   lsvd: { source: 'Han et al., Cranial Arterial Stenosis and Dolichoectasia for cSVD Etiopathogenesis (Mild Stroke Study 3), Circulation 2026;153:1813–1826', audience: '神經內科、中風及影像相關專科醫療人員（教學與臨床參考）' },
   mg:   { source: 'StatPearls 重症肌無力（NCBI NBK559331）' },
   mgp:  { source: 'Brown GC, St George-Hyslop P, Paolicelli RC, Lemke G. Microglial phagocytosis in Alzheimer disease, Nat Rev Neurol 2026;22:54–69', audience: '神經內科、精神科及相關專科醫療人員（教學與臨床參考）' },
