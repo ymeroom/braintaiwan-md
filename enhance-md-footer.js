@@ -40,6 +40,7 @@ const SERIES = {
   fabf: { source: 'Hopkin RJ, Laney D, Kazemi S, Walter A. Fabry disease in females, Orphanet J Rare Dis 2025;20:433', audience: '神經內科、心臟科、腎臟科、遺傳與相關專科醫療人員（教學與臨床參考）' },
   fcmb: { source: 'Hsieh P-F et al., Lobar-predominant cerebral microbleeds in Fabry disease, J Formos Med Assoc 2026;125(6):815–822', audience: '神經內科、心臟科、遺傳與相關專科醫療人員（教學與臨床參考）' },
   fm:   { source: 'Filipović T, Filipović A, Nikolić D, et al. Fibromyalgia: Understanding, Diagnosis and Modern Approaches to Treatment, J Clin Med 2025;14(3):955（narrative review，非指引）', audience: '神經內科、復健科、風濕免疫科、疼痛科、家醫及相關專科醫療人員（教學與臨床參考）' },
+  fmn:  { source: 'Williams DA, Clauw DJ. Fibromyalgia, N Engl J Med 2026;395(3):267-277（NEJM Clinical Practice 臨床實務綜論）', audience: '神經內科、復健科、風濕免疫科、疼痛科、家醫及相關專科醫療人員（教學與臨床參考）' },
   fs:   { source: 'AAN 2026 功能性癲癇發作實踐指引（Tolchin et al.）' },
   fus:  { source: 'Krumholz A, Wiebe S, Gronseth GS, et al. Evidence-based guideline: Management of an unprovoked first seizure in adults, Neurology 2015;84(16):1705–1713（AAN／AES 實證指引）', audience: '神經內科、急診、家醫及相關專科醫療人員（教學與臨床參考）' },
   hz:   { source: '帶狀皰疹當代臨床整理（綜合多項權威來源）' },
