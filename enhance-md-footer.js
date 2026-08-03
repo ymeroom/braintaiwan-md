@@ -65,6 +65,7 @@ const SERIES = {
   tth:  { source: 'Bendtsen L, Evers S, Linde M, et al. EFNS guideline on the treatment of tension-type headache, Eur J Neurol 2010;17(11):1318–1325；Lee HJ, Cho SJ, Seo JG, Schytz HW. Update on tension-type headache, Headache Pain Res 2025;26(1):38–47', audience: '神經內科、家醫、疼痛科、復健科及基層醫療人員（教學與臨床參考）' },
   trep: { source: 'Kanner AM, Ashman E, Gloss D, et al. Practice guideline update summary: Efficacy and tolerability of the new antiepileptic drugs II: Treatment-resistant epilepsy, Epilepsy Currents 2018;18(4):269–278（AAN／AES 實務指引更新）', audience: '神經內科、小兒神經、家醫及相關專科醫療人員（教學與臨床參考）' },
   tnk:  { source: '台灣腦中風學會 2026 TNK 共識' },
+  vpnd: { source: 'Chow FC, Granerod J, Kim CY, Nurye T, Thakur KT. The global threat of vaccine-preventable neurological diseases, Nat Rev Neurol 2026;22(2):110–122', audience: '神經內科、感染科、小兒科、家醫、公共衛生及相關專科醫療人員（教學與臨床參考）' },
 };
 
 const css = `.md-foot{margin:26px 0 0}
