@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>敏感度 0.99、特異度 0.68：布達佩斯準則是一組刻意漏網很少、但誤判不少的條件 — BrainTaiwan MD</title>
+<meta name="description" content="CRPS 沒有任何確診檢查。沒有抽血、沒有影像、沒有電生理可以說「是它」——診斷完全靠看與摸，靠一組叫布達佩斯準則的條件。這一篇把準則整組拆開：為什麼「症狀要 3 類、徵象只要 2 類」這個不對稱是刻意的、敏感度 0.9…">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="BrainTaiwan">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:url" content="https://md.braintaiwan.com/crps02.html">
+<meta property="og:title" content="敏感度 0.99、特異度 0.68：布達佩斯準則是一組刻意漏網很少、但誤判不少的條件">
+<meta property="og:description" content="CRPS 沒有任何確診檢查。沒有抽血、沒有影像、沒有電生理可以說「是它」——診斷完全靠看與摸，靠一組叫布達佩斯準則的條件。這一篇把準則整組拆開：為什麼「症狀要 3 類、徵象只要 2 類」這個不對稱是刻意的、敏感度 0.9…">
+<meta property="og:image" content="https://md.braintaiwan.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://md.braintaiwan.com/og.png">
+<meta name="twitter:title" content="敏感度 0.99、特異度 0.68：布達佩斯準則是一組刻意漏網很少、但誤判不少的條件">
+<meta name="twitter:description" content="CRPS 沒有任何確診檢查。沒有抽血、沒有影像、沒有電生理可以說「是它」——診斷完全靠看與摸，靠一組叫布達佩斯準則的條件。這一篇把準則整組拆開：為什麼「症狀要 3 類、徵象只要 2 類」這個不對稱是刻意的、敏感度 0.9…">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI','Microsoft JhengHei','PingFang TC',Arial,sans-serif;background:#f0f4f8;color:#1c1c2e;line-height:1.85}
+header{background:linear-gradient(135deg,#0f2142 0%,#1a3975 55%,#1565c0 100%);color:#fff;padding:36px 32px 28px}
+.header-inner{max-width:860px;margin:0 auto}
+.site-name{font-size:11pt;font-weight:600;opacity:.65;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
+.series-tag{font-size:11pt;opacity:.8;margin-bottom:6px}
+.site-title{font-size:24pt;font-weight:700;line-height:1.35}
+.header-nav{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.byline{font-size:10.5pt;color:rgba(255,255,255,.62);margin-top:10px;font-weight:500}.byline b{color:rgba(255,255,255,.9);font-weight:700}
+.nav-link{color:rgba(255,255,255,.65);text-decoration:none;font-size:11pt;padding:4px 12px;border:1px solid rgba(255,255,255,.22);border-radius:20px;transition:all .2s}
+.nav-link:hover{background:rgba(255,255,255,.18);color:#fff;border-color:rgba(255,255,255,.45)}
+main{max-width:860px;margin:0 auto;padding:28px 24px}
+.series-nav{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px}
+.series-link{font-size:11pt;text-decoration:none;color:#546e7a;background:#fff;border:1px solid #e0e8f5;padding:5px 12px;border-radius:20px}
+.series-link:hover{color:#1565c0;border-color:#1565c0}
+.series-link.active{background:#1565c0;color:#fff;border-color:#1565c0;font-weight:600}
+.pager{display:flex;justify-content:space-between;gap:14px;margin-top:30px}
+.pager-link{display:flex;flex-direction:column;gap:4px;max-width:48%;text-decoration:none;background:#fff;border:1px solid #e0e8f5;border-radius:10px;padding:12px 18px;transition:all .2s}
+.pager-link:hover{border-color:#1565c0;box-shadow:0 4px 14px rgba(21,101,192,.12)}
+.pager-link.next{align-items:flex-end;text-align:right}
+.pager-dir{font-size:11pt;color:#90a4ae;font-weight:600}
+.pager-ttl{font-size:13.5pt;color:#0f2142;font-weight:700}
+.article{background:#fff;border:1px solid #e0e8f5;border-radius:12px;padding:40px 46px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.article h1{font-size:23pt;color:#0f2142;line-height:1.4;margin:.1em 0 .5em}
+.article h2{font-size:18pt;color:#0f2142;margin:1.8em 0 .7em;padding-left:12px;border-left:4px solid #1565c0;line-height:1.4}
+.article h3{font-size:15pt;color:#1a3975;margin:1.5em 0 .4em}
+.article p{margin:.85em 0;font-size:14pt;color:#263238}
+.article a{color:#1565c0;text-decoration:none}
+.article hr{border:none;border-top:1px solid #e0e8f5;margin:2em 0}
+.article strong{color:#0f2142}
+blockquote{margin:1.5em 0;padding:16px 20px;background:#eef4fb;border-left:4px solid #1565c0;border-radius:0 8px 8px 0;color:#37474f;font-size:13pt}
+blockquote h3{margin-top:.1em;color:#0f2142}
+blockquote.commentary{background:#fff7e8;border-left:4px solid #f5a623}
+table{width:100%;border-collapse:collapse;margin:1.3em 0;font-size:12.5pt;border:1px solid #e0e8f5;border-radius:8px;overflow:hidden}
+th,td{padding:10px 13px;text-align:left;border-bottom:1px solid #eef2f7}
+th{background:#0f2142;color:#fff;font-weight:600}
+tr:nth-child(even) td{background:#f6f9fd}
+code{background:#eef2f7;padding:1px 6px;border-radius:5px;font-size:.9em}
+ol,ul{padding-left:1.5em;margin:.6em 0}
+li{margin:.3em 0;font-size:14pt;color:#263238}
+footer{background:#0f2142;color:rgba(255,255,255,.45);text-align:center;padding:20px;font-size:10.5pt;margin-top:40px}
+footer a{color:rgba(255,255,255,.55);text-decoration:none}
+.md-foot{margin:26px 0 0}
+.md-foot-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.md-foot-item{background:#fff;border:1px solid #e0e8f5;border-left:4px solid #1565c0;border-radius:10px;padding:13px 16px}
+.md-foot-k{font-size:9.5pt;font-weight:800;letter-spacing:.4px;color:#1565c0;margin-bottom:5px}
+.md-foot-v{font-size:10.5pt;line-height:1.55;color:#46506a}
+.md-foot-cta{display:inline-flex;align-items:center;gap:6px;margin-top:16px;padding:9px 18px;border-radius:22px;background:#0f2142;color:#fff;text-decoration:none;font-size:10.5pt;font-weight:700}
+.md-foot-cta:hover{background:#1a3975}
+.md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
+@media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
+</style>
+<link rel="canonical" href="https://md.braintaiwan.com/crps02.html">
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="site-name">BrainTaiwan · MD</div>
+    <div class="series-tag">複雜性局部疼痛症候群臨床導讀：NEJM 2025 臨床實務綜論</div>
+    <div class="site-title">敏感度 0.99、特異度 0.68：布達佩斯準則是一組刻意漏網很少、但誤判不少的條件</div>
+    <div class="byline"><b>施懿恩</b> 醫師．神經內科 · 導讀整理 2026 年</div>
+    <nav class="header-nav">
+      <a href="/" class="nav-link">← 臨床工具</a>
+      <a href="https://braintaiwan.com" class="nav-link">首頁</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="series-nav"><a href="crps01.html" class="series-link">① 臨床問題、流行病學與 18 個月時鐘</a><a href="crps02.html" class="series-link active">② 布達佩斯準則與鑑別診斷</a><a href="crps03.html" class="series-link">③ 機轉與 nociplastic 這個標籤</a><a href="crps04.html" class="series-link">④ 藥物、介入與那兩個時間窗口</a><a href="crps05.html" class="series-link">⑤ 復健、心理、手術與指引</a></div>
+  <article class="article">
+<blockquote>
+<p><strong>系列導讀．第 02 篇</strong>　CRPS 沒有任何確診檢查。沒有抽血、沒有影像、沒有電生理可以說「是它」——診斷完全靠看與摸，靠一組叫布達佩斯準則的條件。這一篇把準則整組拆開：為什麼「症狀要 3 類、徵象只要 2 類」這個不對稱是刻意的、敏感度 0.99 配上特異度 0.68 在臨床上代表什麼，以及原文在描述第一型與第二型時留下的三處自相矛盾。</p>
+</blockquote>
+<h2>診斷是看出來、摸出來的</h2>
+<p>CRPS 的診斷方式，原文寫得毫無迴旋餘地：<strong>藉由評估患肢的疾病徵象與症狀</strong>來診斷。布達佩斯準則定義了整個診斷演算法，而準則本身是<strong>臨床症狀與徵象</strong>構成的——A 到 E 五項全部滿足才算。</p>
+<div class="bt-tablewrap"><table>
+<thead><tr><th></th><th>布達佩斯準則</th></tr></thead>
+<tbody>
+<tr><td><strong>A</strong></td><td>肢體慢性疼痛（持續或反覆超過 3 個月）</td></tr>
+<tr><td><strong>B</strong></td><td>疼痛伴隨<strong>四類中三類</strong>、每類至少一項<strong>症狀</strong></td></tr>
+<tr><td>B.1</td><td>感覺：痛覺過敏或觸誘發痛</td></tr>
+<tr><td>B.2</td><td>血管運動：溫度不對稱、膚色改變或膚色不對稱</td></tr>
+<tr><td>B.3</td><td>排汗或水腫：水腫、排汗改變或排汗不對稱</td></tr>
+<tr><td>B.4</td><td>運動或營養性：關節活動度下降、運動功能障礙（無力、顫抖或肌張力不全）、營養性變化（毛髮、指甲或皮膚）</td></tr>
+<tr><td><strong>C</strong></td><td>評估當下具備<strong>四類中兩類以上</strong>、每類至少一項<strong>徵象</strong></td></tr>
+<tr><td>C.1</td><td>感覺：痛覺過敏（針刺）或觸誘發痛（如輕觸、深部軀體壓迫、關節活動）</td></tr>
+<tr><td>C.2</td><td>血管運動：溫度不對稱、膚色改變或膚色不對稱</td></tr>
+<tr><td>C.3</td><td>排汗或水腫：水腫、排汗改變或排汗不對稱</td></tr>
+<tr><td>C.4</td><td>運動或營養性：關節活動度下降、運動功能障礙（無力、顫抖、肌張力不全或肌陣攣）、營養性變化</td></tr>
+<tr><td><strong>D</strong></td><td>疼痛伴隨兩類中至少一類：<strong>D.1 情緒困擾</strong>／<strong>D.2 干擾日常活動與社會參與</strong></td></tr>
+<tr><td><strong>E</strong></td><td>疼痛無法以其他狀況更好地解釋</td></tr>
+</tbody></table></div>
+<p>先看那個不對稱：<strong>症狀要滿足四類中的三類，徵象只要四類中的兩類</strong>。這不是筆誤，是設計。症狀是病人自己講的，門檻設高一點；徵象是醫師當場能誘發出來的，門檻設低一點——因為 CRPS 的自律神經徵象<strong>會隨時間消退</strong>，看診當下能抓到的往往比病史裡少。準則等於在說：你的手在家裡的樣子，比在診間的樣子更能代表這個病。</p>
+<h2>0.99 和 0.68 的意思</h2>
+<p>布達佩斯準則是<strong>經由共識過程發展出來的經驗性準則</strong>，之後才驗證其診斷效能。臨床版準則的<strong>敏感度 0.99、特異度 0.68</strong>。</p>
+<p>這組數字要一起讀才有意義。敏感度 0.99，代表<strong>真的是 CRPS 的人幾乎不會漏掉</strong>——只要照這組準則走，漏診幾乎不會發生。代價寫在特異度上：0.68 意味著<strong>在不是 CRPS 的慢性肢體疼痛病人裡，大約三分之一會被這組準則判成 CRPS</strong>。</p>
+<p>這是一個刻意的取捨，理由跟第一篇的 18 個月時鐘扣在一起：這個病有明確的自然緩解窗口，早期的復健與衛教又是效果最好的介入，漏診的代價（錯過窗口）遠大於誤診的代價（多做一些不具傷害性的復健與衛教）。但這個取捨有個前提——<strong>只有在治療本身不具侵入性時才成立</strong>。到了第四篇的脊髓刺激器、第五篇的截肢，同一個 0.68 就變成一個很難忽視的數字。</p>
+<p>原文也給了一項幫忙提高辨識度的線索。準則註腳裡點名了一個<strong>招牌特徵（signature feature）</strong>：<strong>對即使輕度的鈍性壓力也會疼痛</strong>——而這一項同時<strong>是 CRPS 與大多數神經病變疼痛狀況的分野</strong>。這是全篇唯一一個被賦予「招牌」地位的臨床徵象，值得單獨記住。</p>
+<p>至於疼痛強度，原文用的是標準十分制：<strong>0–3 分為輕度、4–6 分為中度、7–10 分為重度</strong>。第一篇那位病人的腕部 8 分，落在重度。</p>
+<h2>第一型、第二型，和一個沒說清楚的第三型</h2>
+<p>傳統上 CRPS 分兩個亞型，區分點是 CRPS 誘發外傷<strong>有沒有造成神經損傷</strong>：沒有的是第一型，有的是第二型。原文說兩者的<strong>表現相似</strong>。</p>
+<p>然後 Valencia 共識對布達佩斯準則做了修訂，加進一個實務上很重要的第三種情況：因為患肢的自律神經徵象<strong>會隨時間消退</strong>，病人<strong>只要在較早的評估中曾被記錄到肢體徵象，就仍可獲得 CRPS 診斷</strong>。這對持續型 CRPS 的病人是關鍵——不然一個病三年、徵象早就退掉的人，會在複診時「失去」自己的診斷。</p>
+<p>而這一段有三處內部不一致，值得逐一標出來，因為它們都會影響臨床判讀：</p>
+<p><strong>其一，「兩型的診斷症狀與徵象完全相同」與正文衝突。</strong> Table 1 的註腳明講：第一型（肢體無神經損傷）與第二型（肢體有神經損傷）的<strong>診斷症狀與徵象是相同的</strong>。但正文緊接著加了一個只對第二型成立的條件——<strong>在較罕見的第二型 CRPS，患肢的疾病徵象必須超出受累神經的支配範圍</strong>。這是一個額外的、第一型不需要滿足的空間條件。兩型的診斷要求因此並不相同。<strong>本系列採正文的版本</strong>：診斷第二型時，若徵象完全侷限在單一神經的支配區內，該考慮的是單純的神經損傷後疼痛，不是 CRPS。原文自己也給了理由：周邊神經損傷本身就會造成侷限於支配範圍的神經病變疼痛與自律神經徵象，<strong>部分第二型病人因此是 CRPS 痛與神經病變痛的混合</strong>。</p>
+<p><strong>其二，「神經傳導檢查正常」是一句過寬的概括。</strong> Table 1 另一條註腳寫著：<strong>神經傳導檢查正常；肢體肌張力不全與肌陣攣是運動類別中罕見但嚴重破壞性的表型</strong>。前半句對第一型成立，對第二型不成立——第二型的定義就是有神經損傷。而且正文在鑑別診斷那段自己就說了：<strong>神經傳導檢查與脊椎 MRI 可用於篩檢可能的神經損傷</strong>。把「神經傳導正常」當成 CRPS 的通則會出兩種錯：一是看到異常就排除 CRPS（可能是第二型），二是把它當成一項確認條件（它不在準則裡）。</p>
+<p><strong>其三，引註編號 7 指向的文獻對不上。</strong> 這一段有三處陳述掛在引註 7 上——CRPS NOS 的處置研究稀少、第二型呈現混合痛、以及 Valencia 共識對準則的修訂。但參考文獻表第 7 筆是 <strong>Harnik MA 等人的《Bone metabolism in complex regional pain syndrome》（Pain Rep 2024;9(6):e1217）</strong>，一篇談骨代謝的論文，與這三項陳述都無關。這三段內容本身在臨床上站得住，但<strong>它們的出處在這篇文章裡是查不到的</strong>——讀者若想回溯 Valencia 共識的原始定義，照編號找會落空。</p>
+<p>順帶一提 CRPS NOS：符合部分但非全部布達佩斯準則、且從未被記錄過符合完整準則的病人，歸為<strong>CRPS 未另行指明（NOS）</strong>，而原文直說<strong>這一類該怎麼處置的研究很少</strong>。這是一個誠實的空白——不是治療建議，是承認沒有建議。</p>
+<p>還有一項該被淘汰的舊觀念，原文用了最強的措辭：<strong>「CRPS 會依階段發展」這個歷史上的理解已經過時</strong>。教科書裡那套急性期／營養不良期／萎縮期的三階段分期，不該再拿來排治療順序。</p>
+<h2>不是排除診斷，但還是要排除</h2>
+<p>原文有一句話看起來自相矛盾，值得拆開講：<strong>「CRPS 不是排除診斷；但仍應考慮針對重要鑑別診斷做基本檢查」</strong>——同時準則 E 又明文要求「疼痛無法以其他狀況更好地解釋」。</p>
+<p>這兩者其實不衝突，關鍵在「排除診斷」這個詞的意思。它指的不是「不用排除別的病」，而是<strong>CRPS 有自己的正面診斷條件</strong>：它不是把所有東西查完之後剩下的那個名字（下背痛系列裡的非特異性下背痛才是那種），而是一組必須主動被誘發、被看見的徵象。準則 E 是安全閥，不是診斷方法。</p>
+<p>實務上要做的檢查，原文列得很清楚，而且每一項都對應一個特定的鑑別方向：</p>
+<div class="bt-tablewrap"><table>
+<thead><tr><th>檢查</th><th>用來排除什麼</th></tr></thead>
+<tbody>
+<tr><td>篩檢性 X 光、肢體 MRI、血中發炎指標</td><td>與 CRPS 無關的局部骨性、發炎或感染性病灶</td></tr>
+<tr><td>神經傳導檢查、脊椎 MRI</td><td>可能的神經損傷</td></tr>
+<tr><td>—</td><td>較罕見的鑑別診斷：淋巴或靜脈阻塞、風濕性與全身性神經病變等</td></tr>
+</tbody></table></div>
+<p>檢查的範圍<strong>視誘發外傷而定</strong>，適當時應與創傷照護團隊協調進行。另外有一項常被誤會的發現：<strong>局部骨質疏鬆在早期 CRPS 常出現，但它不進入診斷演算法</strong>。第一篇那位病人的腕部斑塊狀骨質稀疏，支持臨床印象，卻不是診斷依據。</p>
+<h2>準則之外：這份問診清單才是真正的評估</h2>
+<p>布達佩斯準則只回答「是不是 CRPS」。原文在同一張表裡放了另外兩整段——以疼痛為焦點的病史，以及生物心理社會評估——並說明理由：<strong>在診斷之外，完整的生物心理社會疼痛評估能協助醫師判斷病人更廣泛的照護需求</strong>。</p>
+<p>這份清單裡有幾個問題，是一般疼痛問診不會問的：</p>
+<p><strong>肢體歸屬感</strong>——「<strong>你的肢體對你來說是否感覺陌生或不屬於你？它的大小或在空間中的位置是否扭曲？你會想把它切掉嗎？</strong>」這組問題直指第三篇會談的皮質表徵改變，也預告了第五篇截肢那一段的臨床背景。</p>
+<p><strong>疲倦與認知</strong>——疲倦、認知品質包括短期記憶或「腦霧」。</p>
+<p><strong>其他部位的疼痛與感覺症狀</strong>——背痛或骨盆痛、頭痛或偏頭痛、腸道或膀胱疼痛；以及<strong>聽覺過敏</strong>、膀胱腸道症狀。這幾項不是離題，它們是慢性原發性疼痛族群共通的樣貌。</p>
+<p><strong>睡眠</strong>——問法很具體：睡多久、會不會中斷、<strong>被子蓋著會不會痛</strong>、醒來有沒有恢復感。「被子會不會痛」這一問，等於在床邊測觸誘發痛。</p>
+<p><strong>情緒與功能</strong>——挫折、易怒、低落、焦慮、憤怒；家務、個人衛生、閒暇活動；以及焦慮、憂鬱與創傷後壓力症狀的篩檢。</p>
+<p><strong>訴訟</strong>——社會處境與支持、工作史，以及<strong>與誘發 CRPS 之外傷相關的訴訟</strong>。原文把這一項單獨拉出來說明：若病人正就誘發外傷進行法律諮詢，<strong>應讓治療醫師知情，因為法律評估過程會造成額外的困擾，並可能干擾臨床處置</strong>。這是全篇少數直接談醫療以外因素的段落。</p>
+<blockquote class="commentary">
+<h3>🩺 神經專科醫師　施懿恩・小評論</h3>
+<p>特異度 0.68 這個數字我覺得應該被更常提起。它的意思是：<strong>每三個被布達佩斯準則判成 CRPS 的「非 CRPS 慢性肢痛」病人裡，就有一個會被貼上這個標籤</strong>。在只做衛教與溫和復健的階段，這個誤差是可以接受的；但同一個標籤如果一路帶到脊髓刺激器植入、或帶到截肢的討論桌上，0.68 就是一個必須被說出口的數字。準則的寬鬆是為了早期不漏掉，不是為了替後段的侵入性決策背書。</p>
+<p>兩型「相同」那個矛盾，臨床上最容易踩到的是第二型。神經內科的直覺是：既然有神經損傷、有燒灼痛與自律神經徵象，那就是神經病變疼痛，開 gabapentinoid 就好。但原文的判準是<strong>徵象有沒有超出那條神經的支配範圍</strong>——超出去，才是 CRPS。這個空間判斷很省事，只要拿筆畫一下該神經的支配區，再看腫、變色、多汗的邊界在哪裡。而它會改變後面整套處置：CRPS 的主軸是復健與衛教，神經病變疼痛的主軸是藥物。</p>
+<p>「被子蓋著會不會痛」這一問我實際在門診用了很多年，它的好處是病人不需要理解任何專業詞彙就能回答，而答案幾乎直接對應到觸誘發痛的嚴重度。比起在診間拿棉棒輕刷、病人繃緊肌肉忍耐的測法，這一問誠實得多。</p>
+</blockquote>
+<p>原文把 CRPS 的分期論宣告過時、又把診斷的重心從檢查移回床邊——這兩件事其實指向同一個方向：這個病沒有可以外包給儀器的部分。下一篇要處理的機轉，會解釋為什麼會這樣。</p>
+<h2>臨床判讀重點</h2>
+<div class="bt-tablewrap"><table>
+<thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
+<tbody>
+<tr><td>CRPS 需要影像或電生理確診</td><td>完全依臨床症狀與徵象診斷；A–E 五項全滿足</td></tr>
+<tr><td>症狀與徵象的門檻一樣</td><td>症狀四類中三類、徵象四類中兩類——不對稱是刻意設計，因徵象會隨時間消退</td></tr>
+<tr><td>準則很準</td><td>敏感度 0.99、特異度 0.68——幾乎不漏診，但約三分之一非 CRPS 者會被判為陽性</td></tr>
+<tr><td>神經傳導正常才是 CRPS</td><td>該註腳為過寬概括；第二型依定義即有神經損傷，正文亦以神經傳導篩檢神經損傷</td></tr>
+<tr><td>第一型與第二型診斷條件相同</td><td>註腳稱相同，正文卻要求第二型徵象須超出受累神經支配範圍——本系列採正文版本</td></tr>
+<tr><td>徵象消失就不能再診斷 CRPS</td><td>Valencia 共識：曾於較早評估被記錄到肢體徵象即可維持診斷（第三亞型）</td></tr>
+<tr><td>CRPS 分急性期／營養不良期／萎縮期</td><td>原文明列「CRPS 依階段發展」的歷史理解<strong>已過時</strong></td></tr>
+<tr><td>局部骨質疏鬆可支持診斷</td><td>早期常見，但<strong>不進入診斷演算法</strong></td></tr>
+<tr><td>CRPS 是排除診斷</td><td>原文明言不是；但準則 E 仍要求排除更好的解釋，兩者不衝突</td></tr>
+</tbody></table></div>
+<p><strong>主要來源</strong></p>
+<p>Goebel A. Complex Regional Pain Syndrome. <em>N Engl J Med</em> 2025;393(23):2338-2348. doi:<a href="https://doi.org/10.1056/NEJMcp2415752">10.1056/NEJMcp2415752</a></p>
+<p>本系列供醫療專業人員教學參考，不取代原始綜論全文、最新仿單、院內流程或個別臨床判斷。文中表格為原創整理；文中標示之三處原文不一致（第一／二型「診斷症狀與徵象相同」、「神經傳導檢查正常」之概括、引註 7 指向骨代謝文獻）均已對第 4、6、10 頁 PDF 影像核校確認為原文如此，非 OCR 轉寫問題。</p>
+
+  </article>
+<!-- bt-md-footer -->
+<section class="md-foot" aria-label="版本與訂閱">
+  <div class="md-foot-grid">
+    <div class="md-foot-item"><div class="md-foot-k">指引版本／來源</div><div class="md-foot-v">Goebel A. Complex Regional Pain Syndrome, N Engl J Med 2025;393(23):2338–2348（NEJM Clinical Practice 臨床實務綜論）</div></div>
+    <div class="md-foot-item"><div class="md-foot-k">最後更新</div><div class="md-foot-v">2026.07</div></div>
+    <div class="md-foot-item"><div class="md-foot-k">適用對象</div><div class="md-foot-v">神經內科、疼痛科、復健科、骨科、手外科、家醫及相關專科醫療人員（教學與臨床參考）</div></div>
+  </div>
+  <a class="md-foot-cta" href="https://media.braintaiwan.com/subscribe.html">訂閱臨床導讀更新 →</a>
+  <p class="md-foot-note">本導讀為教育用途，不取代原始指引全文、最新仿單或個別臨床判斷。</p>
+</section>
+<!-- /bt-md-footer -->
+<nav class="pager">
+    <a class="pager-link prev" href="crps01.html"><span class="pager-dir">← 上一篇</span><span class="pager-ttl">① 臨床問題、流行病學與 18 個月時鐘</span></a>
+    <a class="pager-link next" href="crps03.html"><span class="pager-dir">下一篇 →</span><span class="pager-ttl">③ 機轉與 nociplastic 這個標籤</span></a>
+  </nav>
+</main>
+<footer>© 2026 BrainTaiwan MD · <a href="https://braintaiwan.com">braintaiwan.com</a></footer>
+</body>
+</html>
