@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>口服葡萄糖有效、靜脈葡萄糖沒效：GLP-1 的三條機轉線 — BrainTaiwan MD</title>
+<meta name="description" content="同樣的葡萄糖，從嘴巴進去會刺激腸泌素釋放，從血管打進去幾乎不會。這個看起來像冷知識的對比，其實是整個 GLP-1 藥理學的地基。這一篇把綜論的機轉拆成三條互不相干的線——胰島那條（降血糖）、脂肪那條（GIP 在做的事）、…">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="BrainTaiwan">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:url" content="https://md.braintaiwan.com/glp02.html">
+<meta property="og:title" content="口服葡萄糖有效、靜脈葡萄糖沒效：GLP-1 的三條機轉線">
+<meta property="og:description" content="同樣的葡萄糖，從嘴巴進去會刺激腸泌素釋放，從血管打進去幾乎不會。這個看起來像冷知識的對比，其實是整個 GLP-1 藥理學的地基。這一篇把綜論的機轉拆成三條互不相干的線——胰島那條（降血糖）、脂肪那條（GIP 在做的事）、…">
+<meta property="og:image" content="https://md.braintaiwan.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://md.braintaiwan.com/og.png">
+<meta name="twitter:title" content="口服葡萄糖有效、靜脈葡萄糖沒效：GLP-1 的三條機轉線">
+<meta name="twitter:description" content="同樣的葡萄糖，從嘴巴進去會刺激腸泌素釋放，從血管打進去幾乎不會。這個看起來像冷知識的對比，其實是整個 GLP-1 藥理學的地基。這一篇把綜論的機轉拆成三條互不相干的線——胰島那條（降血糖）、脂肪那條（GIP 在做的事）、…">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI','Microsoft JhengHei','PingFang TC',Arial,sans-serif;background:#f0f4f8;color:#1c1c2e;line-height:1.85}
+header{background:linear-gradient(135deg,#0f2142 0%,#1a3975 55%,#1565c0 100%);color:#fff;padding:36px 32px 28px}
+.header-inner{max-width:860px;margin:0 auto}
+.site-name{font-size:11pt;font-weight:600;opacity:.65;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
+.series-tag{font-size:11pt;opacity:.8;margin-bottom:6px}
+.site-title{font-size:24pt;font-weight:700;line-height:1.35}
+.header-nav{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.byline{font-size:10.5pt;color:rgba(255,255,255,.62);margin-top:10px;font-weight:500}.byline b{color:rgba(255,255,255,.9);font-weight:700}
+.nav-link{color:rgba(255,255,255,.65);text-decoration:none;font-size:11pt;padding:4px 12px;border:1px solid rgba(255,255,255,.22);border-radius:20px;transition:all .2s}
+.nav-link:hover{background:rgba(255,255,255,.18);color:#fff;border-color:rgba(255,255,255,.45)}
+main{max-width:860px;margin:0 auto;padding:28px 24px}
+.series-nav{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px}
+.series-link{font-size:11pt;text-decoration:none;color:#546e7a;background:#fff;border:1px solid #e0e8f5;padding:5px 12px;border-radius:20px}
+.series-link:hover{color:#1565c0;border-color:#1565c0}
+.series-link.active{background:#1565c0;color:#fff;border-color:#1565c0;font-weight:600}
+.pager{display:flex;justify-content:space-between;gap:14px;margin-top:30px}
+.pager-link{display:flex;flex-direction:column;gap:4px;max-width:48%;text-decoration:none;background:#fff;border:1px solid #e0e8f5;border-radius:10px;padding:12px 18px;transition:all .2s}
+.pager-link:hover{border-color:#1565c0;box-shadow:0 4px 14px rgba(21,101,192,.12)}
+.pager-link.next{align-items:flex-end;text-align:right}
+.pager-dir{font-size:11pt;color:#90a4ae;font-weight:600}
+.pager-ttl{font-size:13.5pt;color:#0f2142;font-weight:700}
+.article{background:#fff;border:1px solid #e0e8f5;border-radius:12px;padding:40px 46px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.article h1{font-size:23pt;color:#0f2142;line-height:1.4;margin:.1em 0 .5em}
+.article h2{font-size:18pt;color:#0f2142;margin:1.8em 0 .7em;padding-left:12px;border-left:4px solid #1565c0;line-height:1.4}
+.article h3{font-size:15pt;color:#1a3975;margin:1.5em 0 .4em}
+.article p{margin:.85em 0;font-size:14pt;color:#263238}
+.article a{color:#1565c0;text-decoration:none}
+.article hr{border:none;border-top:1px solid #e0e8f5;margin:2em 0}
+.article strong{color:#0f2142}
+blockquote{margin:1.5em 0;padding:16px 20px;background:#eef4fb;border-left:4px solid #1565c0;border-radius:0 8px 8px 0;color:#37474f;font-size:13pt}
+blockquote h3{margin-top:.1em;color:#0f2142}
+blockquote.commentary{background:#fff7e8;border-left:4px solid #f5a623}
+table{width:100%;border-collapse:collapse;margin:1.3em 0;font-size:12.5pt;border:1px solid #e0e8f5;border-radius:8px;overflow:hidden}
+th,td{padding:10px 13px;text-align:left;border-bottom:1px solid #eef2f7}
+th{background:#0f2142;color:#fff;font-weight:600}
+tr:nth-child(even) td{background:#f6f9fd}
+code{background:#eef2f7;padding:1px 6px;border-radius:5px;font-size:.9em}
+ol,ul{padding-left:1.5em;margin:.6em 0}
+li{margin:.3em 0;font-size:14pt;color:#263238}
+footer{background:#0f2142;color:rgba(255,255,255,.45);text-align:center;padding:20px;font-size:10.5pt;margin-top:40px}
+footer a{color:rgba(255,255,255,.55);text-decoration:none}
+.md-foot{margin:26px 0 0}
+.md-foot-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.md-foot-item{background:#fff;border:1px solid #e0e8f5;border-left:4px solid #1565c0;border-radius:10px;padding:13px 16px}
+.md-foot-k{font-size:9.5pt;font-weight:800;letter-spacing:.4px;color:#1565c0;margin-bottom:5px}
+.md-foot-v{font-size:10.5pt;line-height:1.55;color:#46506a}
+.md-foot-cta{display:inline-flex;align-items:center;gap:6px;margin-top:16px;padding:9px 18px;border-radius:22px;background:#0f2142;color:#fff;text-decoration:none;font-size:10.5pt;font-weight:700}
+.md-foot-cta:hover{background:#1a3975}
+.md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
+@media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
+</style>
+<link rel="canonical" href="https://md.braintaiwan.com/glp02.html">
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="site-name">BrainTaiwan · MD</div>
+    <div class="series-tag">GLP-1 受體促效劑臨床導讀：NEJM 2026 綜論</div>
+    <div class="site-title">口服葡萄糖有效、靜脈葡萄糖沒效：GLP-1 的三條機轉線</div>
+    <div class="byline"><b>施懿恩</b> 醫師．神經內科 · 導讀整理 2026 年</div>
+    <nav class="header-nav">
+      <a href="/" class="nav-link">← 臨床工具</a>
+      <a href="https://braintaiwan.com" class="nav-link">首頁</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="series-nav"><a href="glp01.html" class="series-link">① 來歷與藥物族譜</a><a href="glp02.html" class="series-link active">② 機轉：腸道、脂肪與下視丘三條線</a><a href="glp03.html" class="series-link">③ 血糖：從 exenatide 到三重促效劑</a><a href="glp04.html" class="series-link">④ 心臟與腎臟終點</a><a href="glp05.html" class="series-link">⑤ 減重、不良事件與該給誰</a></div>
+  <article class="article">
+<blockquote>
+<p><strong>系列導讀．第 02 篇</strong>　同樣的葡萄糖，從嘴巴進去會刺激腸泌素釋放，從血管打進去幾乎不會。這個看起來像冷知識的對比，其實是整個 GLP-1 藥理學的地基。這一篇把綜論的機轉拆成三條互不相干的線——胰島那條（降血糖）、脂肪那條（GIP 在做的事）、以及下視丘那條（減重與食慾），並且說明為什麼綜論的摘要與正文在「腸道菌群」這一項上鬆緊不一致。</p>
+</blockquote>
+<h2>地基：分泌必須從腸道那一端啟動</h2>
+<p><strong>GLP-1 與 GIP 是對腸道內的葡萄糖濃度做出反應而分泌的，相對之下，靜脈給予的葡萄糖對腸泌素釋放只造成微不足道的改變。</strong></p>
+<p>這句話值得停一下。它意味著這套系統偵測的不是「血裡有多少糖」，而是「有東西正在被吃進來」。這也是為什麼它被叫做腸泌素效應。</p>
+<p>而分泌的條件不只葡萄糖：<strong>當血糖升高時，這些腸道胜肽也會對攝入的蛋白質與脂質產物做出反應而釋放，在關鍵時刻增強胰島素釋放。</strong></p>
+<p>「在關鍵時刻」是綜論自己的措辭，而它正好對應到這類藥物一個很重要的安全性特徵——後面第 05 篇會看到，單獨使用 GLP-1 受體促效劑並不造成低血糖。</p>
+<h2>第一條線：胰島</h2>
+<p>受體分布的邏輯很單純：<strong>因為主要作用模式是以葡萄糖依賴的方式刺激胰島素分泌，胰島 beta 細胞擁有這些胜肽受體的最高濃度。</strong></p>
+<p>訊號路徑則是這樣：</p>
+<div class="bt-tablewrap"><table>
+<thead><tr><th>步驟</th><th>綜論內容</th></tr></thead>
+<tbody>
+<tr><td>受體型別</td><td><strong>GLP-1 藉由結合到一個 G 蛋白偶聯受體而被活化</strong></td></tr>
+<tr><td>第二訊息</td><td>觸發細胞內環腺苷單磷酸（cAMP）的釋放與 adenyl cyclase 的活化</td></tr>
+<tr><td>鈣的兩個來源</td><td>驅動經由<strong>電壓依賴性鈣通道</strong>的 Ca²⁺ 攝入，並刺激<strong>細胞內儲存</strong>的 Ca²⁺ 釋出（涉及 Epac2 活化）</td></tr>
+<tr><td>GIP 的差別</td><td>GIP 結合到自己的 G 蛋白偶聯受體並活化<strong>相同的路徑</strong>，但在胰島細胞中<strong>對 K⁺ ATP 通道的依賴性比 GLP-1 更高</strong></td></tr>
+</tbody></table></div>
+<p>綜論對這一整套的評語是：<strong>這一組豐富的路徑與交互作用，為同時控制高血糖與過重提供了可切入的標的。</strong></p>
+<p>除了促胰島素之外，這條線還有三個動作：<strong>GLP-1 與 GIP 直接促進胰島素分泌，但也抑制 glucagon，並刺激 beta 細胞的促存活與增生機轉以維持胰島細胞質量。</strong></p>
+<p>還有一個不靠胰島素的降糖途徑：<strong>GLP-1 也會減緩胃排空、降低胃蠕動，這兩者都能降低血漿葡萄糖濃度。</strong></p>
+<p>這一句在臨床上有兩個下游後果，剛好一好一壞——它是降糖與飽足感的來源，也是噁心、便秘與（在手術麻醉情境下）胃內容物滯留的來源。</p>
+<h2>那個摘要說得比正文有把握的機轉</h2>
+<p>腸道菌群這一項要特別分清楚。</p>
+<p>正文的寫法是保守的：<strong>有些證據顯示 GLP-1 受體促效劑可能調節腸道菌相，藉此改善葡萄糖耐受，不過還需要更多研究。</strong></p>
+<p>但綜論的摘要把它列為機轉之一——<strong>包括減緩胃排空、抑制 glucagon 分泌、腸道微生物體的有益改變，以及對下視丘核的直接作用以增強飽足感</strong>；Key Points 也寫成<strong>促成有益的腸道微生物體</strong>。</p>
+<p>同一篇文章裡，摘要與 Key Points 的語氣是「這是機轉」，正文的語氣是「還需要更多研究」。讀綜論時遇到這種鬆緊不一致，該採信的是正文那一版。</p>
+<h2>第二條線：脂肪，而且主要是 GIP 在做</h2>
+<p>GLP-1 在這條線上幾乎不出力：<strong>GLP-1 受體促效劑對肌肉或脂肪組織的胰島素敏感度影響極小，但透過脂肪代謝的改變，對葡萄糖耐受有其他間接效果。</strong></p>
+<p>真正在脂肪組織裡工作的是 GIP：</p>
+<div class="bt-tablewrap"><table>
+<thead><tr><th>GIP 在脂肪組織的作用</th><th>綜論內容</th></tr></thead>
+<tbody>
+<tr><td>訊號</td><td><strong>活化 AKT（protein kinase B）</strong>，促進第 4 型葡萄糖轉運蛋白轉位到細胞膜，<strong>增強脂肪細胞的葡萄糖攝取</strong></td></tr>
+<tr><td>脂質處理</td><td><strong>促進脂質儲存</strong>，藉由增加新生脂質生成與刺激脂肪細胞脂蛋白脂酶，<strong>降低循環中的游離脂肪酸</strong></td></tr>
+<tr><td>合起來的意義</td><td>這些性質<strong>增強了雙重治療的效果</strong></td></tr>
+</tbody></table></div>
+<p>「促進脂質儲存」讀起來像是與減重目標相反的作用，但綜論把它放在葡萄糖耐受的脈絡下——降低循環游離脂肪酸對代謝是有利的。這是雙重促效劑為什麼在降糖上能贏過單一 GLP-1 的一部分解釋。</p>
+<h2>第三條線：下視丘，而 glucagon 在這裡換了角色</h2>
+<p>glucagon 的雙面性是這一段最有意思的地方。</p>
+<p>它的本業是升血糖：<strong>glucagon 是一個反向調節荷爾蒙，藉由刺激肝臟的肝糖分解與糖質新生來升高血糖。</strong></p>
+<p>但它同時<strong>因為在下視丘腹內側核（ventromedial hypothalamus）的直接作用而增加飽足感</strong>。</p>
+<p>所以綜論的立場是：<strong>glucagon 或其促效劑在固定的複方組合策略中可能是有用的輔助</strong>，特別是因為<strong>glucagon 也能減少肝內脂肪浸潤並促進脂解</strong>。</p>
+<p>這解釋了為什麼三重促效劑會把一個「升血糖荷爾蒙」放進減重藥裡——在中樞它做的是相反方向的事。</p>
+<h2>那個與血糖控制脫鉤的體重迴路</h2>
+<p>接著是神經科最該讀的一段。</p>
+<p><strong>下視丘神經中樞在血糖控制與體重維持上的調節，是 GLP-1 受體促效劑的特徵性作用。</strong></p>
+<p>受體的位置寫得很具體：<strong>GLP-1 受體大量存在於弓狀核（arcuate nucleus），該處含有 agouti 相關蛋白與神經胜肽 Y 細胞</strong>；也存在於<strong>下視丘中同時會產生 GLP-1 的區域</strong>，不過<strong>GLP-1 被認為主要在腦幹生成</strong>。</p>
+<p>然後是一句應該被畫線的話：<strong>腸泌素的受體控制體重與食物攝取，與控制血糖是分開的。</strong></p>
+<p>這句話的臨床意涵很大——它意味著減重效果不是「血糖變好的副產品」，而是一條獨立的迴路。這也是為什麼這些藥能在沒有糖尿病的人身上造成 15% 以上的體重下降（第 05 篇）。</p>
+<p>實驗證據與核區的分工是這樣：</p>
+<div class="bt-tablewrap"><table>
+<thead><tr><th>觀察</th><th>綜論內容</th></tr></thead>
+<tbody>
+<tr><td>腦室內注射</td><td><strong>將 GLP-1 直接注射到室旁核（paraventricular nucleus）會導致飽足</strong></td></tr>
+<tr><td>厭食效果的來源</td><td>因為<strong>促黑激素原（pro-opiomelanocortin）核也表現 GLP-1 受體</strong>，因而產生厭食效果</td></tr>
+<tr><td>血糖歸誰管</td><td><strong>弓狀核（而非室旁核）</strong>藉由介導肝臟葡萄糖輸出來調節血糖濃度</td></tr>
+<tr><td>受質利用的轉移</td><td>有證據顯示 GLP-1 在室旁核與弓狀核<strong>都</strong>改變受質利用，<strong>朝脂質氧化偏移，呼吸交換率下降</strong></td></tr>
+</tbody></table></div>
+<p>弓狀核管血糖、室旁核管飽足——同一個受體、相鄰的兩個核區，做的是兩件不同的事。這是「體重與血糖分開控制」這句話在解剖上的具體樣子。</p>
+<h2>三條線併起來看</h2>
+<p>綜論自己的總結是：<strong>GLP-1 受體促效劑不論有無併用 GIP 促效劑，都透過直接刺激胰島素釋放，以及對脂肪代謝、胃排空與腸道蠕動的間接作用，對血糖動態產生深遠影響。</strong></p>
+<div class="bt-tablewrap"><table>
+<thead><tr><th></th><th>作用位置</th><th>主要效果</th><th>誰在出力</th></tr></thead>
+<tbody>
+<tr><td>第一條線</td><td>胰島 beta 細胞</td><td>促胰島素、抑 glucagon、維持胰島質量</td><td>GLP-1 與 GIP（路徑相同，通道依賴性不同）</td></tr>
+<tr><td>第一條線之外</td><td>胃與腸道</td><td>減緩胃排空與蠕動 → 降血糖</td><td>GLP-1</td></tr>
+<tr><td>第二條線</td><td>脂肪組織</td><td>葡萄糖攝取、脂質儲存、降游離脂肪酸</td><td>主要是 GIP</td></tr>
+<tr><td>第三條線</td><td>下視丘（弓狀核／室旁核）</td><td>飽足、食慾、肝葡萄糖輸出、受質利用</td><td>GLP-1（與中樞的 glucagon 作用）</td></tr>
+</tbody></table></div>
+<blockquote class="commentary">
+<h3>🩺 神經專科醫師　施懿恩・小評論</h3>
+<p>「腸泌素受體控制體重與食物攝取，與控制血糖是分開的」——如果整篇機轉只能記一句，我會記這一句。它把兩個常被混在一起的臨床問題拆開了：一個沒有糖尿病的人用這個藥會減重，不是因為血糖被壓下去，而是因為下視丘那條線被打開了。反過來說，一個血糖控制得很好但體重沒動的病人，並不代表藥沒作用在該作用的地方。</p>
+<p>弓狀核與室旁核的分工那一段，我認為是這篇綜論最紮實的部分，但它同時暴露了一個限制——這些證據來自腦室內注射與動物模型。人類身上打針到皮下，藥物到得了這些核區多少、以什麼濃度、是穿越血腦障壁還是走腦幹的迴路，綜論沒有給答案。這對神經科很重要，因為 Table 1 的副作用清單裡有頭痛、情緒改變與自殺意念——如果我們相信藥物作用在下視丘，就沒有理由假設它對其他中樞區域完全沒有影響。</p>
+<p>腸道菌群那一項的鬆緊不一致值得記一下方法論上的教訓。摘要與 Key Points 是給快讀者看的，通常寫得比較篤定；正文才是作者願意為證據等級負責的地方。這篇綜論在同一個機轉上給了兩種語氣，遇到這種情況一律以正文為準。</p>
+<p>至於三重促效劑把 glucagon 加進來這件事，機轉上讀起來很優雅——外周升糖、中樞增加飽足、順便減少肝內脂肪。但這也意味著它的淨效果高度依賴劑量與比例。這種「靠比例平衡兩個相反方向」的藥物設計，長期安全性資料出來之前我會保守一點。</p>
+</blockquote>
+<p>同一個葡萄糖從不同的路徑進入身體，命運完全不同；同一個 glucagon 在肝臟與在下視丘做的事恰好相反。機轉讀完之後，真正的問題是這些路徑在人身上能換到多少 HbA1c——那是下一篇的事。</p>
+<h2>臨床判讀重點</h2>
+<div class="bt-tablewrap"><table>
+<thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
+<tbody>
+<tr><td>血糖高就會刺激腸泌素分泌</td><td>GLP-1 與 GIP 反應的是腸道內的葡萄糖；靜脈給予葡萄糖只造成微不足道的腸泌素釋放改變</td></tr>
+<tr><td>GLP-1 只靠促進胰島素降糖</td><td>同時抑制 glucagon、維持胰島細胞質量，並減緩胃排空與胃蠕動</td></tr>
+<tr><td>GLP-1 能改善肌肉與脂肪的胰島素阻抗</td><td>對肌肉或脂肪組織的胰島素敏感度影響極小；脂肪組織那一端主要由 GIP 作用</td></tr>
+<tr><td>GIP 促進脂質儲存所以對代謝不利</td><td>綜論把它放在降低循環游離脂肪酸、增強雙重治療效果的脈絡下</td></tr>
+<tr><td>減重是血糖改善的副產品</td><td>腸泌素受體控制體重與食物攝取，與控制血糖是分開的</td></tr>
+<tr><td>下視丘各核區作用相同</td><td>弓狀核（非室旁核）介導肝葡萄糖輸出；室旁核注射 GLP-1 導致飽足</td></tr>
+<tr><td>腸道菌群改變是確立的機轉</td><td>正文寫「有些證據……還需要更多研究」，摘要與 Key Points 則列為機轉之一</td></tr>
+</tbody></table></div>
+<p><strong>主要來源</strong></p>
+<p>Rosen CJ, Ingelfinger JR. GLP-1 Receptor Agonists. <em>N Engl J Med</em>. 2026;394(13):1313–1324. doi:<a href="https://doi.org/10.1056/NEJMra2500106">10.1056/NEJMra2500106</a></p>
+<p>本系列供醫療專業人員教學參考，不取代原始綜論全文、最新仿單、院內流程或個別臨床判斷。文中表格為原創整理。</p>
+
+  </article>
+<!-- bt-md-footer -->
+<section class="md-foot" aria-label="版本與訂閱">
+  <div class="md-foot-grid">
+    <div class="md-foot-item"><div class="md-foot-k">指引版本／來源</div><div class="md-foot-v">Rosen CJ, Ingelfinger JR. GLP-1 Receptor Agonists, N Engl J Med 2026;394(13):1313–1324. doi:10.1056/NEJMra2500106（NEJM Review Article 綜論）</div></div>
+    <div class="md-foot-item"><div class="md-foot-k">最後更新</div><div class="md-foot-v">2026.07</div></div>
+    <div class="md-foot-item"><div class="md-foot-k">適用對象</div><div class="md-foot-v">神經內科、內分泌新陳代謝科、家醫、內科及相關專科醫療人員（教學與臨床參考）</div></div>
+  </div>
+  <a class="md-foot-cta" href="https://media.braintaiwan.com/subscribe.html">訂閱臨床導讀更新 →</a>
+  <p class="md-foot-note">本導讀為教育用途，不取代原始指引全文、最新仿單或個別臨床判斷。</p>
+</section>
+<!-- /bt-md-footer -->
+<nav class="pager">
+    <a class="pager-link prev" href="glp01.html"><span class="pager-dir">← 上一篇</span><span class="pager-ttl">① 來歷與藥物族譜</span></a>
+    <a class="pager-link next" href="glp03.html"><span class="pager-dir">下一篇 →</span><span class="pager-ttl">③ 血糖：從 exenatide 到三重促效劑</span></a>
+  </nav>
+</main>
+<footer>© 2026 BrainTaiwan MD · <a href="https://braintaiwan.com">braintaiwan.com</a></footer>
+</body>
+</html>
