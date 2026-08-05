@@ -45,6 +45,7 @@ const SERIES = {
   fs:   { source: 'AAN 2026 功能性癲癇發作實踐指引（Tolchin et al.）' },
   fus:  { source: 'Krumholz A, Wiebe S, Gronseth GS, et al. Evidence-based guideline: Management of an unprovoked first seizure in adults, Neurology 2015;84(16):1705–1713（AAN／AES 實證指引）', audience: '神經內科、急診、家醫及相關專科醫療人員（教學與臨床參考）' },
   glp:  { source: 'Rosen CJ, Ingelfinger JR. GLP-1 Receptor Agonists, N Engl J Med 2026;394(13):1313–1324. doi:10.1056/NEJMra2500106（NEJM Review Article 綜論）', audience: '神經內科、內分泌新陳代謝科、家醫、內科及相關專科醫療人員（教學與臨床參考）' },
+  hunger: { source: 'Fasano A. The Physiology of Hunger, N Engl J Med 2025;392(4):372–381. doi:10.1056/NEJMra2402679（NEJM Nutrition in Medicine 綜論）', audience: '神經內科、內分泌新陳代謝科、腸胃科、精神科、家醫及相關專科醫療人員（教學與臨床參考）' },
   hz:   { source: '帶狀皰疹當代臨床整理（綜合多項權威來源）' },
   ins:  { source: '失眠症國際指引彙編' },
   iih:  { source: 'Horton JC. Idiopathic Intracranial Hypertension, N Engl J Med 2025;393(14):1409–1419. doi:10.1056/NEJMra2404929（NEJM Review Article 臨床綜論）', audience: '神經內科、眼科、神經外科、急診、家醫及相關專科醫療人員（教學與臨床參考）' },
