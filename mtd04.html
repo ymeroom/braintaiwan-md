@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>清不掉的比漏出來的更麻煩——mtDNA 降解、粒線體自噬與蛋白酶 — BrainTaiwan MD</title>
+<meta name="description" content="Aicardi-Goutières 症候群長期被歸類為第一型干擾素病，DNASE2 缺乏被歸類為先天免疫錯誤，Perrault 症候群被歸類為卵巢功能不全加聽損。這篇綜論把它們放進同一張表——因為它們共用同一個機轉：該被…">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="BrainTaiwan">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:url" content="https://md.braintaiwan.com/mtd04.html">
+<meta property="og:title" content="清不掉的比漏出來的更麻煩——mtDNA 降解、粒線體自噬與蛋白酶">
+<meta property="og:description" content="Aicardi-Goutières 症候群長期被歸類為第一型干擾素病，DNASE2 缺乏被歸類為先天免疫錯誤，Perrault 症候群被歸類為卵巢功能不全加聽損。這篇綜論把它們放進同一張表——因為它們共用同一個機轉：該被…">
+<meta property="og:image" content="https://md.braintaiwan.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://md.braintaiwan.com/og.png">
+<meta name="twitter:title" content="清不掉的比漏出來的更麻煩——mtDNA 降解、粒線體自噬與蛋白酶">
+<meta name="twitter:description" content="Aicardi-Goutières 症候群長期被歸類為第一型干擾素病，DNASE2 缺乏被歸類為先天免疫錯誤，Perrault 症候群被歸類為卵巢功能不全加聽損。這篇綜論把它們放進同一張表——因為它們共用同一個機轉：該被…">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI','Microsoft JhengHei','PingFang TC',Arial,sans-serif;background:#f0f4f8;color:#1c1c2e;line-height:1.85}
+header{background:linear-gradient(135deg,#0f2142 0%,#1a3975 55%,#1565c0 100%);color:#fff;padding:36px 32px 28px}
+.header-inner{max-width:860px;margin:0 auto}
+.site-name{font-size:11pt;font-weight:600;opacity:.65;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
+.series-tag{font-size:11pt;opacity:.8;margin-bottom:6px}
+.site-title{font-size:24pt;font-weight:700;line-height:1.35}
+.header-nav{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.byline{font-size:10.5pt;color:rgba(255,255,255,.62);margin-top:10px;font-weight:500}.byline b{color:rgba(255,255,255,.9);font-weight:700}
+.nav-link{color:rgba(255,255,255,.65);text-decoration:none;font-size:11pt;padding:4px 12px;border:1px solid rgba(255,255,255,.22);border-radius:20px;transition:all .2s}
+.nav-link:hover{background:rgba(255,255,255,.18);color:#fff;border-color:rgba(255,255,255,.45)}
+main{max-width:860px;margin:0 auto;padding:28px 24px}
+.series-nav{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px}
+.series-link{font-size:11pt;text-decoration:none;color:#546e7a;background:#fff;border:1px solid #e0e8f5;padding:5px 12px;border-radius:20px}
+.series-link:hover{color:#1565c0;border-color:#1565c0}
+.series-link.active{background:#1565c0;color:#fff;border-color:#1565c0;font-weight:600}
+.pager{display:flex;justify-content:space-between;gap:14px;margin-top:30px}
+.pager-link{display:flex;flex-direction:column;gap:4px;max-width:48%;text-decoration:none;background:#fff;border:1px solid #e0e8f5;border-radius:10px;padding:12px 18px;transition:all .2s}
+.pager-link:hover{border-color:#1565c0;box-shadow:0 4px 14px rgba(21,101,192,.12)}
+.pager-link.next{align-items:flex-end;text-align:right}
+.pager-dir{font-size:11pt;color:#90a4ae;font-weight:600}
+.pager-ttl{font-size:13.5pt;color:#0f2142;font-weight:700}
+.article{background:#fff;border:1px solid #e0e8f5;border-radius:12px;padding:40px 46px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.article h1{font-size:23pt;color:#0f2142;line-height:1.4;margin:.1em 0 .5em}
+.article h2{font-size:18pt;color:#0f2142;margin:1.8em 0 .7em;padding-left:12px;border-left:4px solid #1565c0;line-height:1.4}
+.article h3{font-size:15pt;color:#1a3975;margin:1.5em 0 .4em}
+.article p{margin:.85em 0;font-size:14pt;color:#263238}
+.article a{color:#1565c0;text-decoration:none}
+.article hr{border:none;border-top:1px solid #e0e8f5;margin:2em 0}
+.article strong{color:#0f2142}
+blockquote{margin:1.5em 0;padding:16px 20px;background:#eef4fb;border-left:4px solid #1565c0;border-radius:0 8px 8px 0;color:#37474f;font-size:13pt}
+blockquote h3{margin-top:.1em;color:#0f2142}
+blockquote.commentary{background:#fff7e8;border-left:4px solid #f5a623}
+table{width:100%;border-collapse:collapse;margin:1.3em 0;font-size:12.5pt;border:1px solid #e0e8f5;border-radius:8px;overflow:hidden}
+th,td{padding:10px 13px;text-align:left;border-bottom:1px solid #eef2f7}
+th{background:#0f2142;color:#fff;font-weight:600}
+tr:nth-child(even) td{background:#f6f9fd}
+code{background:#eef2f7;padding:1px 6px;border-radius:5px;font-size:.9em}
+ol,ul{padding-left:1.5em;margin:.6em 0}
+li{margin:.3em 0;font-size:14pt;color:#263238}
+footer{background:#0f2142;color:rgba(255,255,255,.45);text-align:center;padding:20px;font-size:10.5pt;margin-top:40px}
+footer a{color:rgba(255,255,255,.55);text-decoration:none}
+.md-foot{margin:26px 0 0}
+.md-foot-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.md-foot-item{background:#fff;border:1px solid #e0e8f5;border-left:4px solid #1565c0;border-radius:10px;padding:13px 16px}
+.md-foot-k{font-size:9.5pt;font-weight:800;letter-spacing:.4px;color:#1565c0;margin-bottom:5px}
+.md-foot-v{font-size:10.5pt;line-height:1.55;color:#46506a}
+.md-foot-cta{display:inline-flex;align-items:center;gap:6px;margin-top:16px;padding:9px 18px;border-radius:22px;background:#0f2142;color:#fff;text-decoration:none;font-size:10.5pt;font-weight:700}
+.md-foot-cta:hover{background:#1a3975}
+.md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
+@media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
+/* bt-mobile:start */
+article, article *{overflow-wrap:break-word}
+.bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
+.bt-tablewrap>table{margin:0}
+/* bt-mobile:end */
+</style>
+<link rel="canonical" href="https://md.braintaiwan.com/mtd04.html">
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="site-name">BrainTaiwan · MD</div>
+    <div class="series-tag">粒線體疾病與發炎臨床導讀：Brain 2026 綜論</div>
+    <div class="site-title">清不掉的比漏出來的更麻煩——mtDNA 降解、粒線體自噬與蛋白酶</div>
+    <div class="byline"><b>施懿恩</b> 醫師．神經內科 · 導讀整理 2026 年</div>
+    <nav class="header-nav">
+      <a href="/" class="nav-link">← 臨床工具</a>
+      <a href="https://braintaiwan.com" class="nav-link">首頁</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="series-nav"><a href="mtd01.html" class="series-link">① mtDNA 外漏與先天免疫的接線</a><a href="mtd02.html" class="series-link">② 膜、嵴與粒線體動態</a><a href="mtd03.html" class="series-link">③ TFAM、POLG 與複製機器</a><a href="mtd04.html" class="series-link active">④ 降解、粒線體自噬與蛋白酶</a><a href="mtd05.html" class="series-link">⑤ 生物標記與治療方向</a></div>
+  <article class="article">
+<blockquote>
+<p><strong>系列導讀．第 04 篇</strong>　Aicardi-Goutières 症候群長期被歸類為第一型干擾素病，DNASE2 缺乏被歸類為先天免疫錯誤，Perrault 症候群被歸類為卵巢功能不全加聽損。這篇綜論把它們放進同一張表——因為它們共用同一個機轉：<strong>該被降解掉的 mtDNA 沒有被降解掉。</strong> 這一篇處理核酸酶、粒線體自噬與蛋白酶，以及一個對神經科很直接的問題：SPG7 造成的痙攣性共濟失調，會不會也是一種發炎病？</p>
+</blockquote>
+<h2>完整性是三件事的平衡</h2>
+<p>mtDNA 的完整性靠<strong>精細調校且協調的複製、修復與降解</strong>維持。<strong>核酸酶</strong>在其中扮演關鍵角色——它們透過控制 mtDNA 與 mtRNA 的濃度來調節粒線體基因表現，並參與受損 mtDNA 的修復。</p>
+<p>上一篇談的是複製端。這一篇談的是另外兩端：修復與降解。而這兩端出問題時，表型往往長得不像粒線體病，像免疫病。</p>
+<h2>Aicardi-Goutières：一個已經被當成干擾素病的粒線體故事</h2>
+<p><strong>RNASEH2A 與 RNASEH2B 的突變造成 Aicardi-Goutières 症候群</strong>——作者的描述是「一種以神經學與免疫學特徵為特色、與釋放的 mtDNA 有關的罕見疾病」。</p>
+<p>帶有這些缺陷的細胞株表現出的變化，順序是這樣的：</p>
+<div class="bt-tablewrap"><table>
+<thead><tr><th>步驟</th><th>現象</th></tr></thead>
+<tbody>
+<tr><td>結構</td><td><strong>粒線體嵴組織改變</strong></td></tr>
+<tr><td>氧化</td><td><strong>活性氧濃度上升</strong></td></tr>
+<tr><td>孔道</td><td><strong>外膜上 VDAC 寡聚體組裝加速</strong></td></tr>
+<tr><td>結果</td><td><strong>mtDNA 釋放</strong>，經 <strong>cGAS-STING 與 TLR9-NF-κB 兩條路</strong>造成發炎</td></tr>
+</tbody></table></div>
+<p>值得注意的是「加速」這個詞——VDAC 寡聚不是被新造出來的異常，是本來就有的過程被推快了。</p>
+<h2>MGME1：從 CPEO 到腎衰竭</h2>
+<p><strong>粒線體基因組維持外切酶 1（MGME1）切割單股 DNA 受質與 DNA flap</strong>。它缺席時，<strong>因複製停滯而出現單股中間產物與短 mtDNA 片段增加</strong>，暗示這個酶在粒線體複製的終止上有角色。</p>
+<p>臨床端：<strong>MGME1 的雙等位基因突變造成嚴重的多系統神經疾病，包含慢性進行性外眼肌麻痺、肌病變、腸胃道與呼吸功能障礙。</strong></p>
+<p>小鼠端把發炎那一半補齊了。缺乏 Mgme1 的小鼠證實 mtDNA 不穩定，<strong>基礎單股 DNA 增加</strong>；這些動物<strong>發展出慢性進行性腎病變，伴隨免疫浸潤與高濃度的循環發炎細胞激素</strong>。原始研究另記錄到<strong>線性 mtDNA 片段</strong>，以及發炎性疾病症狀、<strong>腎病症候群、體重減輕與視網膜病變</strong>。</p>
+<p>而最新的機轉補充相當具體：<strong>MGME1 的喪失促進異常的核糖核苷酸被併入 mtDNA，導致其釋放至細胞質、活化 cGAS-STING 路徑，並產生年齡依賴性的發炎反應，驅動該小鼠模型的腎衰竭。</strong></p>
+<p>「年齡依賴性」這四個字在罕病領域不常見。它意味著這條路徑的病理是<strong>累積</strong>出來的，不是一開始就固定的——理論上也意味著有介入的時間窗。</p>
+<h2>粒線體自噬：清運系統</h2>
+<p>粒線體與 mtDNA 經由溶酶體降解被移除，這種特化的自噬形式稱為<strong>粒線體自噬（mitophagy）</strong>。作者指出，<strong>受損的粒線體自噬已在數個自體免疫與老化模型中與細胞質 mtDNA 釋放連上關係</strong>。</p>
+<p>其中一條路徑，典型由大範圍粒線體損傷觸發：<strong>粒線體泛素激酶 PINK1 與 E3 泛素連接酶 Parkin 驅動標記過程，以清除功能失調的粒線體</strong>。而<strong>這些基因的突變造成早發性巴金森氏症，其中發炎已被認定為病理生理的關鍵成分</strong>。</p>
+<p>這裡有一個容易被忽略的細節：<strong>Pink/Parkin 負向調節粒線體衍生囊泡（MDV）的形成，以及粒線體成分被送往多囊泡體的過程。</strong> 也就是說，PINK1/Parkin 不只是「開啟清運」，它同時在<strong>壓抑另一條輸出管道</strong>。這條管道正是第 05 篇會談到的「mtDNA 搭胞外囊泡跑到別的細胞」。</p>
+<h2>DNASE2：粒線體病與先天免疫錯誤的交界</h2>
+<p>由於 mtDNA 可以被運送到溶酶體，這個胞器就成了 mtDNA 釋放的重要調節者。<strong>DNase2 是參與自噬過程的核酸酶，在溶酶體中切割 DNA 受質，防止在凋亡或壓力誘發的 mtDNA 降解時產生發炎反應。</strong></p>
+<p>病人的表型完全不像典型粒線體病：<strong>帶有雙等位基因 DNASE2 功能喪失突變的病人表現為早發性貧血、反覆發燒、蛋白尿與腎臟疾病，伴隨溶酶體內 DNA 累積與第一型干擾素自體免疫反應。</strong></p>
+<p>作者在這裡下了一個明確的判斷：<strong>這證明了粒線體疾病與先天免疫錯誤（inborn errors of immunity）之間的重疊</strong>，並暗示<strong>失衡的 mtDNA 生成與降解，與先天免疫發炎反應的活化密切相連</strong>——當自噬／粒線體自噬這類降解機制失效時，這個反應就被啟動。</p>
+<p>小鼠端的支持證據是這一節裡治療意義最強的一筆：</p>
+<ul>
+<li>Dnase2 耗竭的小鼠中，<strong>mtDNA 逃離自噬</strong>，導致細胞質 mtDNA 累積，以及以<strong>細胞激素分泌與 TLR9-NF-κB 訊號</strong>為特徵的免疫浸潤。</li>
+<li>該模型顯示<strong>器官衰竭可歸因於發炎的肝毒性與心毒性效應</strong>。</li>
+<li>而在心臟模型中，<strong>抑制 TLR9 挽救了心肌病變與發炎</strong>。</li>
+</ul>
+<h2>蛋白質恆定：四個蛋白酶，四種病</h2>
+<p>健康粒線體蛋白質體的維持仰賴三件事：<strong>跨越兩層膜的正確蛋白質輸入、由伴護蛋白與蛋白酶執行的摺疊與品管、以及粒線體轉錄–轉譯偶聯的正確平衡</strong>。而<strong>粒線體蛋白質恆定機器的失敗具有多效性影響，包括先天免疫路徑的活化</strong>。</p>
+<div class="bt-tablewrap"><table>
+<thead><tr><th>蛋白酶</th><th>疾病</th><th>與 mtDNA 釋放的連結</th></tr></thead>
+<tbody>
+<tr><td><strong>YME1L</strong>（內膜蛋白質恆定）</td><td>見於 CRISPR 篩選的 PMD 相關基因</td><td><strong>嘧啶依賴性的 mtDNA 釋放</strong>；模型顯示 cGAS/STING/TBK1 活化，<strong>嘧啶合成受損驅動 mtDNA 釋放與免疫感測</strong></td></tr>
+<tr><td><strong>LONP1</strong>（基質，降解未摺疊與受損蛋白）</td><td>同合子隱性變異 → <strong>大腦、眼、牙、耳與骨骼症候群</strong>；另有肌病變、OXPHOS 失能與 mtDNA 耗竭的病例</td><td><strong>LONP1 被認為會降解 TFAM</strong>；其突變使 TFAM 與 mtDNA 濃度失調，導致典型 PMD 表型</td></tr>
+<tr><td><strong>ClpP</strong>（ClpXP 複合體，類蛋白酶體圓柱）</td><td>體染色體隱性 CLPP 突變 → <strong>Perrault 症候群</strong>（卵巢功能不全＋感音神經性聽損）；部分病人另有<strong>共濟失調、學習障礙與周邊神經病變</strong></td><td>病人纖維母細胞 mtDNA 增加；剔除小鼠有 <strong>nucleoid 變大與聚集、mtDNA 與 TFAM 表現上升、經 VDAC 孔道的 mtDNA 釋放增加、cGAS-STING 與第一型干擾素反應</strong></td></tr>
+<tr><td><strong>SPG7／AFG3L2</strong>（內膜 m-AAA 蛋白酶）</td><td>兩基因突變均可造成<strong>痙攣性共濟失調，伴或不伴視神經病變</strong></td><td>兩者為 <strong>mPTP 的調節者</strong>；此複合體失調促進 mtDNA 洩漏至細胞質並觸發發炎反應</td></tr>
+</tbody></table></div>
+<p>LONP1 這一格還有一個側面線索：<strong>在全身性紅斑狼瘡小鼠模型的 CD4⁺ T 細胞中發現高濃度的 LonP1</strong>，該處<strong>細胞質 mtDNA 增加與 cGAS-STING-TBK1 發炎路徑活化介導了免疫活化</strong>。但作者立刻補上：<strong>LonP1 如何決定 mtDNA 釋放，尚未被探討。</strong></p>
+<p>Perrault 症候群這一格則提醒了異質性：<strong>其他造成 Perrault 症候群的原因包括各種粒線體蛋白質合成缺陷，或罕見的 mtDNA 複製缺陷。</strong> 同一個臨床症候群，不同的分子入口。</p>
+<h2>蛋白水解壓力下，mtDNA 怎麼出去的</h2>
+<p>這是這一節唯一還沒有答案的機轉問題。作者的措辭很保守：<strong>在蛋白水解壓力下 mtDNA 如何抵達細胞質尚未被完全理解；然而，膜通透性的增加看來是驅動機制之一。</strong></p>
+<p><strong>mPTP</strong> ——一個介導粒線體膜對離子與其他分子通透性增加的推定通道——<strong>已被提出在粒線體壓力源下介導 mtDNA 釋放與細胞質 DNA 感測器的活化</strong>。</p>
+<p>而 SPG7 這裡是本篇對神經科最直接的一段。作者的結尾是：<strong>雖然在病人來源細胞中已觀察到 mPTP 開放的受損，但 SPG7 與 AFG3L2 的致病變異對先天免疫訊號的影響仍未被探討。</strong></p>
+<blockquote class="commentary">
+<h3>🩺 神經專科醫師　施懿恩・小評論</h3>
+<p>這一篇對我而言最有臨床衝擊的，是那句「<strong>粒線體疾病與先天免疫錯誤之間的重疊</strong>」。這不是一個修辭。它的實務意義是：一個表現為早發貧血、反覆發燒、蛋白尿的孩子，跟一個表現為 CPEO 加肌病變的成人，機轉上可能只差在<strong>哪一段清運鏈斷掉</strong>。我們的分科把這兩個人分給免疫科跟神經科，但他們的病理是同一條。</p>
+<p>Aicardi-Goutières 尤其值得重新讀一次。它的診斷標籤是「第一型干擾素病」，我們習慣把干擾素當成起點。這篇提示了一個更上游的位置：<strong>嵴的組織改變、ROS 上升、VDAC 寡聚加速——干擾素是這條鏈的第四步，不是第一步。</strong> 如果這個順序成立，那麼未來針對上游（VDAC 寡聚、膜通透性）的介入，理論上比下游的 JAK 抑制更接近病因。當然，這在 AGS 目前只是細胞株層級的觀察。</p>
+<p>SPG7 那段是整篇裡跟我門診距離最近的一句話，也是最讓人不甘心的一句。SPG7 與 AFG3L2 造成的痙攣性共濟失調在神經科不算罕見，這兩個基因是 mPTP 的調節者，而 mPTP 被認為是 mtDNA 外洩的通道之一，機轉上該連的都連上了——<strong>然後作者說，這件事沒有人研究過。</strong> 病人來源細胞已經有 mPTP 開放異常的資料，缺的只是有人去測 cGAS-STING。這是一個現成的研究題目躺在那裡。</p>
+<p>Perrault 症候群那格我想提醒一件實務上的事。CLPP 突變的病人裡，<strong>有一部分會有共濟失調、學習障礙與周邊神經病變</strong>。一位年輕女性以卵巢功能不全與聽損來就診，神經學檢查的異常很容易被當成不相關的共病。在這個框架下它不是共病，是同一個蛋白酶缺陷的不同器官表現。</p>
+<p>最後，PINK1/Parkin <strong>負向調節</strong> MDV 形成這一點值得警覺。我們談巴金森氏症的粒線體自噬時，習慣的敘事是「清不掉壞粒線體 → 累積 → 神經元死亡」。但如果 PINK1/Parkin 同時在踩住另一條輸出路（囊泡外送），那麼它失能之後，多出來的不只是沒清掉的垃圾，還有<strong>被送出去的粒線體物質</strong>。後者是會跨細胞傳播的訊號。這對「巴金森病理如何擴散」的討論是另一種可能性——但這篇沒有往下講，它只把這條線指出來。</p>
+</blockquote>
+<p>清運系統壞掉會發炎，蛋白酶壞掉會發炎，膜壞掉會發炎。到目前為止都還在機轉層次。剩下的問題是：這些在病人身上量得到嗎？以及，量到了之後能做什麼？</p>
+<h2>臨床判讀重點</h2>
+<div class="bt-tablewrap"><table>
+<thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
+<tbody>
+<tr><td>Aicardi-Goutières 是純粹的干擾素病</td><td>RNASEH2A／RNASEH2B 缺陷細胞株顯示<strong>嵴組織改變、ROS 上升、VDAC 寡聚體組裝加速</strong>，繼而 mtDNA 釋放，經 <strong>cGAS-STING 與 TLR9-NF-κB 兩條路</strong>發炎</td></tr>
+<tr><td>MGME1 是眼肌麻痺與肌病變的基因</td><td>雙等位基因突變造成<strong>多系統</strong>疾病（CPEO、肌病變、腸胃道與呼吸功能障礙）；小鼠另發展<strong>慢性進行性腎病變</strong>與循環發炎細胞激素上升</td></tr>
+<tr><td>MGME1 的發炎來自 mtDNA 片段本身</td><td>最新機轉為<strong>異常核糖核苷酸被併入 mtDNA</strong> → 細胞質釋放 → cGAS-STING → <strong>年齡依賴性</strong>發炎驅動腎衰竭</td></tr>
+<tr><td>PINK1/Parkin 只負責清除壞粒線體</td><td>它同時<strong>負向調節粒線體衍生囊泡的形成</strong>與粒線體成分往多囊泡體的運送</td></tr>
+<tr><td>DNASE2 缺乏是免疫科的病</td><td>作者以此<strong>證明粒線體疾病與先天免疫錯誤的重疊</strong>；病人表現早發貧血、反覆發燒、蛋白尿、腎病與第一型干擾素自體免疫反應</td></tr>
+<tr><td>發炎造成的器官損傷不可逆</td><td>Dnase2 模型的器官衰竭可歸因於發炎的肝毒性與心毒性；<strong>抑制 TLR9 挽救了心肌病變與發炎</strong></td></tr>
+<tr><td>LONP1 只影響蛋白質摺疊</td><td><strong>LONP1 被認為降解 TFAM</strong>；其突變使 TFAM 與 mtDNA 濃度失調而產生典型 PMD 表型；但 <strong>LonP1 如何決定 mtDNA 釋放尚未被探討</strong></td></tr>
+<tr><td>Perrault 症候群＝卵巢功能不全＋聽損</td><td>部分 CLPP 病人另有<strong>共濟失調、學習障礙與周邊神經病變</strong>；其他病因包含粒線體蛋白質合成缺陷或罕見的 mtDNA 複製缺陷</td></tr>
+<tr><td>蛋白酶缺陷的 mtDNA 外洩機轉已明確</td><td>作者明講<strong>尚未被完全理解</strong>；膜通透性增加（含 mPTP）看來是驅動機制之一</td></tr>
+<tr><td>SPG7 共濟失調與免疫無關</td><td>SPG7 與 AFG3L2 為 <strong>mPTP 調節者</strong>，失調促進 mtDNA 洩漏與發炎；但<strong>其致病變異對先天免疫訊號的影響仍未被探討</strong></td></tr>
+</tbody></table></div>
+<p><strong>主要來源</strong></p>
+<p>Szabo M, Lagos D, Cross E, Collier JJ, Horvath R. Mitochondrial DNA release and inflammation in mitochondrial disease pathogenesis. <em>Brain</em> 2026;149(6):1874-1884. doi:<a href="https://doi.org/10.1093/brain/awag037">10.1093/brain/awag037</a></p>
+<p>本系列供醫療專業人員教學參考，不取代原始綜論全文、最新仿單、院內流程或個別臨床判斷。文中表格為原創整理；所有數字與機轉敘述均以原始 PDF 全文逐頁核校。</p>
+
+  </article>
+<!-- bt-md-footer -->
+<section class="md-foot" aria-label="版本與訂閱">
+  <div class="md-foot-grid">
+    <div class="md-foot-item"><div class="md-foot-k">指引版本／來源</div><div class="md-foot-v">Szabo M, Lagos D, Cross E, Collier JJ, Horvath R. Mitochondrial DNA release and inflammation in mitochondrial disease pathogenesis, Brain 2026;149(6):1874–1884. doi:10.1093/brain/awag037（Brain Review Article 綜論）</div></div>
+    <div class="md-foot-item"><div class="md-foot-k">最後更新</div><div class="md-foot-v">2026.07</div></div>
+    <div class="md-foot-item"><div class="md-foot-k">適用對象</div><div class="md-foot-v">神經內科、兒童神經科、遺傳／罕病、風濕免疫科、腎臟科及相關專科醫療人員（教學與臨床參考）</div></div>
+  </div>
+  <a class="md-foot-cta" href="https://media.braintaiwan.com/subscribe.html">訂閱臨床導讀更新 →</a>
+  <p class="md-foot-note">本導讀為教育用途，不取代原始指引全文、最新仿單或個別臨床判斷。</p>
+</section>
+<!-- /bt-md-footer -->
+<nav class="pager">
+    <a class="pager-link prev" href="mtd03.html"><span class="pager-dir">← 上一篇</span><span class="pager-ttl">③ TFAM、POLG 與複製機器</span></a>
+    <a class="pager-link next" href="mtd05.html"><span class="pager-dir">下一篇 →</span><span class="pager-ttl">⑤ 生物標記與治療方向</span></a>
+  </nav>
+</main>
+<footer>© 2026 BrainTaiwan MD · <a href="https://braintaiwan.com">braintaiwan.com</a></footer>
+</body>
+</html>
