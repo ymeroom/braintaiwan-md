@@ -60,6 +60,7 @@ const SERIES = {
   naed: { source: 'Kanner AM, Ashman E, Gloss D, et al. Practice guideline update summary: Efficacy and tolerability of the new antiepileptic drugs I: Treatment of new-onset epilepsy, Epilepsy Currents 2018;18(4):260–268（AAN／AES 實務指引更新）', audience: '神經內科、小兒神經、家醫及相關專科醫療人員（教學與臨床參考）' },
   narc: { source: '猝睡症之臨床與衛教導讀（公開醫學文獻與指引彙編）', audience: '醫療人員與一般讀者（衛教導讀）' },
   nphn: { source: 'Johnson MD, Williams MA. Idiopathic Normal-Pressure Hydrocephalus, N Engl J Med 2025;393(22):2243–2253（NEJM Review Article 綜論）', audience: '神經內科、神經外科、老年醫學、復健科及相關專科醫療人員（教學與臨床參考）' },
+  pad:  { source: 'McDermott MM. Peripheral Artery Disease in the Legs, N Engl J Med 2026;394(5):486–496. doi:10.1056/NEJMcp2501200（NEJM Clinical Practice 臨床實務）', audience: '神經內科、心臟內科、家醫、內分泌新陳代謝科、血管外科、復健科及相關專科醫療人員（教學與臨床參考）' },
   pd:   { source: 'TMDS 2023 巴金森氏症治療共識' },
   phn:  { source: 'PHN 臨床導讀（Johnson & Rice NEJM 2014、NeuPSIG 指引）' },
   pn:   { source: 'Mauermann ML, Staff NP. Peripheral Neuropathy: A Review, JAMA. Published online November 17, 2025. doi:10.1001/jama.2025.19400（JAMA 臨床綜論）', audience: '神經內科、家醫、內分泌新陳代謝、復健科、腫瘤科、疼痛科及相關專科醫療人員（教學與臨床參考）' },
