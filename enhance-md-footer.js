@@ -35,6 +35,7 @@ const SERIES = {
   crps: { source: 'Goebel A. Complex Regional Pain Syndrome, N Engl J Med 2025;393(23):2338–2348（NEJM Clinical Practice 臨床實務綜論）', audience: '神經內科、疼痛科、復健科、骨科、手外科、家醫及相關專科醫療人員（教學與臨床參考）' },
   dmd:  { source: 'AAN 2025 Evidence in Focus（Oskoui et al.）' },
   dmdx: { source: 'ADA Standards of Care in Diabetes 2026 · 第 2 章 診斷與分類', audience: '內科、家醫、內分泌及相關專科醫療人員（教學與臨床參考）' },
+  dmrx: { source: 'NICE guideline NG28, Type 2 diabetes in adults: management（2026 年 2 月 18 日更新）· 1.11–1.21 起始用藥決策', audience: '內科、家醫、內分泌、腎臟、心臟及相關專科醫療人員（教學與臨床參考）' },
   edh:  { source: 'Bullock MR, Chesnut R, Ghajar J, et al. Surgical management of acute epidural hematomas, Neurosurgery 2006;58(3 Suppl):S2-7–S2-15（Brain Trauma Foundation 手術治療指引，證據等級 Class III）', audience: '神經外科、神經內科、急診、重症及相關專科醫療人員（教學與臨床參考）' },
   etomidate: { source: '依託咪酯中毒之神經毒理臨床整理', audience: '急診、毒物與神經科醫療人員' },
   fab:  { source: 'Germain et al. 2022 classic Fabry disease 專家共識' },
