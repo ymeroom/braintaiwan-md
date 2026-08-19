@@ -36,6 +36,7 @@ const SERIES = {
   dmd:  { source: 'AAN 2025 Evidence in Focus（Oskoui et al.）' },
   dmdx: { source: 'ADA Standards of Care in Diabetes 2026 · 第 2 章 診斷與分類', audience: '內科、家醫、內分泌及相關專科醫療人員（教學與臨床參考）' },
   dmrx: { source: 'NICE guideline NG28, Type 2 diabetes in adults: management（2026 年 2 月 18 日更新）· 1.11–1.21 起始用藥決策', audience: '內科、家醫、內分泌、腎臟、心臟及相關專科醫療人員（教學與臨床參考）' },
+  dms:  { source: 'Prentza V, et al. Antidiabetic Treatment and Prevention of Ischemic Stroke: A Systematic Review, J Clin Med 2024;13(19):5786（系統性回顧）；並含 LAMP 試驗（JAMA Intern Med 2026）與其胰島素阻抗分層事後分析（Stroke 2026）', audience: '神經內科、中風、內分泌、家醫及相關專科醫療人員（教學與臨床參考）' },
   edh:  { source: 'Bullock MR, Chesnut R, Ghajar J, et al. Surgical management of acute epidural hematomas, Neurosurgery 2006;58(3 Suppl):S2-7–S2-15（Brain Trauma Foundation 手術治療指引，證據等級 Class III）', audience: '神經外科、神經內科、急診、重症及相關專科醫療人員（教學與臨床參考）' },
   etomidate: { source: '依託咪酯中毒之神經毒理臨床整理', audience: '急診、毒物與神經科醫療人員' },
   fab:  { source: 'Germain et al. 2022 classic Fabry disease 專家共識' },
