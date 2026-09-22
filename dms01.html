@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/dms01.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 01 篇</strong>　這是一份 2024 年的系統性回顧，收了 32 篇研究，問的問題很單純：糖尿病的藥，到底能不能減少缺血性中風。但在走進藥物之前，得先回答為什麼血糖會把血管弄壞。這一篇處理病理機轉——從動脈粥狀硬化的間接與直接路徑，一路走到內皮糖萼這個近年才被量得出來的東西。順帶要指出的是，這篇綜論在自己的摘要與正文之間，對「糖尿病讓中風風險增加多少」給了兩個差很多的答案。</p>
 </blockquote>
-<h2>先看規模</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 7 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">先看規模</a></li><li><a href="#bt-s2">然後是這篇綜論自己沒對齊的地方</a></li><li><a href="#bt-s3">病程長度本身就是危險因子</a></li><li><a href="#bt-s4">血糖怎麼把血管弄壞：兩條路</a></li><li><a href="#bt-s5">內皮糖萼：一層可以被量出來的東西</a></li><li><a href="#bt-s6">這一段最該被記住的發現</a></li><li><a href="#bt-s7">那要怎麼量</a></li><li><a href="#bt-s8">中風病人的基線有多糟</a></li><li><a href="#bt-s9">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">先看規模</h2>
 <p><strong>國際糖尿病聯盟估計成人糖尿病盛行率在 2021 年為 10.5%，到 2045 年上升到 12.2%。</strong> 絕對人數的推估更直觀：<strong>全球患病人數預計從 2019 年的 4 億 6300 萬人增加到 2030 年的 5 億 7800 萬人，並在 2045 年達到 7 億 8300 萬人。</strong></p>
 <p>作者把成長歸因於兩件事：<strong>人口老化，以及肥胖頻率上升。</strong></p>
-<h2>然後是這篇綜論自己沒對齊的地方</h2>
+<h2 id="bt-s2">然後是這篇綜論自己沒對齊的地方</h2>
 <p>風險倍數這件事，摘要與正文說的不是同一個數字。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>出處</th><th>寫法</th></tr></thead>
@@ -110,24 +130,24 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p><strong>兩個 20% 不是同一個 20%。</strong> 正文那個 20% 是「中風佔糖尿病病人死亡的比例」，摘要把它搬成了「風險增加的幅度」，同時把「兩倍」這個關鍵數字弄丟了。本系列後續引用時一律採正文版本——理由是正文緊接著給了佐證性的第二個數字（見下段），而摘要那句話在正文裡找不到對應來源。</p>
 <p>引用這篇時要注意自己抄的是哪一段。</p>
-<h2>病程長度本身就是危險因子</h2>
+<h2 id="bt-s3">病程長度本身就是危險因子</h2>
 <p>正文接著給的數字，方向與「兩倍」一致：<strong>糖尿病每多一年病程，可能使缺血性中風風險增加 3%。</strong></p>
 <p>而血糖不只影響會不會中風，也影響中風之後：<strong>高血糖被認為會增加缺血性中風的嚴重度，以及中風後的臨床結局。</strong></p>
-<h2>血糖怎麼把血管弄壞：兩條路</h2>
+<h2 id="bt-s4">血糖怎麼把血管弄壞：兩條路</h2>
 <p>綜論把加速動脈粥狀硬化的機轉拆成間接與直接。</p>
 <p><strong>間接路徑</strong>是動脈粥狀硬化型血脂異常：<strong>高密度脂蛋白下降、小顆低密度脂蛋白形成、三酸甘油酯上升。</strong> 另外還有一條常被忽略的：<strong>血糖升高也與交感神經系統功能失調有關。</strong></p>
 <p><strong>直接路徑</strong>是內皮功能障礙：<strong>內皮功能障礙會促進促血栓、促發炎與血管收縮的過程，導致粥狀斑塊形成並最終破裂。</strong></p>
 <p>到這裡都還是教科書。真正這個研究團隊自己的東西在下一段。</p>
-<h2>內皮糖萼：一層可以被量出來的東西</h2>
+<h2 id="bt-s5">內皮糖萼：一層可以被量出來的東西</h2>
 <p><strong>胰島素阻抗與內皮糖萼受損有關，進而導致內皮功能惡化，最終發生心血管疾病。</strong></p>
 <p>糖萼是什麼？兩篇同組原著給了互補的定義：<strong>內皮糖萼是覆蓋在內皮細胞管腔面的一層複合蛋白多醣與醣蛋白</strong>；另一篇寫得更完整——<strong>由醣蛋白、蛋白多醣與醣胺聚醣構成的網狀結構，在通透性、機械力感應，以及免疫與止血等功能上扮演關鍵角色。</strong></p>
 <p>它壞掉會怎樣？<strong>糖萼受損的血管區域更容易出現促發炎與動脈粥狀硬化病灶。</strong></p>
 <p>而糖尿病破壞糖萼的機轉不只一條：<strong>糖萼醣蛋白與葡萄糖的交互作用、硫酸乙醯肝素生合成的改變、血漿玻尿酸與玻尿酸酶濃度上升、發炎介質（在某些情況下會誘發細胞間孔洞形成而增加血管通透性），以及血管內皮生長因子產生減少。</strong></p>
-<h2>這一段最該被記住的發現</h2>
+<h2 id="bt-s6">這一段最該被記住的發現</h2>
 <p>綜論在病理機轉這一節丟了一個很神經科的觀察：</p>
 <p><strong>來源不明的栓塞性中風（ESUS）病人，相較於動脈硬化危險因子相當的配對健康對照者，呈現內皮糖萼受損。</strong></p>
 <p>也就是說，在傳統危險因子被配平之後，糖萼還是有差。這是一個「找不到來源」的中風族群，被指出在微血管層次有可測量的異常。</p>
-<h2>那要怎麼量</h2>
+<h2 id="bt-s7">那要怎麼量</h2>
 <p>這是同組兩篇原著的方法核心，值得單獨講，因為後面三篇的所有數字都建立在這三個指標上。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>指標</th><th>量什麼</th><th>怎麼量</th><th>正常值</th></tr></thead>
@@ -139,7 +159,7 @@ article, article *{overflow-wrap:break-word}
 <p>PBR 的判讀方向容易搞反，原文寫得很清楚：<strong>PBR 值升高代表紅血球更深地穿入糖萼，意味著糖萼屏障特性喪失與厚度減少。</strong> 也就是說，紅血球能貼多近血管壁，反過來告訴你那層墊子還剩多厚。</p>
 <p>取樣量比想像中大：<strong>這個技術在超過 3000 個舌下微血管節段取得測量值，再現性非常好。</strong></p>
 <p>動脈硬度那一項，糖尿病的機轉是結構性的：<strong>在糖尿病病人，動脈硬度增加與糖化終產物形成及其與膠原蛋白的交聯聚合有關。</strong></p>
-<h2>中風病人的基線有多糟</h2>
+<h2 id="bt-s8">中風病人的基線有多糟</h2>
 <p>把上面三個指標套到真實的中風病人身上，數字是這樣的（54 名第二型糖尿病合併缺血性中風、平均年齡 66.4 歲、男性佔 51.9% 的族群）：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>指標</th><th>基線值</th><th>對照</th></tr></thead>
@@ -157,7 +177,7 @@ article, article *{overflow-wrap:break-word}
 <p>至於摘要與正文的 20%／兩倍不一致——這種錯在系統性回顧裡特別要小心，因為摘要是最常被二次引用的部分。一個原本是「中風佔糖尿病死因兩成」的句子，被搬成「風險高兩成」之後，後續每一次轉引都會把糖尿病的中風風險縮小到實際的十分之一。</p>
 </blockquote>
 <p>血糖把血管弄壞的路徑講清楚了，接下來的問題就變得很自然：既然是高血糖造成的，那把血糖壓下來，中風是不是就會變少？下一篇會發現，這個推論在臨床試驗裡沒有成立。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s9">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
 <tbody>

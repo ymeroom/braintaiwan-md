@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/ssp04.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 04 篇</strong>　血壓、血脂、血糖是次級預防裡最「系統性」的三個目標，也是門診最能穩定改善的部分。這一篇把三個目標數字背後的試驗攤開來看：130 的血壓、70 的 LDL、7 的糖化血色素。每一個數字背後，都有一個把效益與代價同時放上天秤的故事——尤其是 statin 那個「多防缺血、多添出血」的淨效益計算。</p>
 </blockquote>
-<h2>血壓：目標 &lt;130，而且降得越多、風險越低</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">血壓：目標 &lt;130，而且降得越多、風險越低</a></li><li><a href="#bt-s2">血脂：statin 的淨效益，是一道加減法</a></li><li><a href="#bt-s3">血糖：目標 &lt;7%，但真正的主角換人了</a></li><li><a href="#bt-s4">三個目標數字，一次看完</a></li><li><a href="#bt-s5">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">血壓：目標 &lt;130，而且降得越多、風險越低</h2>
 <p>一份納入 14 個隨機試驗、42,736 名中風或 TIA 病人的統合分析，比較較積極與較不積極的血壓治療，結果是這樣：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>結果</th><th>較積極 vs 較不積極</th></tr></thead>
@@ -106,7 +126,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>心因性死亡風險</td><td><strong>低 15%</strong>（P=0.01）</td></tr>
 </tbody></table></div>
 <p>更重要的是劑量反應的方向：收縮壓低於 130 mmHg 的病人，中風與死亡率低於較高收縮壓者（130 到 140 或 &gt;140），而且血壓下降的幅度與較低的中風風險相關。也就是說，這不是一個「降到某個門檻就好」的關係，而是「降得越多、越好」的連續關係。長期的血壓下降，可以靠生活型態調整加藥物的組合來達成。</p>
-<h2>血脂：statin 的淨效益，是一道加減法</h2>
+<h2 id="bt-s2">血脂：statin 的淨效益，是一道加減法</h2>
 <p>血脂這一段最值得學的，是它示範了怎麼在「有害」與「有益」同時存在時算出淨效益。</p>
 <p>先看 SPARCL 試驗。它比較 atorvastatin 80 mg/日 與安慰劑，對象是 4,731 名非心源性缺血性中風（67%）、TIA（31%）或腦內出血（2%）的病人。中位追蹤 4.9 年：</p>
 <div class="bt-tablewrap"><table>
@@ -127,7 +147,7 @@ article, article *{overflow-wrap:break-word}
 <p>低目標組的絕對風險低了 2.4 個百分點，而事件主要是缺血性中風。所以建議是：生活型態改變加上高強度 statin 治療（例如 atorvastatin 40 到 80 mg，或 rosuvastatin 20 到 40 mg），把 LDL 壓到 70 mg/dL 以下。</p>
 <p>statin 不是沒有代價，而且這個代價與劑量有關。Cholesterol Treatment Trialists' Collaboration 的統合分析發現 statin 增加糖尿病風險，且呈劑量相關：低至中強度 statin 每年絕對風險增加 0.1 個百分點，高強度則是每年 1.3 個百分點。</p>
 <p>如果 LDL 仍偏高，或病人無法使用 statin，其他降 LDL 的藥物（PCSK9 抑制劑、ezetimibe、或小分子干擾 RNA 療法）可能有其角色。部分高三酸甘油酯血症的病人可能受益於 icosapent ethyl——在 REDUCE-IT 的次級分析（8,179 名高三酸甘油酯、高缺血風險病人，其中 71% 有過心血管事件）中，icosapent ethyl 讓致命或非致命中風風險低於安慰劑（2.4% vs 3.3%）。</p>
-<h2>血糖：目標 &lt;7%，但真正的主角換人了</h2>
+<h2 id="bt-s3">血糖：目標 &lt;7%，但真正的主角換人了</h2>
 <p>第二型糖尿病存在於 30% 的缺血性中風病人身上，並與至少高出 50% 的復發性心血管事件風險相關。雖然沒有在第二型糖尿病做過中風專屬的試驗，糖尿病人的目標糖化血色素是低於 7%——而對餘命有限或多重共病者，7 到 8% 是合理的目標。</p>
 <p>底盤仍是生活型態（減重或維持體重、運動、不抽菸）加 metformin，所有病人都應優先。但這一段真正的新意，是降血糖藥的選擇開始由「心血管保護」而非「降糖能力」主導：</p>
 <ul>
@@ -135,7 +155,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>SGLT2 抑制劑</strong>：其效益證據最強的是延緩腎臟病進展與預防心衰竭；在特定有中風與糖尿病的病人，可作為 metformin 的輔助。</li>
 </ul>
 <p>這個排序值得注意：對中風病人，GLP-1 有直接的中風降幅數字，而 SGLT2 的強項在腎臟與心衰竭，中風不是它的主戰場。選藥時，這個差別會影響優先順序。</p>
-<h2>三個目標數字，一次看完</h2>
+<h2 id="bt-s4">三個目標數字，一次看完</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>目標</th><th>數字</th><th>關鍵試驗</th><th>效益幅度</th></tr></thead>
 <tbody>
@@ -143,7 +163,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>血脂</td><td>LDL &lt;70 mg/dL</td><td>SPARCL、Treat Stroke to Target</td><td>復發中風低 16%、絕對風險低 2.4 個百分點</td></tr>
 <tr><td>血糖</td><td>HbA1c &lt;7%</td><td>GLP-1 統合（56,251 人）</td><td>任何中風低 16%</td></tr>
 </tbody></table></div>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s5">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>文獻實際說法</th></tr></thead>
 <tbody>

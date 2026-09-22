@@ -83,6 +83,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/se02.html">
 </head>
@@ -112,6 +131,7 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 2 篇</strong>　參考文獻：Leitinger M, et al. Salzburg Consensus Criteria for Non-Convulsive Status Epilepticus. <em>Epilepsy Behav</em>. 2015;49:158–163. ／ Brophy GM, et al. <em>Neurocrit Care</em>. 2012;17:3–23. ／ Rossetti AO, et al. ESICM/EAN guideline on SE. <em>Intensive Care Med</em>. 2024.</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、急性期評估：ABC 之後立刻問的三件事</a></li><li><a href="#bt-s2">二、NCSE——不容忽略的隱形 SE</a></li><li><a href="#bt-s3">三、薩爾茨堡共識標準——如何用 EEG 診斷 NCSE</a></li><li><a href="#bt-s4">四、鑑別診斷——什麼看起來像 SE 但不是</a></li><li><a href="#bt-s5">五、病因診斷的臨床意義</a></li><li><a href="#bt-s6">小結</a></li></ol></details><!-- bt-toc:end -->
 
 <hr>
 
@@ -119,7 +139,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>一、急性期評估：ABC 之後立刻問的三件事</h2>
+<h2 id="bt-s1">一、急性期評估：ABC 之後立刻問的三件事</h2>
 
 <p>穩定生命徵象後，臨床評估應同步進行以下三個核心問題：</p>
 
@@ -149,7 +169,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>二、NCSE——不容忽略的隱形 SE</h2>
+<h2 id="bt-s2">二、NCSE——不容忽略的隱形 SE</h2>
 
 <p>NCSE 是指 <strong>EEG 上持續的癲癇樣放電</strong>，但臨床上缺乏明顯的驚厥動作。外觀可能表現為：</p>
 
@@ -180,7 +200,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>三、薩爾茨堡共識標準——如何用 EEG 診斷 NCSE</h2>
+<h2 id="bt-s3">三、薩爾茨堡共識標準——如何用 EEG 診斷 NCSE</h2>
 
 <p>EEG 上的「癲癇樣放電」不等於 NCSE——EEG 判讀需要結合臨床。2013 年發展、2015 年修訂的<strong>薩爾茨堡標準（Salzburg Criteria）</strong>提供了診斷 NCSE 的操作框架：</p>
 
@@ -198,7 +218,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>四、鑑別診斷——什麼看起來像 SE 但不是</h2>
+<h2 id="bt-s4">四、鑑別診斷——什麼看起來像 SE 但不是</h2>
 
 <div class="bt-tablewrap"><table>
   <thead><tr><th>情境</th><th>關鍵鑑別點</th></tr></thead>
@@ -213,7 +233,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>五、病因診斷的臨床意義</h2>
+<h2 id="bt-s5">五、病因診斷的臨床意義</h2>
 
 <p>SE 的病因不只影響預後，也決定是否需要<strong>針對性治療</strong>——單靠抗癲癇藥物無法解決的根本病因：</p>
 
@@ -227,7 +247,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>小結</h2>
+<h2 id="bt-s6">小結</h2>
 
 <p>診斷 SE 的挑戰，在於「看不見的比看得見的更危險」。臨床上，對任何不明原因意識改變持高度懷疑指數，結合即時 EEG 的運用，是識別 NCSE 的關鍵。下一篇將進入治療核心——第一線苯二氮平類藥物的選擇與 RAMPART 試驗的臨床意義。</p>
 

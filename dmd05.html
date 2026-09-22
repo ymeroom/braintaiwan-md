@@ -77,6 +77,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/dmd05.html">
 </head>
@@ -99,10 +118,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 5 篇</strong>　根據美國神經學學會（AAN）2025 Evidence in Focus Oskoui M, Caller TA, Parsons JA, et al. <em>Neurology</em> 2025;104:e213604</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、法規爭議：被否決的內部審查</a></li><li><a href="#bt-s2">二、成本：每次輸注 320 萬美元</a></li><li><a href="#bt-s3">三、適用族群的現況：批准範圍遠大於試驗證據</a></li><li><a href="#bt-s4">四、懸而未決的未來研究</a></li><li><a href="#bt-s5">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>一個在兩個 RCT 都沒達到主要終點的藥，為什麼能拿到 FDA 完全批准？這背後是一場法規內部的角力。本系列最後一篇，談法規決策的爭議、320 萬美元的成本問題、適用族群的現況，以及這個領域接下來必須回答的問題。</p>
 <hr>
-<h2>一、法規爭議：被否決的內部審查</h2>
+<h2 id="bt-s1">一、法規爭議：被否決的內部審查</h2>
 <p>FDA 內部對於本案是否達到批准門檻<strong>存在分歧</strong>：</p>
 <ul>
 <li><strong>臨床、臨床藥理、統計審查團隊與其主管</strong>結論認為：以 microdystrophin 表現量作為「合理可能預測臨床效益」的替代終點，<strong>證據不足</strong>，建議發出完全回應函（不予批准）。</li>
@@ -114,7 +134,7 @@ article, article *{overflow-wrap:break-word}
 <p><strong>但文件明白指出：不可行走男童的臨床療效仍待證明</strong>，目前有數個研究進行中。</p>
 </blockquote>
 <hr>
-<h2>二、成本：每次輸注 320 萬美元</h2>
+<h2 id="bt-s2">二、成本：每次輸注 320 萬美元</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>項目</th><th>內容</th></tr></thead>
 <tbody>
@@ -127,7 +147,7 @@ article, article *{overflow-wrap:break-word}
 <p>「對於一個在兩個隨機試驗都未達主要終點、且顯然不具治癒性的療法而言，這是個驚人的天價。」</p>
 </blockquote>
 <hr>
-<h2>三、適用族群的現況：批准範圍遠大於試驗證據</h2>
+<h2 id="bt-s3">三、適用族群的現況：批准範圍遠大於試驗證據</h2>
 <p>FDA 批准範圍涵蓋 ≥4 歲、不論運動功能（排除 exon 8–9 缺失），但<strong>實際證據基礎窄得多</strong>：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>族群</th><th>暴露資料</th></tr></thead>
@@ -139,7 +159,7 @@ article, article *{overflow-wrap:break-word}
 <p>換言之，<strong>批准的適用範圍遠超出實際試驗過的族群</strong>——對試驗外族群的安全與療效是未知的。整個臨床試驗計畫最終約有 304 名男童的暴露資料。</p>
 <p>病家觀點也被納入考量：訪談顯示，在缺乏其他疾病修飾療法時，DMD 患者與照護者對風險有較高的容忍度，主張以<strong>病人為中心的風險—效益評估</strong>。功能、生活品質、肺功能與心臟功能（包括維持穩定）是病家最重視的結果。</p>
 <hr>
-<h2>四、懸而未決的未來研究</h2>
+<h2 id="bt-s4">四、懸而未決的未來研究</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>議題</th><th>未解問題</th></tr></thead>
 <tbody>
@@ -152,7 +172,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>文件也提醒留意<strong>晚發性不良反應（late-emerging adverse effects）</strong>的可能。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s5">臨床要點摘要</h2>
 <ul>
 <li>FDA 兩度批准皆由 CBER 主任否決內部審查團隊的不予批准建議</li>
 <li>單次輸注藥費約 320 萬美元；給付高度分歧；ICER 直指性價比存疑</li>

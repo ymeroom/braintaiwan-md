@@ -85,6 +85,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/se01.html">
 </head>
@@ -114,6 +133,7 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 1 篇</strong>　參考文獻：Trinka E, et al. A definition and classification of status epilepticus. <em>Epilepsia</em>. 2015;56(10):1515–1523. ／ Brophy GM, et al. Guidelines for the Evaluation and Management of Status Epilepticus. <em>Neurocrit Care</em>. 2012;17:3–23.</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、為什麼是 5 分鐘？——操作定義的由來</a></li><li><a href="#bt-s2">二、SE 的類型分類</a></li><li><a href="#bt-s3">三、ILAE 2015 四軸分類系統</a></li><li><a href="#bt-s4">四、時間軸分期——從早期到超難治</a></li><li><a href="#bt-s5">五、流行病學與死亡率</a></li><li><a href="#bt-s6">小結：為下一篇做準備</a></li></ol></details><!-- bt-toc:end -->
 
 <hr>
 
@@ -121,7 +141,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>一、為什麼是 5 分鐘？——操作定義的由來</h2>
+<h2 id="bt-s1">一、為什麼是 5 分鐘？——操作定義的由來</h2>
 
 <p>傳統定義將 SE 設在「發作持續 30 分鐘以上」，但臨床研究早已指出，大多數癲癇發作在 <strong>2 分鐘內自行停止</strong>；若持續超過 5 分鐘，自然終止的機率急速下降。等到 30 分鐘才啟動治療，等同於讓大腦在火中燒了半小時。</p>
 
@@ -155,7 +175,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>二、SE 的類型分類</h2>
+<h2 id="bt-s2">二、SE 的類型分類</h2>
 
 <p>SE 的臨床表現多樣，從最戲劇性的全身抽搐到幾乎無外顯動作的意識障礙，都可以是 SE。依據主要症狀特徵，分為兩大類：</p>
 
@@ -174,7 +194,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>三、ILAE 2015 四軸分類系統</h2>
+<h2 id="bt-s3">三、ILAE 2015 四軸分類系統</h2>
 
 <p>Trinka 等人提出的分類系統以<strong>四個維度</strong>來描述每個 SE 患者，協助治療決策與預後評估：</p>
 
@@ -192,7 +212,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>四、時間軸分期——從早期到超難治</h2>
+<h2 id="bt-s4">四、時間軸分期——從早期到超難治</h2>
 
 <p>SE 的嚴重程度依治療反應與時間進行分期，每個分期對應不同的治療強度：</p>
 
@@ -207,7 +227,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>五、流行病學與死亡率</h2>
+<h2 id="bt-s5">五、流行病學與死亡率</h2>
 
 <p>SE 的年發生率約為 <strong>10–40 / 100,000 人</strong>，依各國定義與統計方式略有差異。成人 SE 的整體院內死亡率為 <strong>10–20%</strong>，難治性 SE 則上升至 <strong>30–40%</strong>。影響預後的最重要因素包括：</p>
 
@@ -220,7 +240,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>小結：為下一篇做準備</h2>
+<h2 id="bt-s6">小結：為下一篇做準備</h2>
 
 <p>理解 SE 的定義，有助於臨床快速啟動治療；了解分類，有助於針對病因制定更精準的策略。下一篇將討論如何在急性期識別 SE——包括容易被忽略的非驚厥性 SE，以及何時、如何使用緊急腦電圖。</p>
 

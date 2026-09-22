@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/hz02.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 2 篇</strong>　多數帶狀皰疹靠「典型皮節水疱疹」一眼可診斷，臨床不需檢驗。但前驅期、無疹型、免疫低下與非典型表現，正是會出錯的地方。本篇談什麼時候靠臨床、什麼時候該驗、以及最容易被混淆的鑑別診斷。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、臨床診斷：典型疹一眼可辨</a></li><li><a href="#bt-s2">二、何時該做實驗室確認？</a></li><li><a href="#bt-s3">三、別漏接的非典型型態</a></li><li><a href="#bt-s4">四、鑑別診斷：依「有疹／無疹」分流思考</a></li><li><a href="#bt-s5">五、什麼情況要再往上查？</a></li><li><a href="#bt-s6">臨床要點摘要</a></li><li><a href="#bt-s7">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>帶狀皰疹的診斷，八成是「看」出來的——典型的單側、沿皮節、成簇水疱，臨床診斷即可。真正需要動腦的，是那些<strong>疹子還沒出來、疹子不典型、或根本沒疹子</strong>的情境。</p>
 <hr>
-<h2>一、臨床診斷：典型疹一眼可辨</h2>
+<h2 id="bt-s1">一、臨床診斷：典型疹一眼可辨</h2>
 <p>具備以下特徵時，臨床診斷已足夠，不必常規送檢：</p>
 <ul>
 <li><strong>單側、不過中線</strong></li>
@@ -109,7 +129,7 @@ article, article *{overflow-wrap:break-word}
 <li>伴隨該皮節的疼痛或前驅痛</li>
 </ul>
 <hr>
-<h2>二、何時該做實驗室確認？</h2>
+<h2 id="bt-s2">二、何時該做實驗室確認？</h2>
 <p>當表現不典型、免疫低下、或臨床決策需要確診時，才檢驗。重點在<strong>選對方法</strong>：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>方法</th><th>角色</th><th>備註</th></tr></thead>
@@ -122,7 +142,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p><strong>該採哪裡？</strong> 取<strong>新鮮、未結痂的水疱</strong>，刮取疱底細胞，PCR 陽性率最高；已結痂者改採痂皮。</p>
 <hr>
-<h2>三、別漏接的非典型型態</h2>
+<h2 id="bt-s3">三、別漏接的非典型型態</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>型態</th><th>特徵</th><th>提醒</th></tr></thead>
 <tbody>
@@ -132,7 +152,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td><strong>眼／耳受侵</strong></td><td>V1 受侵（HZO）、耳部水疱＋顏面麻痺（Ramsay Hunt）</td><td>屬急症，詳見第 4 篇</td></tr>
 </tbody></table></div>
 <hr>
-<h2>四、鑑別診斷：依「有疹／無疹」分流思考</h2>
+<h2 id="bt-s4">四、鑑別診斷：依「有疹／無疹」分流思考</h2>
 <p><strong>已出疹（水疱性皮疹）要鑑別：</strong></p>
 <ul>
 <li><strong>單純皰疹（HSV）呈帶狀分布（zosteriform HSV）</strong>——最重要的鑑別，靠 PCR 區分；HSV 較易復發於同一部位</li>
@@ -153,14 +173,14 @@ article, article *{overflow-wrap:break-word}
 <p>實務原則：<strong>單側、侷限於某皮節、且不隨姿勢或活動明顯改變</strong>的新發疼痛，即使尚無疹子，也要把帶狀皰疹列入鑑別，並排程回診看那塊皮膚。</p>
 </blockquote>
 <hr>
-<h2>五、什麼情況要再往上查？</h2>
+<h2 id="bt-s5">五、什麼情況要再往上查？</h2>
 <ul>
 <li>懷疑<strong>中樞神經侵犯</strong>（腦炎、脊髓炎、VZV 血管病變／中風）：安排腦部或脊髓影像，並做<strong>腦脊髓液 VZV PCR 與抗 VZV IgG</strong>（詳見第 4 篇）</li>
 <li>眼部受侵、視力變化：立即轉眼科</li>
 <li>年輕、廣泛散播、復發頻繁：評估潛在免疫低下（含 HIV 篩檢）</li>
 </ul>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s6">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
@@ -179,7 +199,7 @@ article, article *{overflow-wrap:break-word}
 <p>還有一個我反覆叮嚀的：<strong>送 PCR 要採新鮮水疱</strong>，已經結痂、乾掉的病灶採檢，陰性也不能排除。採對檢體，比多送幾管更重要。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s7">參考文獻</h2>
 <ol>
 <li>Cohen JI. Herpes Zoster. <em>N Engl J Med</em>. 2013;369(3):255-263.</li>
 <li>Centers for Disease Control and Prevention. Shingles (Herpes Zoster): Diagnosis &amp; Testing.</li>

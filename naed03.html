@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/naed03.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 03 篇</strong>　高齡族群是這份指引裡唯一有專屬建議的次族群，而支撐它的兩篇研究有個共同特徵：主要終點都不是無發作率，是「12 個月後還留在試驗裡」。這個終點選擇本身就是一個臨床判斷——在這個年齡層，藥能不能吃得下去，比它能壓下多少發作更接近實務問題。這一篇處理那兩篇研究，以及一個常被當成藥物差異、其實可能是劑型差異的結論。</p>
 </blockquote>
-<h2>為什麼終點是「留存」</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">為什麼終點是「留存」</a></li><li><a href="#bt-s2">研究一：GBP 對 LTG 對 CBZ-IR（Class II，≥60 歲）</a></li><li><a href="#bt-s3">研究二：LTG 對 CBZ-CR（Class I，≥65 歲）</a></li><li><a href="#bt-s4">那個差異，可能是劑型而不是藥物</a></li><li><a href="#bt-s5">Gabapentin 那條 Level C</a></li><li><a href="#bt-s6">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">為什麼終點是「留存」</h2>
 <p>兩篇高齡研究的主要終點都是 retention——病人在 12 個月後仍持續留在試驗中的比例。而判定退出的原因同時包含<strong>發作復發</strong>與<strong>不良反應</strong>（且是在已經調整過劑量之後仍無法忍受）。</p>
 <p>這是一個複合終點。它把「藥無效」與「藥吃不下去」合併成同一個失敗事件。對高齡族群來說這個設計是合理的：多重用藥、腎肝功能下降、跌倒風險、認知敏感度都讓耐受性成為真正的限制因子。但複合終點的代價是，看到組間差異時無法直接知道差在哪一半。</p>
-<h2>研究一：GBP 對 LTG 對 CBZ-IR（Class II，≥60 歲）</h2>
+<h2 id="bt-s2">研究一：GBP 對 LTG 對 CBZ-IR（Class II，≥60 歲）</h2>
 <p>這是一篇雙盲隨機研究，收 <strong>≥60 歲</strong>的新診斷病人，三組分別為：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>劑量</th></tr></thead>
@@ -119,7 +139,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>神經學不良反應</strong>：三個藥<strong>沒有差別</strong></li>
 </ul>
 <p>最後那一行值得特別注意。在一個平均年齡超過 60 歲的族群裡，頭暈、步態不穩、嗜睡這類神經學不良反應通常被認為是選藥的關鍵，但這篇研究沒有測出三者的差異。真正把 LTG 與另外兩個藥分開的，是體重／水腫（GBP）與皮疹／低血鈉（CBZ）這些非神經學的問題。</p>
-<h2>研究二：LTG 對 CBZ-CR（Class I，≥65 歲）</h2>
+<h2 id="bt-s3">研究二：LTG 對 CBZ-CR（Class I，≥65 歲）</h2>
 <p>第二篇是這個主題唯一的 Class I 研究，收 <strong>≥65 歲</strong>的局部癲癇病人：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>劑量</th></tr></thead>
@@ -139,7 +159,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>LTG</strong>：頭暈、頭痛、疲倦</li>
 <li><strong>CBZ</strong>：皮疹、頭痛、頭暈、嗜睡、疲倦</li>
 </ul>
-<h2>那個差異，可能是劑型而不是藥物</h2>
+<h2 id="bt-s4">那個差異，可能是劑型而不是藥物</h2>
 <p>把兩篇研究並排，最有臨床意義的訊息浮出來了：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th></th><th>對照藥</th><th>LTG 的耐受性優勢</th></tr></thead>
@@ -150,11 +170,11 @@ article, article *{overflow-wrap:break-word}
 <p>指引的原文措辭是：研究一所發現的 LTG 與 CBZ-IR 之間的差異，<strong>在研究二裡沒有被重現</strong>。</p>
 <p>這在臨床上的意思是：LTG 相對於 carbamazepine 的耐受性優勢，很可能<strong>主要對比的是即釋劑型</strong>。即釋型 carbamazepine 的血中濃度波動較大，峰值濃度相關的頭暈與嗜睡也較明顯；換成緩釋劑型之後，這塊優勢就縮小到測不出來。</p>
 <p>所以「高齡病人應該用 LTG 而不是 carbamazepine」這個常見的簡化說法，比較精確的版本是「高齡病人若要用 carbamazepine，劑型的選擇可能與換藥同樣重要」。而更精確地說，這裡有一個開放的問題：這兩篇研究從未直接比較 CBZ-IR 與 CBZ-CR 在高齡族群的耐受性，上面的推論是跨研究比較，強度有限。</p>
-<h2>Gabapentin 那條 Level C</h2>
+<h2 id="bt-s5">Gabapentin 那條 Level C</h2>
 <p>高齡的建議有兩個藥。GBP 的部分來自結論 2：<strong>GBP 在 ≥60 歲的新診斷局部癲癇「可能與 CBZ-IR 一樣有效、且耐受性較佳」（1 篇 Class II 研究）</strong>，對應建議 2 的 Level C。</p>
 <p>要注意 GBP 這條建議的比較對象也是 <strong>CBZ-IR</strong>，同樣受上面那個劑型問題影響。而 GBP 在同一篇研究裡最突出的不良反應是體重增加與水分滯留——在共病心衰竭或下肢水腫的高齡病人身上，這正好是最不想要的那組副作用。</p>
 <p>同時要記得第 01 篇提過的：GBP 的整體評級在這次更新中由 Level A 掉到 Level C，而建議 7 明白寫著「證據不足以在 CBZ 之外改採 GBP、OXC 或 TPM（Level U）」。GBP 的 Level C 是<strong>限定在 ≥60 歲族群</strong>的，不能外推到一般成人。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s6">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>文獻實際說法</th></tr></thead>
 <tbody>

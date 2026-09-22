@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/bm02.html">
 </head>
@@ -97,15 +116,16 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 2 篇</strong>　懷疑腦轉移，第一步不是隨便照一張，而是照對的序列。這篇談 MRI 的標準協定、PET 什麼時候真的有用、什麼情況該切片，還有一個常被忽略的動作——在腦轉移病灶上重新確認分子標記。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">MRI 該照哪些序列，以及那幾個容易被省略的細節</a></li><li><a href="#bt-s2">PET 的角色：FDG 不夠力，胺基酸示蹤劑才是主場</a></li><li><a href="#bt-s3">什麼時候該切片，以及一個容易漏掉的動作</a></li><li><a href="#bt-s4">液態切片與腦脊髓液：現在該做、不該做的界線</a></li></ol></details><!-- bt-toc:end -->
 <p>懷疑腦轉移，影像要照得對。<strong>顱腦核磁共振（MRI），做不打與打顯影劑兩組、磁場強度至少 1.5 特斯拉（T），是評估疑似腦轉移的金標準</strong>。這句話的每個條件都有意義：不是「照個 MRI」就好，而是要有對的序列、對的顯影條件、對的時間點。這一篇就把診斷這一關的細節拆開講。</p>
-<h2>MRI 該照哪些序列，以及那幾個容易被省略的細節</h2>
+<h2 id="bt-s1">MRI 該照哪些序列，以及那幾個容易被省略的細節</h2>
 <p>疑似腦轉移的最基本檢查，至少要包含<strong>打顯影劑前後的 T1 加權、T2 加權和／或 T2-FLAIR，以及擴散加權影像（DWI）</strong>〔EANO：III, C；ESMO：IV, B〕。腦轉移在影像上的典型表現是：實心或環狀強化、病灶周圍水腫，而且好發在<strong>灰白質交界</strong>和血管分水嶺區——這些位置正好是血流把腫瘤細胞帶過來、最容易卡住的地方。磁振頻譜（MRS）、灌流與 DWI 可以提供輔助線索，但要記住一件事：<strong>沒有任何一組影像特徵能百分之百把腦轉移和其他病灶區分開</strong>。所以當一個囊性病灶沒辦法跟原發腦瘤、膿瘍或發炎病灶明確區分時，該考慮切片。</p>
 <p>有幾個提升偵測率的技術細節值得記住。<strong>三維（3D）掃描比較好</strong>，因為切片更薄、不容易漏掉小病灶。用雙倍劑量顯影劑能增加敏感度，但代價是特異度下降，所以只保留給「非把敏感度衝到最高不可」的情況。還有一個常被忽略的：打完顯影劑到取像之間，應該至少間隔幾分鐘——實務上常靠在打藥和 post-contrast T1 之間多插一段序列來達成。這個延遲會實質影響小病灶顯不顯得出來。</p>
 <p>至於 CT，<strong>對腦轉移的敏感度明顯不如 MRI</strong>，只該用在有 MRI 禁忌症的病人身上。</p>
-<h2>PET 的角色：FDG 不夠力，胺基酸示蹤劑才是主場</h2>
+<h2 id="bt-s2">PET 的角色：FDG 不夠力，胺基酸示蹤劑才是主場</h2>
 <p>很多人直覺想到 PET，但在腦轉移這件事上要分清楚示蹤劑。最常用的 FDG（[18F]-2-fluoro-2-deoxy-D-glucose）PET 在顱外腫瘤分期很好用，尤其對<strong>原發不明癌（CUP）</strong>的病人，能比 CT 找出更多顱外轉移；但問題在於<strong>正常腦組織本來就大量攝取 FDG</strong>，這個高背景值嚴重限制了 FDG-PET 偵測腦轉移的敏感度。</p>
 <p>真正對腦部有加值的是<strong>放射標記胺基酸的 PET</strong>。相較於單純看解剖構造的 MRI，胺基酸 PET 提供額外的診斷資訊，而且對包含腦轉移在內的腦瘤，表現優於 FDG-PET。這個差別在後面第 5 篇談「怎麼分辨復發還是放射壞死」時會再出現一次。</p>
-<h2>什麼時候該切片，以及一個容易漏掉的動作</h2>
+<h2 id="bt-s3">什麼時候該切片，以及一個容易漏掉的動作</h2>
 <p>病理與分子檢查該照各院所的標準流程走〔EANO：IV, n/a；ESMO：V, B〕。這裡有個實務上很關鍵、卻常被漏掉的動作：<strong>在接受神經外科切除的病人，原發腫瘤或顱外轉移驗到的、與治療相關的預測性生物標記，應該在腦轉移病灶上重新確認一次</strong>〔EANO：IV, n/a；ESMO：V, B〕。為什麼？因為腫瘤的分子輪廓可能在轉移過程中改變，腦子裡那顆的標記不見得跟原發灶一樣——而選藥是跟著標記走的。指引甚至建議，選標靶與免疫治療時，若可行，優先以腦轉移病灶的分子檢查結果為準。這不是理論上的顧慮：補充資料明白提到，乳癌的 ERα、PR 與 HER2 狀態在原發灶與腦轉移之間，已有報告出現明顯的不一致率——也就是說，拿原發灶的報告來替腦轉移選藥，有實際選錯的風險。</p>
 <p>順帶一提幾個切開來就看得出線索的病理特徵：腦轉移多半是界線清楚、灰白色的圓形腫塊，中央常有壞死；如果切面呈棕黑色，因為富含黑色素，高度指向黑色素瘤；腺癌的轉移則可能含黏液樣物質。這些肉眼與組織的線索，配合免疫組化，就是找出原發灶的起點。</p>
 <p>不同原發癌各有一組治療相關的分子標記，這也是為什麼「找出原發灶」在腦轉移的處理裡這麼重要——分子輪廓對了，藥才選得對。</p>
@@ -117,7 +137,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>鱗狀細胞癌</td><td>FGFR1</td></tr>
 <tr><td>黑色素瘤</td><td>BRAF（見第 4 篇治療）</td></tr>
 </tbody></table></div>
-<h2>液態切片與腦脊髓液：現在該做、不該做的界線</h2>
+<h2 id="bt-s4">液態切片與腦脊髓液：現在該做、不該做的界線</h2>
 <p>液態切片很紅，但在腦轉移的<strong>例行</strong>診斷上，指引畫了界線：<strong>血液或腦脊髓液（CSF）中的無細胞腫瘤 DNA（cell-free tumour DNA），不建議常規拿來做腦轉移的特徵分析或監測</strong>〔EANO：IV, n/a；ESMO：IV, C〕。它還沒到能取代組織或影像的位置。</p>
 <p>另一件事則相反、該做：<strong>如果臨床或影像懷疑有軟腦膜轉移，應該做包含細胞學在內的 CSF 檢查來排除</strong>〔EANO：III, C；ESMO：IV, B〕。腦實質轉移和軟腦膜轉移的處置不同，後者一旦漏掉，治療方向會整個歪掉。</p>
 <blockquote class="commentary">

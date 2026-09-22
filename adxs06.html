@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/adxs06.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 6 篇</strong>　對應指引建議 16（Recommendation 16）：當結構性影像之後仍有不確定性，<strong>失智症專科醫師可考慮安排 FDG PET 以提升診斷準確度</strong>。本篇整理適應症與實際的準確度數字。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、FDG PET 在診斷流程中的定位</a></li><li><a href="#bt-s2">二、實際準確度數字</a></li><li><a href="#bt-s3">三、FDG PET 的代謝型態：症候群鑑別的視覺化工具</a></li><li><a href="#bt-s4">四、重要限制：重度失智症階段不適用</a></li><li><a href="#bt-s5">五、給付與替代方案</a></li><li><a href="#bt-s6">臨床要點摘要</a></li><li><a href="#bt-s7">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
-<h2>一、FDG PET 在診斷流程中的定位</h2>
+<h2 id="bt-s1">一、FDG PET 在診斷流程中的定位</h2>
 <p>FDG PET（fluorodeoxyglucose positron emission tomography）測量腦區葡萄糖代謝，反映的是<strong>神經退化造成的功能性活性下降</strong>，而非直接偵測病理蛋白沉積（這是它與類澀蛋白 PET 的根本差異，詳見<a href="adxs07.html">第⑦篇</a>）。指引建議 16（證據強度 B）的定位是：<strong>結構性影像之後、仍有診斷不確定性時，作為提升準確度的工具</strong>，而非第一線檢查。</p>
-<h2>二、實際準確度數字</h2>
+<h2 id="bt-s2">二、實際準確度數字</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>鑑別任務</th><th>敏感度</th><th>特異度</th><th>整體準確度</th></tr></thead>
 <tbody>
@@ -108,7 +128,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>阿茲海默症 vs. 路易氏體失智</td><td>70–92%</td><td>74–100%</td><td>72–96%</td></tr>
 </tbody></table></div>
 <p>這兩組數字的區間都偏寬，反映不同研究族群與判讀方式的差異，但整體而言，<strong>FDG PET 在區分阿茲海默症與額顳葉退化症的表現，優於區分阿茲海默症與路易氏體失智</strong>——後者的代謝型態有時與阿茲海默症重疊度較高，需要搭配其他線索（如 DAT-SPECT）一併判讀。</p>
-<h2>三、FDG PET 的代謝型態：症候群鑑別的視覺化工具</h2>
+<h2 id="bt-s3">三、FDG PET 的代謝型態：症候群鑑別的視覺化工具</h2>
 <p>不同病因在 FDG PET 上會呈現不同的低代謝分布型態，這也是它最主要的臨床價值——<strong>把症候群分類「影像化」</strong>：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>病因</th><th>典型低代謝分布</th></tr></thead>
@@ -117,9 +137,9 @@ article, article *{overflow-wrap:break-word}
 <tr><td>額顳葉退化症</td><td>額葉與/或前顳葉為主</td></tr>
 <tr><td>路易氏體失智</td><td>枕葉皮質低代謝（伴隨後扣帶迴相對保留，即所謂 cingulate island sign）</td></tr>
 </tbody></table></div>
-<h2>四、重要限制：重度失智症階段不適用</h2>
+<h2 id="bt-s4">四、重要限制：重度失智症階段不適用</h2>
 <p>指引特別提醒一個容易被忽略的限制：<strong>在重度失智症階段，FDG PET 的鑑別價值大幅下降</strong>，因為此時各種病因都會造成廣泛性瀰漫性低代謝，影像型態的特異性線索已被淹沒。因此 FDG PET 的最佳使用時機是<strong>輕度至中度階段、症候群分類仍不明確時</strong>，而非用於確認晚期病人的病因。</p>
-<h2>五、給付與替代方案</h2>
+<h2 id="bt-s5">五、給付與替代方案</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>議題</th><th>現況</th></tr></thead>
 <tbody>
@@ -128,7 +148,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>台灣的健保給付範圍與適應症規定請依當地現況確認；可近性也因醫療機構等級而有落差，這是安排檢查前需要先評估的實務考量。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s6">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
@@ -145,7 +165,7 @@ article, article *{overflow-wrap:break-word}
 <p>重度失智症階段不適合做 FDG PET 鑑別，這一點我會主動跟轉診醫師說明，避免病人已經到了晚期，還被安排一次「不會改變答案」的昂貴檢查。檢測的時機，往往比檢測本身更重要。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s7">參考文獻</h2>
 <ol>
 <li>Dickerson BC, Atri A, Clevenger C, et al. The Alzheimer's Association clinical practice guideline for the Diagnostic Evaluation, Testing, Counseling, and Disclosure of Suspected Alzheimer's Disease and Related Disorders (DETeCD-ADRD): Executive summary of recommendations for specialty care. <em>Alzheimer's Dement</em>. 2025;21:e14337. doi:10.1002/alz.14337</li>
 <li>Foster NL, et al. FDG-PET improves accuracy in distinguishing frontotemporal dementia and Alzheimer's disease. <em>Brain</em>. 2007;130(Pt 10):2616-2635.</li>

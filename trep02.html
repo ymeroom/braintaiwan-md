@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/trep02.html">
 </head>
@@ -97,17 +116,18 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 02 篇</strong>　難治性成人局部癲癇（TRAFE）加藥治療裡，perampanel、vigabatrin、rufinamide 全都拿到指引最高等級的 <strong>Level A</strong>（確立有效）。但指引原文只對其中一個藥直接說「建議使用」，另外兩個都附了「不是第一線」的但書——原因分別是不可逆的視野缺損風險，以及療效本身就「溫和」。這一篇也處理 rufinamide 段落裡一句與同一節建議自相矛盾的結論句。</p>
 </blockquote>
-<h2>Perampanel：Level A 裡唯一沒有但書的藥</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">Perampanel：Level A 裡唯一沒有但書的藥</a></li><li><a href="#bt-s2">Vigabatrin：Level A，但視野會不可逆地縮小</a></li><li><a href="#bt-s3">Rufinamide：同一節裡，結論句和建議句對不起來</a></li><li><a href="#bt-s4">三個 Level A，兩種不建議優先使用的理由</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">Perampanel：Level A 裡唯一沒有但書的藥</h2>
 <p>Perampanel（PER）與安慰劑比較的研究有 3 篇 Class I（study 304、305、306）。4、8、12 mg/d 三個劑量在每 28 天發作頻率的中位數減少幅度上都優於安慰劑，但三篇研究之間的劑量反應斜率不太一致，指引推測可能與部分研究安慰劑反應率偏高有關。</p>
 <p>最常見的不良反應包括頭暈、共濟失調、跌倒、頭痛、嗜睡、疲倦、易怒、憂鬱、噁心與體重增加，且與劑量相關，在<strong>劑量遞增期與維持期都會出現</strong>。易怒與攻擊行為的比例高到讓仿單加上了特別警語。</p>
 <h3>結論與臨床脈絡</h3>
 <p>PER 確立作為難治性成人局部癲癇的加藥治療有效（3 篇 Class I 研究）——<strong>Level A</strong>。臨床上需要密切監測精神科相關不良反應，特別是易怒與攻擊行為。</p>
-<h2>Vigabatrin：Level A，但視野會不可逆地縮小</h2>
+<h2 id="bt-s2">Vigabatrin：Level A，但視野會不可逆地縮小</h2>
 <p>Vigabatrin（VGB）與安慰劑比較的研究有 2 篇 Class I。1、3、6 g/d 三個劑量都讓 responder rate 與每月發作頻率的中位數減少幅度顯著提升，6 g/d 組的停藥率也最高，最常見不良反應是疲倦與嗜睡。</p>
 <p>真正決定 VGB 定位的不是這兩篇試驗，是 1997 年一篇獨立研究：長期使用者出現不可逆的視網膜病變，造成雙眼向心性視野縮窄，且與累積劑量及年齡增加有關。FDA 因此要求使用者<strong>每 3 個月</strong>做一次視野檢查。</p>
 <h3>結論與臨床脈絡</h3>
 <p>VGB 作為難治性成人局部癲癇的加藥治療有效（2 篇 Class I 研究）——<strong>Level A</strong>，但指引明講效益必須對照不可逆視網膜病變的風險權衡；建議段落把這一點寫得很直接：VGB 不是第一線藥物。</p>
-<h2>Rufinamide：同一節裡，結論句和建議句對不起來</h2>
+<h2 id="bt-s3">Rufinamide：同一節裡，結論句和建議句對不起來</h2>
 <p>Rufinamide（RFN）在這一節（成人局部癲癇加藥）裡有 3 篇 Class I 研究與安慰劑比較。RFN 在每 28 天發作頻率的中位數減少幅度、以及 responder rate（發作減少 ≥50%）上都優於安慰劑，400 mg/d 是最低有效劑量，但效果<strong>一致地溫和</strong>。最常見不良反應是頭暈、疲倦、噁心、嗜睡、複視、意識混亂、共濟失調與注意力受損。</p>
 <p>指引原文在這一段的結論句是這樣寫的：</p>
 <blockquote>
@@ -120,7 +140,7 @@ article, article *{overflow-wrap:break-word}
 <p>同一節、同一組研究、同一個藥，結論句寫「LGS」，建議句寫「TRAFE」。指引後面談 LGS 的章節裡另外有一組<strong>完全不同的</strong> rufinamide 研究（劑量以 mg/kg 計算、終點是跌倒發作），那才是真正屬於 LGS 的證據——第 04 篇會處理。這裡的結論句看起來是段落之間互相援引時留下的標籤錯置，讀者應該以建議句與參考文獻的實際族群為準。</p>
 <h3>結論與臨床脈絡</h3>
 <p>RFN 在難治性成人局部癲癇的加藥治療上確立有效（3 篇 Class I 研究）——<strong>Level A</strong>，但效果溫和，指引同樣註明不建議當第一線藥物。</p>
-<h2>三個 Level A，兩種不建議優先使用的理由</h2>
+<h2 id="bt-s4">三個 Level A，兩種不建議優先使用的理由</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>證據等級</th><th>不建議優先使用的理由</th></tr></thead>
 <tbody>

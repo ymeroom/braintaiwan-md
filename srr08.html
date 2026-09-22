@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/srr08.html">
 </head>
@@ -97,9 +116,10 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 08 篇</strong>　這一篇讀三節：步態與移動（§5.5）、肢體失用（§5.2）、輔具與支具（§5.7）。步態那節是整份指引推薦條數最多的一節，共 18 條，其中 3 條是 No Benefit——機器人、跑步機與 Bobath。讀完這一節，最清楚的一個訊息是：在地上反覆走，比任何昂貴的設備都不差。</p>
 </blockquote>
-<h2>走路是第一優先</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 9 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">走路是第一優先</a></li><li><a href="#bt-s2">十八條推薦</a></li><li><a href="#bt-s3">在地上走，不輸給機器</a></li><li><a href="#bt-s4">強度與劑量</a></li><li><a href="#bt-s5">幾條 2a 背後的細節</a></li><li><a href="#bt-s6">FES：同一個工具，兩個等級</a></li><li><a href="#bt-s7">肢體失用</a></li><li><a href="#bt-s8">輔具、支具與輪椅</a></li><li><a href="#bt-s9">副木在指引裡出現了三次</a></li><li><a href="#bt-s10">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">走路是第一優先</h2>
 <p><strong>恢復行走功能是中風後的首要目標，也是神經復健的核心。</strong> 指引列出行走相關的評估指標：<strong>步行耐力（六分鐘步行）、步行速度（10 公尺步行）、移動能力（起立行走）、平衡（Berg）、時空參數（步長、步頻、對稱性）、獨立行走（功能性行走分類）與日常活動能力（Barthel 指數）。</strong></p>
-<h2>十八條推薦</h2>
+<h2 id="bt-s2">十八條推薦</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>推薦</th><th>COR</th><th>LOE</th></tr></thead>
 <tbody>
@@ -122,12 +142,12 @@ article, article *{overflow-wrap:break-word}
 <tr><td>能行走者，<strong>輕到中強度跑步機訓練</strong>（含或不含減重）不優於地面訓練</td><td>3: No Benefit</td><td style="white-space:nowrap">A</td></tr>
 <tr><td><strong>Bobath</strong> 等神經發展治療不建議用於改善行走</td><td>3: No Benefit</td><td style="white-space:nowrap">B-R</td></tr>
 </tbody></table></div>
-<h2>在地上走，不輸給機器</h2>
+<h2 id="bt-s3">在地上走，不輸給機器</h2>
 <p>三條 No Benefit 的意思要讀準。機器人和跑步機那兩條的條文是「<strong>不優於</strong>地面任務導向訓練」，支持文字寫的是<strong>成效相似</strong>：<strong>能行走的中風病人，機器人輔助步態訓練在步速與移動能力上的結果，與傳統地面訓練相似。</strong> 它們不是沒效，而是沒有比較好，而且貴。</p>
 <p>機器人的問題被寫得很具體：<strong>高成本與設定時間可能限制它在常規臨床的實用性。</strong> 但指引也替它留了一個位置：<strong>在高重複次數的步態訓練中，機器人可能有助減輕治療人員的體力負荷與倦怠。</strong> 另外，<strong>用在無法行走的人，或使用末端效應器系統的證據仍然有限。</strong></p>
 <p>跑步機也類似：<strong>已經能走的亞急性或慢性病人，輕到中強度跑步機訓練的結果與地面訓練相當；地面行走的任務特異性可能更好，跑步機則昂貴且較不普及。</strong> 但它在<strong>空間有限的場所</strong>有用，<strong>減重吊帶系統也能讓治療師在不需要額外人手的情況下協助下肢離地，並降低跌倒風險。</strong></p>
 <p>Bobath 那一條的理由是：<strong>Bobath 介入在行走與移動上，沒有比其他實證介入（例如任務導向步態訓練）更好的結果</strong>，而且<strong>這與美國物理治療協會神經物理治療學會建議「逐漸停止臨床使用」一致。</strong> 支持文字也把本體感覺神經肌肉誘發術（PNF）列為神經發展治療的一種，說它<strong>證據有限且品質低</strong>，但推薦條文只點名 Bobath。</p>
-<h2>強度與劑量</h2>
+<h2 id="bt-s4">強度與劑量</h2>
 <p>中到高強度的定義：<strong>心率儲備的 40% 到 60% 是中等，超過 60% 是高強度</strong>；如果用最大心率，<strong>65% 到 75% 是中等，超過 75% 是高強度。</strong> 最大心率的估算：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>情況</th><th>公式</th></tr></thead>
@@ -139,12 +159,12 @@ article, article *{overflow-wrap:break-word}
 <p>指引提醒，<strong>中風病人的靜止心率常偏高，如果不考慮靜止心率，可能會把運動強度開得太低</strong>，這是用心率儲備的理由。</p>
 <p>劑量那一條的細節：<strong>回溯分析顯示，可能需要約 30 次行走訓練才能達到有臨床意義的改善。</strong> 但<strong>光有劑量不夠，沒有足夠的訓練強度，劑量本身不足以帶來功能改善。</strong> 而高強度能不能縮短時間，還不知道：<strong>目前證據還沒確立高強度是否能減少每次所需的總運動時間（例如 20 分鐘對 40 分鐘）。</strong></p>
 <p>效益最一致的是<strong>走路本身</strong>：<strong>這些好處在行走特定的運動（跑步機或地面行走）中最一致，而不是臥式腳踏車這類非任務特定的運動。</strong></p>
-<h2>幾條 2a 背後的細節</h2>
+<h2 id="bt-s5">幾條 2a 背後的細節</h2>
 <p>阻力訓練<strong>要練兩條腿</strong>：<strong>把健側腿納入功能性肌力訓練，對行走與平衡的功能進步有實質貢獻。</strong> 推薦條文特別寫了「只練健側不行」。</p>
 <p>下肢 CIMT 引出一個有意思的問題：<strong>不限制健側腿的方案也看得到功能進步，顯示專注、高重複的練習本身可能就是恢復的動力；但也有使用限制（如踝部加重或關節固定）的研究得到正面結果。</strong> 指引自己追問：<strong>CIMT 跟其他高強度治療到底有沒有不同？</strong></p>
 <p>鏡像治療的條件是<strong>雙側動作</strong>：<strong>在亞急性期病人，兩種方法都能改善步速，特別是早期介入、並做雙側肢體動作而非單側練習時。</strong></p>
 <p>知識缺口有一句提醒值得記住：<strong>大多數行走介入的證據來自慢性期；一般假設在慢性期有效的介入提早使用會一樣或更有效，但這個假設並沒有被確立。</strong></p>
-<h2>FES：同一個工具，兩個等級</h2>
+<h2 id="bt-s6">FES：同一個工具，兩個等級</h2>
 <p>功能性電刺激在指引裡出現兩次，等級不同：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>出處</th><th>用途</th><th>COR/LOE</th></tr></thead>
@@ -154,7 +174,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>差別在於用途。作為恢復性治療，<strong>證據不一致，有些試驗顯示優於常規照護，有些則幾乎沒有額外效果。</strong> 作為足下垂的輔助，<strong>統合分析顯示 FES 與足踝支具（AFO）都能顯著改善步速與平衡，兩者之間沒有顯著差異。</strong></p>
 <p>痙攣治療與步速那一條也有一點跨章節的出入。§5.5 的支持文字寫<strong>「肉毒桿菌素是否能直接改善步速，證據並不清楚」</strong>；但第 07 篇讀到的 §5.3 引了一個 381 人試驗，<strong>開放延伸期步速快了 25.3%</strong>。兩處引的是不同研究，結論方向略有不同。</p>
-<h2>肢體失用</h2>
+<h2 id="bt-s7">肢體失用</h2>
 <p><strong>肢體失用是無法執行有目的、技巧性動作的缺損，且不能歸因於動作感覺缺損或缺乏動機。</strong> 它在左腦中風更常見：<strong>急性期為主的族群中，左半球中風最高 15%、右半球 3%；在神經復健中心約 50% 的左半球中風病人有失用</strong>，可能因為這裡的中風比較嚴重。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>推薦</th><th>COR</th><th>LOE</th></tr></thead>
@@ -163,7 +183,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>任務練習減少失用</td><td>2a</td><td style="white-space:nowrap">C-LD</td></tr>
 </tbody></table></div>
 <p>兩條都是 2a，但條文用的是「可以考慮」（can be considered），在 AHA 的用語慣例裡，這比較像 2b 的措辭。證據本身也不強：<strong>三篇系統性回顧提供低品質的支持。</strong> 一個例子很具體：<strong>25 名慢性中風病人，每週 1 小時、共 5 次的泡茶訓練加回饋，減少了錯誤與泡茶時間，但效果沒有遷移到更複雜的泡茶任務。</strong></p>
-<h2>輔具、支具與輪椅</h2>
+<h2 id="bt-s8">輔具、支具與輪椅</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>推薦</th><th>COR</th><th>LOE</th></tr></thead>
 <tbody>
@@ -185,7 +205,7 @@ article, article *{overflow-wrap:break-word}
 <p>病人的想法也被記錄下來：<strong>他們寧可用輔具走路，也不願為了追求正常步態而延後走路。</strong></p>
 <p>輪椅：<strong>多達 40% 的中風病人在復健出院時使用手動輪椅</strong>，而且<strong>中風早期自己推輪椅，並未被證明會對肌張力或功能結果有害。</strong></p>
 <p>AFO 的時機與對象：<strong>早期提供的正面效果更明顯</strong>；依 Brunnstrom 分期來看，<strong>AFO 在第 III 期（障礙最重）的人身上獲益最大。</strong></p>
-<h2>副木在指引裡出現了三次</h2>
+<h2 id="bt-s9">副木在指引裡出現了三次</h2>
 <p>把前面幾篇讀過的副木推薦放在一起：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>出處</th><th>內容</th><th>COR/LOE</th></tr></thead>
@@ -202,7 +222,7 @@ article, article *{overflow-wrap:break-word}
 <p>Bobath 那條也會讓一些人不舒服。在台灣，神經發展治療曾經是很多物理治療師的養成主軸。指引不是說它有害，只是說它沒有比任務導向訓練好——而任務導向訓練，說穿了就是讓病人一直走。</p>
 </blockquote>
 <p>指引說在慢性期有效的步態介入，提早用是不是一樣有效，其實還沒有被證實，而我們一直都是這樣假設的？</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s10">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>指引實際說法</th></tr></thead>
 <tbody>

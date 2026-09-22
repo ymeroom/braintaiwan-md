@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/pn05.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 05 篇</strong>　第一線藥物就那四種——gabapentin、pregabalin、duloxetine、amitriptyline。但把 Table 2 的數字攤開來看，會發現「有效」的實際長相比想像中節制：gabapentin 1200 mg 讓 38% 的人痛減一半，安慰劑組是 23%。這一篇談感覺喪失的照護、神經痛的藥怎麼選、運動症狀的復健，以及一個不太好聽但必須講的預後現實。</p>
 </blockquote>
-<h2>先處理不會痛的那一半</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 8 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">先處理不會痛的那一半</a></li><li><a href="#bt-s2">神經痛：先便宜的，再貴的</a></li><li><a href="#bt-s3">運動症狀：跌倒風險與復健分工</a></li><li><a href="#bt-s4">預後：可以改善，但幾乎回不到原點</a></li><li><a href="#bt-s5">綜論自己承認的四個限制</a></li><li><a href="#bt-s6">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">先處理不會痛的那一半</h2>
 <p>感覺喪失沒有症狀，卻可能比疼痛更危險。<strong>LDPN 造成的感覺缺失會導致未被察覺的受傷（燙傷、割傷），進而潰瘍與感染</strong>。而<strong>糖尿病病人可能同時有微血管疾病，妨礙傷口癒合</strong>——兩件事疊在一起，就是足部潰瘍的完整配方。</p>
 <p>綜論給的預防措施都是門診三十秒能交代完的：<strong>每天檢查腳、穿合腳的鞋以免起水泡、把腳泡進熱水前先用手測水溫</strong>。最後一項是我覺得最值得逐字轉述的一句——因為病人會用腳去試水溫，而那正是他最不該相信的感受器。<strong>足部潰瘍高風險者（例如糖尿病病人）應考慮轉診足科。</strong></p>
-<h2>神經痛：先便宜的，再貴的</h2>
+<h2 id="bt-s2">神經痛：先便宜的，再貴的</h2>
 <p>處置的層次是：保守措施、外用藥、口服藥、侵入性神經調控。</p>
 <p><strong>對某些病人，用冷水泡腳、塗保濕乳霜避免皮膚乾燥，就足以處理神經痛。</strong> 這句話放在整段治療的最前面，值得注意——它不是客套話，是排序。<strong>外用治療（capsaicin 或 lidocaine）的效果則因人而異。</strong></p>
 <p>FDA 核准用於神經痛的治療包括：gabapentin、pregabalin、duloxetine、外用 lidocaine、外用 capsaicin，以及緩釋型 tapentadol。</p>
@@ -128,7 +148,7 @@ article, article *{overflow-wrap:break-word}
 <p>至於仿單外使用：<strong>由於上述藥物療效有限，其他抗癲癇與抗憂鬱藥物如 valproic acid 與 venlafaxine 常被仿單外處方</strong>。注意這句話的因果——不是因為它們更好，而是因為前面那些不夠好。</p>
 <p>一條紅線：<strong>鴉片類藥物不建議用於神經痛的治療。</strong></p>
 <p>最後，<strong>持續性神經痛的病人可轉介疼痛科，接受多科整合的方式（行為治療、藥物與神經刺激）</strong>。</p>
-<h2>運動症狀：跌倒風險與復健分工</h2>
+<h2 id="bt-s3">運動症狀：跌倒風險與復健分工</h2>
 <p>下肢無力的病人，<strong>因為無力加上本體感覺喪失而步態受損，跌倒風險上升</strong>。處置分工很清楚：</p>
 <ul>
 <li><strong>輕度無力</strong>：以步態安全為重點的<strong>物理治療</strong>可能有幫助。</li>
@@ -136,16 +156,16 @@ article, article *{overflow-wrap:break-word}
 <li><strong>足部變形與攣縮</strong>：可能受益於<strong>骨科手術</strong>治療。</li>
 <li><strong>嚴重運動障礙</strong>：可能需要足部支架、助行器或輪椅。</li>
 </ul>
-<h2>預後：可以改善，但幾乎回不到原點</h2>
+<h2 id="bt-s4">預後：可以改善，但幾乎回不到原點</h2>
 <p>這一段沒有好消息，但講清楚比含糊有用。</p>
 <p><strong>周邊神經病變的預後依病因而異。</strong> 然後是那句核心：<strong>即使是可治療的周邊神經病變，例如 CIDP、血管炎與類澱粉沉積症，周邊神經的損傷也無法完全逆轉，症狀幾乎總是持續。</strong> 同樣地，<strong>毒素或化療造成的神經病變可能在停用致病藥物後改善，但症狀常常留下來</strong>。</p>
 <p>糖尿病的部分重複了第 04 篇的分野：<strong>達到正常血糖可能預防第 1 型糖尿病病人的 LDPN；但對第 2 型糖尿病已確立的神經病變，血糖控制在改善症狀上只有輕微效果。</strong></p>
 <p>遺傳性的部分則有一個相對溫和的結論：<strong>晚發型遺傳性神經病變（包含 Charcot-Marie-Tooth 的軸突型）通常不會造成嚴重失能</strong>，但在合併其他年齡相關問題時——退化性關節炎、視聽力下降，或中風、巴金森病這類中樞神經疾病——<strong>可能對步態造成負面影響</strong>。這是一個很實際的提醒：同一個程度的神經病變，在不同的身體上代價完全不同。</p>
 <p>摘要的結語把整件事壓成一句：<strong>周邊神經病變的預後取決於底層病因，但即使在有治療方法的情況下，神經損傷的完全逆轉也不常見。</strong></p>
-<h2>綜論自己承認的四個限制</h2>
+<h2 id="bt-s5">綜論自己承認的四個限制</h2>
 <p>原文的限制段落值得照抄，因為它決定了這五篇能被引用到什麼程度：<strong>第一，可能遺漏了某些相關文獻；第二，本綜論受限於可得證據的品質；第三，某些主題（例如具有非典型特徵的神經病變）沒有詳細涵蓋；第四，未評估納入文獻的品質。</strong></p>
 <p>第三點特別值得記住——第 02 篇那六個非典型特徵，這篇綜論給的是「認出來、轉出去」，而不是「怎麼查、怎麼治」。那部分要另外找文獻。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s6">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
 <tbody>

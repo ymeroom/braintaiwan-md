@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/mig03.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 3 篇</strong>　第一線藥無效、無法耐受、或有禁忌時，還有一整排口服選項可用。針對陣發性偏頭痛，2022 台灣指引把 <strong>valproic acid（valproate）、amitriptyline、CGRP 單株抗體</strong> 列為第二線（CGRP 單株抗體另闢一篇詳談）。本篇聚焦三環抗憂鬱劑、SNRI、抗癲癇藥 valproate，以及血壓藥（ARB／ACEi）這幾條「第二線與其他」的路線。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、三環抗憂鬱劑（TCA）：amitriptyline</a></li><li><a href="#bt-s2">二、SNRI：venlafaxine</a></li><li><a href="#bt-s3">三、抗癲癇藥：valproate（valproic acid／divalproex）</a></li><li><a href="#bt-s4">四、血壓藥：ARB 與 ACEi</a></li><li><a href="#bt-s5">臨床要點摘要</a></li><li><a href="#bt-s6">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>口服預防藥不是只有第一線那三支。許多病人因為共病、副作用或禁忌，需要走第二線；而第二線藥的最大優勢，往往正是<strong>「一藥治兩病」</strong>——合併失眠或憂鬱選抗憂鬱劑、合併高血壓選血壓藥。以下依藥理分類整理。</p>
 <hr>
-<h2>一、三環抗憂鬱劑（TCA）：amitriptyline</h2>
+<h2 id="bt-s1">一、三環抗憂鬱劑（TCA）：amitriptyline</h2>
 <p><strong>Amitriptyline</strong> 是第二線中最具實證的口服藥：</p>
 <ul>
 <li><strong>建議劑量</strong>：<strong>25–75 mg</strong>（睡前）。</li>
@@ -109,7 +129,7 @@ article, article *{overflow-wrap:break-word}
 <li>其他三環類（imipramine、doxepin、clomipramine）研究不足或療效不顯著，本指引列為 <strong>Grade C, Group III</strong>，不優先建議。</li>
 </ul>
 <hr>
-<h2>二、SNRI：venlafaxine</h2>
+<h2 id="bt-s2">二、SNRI：venlafaxine</h2>
 <p><strong>Venlafaxine</strong> 是抗憂鬱劑中另一個有雙盲試驗支持的選項：</p>
 <ul>
 <li><strong>建議劑量</strong>：每日 <strong>75–150 mg</strong>。</li>
@@ -118,7 +138,7 @@ article, article *{overflow-wrap:break-word}
 <li>對<strong>不能耐受三環類、合併憂鬱／焦慮</strong>的患者是合理替代。</li>
 </ul>
 <hr>
-<h2>三、抗癲癇藥：valproate（valproic acid／divalproex）</h2>
+<h2 id="bt-s3">三、抗癲癇藥：valproate（valproic acid／divalproex）</h2>
 <p>繼 topiramate 之後，<strong>valproate</strong> 是另一支可用於偏頭痛預防的抗癲癇藥：</p>
 <ul>
 <li>對陣發性偏頭痛屬第二線選項；小型試驗顯示 valproate 750 mg 的療效與 topiramate 75 mg 相當（本指引就「其他用法」綜合評為 <strong>Grade C, Group III</strong>）。</li>
@@ -127,7 +147,7 @@ article, article *{overflow-wrap:break-word}
 <li>其他如 gabapentin、zonisamide、levetiracetam、memantine 等，證據有限，僅供個案參考。</li>
 </ul>
 <hr>
-<h2>四、血壓藥：ARB 與 ACEi</h2>
+<h2 id="bt-s4">四、血壓藥：ARB 與 ACEi</h2>
 <p>對合併高血壓的偏頭痛患者，降壓藥可以「順便」預防偏頭痛：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>等級</th><th>重點</th></tr></thead>
@@ -138,7 +158,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>此外，指引也提到對<strong>符合 statin 適應症</strong>的患者，可考慮 simvastatin 搭配 vitamin D3 協助改善偏頭痛（Grade C, Group III，須本身有 statin 使用適應症）。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s5">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>劑量</th><th>等級</th><th>最該記住的一件事</th></tr></thead>
 <tbody>
@@ -156,7 +176,7 @@ article, article *{overflow-wrap:break-word}
 <p>走到第二線，通常代表第一線踩了雷或沒效。這時候<strong>回頭檢查兩件事</strong>比急著加藥更重要：止痛藥是不是吃太勤（MOH）？第一線是不是其實「劑量沒到、時間沒夠」就被判出局？把這兩點補好，第二線才不會也跟著陣亡。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s6">參考文獻</h2>
 <ol>
 <li>Wu JW, Yang CP, and the Treatment Guideline Subcommittee of the Taiwan Headache Society. 2022 Taiwan Guidelines for Preventive Treatment of Migraine. <em>Acta Neurol Taiwan</em> 2022;31:164-202.</li>
 <li>Bulut S, Berilgen MS, Baran A, et al. Venlafaxine versus amitriptyline in the prophylactic treatment of migraine. <em>Clin Neurol Neurosurg</em> 2004;107:44-48.</li>

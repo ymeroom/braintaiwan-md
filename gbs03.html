@@ -66,6 +66,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/gbs03.html">
 </head>
@@ -88,34 +107,35 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 3 篇</strong>　涵蓋 EAN/PNS 2023 指引的 PICO 7（ICU 監測）與 Figure 2 GBS 真正會殺人的那一刻，不在無力本身，而在橫膈跟著垮掉的那幾個小時。這篇談的是：怎麼在病人還能講話、還沒喘不過氣之前，就先算出他多可能要插管，然後把監測排到位。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 7 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">mEGRIS：入院就能填的一張呼吸風險表</a></li><li><a href="#bt-s2">哪些因子真的能預測呼吸衰竭</a></li><li><a href="#bt-s3">量化呼吸監測：把惡化變成可以讀的數字</a></li><li><a href="#bt-s4">自律神經：另一條會出人命的線</a></li><li><a href="#bt-s5">一個反直覺的警語：ICU 出來之後才是另一關</a></li><li><a href="#bt-s6">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>一個今天早上還能自己走進急診、抱怨手腳麻的病人，可能在你下班前就喘不過氣。GBS 的進展可以快到數小時、慢則數天，把人從「走得動」一路推到呼吸衰竭——而呼吸這條線一旦沒抓到，代價不是死亡，就是缺氧造成的永久損傷。重症監測在 GBS 不是錦上添花，它是這個病早期會不會出人命的分水嶺。提早把高風險病人轉進 ICU，最大的好處不是病房比較大，而是當呼吸真的塌下來那一刻，呼吸器已經在床邊、團隊也已經在等——而不是手忙腳亂地做緊急插管。</p>
 <p>所以這一篇的核心其實只有一句話：別等病人喘了才反應。要在他還沒喘之前，就用一張入院就能填的表，把風險量化出來。</p>
 <hr>
-<h2>mEGRIS：入院就能填的一張呼吸風險表</h2>
+<h2 id="bt-s1">mEGRIS：入院就能填的一張呼吸風險表</h2>
 <p>修訂版 Erasmus GBS 呼吸不全評分（modified Erasmus GBS Respiratory Insufficiency Score, mEGRIS）就是那張表。它的設計理念很單純——病人一進門，你用手邊就有的臨床資料，估出他在發病後頭兩個月內、任何時間需要機械通氣的機率。不必等檢驗、不必等電生理，床邊問診加理學檢查就能算。</p>
 <p>mEGRIS 只看四個臨床因子：<strong>發病到入院的時間短、延髓麻痺、頸屈肌無力、髖屈肌無力</strong>。這四項背後的邏輯一致——進展越快、越靠近頭頸與呼吸肌群的無力，越接近橫膈失守。它建立在 IGOS（國際 GBS 預後研究）前 1500 名病人中符合條件的 1133 人身上，預測機械通氣的 AUC 達 0.84（0.80–0.88），在不同地區的次族群驗證也維持在 0.83 到 0.85，相當穩定。</p>
 <p>mEGRIS 比舊版好用的地方，在於它能用在 GBS 的<strong>全光譜</strong>——包含輕症與變異型，也跨得過地區差異。換句話說，不是只有看起來很重的人才填；那個今天看起來只是「手腳麻、走路有點怪」的輕症病人，一樣可以用它算出風險，而這正是會被低估的那一群。給個底數參考：在原始 IGOS 世代裡，約有 <strong>10% 的病人在入院第一週內</strong>就需要插管——這不是罕見的尾端事件，而是十個裡會有一個。</p>
 <hr>
-<h2>哪些因子真的能預測呼吸衰竭</h2>
+<h2 id="bt-s2">哪些因子真的能預測呼吸衰竭</h2>
 <p>指引把預測機械通氣的因子按證據確定度分了層，這個分層值得記，因為它告訴你哪些訊號該當回事。<strong>高確定度</strong>的三個因子是：發病到入院時間短、延髓侵犯、MRC 總分 &lt;20/60——這三個一出現，就是響亮的警鈴。<strong>中等確定度</strong>的則有頸肌無力、較高的失能分數、較低的肺活量、低白蛋白。</p>
 <p>更具體的一張臉，來自一個 722 名成人的經典回溯系列，其中 313 人最後上了呼吸器。研究抓出六個重要預測因子（也就是 Figure 2 那張流程圖的骨架）：症狀到入院 &lt;7 天（OR 2.51）、無法咳嗽（OR 9.09）、GBS-DS grade 4（坐輪椅或臥床，OR 2.53）、無法把肩外展到水平（OR 2.99）、頸屈無力（OR 4.34）、肝功能異常（OR 2.09）。這六項裡最沉的一個是「無法咳嗽」——OR 接近 9，意思是咳嗽這個動作本身就是橫膈與延髓功能的綜合指標，咳不出來，警覺度要立刻拉滿。而最關鍵的數字是：<strong>六項中只要中了四項，85% 的病人最後需要插管</strong>。四項陽性，幾乎就是把病人送進 ICU 的門檻。</p>
 <hr>
-<h2>量化呼吸監測：把惡化變成可以讀的數字</h2>
+<h2 id="bt-s3">量化呼吸監測：把惡化變成可以讀的數字</h2>
 <p>光靠「看起來會不會喘」不夠，呼吸功能要量化、要連續追，這樣你才看得到趨勢、而不是等到崩盤才發現。指引給的這套床邊數字，背起來會用一輩子。</p>
 <p><strong>肺活量（FVC）</strong> 是主軸：一天測 3–6 次，依嚴重度而定；如果病人還在惡化、FVC 還在掉，就每 4 小時測一次。判讀有幾個切點要刻在腦子裡——FVC 比基線跌 <strong>&gt;30%</strong> 就要警覺、24 小時內跌 <strong>&gt;50%</strong> 多半就要插管了、FVC <strong>&lt;20 mL/kg</strong> 該開始考慮選擇性（電擇期）插管、跌到 <strong>10 mL/kg</strong> 幾乎是必然要通氣。相關研究也佐證：FVC 一天內掉超過 50%，36 小時內就上呼吸器；FVC 掉到 &lt;1 L，18 小時內就插管。這些都不是慢慢來的數字，是會在一兩天內兌現的。</p>
 <p><strong>單口呼吸數（SBC）</strong> 是不用儀器的版本——讓病人吸一口氣後一口氣數出聲，<strong>SBC &lt;20</strong>（從 1 數不到 20）就是好用的床邊警訊，提示該轉 ICU。它的好處是任何時候、任何床邊都能做，不必等呼吸治療師。</p>
 <p>若手邊有壓力計，<strong>MIP&lt;40 或 MEP&lt;30 cmH₂O</strong> 代表吸氣／吐氣肌力已經弱到應該盡快考慮通氣。這三套工具——FVC、SBC、MIP/MEP——彼此互補：FVC 看趨勢、SBC 看床邊快篩、壓力計看肌力底線。</p>
 <hr>
-<h2>自律神經：另一條會出人命的線</h2>
+<h2 id="bt-s4">自律神經：另一條會出人命的線</h2>
 <p>呼吸不是唯一會殺人的系統。GBS 常合併自律神經功能異常，表現成血壓與心率的劇烈波動——可以從心跳飆高突然掉到心搏過緩，血壓也跟著上下盪。這種自律不穩本身就可能致命，而且它常常和呼吸惡化同時出現，所以監測呼吸的同時，心電與血壓也要一起盯。</p>
 <p>有一個實務細節值得記：對自律神經不穩的病人，<strong>連續流（continuous-flow）的機器比間歇式安全</strong>——因為間歇式治療帶來的容量與壓力擺盪，可能在一個本來就血壓心率失調的病人身上引爆危機。這是把「治療方式的選擇」和「自律穩定度」綁在一起看的思路。</p>
 <hr>
-<h2>一個反直覺的警語：ICU 出來之後才是另一關</h2>
+<h2 id="bt-s5">一個反直覺的警語：ICU 出來之後才是另一關</h2>
 <p>最後這一點，是很多人會鬆懈的地方。資料顯示，<strong>三分之二的 GBS 死亡，發生在病人從 ICU 轉出、進入恢復期之後</strong>，死因多半還是呼吸或心血管併發症。也就是說，撐過了急性期、拔了管、轉回普通病房，並不代表危險解除——它只是把高風險的時間軸往後挪了。</p>
 <p>所以 ICU 出來之後，頻繁而仔細的監測還要繼續，特別是針對遲發的呼吸與心血管問題。把「轉出 ICU」當成終點線，是這個病最容易付出代價的錯覺之一。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s6">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>怎麼做 / 怎麼讀</th><th>關鍵切點與數字</th></tr></thead>
 <tbody>

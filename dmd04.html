@@ -77,6 +77,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/dmd04.html">
 </head>
@@ -99,15 +118,16 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 4 篇</strong>　根據美國神經學學會（AAN）2025 Evidence in Focus Oskoui M, Caller TA, Parsons JA, et al. <em>Neurology</em> 2025;104:e213604</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、整體安全輪廓</a></li><li><a href="#bt-s2">二、需要警覺的嚴重事件</a></li><li><a href="#bt-s3">三、禁忌與風險族群</a></li><li><a href="#bt-s4">四、免疫抑制方案（同第三篇，安全角度再述）</a></li><li><a href="#bt-s5">五、給藥前後必須到位的基礎建設</a></li><li><a href="#bt-s6">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>即便療效仍有爭議，這個藥<strong>已經可以在美國等地被開立處方</strong>。因此對臨床端而言，理解安全性風險與所需的監測基礎建設，比爭論療效更為迫切。這一篇整理可預期的不良反應、嚴重事件、禁忌族群，以及給藥前後必要的準備。</p>
 <hr>
-<h2>一、整體安全輪廓</h2>
+<h2 id="bt-s1">一、整體安全輪廓</h2>
 <p>一個來自 85 名患者（NCT03375164、NCT03769116、NCT04626674）的安全資料集，辨識出 <strong>13 項需醫療介入的治療相關不良事件</strong>，包括嘔吐、心肌炎、急性肝損傷與免疫媒介性肌炎。</p>
 <p>如同其他靜脈給予的 AAV 基因療法，delandistrogene moxeparvovec 伴隨<strong>輸注周邊事件</strong>以及先天與後天免疫反應，多發生在<strong>輸注後 90 天內</strong>。</p>
 <p><strong>發生率 ≥5% 的不良反應</strong>：嘔吐、噁心、肝損傷、發燒、血小板低下。</p>
 <hr>
-<h2>二、需要警覺的嚴重事件</h2>
+<h2 id="bt-s2">二、需要警覺的嚴重事件</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>嚴重事件</th><th>重點</th></tr></thead>
 <tbody>
@@ -120,14 +140,14 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>未觀察到血栓性微血管病變或心因性休克。</p>
 <hr>
-<h2>三、禁忌與風險族群</h2>
+<h2 id="bt-s3">三、禁忌與風險族群</h2>
 <blockquote>
 <p><strong>exon 8 和／或 exon 9 缺失者禁用</strong>——極高免疫媒介性肌炎風險。</p>
 </blockquote>
 <p>此外，<strong>exon 1–17 缺失者</strong>因被排除於關鍵試驗之外，其免疫媒介性肌炎風險的資料不足，亦須留意。（<em>病理機轉提示：此區段缺失者，因缺乏微抗肌萎縮蛋白 N 端模板，對外源基因產物易產生強烈抗原抗體反應。</em>）</p>
 <p>未研究過的族群還包括：中重度心肌病變（LVEF &lt;40% 被排除，試驗中最低為 48%）、嚴重肺病、明顯神經發展障礙者。</p>
 <hr>
-<h2>四、免疫抑制方案（同第三篇，安全角度再述）</h2>
+<h2 id="bt-s4">四、免疫抑制方案（同第三篇，安全角度再述）</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>病人狀況</th><th>類固醇方案</th></tr></thead>
 <tbody>
@@ -136,7 +156,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>持續時間</td><td>至少 60 天（需視肝功能 AST/ALT/GGT 數值決定減藥時機）</td></tr>
 </tbody></table></div>
 <hr>
-<h2>五、給藥前後必須到位的基礎建設</h2>
+<h2 id="bt-s5">五、給藥前後必須到位的基礎建設</h2>
 <p>這不是「打一針」這麼簡單，需要實質的人力與硬體投資：</p>
 <p><strong>給藥前</strong></p>
 <ol>
@@ -156,7 +176,7 @@ article, article *{overflow-wrap:break-word}
 <p><strong>臨床啟示</strong>：開立此藥的機構需要具備擴充的臨床基礎建設——這對轉介與治療路徑的規劃有實質影響。</p>
 </blockquote>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s6">臨床要點摘要</h2>
 <ul>
 <li>主要嚴重風險：急性肝損傷（8 週內）、心肌炎、免疫媒介性肌炎（約 4 週）、血小板低下</li>
 <li>已有 1 例死於急性肝衰竭（試驗外）</li>

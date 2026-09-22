@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/adxs01.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 1 篇</strong>　這是 DETeCD-ADRD 指引「專科照護版」系列的第一篇，銜接<a href="adx07.html">基層醫療版系列</a>的內容，把鏡頭轉向<strong>一般神經科、老年精神科、老年醫學科，以及失智症次專科醫師</strong>。本篇對應指引建議 12（Recommendation 12）：哪些病人，基層完成 Tier 1–2 評估後，應該被轉診上來？</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、核心原則：不確定，就該往上轉</a></li><li><a href="#bt-s2">二、四大類轉診觸發條件</a></li><li><a href="#bt-s3">三、波動性病程：先排除譫妄，再考慮路易氏體與血管性</a></li><li><a href="#bt-s4">四、轉診不是「丟給專科」，而是分工</a></li><li><a href="#bt-s5">臨床要點摘要</a></li><li><a href="#bt-s6">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
-<h2>一、核心原則：不確定，就該往上轉</h2>
+<h2 id="bt-s1">一、核心原則：不確定，就該往上轉</h2>
 <p>指引建議 12 的精神很簡單——<strong>當臨床表現不典型、診斷仍有不確定性，或懷疑早發型／快速進展型疾病時，應轉診專科</strong>（證據強度 A）。這不是基層醫療「沒做好」，而是分層照護模型本來的設計：多數典型漸進性健忘型表現，基層完成 Tier 1–2 即可處理；剩下的不典型病例，才是專科的價值所在。</p>
-<h2>二、四大類轉診觸發條件</h2>
+<h2 id="bt-s2">二、四大類轉診觸發條件</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>類別</th><th>具體表現</th></tr></thead>
 <tbody>
@@ -110,7 +130,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td><strong>病程異常</strong></td><td>快速進展（數週至數月內顯著惡化）、波動性病程（提示譫妄、路易氏體失智，或血管性認知障礙）</td></tr>
 </tbody></table></div>
 <p>此外，<strong>疑似早發型失智症</strong>（一般定義為 65 歲前發病）本身就是一條獨立的轉診觸發條件——早發型病例的病因分布與晚發型不同（額顳葉退化症、遺傳性病因比例較高），且常合併較複雜的心理社會衝擊（仍在職、仍有未成年子女等），建議直接轉診專科。</p>
-<h2>三、波動性病程：先排除譫妄，再考慮路易氏體與血管性</h2>
+<h2 id="bt-s3">三、波動性病程：先排除譫妄，再考慮路易氏體與血管性</h2>
 <p>波動性認知表現是一條特別值得留意的紅旗，因為它指向三種完全不同方向的處置：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>可能病因</th><th>區辨線索</th></tr></thead>
@@ -122,10 +142,10 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p>與<a href="adx06.html">基層篇第⑥篇</a>提到的原則一致：<strong>不要在譫妄急性期下失智症診斷</strong>。若懷疑譫妄，應先處理誘因、待急性期解除後再重新評估認知基線；若基線評估後仍有疑問，才是轉診專科的時機。</p>
 </blockquote>
-<h2>四、轉診不是「丟給專科」，而是分工</h2>
+<h2 id="bt-s4">四、轉診不是「丟給專科」，而是分工</h2>
 <p>指引特別強調，轉診的目的不是把病人完全移交，而是<strong>借助專科資源解決基層難以單獨完成的鑑別診斷或檢測</strong>，之後仍可能由基層與專科共同照護。這一點在失智症次專科醫師人力本就有限的現況下格外重要——轉診的精準度（轉對病人、轉對時機），比轉診的數量更重要。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s5">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
@@ -142,7 +162,7 @@ article, article *{overflow-wrap:break-word}
 <p>波動性病程是我覺得最容易被低估的紅旗。很多家屬會說「他這幾天比較清醒，我們以為他好轉了」，但這種反覆波動，恰恰是路易氏體失智或譫妄的典型描述，而不是真正的改善。問診時我會特別追問：<strong>波動是以小時為單位，還是以天/週為單位？</strong> 這個區辨往往比任何檢查更快縮小鑑別範圍。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s6">參考文獻</h2>
 <ol>
 <li>Dickerson BC, Atri A, Clevenger C, et al. The Alzheimer's Association clinical practice guideline for the Diagnostic Evaluation, Testing, Counseling, and Disclosure of Suspected Alzheimer's Disease and Related Disorders (DETeCD-ADRD): Executive summary of recommendations for specialty care. <em>Alzheimer's Dement</em>. 2025;21:e14337. doi:10.1002/alz.14337</li>
 <li>McKeith IG, et al. Diagnosis and management of dementia with Lewy bodies: Fourth consensus report of the DLB Consortium. <em>Neurology</em>. 2017;89(1):88-100.</li>

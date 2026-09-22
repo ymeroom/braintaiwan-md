@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/tth03.html">
 </head>
@@ -97,31 +116,32 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 03 篇</strong>　「緊縮」這兩個字本身就是一個假說——它假設頭痛來自肌肉收縮與情緒緊繃，而整套以肌肉放鬆與壓力管理為主的治療，是從這個假說長出來的。這一篇看周邊與中樞兩條機轉線各自累積了什麼證據，以及為什麼偏頭痛那把 CGRP 鑰匙插進 TTH 的鎖孔轉不動。</p>
 </blockquote>
-<h2>病名先於機轉</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 7 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">病名先於機轉</a></li><li><a href="#bt-s2">周邊：壓痛是可以量的</a></li><li><a href="#bt-s3">中樞：從陣發變成慢性的那個轉折</a></li><li><a href="#bt-s4">一個可以講給病人聽的版本</a></li><li><a href="#bt-s5">CGRP 這把鑰匙插不進去</a></li><li><a href="#bt-s6">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">病名先於機轉</h2>
 <p>2025 年綜論在導論裡點出一件容易被跳過的事：<strong>「tension」這個詞強調的是肌肉收縮與情緒緊繃所扮演的角色，而這導致了各式各樣聚焦於肌肉放鬆與壓力管理的治療。</strong></p>
 <p>順序反了。通常是機轉研究先指出治療標的，這裡卻是一個十九世紀留下的病名，替往後一百年的治療方向定了調。</p>
 <p>而現在的共識是：TTH 的病生理複雜、多因子、尚未被完全理解，同時涉及周邊與中樞兩套機轉。周邊機轉主要與肌筋膜組織及痛覺接受相關；中樞機轉則與中樞神經系統的疼痛處理相關，且負責的是<strong>慢性化</strong>這一段。</p>
 <p>EFNS 指引把這個分工寫得更利落：<strong>周邊機轉在陣發型 TTH 可能較為重要，而中樞疼痛機轉在慢性 TTH 居於樞紐地位。</strong></p>
-<h2>周邊：壓痛是可以量的</h2>
+<h2 id="bt-s2">周邊：壓痛是可以量的</h2>
 <p>顱周肌肉壓痛（pericranial tenderness）是 TTH 最被反覆驗證的體徵，而它的量化方式比一般想像的成熟。</p>
 <p>最常用的評估方法是<strong>徒手觸診顱周肌肉並計算總壓痛分數</strong>（total tenderness score）。另外有硬度計（hardness meter）這個定量工具，可以測量肌肉硬度。</p>
 <p>這些量測給出的規律相當一致：<strong>顱周壓痛在急性頭痛期會加劇，並隨 TTH 發作的嚴重度與頻率增加</strong>。慢性 TTH 病人的壓痛比陣發型病人更嚴重。</p>
 <p>肌筋膜組織——包含肌肉與結締組織——可以發展出局部的壓痛區域，也就是激痛點（trigger points）。激痛點會在其他部位造成疼痛，例如頸部或肩膀，而這可能促成 TTH 所經驗到的頭痛。活性肌筋膜激痛點在 TTH 病人身上很常見，與周邊機轉參與病生理的假說一致。</p>
 <p>不過綜論在這裡加了一句限制：<strong>激痛點與 TTH 嚴重度之間的關係在不同研究之間並不一致</strong>。</p>
 <p>肌電圖研究則顯示 TTH 個體有較高的肌肉活動與張力，支持持續性肌肉收縮與緊繃在頭痛產生上的角色。這條線後來直接長出了 EMG 生理回饋治療——那是第五篇裡唯一拿到 Level A 的非藥物療法。</p>
-<h2>中樞：從陣發變成慢性的那個轉折</h2>
+<h2 id="bt-s3">中樞：從陣發變成慢性的那個轉折</h2>
 <p>中樞這條線的核心概念只有一個：<strong>二級神經元的中樞敏感化</strong>。</p>
 <p>發生位置在脊髓或三叉神經脊髓核（spinal trigeminal nucleus），而綜論給它的定位是「從陣發型 TTH 轉變為慢性 TTH 的關鍵機轉」。</p>
 <p>支持證據來自壓力痛覺測試：慢性 TTH 病人相較於陣發型病人，對顱內與顱外結構的<strong>壓力刺激有較高的疼痛敏感度與較低的耐受度</strong>。痛的門檻整個往下掉，而且不限於頭部。</p>
 <p>共病在這裡不是背景雜訊，而是機轉的一部分。<strong>背痛、纖維肌痛症與睡眠障礙</strong>都可能改變慢性 TTH 病人的疼痛敏感度並加重中樞敏感化，這暗示這些疾病與慢性 TTH 之間共享中樞機轉。焦慮與憂鬱在 TTH 病人身上出現，且與症狀惡化相關。</p>
 <p>功能性磁振造影則從另一個角度切入，比較陣發型 TTH 病人在疼痛期與無痛期之間的動態腦部變化。這些研究顯示疼痛處理區域的活化改變，包括<strong>前扣帶迴皮質、腦島與前額葉皮質</strong>。作者的詮釋是：TTH 個體存在異常的疼痛處理與調節，而這可能促成頭痛的痛覺感知。</p>
 <p>至於神經傳導物質，血清素與正腎上腺素被發現與 TTH 相關，<strong>但多項研究的結果互相衝突</strong>。這一句話的份量不小——第五篇的第一線與第二線預防藥，作用機轉全部押在這兩個傳導物質上。</p>
-<h2>一個可以講給病人聽的版本</h2>
+<h2 id="bt-s4">一個可以講給病人聽的版本</h2>
 <p>EFNS 指引在「衛教與保證」那一節，給了一段我認為是整份文件最實用的內容：它把機轉翻譯成可以在診間講出口的因果鏈。</p>
 <p>指引的說法是：可以向病人解釋，<strong>肌肉疼痛會導致大腦疼痛調節機制的失調，使得原本無害的刺激被感知為疼痛，繼而次發性地讓肌肉疼痛持續下去，並帶來焦慮與憂鬱的風險。</strong></p>
 <p>這段話同時做了三件事——把周邊與中樞接起來、解釋了為什麼痛會自己維持自己，也順帶說明了為什麼共病不是病人「想太多」。</p>
 <p>同一份指引還提供了這個迴路的實驗證據：<strong>壓力在慢性 TTH 病人身上誘發的頭痛比健康對照者更多，可能是透過對已敏感化的疼痛路徑產生痛覺過敏效應。</strong>壓力不是誘發因子而已，它是踩在一條已經被調低門檻的路徑上。</p>
-<h2>CGRP 這把鑰匙插不進去</h2>
+<h2 id="bt-s5">CGRP 這把鑰匙插不進去</h2>
 <p>偏頭痛過去十幾年的進展幾乎全部圍繞 CGRP（降鈣素基因相關胜肽）展開，而 TTH 沒有分到。</p>
 <p>2025 年綜論的措辭很克制但意思清楚：<strong>CGRP 在慢性 TTH 的進展與緩解中的角色正逐漸成為關注主題，然而對抗 CGRP 單株抗體的治療反應不佳。</strong>在未來研究方向那一節，作者把肉毒桿菌毒素與抗 CGRP 單株抗體並列，說支持它們用於 TTH 的證據有限，需要更多研究。</p>
 <p>另一條走了很久的路是一氧化氮。綜論說，一氧化氮誘發 TTH 的機轉已有一些研究，藥物開發也正在進行，<strong>但至今沒有顯著成果</strong>。</p>
@@ -129,7 +149,7 @@ article, article *{overflow-wrap:break-word}
 <p>藥理誘發試驗（pharmacological provocation studies）替偏頭痛的病生理提供了關鍵洞見，並帶出了重要的治療標的。<strong>但類似的研究在 TTH 上並未被徹底執行。</strong>而在缺乏已辨識的治療標的的情況下，這個取徑目前對 TTH 病人並不可行。</p>
 <p>這是一個閉環：沒有標的就無法設計誘發試驗，沒有誘發試驗就找不到標的。</p>
 <p>遺傳學那條路的狀況一樣。綜論指出，偏頭痛與 TTH 都與遺傳因素相關，<strong>但相對於偏頭痛已辨識出多個風險基因座，負責 TTH 遺傳性的特定基因至今未知。</strong></p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s6">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>文獻實際說法</th></tr></thead>
 <tbody>

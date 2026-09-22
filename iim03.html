@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/iim03.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 03 篇</strong>　肌炎專一性自體抗體徹底改寫了這個病的診斷方式——<strong>約 70% 的病人驗得到抗體</strong>，而抗體同時決定診斷、亞型與預後。但同一篇綜論用表 1 做了一件很少見的事：<strong>替每一個抗體的免疫檢驗品質打分數</strong>，而且有一個抗體被標成「嚴重疑慮」。這一篇處理抗體怎麼用、什麼時候不能信、以及肌肉切片在 2026 年還剩下哪些非做不可的位置。</p>
 </blockquote>
-<h2>從 Mrs. Mi 到三十種抗體</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 8 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">從 Mrs. Mi 到三十種抗體</a></li><li><a href="#bt-s2">表 1 做了一件很少見的事：替檢驗打分數</a></li><li><a href="#bt-s3">抗體怎麼直接變成診斷</a></li><li><a href="#bt-s4">肌肉切片還剩下哪些非做不可的位置</a></li><li><a href="#bt-s5">鑑別診斷：三個必須主動排除的方向</a></li><li><a href="#bt-s6">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">從 Mrs. Mi 到三十種抗體</h2>
 <p>第一個肌炎專一性自體抗體是 <strong>1976 年</strong>從一位皮肌炎病人身上分離出來的，那位病人姓 Mi——<strong>anti-Mi-2 的名字就是這麼來的</strong>。到今天，<strong>大約已辨識出 30 種肌炎專一性抗體</strong>。</p>
 <p>（這裡有一個引註上的落差值得標出：正文把「1976 年」這個時間點掛在參考文獻 25，但該筆文獻是 *<em>Targoff IN, Reichlin M. </em>Arthritis Rheum<em> 1985;28:796-803</em>*——年份對不上。這不影響臨床內容，但引用時要小心。）</p>
 <p>這些抗體有兩個對臨床極為重要的性質：<strong>它們通常互斥</strong>（一個病人身上不會同時出現兩個 MSA），而且<strong>各自對應特徵性的表型</strong>。</p>
@@ -111,7 +131,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>anti-cN1A 那一格要特別小心。它在包涵體肌炎裡確實常見，但<strong>專一性不足</strong>——它也出現在修格連氏症候群、系統性紅斑狼瘡，甚至<strong>完全沒有肌肉侵犯的病人</strong>身上。所以它是一個「陽性也不能定案」的抗體。</p>
 <p>另外一組是<strong>肌炎相關抗體</strong>（myositis-associated autoantibodies），主要有 <strong>anti-Ro52/Ro60、anti-U1-RNP、anti-Ku、anti-PM/Scl</strong>。它們出現在肌肉侵犯屬於疾病光譜一部分的結締組織疾病脈絡中，但也可能出現在只有肌炎的病人身上。原文加了一句實用的規則：<strong>除了 anti-Ro 之外，肌炎相關抗體通常不會與肌炎專一性抗體同時出現</strong>。</p>
-<h2>表 1 做了一件很少見的事：替檢驗打分數</h2>
+<h2 id="bt-s2">表 1 做了一件很少見的事：替檢驗打分數</h2>
 <p>先講一個容易被忽略的前提：<strong>傳統用 HEp-2 細胞（human epithelial type 2）做的篩檢，敏感度不足以常規偵測這些抗體</strong>——不論是 MSA 或 MAA。要驗，就得用<strong>多重商業免疫分析</strong>（multiplex commercial immunoassay）。所以一張「ANA 陰性」的報告，完全不能拿來排除肌炎抗體。</p>
 <p>而這些商業檢驗的可靠度，原文的評價是「<strong>整體良好，但依抗體而異</strong>」。表 1 把這個「而異」具體化成三級，資料來源是一場<strong>歐洲神經肌肉中心（ENMC）工作坊的共識</strong>：</p>
 <div class="bt-tablewrap"><table>
@@ -126,7 +146,7 @@ article, article *{overflow-wrap:break-word}
 <p>第一，<strong>正文與表格的清單不一致</strong>。正文列出「可靠度較差」的抗體是 anti-TIF-1γ、anti-SAE、anti-EJ、anti-OJ、anti-Zo、anti-cN1A <strong>六種</strong>，但表 1 實際上還標了 <strong>anti-Ha</strong> 同一等級——正文漏了它。</p>
 <p>第二，<strong>正文把兩個等級混為一談</strong>。anti-OJ 在表裡是<strong>獨一無二的「嚴重疑慮」</strong>，比其他五種的「須知悉其限制」嚴重一級，但正文只用「較不可靠」一句話帶過。而 anti-OJ 恰好是表 1 裡<strong>抗合成酶症候群唯一標為癌症高風險</strong>的抗體——一個檢驗品質有嚴重疑慮的抗體，同時背著最強的臨床行動指示（癌症篩檢），這個組合在實務上很危險。</p>
 <p>原文自己的處理原則寫得很好，值得整段記下來：<strong>必須把臨床資料、肌肉切片結果與免疫分析結果三者對照</strong>，才能限制判讀錯誤；醫師<strong>只應在合適的臨床脈絡下考慮這些抗體</strong>；懷疑偽陽性或偽陰性時，<strong>應以參考標準方法重驗</strong>。</p>
-<h2>抗體怎麼直接變成診斷</h2>
+<h2 id="bt-s3">抗體怎麼直接變成診斷</h2>
 <p>在確定是發炎性肌肉病變的前提下，<strong>用適當方法可靠地驗到一個肌炎專一性抗體，就能同時完成診斷與亞型分類</strong>。原文給了三個範例，很值得當成句型記住：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>臨床 ＋ 抗體</th><th>診斷</th></tr></thead>
@@ -136,7 +156,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>anti-Jo-1 ＋ 間質性肺病 ＋ 多關節炎</td><td>抗合成酶症候群</td></tr>
 </tbody></table></div>
 <p>那正式的分類準則呢？<strong>2017 年 ACR/EULAR 準則</strong>是第一組把肌炎專一性抗體納入診斷的準則——但它<strong>只納入了一個抗體：anti-Jo-1</strong>。這個限制造成的後果很具體：<strong>它無法把 polymyositis 再往下分</strong>（分不出抗合成酶症候群或壞死性肌病）。原文的最新狀態是：<strong>納入其他肌炎專一性抗體的 ACR/EULAR 準則正在修訂中</strong>——沒有給時程。</p>
-<h2>肌肉切片還剩下哪些非做不可的位置</h2>
+<h2 id="bt-s4">肌肉切片還剩下哪些非做不可的位置</h2>
 <p>每一個臨床－生物學亞型都有特徵性的肌肉病理型態（圖 1），而且<strong>肌肉切片仍然是診斷發炎性肌肉病變及其亞型的參考標準</strong>——但原文緊接著提醒：<strong>它需要相當的專業能力</strong>。</p>
 <p>實務上的分界線是這樣的：</p>
 <ul>
@@ -155,7 +175,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>皮肌炎</td><td><strong>束周萎縮纖維</strong>＋血管病變（微血管內皮 <strong>C5b-9 沉積</strong>）</td></tr>
 </tbody></table></div>
 <p>這裡有一個很漂亮的對照：<strong>抗合成酶症候群與皮肌炎都是「束周」病變</strong>，但一個是<strong>壞死</strong>、一個是<strong>萎縮</strong>。這一字之差就是兩個不同的亞型、不同的預後、不同的治療。</p>
-<h2>鑑別診斷：三個必須主動排除的方向</h2>
+<h2 id="bt-s5">鑑別診斷：三個必須主動排除的方向</h2>
 <p>診斷過程最難的情境，是<strong>以肌肉症狀為主、緩慢進展</strong>的病人。原文點出的挑戰有幾層：</p>
 <p><strong>第一層是基因性肌病。</strong>最需要小心的是<strong>30 歲以下、早發型的免疫媒介壞死性肌病與基因性肌病的鑑別</strong>。這裡抗體陽性的價值特別高——但<strong>血清陰性的個案就麻煩了</strong>，此時<strong>肌肉病理特徵與治療反應的仔細評估是準確診斷的關鍵</strong>。</p>
 <p>更棘手的是：<strong>某些肌失養症的切片上會固定看到相當程度的發炎浸潤</strong>，原文點名了<strong>dysferlin 病變</strong>（dysferlinopathies）與<strong>顏面肩胛肱肌失養症</strong>（FSHD）。也就是說，「切片有發炎」不等於「這是發炎性肌肉病變」。</p>
@@ -169,7 +189,7 @@ article, article *{overflow-wrap:break-word}
 <p>至於切片，我的取捨是這樣：<strong>臨床加抗體已經拼出完整圖像的，不切；抗體全陰性的，切；懷疑包涵體肌炎的，一定切。</strong>最後這一項不是為了確診而已——是為了<strong>在讓病人接受好幾年免疫抑制治療之前，先確認他不是那個註定不會有反應的亞型</strong>。反過來，一個切片「有發炎浸潤」的報告也不能讓人鬆懈，dysferlin 病變與 FSHD 都會這樣長。</p>
 </blockquote>
 <p>七成的病人驗得到抗體，剩下三成沒有。而那三成，恰好與最需要切片的族群、最容易被誤認成基因性肌病的族群、以及第四篇會看到的<strong>血清陰性壞死性肌病癌症高風險</strong>族群大量重疊。抗體帶來的診斷紅利，並沒有平均分配給所有病人。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s6">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
 <tbody>

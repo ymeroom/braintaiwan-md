@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/ch05.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 5 篇（完結）</strong>　當氧氣、翠普登、verapamil 與第二線藥物都壓不住，特別是難治型慢性叢發性頭痛，神經調節（neuromodulation）登場。本篇從非侵入的 <strong>nVNS</strong> 一路談到侵入式的 <strong>蝶腭神經節刺激（SPG）</strong>、<strong>枕神經刺激（ONS）</strong>與<strong>深部腦刺激（DBS）</strong>，並收束整個治療架構。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、非侵入性迷走神經刺激（nVNS）——首選的神經調節</a></li><li><a href="#bt-s2">二、蝶腭神經節刺激（SPG Stimulation）——高證據但本土經驗有限</a></li><li><a href="#bt-s3">三、枕神經刺激（ONS）</a></li><li><a href="#bt-s4">四、深部腦刺激（DBS）——最後手段</a></li><li><a href="#bt-s5">五、神經調節階梯一覽</a></li><li><a href="#bt-s6">六、整體治療架構回顧</a></li><li><a href="#bt-s7">臨床要點摘要</a></li><li><a href="#bt-s8">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>藥物治療涵蓋了絕大多數叢發性頭痛患者，但仍有一群——尤其是<strong>難治型慢性叢發性頭痛</strong>——對標準藥物反應不足。針對他們，神經調節提供了從非侵入到侵入的階梯式選擇。台灣的特殊背景是：<strong>慢性難治個案稀少</strong>，因此侵入式療法雖有高證據，<strong>本土使用經驗有限</strong>。</p>
 <hr>
-<h2>一、非侵入性迷走神經刺激（nVNS）——首選的神經調節</h2>
+<h2 id="bt-s1">一、非侵入性迷走神經刺激（nVNS）——首選的神經調節</h2>
 <p><strong>nVNS（GammaCore）</strong>是手持式、置於頸部刺激迷走神經的非侵入裝置，已獲 FDA 核准，是準則推薦的<strong>首選神經調節</strong>。</p>
 <p><strong>急性治療</strong>：</p>
 <ul>
@@ -115,7 +135,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p><strong>特性</strong>：非侵入、安全性高，主要副作用為刺激部位的局部不適與口周肌肉收縮；可同時用於急性與預防。</p>
 <hr>
-<h2>二、蝶腭神經節刺激（SPG Stimulation）——高證據但本土經驗有限</h2>
+<h2 id="bt-s2">二、蝶腭神經節刺激（SPG Stimulation）——高證據但本土經驗有限</h2>
 <p><strong>蝶腭神經節（sphenopalatine ganglion, SPG）</strong>是叢發性頭痛副交感反射的關鍵節點。植入式 SPG 微刺激器讓患者在發作時自行啟動刺激。</p>
 <ul>
 <li><strong>Pathway CH-1（Schoenen 2013）</strong>：full stimulation 達 67.1% 急性緩解，遠高於假刺激</li>
@@ -126,7 +146,7 @@ article, article *{overflow-wrap:break-word}
 <p>準則特別註明：SPG 刺激的療效有高證據支持，<strong>但因台灣慢性叢發性頭痛個案極少，尚無本土臨床使用紀錄可供參考</strong>。</p>
 </blockquote>
 <hr>
-<h2>三、枕神經刺激（ONS）</h2>
+<h2 id="bt-s3">三、枕神經刺激（ONS）</h2>
 <p><strong>枕神經刺激（occipital nerve stimulation, ONS）</strong>透過刺激枕大神經調節三叉頸複合體，用於難治型慢性病例。</p>
 <ul>
 <li>多個世代研究顯示約 <strong>50–67%</strong> 患者達 ≥ 50% 改善</li>
@@ -135,7 +155,7 @@ article, article *{overflow-wrap:break-word}
 <li>相較顱內手術侵入性較低，是 DBS 之前的選項</li>
 </ul>
 <hr>
-<h2>四、深部腦刺激（DBS）——最後手段</h2>
+<h2 id="bt-s4">四、深部腦刺激（DBS）——最後手段</h2>
 <p>針對<strong>後下視丘（posterior hypothalamus）</strong>的 DBS，呼應叢發性頭痛的下視丘病理，保留給<strong>對所有療法皆無效的難治型慢性病例</strong>。</p>
 <ul>
 <li>系列研究顯示部分難治患者可達 &gt; 50% 改善，但屬侵入性最高、風險最大的選項</li>
@@ -144,7 +164,7 @@ article, article *{overflow-wrap:break-word}
 <li>需在具經驗的中心、嚴格篩選下進行</li>
 </ul>
 <hr>
-<h2>五、神經調節階梯一覽</h2>
+<h2 id="bt-s5">五、神經調節階梯一覽</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>療法</th><th>侵入性</th><th>主要角色</th><th>評等</th></tr></thead>
 <tbody>
@@ -154,7 +174,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td><strong>DBS（後下視丘）</strong></td><td>顱內</td><td>難治型慢性的最後手段</td><td>C / IV</td></tr>
 </tbody></table></div>
 <hr>
-<h2>六、整體治療架構回顧</h2>
+<h2 id="bt-s6">六、整體治療架構回顧</h2>
 <p>把五篇串起來，叢發性頭痛的處置可濃縮為一條決策軸線：</p>
 <ol>
 <li><strong>診斷分類</strong>（第一篇）：確認是叢發性頭痛、分陣發／慢性，排除次發性</li>
@@ -167,7 +187,7 @@ article, article *{overflow-wrap:break-word}
 <p><strong>核心原則</strong>：急性 + 過渡 + 維持<strong>三線並進</strong>；過渡藥撐到維持藥生效再下橋；維持藥用到<strong>連續 2 週無發作</strong>再逐步減停。</p>
 </blockquote>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s7">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>準則重點</th></tr></thead>
 <tbody>
@@ -185,7 +205,7 @@ article, article *{overflow-wrap:break-word}
 <p>五篇寫到這裡，叢發性頭痛的全貌就完整了。它是最痛的原發性頭痛，但也是<strong>治療反應最戲劇化</strong>的頭痛之一——只要診斷正確、三線並進，多數病人能從「痛到想撞牆」回到正常生活。願這份導讀，能讓更多被誤診多年的病人，早一點遇到對的治療。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s8">參考文獻</h2>
 <ol>
 <li>Yang FC, Tsai CL, Lin GY, et al. 2022 Taiwan Guidelines for Acute and Preventive Treatment of Cluster Headaches. <em>Acta Neurol Taiwan</em>. 2022;31(4):254-273.</li>
 <li>Silberstein SD, Mechtler LL, Kudrow DB, et al. Non-Invasive Vagus Nerve Stimulation for the ACute Treatment of Cluster Headache: Findings From the Randomized, Double-Blind, Sham-Controlled ACT1 Study. <em>Headache</em>. 2016;56(8):1317-1332.</li>

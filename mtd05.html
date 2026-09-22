@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/mtd05.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 05 篇</strong>　前四篇都在細胞裡。這一篇走到病人身上：MELAS 病人的循環游離 mtDNA 基線就高，中風樣發作後還會再升；Leigh 症候群小鼠的神經發炎主角究竟是微膠細胞還是周邊巨噬細胞，同一張表裡的兩篇研究直接互相牴觸。這一篇收整臨床表型、可量測的生物標記、以及散落在整篇綜論中的七個「阻斷下游就有效」的實驗，最後回到那個沒有被回答的問題。</p>
 </blockquote>
-<h2>轉譯缺陷與最常見的兩個症候群</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 10 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">轉譯缺陷與最常見的兩個症候群</a></li><li><a href="#bt-s2">訊號離開細胞：循環游離 mtDNA</a></li><li><a href="#bt-s3">呼吸鏈：兩個基因，其餘空白</a></li><li><a href="#bt-s4">七個「阻斷下游就有效」</a></li><li><a href="#bt-s5">還在擴張的機轉清單</a></li><li><a href="#bt-s6">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">轉譯缺陷與最常見的兩個症候群</h2>
 <p>粒線體轉譯是一個受良好控制的過程，需要核基因編碼的因子負責起始、延長與終止，還需要特定因子處理、修飾與胺醯化粒線體 tRNA，以及形成粒線體核糖體。</p>
 <p>其中兩個 mtDNA 編碼的 tRNA 突變，對應到粒線體疾病最常見的兩個症候群：</p>
 <div class="bt-tablewrap"><table>
@@ -107,7 +127,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td><strong>MT-TK</strong>（tRNA^Lys）</td><td><strong>MERRF</strong>：肌陣攣癲癇</td></tr>
 </tbody></table></div>
 <p>作者註明這兩者<strong>位列粒線體疾病最常見的原因之中</strong>。</p>
-<h2>訊號離開細胞：循環游離 mtDNA</h2>
+<h2 id="bt-s2">訊號離開細胞：循環游離 mtDNA</h2>
 <p>到這裡，mtDNA 的角色從細胞內訊號擴展到細胞外。作者的說法是：除了在細胞內的訊號角色，mtDNA 也可以被釋放到細胞外。</p>
 <p>而 MELAS 提供了目前最完整的人體資料：</p>
 <ul>
@@ -118,7 +138,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>「基線高、發作後再升」這個動態特別重要——一個只在事件後才變動的指標，才有可能當成事件的標記，而不只是疾病的標記。</p>
 <p>作者接著把限制講明白：<strong>在其他粒線體蛋白質合成缺陷中，發炎反應與 mtDNA 釋放並未被報告。</strong> 而這代表什麼，他不下結論：<strong>這究竟反映了一個 mtDNA 釋放角色較不顯著的不同機轉，還是單純因為缺乏跨越更廣泛粒線體轉譯缺陷的系統性研究，仍有待確定。</strong></p>
-<h2>呼吸鏈：兩個基因，其餘空白</h2>
+<h2 id="bt-s3">呼吸鏈：兩個基因，其餘空白</h2>
 <p>呼吸鏈次單元與其核基因編碼的組裝基因已被完整描述，並構成粒線體蛋白質體的大部分。而作者在這一整個大類裡的收穫是：</p>
 <p><strong>只在兩個基因缺陷中找到證據（NDUFS4 與 COX10）；至於絕大多數的這類疾病，mtDNA 觸發的發炎是否促成粒線體功能失調，仍屬未知。</strong></p>
 <h3>NDUFS4／Leigh 症候群：一組互相打架的證據</h3>
@@ -150,7 +170,7 @@ article, article *{overflow-wrap:break-word}
 <p>「總量減少、細胞質那份增加」這個組合值得記住。它說明測全細胞 mtDNA 拷貝數會漏掉這個現象——要分層測。</p>
 <p>而其餘的空白，作者寫得很坦白：<strong>關於其他粒線體轉譯因子、OXPHOS 次單元、載體、生合成酶與輔因子疾病的 mtDNA 釋放與伴隨的無菌性發炎，可得的資訊有限，儘管這些是 PMD 的常見原因。</strong> 未來研究將決定 mtDNA 釋放與發炎在這些疾病中<strong>是真的比較不相關，還是只是尚未被研究過</strong>——而後者的話，它們可能實際上促成了這些疾病的<strong>組織特異性表現</strong>。</p>
 <p>最後那五個字是整篇最大的伏筆。粒線體疾病最難解釋的一件事，就是為什麼同一個突變在不同人身上打中不同器官。如果發炎反應的設定值因人、因組織而異，它就是一個候選答案。</p>
-<h2>七個「阻斷下游就有效」</h2>
+<h2 id="bt-s4">七個「阻斷下游就有效」</h2>
 <p>把散在五篇裡的介入實驗收在一起，是這篇綜論最實際的產出：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>介入</th><th>模型</th><th>結果</th></tr></thead>
@@ -165,7 +185,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>七筆全部是動物或細胞層級。沒有一筆是病人試驗。但它們共同支持一件事：<strong>在這些模型裡，粒線體功能失調造成的組織損傷，其執行路徑是可以被單獨切斷的。</strong></p>
 <p>作者在結論裡也是這樣說的：這令人振奮，因為它開啟了開發抑制下游發炎路徑療法的新途徑，<strong>而這類療法在其他已證實先天免疫驅動病理的疾病中已被成功使用</strong>。</p>
-<h2>還在擴張的機轉清單</h2>
+<h2 id="bt-s5">還在擴張的機轉清單</h2>
 <p>實驗模型顯示 mtDNA 釋放有三條主要路徑——<strong>mPTP、BAK/BAX 孔道與 VDAC</strong>——並可經三條路徑導致發炎：<strong>cGAS-STING、TLR9-NF-κB 與 NLRP3-MAVS</strong>。<strong>多數被研究的粒線體模型顯示的是第一型干擾素反應的活化</strong>，使其成為傳遞胞器壓力最通用的管道。</p>
 <p>證據較集中的疾病類別是：<strong>粒線體嵴的調控、內外膜的生合成、mtDNA 維持基因，以及粒線體動態的成分</strong>——這些與 mtDNA 釋放的連結較緊密。</p>
 <p>而清單還在長。作者提到兩個較少被探討的機制已被納入這個領域：<strong>粒線體與溶酶體的 Gasdermin 孔道</strong>，以及 <strong>mtDNA 經胞外囊泡運送到鄰近或遠端細胞</strong>。後者是這個框架裡唯一能解釋「跨器官傳遞」的機制——它讓局部的粒線體壓力變成全身性的訊號。</p>
@@ -179,7 +199,7 @@ article, article *{overflow-wrap:break-word}
 </blockquote>
 <p>作者最後留下的問題，跟他在摘要開頭提出的是同一個：<strong>目前仍不清楚 mtDNA 釋放單純是一個病理事件，還是代表一種適應機制——幫助細胞回應感染、免疫觸發或代謝壓力等外部挑戰以維持恆定。</strong></p>
 <p>五篇讀完，這個問題沒有變得比較好回答。它只是變得比較具體了：在 ATAD3A 那裡它看起來是病理，在 POLG 那裡它看起來是防禦，而在絕大多數的粒線體基因那裡，沒有人測過。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s6">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
 <tbody>

@@ -77,6 +77,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/phn04.html">
 </head>
@@ -99,10 +118,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 4 篇</strong>　以 NeuPSIG 神經病理性疼痛藥物治療指引為主軸 Finnerup NB, Attal N, Haroutounian S, et al. Pharmacotherapy for neuropathic pain in adults: a systematic review and meta-analysis. <em>Lancet Neurol</em> 2015;14(2):162-173</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、原則：神經痛用藥的共同心法</a></li><li><a href="#bt-s2">二、第一線三大主力</a></li><li><a href="#bt-s3">三、怎麼在三者間選？</a></li><li><a href="#bt-s4">四、合併治療</a></li><li><a href="#bt-s5">五、高齡族群的特別提醒</a></li><li><a href="#bt-s6">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>PHN 屬於<strong>神經病理性疼痛</strong>，因此治療直接套用 NeuPSIG（IASP 神經病理性疼痛特別興趣小組）的藥物階梯。這一篇談<strong>第一線口服藥物</strong>——三類主力、怎麼起始與調量、以及在高齡族群該注意什麼。下一篇再談局部與介入治療。</p>
 <hr>
-<h2>一、原則：神經痛用藥的共同心法</h2>
+<h2 id="bt-s1">一、原則：神經痛用藥的共同心法</h2>
 <p>在談個別藥物前，先記住四個原則：</p>
 <ol>
 <li><strong>Start low, go slow</strong>：從低劑量起始、緩慢調升，尤其高齡者</li>
@@ -111,7 +131,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>定期再評估</strong>：用第 3 篇的基線量表追蹤反應與副作用，無效或不耐受就換藥</li>
 </ol>
 <hr>
-<h2>二、第一線三大主力</h2>
+<h2 id="bt-s2">二、第一線三大主力</h2>
 <p>NeuPSIG 列為神經病理性疼痛<strong>第一線</strong>、且皆有 PHN 相關證據的，是以下三類：</p>
 <h3>1. Gabapentinoids（gabapentin、pregabalin）</h3>
 <div class="bt-tablewrap"><table>
@@ -138,7 +158,7 @@ article, article *{overflow-wrap:break-word}
 <li>合併憂鬱／焦慮的患者尤其適合（一藥兩用）。</li>
 </ul>
 <hr>
-<h2>三、怎麼在三者間選？</h2>
+<h2 id="bt-s3">三、怎麼在三者間選？</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>情境</th><th>偏好</th></tr></thead>
 <tbody>
@@ -149,10 +169,10 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>沒有單一「最好」的藥——依<strong>共病、副作用譜、腎功能與症狀組合</strong>個別化選擇。</p>
 <hr>
-<h2>四、合併治療</h2>
+<h2 id="bt-s4">四、合併治療</h2>
 <p>單一藥物足量仍反應不足時，可採<strong>不同機轉的合併</strong>（如 gabapentinoid ＋ TCA，或 ＋ 局部藥物／必要時的鴉片類）。研究顯示合併治療常能在較低個別劑量下取得更佳止痛與耐受性。第二線與介入選項見第 5 篇。</p>
 <hr>
-<h2>五、高齡族群的特別提醒</h2>
+<h2 id="bt-s5">五、高齡族群的特別提醒</h2>
 <p>PHN 病人以高齡為主，用藥時務必考量：</p>
 <ul>
 <li><strong>多重用藥（polypharmacy）</strong> 與藥物交互作用</li>
@@ -162,7 +182,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>「對 30 歲合理的劑量」對 80 歲可能太多——劑量與調速都要往下修。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s6">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>

@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/glp01.html">
 </head>
@@ -97,20 +116,21 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 01 篇</strong>　全世界現在有超過 10 億人有肥胖，其中許多人同時有第二型糖尿病或糖尿病前期。這篇 NEJM 綜論的開場不是機轉也不是療效，而是一個很實務的難題：新藥帶來了希望與期待，但也帶來「怎麼安全、又符合成本效益地使用它們」的臨床困境。這一篇談這類藥物的來歷——為什麼腸泌素被冷凍了半世紀、為什麼第一個藥要從蜥蜴毒液裡找、以及那張已核准與開發中藥物的清單其實藏了什麼。</p>
 </blockquote>
-<h2>一個被胰島素蓋掉的發現</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 7 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一個被胰島素蓋掉的發現</a></li><li><a href="#bt-s2">為什麼第一個藥要去蜥蜴身上找</a></li><li><a href="#bt-s3">那個「先被發現、卻後被用上」的腸泌素</a></li><li><a href="#bt-s4">腸泌素家族的三個成員</a></li><li><a href="#bt-s5">那張清單裡不只有 GLP-1</a></li><li><a href="#bt-s6">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">一個被胰島素蓋掉的發現</h2>
 <p>腸泌素的故事和胰島素幾乎同時起跑。</p>
 <p>19 世紀末的動物實驗顯示，<strong>移除胰臟會導致高血糖、消瘦，最終死亡</strong>。<strong>又過了 30 年，Banting 與 Best 才分離、純化出胰島素，並成功用它治療了一位糖尿病病人。</strong></p>
 <p>真正有意思的是接下來這一段。<strong>在那之後不久，一個英國團隊發現從腸道分離出來的分子可以降低血糖，並把它們命名為 incretines（現在稱為 incretins）。</strong></p>
 <p>然後這條線就斷了半個世紀。綜論給的理由很直接：<strong>胰島素在治療高血糖病人身上的療效太出色，把腸泌素的研究整個蓋掉了</strong>——直到 Habener、Drucker、Holst、Bloom 等人的一系列關鍵研究證明<strong>腸泌素是強效的促胰島素分子</strong>。</p>
 <p>這些研究合起來完成了兩件事：<strong>在腸道 L 細胞中鑑定並描述了類升糖素胜肽-1（GLP-1），確認它是從 glucagon 上切下來的胜肽產物（胺基酸第 7 到 37 位）。</strong></p>
-<h2>為什麼第一個藥要去蜥蜴身上找</h2>
+<h2 id="bt-s2">為什麼第一個藥要去蜥蜴身上找</h2>
 <p>天然的 GLP-1 有一個致命的藥物學缺點：半衰期太短。<strong>循環中 GLP-1 與 GIP 的半衰期都相當短，原因是腸道降解、全身性二肽基肽酶-4（dipeptidyl peptidase-4）的酵素活性，以及快速的腎臟清除。</strong></p>
 <p>解法出現在 1990 年，而且來自一個沒人會預期的地方。</p>
 <p><strong>John Eng 從 Gila monster（希拉毒蜥）的毒液中分離出一個天然胜肽 exendin-4，它的結構與 GLP-1 相似、會與 GLP-1 競爭同一個受體、能刺激胰島素分泌，而且半衰期更長。</strong></p>
 <p>接著的路徑就是標準的藥物開發：<strong>exendin-4 的降糖效果在臨床試驗中被確立</strong>，然後<strong>2005 年，exenatide 成為第一個核准用於治療第二型糖尿病的腸泌素類似物。</strong></p>
 <p>而各家藥廠同時在做同一件事，方法寫得很清楚：<strong>透過修改胺基酸來延長 GLP-1 的半衰期，並抵抗體內二肽基肽酶-4 的切割</strong>，以此生成合成的 GLP 受體類似物。</p>
 <p>換句話說，這一整代藥物的核心工程問題只有一個——怎麼讓一個幾分鐘就被分解掉的腸道荷爾蒙，撐到一週打一次。</p>
-<h2>那個「先被發現、卻後被用上」的腸泌素</h2>
+<h2 id="bt-s3">那個「先被發現、卻後被用上」的腸泌素</h2>
 <p>GIP 的際遇更曲折。</p>
 <p><strong>葡萄糖依賴性促胰島素胜肽（GIP）是最早被分離出來的腸泌素。</strong> 它<strong>由腸道 K 細胞合成，能增強葡萄糖介導的胰島素釋放</strong>。</p>
 <p>但單獨用它不行：<strong>在第二型糖尿病病人身上，給予 GIP 只造成血糖的輕微改變。</strong></p>
@@ -123,12 +143,12 @@ article, article *{overflow-wrap:break-word}
 <tr><td>對脂肪細胞</td><td>也被發現具有<strong>非常輕微的</strong>胰島素增敏效果</td></tr>
 </tbody></table></div>
 <p>這些努力合起來促成了新一代的 GLP-1 為基礎的治療，<strong>現在已經包含雙重與三重促效劑，其中數個已獲得國際監管機構核准，還有更多在研發線上</strong>。</p>
-<h2>腸泌素家族的三個成員</h2>
+<h2 id="bt-s4">腸泌素家族的三個成員</h2>
 <p>在往下讀機轉之前，有一個框架要先立起來：<strong>腸泌素家族一般被認為包含 GIP、GLP-1 與 glucagon。</strong></p>
 <p>它們的共同點是<strong>都由不同的腸道細胞在進食後分泌，但也在別處合成，特別是腦幹</strong>。腦幹這三個字對神經科讀者很重要——它意味著這條軸線從一開始就不是純粹的內分泌故事。</p>
 <p>合成的源頭則是同一個前驅物：<strong>合成始於含 160 個胺基酸的 glucagon 前驅物 proglucagon，它在胰臟中的處理方式與在腸道及腦中不同。在胰臟中 proglucagon 被切成 glucagon，而在腸道中則產生四個具重要功能的片段。</strong></p>
 <p>同一個基因、同一個前驅物，在不同組織被剪成不同的東西——這是理解為什麼一個「腸道荷爾蒙」會有腦部作用的起點。</p>
-<h2>那張清單裡不只有 GLP-1</h2>
+<h2 id="bt-s5">那張清單裡不只有 GLP-1</h2>
 <p>綜論的 Table 2 列出已核准與開發中的藥物。已核准的部分是這樣：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>已核准</th><th>綜論描述</th></tr></thead>
@@ -162,7 +182,7 @@ article, article *{overflow-wrap:break-word}
 <p>那張開發中清單裡混進 monlunabant 與 bimagrumab，我不覺得是編輯疏失，反而像是作者的態度：肥胖的藥物治療已經不是單一機轉的競賽。特別是 bimagrumab——當減重藥物的產品線裡開始出現「保肌肉」的抗體，就代表 lean mass 流失這件事在業界已經不是理論上的疑慮了。</p>
 </blockquote>
 <p>一個被胰島素蓋掉半世紀的腸道分子，一條從蜥蜴毒液走出來的藥物路徑，和一張已經悄悄變成減重產品線地圖的清單——下一篇要處理的是它到底怎麼作用，而答案有三條互相獨立的線。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s6">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
 <tbody>

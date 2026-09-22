@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/ssp05.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 05 篇</strong>　最後一篇處理兩件事：一個機轉專屬的手術決定（頸動脈該開刀還是放支架），以及把前四篇整合回指引與那位一開始的 74 歲病人身上。頸動脈那段的核心是一場取捨——支架的中風風險較高、心肌梗塞風險較低，沒有一個選項是全贏。而結尾的病人示範了，機轉導向的預防長什麼樣子。</p>
 </blockquote>
-<h2>頸動脈重建：一場拿中風換心臟的取捨</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">頸動脈重建：一場拿中風換心臟的取捨</a></li><li><a href="#bt-s2">指引怎麼整合前面四篇</a></li><li><a href="#bt-s3">還沒有答案的那些地方</a></li><li><a href="#bt-s4">回到那位 74 歲的病人</a></li><li><a href="#bt-s5">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">頸動脈重建：一場拿中風換心臟的取捨</h2>
 <p>有症狀的動脈粥狀硬化性顱外頸動脈狹窄（管腔狹窄 50 到 99%），可從血管重建中獲益——選項是頸動脈內膜切除術（CEA）或頸動脈支架置放術（CAS）。</p>
 <p>那兩者怎麼選？一份納入 13 個隨機對照試驗、7,484 名頸動脈狹窄病人（其中 80% 為症狀性）的統合分析，把差異釘得很清楚：</p>
 <div class="bt-tablewrap"><table>
@@ -109,7 +129,7 @@ article, article *{overflow-wrap:break-word}
 <p>這張表沒有贏家，只有取捨。支架比較會中風，內膜切除比較會心肌梗塞。所以選擇時要考慮技術可行性、風險效益評估與病人偏好——沒有一個放諸四海的答案，這是個要一人一議的決定。</p>
 <p>時機也是關鍵：血管重建通常應在症狀發生後兩週內進行。缺血後的頸動脈是不穩定的斑塊，等愈久復發風險愈高，兩週這個窗不是行政期限，是病生理的期限。</p>
 <p>至於無症狀的病人，情況又不一樣：在無症狀頸動脈狹窄 50 到 99% 的病人中，支架（而非內膜切除）被發現優於單獨的內科治療。這是無症狀族群裡少見的、支架站上風的情境。</p>
-<h2>指引怎麼整合前面四篇</h2>
+<h2 id="bt-s2">指引怎麼整合前面四篇</h2>
 <p>美國心臟協會（AHA）與歐洲中風組織（ESO）的建議，可以看成把前四篇收攏成一套處方：</p>
 <ul>
 <li><strong>血壓</strong>：多數缺血性中風後病人，目標 &lt;130/80 mmHg。</li>
@@ -119,7 +139,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>血糖</strong>：第二型糖尿病，一般建議 HbA1c &lt;7%，加上心血管風險相關的生活型態調整、metformin，以及加上 GLP-1 促效劑或 SGLT2 抑制劑其中之一。</li>
 </ul>
 <p>留意雙抗的劑量細節——loading 與維持劑量在這裡被寫死了（clopidogrel 300 mg 起始、ticagrelor 第一天 180 mg），這正是第三篇那個「時間窗」在指引裡的具體樣貌。</p>
-<h2>還沒有答案的那些地方</h2>
+<h2 id="bt-s3">還沒有答案的那些地方</h2>
 <p>綜論誠實地列了一串「不確定領域」，這些是目前沒有好答案、正在被試驗處理的問題：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>不確定領域</th><th>現況</th></tr></thead>
@@ -131,7 +151,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>剝離、主動脈弓粥狀瘤、年長者 PFO</td><td>有效療法仍未定</td></tr>
 </tbody></table></div>
 <p>這張表的價值在於：它劃出了目前實證醫學的邊界。門診遇到這些情境時，該做的不是假裝有標準答案，而是知道這裡本來就沒有。</p>
-<h2>回到那位 74 歲的病人</h2>
+<h2 id="bt-s4">回到那位 74 歲的病人</h2>
 <p>綜論一開始的病人：74 歲男性，右側顏面與肢體輕癱、構音障礙，NIHSS 4 分。CT 與 CTA 沒有狹窄或大血管阻塞，MRI 顯示左側內囊後肢一個 1 公分的梗塞，DWI 高訊號。有高血壓、高血脂（lisinopril 10 mg + atorvastatin 10 mg），最近糖化血色素 6.5%，BMI 32，因關節痛而近年較少活動。</p>
 <p>這是一個腔隙性缺血性中風，合併多重心血管危險因子與胰島素阻抗的證據。作者的處方，正好把前四篇串成一條線：</p>
 <div class="bt-tablewrap"><table>
@@ -144,7 +164,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>持續</td><td>持續監測服藥順從性與預防目標</td><td>第 01 篇 STROKE-CARD</td></tr>
 </tbody></table></div>
 <p>注意這裡沒有抗凝血劑——因為機轉是腔隙，不是心房顫動。這正是第一篇那句話的實踐：先分機轉，才選藥。同一個 74 歲、多重危險因子的病人，如果 MRI 顯示的是心源性栓塞的多灶梗塞、監測抓到心房顫動，這張處方的第一列就會從雙抗換成 DOAC。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s5">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>文獻實際說法</th></tr></thead>
 <tbody>

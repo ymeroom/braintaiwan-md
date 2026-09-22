@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/csvd01.html">
 </head>
@@ -97,19 +116,20 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 01 篇</strong>　腦小血管疾病在報告上常以「兩側大腦白質可見小血管缺血變化」這類句子出現，語氣接近例行描述。但同一群病變扛起了相當比例的中風與失智，把它讀成單純老化背景，會讓後續的危險因子處理失去理由。</p>
 </blockquote>
-<h2>定義先於判讀</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">定義先於判讀</a></li><li><a href="#bt-s2">疾病負擔：比例不小，能見度不高</a></li><li><a href="#bt-s3">年齡是最強的分布變項</a></li><li><a href="#bt-s4">臨床要點摘要</a></li><li><a href="#bt-s5">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">定義先於判讀</h2>
 <p>Cerebral small vessel disease（CSVD）指的是小動脈、微血管與小靜脈的慢性、進行性病變，這些血管負責供應腦白質以及灰質的深部結構。受累血管的管徑落在 50–400 µm 之間，病變最終表現為皮質下腦白質的損傷。定義中值得留意的是血管種類的涵蓋範圍：它不只是小動脈的問題，微血管與小靜脈同樣被納入，這在後續談到靜脈膠原化或血腦障壁通透性時會再回來。</p>
 <p>這篇綜論同時提醒，CSVD 是一個動態的疾病歷程，並不侷限於腦血管，而是牽動全身。臨床上這句話的意義在於，當影像出現小血管病變時，患者的腎臟、視網膜與心血管系統往往處在同一條病理光譜上，而不是各自獨立的老化現象。它在臨床上表現異質，並且是最常見的腦血管疾病。</p>
 <p>診斷端則有明確的偏好。CSVD 在腦部磁振造影與電腦斷層上都可辨認，但 MRI 的敏感度與特異度都較高。這使得以 CT 描述「白質低密度」時，實際上只捕捉到病變較嚴重的一端；許多早期或散在的病灶要到 MRI 才會現形。</p>
-<h2>疾病負擔：比例不小，能見度不高</h2>
+<h2 id="bt-s2">疾病負擔：比例不小，能見度不高</h2>
 <p>把 CSVD 放回流行病學位置，它的份量與臨床能見度並不相稱。這篇綜論引用的估計是：CSVD 約占全部中風的 20%，其中占缺血性中風的 25%，並占血管性失智的 45%。這三個數字分別對應三種臨床情境——急性中風收治、缺血性中風的病因分類，以及失智症的病因評估——而 CSVD 在三者中都不是邊緣角色。</p>
 <p>另一組數字說明它為何常被忽略。CSVD 出現的頻率是中風的 6–10 倍。也就是說，多數 CSVD 並不以急性事件的形式進入醫療系統，而是安靜地累積。無症狀腦梗塞是腦部影像上最常見的偶然發現，尤其在年長者。80 歲以上的族群中，高達 25% 曾發生過一次無症狀中風。而每出現一次症狀性中風，大約對應約 10 個無症狀的腦部變化。</p>
 <p>這個比例關係值得在判讀報告時放在心上。當一位患者因頭暈或頭痛接受 MRI，報告提到陳舊性腔隙或白質高訊號，這通常不是檢查的意外收穫，而是統計上早該預期的結果。真正的臨床問題不是「為什麼會有這些病灶」，而是「這些病灶對應什麼樣的血管危險因子累積」。</p>
-<h2>年齡是最強的分布變項</h2>
+<h2 id="bt-s3">年齡是最強的分布變項</h2>
 <p>CSVD 的盛行率隨年齡上升，且未見顯著的性別差異。白質高訊號的盛行率從 50 歲族群的約 5%，一路上升到 90 歲族群的接近 100%。腦微出血的盛行率則從 45–50 歲的 6.5%，上升到 80–89 歲的約 36%。</p>
 <p>白質高訊號在高齡接近全面出現這一點，容易被解讀成「既然人人都有，就不必在意」。但盛行率高與臨床無害是兩回事：後續篇章會處理病灶負荷量與認知、步態、中風風險之間的關係。年齡讓病灶變得普遍，並不讓它變得中性。</p>
 <p>族群差異也存在。這篇綜論指出 CSVD 病灶在華人族群較為常見，腔隙性中風占其缺血性事件的 46%。這個比例對台灣的臨床實務有直接意義：在以西方族群資料為主的分類經驗中，腔隙性中風常被視為缺血性中風的一個亞型；在華人族群，它接近一半。</p>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s4">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>綜論所載內容</th><th>判讀界線</th></tr></thead>
 <tbody>
@@ -123,7 +143,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>族群差異</td><td>華人族群病灶較常見，腔隙性中風占缺血性事件 46%</td><td>分類經驗不宜直接沿用西方比例</td></tr>
 <tr><td>影像工具</td><td>CT 與 MRI 皆可辨認，MRI 敏感度與特異度較高</td><td>CT 僅能捕捉較嚴重的一端</td></tr>
 </tbody></table></div>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s5">臨床判讀重點</h2>
 <p>第一個判讀重點是，把 CSVD 當成診斷而非描述。報告上的白質高訊號、陳舊性腔隙、微出血，各自都是 CSVD 的影像表徵，而不是彼此無關的老化註記。當這些字眼出現時，臨床上該啟動的是血管危險因子的盤點，而不只是在病歷寫下「與年齡相符」。</p>
 <p>第二個重點是分母意識。20%、25%、45% 這三個比例分別對應全部中風、缺血性中風與血管性失智，不能互相替換，也不能改寫成「CSVD 造成 45% 的失智」。同樣地，華人族群 46% 講的是腔隙性中風占缺血性事件的比例，不是占全部中風的比例。這類數字在教學與衛教轉述時最容易失真。</p>
 <p>第三個重點是年齡的雙面性。年齡讓 CSVD 的盛行率上升到 90 歲時的接近全面，這使得「有沒有病灶」在高齡族群幾乎失去鑑別力；真正有意義的問題轉向病灶的量、分布與進展速度。相對地，在中壯年患者身上看到明顯的 CSVD，其訊息量就大得多，這也是後續篇章要處理遺傳型病因的原因。</p>

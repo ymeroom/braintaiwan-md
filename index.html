@@ -220,6 +220,13 @@ footer {
   text-align: center; padding: 20px; font-size: 11pt; margin-top: 40px;
 }
 footer a { color: rgba(255,255,255,0.55); text-decoration: none; }
+/* bt-search:start */
+.bt-search{max-width:1160px;margin:8px auto 18px;padding:0 20px}
+.bt-search input{width:100%;box-sizing:border-box;padding:13px 18px;font-size:13pt;border:2px solid #cfd8e3;border-radius:28px;outline:none;background:#fff}
+.bt-search input:focus{border-color:#1565c0}
+.bt-search-hint{margin:8px 6px 0;font-size:10.5pt;color:#607d8b;min-height:1.4em}
+.bt-hide{display:none !important}
+/* bt-search:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/">
 </head>
@@ -300,6 +307,42 @@ footer a { color: rgba(255,255,255,0.55); text-decoration: none; }
     <div class="path-note"><strong>定位：</strong>BrainTaiwan MD 是給醫療專業人員的神經科指引導讀與臨床整理；急診現場工具請使用 ER，病人衛教與一般讀者文章請使用 Media。</div>
   </section>
 
+<!-- bt-search:start -->
+  <div class="bt-search"><input type="search" id="bt-q" placeholder="搜尋全站導讀：藥名、疾病、指引…（例如 rimegepant、癲癇重積、CIDP）" autocomplete="off" aria-label="搜尋導讀"><div class="bt-search-hint" id="bt-hint"></div></div>
+  <script>
+  (function(){
+    var q=document.getElementById('bt-q'),hint=document.getElementById('bt-hint');
+    // 腳本位於分類區塊之前，執行當下卡片尚未解析；改在第一次搜尋時才收集
+    var topics,initOpen,cards,grids;
+    function init(){
+      if(cards)return;
+      topics=[].slice.call(document.querySelectorAll('details.topic'));
+      initOpen=topics.map(function(d){return d.open});
+      cards=[].slice.call(document.querySelectorAll('a.card'));
+      grids=[].slice.call(document.querySelectorAll('.card-grid'));
+      cards.forEach(function(c){c._t=c.textContent.toLowerCase().replace(/\s+/g,' ')});
+    }
+    function sib(el,dir){var s=el[dir];return s&&s.nodeType===1?s:null}
+    function run(){
+      init();
+      var terms=q.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+      document.querySelectorAll('.bt-hide').forEach(function(e){e.classList.remove('bt-hide')});
+      if(!terms.length){topics.forEach(function(d,i){d.open=initOpen[i]});hint.textContent='';return}
+      var hit=0;
+      cards.forEach(function(c){var ok=terms.every(function(t){return c._t.indexOf(t)>-1});if(ok)hit++;else c.classList.add('bt-hide')});
+      grids.forEach(function(g){
+        if(g.querySelector('a.card:not(.bt-hide)'))return;
+        g.classList.add('bt-hide');
+        var p=sib(g,'previousElementSibling');if(p&&!p.classList.contains('card-grid')&&p.tagName==='DIV'&&!p.className)p.classList.add('bt-hide');
+        var nx=sib(g,'nextElementSibling');if(nx&&nx.classList.contains('guideline-note'))nx.classList.add('bt-hide');
+      });
+      topics.forEach(function(d){var any=d.querySelector('a.card:not(.bt-hide)');d.open=!!any;if(!any)d.classList.add('bt-hide')});
+      hint.textContent=hit?('找到 '+hit+' 篇'):'找不到符合的導讀，試試其他關鍵字';
+    }
+    var t;q.addEventListener('input',function(){clearTimeout(t);t=setTimeout(run,120)});
+  })();
+  </script>
+  <!-- bt-search:end -->
   <!-- 梗塞性腦中風 -->
   <details class="topic" id="stroke" open>
     <summary class="topic-head">

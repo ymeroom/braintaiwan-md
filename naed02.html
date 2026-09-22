@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/naed02.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 02 篇</strong>　在成人新診斷局部癲癇這一題上，2018 更新版給出了三個正向建議：lamotrigine 是 Level B，levetiracetam 與 zonisamide 各是 Level C。這三個建議背後的試驗有一個共同結構——終點都是「與 carbamazepine 相當」，沒有一個證明比較好。這一篇拆解那個「相當」是怎麼測出來的，以及為什麼真正把這三個藥分開的是不良反應而不是療效。</p>
 </blockquote>
-<h2>證據池有多大</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">證據池有多大</a></li><li><a href="#bt-s2">Levetiracetam：療效打平，副作用換形狀</a></li><li><a href="#bt-s3">Zonisamide：非劣性試驗的正確讀法</a></li><li><a href="#bt-s4">Lamotrigine 的 Level B 是怎麼拼出來的</a></li><li><a href="#bt-s5">「或未分類強直陣攣發作」這半句要打折</a></li><li><a href="#bt-s6">還有一件事：這些比較都不是彼此之間的比較</a></li><li><a href="#bt-s7">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">證據池有多大</h2>
 <p>2004 年之後，針對「成人新診斷、局部癲癇或未分類強直陣攣發作的單一治療」，新增了 <strong>2 篇 Class I、5 篇 Class II、2 篇 Class III</strong> 研究。其中兩篇專門收高齡族群：一篇收 <strong>≥60 歲</strong>、一篇收 <strong>≥65 歲</strong>。</p>
 <p>九篇研究要撐起十條建議，而其中四條是正向的。先把正向的那四條攤開：</p>
 <div class="bt-tablewrap"><table>
@@ -109,7 +129,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>4</td><td>ZNS 可被考慮用於降低發作頻率</td><td><strong>Level C</strong></td></tr>
 </tbody></table></div>
 <p>適用族群寫的是「新診斷局部癲癇<strong>或未分類強直陣攣發作</strong>」，但這個「或」後面的部分在結論裡被自己收回去了，稍後處理。</p>
-<h2>Levetiracetam：療效打平，副作用換形狀</h2>
+<h2 id="bt-s2">Levetiracetam：療效打平，副作用換形狀</h2>
 <p>支持 LEV 的是一篇 Class II 研究。設計是 <strong>LEV 1,000–3,000 mg/d</strong> 對上 <strong>CBZ-CR 400–1,200 mg/d</strong>。</p>
 <p>結果很乾淨也很無聊：<strong>6 個月與 1 年的無發作率幾乎完全相同</strong>。指引用的字是 almost identical。</p>
 <p>有差別的是不良反應的種類：</p>
@@ -119,7 +139,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>兩邊一樣多</strong>：頭痛、疲倦、嗜睡、頭暈——這四項同時是兩個藥各自最常見的不良反應</li>
 </ul>
 <p>換句話說，選 LEV 而不選 CBZ-CR，換到的不是更好的癲癇控制，而是把「體重增加」這類代謝負擔換成「情緒與睡眠」這類精神科負擔。這個交換對一位本來就有憂鬱病史的病人、和對一位在意體重的病人，答案完全相反。</p>
-<h2>Zonisamide：非劣性試驗的正確讀法</h2>
+<h2 id="bt-s3">Zonisamide：非劣性試驗的正確讀法</h2>
 <p>支持 ZNS 的同樣是一篇 Class II 雙盲研究，設計為<strong>非劣性試驗</strong>：<strong>ZNS 300–500 mg/d</strong> 對上 <strong>CBZ-CR 600–1,200 mg/d</strong>。</p>
 <p>收案族群值得留意：<strong>局部起源癲癇佔 74%，起源不明佔 26%</strong>。也就是有四分之一的受試者其實沒有明確的局部起源證據。</p>
 <p>主要終點是<strong>達成 26 週無發作的病人比例</strong>，兩組的結果「幾乎相同」。</p>
@@ -130,7 +150,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>兩者皆常見</strong>：頭痛、頭暈、嗜睡</li>
 </ul>
 <p>非劣性設計有一個容易被跳過的前提：它證明的是「不比對照藥差到超過某個預設界線」，而不是「和對照藥一樣好」，更不是「比對照藥好」。當結論寫成 possibly as effective as CBZ-CR（可能與 CBZ-CR 一樣有效），能推導出的臨床行動是「在有理由避開 CBZ-CR 的時候，ZNS 是一個不會讓癲癇控制變差的替代」，而不是「ZNS 應該優先於 CBZ-CR」。</p>
-<h2>Lamotrigine 的 Level B 是怎麼拼出來的</h2>
+<h2 id="bt-s4">Lamotrigine 的 Level B 是怎麼拼出來的</h2>
 <p>LTG 拿到的等級最高，但它的證據來源比另外兩個藥零散。</p>
 <p>指引的結論 1 寫的是：<strong>LTG 在 ≥60 歲的新診斷局部癲癇很可能有效（1 篇 Class I、1 篇 Class II）</strong>。也就是說，這一條的直接證據<strong>完全來自高齡族群的試驗</strong>——那兩篇是第 03 篇的主角。</p>
 <p>那麼建議 1 那個不分年齡的 Level B 從哪裡來？答案在結論 7：pregabalin 對 LTG 的那篇 Class II 研究，加上 <strong>2004 年指引裡那 3 篇已經被降為 Class II 的 LTG 研究</strong>，合起來「suggest that LTG is probably effective」。</p>
@@ -144,7 +164,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>2004 年的 3 篇 LTG 研究</td><td>Class II（<strong>由 Class I 降級</strong>）</td><td>一般成人</td></tr>
 </tbody></table></div>
 <p>在這四項裡，唯一一篇 Class I 是在 ≥65 歲做的，而唯一一組直接針對一般成人的原始證據，是被降過級的舊研究。LTG 的 Level B 因此比它的等級聽起來要薄一些——這不是說它不該被考慮，而是說它與 LEV、ZNS 之間的等級落差，有一部分來自證據件數的累積，而不是效果量的差距。</p>
-<h2>「或未分類強直陣攣發作」這半句要打折</h2>
+<h2 id="bt-s5">「或未分類強直陣攣發作」這半句要打折</h2>
 <p>建議 1、3、4 的適用族群都寫著「局部癲癇<strong>或未分類 GTC 發作</strong>」，但結論裡對 LEV 與 ZNS 各補了一句幾乎相同的話：</p>
 <blockquote>
 <p>Not enough patients experienced unclassified GTC seizures to identify differences between CBZ-CR and LEV／ZNS.</p>
@@ -152,10 +172,10 @@ article, article *{overflow-wrap:break-word}
 <p>也就是這兩篇研究裡出現未分類 GTC 發作的病人<strong>數量不足以看出任何差別</strong>。結論 10 把這件事推到全面：<strong>證據不足以證實任何抗癲癇藥對未分類 GTC 發作的療效，因為沒有任何一篇研究收到足夠的這類病人。</strong></p>
 <p>指引在臨床脈絡段落也重申：所回顧的資料適用於局部癲癇，這限制了對未分類 GTC 發作做出建議的能力。</p>
 <p>實務上的讀法是：這三條建議請當成<strong>局部癲癇的建議</strong>。標題上的那半句是行政上的納入範圍，不是被證據支持的範圍。</p>
-<h2>還有一件事：這些比較都不是彼此之間的比較</h2>
+<h2 id="bt-s6">還有一件事：這些比較都不是彼此之間的比較</h2>
 <p>LTG、LEV、ZNS 三個藥，各自都與 carbamazepine 的某個劑型比較過，但<strong>沒有任何一篇研究把它們拿來互比</strong>。指引在未來研究建議裡把這個缺口講得很直接：那些被證實與 LTG 或與 CBZ-CR／VPA 相當的藥，應該進行<strong>彼此之間的雙盲對照平行試驗</strong>。</p>
 <p>這代表當門診上要在 LTG、LEV、ZNS 三者之間做選擇時，指引能提供的依據不是療效資料，而是上面那些不良反應的形狀差異、加上藥物交互作用與共病考量。這不是指引寫得不好，是這類頭對頭試驗根本還沒有人做。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s7">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>文獻實際說法</th></tr></thead>
 <tbody>

@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/mtd04.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 04 篇</strong>　Aicardi-Goutières 症候群長期被歸類為第一型干擾素病，DNASE2 缺乏被歸類為先天免疫錯誤，Perrault 症候群被歸類為卵巢功能不全加聽損。這篇綜論把它們放進同一張表——因為它們共用同一個機轉：<strong>該被降解掉的 mtDNA 沒有被降解掉。</strong> 這一篇處理核酸酶、粒線體自噬與蛋白酶，以及一個對神經科很直接的問題：SPG7 造成的痙攣性共濟失調，會不會也是一種發炎病？</p>
 </blockquote>
-<h2>完整性是三件事的平衡</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 9 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">完整性是三件事的平衡</a></li><li><a href="#bt-s2">Aicardi-Goutières：一個已經被當成干擾素病的粒線體故事</a></li><li><a href="#bt-s3">MGME1：從 CPEO 到腎衰竭</a></li><li><a href="#bt-s4">粒線體自噬：清運系統</a></li><li><a href="#bt-s5">DNASE2：粒線體病與先天免疫錯誤的交界</a></li><li><a href="#bt-s6">蛋白質恆定：四個蛋白酶，四種病</a></li><li><a href="#bt-s7">蛋白水解壓力下，mtDNA 怎麼出去的</a></li><li><a href="#bt-s8">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">完整性是三件事的平衡</h2>
 <p>mtDNA 的完整性靠<strong>精細調校且協調的複製、修復與降解</strong>維持。<strong>核酸酶</strong>在其中扮演關鍵角色——它們透過控制 mtDNA 與 mtRNA 的濃度來調節粒線體基因表現，並參與受損 mtDNA 的修復。</p>
 <p>上一篇談的是複製端。這一篇談的是另外兩端：修復與降解。而這兩端出問題時，表型往往長得不像粒線體病，像免疫病。</p>
-<h2>Aicardi-Goutières：一個已經被當成干擾素病的粒線體故事</h2>
+<h2 id="bt-s2">Aicardi-Goutières：一個已經被當成干擾素病的粒線體故事</h2>
 <p><strong>RNASEH2A 與 RNASEH2B 的突變造成 Aicardi-Goutières 症候群</strong>——作者的描述是「一種以神經學與免疫學特徵為特色、與釋放的 mtDNA 有關的罕見疾病」。</p>
 <p>帶有這些缺陷的細胞株表現出的變化，順序是這樣的：</p>
 <div class="bt-tablewrap"><table>
@@ -112,17 +132,17 @@ article, article *{overflow-wrap:break-word}
 <tr><td>結果</td><td><strong>mtDNA 釋放</strong>，經 <strong>cGAS-STING 與 TLR9-NF-κB 兩條路</strong>造成發炎</td></tr>
 </tbody></table></div>
 <p>值得注意的是「加速」這個詞——VDAC 寡聚不是被新造出來的異常，是本來就有的過程被推快了。</p>
-<h2>MGME1：從 CPEO 到腎衰竭</h2>
+<h2 id="bt-s3">MGME1：從 CPEO 到腎衰竭</h2>
 <p><strong>粒線體基因組維持外切酶 1（MGME1）切割單股 DNA 受質與 DNA flap</strong>。它缺席時，<strong>因複製停滯而出現單股中間產物與短 mtDNA 片段增加</strong>，暗示這個酶在粒線體複製的終止上有角色。</p>
 <p>臨床端：<strong>MGME1 的雙等位基因突變造成嚴重的多系統神經疾病，包含慢性進行性外眼肌麻痺、肌病變、腸胃道與呼吸功能障礙。</strong></p>
 <p>小鼠端把發炎那一半補齊了。缺乏 Mgme1 的小鼠證實 mtDNA 不穩定，<strong>基礎單股 DNA 增加</strong>；這些動物<strong>發展出慢性進行性腎病變，伴隨免疫浸潤與高濃度的循環發炎細胞激素</strong>。原始研究另記錄到<strong>線性 mtDNA 片段</strong>，以及發炎性疾病症狀、<strong>腎病症候群、體重減輕與視網膜病變</strong>。</p>
 <p>而最新的機轉補充相當具體：<strong>MGME1 的喪失促進異常的核糖核苷酸被併入 mtDNA，導致其釋放至細胞質、活化 cGAS-STING 路徑，並產生年齡依賴性的發炎反應，驅動該小鼠模型的腎衰竭。</strong></p>
 <p>「年齡依賴性」這四個字在罕病領域不常見。它意味著這條路徑的病理是<strong>累積</strong>出來的，不是一開始就固定的——理論上也意味著有介入的時間窗。</p>
-<h2>粒線體自噬：清運系統</h2>
+<h2 id="bt-s4">粒線體自噬：清運系統</h2>
 <p>粒線體與 mtDNA 經由溶酶體降解被移除，這種特化的自噬形式稱為<strong>粒線體自噬（mitophagy）</strong>。作者指出，<strong>受損的粒線體自噬已在數個自體免疫與老化模型中與細胞質 mtDNA 釋放連上關係</strong>。</p>
 <p>其中一條路徑，典型由大範圍粒線體損傷觸發：<strong>粒線體泛素激酶 PINK1 與 E3 泛素連接酶 Parkin 驅動標記過程，以清除功能失調的粒線體</strong>。而<strong>這些基因的突變造成早發性巴金森氏症，其中發炎已被認定為病理生理的關鍵成分</strong>。</p>
 <p>這裡有一個容易被忽略的細節：<strong>Pink/Parkin 負向調節粒線體衍生囊泡（MDV）的形成，以及粒線體成分被送往多囊泡體的過程。</strong> 也就是說，PINK1/Parkin 不只是「開啟清運」，它同時在<strong>壓抑另一條輸出管道</strong>。這條管道正是第 05 篇會談到的「mtDNA 搭胞外囊泡跑到別的細胞」。</p>
-<h2>DNASE2：粒線體病與先天免疫錯誤的交界</h2>
+<h2 id="bt-s5">DNASE2：粒線體病與先天免疫錯誤的交界</h2>
 <p>由於 mtDNA 可以被運送到溶酶體，這個胞器就成了 mtDNA 釋放的重要調節者。<strong>DNase2 是參與自噬過程的核酸酶，在溶酶體中切割 DNA 受質，防止在凋亡或壓力誘發的 mtDNA 降解時產生發炎反應。</strong></p>
 <p>病人的表型完全不像典型粒線體病：<strong>帶有雙等位基因 DNASE2 功能喪失突變的病人表現為早發性貧血、反覆發燒、蛋白尿與腎臟疾病，伴隨溶酶體內 DNA 累積與第一型干擾素自體免疫反應。</strong></p>
 <p>作者在這裡下了一個明確的判斷：<strong>這證明了粒線體疾病與先天免疫錯誤（inborn errors of immunity）之間的重疊</strong>，並暗示<strong>失衡的 mtDNA 生成與降解，與先天免疫發炎反應的活化密切相連</strong>——當自噬／粒線體自噬這類降解機制失效時，這個反應就被啟動。</p>
@@ -132,7 +152,7 @@ article, article *{overflow-wrap:break-word}
 <li>該模型顯示<strong>器官衰竭可歸因於發炎的肝毒性與心毒性效應</strong>。</li>
 <li>而在心臟模型中，<strong>抑制 TLR9 挽救了心肌病變與發炎</strong>。</li>
 </ul>
-<h2>蛋白質恆定：四個蛋白酶，四種病</h2>
+<h2 id="bt-s6">蛋白質恆定：四個蛋白酶，四種病</h2>
 <p>健康粒線體蛋白質體的維持仰賴三件事：<strong>跨越兩層膜的正確蛋白質輸入、由伴護蛋白與蛋白酶執行的摺疊與品管、以及粒線體轉錄–轉譯偶聯的正確平衡</strong>。而<strong>粒線體蛋白質恆定機器的失敗具有多效性影響，包括先天免疫路徑的活化</strong>。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>蛋白酶</th><th>疾病</th><th>與 mtDNA 釋放的連結</th></tr></thead>
@@ -144,7 +164,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>LONP1 這一格還有一個側面線索：<strong>在全身性紅斑狼瘡小鼠模型的 CD4⁺ T 細胞中發現高濃度的 LonP1</strong>，該處<strong>細胞質 mtDNA 增加與 cGAS-STING-TBK1 發炎路徑活化介導了免疫活化</strong>。但作者立刻補上：<strong>LonP1 如何決定 mtDNA 釋放，尚未被探討。</strong></p>
 <p>Perrault 症候群這一格則提醒了異質性：<strong>其他造成 Perrault 症候群的原因包括各種粒線體蛋白質合成缺陷，或罕見的 mtDNA 複製缺陷。</strong> 同一個臨床症候群，不同的分子入口。</p>
-<h2>蛋白水解壓力下，mtDNA 怎麼出去的</h2>
+<h2 id="bt-s7">蛋白水解壓力下，mtDNA 怎麼出去的</h2>
 <p>這是這一節唯一還沒有答案的機轉問題。作者的措辭很保守：<strong>在蛋白水解壓力下 mtDNA 如何抵達細胞質尚未被完全理解；然而，膜通透性的增加看來是驅動機制之一。</strong></p>
 <p><strong>mPTP</strong> ——一個介導粒線體膜對離子與其他分子通透性增加的推定通道——<strong>已被提出在粒線體壓力源下介導 mtDNA 釋放與細胞質 DNA 感測器的活化</strong>。</p>
 <p>而 SPG7 這裡是本篇對神經科最直接的一段。作者的結尾是：<strong>雖然在病人來源細胞中已觀察到 mPTP 開放的受損，但 SPG7 與 AFG3L2 的致病變異對先天免疫訊號的影響仍未被探討。</strong></p>
@@ -157,7 +177,7 @@ article, article *{overflow-wrap:break-word}
 <p>最後，PINK1/Parkin <strong>負向調節</strong> MDV 形成這一點值得警覺。我們談巴金森氏症的粒線體自噬時，習慣的敘事是「清不掉壞粒線體 → 累積 → 神經元死亡」。但如果 PINK1/Parkin 同時在踩住另一條輸出路（囊泡外送），那麼它失能之後，多出來的不只是沒清掉的垃圾，還有<strong>被送出去的粒線體物質</strong>。後者是會跨細胞傳播的訊號。這對「巴金森病理如何擴散」的討論是另一種可能性——但這篇沒有往下講，它只把這條線指出來。</p>
 </blockquote>
 <p>清運系統壞掉會發炎，蛋白酶壞掉會發炎，膜壞掉會發炎。到目前為止都還在機轉層次。剩下的問題是：這些在病人身上量得到嗎？以及，量到了之後能做什麼？</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s8">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
 <tbody>

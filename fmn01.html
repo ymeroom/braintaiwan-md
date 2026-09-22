@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/fmn01.html">
 </head>
@@ -97,16 +116,17 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 01 篇</strong>　這是 NEJM《Clinical Practice》二〇二六年七月的纖維肌痛症專論，作者是密西根大學慢性疼痛與疲勞研究中心的 Williams 與 Clauw——後者正是把「nociplastic pain（傷害可塑性疼痛）」這個詞推進國際疼痛學會正式語彙的人之一。整篇文章的骨幹只有一句話：纖維肌痛症的問題不在受傷的組織，而在一個對感覺輸入過度反應的中樞神經系統。這一篇先把這個定位講清楚，也把它一路被質疑「到底是不是病」的歷史交代完。</p>
 </blockquote>
-<h2>先看規模：4%–6%，而且門診每天都會遇到</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">先看規模：4%–6%，而且門診每天都會遇到</a></li><li><a href="#bt-s2">一段被反覆質疑合法性的歷史</a></li><li><a href="#bt-s3">過去二十年翻的案：疼痛可以從中樞長出來</a></li><li><a href="#bt-s4">治療目標因此被重新定義</a></li><li><a href="#bt-s5">它很少單獨出現：慢性重疊疼痛狀況</a></li><li><a href="#bt-s6">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">先看規模：4%–6%，而且門診每天都會遇到</h2>
 <p>纖維肌痛症影響<strong>約 4% 至 6% 的美國人口</strong>，全球盛行率相近。跟多數慢性疼痛狀況一樣，它影響女性與女孩的比例是男性與男孩的 <strong>1.5 至 2 倍</strong>。</p>
 <p>這個數字值得先記住，因為它跟站上另一份 J Clin Med 綜論導讀給的「2%–8%、女男 3:1」不完全一樣——不同的盛行率估計來自不同的診斷準則與取樣族群，兩份文獻都對，只是量尺不同。NEJM 這份採的是較保守、以美國人口為基準的區間。</p>
 <p>纖維肌痛症的<strong>核心症狀是持續、廣泛的疼痛</strong>，但真正讓病人生活受影響的，往往是那一整組跟著來的東西：睡眠、情緒、疲勞、記憶問題，以及<strong>對非疼痛性感覺刺激（光線、聲音、氣味）的敏感</strong>。</p>
 <p>這些病人是醫療體系的高頻使用者。原文引一項研究估計，他們的<strong>照護花費約為配對對照組的 3 倍</strong>。這句話的臨床意義不只是成本——它反映的是這群人一直在系統裡繞，卻很少被正確標定。</p>
-<h2>一段被反覆質疑合法性的歷史</h2>
+<h2 id="bt-s2">一段被反覆質疑合法性的歷史</h2>
 <p>纖維肌痛症有一段漫長而充滿爭議的歷史。它最早被稱為 <strong>fibrositis（纖維組織炎）</strong>，後來叫 <strong>fibrositis syndrome</strong>，當時認為病灶是<strong>發炎且壓痛的肌肉組織</strong>，並伴隨睡眠問題。</p>
 <p>名稱後來改成 <strong>fibromyalgia syndrome（纖維肌痛症候群）</strong>，最後簡化為 <strong>fibromyalgia</strong>——改名的原因很直接：<strong>找不到任何周邊發炎的證據</strong>。</p>
 <p>而正是這個「找不到」讓它長年被懷疑。無法在周邊組織找到發炎源或可觀察的損傷，讓許多人<strong>質疑這個病的合法性</strong>。這是理解整篇文章立場的關鍵背景：作者不是在介紹一個新病，而是在替一個被懷疑了幾十年的病，把神經生物學的地基補上。</p>
-<h2>過去二十年翻的案：疼痛可以從中樞長出來</h2>
+<h2 id="bt-s3">過去二十年翻的案：疼痛可以從中樞長出來</h2>
 <p>轉折發生在最近二十年。<strong>大量研究反覆顯示纖維肌痛症有許多客觀的神經生物學基礎</strong>。這些發現累積到一個程度，促成了<strong>國際疼痛學會（IASP）正式承認：疼痛可以源自中樞神經系統，而周邊組織的輸入極少、甚至沒有。</strong></p>
 <p>這種疼痛被命名為 <strong>nociplastic pain（傷害可塑性疼痛）</strong>。它的意思是<strong>中樞神經的可塑性變化，導致中樞對「傷害性輸入」與「非傷害性輸入」都變得敏感化</strong>。</p>
 <p>這裡有一個很多人會漏掉的重點：敏感化的對象<strong>不只是痛覺</strong>。對疼痛性與非疼痛性感覺刺激的<strong>雙重過度敏感</strong>，被認為是纖維肌痛症許多症狀的共同底層——這也解釋了為什麼病人會同時怕痛、怕光、怕吵、怕味道。它們不是各自獨立的抱怨，而是同一個過度反應的中樞在不同感官上的表現。</p>
@@ -117,10 +137,10 @@ article, article *{overflow-wrap:break-word}
 <tr><td>Fibromyalgia syndrome</td><td>廣泛肌肉疼痛症候群</td><td>過渡命名</td></tr>
 <tr><td>Fibromyalgia</td><td>中樞處理異常（nociplastic pain）</td><td>二十年神經生物學證據支持</td></tr>
 </tbody></table></div>
-<h2>治療目標因此被重新定義</h2>
+<h2 id="bt-s4">治療目標因此被重新定義</h2>
 <p>一旦接受疼痛來自中樞，治療的目標就跟著改寫。原文把這句話講得很乾脆：<strong>治療的目標不是去「修好」周邊的病理，而是安撫那個促成「中樞放大型疼痛」的感覺過度反應。</strong></p>
 <p>「CNS-augmented pain（中樞放大型疼痛）」這個描述值得標記。它意味著在纖維肌痛症裡，疼痛訊號的問題出在<strong>放大的環節</strong>，不在感測端。這也預告了整份文章後面所有治療邏輯——為什麼消炎藥沒用、為什麼中樞作用藥物才是主力、為什麼運動與行為介入能改變病程。</p>
-<h2>它很少單獨出現：慢性重疊疼痛狀況</h2>
+<h2 id="bt-s5">它很少單獨出現：慢性重疊疼痛狀況</h2>
 <p>纖維肌痛症不是唯一受 nociplastic pain 影響的疼痛狀況。<strong>二〇一六年，美國國家衛生研究院（NIH）辨識出 10 種</strong>，這些慢性疼痛狀況在纖維肌痛症病人身上<strong>共同出現的頻率高於其他慢性疼痛狀況</strong>，它們的共通點是：</p>
 <ul>
 <li>影響女性與女孩多於男性與男孩</li>
@@ -129,7 +149,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>這 10 種被統稱為<strong>慢性重疊疼痛狀況（chronic overlapping pain conditions, COPC）</strong>。而更近期，<strong>國際疾病分類第 11 版（ICD-11）把許多 COPC 歸類為「原發性疼痛（primary pain）」</strong>——意思是疼痛本身就是主要問題，而不是繼發於某個其他疾病（例如退化性關節炎）的次要問題。</p>
 <p>這個「原發 vs 繼發」的區分，是後面理解「纖維肌痛症可以單獨存在，也可以疊加在自體免疫疾病之上」的入口，下一篇會接著談它怎麼長出來。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s6">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>NEJM 這篇的實際說法</th></tr></thead>
 <tbody>

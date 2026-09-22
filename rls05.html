@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/rls05.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 5 篇（完）</strong>　以 StatPearls（NBK430878）為查核來源 StatPearls. <em>Restless Legs Syndrome</em>（更新 2023-02-27）</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、非藥物：輕症的主角，重症的幫手</a></li><li><a href="#bt-s2">二、預後：一個必須照實說的數字</a></li><li><a href="#bt-s3">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>很多人一聽到「不寧腿」就直接想到吃藥，其實處置順序裡，藥往往是排在後面的那一步。整套邏輯其實很乾淨：先把鐵補起來、把那些會火上加油的藥拿掉，接著試非藥物，真的不夠了才動用第一線藥物。前面四篇把鐵、誘發藥物、診斷、藥物治療都講完了，這一篇要談的是中間那塊最容易被略過、卻常常被低估的東西——你不靠處方也能做的事——以及一個我覺得醫病雙方都該誠實面對的數字。</p>
 <hr>
-<h2>一、非藥物：輕症的主角，重症的幫手</h2>
+<h2 id="bt-s1">一、非藥物：輕症的主角，重症的幫手</h2>
 <p>非藥物手段的價值，不是「比藥弱所以聊勝於無」，而是它在兩種情境下特別划算：<strong>症狀還輕的時候</strong>，它可能就夠了；<strong>症狀重、已經在吃藥的時候</strong>，它能當輔助，幫你把藥量壓低一點。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>手段</th><th>在做什麼</th><th>適合誰</th></tr></thead>
@@ -115,12 +135,12 @@ article, article *{overflow-wrap:break-word}
 <p>這裡面最值得單獨拉出來講的是<strong>睡前戒咖啡因</strong>。第 3 篇談誘發藥物時，咖啡因就名列其中——它本來就是會讓 RLS 惡化的東西。所以「戒咖啡因」嚴格說起來不算額外的治療招數，比較像是把一個你自己加上去的踩油門動作鬆開。很多人傍晚那杯咖啡或茶，正是讓他半夜腿動個不停的隱形元兇，而這件事不用花一毛錢、不用任何處方就能改。</p>
 <p>其餘那些——運動、冷熱水浴、按摩、振動與電刺激——共同點是<strong>安全、可疊加、沒有 augmentation 的包袱</strong>。它們不會像第 4 篇講的多巴胺促效劑那樣，用久了反而把症狀往前、往上半身推。對輕症的人，先從這裡開始試是很合理的；對已經在用第一線藥物的人，把這些當背景墊著，常常能讓整體控制更穩。</p>
 <hr>
-<h2>二、預後：一個必須照實說的數字</h2>
+<h2 id="bt-s2">二、預後：一個必須照實說的數字</h2>
 <p>非藥物聽起來很正向，但這一篇不能停在那裡。RLS 的預後有一個我認為必須照實講清楚的事實：<strong>約 70% 的患者，症狀會進展到中至重度。</strong></p>
 <p>這個數字的意思是——RLS 不是那種「處理一次就解決」的病。它是慢性的、會進展的。今天靠補鐵加睡前戒咖啡因壓得住的人，不代表三年後還壓得住；今天輕症的人，多數會往中重度走。所以這個病的正確心態不是「治好它」，而是<strong>長期追蹤、隨著它變化去調整</strong>：鐵的狀態要定期回頭看、誘發藥物清單要持續盤點、非藥物與藥物的組合要隨症狀升級而升級。</p>
 <p>把這件事在一開始就講明白，其實對病人是好的。否則一個原本以為「吃顆藥就沒事」的人，幾年後發現症狀更早出現、更難壓，很容易誤以為是治療失敗、或自己哪裡做錯了——而事實上，那只是這個病本來的樣子。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s3">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>

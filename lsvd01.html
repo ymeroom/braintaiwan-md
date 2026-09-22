@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/lsvd01.html">
 </head>
@@ -97,16 +116,17 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 1 篇</strong>　一個病人同時有頸動脈狹窄、又有一顆腔隙梗塞，你會不會很自然地把兩件事串成因果？這篇 Circulation 2026 的原著，用一整群 well-phenotyped 的病人告訴我們：這個直覺可能錯了，而且錯得有系統。第一篇先把病因之爭的來龍去脈、以及這個研究憑什麼能回答它，講清楚。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">腔隙中風的病因，吵了半個世紀</a></li><li><a href="#bt-s2">為什麼「狹窄」和「擴張」要分開看</a></li><li><a href="#bt-s3">Mild Stroke Study 3：這個 cohort 憑什麼能回答</a></li><li><a href="#bt-s4">先劇透結論的形狀</a></li></ol></details><!-- bt-toc:end -->
 <p>門診一個 68 歲男性，右手笨拙來看，MRI 是左側放射冠一顆小梗塞——典型的腔隙中風。頸動脈超音波順手一做，左側內頸動脈中度狹窄。報告寫完，很多人心裡的因果鏈就接起來了：狹窄 → 血流不足或斑塊掉下來 → 腔隙梗塞。但真的是這樣嗎？如果狹窄在對側，你還會這樣寫嗎？</p>
 <p>這一系列導讀依據的是 <em>Circulation</em> 2026 年 Han 等人、由愛丁堡 Wardlaw 團隊主導的前瞻研究。它想回答一個看似古老、卻一直沒被乾淨解決的問題：<strong>大血管的兩種病變——狹窄與擴張——各自對腔隙中風和腦小血管疾病（cerebral small-vessel disease, cSVD）意味著什麼？</strong></p>
-<h2>腔隙中風的病因，吵了半個世紀</h2>
+<h2 id="bt-s1">腔隙中風的病因，吵了半個世紀</h2>
 <p>腔隙中風佔缺血性中風的 <strong>20% 到 30%</strong>，數量不小。傳統上它被歸給內因性的小血管病，尤其是 Fisher 在 1968 年那幾篇經典臨床病理研究描述的「<strong>節段性小動脈崩解（segmental arterial disorganization）</strong>」——高血壓病人的小動脈出現管壁擴張、細胞與纖維素浸潤、管壁破壞，最後被纖維素樣物質塞住。</p>
 <p>問題是，這條路徑從來不是唯一的嫌疑犯。動脈粥狀栓塞、心源性栓塞、內因性微小動脈病三方，各自的貢獻一直有爭議。實務上更麻煩的是：大約 <strong>15%</strong> 的腔隙中風病人身上，找得到潛在的栓子來源，包括大血管的粥狀斑塊——但這些發現到底是「兇手」還是「路人」，並不清楚。</p>
 <p>這就是全篇的核心張力。<strong>看到一個病灶旁邊有大血管病變，不代表它就是成因。</strong> 要分辨共病（coassociation）與因果（causation），你需要一個設計得夠好的研究。</p>
-<h2>為什麼「狹窄」和「擴張」要分開看</h2>
+<h2 id="bt-s2">為什麼「狹窄」和「擴張」要分開看</h2>
 <p>大血管病變不是鐵板一塊。<strong>狹窄（large-artery stenosis, LAS）</strong> 來自動脈粥狀斑塊造成的局部管腔變窄；<strong>擴張／延長迂曲（dolichoectasia）</strong> 則一般被認為是非動脈粥狀的管壁擴大與迂曲。兩者在形態學上不同，背後的病生理也被認為不同，對下游小血管與中風亞型的影響、以及臨床意涵，理應各走各的路。</p>
 <p>過去研究的通病是：大多是橫斷面設計，而且很少在同一個 well-phenotyped 的中風世代裡、同時把狹窄與擴張兩者一起看、還帶縱向追蹤。於是結果彼此矛盾，誰也說服不了誰。這篇研究的野心，就是把這兩個表型放進<strong>同一群病人</strong>裡直接對比。</p>
-<h2>Mild Stroke Study 3：這個 cohort 憑什麼能回答</h2>
+<h2 id="bt-s3">Mild Stroke Study 3：這個 cohort 憑什麼能回答</h2>
 <p>研究對象來自 Mild Stroke Study 3，2018 到 2021 年在愛丁堡中風服務連續收案的前瞻世代。<strong>輕型中風</strong>定義為發病時 NIHSS &lt;8、且收案時（中風後 1 到 3 個月）mRS ≤2。排除 MRI 禁忌與嚴重神經／心／呼吸共病。所有人都接受指引標準的中風查因與次級預防。</p>
 <p>影像用單一台 3T 研究用掃描儀（Siemens Prisma），在基線、6 個月、12 個月評估；腔隙中風或中重度 WMH 者，額外在 3 或 9 個月加掃。臨床、認知、功能、MRI（含 index 與 incident 梗塞、cSVD markers）都在基線與一年測量。</p>
 <p>最終納入 <strong>229 人</strong>（平均年齡 <strong>65.9±11.1</strong> 歲、<strong>152 人（66.4%）為男性</strong>），其中 <strong>131 人（57.2%）是腔隙中風</strong>、<strong>98 人（42.8%）是非腔隙的輕型中風</strong>。這裡有一個設計上的關鍵——<strong>非腔隙輕型中風被拿來當嚴重度相當的對照組</strong>。</p>
@@ -119,7 +139,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>兩表型並列</td><td>LAS 與 BADE 同一群病人量測</td><td>直接比較，不受跨研究異質性汙染</td></tr>
 </tbody></table></div>
 <p>有了對照組、有了嚴格校正、又能縱向追蹤新發梗塞，這個 cohort 才有辦法把「腔隙病灶旁邊剛好有大血管病變」的共病，跟「大血管病變造成腔隙病灶」的因果，分到兩邊。</p>
-<h2>先劇透結論的形狀</h2>
+<h2 id="bt-s4">先劇透結論的形狀</h2>
 <p>後面幾篇會用數字一一展開，但先給你結論的輪廓，讀起來會更有方向感。這個 cohort 裡，<strong>狹窄（LAS）盛行率 20.5%、基底動脈擴張（BADE）盛行率 15.7%</strong>。而校正後，這兩個表型的命運完全分岔：狹窄倒向非腔隙中風、和 cSVD markers 無關；擴張則和腔隙亞型、幾乎所有 cSVD marker、以及一年的進展緊緊綁在一起。這個「分道揚鑣」就是整篇論文的主旋律。</p>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/mgp05.html">
 </head>
@@ -97,20 +116,21 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 05 篇</strong>　以 Brown, St George-Hyslop, Paolicelli &amp; Lemke（<em>Nat Rev Neurol</em> 2026;22:54–69）為主軸 AD 最強的危險因子不是任何一個基因，是年齡。這篇把兩個看似獨立的主題放在一起講——tau 病理與老化——因為串起它們的正是同一條線索：微膠細胞的吞噬選擇性，隨著年齡增長變得對 AD 更不利。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">Tau 的兩條入口：胞吞限制擴散，吞噬可能助長擴散</a></li><li><a href="#bt-s2">AD 病人腦中找到 tau 的微膠細胞：怎麼進去的？</a></li><li><a href="#bt-s3">老化：AD 最強的危險因子，在微膠細胞層級發生了什麼</a></li><li><a href="#bt-s4">老化以外：內毒素與 AD</a></li><li><a href="#bt-s5">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
 <hr>
-<h2>Tau 的兩條入口：胞吞限制擴散，吞噬可能助長擴散</h2>
+<h2 id="bt-s1">Tau 的兩條入口：胞吞限制擴散，吞噬可能助長擴散</h2>
 <p>微膠細胞處理胞外 tau 聚集體，主要走兩條不同的路。第一條是<strong>胞吞</strong>：透過 LRP1、CR4 或 P2Y12 這幾個受體把胞外 tau 聚集體吃進去，這篇綜論認為這條路徑<strong>限制了 tau 病理在腦中的擴散</strong>——大多數證據支持微膠細胞攝取 tau 聚集體是靠受體媒介的胞吞或飲液作用，只有部分證據支持吞噬也參與其中。</p>
 <p>第二條路是<strong>吞噬含 tau 的結構</strong>——被 tau 壓力刺激的神經元、神經元碎片、突觸或胞外囊泡。這條路可能帶來相反的結果：微膠細胞吞下這些含 tau 的結構之後，可能在腦的其他部位把聚集體重新釋放出來，反而<strong>增加了 tau 的擴散</strong>。胞外 tau 聚集體本身也能反過來誘發微膠細胞吞噬神經元；而被胞內 tau 聚集體壓力刺激的神經元與突觸，會優先被微膠細胞鎖定吞噬，導致神經元與突觸流失——在 tau 病變小鼠模型裡，減少微膠細胞吞噬反而有保護效果。</p>
-<h2>AD 病人腦中找到 tau 的微膠細胞：怎麼進去的？</h2>
+<h2 id="bt-s2">AD 病人腦中找到 tau 的微膠細胞：怎麼進去的？</h2>
 <p>多個研究團隊都在 AD 病人腦組織的微膠細胞裡找到 tau 聚集體，儘管微膠細胞本身幾乎不表現 tau，這代表這些 tau 一定是從外面被攝入的。攝入的路徑可能是胞吞胞外的（沒有膜包裹的）tau 聚集體，也可能是吞噬包在囊泡、碎片、突觸或神經元裡的聚集體。作者認為區分這兩條路徑很重要，因為原則上：<strong>前者（胞吞胞外聚集體）可能是有益的，透過移除 tau 種子；後者（吞噬含 tau 的結構）則可能是有害的</strong>，一方面移除了原本存活的突觸與神經元，一方面又可能散播 tau 種子。</p>
 <p>但作者也老實承認這個二分法沒有想像中乾淨——胞吞也可能導致 tau 在微膠細胞內被「播種」（seeding），而吞噬也可能是在處理掉種子而非散播它們，<strong>淨效益仍需要更多實證測試</strong>。一個潛在的治療方向是：抗 tau 聚集體的抗體可以透過 Fcγ 受體增加微膠細胞對聚集體的攝取與降解——這是潛在的治療機轉，但作者明確標註<strong>尚未經過測試</strong>。</p>
-<h2>老化：AD 最強的危險因子，在微膠細胞層級發生了什麼</h2>
+<h2 id="bt-s3">老化：AD 最強的危險因子，在微膠細胞層級發生了什麼</h2>
 <p>AD 最主要的危險因子是年齡。老年斑的 Aβ 聚集隨年齡出現，而 Aβ 的<strong>產量</strong>看起來並沒有隨年齡改變，這暗示年齡帶來的聚集，是因為清除能力下降——例如微膠細胞清除能力下降——而不是製造變多。</p>
 <p>老年小鼠的微膠細胞，相較於年輕小鼠，吞噬 Aβ 聚集體的能力確實下降，原因可能有好幾個同時作用：TREM2 表現減少、抑制性受體 siglec-2 表現增加、反轉錄轉座子 LINE-1 表現增加、脂滴增加，以及微膠細胞老化（senescence）程度增加。</p>
 <p>矛盾的地方在於：<strong>老年小鼠的微膠細胞對神經元碎片的吞噬反而增加</strong>。而且老年小鼠對突觸與神經元的吞噬也同步增加，這是老化本身伴隨記憶減退的原因之一——這個過程可以透過阻斷補體活化、TREM2 或 P2Y6 受體來預防。作者的結論是：<strong>AD 可能是把正常老化過程中就存在的突觸與記憶流失（同樣由微膠細胞吞噬媒介）給放大了</strong>，而不是憑空製造出一個全新的機制。</p>
-<h2>老化以外：內毒素與 AD</h2>
+<h2 id="bt-s4">老化以外：內毒素與 AD</h2>
 <p>老化之外還有一個常被忽略的非遺傳性危險因子：血中脂多醣內毒素（lipopolysaccharide）濃度升高，這會隨老化、感染、腸道菌相失衡而上升，也與 AD 有關。脂多醣本身會增加微膠細胞對突觸與神經元的吞噬，因此可能是另一條通向 AD 病理的路徑——這條路徑跟老化、腸道健康、慢性感染連在一起，提供了微膠細胞吞噬失調之外，一個生活型態與系統性發炎可以介入的切點。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s5">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>文獻實際說法</th></tr></thead>
 <tbody>

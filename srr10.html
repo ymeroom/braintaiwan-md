@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/srr10.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 10 篇</strong>　最後一篇讀指引的最後兩章：認知與溝通（§6，含認知訓練、失語、運動性言語障礙與空間忽略），以及轉銜照護與社區復健（§7，含照顧者、社區資源、遠距復健、性功能、休閒社交、重返職場與駕駛）。第 01 篇讀到指引把恢復定義為「沒有終點的過程」，這兩章就是在寫出院以後的那段路。兩章加起來有 12 節，這一篇只挑重點。</p>
 </blockquote>
-<h2>認知訓練：科技輔助勝過紙筆</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 12 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">認知訓練：科技輔助勝過紙筆</a></li><li><a href="#bt-s2">失語：密集治療的定義是每週 5 小時</a></li><li><a href="#bt-s3">構音障礙與言語失用</a></li><li><a href="#bt-s4">空間忽略：一半的人有，2.9% 被治療</a></li><li><a href="#bt-s5">出院之後：照顧者與社區資源</a></li><li><a href="#bt-s6">社區與遠距復健</a></li><li><a href="#bt-s7">性功能：超過一半，只有 2b</a></li><li><a href="#bt-s8">孤單是死亡風險</a></li><li><a href="#bt-s9">重返職場</a></li><li><a href="#bt-s10">重返駕駛</a></li><li><a href="#bt-s11">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">認知訓練：科技輔助勝過紙筆</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>推薦</th><th>COR</th><th>LOE</th></tr></thead>
 <tbody>
@@ -109,7 +129,7 @@ article, article *{overflow-wrap:break-word}
 <p>第一條的條件很多：<strong>有督導、中到高強度、針對缺損領域或隨進步調整</strong>，在這些條件下才<strong>優於傳統（紙筆）認知訓練</strong>。科技輔助包括<strong>電腦程式、互動遊戲與虛擬實境</strong>。<strong>照顧者也可以親自或透過遠距執行認知訓練。</strong></p>
 <p>合併身體活動的強度問題還沒解決：<strong>小樣本 RCT 顯示認知訓練加中高強度有氧優於低強度組合，但兩個樣本較大的 RCT 在慢性中風病人身上沒有看到差異。</strong></p>
 <p>知識缺口裡有一個跟上一章呼應的觀察：<strong>這些試驗常用 MMSE、MoCA 這類簡短篩檢工具當結果指標，儘管它們在測量有意義的認知變化上有明顯限制。</strong> 第 06 篇讀過，這兩個工具連忽略和失用都測不到。</p>
-<h2>失語：密集治療的定義是每週 5 小時</h2>
+<h2 id="bt-s2">失語：密集治療的定義是每週 5 小時</h2>
 <p><strong>後天神經性溝通障礙影響至少 30% 的中風存活者，包括失語與語用障礙。</strong></p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>推薦</th><th>COR</th><th>LOE</th></tr></thead>
@@ -128,7 +148,7 @@ article, article *{overflow-wrap:break-word}
 <p>溝通夥伴訓練是 Class 1，理由很人性：<strong>溝通夥伴能改善失語者的溝通可近性，減少社交孤立，以及缺乏溝通獨立帶來的挫折。</strong></p>
 <p>語用障礙是一個新名詞：<strong>「語用障礙」（apragmatism）是新採用的術語，描述主要與右半球中風相關的後天語用語言障礙。</strong> 它的治療研究<strong>相較失語仍在起步階段</strong>，目前<strong>甚至在推動建立新的 ICD-10-CM 診斷碼</strong>，因為現有的認知溝通障礙代碼捕捉不到特定的語用缺損。</p>
 <p>源文這一節有一處編號錯位：<strong>推薦 4 是密集治療、推薦 6 是電腦化治療，但支持文字 4 講的是電腦化治療，支持文字 6 講的才是密集治療。</strong></p>
-<h2>構音障礙與言語失用</h2>
+<h2 id="bt-s3">構音障礙與言語失用</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>推薦</th><th>COR</th><th>LOE</th></tr></thead>
 <tbody>
@@ -142,7 +162,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>非言語口腔動作運動（<strong>吐舌、拉嘴唇、單獨的下顎動作</strong>）這條的等級和同節的摘要不一致。支持文字寫<strong>言語是高度特化、任務特定的動作技能，非言語動作沒有充分啟動言語所需的複雜協調神經肌肉模式</strong>；但這一節的摘要寫的是<strong>「非言語口腔動作運動缺乏支持或反駁其在中風後效益的證據」</strong>。「缺乏證據」和「3: No Benefit」是兩種不同的結論。</p>
 <p>呼吸訓練的證據裡有一個特別的方法：<strong>六字訣氣功（liuzijue qigong）這種有組織的呼吸與發聲練習，合併傳統言語治療時，呼吸控制、音質與構音障礙嚴重度的改善都比標準呼吸運動大。</strong> 源文在義具那段把 Spencer 2025 年的回顧描述成「六字訣氣功處置方法的綜整」，但內容談的是<strong>腭提升器或腭阻塞器</strong>，看起來是寫作時的誤植。</p>
-<h2>空間忽略：一半的人有，2.9% 被治療</h2>
+<h2 id="bt-s4">空間忽略：一半的人有，2.9% 被治療</h2>
 <p>這一節的第一段數字是整份指引最令人坐不住的：<strong>空間忽略在中風後幾個月內影響至少一半的存活者，但被低診斷、低治療（分別只有 4.9% 與 2.9% 的中風病人）。</strong></p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>推薦</th><th>COR</th><th>LOE</th></tr></thead>
@@ -156,7 +176,7 @@ article, article *{overflow-wrap:break-word}
 <p>指引對忽略的定位是：<strong>它是一個症候群，不是單一型態資訊處理的障礙。</strong></p>
 <p>稜鏡適應是爭議最大的一條，2b。支持的一方是<strong>三篇系統性回顧與統合分析（分別納入 8、7、10 個 RCT），顯示空間損傷在與日常生活相關的任務上改善</strong>，也有<strong>兩個 RCT 顯示效果可以持續數月</strong>；反對的一方是<strong>一個 RCT 與兩篇統合分析報告稜鏡適應不優於對照治療</strong>。指引的解釋是後者<strong>沒有考慮效果修飾因子，例如額葉斷聯型的忽略亞型、嚴重度、中風後時間、施作方式與劑量。</strong></p>
 <p>這一節也有編號錯位：<strong>推薦 2 是鏡像治療、推薦 3 是稜鏡適應，但支持文字 2 講稜鏡、支持文字 3 講鏡像。</strong> 加上跌倒那節與失語那節，這是全指引第三處支持文字與推薦條號對不上。</p>
-<h2>出院之後：照顧者與社區資源</h2>
+<h2 id="bt-s5">出院之後：照顧者與社區資源</h2>
 <p>§7.1 的推薦：<strong>個別化出院規劃，對身體功能、自我管理與病人經驗可能有用（2a/B-R）</strong>；<strong>遠距的延續照護可考慮（2b/C-LD）。</strong> 但支持文字引的證據方向不太一樣：<strong>9 個 RCT 的系統性回顧顯示，接受基層照護追蹤的病人與照顧者對溝通較滿意、對中風較了解，但身體功能、情緒與生活品質並沒有進步；COMPASS 試驗的主要目標功能結局兩組也沒有差異</strong>（該試驗介入組醫院只有 35% 的病人真的接受了系列訪視）。推薦寫了「身體功能」，支持文字的兩個主要證據在這一項上都是陰性的。</p>
 <p>照顧者的規模：<strong>美國約 5% 的照顧者照顧以中風為主要健康問題的人，約 270 萬名中風照顧者。</strong></p>
 <div class="bt-tablewrap"><table>
@@ -170,7 +190,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>使用<strong>中風後檢核表（PSC）</strong></td><td>2a</td><td style="white-space:nowrap">B-NR</td></tr>
 </tbody></table></div>
 <p>中風後檢核表值得認識：<strong>由全球中風社區諮詢小組開發、世界中風組織背書，有 9 種語言版本。</strong> 觀察研究顯示它能<strong>在最多 95% 的個案中找出中風相關健康問題，並在 85% 的個案中促成多專業轉介</strong>；<strong>3 個月與 12 個月追蹤時，問題雖然減少，仍存在於三分之二的病人身上。</strong></p>
-<h2>社區與遠距復健</h2>
+<h2 id="bt-s6">社區與遠距復健</h2>
 <p><strong>美國急性住院平均已縮短到約 4 到 6 天，隨後的住院復健通常 10 到 14 天；但上肢與步態的恢復常持續到中風後 2 到 6 個月。</strong></p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>推薦</th><th>COR</th><th>LOE</th></tr></thead>
@@ -182,10 +202,10 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>遠距復健有一個明確的界線：<strong>目前資料不足以支持用遠距復健做步態訓練</strong>；知識缺口說<strong>遠距做日常生活活動訓練可能相對有利，步態復健可能較適合面對面治療。</strong></p>
 <p>居家復健的證據：<strong>49 個 RCT 的統合分析顯示居家復健對功能獨立有中等正面效果，以年輕、首次中風、6 個月內開始治療者最好。</strong></p>
-<h2>性功能：超過一半，只有 2b</h2>
+<h2 id="bt-s7">性功能：超過一半，只有 2b</h2>
 <p><strong>超過 50% 的中風病人報告性功能障礙，而醫療人員因各種原因沒有察覺、也沒有處理。</strong> 推薦只有一條：<strong>醫療人員與病人討論性功能問題「可能是合理的」（2b/B-NR）。</strong></p>
 <p>病人和伴侶<strong>想從醫療人員那裡得到更多資訊，但因為尷尬或文化信念不願開口</strong>；醫療人員則<strong>因時間限制、文化信念或知識不足而不願談。</strong> 指引提到 <strong>PLISSIT 模式（許可、有限資訊、具體建議、密集治療）</strong>，並建議<strong>這些對話可能應該在中風後照護的每個階段進行，不論存活者的年齡。</strong></p>
-<h2>孤單是死亡風險</h2>
+<h2 id="bt-s8">孤單是死亡風險</h2>
 <p>§7.6 是這版擴充最多的一節，把休閒、社交與孤單正式寫進指引。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>推薦</th><th>COR</th><th>LOE</th></tr></thead>
@@ -200,7 +220,7 @@ article, article *{overflow-wrap:break-word}
 <p>孤單的數字：<strong>一項研究（244 人）發現每 3 個中風病人就有 1 人感到孤單</strong>；<strong>19 項研究（1,675,707 人）的系統性回顧發現，社交孤立、社交網絡有限、缺乏社會支持與孤單，都與較高的中風後死亡風險有關</strong>；<strong>社會關係不佳與再中風增加 32% 有關。</strong> 指引也提到，<strong>美國衛生署長已把孤單與社交孤立認定為令人擔憂的流行病。</strong></p>
 <p>休閒活動的變化：<strong>中風後休閒活動減少 10% 到 40%，平均減少 22%，而且隨時間更明顯。</strong></p>
 <p>親近自然那條的等級要對照證據表看。支持文字引的是<strong>一篇 38 項研究（39,084 人）的回顧，其中只有 4 個是 RCT，其餘多是質性、準實驗與橫斷研究</strong>；「降低失能與死亡」那部分則來自<strong>另一篇 27 項研究、沒有任何 RCT 的回顧</strong>，以觀察性的世代與橫斷研究為主。推薦的證據等級是 B-R，用途卻寫到了降低死亡。</p>
-<h2>重返職場</h2>
+<h2 id="bt-s9">重返職場</h2>
 <p><strong>一項世代研究顯示，中風後收入中位數下降 29.6%，低收入者相對損失更大。</strong></p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>推薦</th><th>COR</th><th>LOE</th></tr></thead>
@@ -212,7 +232,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>第一條的主試驗 RETAKE 結果要讀清楚：<strong>兩組之間沒有差異</strong>，只有<strong>預先設定的次族群分析顯示，對年紀較大的人，以及有一種以上中風後缺損的人效益較大。</strong> 另一個在工作場所進行的試驗結果較明顯：<strong>6 個月時，實驗組 60% 已就業，對照組只有 20%。</strong></p>
 <p><strong>中風後疲勞是阻礙重返職場的主要身體因素，但職業介入計畫很少充分處理疲勞或情緒。</strong> 第 05 篇讀過，疲勞影響超過 40% 的中風病人。</p>
-<h2>重返駕駛</h2>
+<h2 id="bt-s10">重返駕駛</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>推薦</th><th>COR</th><th>LOE</th></tr></thead>
 <tbody>
@@ -232,7 +252,7 @@ article, article *{overflow-wrap:break-word}
 <p>十篇讀下來，這份指引最誠實的地方，是它在知識缺口裡承認了很多事：最佳活動劑量不知道、慢性期有效的介入提早用是否一樣有效不知道、復健什麼時候該結束也不知道。</p>
 </blockquote>
 <p>一份把「恢復」定義成沒有終點的指引，卻在最後一章告訴我們：一半的忽略病人沒被找到、一半的性功能問題沒人問、三分之一的人感到孤單。那麼，復健的終點到底是誰在決定？</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s11">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>指引實際說法</th></tr></thead>
 <tbody>

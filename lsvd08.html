@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/lsvd08.html">
 </head>
@@ -97,11 +116,12 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 8 篇</strong>　八篇走到終點，該把研究收攏成門診真正用得上的判斷。這篇分三塊：診斷上什麼時候該查栓子來源、什麼時候該轉念頭；治療上為什麼現行那套擋不住 cSVD 進展、方向該往哪轉；還有——這篇「沒證明什麼」，以及讀那些 OR/CI 時該有的分寸。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">診斷：別對典型腔隙中風全面撒網</a></li><li><a href="#bt-s2">治療：現行那套擋不住進展</a></li><li><a href="#bt-s3">這篇「沒證明什麼」：限制與數字判讀</a></li><li><a href="#bt-s4">八篇收攏成一句話</a></li></ol></details><!-- bt-toc:end -->
 <p>前七篇建立了一個乾淨的對比：狹窄是非腔隙／動脈粥狀那條路的事，擴張與內因性小血管病同源、驅動 cSVD 及其進展。這個病因框架不是學術收藏品，它會實際改變你在門診怎麼查、怎麼治。</p>
-<h2>診斷：別對典型腔隙中風全面撒網</h2>
+<h2 id="bt-s1">診斷：別對典型腔隙中風全面撒網</h2>
 <p>第一個操作結論來自狹窄與栓子來源的低因果權重。<strong>在典型、以內因性 cSVD 為主的腔隙中風，全面（nonselective）撒網找栓子來源的診斷產出有限。</strong> SPS3 的 17.3% 對 1.8%（第七篇）、本研究 36.8% 的 territory concordance（第三篇），都指向同一件事：多數時候找到的狹窄不是兇手。</p>
 <p>但這<strong>不等於什麼都不用查</strong>。可治的大血管或心源性病因，該懷疑時仍必須排除——ICAS 畢竟和症狀性再中風相關（第三篇的 OR 3.50），這是真實且可介入的風險。實務上的分寸是<strong>個別化查因</strong>：當你看到 border-zone 分佈、多發、單側病灶，或明顯的大血管異常時，機轉天平往近端傾斜，積極追查才划算；面對一顆孤立、位在深部穿通支地盤的典型腔隙，則不必為了「以防萬一」把每項栓子檢查都做滿。</p>
-<h2>治療：現行那套擋不住進展</h2>
+<h2 id="bt-s2">治療：現行那套擋不住進展</h2>
 <p>第二個、也是衝擊最大的結論，關於次級預防。這個 cohort 裡，<strong>超過四分之一的病人在指引標準的次級預防下、一年內仍新發了 incident 梗塞</strong>，而且這些新病灶和 baseline cSVD 負擔強相關、多為隱匿、皮質下的小梗塞。</p>
 <p>這說明了什麼？<strong>現行以動脈粥狀為對象的次級預防——抗血小板、statin、危險因子控制——對阻止 cSVD 相關腦傷害的進展，效力有限。</strong> 這不是說這些藥不重要（血壓控制與危險因子管理仍是基石，不該打折），而是說：如果 cSVD 的主機轉是內因性、非動脈粥狀的微血管病，那麼只打動脈粥狀這個靶，自然擋不住走另一條路的疾病。</p>
 <p>方向要<strong>轉向改善微血管功能本身</strong>。幾個正在鋪路的試驗值得認識：</p>
@@ -113,7 +133,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>MINERVA</td><td>minocycline</td><td>發炎與血腦障壁滲漏</td></tr>
 </tbody></table></div>
 <p>這條路的共同邏輯是：既然病根在小血管的牆壁與功能，就該去改善小血管，而不是只在大血管的脂肪斑塊上打轉。</p>
-<h2>這篇「沒證明什麼」：限制與數字判讀</h2>
+<h2 id="bt-s3">這篇「沒證明什麼」：限制與數字判讀</h2>
 <p>好的導讀要幫你把話講滿的同時，也把界線劃清楚。這篇有幾個一定要記住的限制：</p>
 <ul>
 <li><strong>機轉是橫斷面推論</strong>：第六篇那三條機轉（基因、ECM、機械應力）是把本研究的關聯與既有文獻縫起來的<strong>推論</strong>，不是這個 cohort 直接證明的因果鏈。</li>
@@ -122,7 +142,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>單中心</strong>：229 人、單一中心，外推性有限，需要多中心研究驗證與延伸。</li>
 </ul>
 <p>還有讀數字的分寸。有幾個關鍵 OR 的信賴區間<strong>貼著 1</strong>——腔隙 vs 非腔隙的 LAS OR 0.49（0.23–<strong>0.99</strong>）、BADE 的 incident 梗塞 OR 2.29（<strong>1.01</strong>–5.14）——這些是統計上顯著、但邊際的關聯，該如實呈現為「方向明確但不到鐵證」，不宜讀成斬釘截鐵。而所有這些都是<strong>觀察性關聯</strong>：校正做得再嚴謹，關聯終究不等於因果。這篇最強的地方不在單一 OR，而在<strong>多個獨立線索（亞型、位置、進展、laterality、meta、病理）同向收斂</strong>——是這個收斂、而非任何一個數字，撐起了它的結論。</p>
-<h2>八篇收攏成一句話</h2>
+<h2 id="bt-s4">八篇收攏成一句話</h2>
 <p><strong>大血管的兩種病變，對中風與 cSVD 有分岔的病因意涵：擴張是 cSVD 的血管表型，狹窄則在腔隙中風少見、也與 cSVD marker 無關。</strong> 這支持腔隙中風與其他 cSVD 表現，主要由內因性、非動脈粥狀的微血管病驅動——也因此，診斷與治療都需要<strong>機制導向</strong>的新策略，跳出只盯著動脈粥狀與心源性栓塞的舊框架。</p>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

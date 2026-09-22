@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/rls04.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 4 篇</strong>　以 StatPearls 與 AASM／IRLSSG 治療共識方向為主軸 StatPearls. <em>Restless Legs Syndrome</em>. NCBI Bookshelf NBK430878</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、現在的第一線：α2δ 鈣通道配體</a></li><li><a href="#bt-s2">二、被請到後排的多巴胺促效劑</a></li><li><a href="#bt-s3">三、Augmentation：治療反而把病養大</a></li><li><a href="#bt-s4">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>不寧腿的藥物治療這幾年發生了一件有趣的事：當年的第一線，現在被請到後排去了。曾經坐頭等位的是多巴胺促效劑——pramipexole、ropinirole、rotigotine，給的就是補多巴胺的東西，吃下去立刻有效，醫師愛開、病人也滿意。但長期追下去才發現它會反咬一口，於是現在的第一線換成了 α2δ 鈣通道配體。這篇就是講這個「換人坐」的故事，以及多巴胺到底做錯了什麼。</p>
 <hr>
-<h2>一、現在的第一線：α2δ 鈣通道配體</h2>
+<h2 id="bt-s1">一、現在的第一線：α2δ 鈣通道配體</h2>
 <p>第一線是 <strong>gabapentin、pregabalin、gabapentin enacarbil</strong> 這一組，作用在電壓門控鈣通道的 α2δ 次單位，跟多巴胺完全是兩條路。</p>
 <p>它特別適合下面這幾種人：<strong>嚴重睡眠障礙、共病失眠、焦慮、慢性疼痛</strong>——因為這類藥本來就有鎮靜與止神經痛的副作用，在這些病人身上副作用剛好變成了好處，一藥多用。還有一群人更該優先用它：<strong>過去有衝動控制疾患（ICD）病史的人</strong>。為什麼？看完第二段就懂了。</p>
 <p>療效撐得住是另一個賣點。<strong>pregabalin 與 gabapentin enacarbil 的效果可以維持到 1 年</strong>，不是吃兩個月就退潮的那種。</p>
@@ -112,13 +132,13 @@ article, article *{overflow-wrap:break-word}
 <tr><td>Gabapentin enacarbil</td><td>gabapentin 前驅藥，療效達 1 年</td><td>需穩定長效者</td></tr>
 </tbody></table></div>
 <hr>
-<h2>二、被請到後排的多巴胺促效劑</h2>
+<h2 id="bt-s2">二、被請到後排的多巴胺促效劑</h2>
 <p>多巴胺促效劑包括 <strong>pramipexole、ropinirole、rotigotine</strong>，其中 <strong>rotigotine 是貼片</strong>——慢慢從皮膚釋放，藥物濃度比較平穩，這個「平穩」等下會是關鍵。</p>
 <p>論短期療效它們都行：<strong>ropinirole、pramipexole、rotigotine 的效果可達 6 個月</strong>。rotigotine 貼片更特別，臨床上明顯的 augmentation 風險相對低，研究中療效甚至撐到 <strong>5 年</strong>——這正好呼應它釋放平穩的特性。</p>
 <p>但有兩件事讓它們退位。第一件是行為層面的副作用：<strong>pramipexole 與 ropinirole 可能引發衝動控制問題</strong>，包括賭博成癮、購物失控、體重大增。這不是嚇人，是真的有人吃了 RLS 的藥，半年後把退休金輸光。剛剛說 ICD 病史的人優先用 α2δ 配體，原因就在這裡——你不會想在一個曾經失控的人身上，再點一把多巴胺的火。</p>
 <p>第二件事更核心，叫 augmentation。</p>
 <hr>
-<h2>三、Augmentation：治療反而把病養大</h2>
+<h2 id="bt-s3">三、Augmentation：治療反而把病養大</h2>
 <p>augmentation 中文常譯成「惡化現象」，意思是吃藥吃到後來，病不但沒被壓住，反而被藥本身養大了。出現下面任何一項就算數：</p>
 <ul>
 <li>症狀比以往<strong>更早</strong>在傍晚出現（本來晚上十點才不舒服，現在下午就開始）</li>
@@ -128,7 +148,7 @@ article, article *{overflow-wrap:break-word}
 <p>機轉要接回第二篇講的「相對多巴胺過量」。RLS 本來就處在多巴胺訊號失衡的狀態，你長期用多巴胺促效劑去補，身體會逐漸適應、把基準線往上推。結果就是<strong>症狀隨治療反而加重</strong>，醫師看到病人更不舒服，直覺反應是加量——加了之後短期好轉，但更高的劑量把整個系統推得更過量，於是下一輪發作來得<strong>更早、擴散更廣、每次藥效持續的時間更短</strong>。加量、惡化、再加量，一個越追越深的坑。</p>
 <p>這就是多巴胺退出第一線的關鍵理由。它不是無效，是「用久了會把病帶往更難收拾的方向」，而 α2δ 配體走的是另一條路，沒有這個內建的陷阱。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s4">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>

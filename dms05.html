@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/dms05.html">
 </head>
@@ -97,26 +116,27 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 05 篇</strong>　前面四篇的結論偏保守：急性期降血糖沒用，多數降糖藥對中風終點沒有顯著效果，pioglitazone 的中風那一欄也沒過線。這一篇是這個系列裡唯一一個明確的陽性結果，而且它把介入時機推到了發病後 24 小時內。</p>
 </blockquote>
-<h2>試驗設計</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 3 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">試驗設計</a></li><li><a href="#bt-s2">主要結果</a></li><li><a href="#bt-s3">代價：腸胃道不良事件</a></li><li><a href="#bt-s4">誰真的受益：胰島素阻抗分層</a></li><li><a href="#bt-s5">這個系列的線索收在哪裡</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">試驗設計</h2>
 <p>LAMP（Liraglutide in Acute Minor Ischemic Stroke or High-Risk TIA Patients With Type 2 Diabetes Mellitus）是一項多中心、開放標籤的隨機對照試驗，在<strong>中國 27 家醫院</strong>執行，收案期間為 2019 年 6 月 25 日至 2023 年 12 月 27 日。</p>
 <p>收的是合併第二型糖尿病的急性輕型缺血性中風或高風險 TIA 病人，共 636 人，1:1 隨機分派到標準治療加 liraglutide 或單獨標準治療。liraglutide 在症狀發作後 <strong>24 小時內</strong>起始。</p>
 <p>主要終點是 90 天內的中風復發（缺血性或出血性）。</p>
-<h2>主要結果</h2>
+<h2 id="bt-s2">主要結果</h2>
 <p>90 天中風復發發生於 liraglutide 組的 <strong>25 人（7.9%）</strong>、對照組的 <strong>44 人（13.8%）</strong>，HR 0.56（95% CI 0.34–0.91；P = .02）。</p>
 <p>血管事件的複合終點方向一致，HR 0.53（95% CI 0.33–0.84；P = .01）。</p>
 <p>功能結局方面，90 天達到良好功能結局（mRS ≤ 1）的比例在 liraglutide 組為 314 人中的 274 人（87.3%）。</p>
-<h2>代價：腸胃道不良事件</h2>
+<h2 id="bt-s3">代價：腸胃道不良事件</h2>
 <p>這是台上簡報常被略過、但臨床上會直接影響用不用得下去的一欄。</p>
 <p><strong>腸胃道不良事件在 liraglutide 組發生於 60 人（18.9%），對照組僅 13 人（4.1%），HR 4.81（95% CI 2.64–8.78；P &lt; .001）。</strong> 接近五倍。</p>
 <p>好消息是<strong>低血糖沒有增加</strong>：liraglutide 組 24 人（7.6%）、對照組 25 人（7.8%），HR 0.93（95% CI 0.53–1.62；P = .80）。胰臟炎、肺炎與全因死亡率在兩組間也沒有顯著差異。</p>
 <p>所以這個藥在急性中風後的安全性顧慮，不是低血糖，是病人吃不吃得消。</p>
-<h2>誰真的受益：胰島素阻抗分層</h2>
+<h2 id="bt-s4">誰真的受益：胰島素阻抗分層</h2>
 <p>LAMP 的事後分析把 636 人中的 510 人（平均年齡 65 歲，64.7% 為男性，追蹤 3 個月）依基線胰島素阻抗分層，切點取 HOMA-IR <strong>2.5</strong>——這個數字來自先前針對亞洲族群的研究。</p>
 <p>治療與胰島素阻抗之間有顯著交互作用，中風復發與複合血管事件兩個終點的交互作用 P 值皆為 0.02。</p>
 <p><strong>HOMA-IR ≥ 2.5 的病人</strong>：中風復發 5.8% 對 18.1%，絕對風險下降 12.3%（95% CI 5.6%–19.0%），需治療人數（NNT）= 8。血管事件 5.8% 對 19.2%，絕對風險下降 13.4%（95% CI 6.6%–20.2%），NNT 同樣是 8。</p>
 <p><strong>HOMA-IR &lt; 2.5 的病人</strong>：沒有觀察到顯著效益。</p>
 <p>NNT 等於 8 是很有力的數字。但要注意這是事後分析，而且切點取自亞洲族群研究——這兩點都限制了直接外推。</p>
-<h2>這個系列的線索收在哪裡</h2>
+<h2 id="bt-s5">這個系列的線索收在哪裡</h2>
 <p>把五篇串起來會看到一條線。急性期壓血糖沒有用（第 02 篇）；多數降糖藥在中風這個終點上沒有效果（第 03 篇）；有效的訊號集中在改善胰島素阻抗而非降血糖的介入上——IRIS 用 pioglitazone 指認出這群人（第 04 篇），LAMP 用 GLP-1 受體促效劑在同一個方向上拿到了更乾淨的結果。</p>
 <p>共同的分母是<strong>胰島素阻抗</strong>，而不是血糖值。這解釋了為什麼在急診把 240 壓到 140 沒有改變任何事，也解釋了為什麼 LAMP 的效益集中在 HOMA-IR 高的那一半人身上。</p>
 <p>需要保留的是：LAMP 是單一國家、開放標籤、90 天追蹤的試驗，分層結果來自事後分析。這條線目前指向一個假說，還不是一個標準做法。</p>

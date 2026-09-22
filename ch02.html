@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/ch02.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 2 篇</strong>　叢發性頭痛的急性發作來得又快又猛，從零到最痛常只要幾分鐘，而口服藥要 30 分鐘以上才起效——這意味著<strong>口服止痛幾乎來不及</strong>。本篇談台灣準則的急性治療兩大首選：<strong>高流量純氧吸入</strong>與<strong>翠普登（triptans）</strong>，以及在台灣可及性下的實務選擇。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、第一線之一：高流量純氧吸入</a></li><li><a href="#bt-s2">二、第一線之二：翠普登（Triptans）</a></li><li><a href="#bt-s3">三、其他急性選項（證據較低，作為備案）</a></li><li><a href="#bt-s4">四、急性治療一覽</a></li><li><a href="#bt-s5">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>叢發性頭痛的急性治療有一個和偏頭痛截然不同的前提：<strong>發作極短（15–180 分鐘）、極劇烈、起效要快</strong>。因此急性治療藥物必須是「<strong>快速吸收、快速作用</strong>」的劑型——口服錠劑因吸收太慢，在叢發性頭痛幾乎沒有舞台。台灣準則把<strong>高流量氧氣</strong>與<strong>翠普登（皮下／鼻噴）</strong>列為第一線，兩者都有 Grade A、Group I 的最高證據與建議等級。</p>
 <hr>
-<h2>一、第一線之一：高流量純氧吸入</h2>
+<h2 id="bt-s1">一、第一線之一：高流量純氧吸入</h2>
 <p>氧氣是叢發性頭痛急性治療<strong>證據最佳、最安全</strong>的選項，也是台灣準則的首推。</p>
 <p><strong>用法</strong>：以<strong>非再吸入式面罩（non-rebreathing mask）</strong>給予 <strong>100% 純氧、流速 6–12 L/min、持續約 15 分鐘</strong>。準則指出高流速、搭配 demand-valve（需求閥）系統效果更佳。</p>
 <p><strong>關鍵證據</strong>：</p>
@@ -123,7 +143,7 @@ article, article *{overflow-wrap:break-word}
 <p>臨床提醒：很多「氧氣沒效」的個案，其實是<strong>設備不對</strong>——用了鼻導管或低流速、或非再吸入式面罩沒有正確使用。給氧前先確認「<strong>100% 純氧、非再吸入面罩、足夠高流速</strong>」三要件。</p>
 </blockquote>
 <hr>
-<h2>二、第一線之二：翠普登（Triptans）</h2>
+<h2 id="bt-s2">二、第一線之二：翠普登（Triptans）</h2>
 <p>翠普登是 <strong>5-HT 1B/1D 受體促效劑</strong>，透過收縮血管與抑制三叉血管系統的 CGRP 釋放止痛。在叢發性頭痛，<strong>給藥途徑決定成敗</strong>——必須選快速吸收的皮下注射或鼻噴劑型。</p>
 <h3>Sumatriptan 6 mg 皮下注射——起效最快</h3>
 <ul>
@@ -151,7 +171,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>不可與 ergotamine 併用</strong>（血管收縮疊加）</li>
 </ul>
 <hr>
-<h2>三、其他急性選項（證據較低，作為備案）</h2>
+<h2 id="bt-s3">三、其他急性選項（證據較低，作為備案）</h2>
 <p>當氧氣與翠普登不可用或無效時，準則列出以下備案：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>藥物／途徑</th><th>證據評等</th><th>重點</th></tr></thead>
@@ -162,7 +182,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>鼻內 cocaine</td><td>—</td><td>文獻有效但臨床少用</td></tr>
 </tbody></table></div>
 <hr>
-<h2>四、急性治療一覽</h2>
+<h2 id="bt-s4">四、急性治療一覽</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>治療</th><th>劑量／途徑</th><th>評等</th></tr></thead>
 <tbody>
@@ -183,7 +203,7 @@ article, article *{overflow-wrap:break-word}
 <p>下一篇談「過渡性預防」——在維持藥還沒生效前，怎麼用類固醇與枕部注射快速壓下這一輪發作。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s5">參考文獻</h2>
 <ol>
 <li>Yang FC, Tsai CL, Lin GY, et al. 2022 Taiwan Guidelines for Acute and Preventive Treatment of Cluster Headaches. <em>Acta Neurol Taiwan</em>. 2022;31(4):254-273.</li>
 <li>Cohen AS, Burns B, Goadsby PJ. High-flow oxygen for treatment of cluster headache: a randomized trial. <em>JAMA</em>. 2009;302(22):2451-2457.</li>

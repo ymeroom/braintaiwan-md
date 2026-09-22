@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/lsvd02.html">
 </head>
@@ -97,12 +116,13 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 2 篇</strong>　一篇觀察性研究的結論能不能信，八成藏在它怎麼定義暴露、怎麼量測、怎麼校正。這篇先不看結果，把狹窄怎麼判、擴張怎麼量、cSVD 怎麼評分、統計怎麼防干擾拆開來——順便標出一個你讀結論時要一直記在心裡的方法學代價。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">狹窄怎麼判：一個要記住的取捨</a></li><li><a href="#bt-s2">擴張怎麼量：直徑加上兩把量尺</a></li><li><a href="#bt-s3">cSVD 怎麼評分，梗塞怎麼分類</a></li><li><a href="#bt-s4">統計怎麼防干擾</a></li></ol></details><!-- bt-toc:end -->
 <p>上一篇說這個 cohort 憑對照組與縱向設計，有機會分辨共病與因果。但「有機會」是一回事，量得準不準是另一回事。狹窄判鬆了，兩組差異會被稀釋；擴張的閾值訂錯了，關聯會憑空出現或消失。所以在看那些漂亮的 OR 之前，先把尺拿出來檢查。</p>
-<h2>狹窄怎麼判：一個要記住的取捨</h2>
+<h2 id="bt-s1">狹窄怎麼判：一個要記住的取捨</h2>
 <p>因為這個 cohort 沒有常規做磁振血管攝影（MRA），顱內動脈粥狀狹窄（intracranial atherosclerotic stenosis, ICAS）是<strong>在動脈相的動態對比強化磁振（arterial-phase DCE-MRI）上判讀</strong>，多平面檢視、在最窄處以標準法分級。評估的顱內動脈包括內頸動脈、中大腦動脈、前與後大腦動脈、椎動脈、基底動脈。頸段內頸動脈狹窄另用超音波、以 NASCET 標準分級，有 CTA／MRA 時一併參考。</p>
 <p>定義上，<strong>ICAS＝任一顱內動脈 ≥50% 狹窄；LAS＝ICAS 或頸動脈 ≥50% 狹窄</strong>。潛在栓子來源則涵蓋 LAS 或主要心臟異常（心房顫動、開放性卵圓孔、缺血性心臟病、瓣膜疾病、心衰竭）。</p>
 <p>這裡有一個<strong>你讀後續所有 LAS 結論時都要掛在心上的代價</strong>：用 DCE-MRI 而非專用血管攝影，對「輕度」狹窄可能較不敏感。作者的辯護是——慢速注射技術提供的管腔顯影品質可比常規 bolus MRA，不太可能漏掉中至重度狹窄。這個辯護對「中重度狹窄」成立，但對輕度狹窄的偵測力，仍是這篇的一個結構性限制。</p>
-<h2>擴張怎麼量：直徑加上兩把量尺</h2>
+<h2 id="bt-s2">擴張怎麼量：直徑加上兩把量尺</h2>
 <p>基底動脈、雙側內頸動脈（海綿竇垂直段）、中大腦動脈（M1 段）的最大直徑，在軸切 T2 影像上量到 <strong>0.01 mm</strong>；遇到狹窄段就量受影響最小的節段。直徑用顱內體積做殘差校正，雙側 ICA／MCA 取平均。基底動脈另用一個驗證過的四分量表評分分叉高度與側移。</p>
 <p><strong>基底動脈擴張（basilar artery dolichoectasia, BADE）定義為：BA 直徑 &gt;4.5 mm、分叉高度 ≥2、或側移 ≥2</strong>（三者符合其一即算）。</p>
 <div class="bt-tablewrap"><table>
@@ -112,10 +132,10 @@ article, article *{overflow-wrap:break-word}
 <tr><td>側移</td><td>0＝正中；1＝內於斜坡／鞍背緣；2＝外於此緣；3＝橋小腦角池</td></tr>
 </tbody></table></div>
 <p>值得注意的方法學巧思是：BADE 是二元判定，但後面的 sensitivity analysis 會<strong>把 BADE 換成連續的 ICA／MCA／BA 直徑</strong>再跑一次——如果連續管徑也給出同向關聯，就比單一閾值更難用「切點訂得剛好」來質疑。</p>
-<h2>cSVD 怎麼評分，梗塞怎麼分類</h2>
+<h2 id="bt-s3">cSVD 怎麼評分，梗塞怎麼分類</h2>
 <p>cSVD markers 依 <strong>STRIVE-2</strong> 標準評估：數 lacunes 與微出血，並組成一個 summary cSVD score。定量 MRI 用半自動 pipeline 分割顱內體積、正常白質、WMH、血管周圍間隙（PVS）與梗塞體積。<strong>WMH 進展</strong>定義為基線的正常白質在一年時轉為 WMH。腦體積、WMH、梗塞體積都對顱內體積正規化；PVS 對其感興趣區體積正規化。</p>
 <p>梗塞分兩種：<strong>index infarct</strong> 是診斷影像上與此次中風症狀相符的急性病灶；<strong>incident infarct</strong> 是 index 中風到一年追蹤之間新出現、在 DWI／FLAIR／T2 上可見、且先前掃描沒有的新梗塞。病灶再分皮質下或皮質，皮質下的再依形狀分圓／卵圓形或管狀。這個「index 對 incident」的區分很重要——incident infarct 多數是<strong>隱匿性（covert）</strong>的，它和「症狀性再中風」是兩個不同的臨床概念，後面第三篇會看到這個區分怎麼救回一個容易誤讀的結論。</p>
-<h2>統計怎麼防干擾</h2>
+<h2 id="bt-s4">統計怎麼防干擾</h2>
 <p>個人層級用多變項迴歸評估 LAS 與 BADE 和 index 亞型、梗塞數與體積、incident infarct、再中風／TIA 的關聯：連續變項用線性迴歸、序位變項（summary cSVD score）用序位邏輯迴歸，比例勝算假設以 Brant test 驗證。<strong>所有模型校正年齡、性別、抽菸、高血壓、糖尿病、高血脂、BMI</strong>；變異膨脹因子（VIF）全 &lt;1.3，沒有共線性問題。WMH 與 PVS 體積取 log10。病灶層級用 Rao-Scott cluster 校正的卡方，處理同一人多顆梗塞。</p>
 <p>穩健性由多組 sensitivity analysis 撐住：(1) 用 ICAS、任何栓子來源、心房顫動替換 LAS；(2) 額外校正 baseline cSVD score；(3) 用連續動脈直徑替換 BADE；(4) 放入 LAS 與 BADE 的交互作用項看有沒有效果修飾。量測本身的可信度也交代了——直徑的組內相關係數為 <strong>0.95（BA）、0.85（ICA）、0.9（MCA）</strong>，加權 kappa 為 <strong>0.81（ICAS）、0.85（BADE）</strong>。</p>
 <p>系統性回顧另跑（第七篇細談）：MEDLINE 檢索至 2025-06-22，用隨機效應 meta 分析估計 LAS 在腔隙中風的盛行率與 laterality。</p>

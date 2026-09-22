@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/ch01.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 1 篇</strong>　台灣頭痛學會於 2022 年更新發表《叢發性頭痛急性與預防性治療準則》，距上一版（2011）已逾十年，納入了高流量氧氣、CGRP 單株抗體、非侵入性迷走神經刺激等新證據。本系列五篇依「診斷分類 → 急性治療 → 過渡性預防 → 維持性預防 → 神經調節與難治型」的臨床決策軸線拆解這份準則。首篇先把「這到底是不是叢發性頭痛」這件事談清楚。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、先把家族成員分清楚：TAC 怎麼鑑別？</a></li><li><a href="#bt-s2">二、叢發性頭痛的 ICHD-3 診斷標準</a></li><li><a href="#bt-s3">三、陣發型 vs. 慢性：分型決定治療強度</a></li><li><a href="#bt-s4">四、病理生理：下視丘、三叉血管系統與生理時鐘</a></li><li><a href="#bt-s5">五、什麼時候要安排腦部影像？</a></li><li><a href="#bt-s6">臨床要點摘要</a></li><li><a href="#bt-s7">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>叢發性頭痛（cluster headache, CH）被稱為「自殺性頭痛」——它是已知<strong>最劇烈的原發性頭痛</strong>，疼痛強度遠超偏頭痛，發作時患者常坐立難安、來回踱步、甚至以頭撞牆。它屬於<strong>三叉自律神經頭痛</strong>（trigeminal autonomic cephalalgias, TACs）家族，核心特徵是「<strong>單側、劇烈、短時、伴隨同側自律神經症狀</strong>」。診斷的關鍵，不在於「痛不痛」，而在於<strong>辨認這組高度特異的型態</strong>，並與家族中其他成員區分。</p>
 <hr>
-<h2>一、先把家族成員分清楚：TAC 怎麼鑑別？</h2>
+<h2 id="bt-s1">一、先把家族成員分清楚：TAC 怎麼鑑別？</h2>
 <p>TACs 共同點是「單側頭痛 + 同側顱自律神經症狀」，彼此最實用的鑑別軸是<strong>單次發作的持續時間</strong>與<strong>頻率</strong>：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>TAC 類型</th><th>單次發作時間</th><th>頻率特徵</th><th>關鍵治療線索</th></tr></thead>
@@ -114,7 +134,7 @@ article, article *{overflow-wrap:break-word}
 <p>臨床提醒：<strong>Indomethacin 反應</strong>是 TAC 鑑別的分水嶺。陣發性偏頭痛與持續性半側頭痛對 indomethacin 有「戲劇性、近乎 100%」的反應，這是診斷標準的一部分；叢發性頭痛則否。把這兩類誤當叢發性頭痛，會讓病人錯失最有效的藥。</p>
 </blockquote>
 <hr>
-<h2>二、叢發性頭痛的 ICHD-3 診斷標準</h2>
+<h2 id="bt-s2">二、叢發性頭痛的 ICHD-3 診斷標準</h2>
 <p>依《國際頭痛疾病分類第三版》（ICHD-3），叢發性頭痛的診斷要件如下：</p>
 <p><strong>A.</strong> 符合 B–D 的發作至少 5 次</p>
 <p><strong>B.</strong> 嚴重至極嚴重的<strong>單側</strong>眼眶、眼眶上和／或顳部疼痛，未治療下持續 <strong>15–180 分鐘</strong></p>
@@ -132,7 +152,7 @@ article, article *{overflow-wrap:break-word}
 <p>「<strong>躁動不安</strong>」是叢發性頭痛與偏頭痛最重要的行為鑑別點：偏頭痛患者傾向<strong>靜止、躲進暗房</strong>；叢發性頭痛患者則<strong>無法靜下來、來回走動</strong>。問診時這一句「發作時你是想躺著不動，還是坐不住？」往往比任何影像都有指向性。</p>
 </blockquote>
 <hr>
-<h2>三、陣發型 vs. 慢性：分型決定治療強度</h2>
+<h2 id="bt-s3">三、陣發型 vs. 慢性：分型決定治療強度</h2>
 <p>ICHD-3 將叢發性頭痛再分兩型，這個分型直接影響預防策略與是否需考慮神經調節：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>分型</th><th>定義</th></tr></thead>
@@ -142,7 +162,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p><strong>台灣的流行病學特色</strong>：本準則特別指出，台灣的叢發性頭痛<strong>絕大多數為陣發型</strong>，慢性病例非常少。這一點是理解整份準則的關鍵——許多國際上針對「難治型慢性叢發性頭痛」發展的侵入式療法（如 SPG 刺激、DBS），在台灣因個案稀少而<strong>缺乏本土使用經驗</strong>（第五篇詳談）。</p>
 <hr>
-<h2>四、病理生理：下視丘、三叉血管系統與生理時鐘</h2>
+<h2 id="bt-s4">四、病理生理：下視丘、三叉血管系統與生理時鐘</h2>
 <p>叢發性頭痛的三大病生理支柱，也解釋了它獨特的臨床面貌：</p>
 <ul>
 <li><strong>下視丘（hypothalamus）活化</strong>：功能性影像顯示發作時後下視丘活化，這與叢發性頭痛驚人的<strong>生理時鐘規律</strong>（cluster periods、bouts，常在固定季節、固定時刻、甚至半夜固定時間發作）相符。</li>
@@ -151,7 +171,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>近年<strong>全基因組關聯研究（GWAS）</strong>也已找到叢發性頭痛的多個易感基因位點，支持其遺傳基礎。</p>
 <hr>
-<h2>五、什麼時候要安排腦部影像？</h2>
+<h2 id="bt-s5">五、什麼時候要安排腦部影像？</h2>
 <p>叢發性頭痛是臨床診斷，但因其表現可被次發性病灶模擬，準則建議對<strong>疑似個案安排腦部（含腦下垂體）MRI</strong>，以排除：</p>
 <ul>
 <li>腦下垂體腫瘤（如 <strong>prolactinoma</strong>）</li>
@@ -163,7 +183,7 @@ article, article *{overflow-wrap:break-word}
 <p>雖然典型、長期穩定的陣發型病例次發性比例低，但「首次發作、非典型特徵、神經學異常、對標準治療無反應」時，影像檢查不可省。</p>
 </blockquote>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s6">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>準則重點</th></tr></thead>
 <tbody>
@@ -182,7 +202,7 @@ article, article *{overflow-wrap:break-word}
 <p>確立診斷只是第一步。叢發性頭痛的治療邏輯和偏頭痛很不一樣——它需要「<strong>急性、過渡、維持</strong>」三線並進，而急性治療口服藥幾乎來不及（發作太快太短）。接下來四篇，我們就照這個治療架構一一拆解。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s7">參考文獻</h2>
 <ol>
 <li>Yang FC, Tsai CL, Lin GY, et al. 2022 Taiwan Guidelines for Acute and Preventive Treatment of Cluster Headaches. <em>Acta Neurol Taiwan</em>. 2022;31(4):254-273.</li>
 <li>Headache Classification Committee of the International Headache Society (IHS). The International Classification of Headache Disorders, 3rd edition. <em>Cephalalgia</em>. 2018;38(1):1-211.</li>

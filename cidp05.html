@@ -77,6 +77,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/cidp05.html">
 </head>
@@ -99,14 +118,15 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 5 篇</strong>　以 EAN/PNS 2021 診斷流程圖（Flowchart 1）為主軸 2021 指引把診斷確定度從三級（definite／probable／possible）砍成兩級（CIDP／possible CIDP），又把感覺準則塞進電生理核心、加入變異型專屬準則。規則變多、例外也變多——這篇試著把那張讓人頭暈的流程圖講成一條清楚的路。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、進門的條件：先有臨床懷疑</a></li><li><a href="#bt-s2">二、三層拼圖怎麼疊</a></li><li><a href="#bt-s3">三、possible CIDP 怎麼升級成 CIDP</a></li><li><a href="#bt-s4">四、2021 改了什麼、又帶來什麼風險</a></li><li><a href="#bt-s5">五、客觀治療反應：最被高估、也最該謹慎的一塊支持證據</a></li><li><a href="#bt-s6">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>診斷 CIDP 像在拼一塊有三層的拼圖：<strong>臨床</strong>、<strong>電生理</strong>、<strong>支持證據</strong>。三層疊起來，落到「CIDP」或「possible CIDP」兩個籃子裡。聽起來簡單，但 2021 指引塞了一堆規則與例外進去，所以實務上常常拼錯。先把整條路的骨架抓住，細節才不會把你淹沒。</p>
 <hr>
-<h2>一、進門的條件：先有臨床懷疑</h2>
+<h2 id="bt-s1">一、進門的條件：先有臨床懷疑</h2>
 <p>流程的起點是兩個門檻：病人<strong>符合典型 CIDP 或某個變異型的臨床準則（第 2 篇）</strong>，而且<strong>症狀進展超過 8 週</strong>。八週這條線，就是把 CIDP 跟 GBS 分開的時間界線。</p>
 <p>進門之後，做三件事：神經傳導、抽血篩檢、以及在出現紅旗時加做的額外檢驗與影像。然後看電生理結果落在哪一格。</p>
 <hr>
-<h2>二、三層拼圖怎麼疊</h2>
+<h2 id="bt-s2">二、三層拼圖怎麼疊</h2>
 <p>把典型 CIDP 當例子，「確診 CIDP」需要三塊都到位：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>層</th><th>確診 CIDP 需要</th></tr></thead>
@@ -117,7 +137,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>如果運動準則只在<strong>一條</strong>神經符合（其餘臨床、感覺到位），就降一級成「<strong>possible CIDP</strong>」。各變異型有自己的版本：遠端型要在上肢、運動型要求感覺正常（≥4 條神經）、感覺型要求運動正常——細節各異，但骨架都是「臨床＋運動＋感覺」。</p>
 <hr>
-<h2>三、possible CIDP 怎麼升級成 CIDP</h2>
+<h2 id="bt-s3">三、possible CIDP 怎麼升級成 CIDP</h2>
 <p>這是整個流程最實用的設計。當電生理只夠到 possible CIDP 時，你還有兩條路把確定度往上推：</p>
 <ul>
 <li><strong>湊滿兩項支持準則（supportive criteria）</strong>：CSF、影像（超音波／MRI）、神經切片、以及客觀治療反應——任兩項到位，possible 可升級為 CIDP。</li>
@@ -125,7 +145,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>但這裡有個重要的限制：<strong>有些格子標明「不可被支持準則升級」</strong>。例如純感覺型、純局灶型，最高就只能到 possible，再多支持證據也升不上去。這個設計是刻意的——對那些先天不確定的表型，指引不讓你過度自信。</p>
 <hr>
-<h2>四、2021 改了什麼、又帶來什麼風險</h2>
+<h2 id="bt-s4">四、2021 改了什麼、又帶來什麼風險</h2>
 <p>幾個值得放在心上的變動：</p>
 <ul>
 <li><strong>三級砍成兩級</strong>：拿掉了 definite／probable，合併成 CIDP／possible。理由是 probable 與 definite 的診斷準確度其實沒差多少。</li>
@@ -134,7 +154,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>超音波納入支持準則、SSEP 退場</strong>：神經超音波因為能看近端肥大被納入；SSEP 證據太少被移除（CISP 例外）。</li>
 </ul>
 <hr>
-<h2>五、客觀治療反應：最被高估、也最該謹慎的一塊支持證據</h2>
+<h2 id="bt-s5">五、客觀治療反應：最被高估、也最該謹慎的一塊支持證據</h2>
 <p>「打了有效就是 CIDP」是個很危險的捷徑。指引把「<strong>客觀</strong>治療反應」列為支持準則之一，但強調三件事：</p>
 <ul>
 <li>治療後「<strong>症狀穩定</strong>」不能當成有效——因為多數軸突型神經病放著也會穩定一陣子</li>
@@ -143,7 +163,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>換句話說，治療反應可以把「possible CIDP」推上「CIDP」、甚至把「no CIDP」拉到「possible」，但它是雙向的線索，不是萬靈的判決。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s6">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>步驟</th><th>重點</th></tr></thead>
 <tbody>

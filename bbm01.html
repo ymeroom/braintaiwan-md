@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/bbm01.html">
 </head>
@@ -97,11 +116,12 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 1 篇</strong>　這是 Alzheimer's Association 2025 年發布的另一份指引——跟<a href="adx01.html">失智症診斷評估指引三部曲</a>（DETeCD-ADRD）不同，這份指引只聚焦一個問題：<strong>血液生物標記（blood-based biomarkers, BBM）能不能用在專科記憶門診的阿茲海默症診斷流程裡</strong>。本篇先談指引的背景、適用對象，以及哪些病人「不適合」做 BBM。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、為什麼需要一份正式指引</a></li><li><a href="#bt-s2">二、兩個核心臨床問題</a></li><li><a href="#bt-s3">三、這份指引只給「專科記憶門診」用</a></li><li><a href="#bt-s4">四、誰是研究對象：已完成完整評估的認知障礙病人</a></li><li><a href="#bt-s5">五、哪些病人不適合做 BBM</a></li><li><a href="#bt-s6">臨床要點摘要</a></li><li><a href="#bt-s7">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
-<h2>一、為什麼需要一份正式指引</h2>
+<h2 id="bt-s1">一、為什麼需要一份正式指引</h2>
 <p>過去要在活體上確認阿茲海默症的類澀蛋白病理，選項一直很有限：<strong>正子造影（PET）昂貴</strong>，<strong>腰椎穿刺取腦脊髓液（CSF）侵入性高</strong>——即使操作得當風險不高，多數醫療提供者（甚至不少專科單位）也難以取得這些工具。</p>
 <p>近幾年血液生物標記快速興起，因為相對 PET 與 CSF：<strong>成本更低、可近性更高、病人接受度更好</strong>。但問題是：市售 BBM 檢測的診斷表現差異很大，臨床整合也不一致。2022 年 Alzheimer's Association 曾發布第一份 BBM 適當使用建議，但<strong>始終缺乏一份正式、依循 GRADE 方法的臨床指引（Clinical Practice Guideline）</strong>——這正是本指引要填補的空缺。</p>
-<h2>二、兩個核心臨床問題</h2>
+<h2 id="bt-s2">二、兩個核心臨床問題</h2>
 <p>指引小組（11 位成員：臨床神經科醫師、老年醫學科醫師、護理師、醫師助理與方法學專家）鎖定兩個問題：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>問題</th><th>定義</th></tr></thead>
@@ -110,7 +130,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td><strong>確診測試（confirmatory test）</strong></td><td>陰性結果排除病理，陽性結果即可高機率確診——<strong>可直接取代 CSF 或 amyloid PET</strong></td></tr>
 </tbody></table></div>
 <p>這個區分非常關鍵：<strong>不是所有 BBM 檢測都夠準到能取代 PET/CSF</strong>，有些只夠格當「先篩一輪、陽性再確認」的初篩工具。</p>
-<h2>三、這份指引只給「專科記憶門診」用</h2>
+<h2 id="bt-s3">三、這份指引只給「專科記憶門診」用</h2>
 <p>指引明確界定目標對象：<strong>至少 25% 臨床工作時間用於照護認知障礙/失智症病人的醫療提供者</strong>（通常是神經科、精神科或老年醫學科，但不限於這些科別）。基層醫療目前<strong>不在本次指引範圍內</strong>，留待未來版本處理。</p>
 <p>為什麼基層與專科要分開做指引？指引列了四個理由：</p>
 <ol>
@@ -119,10 +139,10 @@ article, article *{overflow-wrap:break-word}
 <li><strong>判讀與告知經驗不同</strong>：非專科對解讀與告知生物標記結果的經驗有限，且共病情況更普遍，可能影響 BBM 結果</li>
 <li><strong>實務障礙</strong>：時間限制、現有工作流程整合度不足</li>
 </ol>
-<h2>四、誰是研究對象：已完成完整評估的認知障礙病人</h2>
+<h2 id="bt-s4">四、誰是研究對象：已完成完整評估的認知障礙病人</h2>
 <p>指引的研究族群是<strong>已經有客觀認知缺損證據</strong>（輕度認知障礙 MCI 或失智症），且<strong>已完成完整臨床評估</strong>的病人——不包含單純主觀認知衰退（病人自覺變差但測驗正常）、也不包含認知功能正常者。換句話說：<strong>BBM 在這份指引裡的角色，是輔助已經啟動失智症評估流程的病人做進一步病因確認，不是篩檢工具</strong>。</p>
 <p>研究聚焦五種血漿分析物：<strong>p-tau217、%p-tau217（p-tau217 占非 p-tau217 比例）、p-tau181、p-tau231、Aβ42/40 比值</strong>。</p>
-<h2>五、哪些病人不適合做 BBM</h2>
+<h2 id="bt-s5">五、哪些病人不適合做 BBM</h2>
 <p>指引列出明確的警示情境，提醒臨床人員審慎評估：</p>
 <p><strong>共享決策後判斷檢測效益不大</strong>：若病人與醫師討論後，認為知道是否有阿茲海默症病理對病人沒有實際幫助（例如不影響治療決策、病人本身不想知道）。</p>
 <p><strong>需特別審慎或謹慎解讀的情境</strong>：</p>
@@ -139,7 +159,7 @@ article, article *{overflow-wrap:break-word}
 <p>這份清單的精神很清楚：<strong>BBM 不是「驗一下就準」的萬用工具，檢測前的臨床判斷，跟檢測本身的準確度同等重要</strong>。</p>
 </blockquote>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s6">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
@@ -156,7 +176,7 @@ article, article *{overflow-wrap:break-word}
 <p>我也很認同指引把「共享決策」放在第一條警示情境——如果一位病人明確表示「我不想知道，反正知道了也不會改變我現在的生活安排」，那麼檢測本身的存在意義就要重新被討論，而不是因為它「可以做」就理所當然要做。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s7">參考文獻</h2>
 <ol>
 <li>Palmqvist S, Whitson HE, Allen LA, et al. Alzheimer's Association Clinical Practice Guideline on the use of blood-based biomarkers in the diagnostic workup of suspected Alzheimer's disease within specialized care settings. <em>Alzheimer's Dement</em>. 2025;21:e70535. doi:10.1002/alz.70535</li>
 <li>Hansson O, Edelmayer RM, Boxer AL, et al. The Alzheimer's Association appropriate use recommendations for blood biomarkers in Alzheimer's disease. <em>Alzheimers Dement</em>. 2022;18:2669-2686.</li>

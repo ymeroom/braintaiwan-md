@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/asdh03.html">
 </head>
@@ -97,44 +116,45 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 03 篇</strong>　這兩件事幾乎天天要決定，卻都缺乏乾淨的答案。預防性抗癲癇藥該不該給、給多久；病人吃著抗凝血劑或抗血小板藥該怎麼逆轉、什麼時候能恢復。這一篇整理綜論的立場，同時標出其中兩處需要回頭核對原始文獻的地方。</p>
 </blockquote>
-<h2>癲癇：預防得了早期，防不了晚期</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 9 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">癲癇：預防得了早期，防不了晚期</a></li><li><a href="#bt-s2">選哪一種藥</a></li><li><a href="#bt-s3">抗凝血與抗血小板：先理解風險的規模</a></li><li><a href="#bt-s4">Warfarin 的逆轉：這裡有一個單位錯誤</a></li><li><a href="#bt-s5">NOAC：有解藥，但故事沒說完</a></li><li><a href="#bt-s6">手術與否，決定了處理順序</a></li><li><a href="#bt-s7">抗血小板藥：沒有解藥，而且輸血小板可能更糟</a></li><li><a href="#bt-s8">什麼時候可以把藥吃回去</a></li><li><a href="#bt-s9">臨床要點摘要</a></li><li><a href="#bt-s10">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">癲癇：預防得了早期，防不了晚期</h2>
 <p>抗癲癇藥（AED）用於 ASDH 患者仍有爭議。</p>
 <p>先看發生率。Rabinstein 等人報告，<strong>25% 的 ASDH 患者曾經歷癲癇發作</strong>。這個比例不低，而癲癇之所以在腦外傷情境下特別麻煩，是因為它會增加顱內壓或提高腦部代謝需求——在一顆已經缺血、已經腫脹的腦上，這兩件事都是雪上加霜。</p>
 <p>支持預防用藥的核心證據來自 Temkin 等人的隨機對照試驗，綜論稱之為被引用最廣的一項：<strong>使用 phenytoin 可將癲癇發生率由 14% 降至 4%</strong>。</p>
 <p>但這個數字有一個關鍵的限定條件，綜論在段末才說明：<strong>TBI 後使用 AED 可能減少早期階段的癲癇，然而晚期癲癇無法被預防</strong>。</p>
 <p>這句話決定了預防用藥的整個定位。它不是在預防外傷後癲癇症（post-traumatic epilepsy），它只是在保護急性期那段最脆弱的時間。把它誤讀成「吃藥就不會變成癲癇」，會導致藥物被無限期地留下來。</p>
 <p>也因此才有停藥的建議：若 TBI 患者在外傷後一週或一個月內沒有發作，預防性 AED 可以停用。</p>
-<h2>選哪一種藥</h2>
+<h2 id="bt-s2">選哪一種藥</h2>
 <p>臨床上 phenytoin／fosphenytoin 常被使用，綜論給的理由很實際：可經靜脈給藥、容易改為口服錠劑，而且不會造成深度鎮靜。</p>
 <p>最後這一項在神經重症特別重要。當你需要靠意識狀態變化來偵測病情惡化時，一個會壓低意識的藥物等於遮蔽了你的監測指標。</p>
 <p>近年 levetiracetam 則躍升為首選藥物，具有相當的療效；在 TBI 後的癲癇預防上，levetiracetam 也被證明與 phenytoin 有同等效果。</p>
 <p>至於 valproate，綜論只提了一項顧慮：可能造成精神或行為問題。</p>
-<h2>抗凝血與抗血小板：先理解風險的規模</h2>
+<h2 id="bt-s3">抗凝血與抗血小板：先理解風險的規模</h2>
 <p>在人口老化、慢性病需長期用藥的背景下，抗凝血劑或抗血小板藥物的使用正在增加，而這類藥物本身帶有凝血病變或出血傾向增加的風險。</p>
 <p>風險的規模值得記住。血腫擴大是 ASDH 危及生命的已知風險因子，而凝血病變是 ASDH 血腫擴大最重要的風險因子之一。綜論給的數字是：<strong>服用口服抗凝血劑的患者，硬腦膜下血腫（SDH）風險增加 4 至 15 倍</strong>，且血腫容易擴大、死亡風險增加、預後較差。</p>
 <p>適當的凝血病變逆轉因此被視為改善 ASDH 的必要內科處置。</p>
-<h2>Warfarin 的逆轉：這裡有一個單位錯誤</h2>
+<h2 id="bt-s4">Warfarin 的逆轉：這裡有一個單位錯誤</h2>
 <p>Warfarin 這類維生素 K 拮抗劑是典型的抗凝血藥物。綜論的建議是：服用 warfarin 的患者應給予維生素 K 10 mg 靜脈推注，併用四因子凝血酶原複合物濃縮劑（4-factor PCC），劑量依國際標準化比值（INR）而定。</p>
 <p><strong>這裡必須標注一個原文的排印錯誤。</strong> 綜論將 4-factor PCC 的劑量印為「25–50 μg/kg」，但四因子凝血酶原複合物濃縮劑在臨床上一律以<strong>單位／公斤（units/kg，即 IU/kg）</strong>計量，而非微克／公斤。25–50 這個數值範圍與各國依 INR 分層的標準劑量一致，因此可判定數值正確、單位誤植。實務上請以 <strong>25–50 U/kg</strong> 理解，並以院內藥品仿單與 INR 分層表為準。</p>
 <p>另外，綜論提到重組第七凝血因子（recombinant factor VIIa）與新鮮冷凍血漿（FFP）在緊急 ASDH 情境下是 warfarin 有用的解毒劑。這一段反映的是綜論成文當時的實務描述；現行多數指引已將 4-factor PCC 列為 warfarin 逆轉的優先選擇，FFP 退居替代方案，而 rFVIIa 並不建議作為常規逆轉用藥。引用時建議一併對照較新的逆轉指引。</p>
-<h2>NOAC：有解藥，但故事沒說完</h2>
+<h2 id="bt-s5">NOAC：有解藥，但故事沒說完</h2>
 <p>由於 warfarin 監測不易，非維生素 K 拮抗劑口服抗凝血劑（NOAC）的使用正在增加。</p>
 <p>綜論這一段的敘述有前後層次，要按順序讀。它先說 NOAC——包括 dabigatran、apixaban、edoxaban 與 rivaroxaban——沒有可供逆轉凝血病變的解毒劑；接著補充美國 FDA 已核准 idarucizumab（Praxbind）與 andexanet alfa 作為 NOAC 的解毒劑，並指出其有效性仍需更多研究。</p>
 <p>所以正確的理解不是「NOAC 沒有解藥」，而是<strong>專一性解藥已經存在（idarucizumab 對應 dabigatran，andexanet alfa 對應 Xa 抑制劑），但其臨床效益的證據在綜論成文時仍不完整</strong>。</p>
-<h2>手術與否，決定了處理順序</h2>
+<h2 id="bt-s6">手術與否，決定了處理順序</h2>
 <p>綜論把抗凝血患者分成兩條路徑，分野是「是否需要立即手術」。</p>
 <p>若服用抗凝血劑的 TBI 患者<strong>不需要立即手術治療</strong>，應儘快停用抗凝血劑、使用有效的解毒劑，並密切觀察神經學惡化。</p>
 <p>若<strong>需要立即手術治療</strong>，外科醫師應在手術中認知到凝血病變的存在及其風險因子。</p>
 <p>這個分法的實際意義是：不需要立刻進開刀房時，時間可以拿來把凝血狀態修正好；必須立刻進開刀房時，凝血病變就從一個「待處理的問題」變成一個「手術中必須納入預期的條件」。</p>
-<h2>抗血小板藥：沒有解藥，而且輸血小板可能更糟</h2>
+<h2 id="bt-s7">抗血小板藥：沒有解藥，而且輸血小板可能更糟</h2>
 <p>服用抗血小板藥物的 ASDH 患者應迅速停藥。原因是抗血小板藥物沒有解毒劑，而凝血功能的逆轉需要數天時間。</p>
 <p>輸注血小板曾被考慮用來恢復血小板功能。但綜論引用 PATCH 試驗指出，輸注血小板會導致較差的預後，並與三個月死亡率增加相關。</p>
 <p><strong>這一段需要一個重要的但書。</strong> PATCH 試驗（Baharoglu 等，<em>Lancet</em> 2016）收案的是<strong>與抗血小板治療相關的自發性腦內出血（spontaneous cerebral haemorrhage）</strong>患者，並非急性硬腦膜下血腫患者。綜論在正文中將其表述為 ASDH 的證據，屬於跨出原始試驗族群的外推。</p>
 <p>這個區別在臨床上並非咬文嚼字。自發性腦內出血與外傷性硬腦膜下血腫的出血來源、血腫行為與手術處置都不同，PATCH 的陰性結果能否直接搬到 ASDH 身上，並沒有被該試驗回答。合理的讀法是：<strong>在缺乏 ASDH 專屬證據的情況下，PATCH 提供的是一個反對常規輸注血小板的重要警訊，而不是一個已在 ASDH 族群驗證過的結論。</strong></p>
-<h2>什麼時候可以把藥吃回去</h2>
+<h2 id="bt-s8">什麼時候可以把藥吃回去</h2>
 <p>ASDH 手術後抗凝血劑／抗血小板藥物的恢復時機並無明確定義。綜論給的是一個實務範圍：一般而言可在<strong>術後 3 至 7 天</strong>恢復，實際時間取決於每位患者的內科風險。</p>
 <p>「並無明確定義」這五個字是這條建議的主體，3 至 7 天只是常見做法。這類決策本質上是在權衡再出血與血栓事件，而權衡的兩端因人而異——心律不整合併高中風風險的患者，跟因為周邊動脈疾病而服用抗血小板藥的患者，答案不會一樣。</p>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s9">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>項目</th><th>綜論內容</th><th>判讀界線</th></tr></thead>
 <tbody>
@@ -151,7 +171,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>輸注血小板</td><td>綜論引 PATCH 指出預後較差、三個月死亡增加</td><td><strong>PATCH 收案為自發性腦出血，非 ASDH</strong>，屬外推</td></tr>
 <tr><td>恢復用藥</td><td>無明確定義；一般術後 3 至 7 天，依內科風險</td><td>「無明確定義」是主體</td></tr>
 </tbody></table></div>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s10">臨床判讀重點</h2>
 <p>這一章有三個地方最容易被記錯。</p>
 <p>第一是 <strong>14% 降到 4% 的適用範圍</strong>。這個數字很好記，也因此很容易被單獨引用，而把後面那句「晚期癲癇無法被預防」漏掉。結果就是預防性 AED 被無限期延續，病人帶著一個只在急性期有意義的藥物離院。綜論給了停藥的時間點，這個時間點跟療效數字一樣重要。</p>
 <p>第二是 <strong>NOAC 解毒劑的敘述順序</strong>。綜論先寫「沒有解毒劑」再寫「FDA 已核准兩種解毒劑」，如果只讀前半句會得到過時的結論。實際狀況是解藥存在、可近性與成本是問題、長期效益證據仍在累積。</p>

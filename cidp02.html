@@ -77,6 +77,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/cidp02.html">
 </head>
@@ -99,15 +118,16 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 2 篇</strong>　以 EAN/PNS 2021 指引臨床分型為主軸 2021 年的指引把舊稱「非典型 CIDP」正式改名為「CIDP 變異型」，因為這些其實都是輪廓清楚的固定表型。認得出長相，就贏了診斷的一半。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、典型 CIDP：對稱、近遠端都打</a></li><li><a href="#bt-s2">二、五種變異型：各自的長相與最容易被認成誰</a></li><li><a href="#bt-s3">三、「純」與「優勢」：神經傳導決定的後綴</a></li><li><a href="#bt-s4">四、看到這些「紅旗」，請先停下來</a></li><li><a href="#bt-s5">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>典型 CIDP 的長相很好記：<strong>四肢對稱、近端遠端都無力、感覺也受影響、反射變弱或消失，而且拖超過八週還在進展。</strong>它通常從遠端的麻與無力、走路不穩開始，好發在 40 到 60 歲，男性略多。對照格林-巴利症候群（GBS），CIDP 比較少侵犯顱神經，呼吸與自律神經受累更是少見——這是區分「慢性」與「急性」很重要的線索。</p>
 <p>但麻煩的不是典型，而是那些「變裝」的版本。指引把它們整理成五種固定表型，全都跟典型 CIDP 共用「脫髓鞘＋對免疫治療有反應」這個共同底色，所以被歸在同一個疾病光譜上。問題是：<strong>病人愈不像典型，誤診的機會就愈高。</strong></p>
 <hr>
-<h2>一、典型 CIDP：對稱、近遠端都打</h2>
+<h2 id="bt-s1">一、典型 CIDP：對稱、近遠端都打</h2>
 <p>衡量「典型」有三個硬條件：四肢大致對稱、近端與遠端無力程度差不多、至少兩肢有感覺障礙，且病程進展超過八週。反射通常全面變弱或消失。</p>
 <p>這裡藏了一個臨床陷阱叫<strong>急性發作型 CIDP（A-CIDP）</strong>：高達 13% 的典型 CIDP 一開始來得又急又快，四週內就惡化，幾乎跟 GBS 一模一樣。怎麼分？看後續——如果症狀在發病八週後還繼續惡化，或在初步改善後又復發三次以上（治療相關波動），那就要把 GBS 的帽子摘掉，重新戴上 A-CIDP。急性期沒有任何單一檢查能把兩者分開，只能靠時間揭曉。</p>
 <hr>
-<h2>二、五種變異型：各自的長相與最容易被認成誰</h2>
+<h2 id="bt-s2">二、五種變異型：各自的長相與最容易被認成誰</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>變異型</th><th>別名</th><th>無力分布</th><th>感覺</th><th>最容易被誤認成</th></tr></thead>
 <tbody>
@@ -125,7 +145,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>感覺型</strong>不是終點站。長期追蹤發現，約 <strong>70% 一開始純感覺表現的病人，後來會長出無力</strong>，演變成典型表型。</li>
 </ul>
 <hr>
-<h2>三、「純」與「優勢」：神經傳導決定的後綴</h2>
+<h2 id="bt-s3">三、「純」與「優勢」：神經傳導決定的後綴</h2>
 <p>指引在運動型與感覺型上玩了一個文字遊戲，但這個遊戲有臨床意義。同樣是臨床上看起來「只有運動症狀」的病人：</p>
 <ul>
 <li>如果神經傳導測下來<strong>感覺傳導完全正常</strong>（至少四條神經），叫<strong>運動型 CIDP（motor CIDP）</strong></li>
@@ -133,7 +153,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>感覺型反過來也一樣。為什麼要分這麼細？因為「純運動」這件事本身就是一個警訊——它讓你更該想到運動神經元疾病、多灶性運動神經病這些模仿者，也提醒你類固醇的禁忌。表型不只是貼標籤，它直接牽動鑑別診斷與用藥選擇。</p>
 <hr>
-<h2>四、看到這些「紅旗」，請先停下來</h2>
+<h2 id="bt-s4">四、看到這些「紅旗」，請先停下來</h2>
 <p>指引在每個表型旁邊都掛了一串紅旗（red flags）——出現這些特徵時，要先懷疑「這根本不是 CIDP」：</p>
 <ul>
 <li>發病小於 4 週、運動遠大於感覺 → 想 GBS</li>
@@ -144,7 +164,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>紅旗的精神不是要你背完這張表，而是養成一個反射：<strong>病人愈不像課本上的典型，你就要愈用力去想「還有誰會長這樣」。</strong></p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s5">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>

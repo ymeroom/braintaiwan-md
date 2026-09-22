@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/bm05.html">
 </head>
@@ -97,17 +116,18 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 5 篇</strong>　手術、放射、全身藥物各有位置，但腦轉移真正難的是「怎麼組起來、什麼時候做」。這篇談多專科整合的原則、追蹤怎麼排、以及一組門診最容易漏掉的支持照護——類固醇、癲癇、血栓。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">手術還是放射：什麼情況偏向哪一邊</a></li><li><a href="#bt-s2">追蹤：每 2–3 個月一次，還有假性進展這道難題</a></li><li><a href="#bt-s3">支持照護：類固醇、癲癇、血栓，三件最容易漏的事</a></li></ol></details><!-- bt-toc:end -->
 <p>前四篇把工具一件件攤開，這篇談怎麼把它們組成一套治療。腦轉移的多模式治療，要根據病人的整體與神經狀態、共病、影像、原發腫瘤的組織與分子狀態、以及過去用過的治療，做<strong>個別化</strong>的權衡；理想上，這些決定應該在<strong>專門的腦轉移團隊會議或疾病別腫瘤團隊會議</strong>上討論，並有熟悉中樞神經腫瘤的同僚參與〔EANO：IV, n/a；ESMO：V, B〕。</p>
-<h2>手術還是放射：什麼情況偏向哪一邊</h2>
+<h2 id="bt-s1">手術還是放射：什麼情況偏向哪一邊</h2>
 <p>要取得局部控制，手術和立體定位放射（SRT）既競爭又互補；而 WBRT 的角色正在下降，因為它的效益／風險比不高，SRS 又愈來愈成熟。實務上有幾個線索能幫忙偏向某一邊。</p>
 <p><strong>偏向神經外科手術</strong>的因素：原發腫瘤不明、影像上性質不確定的病灶、大的囊性或壞死病灶、需要高劑量類固醇、有明顯佔位效應、以及需要組織做分子檢查來指引決策。<strong>偏向單獨 SRS</strong>（而非手術後再接 SRS 或全身治療）的因素：手術較難到達的位置、手術風險較高、以及病人偏好非侵入性的門診治療。</p>
 <p>有一個特別的情境要單獨講：<strong>原發不明的腦轉移（BM-CUP）</strong>。在做完包含 PET 的完整檢查後仍找不到原發灶時，沒有隨機試驗資料可循；原則是切除後對空腔做放射，但<strong>在找不到其他腫瘤病灶、也沒驗到可作用的驅動突變之前，不要給不分癌別（tumour-agnostic）的全身治療</strong>。</p>
 <p>還有兩個把治療組起來時的地雷要記住：其一，<strong>BRAF 抑制劑合併 WBRT 會造成嚴重皮膚炎</strong>，通常靠避免同時使用來處理；其二，<strong>帶 EGFR 突變或 ALK 重組的病人，不該先做 WBRT</strong>——這在第 4 篇的邏輯上一致，前線該讓有 CNS 活性的標靶先上。</p>
 <p>治療的框架也大致跟著預後分層走：預後較好（1–10 顆、顱外疾病控制、體能佳、預期存活大於 3 個月）的病人，適合積極的局部與全身治療；預後差（大於 10 顆、顱外疾病未控制），或預期存活小於 3 個月的病人，重心則移向全身治療、WBRT，乃至安寧緩和。</p>
-<h2>追蹤：每 2–3 個月一次，還有假性進展這道難題</h2>
+<h2 id="bt-s2">追蹤：每 2–3 個月一次，還有假性進展這道難題</h2>
 <p>有腦轉移病史的病人，應該以<strong>神經學評估加腦部影像，每 2–3 個月追蹤一次</strong>，或在懷疑進展時提前〔EANO：IV, C；ESMO：IV, B〕。治療反應的評估愈來愈依 RANO 準則——它同時考慮對比強化 MRI 上的目標與非目標病灶、神經狀態、以及類固醇使用量。神經認知功能與知情同意能力也應規律評估〔ESMO：IV, B〕。追蹤的 MRI 最好用同一台機器、或至少同樣磁場強度，比較才可靠。</p>
 <p>追蹤最棘手的一關是：<strong>傳統 MRI 不一定分得清「治療相關變化」與「真正的腫瘤進展」</strong>——尤其放射治療後的假性進展與放射壞死。灌流 MRI 與磁振頻譜愈來愈常用來輔助，但證據仍有限。這時候<strong>胺基酸 PET</strong>（如 [11C]-methionine、[18F]-FDOPA、[18F]-FET）派上用場：跨這些示蹤劑，區分腫瘤復發與放射傷害的敏感度與特異度都落在 <strong>80%–90%</strong>。FET-PET 對免疫治療、標靶治療（有無合併放射）後的治療相關變化診斷也有價值〔EANO：III, C；ESMO：IV, C〕。此外，免疫治療有專屬的 immunotherapy RANO 準則，設計來避免太早把病灶判為進展——因為免疫治療的病人可能在初期進展後才出現長期存活與腫瘤消退。</p>
-<h2>支持照護：類固醇、癲癇、血栓，三件最容易漏的事</h2>
+<h2 id="bt-s3">支持照護：類固醇、癲癇、血栓，三件最容易漏的事</h2>
 <p>這一段是門診最實用、也最常被輕忽的部分。</p>
 <p><strong>類固醇</strong>：只在有症狀的病人使用，而且用<strong>能控制顱內壓的最低劑量、最短時間</strong>〔ESMO：IV, B〕。類固醇用超過幾週、又合併其他免疫抑制治療時，肺囊蟲肺炎（Pneumocystis jirovecii）風險上升，該考慮用 trimethoprim-sulfamethoxazole 預防。至於 SRT 後的<strong>放射壞死</strong>，bevacizumab 大概是最好的藥——活性優於類固醇，而且可能不干擾免疫治療的效果。</p>
 <p><strong>癲癇</strong>：發生過癲癇的病人，至少要暫時給予次級（secondary）抗癲癇預防；但<strong>沒發作過的病人不建議給初級（primary）預防</strong>，因為它並未被證明能預防第一次發作〔EANO：I, A；ESMO：I, A〕。選藥上，偏好<strong>沒有藥物交互作用</strong>的抗癲癇藥——levetiracetam、lamotrigine、lacosamide，優於 phenytoin、carbamazepine 或 valproic acid。這點在同時打化療、標靶的病人身上特別重要。</p>

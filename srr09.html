@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/srr09.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 09 篇</strong>　這一篇讀第五章最後三節：上肢與日常生活活動（§5.6）、視覺障礙的治療（§5.9），以及吞嚥篩檢、處置與營養支持（§5.10）。三節各有特色：上肢那節有全指引最多元的治療選項，從鏡像治療到迷走神經刺激；視覺那節有一條 1/A 的推薦，證據卻主要來自非中風族群；吞嚥那節有 18 條推薦，也有一句前後矛盾的話。</p>
 </blockquote>
-<h2>上肢：無力的比例在下降</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 10 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">上肢：無力的比例在下降</a></li><li><a href="#bt-s2">十五條上肢推薦</a></li><li><a href="#bt-s3">兩條要對照著讀的細節</a></li><li><a href="#bt-s4">fluoxetine 又出現了一次</a></li><li><a href="#bt-s5">視覺：三種策略</a></li><li><a href="#bt-s6">吞嚥：十八條推薦</a></li><li><a href="#bt-s7">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">上肢：無力的比例在下降</h2>
 <p><strong>上肢偏癱是最常見的中風後失能之一，但近年資料顯示，中風後第一週上肢無力的盛行率比 1990 年代的報告低，估計在 48% 到 57%。</strong> 指引認為<strong>可能與急性期醫療處置的進步有關</strong>。不過<strong>許多早期有上肢障礙的人，6 個月後患側手臂的功能性使用仍然有限。</strong></p>
 <p>另一個常被忽略的數字：<strong>一項橫斷研究指出，上肢障礙者有 57% 同時有體感覺缺損。</strong></p>
-<h2>十五條上肢推薦</h2>
+<h2 id="bt-s2">十五條上肢推薦</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>推薦</th><th>COR</th><th>LOE</th></tr></thead>
 <tbody>
@@ -123,10 +143,10 @@ article, article *{overflow-wrap:break-word}
 <p>CIMT 是這一節評價最高的：<strong>被認為是改善中風後上肢功能最有效的介入之一</strong>，但適用對象是<strong>輕度上肢偏癱、手腕與手指能主動伸直的人。</strong></p>
 <p>機器人在上肢和下肢的處境不一樣。下肢那條是 No Benefit，上肢則是 2a/A，理由是<strong>增加練習量</strong>。但支持文字寫得很清楚：<strong>機器人治療的優越性並沒有被證實</strong>；<strong>與劑量相當的職能治療相比，既不劣也不優</strong>；<strong>一個三臂試驗中，機器人組的動作損傷改善了，但沒有轉化成日常活動表現的進步。</strong> 它的價值在於<strong>創造更多練習機會，而且不良事件少，不需要治療師在場也能安全練習。</strong></p>
 <p>虛擬實境的證據也類似：<strong>一個大型臨床試驗中，VR 治療沒有優於休閒治療計畫</strong>；系統性回顧顯示<strong>VR 相較其他治療（通常是運動）只有很小的好處</strong>，但<strong>用來增加常規照護的練習量時，效果量是小到中等。</strong></p>
-<h2>兩條要對照著讀的細節</h2>
+<h2 id="bt-s3">兩條要對照著讀的細節</h2>
 <p><strong>主動體感覺訓練</strong>的推薦寫明適用於「中風超過 6 週」的人，支持文字說它<strong>在晚期亞急性期（3 到 6 個月）與慢性期都成功過</strong>，但也提到：<strong>一個以中風後不到 8 週的住院病人為對象的多中心隨機試驗，混合感覺訓練與動作任務，並沒有正面效果。</strong> 6 週與 8 週之間有重疊，這個試驗的族群有一部分正好落在推薦範圍內。作者的推測是，<strong>實驗任務同時要求注意感覺與動作，分散了注意力資源。</strong></p>
 <p><strong>迷走神經刺激</strong>是這節唯一需要植入的治療。<strong>長期追蹤研究顯示，植入後約 1 年，上肢 Fugl-Meyer 分數有臨床上顯著的改變，但因為是交叉設計，無法和假刺激組比較。</strong> 指引的結論是<strong>需要更多研究確認 VNS 合併任務訓練的療效。</strong></p>
-<h2>fluoxetine 又出現了一次</h2>
+<h2 id="bt-s4">fluoxetine 又出現了一次</h2>
 <p>上肢那節的知識缺口，把 fluoxetine 的故事又講了一次，這次是關於動作恢復：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>試驗</th><th>結果</th></tr></thead>
@@ -137,7 +157,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>Cochrane</td><td>SSRI 可能有助中風恢復的證據不一；<strong>低偏誤風險的試驗中沒有正面結果</strong></td></tr>
 </tbody></table></div>
 <p>所以 FLAME 的正面結果在後來較大的試驗中沒有被重現。這也是第 01 篇提到的 FDA 政策會影響的地方：沒有中風恢復適應症的藥，不會出現在推薦表上。</p>
-<h2>視覺：三種策略</h2>
+<h2 id="bt-s5">視覺：三種策略</h2>
 <p><strong>中風後視覺障礙包括眼球運動缺損（如輻輳不足、凝視麻痺）、視野缺損（如半盲、象限盲），以及視知覺障礙。</strong> 介入分三類：<strong>恢復性（例如眼球運動訓練，目標是恢復視覺功能）、代償性（例如掃視訓練，教新的策略）、替代性（利用稜鏡等光學設備或環境調整）。</strong></p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>推薦</th><th>COR</th><th>LOE</th></tr></thead>
@@ -157,7 +177,7 @@ article, article *{overflow-wrap:break-word}
 <p>稜鏡的證據：<strong>61 人（47 人中風）的雙盲交叉試驗，治療後想繼續戴真稜鏡（57 屈光度、約 30 度）的比例顯著高於假稜鏡。</strong> 但<strong>兩組都報告移動能力改善，組間沒有統計差異。</strong> 另一個 87 人的試驗比較稜鏡、掃視訓練與衛教，<strong>6 項自評功能中有 5 項沒有顯著差異</strong>，而<strong>稜鏡組有頭痛、複視等輕微不良事件。</strong></p>
 <p>掃視訓練能改善生活品質，但不改善視野；而且<strong>一個 161 人的試驗發現，快速掃視訓練與假訓練（慢速追視）在生活品質上沒有差異</strong>，指引推測<strong>假介入本身可能就是有效的介入。</strong></p>
 <p>視知覺那段，知識缺口用了一個指引裡很少見的形容詞：<strong>令人震驚的是（Shockingly），降低視知覺功能障礙影響的介入證據仍然極度缺乏。</strong></p>
-<h2>吞嚥：十八條推薦</h2>
+<h2 id="bt-s6">吞嚥：十八條推薦</h2>
 <p><strong>吞嚥困難是常見而高風險的中風併發症，會造成吸入性肺炎、營養不良、脫水與較差的功能結局。</strong></p>
 <h3>篩檢與評估</h3>
 <div class="bt-tablewrap"><table>
@@ -205,7 +225,7 @@ article, article *{overflow-wrap:break-word}
 <p>FLAME 的故事值得再講一次。它發表時，讓很多人相信 fluoxetine 可以「促進腦部可塑性」。接下來的 FOCUS、AFFINITY、EFFECTS 加起來將近六千人，都沒有看到功能改善，反而看到了骨折與癲癇。一個漂亮的小型試驗被大型試驗推翻，這在神經科學裡並不少見。</p>
 </blockquote>
 <p>視知覺障礙的介入證據，指引自己用了「令人震驚」來形容它的缺乏，這在一份臨床指引裡是很罕見的用詞；而這個領域，到底是太難研究，還是太少人研究？</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s7">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>指引實際說法</th></tr></thead>
 <tbody>

@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/hz03.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 3 篇</strong>　急性期治療有三個目標：縮短病程、減輕急性疼痛、降低併發症。核心是<strong>及早抗病毒</strong>；類固醇則是個常被誤解的配角。本篇把「給誰、給什麼、何時給、要不要加類固醇」一次講清楚。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、抗病毒治療：72 小時內，能給就給</a></li><li><a href="#bt-s2">二、超過 72 小時還要不要給？</a></li><li><a href="#bt-s3">三、劑量與安全：腎功能是關鍵</a></li><li><a href="#bt-s4">四、類固醇：止「急性痛」可考慮，止「PHN」沒用</a></li><li><a href="#bt-s5">五、其他急性期照護</a></li><li><a href="#bt-s6">臨床要點摘要</a></li><li><a href="#bt-s7">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>急性帶狀皰疹的治療，成敗常取決於一個數字：<strong>72 小時</strong>。抗病毒藥愈早給，縮短病程與止痛的效益愈明顯。本篇先談抗病毒主角，再談類固醇這個爭議配角。</p>
 <hr>
-<h2>一、抗病毒治療：72 小時內，能給就給</h2>
+<h2 id="bt-s1">一、抗病毒治療：72 小時內，能給就給</h2>
 <p>口服抗病毒藥可<strong>加速皮疹癒合、縮短病毒排放、減輕急性神經痛</strong>。建議於<strong>出疹後 72 小時內</strong>開始。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>成人常用劑量</th><th>療程</th><th>特點</th></tr></thead>
@@ -111,7 +131,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p><strong>為何偏好 valaciclovir / famciclovir？</strong> 兩者口服吸收與血中濃度優於 aciclovir，服藥頻率低、順從性好。三者皆有效，aciclovir 主要劣勢是一天五次。</p>
 <hr>
-<h2>二、超過 72 小時還要不要給？</h2>
+<h2 id="bt-s2">二、超過 72 小時還要不要給？</h2>
 <p>過了 72 小時不代表放棄。<strong>只要符合下列任一情況，仍建議給藥</strong>：</p>
 <ul>
 <li>仍有<strong>新水疱形成</strong>（代表病毒仍在複製）</li>
@@ -124,7 +144,7 @@ article, article *{overflow-wrap:break-word}
 <p>換句話說：72 小時是「盡量趕上」的目標，不是「過了就不治」的鐵閘。臨床上對高風險族群，超過 72 小時我仍會治療。</p>
 </blockquote>
 <hr>
-<h2>三、劑量與安全：腎功能是關鍵</h2>
+<h2 id="bt-s3">三、劑量與安全：腎功能是關鍵</h2>
 <ul>
 <li><strong>依腎功能調整劑量</strong>：三種藥皆經腎排除，腎功能不全須減量，否則易神經毒性（意識混亂、幻覺、肌陣攣）</li>
 <li><strong>充分水分</strong>：尤其使用靜脈 aciclovir 時，避免結晶性腎病變</li>
@@ -137,7 +157,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>靜脈 aciclovir</td><td>重症、中樞侵犯、嚴重免疫低下、無法口服</td></tr>
 </tbody></table></div>
 <hr>
-<h2>四、類固醇：止「急性痛」可考慮，止「PHN」沒用</h2>
+<h2 id="bt-s4">四、類固醇：止「急性痛」可考慮，止「PHN」沒用</h2>
 <p>這是最常被誤解的一塊。重點結論：</p>
 <ul>
 <li>系統性類固醇<strong>併用抗病毒</strong>時，可能<strong>略為減輕急性期疼痛、加速癒合與生活功能恢復</strong></li>
@@ -155,14 +175,14 @@ article, article *{overflow-wrap:break-word}
 <p>一句話記住：<strong>類固醇是改善急性症狀的「選用配角」，不是預防 PHN 的工具，而且永遠跟著抗病毒一起上。</strong></p>
 </blockquote>
 <hr>
-<h2>五、其他急性期照護</h2>
+<h2 id="bt-s5">五、其他急性期照護</h2>
 <ul>
 <li><strong>疼痛控制</strong>：急性神經痛常需積極處置，留待專篇思路（gabapentinoids、TCA、必要時短期 opioids）——詳見第 5 篇 PHN 治療階梯，多數急性期可沿用</li>
 <li><strong>皮膚照護</strong>：保持清潔乾燥、避免抓破；續發細菌感染時加抗生素</li>
 <li><strong>隔離</strong>：水疱結痂前避免接觸未免疫者、孕婦與免疫低下者；播散性需空氣＋接觸隔離</li>
 </ul>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s6">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
@@ -181,7 +201,7 @@ article, article *{overflow-wrap:break-word}
 <p>最後別忘了腎功能。Aciclovir 類藥物的神經毒性在腎功能差的長者身上很容易被誤認成「中風」或「譫妄」——減量、補水，這兩件小事能省掉一場大誤會。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s7">參考文獻</h2>
 <ol>
 <li>Dworkin RH, et al. Recommendations for the management of herpes zoster. <em>Clin Infect Dis</em>. 2007;44(Suppl 1):S1-S26.</li>
 <li>Cohen JI. Herpes Zoster. <em>N Engl J Med</em>. 2013;369(3):255-263.</li>

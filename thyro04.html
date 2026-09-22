@@ -66,6 +66,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/thyro04.html">
 </head>
@@ -88,20 +107,21 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 4 篇</strong>　治療聽起來是這個系列裡最簡單的一段——單一藥物、空腹吃、抽血調劑量。但 Seminar 接下來攤出的達標率數字,會讓人重新想一次「簡單」這兩個字到底站不站得住腳。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">起始劑量:足量開始,還是小心漸進</a></li><li><a href="#bt-s2">懷孕:自己先加量,別等回診才調整</a></li><li><a href="#bt-s3">現實比流程複雜:三到六成患者沒達標</a></li><li><a href="#bt-s4">為什麼達不到目標:一張問題清單</a></li><li><a href="#bt-s5">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>Levothyroxine 單方口服、固體劑型、空腹服用,是標準治療,這件事沒有爭議。只要臨床上有症狀、生化上又確認是顯性甲狀腺低能症,就是起始治療的適應症。學名藥沒有理由避免使用,但有一個例外值得記住:病人已經穩定用某一個廠牌一段時間了,就不建議任意換牌子——不是學名藥有問題,是換牌子本身可能牽動血中濃度的微幅波動。</p>
-<h2>起始劑量:足量開始,還是小心漸進</h2>
+<h2 id="bt-s1">起始劑量:足量開始,還是小心漸進</h2>
 <p>顯性甲狀腺低能症的最適每日劑量,約是每公斤體重 1.5–1.8 微克(μg/kg/day)。這個數字對年輕、沒有共病的病人來說,通常可以直接從足量劑量開始,再搭配監測避免吃過頭。</p>
 <p>但合併冠狀動脈疾病的病人不一樣。這群人建議從約 12.5–25.0 微克/天的小劑量起步,再依症狀與 TSH 一步步往上調——這種漸進式的做法,在年長者、尤其共病多的族群裡特別常用,道理很直接:甲狀腺素會加快心臟的代謝需求,對本來心臟血流就吃緊的人,劑量衝太快等於直接踩油門。</p>
 <p>起始治療之後,建議 4–12 週複測一次 TSH,確認劑量方向對不對;之後拉長到每 6 個月一次;等數值穩定下來,再拉長到每年一次。追蹤的節奏會隨著穩定度變鬆,但不會完全停下來。</p>
-<h2>懷孕:自己先加量,別等回診才調整</h2>
+<h2 id="bt-s2">懷孕:自己先加量,別等回診才調整</h2>
 <p>育齡婦女一旦確定懷孕,身體的生理需求會立刻改變,而回診排隊往往等不及。Seminar 給的建議很明確:確定懷孕後,病人應該自行將 levothyroxine 劑量提高約 30%,同時儘速聯絡醫師做後續調整。懷孕期間甲狀腺功能的篩檢與治療細節,這篇 Seminar 沒有多談,留給專門討論懷孕與甲狀腺的文獻處理。</p>
 <p>中樞型甲狀腺低能症的治療目標又是另一回事——因為沒有正常的下視丘-垂體回饋可用,沒辦法靠「TSH 反射性追蹤」這套邏輯來調劑量,得換一套監測邏輯。</p>
-<h2>現實比流程複雜:三到六成患者沒達標</h2>
+<h2 id="bt-s3">現實比流程複雜:三到六成患者沒達標</h2>
 <p>治療目標聽起來單純:TSH 正常化,同時緩解生理心理的不適,還要避免吃太多或吃太少。但 Seminar 給的數字是,估計約有 35–60% 使用 levothyroxine 治療的患者,最終沒有達到目標 TSH 範圍——這個區間本身已經很寬,而且過度治療與治療不足都算在裡面。</p>
 <p>一項英國回溯性世代研究把這個現象量化得更清楚:治療滿 5 年後,約 6% 患者的 TSH 低於 0.1 mIU/L,這是過度治療;另外超過 10% 的患者,TSH 高於 10.0 mIU/L,這是治療不足。兩端都不是零星個案。</p>
 <p>過度治療不是無傷大雅的「多吃一點」——它可能誘發心房顫動、加速骨質疏鬆,老年人與停經後婦女尤其要避免踩進這個區間。治療不足則是另一種代價:心血管疾病風險上升,原本要緩解的症狀也持續拖著不走。兩個方向都有實質後果,劑量調整因此沒有「差不多就好」的空間。</p>
-<h2>為什麼達不到目標:一張問題清單</h2>
+<h2 id="bt-s4">為什麼達不到目標:一張問題清單</h2>
 <p>Seminar 整理了一份常見的未達標原因與對策(下表)。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>原因</th><th>說明與對策</th></tr></thead>
@@ -117,7 +137,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>抽血前才臨時補吃一顆藥,是這張清單裡最容易被忽略、卻最常見的陷阱——病人看起來很配合,數字卻怎麼都對不上,答案往往就藏在「這一顆是不是為了今天抽血才吃的」這句追問裡。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s5">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>

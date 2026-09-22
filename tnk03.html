@@ -83,6 +83,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/tnk03.html">
 </head>
@@ -104,10 +123,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 3 篇（完結篇）</strong>　TNK 可以在約 5 秒內完成推注，但真正決定病安的，是推注前的每一步：辨識正確適應症、重組藥品、核對外觀與濃度、抽取正確體積，以及選對靜脈管路。本篇依 2026 台灣共識整理 Metalyse 25 mg 的實務重點。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、重組前：先確認「人、藥、適應症、劑量」</a></li><li><a href="#bt-s2">二、Metalyse 25 mg 九步驟</a></li><li><a href="#bt-s3">三、管路相容性：不要接到葡萄糖或混合藥物</a></li><li><a href="#bt-s4">四、最危險的錯誤：把 STEMI 劑量帶進腦中風流程</a></li><li><a href="#bt-s5">五、發生出血怎麼辦？TNK 沒有專屬逆轉藥</a></li><li><a href="#bt-s6">六、推注前 30 秒口頭核對</a></li><li><a href="#bt-s7">七、導入 TNK 的最後一哩，是系統而不是記憶</a></li><li><a href="#bt-s8">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>「單次推注」常被理解為操作簡單，但 TNK 是高警訊溶栓藥物。它的風險不是步驟很多，而是<strong>步驟少、速度快，一旦錯誤就幾乎沒有回頭空間。</strong></p>
 <p>Metalyse 25 mg/vial 為凍晶粉末，需以隨附的無菌注射用水重組。共識依台灣核准仿單整理了九個步驟；以下以流程與病安語言重新歸納。</p>
-<h2>一、重組前：先確認「人、藥、適應症、劑量」</h2>
+<h2 id="bt-s1">一、重組前：先確認「人、藥、適應症、劑量」</h2>
 <p>在打開藥盒前，先完成：</p>
 <ul>
 <li>病人符合急性缺血性腦中風靜脈溶栓條件，禁忌症已排除。</li>
@@ -116,7 +136,7 @@ article, article *{overflow-wrap:break-word}
 <li>藥品名稱、25 mg 規格、效期、包裝與瓶身完整。</li>
 <li>使用隨附或仿單指定的無菌注射用水，不以其他溶液替代重組。</li>
 </ul>
-<h2>二、Metalyse 25 mg 九步驟</h2>
+<h2 id="bt-s2">二、Metalyse 25 mg 九步驟</h2>
 <ol>
 <li><strong>給藥前才開始調配</strong>：避免重組後放置過久。</li>
 <li><strong>移除小瓶保護蓋</strong>：確認瓶口與橡皮塞完整。</li>
@@ -129,7 +149,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>立即使用</strong>：未使用藥液依規定丟棄，不保留供下次使用。</li>
 </ol>
 <p>這九步的重點可濃縮成三句話：<strong>不要搖、要看外觀、抽的是 mL 不是 mg。</strong></p>
-<h2>三、管路相容性：不要接到葡萄糖或混合藥物</h2>
+<h2 id="bt-s3">三、管路相容性：不要接到葡萄糖或混合藥物</h2>
 <p>共識提出三個明確限制：</p>
 <ul>
 <li>Metalyse 與葡萄糖溶液不相容。</li>
@@ -137,7 +157,7 @@ article, article *{overflow-wrap:break-word}
 <li>不可與其他藥物混合，包括 heparin。</li>
 </ul>
 <p>推注後以 0.9% 氯化鈉溶液沖洗管路，確保完整輸送。若既有管路正在輸注不相容溶液或其他藥物，應依院內 protocol 處理，不要為求快而直接共管。</p>
-<h2>四、最危險的錯誤：把 STEMI 劑量帶進腦中風流程</h2>
+<h2 id="bt-s4">四、最危險的錯誤：把 STEMI 劑量帶進腦中風流程</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>適應症</th><th>TNK 劑量</th><th>最大劑量</th></tr></thead>
 <tbody>
@@ -151,10 +171,10 @@ article, article *{overflow-wrap:break-word}
 <li>藥局出藥標籤同時標示最終 mg 與 mL。</li>
 <li>推注前由第二人員口頭回讀「腦中風、體重、mg、mL」。</li>
 </ul>
-<h2>五、發生出血怎麼辦？TNK 沒有專屬逆轉藥</h2>
+<h2 id="bt-s5">五、發生出血怎麼辦？TNK 沒有專屬逆轉藥</h2>
 <p>TNK 沒有專屬 reversal agent。若治療後懷疑顱內出血或其他重大出血，應立即啟動院內溶栓後出血 protocol，包括停止相關給藥、緊急影像與實驗室評估，並依 2025 台灣腦中風學會急性缺血性腦中風靜脈血栓溶解治療指引處置。</p>
 <p>本文不重寫出血處置劑量，因為這部分必須以使用當下的院內 protocol、血液檢驗與專科判斷為準。團隊真正要做的是在 TNK 上線前，就確認急診、神經科、檢驗、血庫與神外知道如何啟動同一條路徑。</p>
-<h2>六、推注前 30 秒口頭核對</h2>
+<h2 id="bt-s6">六、推注前 30 秒口頭核對</h2>
 <ul>
 <li>「急性缺血性腦中風，TNK 0.25 mg/kg。」</li>
 <li>「體重 __ kg，劑量 __ mg，上限未超過 25 mg。」</li>
@@ -164,14 +184,14 @@ article, article *{overflow-wrap:break-word}
 <li>「第二位人員核對完成。」</li>
 <li>「出血處置 protocol 可立即啟動。」</li>
 </ul>
-<h2>七、導入 TNK 的最後一哩，是系統而不是記憶</h2>
+<h2 id="bt-s7">七、導入 TNK 的最後一哩，是系統而不是記憶</h2>
 <p>單次推注可以讓照護更快，但前提是把知識變成系統：標準醫囑、體重與體積表、雙人覆核、藥品標示、管路規則、轉送交班與出血演練。若每次都要靠臨床人員臨場回想九個步驟，流程就還沒有真正準備好。</p>
 <hr>
 <blockquote class="commentary">
 <h3>🩺 臨床小結</h3>
 <p>TNK 最吸引人的地方是 5 秒推注；最需要敬畏的，也正是 5 秒推注。它把原本一小時內還能發現的輸注錯誤，壓縮成一次不可逆的動作。導入 TNK 時，請把注意力從「這支藥比較快」移到「我們的系統是否能讓快同時保持準確」。</p>
 </blockquote>
-<h2>參考文獻</h2>
+<h2 id="bt-s8">參考文獻</h2>
 <ol>
 <li>台灣腦中風學會 TNK 共識小組。急性缺血性腦中風 Tenecteplase 靜脈血栓溶解治療共識。2026。</li>
 <li>Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke. <em>Stroke</em>. 2026. doi:10.1161/STR.0000000000000513.</li>

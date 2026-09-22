@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/dmrx03.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 3 篇</strong>　NG28 的詞彙表對「早發型第二型糖尿病」下了一個沒有轉圜餘地的定義：<strong>40 歲以前診斷的糖尿病</strong>。這群人在 2026 年版第一次擁有自己的一條治療路徑，而理由不是他們現在有多糟，是他們往後還有多少年可以壞下去。</p>
 </blockquote>
-<h2>臨床要點摘要</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">臨床要點摘要</a></li><li><a href="#bt-s2">一、兩個選項，兩種不同的理由</a></li><li><a href="#bt-s3">二、為什麼是這群人</a></li><li><a href="#bt-s4">三、生育這一關，在這條路徑上特別重要</a></li><li><a href="#bt-s5">四、開口的方式也被寫進指引</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>項目</th><th>NG28 2026 內容</th></tr></thead>
 <tbody>
@@ -107,18 +127,18 @@ article, article *{overflow-wrap:break-word}
 <tr><td>tirzepatide 的理由</td><td><strong>僅列血糖效益</strong></td></tr>
 <tr><td>metformin 禁忌或不耐受</td><td>SGLT-2 抑制劑，並考慮加上 GLP-1 受體促效劑或 tirzepatide（1.16.2）</td></tr>
 </tbody></table></div>
-<h2>一、兩個選項，兩種不同的理由</h2>
+<h2 id="bt-s2">一、兩個選項，兩種不同的理由</h2>
 <p>1.16.1 寫得很仔細，而這份仔細在轉述時最容易被抹平：加上 GLP-1 受體促效劑的理由是「for its cardiovascular, renal and glycaemic benefits」，加上 tirzepatide 的理由則是「for its glycaemic benefits」。</p>
 <p>同一句話裡並列的兩個選項，指引給了長度不同的適應理由。看到「或」就把兩者當成等價替代品，會漏掉委員會刻意留下的差別。</p>
-<h2>二、為什麼是這群人</h2>
+<h2 id="bt-s3">二、為什麼是這群人</h2>
 <p>委員會依其經驗認為，早發型第二型糖尿病的病人有兩個特徵：<strong>終生發生心血管與腎臟併發症、以及因此死亡的風險非常高</strong>，而且更可能同時合併肥胖。早期積極治療可以藉由預防這些未來的不良結果而帶來效益。</p>
 <p>這裡有一個誠實的方法學缺口，指引沒有藏。委員會明說：沒有專門針對早發型糖尿病的臨床試驗。他們的做法是從更廣泛的第二型糖尿病族群外推，而那些證據顯示——SGLT-2 抑制劑與 GLP-1 受體促效劑都能降低心血管事件（心血管死亡、心肌梗塞、非致命性中風、因心衰竭住院）與發生末期腎病的風險；SGLT-2 抑制劑、GLP-1 受體促效劑與 tirzepatide 都能降低 HbA1c，並以體重下降作為有益的副作用。委員會認為長期使用可以放大這些效益。</p>
 <p>健康經濟學的證據則被委員會自評為高度不確定，原因有三：沒有專門針對早發型糖尿病的試驗、支撐模型的那個試驗只納入少數早發型病人，以及評估治療效益的時間範圍太短，可能低估了這群人的長期優勢。</p>
-<h2>三、生育這一關，在這條路徑上特別重要</h2>
+<h2 id="bt-s4">三、生育這一關，在這條路徑上特別重要</h2>
 <p>因為這條路徑建議考慮 GLP-1 受體促效劑或 tirzepatide，而走這條路徑的人依定義都在 40 歲以下，委員會特別把生育安全寫進說明。</p>
 <p>委員會指出，這群人當中具生育能力的女性、跨性別男性與非二元性別者若使用 GLP-1 受體促效劑或 tirzepatide，存在特別的風險，並同意這類藥物的作用<strong>可能提高生育力</strong>。MHRA 對 GLP-1 類藥物的指引建議，GLP-1 受體促效劑與 tirzepatide 不應在懷孕與哺乳期間使用，因為安全性資料不足以判斷是否會造成傷害；同時建議所有具生育能力者，在使用期間以及停藥後一段期間內（長度視使用的特定藥物而定）都應採取措施避免懷孕。</p>
 <p>委員會明說，這件事對早發型第二型糖尿病的病人<strong>特別重要</strong>，因為他們的年齡，以及這份指引正好建議為這群人考慮這兩類藥物。</p>
-<h2>四、開口的方式也被寫進指引</h2>
+<h2 id="bt-s5">四、開口的方式也被寫進指引</h2>
 <p>委員會在同一段裡談了一件不常出現在藥物指引裡的事：醫療人員使用的語言會造成影響。糖尿病患者在藥物討論中可能經歷許多污名，即使醫療人員並非有意；病人也可能為糖尿病與體重的刻板印象所困，因而感到責備、羞恥與罪惡感，進而顯著影響身心健康。污名與刻板印象也會讓病人更難開始或持續用藥。委員會的經驗是這種情況相當常見，因此他們認為在藥物討論中特別用心把話說對是重要的。</p>
 <p>對一個二十幾歲、剛被診斷、又被建議終生用藥的病人來說，這一段的實用性可能不亞於任何一條劑量建議。</p>
 <blockquote class="commentary">

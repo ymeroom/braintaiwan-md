@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/nphn01.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 01 篇</strong>　這是《新英格蘭醫學期刊》二〇二五年十二月的特發性常壓水腦症（idiopathic normal-pressure hydrocephalus, iNPH）綜論，作者是麻州大學神經外科的 Johnson 與華盛頓大學神經內科／神經外科的 Williams——後者同時是 Adult Hydrocephalus Clinical Research Network 多中心研究與二〇二五年那篇分流手術隨機對照試驗的作者之一。這篇文章有一個很不尋常的寫法：它不從定義寫起，而是先承認「這個病到今天仍被懷疑」，然後把四個誤解一個一個拆開。這一篇先把病的定位、六十年的懷疑史，還有那些說明它「一點都不罕見」的數字交代完。</p>
 </blockquote>
-<h2>先把定義釘死：什麼叫「常壓」</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 7 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">先把定義釘死：什麼叫「常壓」</a></li><li><a href="#bt-s2">一段從熱潮到懷疑的六十年</a></li><li><a href="#bt-s3">誤解一：它一點都不罕見</a></li><li><a href="#bt-s4">而且它被嚴重低估與低度治療</a></li><li><a href="#bt-s5">這篇綜論的四個 Key Points</a></li><li><a href="#bt-s6">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">先把定義釘死：什麼叫「常壓」</h2>
 <p>iNPH 是一個<strong>症候群</strong>：步態與平衡障礙、尿急或尿失禁、認知功能減退，加上<strong>腦室擴大（ventriculomegaly）</strong>，通常發生在<strong>六十歲以上</strong>的人身上。標準治療是<strong>外科植入腦脊髓液（CSF）分流管</strong>。</p>
 <p>「常壓」這兩個字最容易被誤讀。原文講得很清楚：所謂 normal pressure，指的是在腦室擴大的情況下，<strong>腰椎穿刺或腦室外引流置放時量到的 CSF 壓力正常或僅輕微升高</strong>。它不是說這顆腦子的壓力動力學一切正常——後續研究反而顯示，這些病人的<strong>顱內壓波形與順應性（compliance）是異常的</strong>。壓力的「平均值」正常，不代表壓力的「行為」正常。這個區分會一路延伸到第 04 篇的預後測試。</p>
 <p>常壓水腦症分兩類，這個分類直接決定臨床怎麼想：</p>
@@ -111,7 +131,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>兩者都是<strong>交通性水腦症（communicating hydrocephalus）</strong>——意思是腦室系統內的脊髓液流動<strong>沒有阻塞</strong>。這個「沒有阻塞」不是背景知識，它是後面影像那一章的硬性前提：一旦影像看到阻塞，這就不是交通性、不是 iNPH，而且<strong>不能做腰椎穿刺</strong>（有腦疝的風險）。</p>
 <p>原文選擇聚焦特發性，理由給得很實際：它<strong>更常見，也比續發性更難診斷</strong>，因此絕大多數研究都做在它身上。</p>
-<h2>一段從熱潮到懷疑的六十年</h2>
+<h2 id="bt-s2">一段從熱潮到懷疑的六十年</h2>
 <p>第一篇常壓水腦症的描述，<strong>六十年前就發表在《新英格蘭醫學期刊》</strong>（Adams RD, Fisher CM, Hakim S, et al. 1965），而它的基礎是哥倫比亞神經外科醫師 <strong>Salomon Hakim 一九六四年的博士論文</strong>。這個病從第一天起就掛著「可用手術治療的失智」這個極具吸引力的標籤。</p>
 <p>一九六〇、七〇年代因此出現一波診斷與治療的熱潮。但接下來的報告把熱潮澆熄了，原文列出四個原因：</p>
 <ol>
@@ -131,7 +151,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>④ 術後改善是短暫的、或沒有臨床意義</td><td>隨機試驗與長期追蹤（第 05 篇）</td></tr>
 </tbody></table></div>
 <p>這四句話等於是整篇文章的目錄。把它們記住，後面每一章在回答哪一題就一目了然。</p>
-<h2>誤解一：它一點都不罕見</h2>
+<h2 id="bt-s3">誤解一：它一點都不罕見</h2>
 <p>iNPH 主要發生在<strong>六十歲以後</strong>，盛行率<strong>隨年齡上升</strong>，<strong>男女沒有明顯差異</strong>。</p>
 <p>流行病學研究用的是「<strong>可能的 iNPH（possible iNPH）</strong>」這個指引定義——意思是有腦室擴大、有符合 iNPH 的臨床表現，但<strong>尚未做預測分流反應的預後檢查</strong>。這個定義很重要：它是流行病學的量尺，不是臨床確診的量尺，看數字時要記得它偏寬。</p>
 <div class="bt-tablewrap"><table>
@@ -142,7 +162,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>日本社區世代（70 歲追蹤至 86 歲）</td><td>縱貫追蹤</td><td><strong>7.7%</strong></td></tr>
 </tbody></table></div>
 <p>日本那個 7.7% 特別值得停一下：它是<strong>同一群人從 70 歲追到 86 歲</strong>的縱貫研究，所以那個數字反映的是「活得夠久之後累積起來的比例」。這正好對上「盛行率隨年齡上升」那句話——iNPH 不是一群特殊的人才會得的病，而是一個活得夠老就會遇到的病。</p>
-<h2>而且它被嚴重低估與低度治療</h2>
+<h2 id="bt-s4">而且它被嚴重低估與低度治療</h2>
 <p>原文把「有多少人有病」和「有多少人被開刀」擺在一起，落差大得刺眼：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>數字</th></tr></thead>
@@ -154,7 +174,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>左半邊是被治療的人，右半邊是可能有病的人，兩者差了好幾個數量級。原文的結論句寫得很收斂但意思明確：<strong>還有其他個案很可能根本沒有被診斷出來。</strong></p>
 <p>那 15% 這個數字對神經內科特別有意義——它說的是<strong>在記憶門診裡，每七個病人就有一個帶著可能的 iNPH 影像與症狀坐在你面前</strong>。他們不是走錯科，他們就在正確的科別裡，只是被歸到了另一個診斷。</p>
-<h2>這篇綜論的四個 Key Points</h2>
+<h2 id="bt-s5">這篇綜論的四個 Key Points</h2>
 <p>原文的 Key Points 方塊只有四句話，但它把整篇的立場濃縮完了：</p>
 <ul>
 <li>iNPH 是一個<strong>進行性的神經疾病</strong>，通常在 60 歲後發生，特徵是腦室擴大、步態與平衡困難、失禁、認知減退。</li>
@@ -163,7 +183,7 @@ article, article *{overflow-wrap:break-word}
 <li>植入<strong>可調壓閥</strong>的 CSF 分流手術是安全且持久的治療，可以改善症狀、提升生活品質、<strong>降低死亡率</strong>。</li>
 </ul>
 <p>第二句和第三句是這篇文章最實務的兩句。第二句在說：不要把「有三聯症＋腦室大」直接等於 iNPH，因為每一個症狀都能被十幾種別的病解釋（這是第 03 篇整張 Table 1 的內容）。第三句在說：也不要因為「反正沒有確診標記」就跳過檢查直接開刀——預後檢查有指引背書，而且它做的事情不是「診斷」，是「預測」。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s6">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>NEJM 這篇的實際說法</th></tr></thead>
 <tbody>

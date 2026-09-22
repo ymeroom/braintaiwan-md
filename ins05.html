@@ -77,6 +77,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/ins05.html">
 </head>
@@ -99,10 +118,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 5 篇</strong>　開立鎮靜安眠藥時，最該先想清楚的不是「怎麼開始」，而是「怎麼結束」。本篇導讀長期使用苯二氮平受體促效劑（BZRA）的風險、實務上的減藥（deprescribing）策略，以及老年、孕產與共病族群的選藥原則，並以 VA/DoD 指引的非藥物與整合療法立場作結，回顧整個系列。 依據 VA/DoD 2019 慢性失眠與 OSA 臨床指引及 BZRA 減藥文獻。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、長期使用 BZRA／Z 類藥物的風險</a></li><li><a href="#bt-s2">二、減藥（deprescribing）：怎麼安全地「下車」</a></li><li><a href="#bt-s3">三、特殊族群的選藥原則</a></li><li><a href="#bt-s4">四、VA/DoD 的非藥物與整合療法立場</a></li><li><a href="#bt-s5">五、系列回顧：把五篇串起來</a></li><li><a href="#bt-s6">臨床要點摘要</a></li><li><a href="#bt-s7">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>前四篇我們談了診斷、第一線的失眠認知行為治療（<code>CBT-I</code>）、藥物治療的實證地圖，以及機轉較新的雙重食慾素受體拮抗劑（<code>DORA</code>）。但臨床現場真正棘手的，往往不是「要不要開藥」，而是病人已經吃了好幾年的苯二氮平類或 Z 類藥物、劑量越疊越高、卻怎麼也停不下來。<strong>任何鎮靜安眠藥的開立，都應該在第一天就預想它的退場機制。</strong> 本篇談的就是這件事。</p>
 <hr>
-<h2>一、長期使用 BZRA／Z 類藥物的風險</h2>
+<h2 id="bt-s1">一、長期使用 BZRA／Z 類藥物的風險</h2>
 <p>苯二氮平受體促效劑（<code>BZRA</code>，含 <code>苯二氮平類</code> 與 <code>Z 類藥物</code>）短期有效，但長期使用的風險會逐漸累積，且常被低估：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>風險面向</th><th>說明</th></tr></thead>
@@ -118,7 +138,7 @@ article, article *{overflow-wrap:break-word}
 <p>🩺 <strong>臨床重點</strong>：「反彈失眠」是減藥失敗最常見的陷阱。病人一停藥就睡更差，於是認定「我這輩子離不開藥」。事先把反彈失眠的概念講清楚——它是暫時的、是停藥的過程而非失敗——往往就決定了減藥能不能成功。</p>
 </blockquote>
 <hr>
-<h2>二、減藥（deprescribing）：怎麼安全地「下車」</h2>
+<h2 id="bt-s2">二、減藥（deprescribing）：怎麼安全地「下車」</h2>
 <p>長期使用者的減藥，核心原則是<strong>逐步、緩慢、有計畫，並以非藥物治療接手</strong>：</p>
 <ol>
 <li><strong>逐步減量、不要驟停</strong>：常見做法是每 1–2 週減少約 25% 的劑量，依病人的反應與焦慮程度彈性調整；劑量越高、使用越久，減得越慢。驟停可能誘發嚴重反彈失眠與戒斷症狀。</li>
@@ -131,7 +151,7 @@ article, article *{overflow-wrap:break-word}
 <p>🩺 <strong>臨床重點</strong>：減藥不是「叫病人少吃一點」，而是一個需要醫師主動發起、結構化陪伴的療程。把減藥時程寫下來、把 CBT-I 排進去、把回診約好——這三件事做到，成功率會完全不同。</p>
 </blockquote>
 <hr>
-<h2>三、特殊族群的選藥原則</h2>
+<h2 id="bt-s3">三、特殊族群的選藥原則</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>族群</th><th>優先</th><th>應避免／謹慎</th><th>理由</th></tr></thead>
 <tbody>
@@ -143,7 +163,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>老年族群尤其值得強調：<strong>助眠的第一步永遠先想非藥物方式</strong>。當藥物無法避免時，選擇依賴性低、隔日殘留少的選項（如 <code>ramelteon</code>、低劑量 <code>doxepin</code>、或機轉較新的 <code>DORA</code>，詳見本系列第 4 篇），並把跌倒風險放在決策的最前面。</p>
 <hr>
-<h2>四、VA/DoD 的非藥物與整合療法立場</h2>
+<h2 id="bt-s4">四、VA/DoD 的非藥物與整合療法立場</h2>
 <p>VA/DoD 2019 指引（涵蓋慢性失眠與阻塞型睡眠呼吸中止 <code>OSA</code>）的立場，與本系列一以貫之：</p>
 <ul>
 <li><strong>第一線是行為治療</strong>：<code>CBT-I</code> 與其簡式版本 BBT-I（brief behavioral therapy for insomnia）為核心建議。</li>
@@ -152,7 +172,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>換言之，市面上常被當成「比較天然、比較安全」而長期自行使用的助眠選項，多數缺乏足夠實證——這點需要主動對病人衛教，避免他們以為「不是安眠藥就沒關係」。</p>
 <hr>
-<h2>五、系列回顧：把五篇串起來</h2>
+<h2 id="bt-s5">五、系列回顧：把五篇串起來</h2>
 <p>失眠的處理，其實是一條有清楚邏輯的路徑：</p>
 <ol>
 <li><strong>先診斷、先鑑別</strong>——別把所有「睡不著」都當原發性失眠，務必排除 OSA、不寧腿、情緒疾病等共病（第 1 篇）。</li>
@@ -163,7 +183,7 @@ article, article *{overflow-wrap:break-word}
 </ol>
 <p>貫穿五篇的一句話是：<strong>藥物是輔助，行為治療是骨幹；開藥的同時就要想好怎麼停。</strong></p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s6">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
@@ -182,7 +202,7 @@ article, article *{overflow-wrap:break-word}
 <p>這五篇走下來，如果只能留下一句話，我希望是這句：<strong>失眠是可以治療的，而治療的核心從來不是那顆藥。</strong> 把診斷做對、把 CBT-I 當骨幹、把用藥當有期限的輔助——這就是這份國際指引彙編想告訴我們的事。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s7">參考文獻</h2>
 <ol>
 <li>VA/DoD Clinical Practice Guideline for the Management of Chronic Insomnia Disorder and Obstructive Sleep Apnea. Department of Veterans Affairs / Department of Defense. 2019.</li>
 <li>Sateia MJ, Buysse DJ, Krystal AD, et al. Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy of Sleep Medicine Clinical Practice Guideline. <em>J Clin Sleep Med</em>. 2017;13(2):307-349.</li>

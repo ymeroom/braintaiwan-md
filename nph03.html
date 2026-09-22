@@ -66,6 +66,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/nph03.html">
 </head>
@@ -89,24 +108,25 @@ article, article *{overflow-wrap:break-word}
 <p><strong>系列導讀．第 3 篇</strong>　以日本 iNPH 2021 指引第一章（臨床表現）為主軸：怎麼在診間用一雙眼睛和幾個量表，把「可治療的失智」從阿茲海默和巴金森裡分出來。</p>
 <p>一個 75 歲的長輩走進診間，腳步又小又黏，像鞋底被磁鐵吸在地板上，轉個身就差點跌倒——這個畫面，比後面要做的任何抽腦脊髓液、任何核磁共振都先一步告訴你：這可能不是單純的老化。步態障礙是 iNPH 最早、最明顯、也最容易逆轉的核心特徵，幾乎每一個病人都有它。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">腳像被磁鐵黏在地上</a></li><li><a href="#bt-s2">為什麼說它是「額葉型」的失智</a></li><li><a href="#bt-s3">尿失禁通常最後才來</a></li><li><a href="#bt-s4">三大症狀其實很少湊齊</a></li><li><a href="#bt-s5">該量什麼、什麼時候量</a></li></ol></details><!-- bt-toc:end -->
 <hr>
-<h2>腳像被磁鐵黏在地上</h2>
+<h2 id="bt-s1">腳像被磁鐵黏在地上</h2>
 <p>iNPH 的步態有三個招牌特徵：小步態（small-step gait）、磁鐵步態（magnet gait，腳像黏在地上抬不起來）、以及寬底步態（broad-based gait，兩腳張得開開的求穩）。走起來又慢又不穩，轉彎的時候步伐變得更小、更搖晃，轉身時不穩定會明顯加重。再仔細看，病人常常是外八、鴨子般地走，而且步幅長度在走的過程中起伏很大，這一步大那一步小。剛起步、走進狹窄空間、或要轉彎的時候，可能出現像凍結一樣邁不開步的卡頓（freezing gait）。</p>
 <p>這裡有個鑑別巴金森氏症的關鍵：巴金森病人遇到地上的橫線、地標這類外部提示，步態往往會神奇地改善；iNPH 病人對這些外部觸發幾乎沒反應。這個差別，在診間地板上畫條線請病人跨過去，當場就看得出來。</p>
 <p>為什麼這麼像兩種病的混合體？因為它的機轉可能同時牽涉到紋狀體（striatum）和皮質脊髓徑（corticospinal tract）。也正因為運動表現重疊，臨床上 iNPH 和巴金森病理真的會撞在一起——一份合併路易體病理的 iNPH 研究就發現，帶有 α-synuclein 種子活性的病人，碎步步態（petit-pas gait）出現率高達 71.4%，明顯高於沒有路易體病理者的 42.4%（p = 0.007），起步遲疑也較多（21.4% vs 7.1%，p = 0.036）。換句話說，走路像巴金森，不代表就不是 iNPH，反而可能兩者並存。</p>
 <p>這種步態最現實的後果是跌倒。iNPH 病人因為平衡障礙、姿勢反射障礙、站不穩、加上從椅子上站起來特別吃力，很容易跌。問診時一定要主動追問跌倒史，這往往是家屬最先察覺「不對勁」的線索。</p>
-<h2>為什麼說它是「額葉型」的失智</h2>
+<h2 id="bt-s2">為什麼說它是「額葉型」的失智</h2>
 <p>iNPH 的認知障礙不是阿茲海默那種「記不住新事情」的記憶型，而是一種皮質下額葉型的樣貌。即使在症狀很輕的階段，病人的精神運動速度（psychomotor speed）就已經變慢，注意力和工作記憶受損。記憶當然也會受影響，但有個很特別的地方：他們的「再認」（recognition）常常相對保留，壞掉的主要是「自由回想」（free recall）——也就是提示一下他就想得起來，問題出在自己主動把東西撈出來。語詞流暢度（word fluency）的表現也偏差。這些功能，全都和額葉密切相關。到了嚴重期，認知障礙才會變得全面性。</p>
 <p>把它和阿茲海默並排來看，分界就清楚了：iNPH 病人的定向感障礙和記憶障礙比阿茲海默輕，但額葉功能障礙更重——注意力受損、精神運動速度下降、語詞流暢度變差、執行功能失調（dysexecutive syndrome）。這些差異的解剖對應，落在胼胝體、內側額葉（含上額回）、前扣帶迴和紋狀體一帶。</p>
 <p>行為與心理症狀（BPSD）也很常見，但風格和阿茲海默不太一樣。日本一份 BPSD 調查發現，淡漠（apathy）出現率高達 70.3%，是非常突出的一項，其次是焦慮（25.0%）；至於遊走等異常行為的比例偏低，大約落在 10% 左右。淡漠被認為和尾核（caudate nucleus）功能失調有關，因為發生率高、又大大加重照顧負擔，它幾乎該被當成三大症狀以外的第四個重要症狀來看待。</p>
-<h2>尿失禁通常最後才來</h2>
+<h2 id="bt-s3">尿失禁通常最後才來</h2>
 <p>三大症狀裡，尿失禁往往是最後登場的那一個。它的特徵是膀胱過動（overactive bladder）造成的急迫性尿失禁。具體數字上，iNPH 病人裡有 90.9% 會有尿滴漏，74.5% 有尿失禁；尿動力學檢查中約 70% 可見逼尿肌過動，膀胱容量大約只有 200 mL，明顯小於成人平均值，同時還可看到最大尿流速下降、殘尿量增加。</p>
 <p>臨床上常被忽略的一點是：失智本身就容易合併功能性尿失禁（走不到廁所、認不得廁所），這在 iNPH 裡會和膀胱過動的急迫性尿失禁疊加在一起。所以當一位長輩同時有步態變差、反應變慢、又開始漏尿，三者一起出現的組合，遠比任何單一症狀更值得把 iNPH 放進鑑別清單。</p>
-<h2>三大症狀其實很少湊齊</h2>
+<h2 id="bt-s4">三大症狀其實很少湊齊</h2>
 <p>很多人以為 iNPH 就是「步態 + 認知 + 尿失禁」三聯徵典型呈現，臨床現實沒這麼乾淨。各症狀的出現頻率差距很大：步態障礙是 94–100%，幾乎每個病人都有，這點在各研究高度一致；認知障礙是 78–98%；尿功能障礙則是 60–92%。順序很穩定——步態最常見，其次認知，最後尿失禁。</p>
 <p>完整三聯徵呢？許多報告說大約 60% 的病人三項齊全。但日本 2012 年一份大規模問卷調查打了個大問號：在 1524 名病人中，三聯徵完整呈現的只有 12.1%。這個落差提醒我們，等三項都湊齊才想到 iNPH，很可能已經錯過早期、最容易逆轉的時間窗。</p>
 <p>除了三聯徵，床邊還有一些額外的神經學徵象值得留意。一份 26 名 iNPH 病人的研究中，84% 有噘嘴反射（snout reflex）、77% 有眉間反射（eyebrow reflex）、65% 有對抗性肌張力增高（paratonia，Gegenhalten）、61% 有掌頦反射（palmomental）；另有報告指出 55% 的 iNPH 病人有運動遲緩（bradykinesia）。這些原始反射和額葉釋放徵象，再一次把矛頭指向皮質下與額葉。</p>
-<h2>該量什麼、什麼時候量</h2>
+<h2 id="bt-s5">該量什麼、什麼時候量</h2>
 <p>把這些觀察變成可追蹤的數字，靠的是量表。日本指引推薦用 iNPH 分級量表（iNPHGS）當作主觀評估的主軸，並搭配客觀、可量化的方法，例如計時起立行走測驗（timed up &amp; go，TUG）和短距離直線行走測驗（推薦等級 2、證據等級 C）。iNPHGS 在 2004 年第一版指引就被提出，後來信效度也獲得驗證；它把步態障礙、認知障礙、尿失禁各自分成 0 到 4 級，總分加上各項分數一起當追蹤指標。它有個貼心的設計：步態和認知都保留了「只有主觀、查不到客觀異常」的那一級，因為 iNPH 早期常常就是病人覺得不穩、健忘，但檢查還抓不到明確異常。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>等級</th><th>步態障礙</th><th>認知（失智）</th><th>尿失禁</th></tr></thead>

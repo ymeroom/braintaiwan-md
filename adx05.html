@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/adx05.html">
 </head>
@@ -97,8 +116,9 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 5 篇</strong>　CORE 5 是評估流程中最「動手做」的一環：<strong>精神狀態檢查（含簡短認知測驗）、一般醫學檢查、神經學檢查、精神科檢查</strong>。這一篇整理基層門診時間有限時，該如何有效率地完成這四個面向。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、簡短認知測驗：篩檢工具的選擇與限制</a></li><li><a href="#bt-s2">二、一般醫學檢查：找出可逆病因的身體線索</a></li><li><a href="#bt-s3">三、神經學檢查：尋找局部或非典型徵象</a></li><li><a href="#bt-s4">四、精神科檢查：與第三篇的神經精神症狀互相對照</a></li><li><a href="#bt-s5">臨床要點摘要</a></li><li><a href="#bt-s6">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
-<h2>一、簡短認知測驗：篩檢工具的選擇與限制</h2>
+<h2 id="bt-s1">一、簡短認知測驗：篩檢工具的選擇與限制</h2>
 <p>指引建議所有疑似認知障礙的病人都應接受<strong>簡短、標準化的認知測驗</strong>作為客觀量化基礎，但測驗結果必須與病史、功能影響合併判讀，<strong>單一分數不能單獨用於確診或排除失智症</strong>。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>工具</th><th>施測時間</th><th>特點</th></tr></thead>
@@ -111,7 +131,7 @@ article, article *{overflow-wrap:break-word}
 <p>切點判讀務必依<strong>教育程度校正</strong>（見第④篇健康公平討論），且測驗當下的情緒狀態、疼痛、聽力/視力障礙都可能影響表現，應在報告中註明測驗情境。</p>
 </blockquote>
 <hr>
-<h2>二、一般醫學檢查：找出可逆病因的身體線索</h2>
+<h2 id="bt-s2">二、一般醫學檢查：找出可逆病因的身體線索</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>檢查重點</th><th>目的</th></tr></thead>
 <tbody>
@@ -121,7 +141,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>感官功能快篩</td><td>簡易聽力/視力篩檢，避免感官缺損被誤判為認知缺損</td></tr>
 </tbody></table></div>
 <hr>
-<h2>三、神經學檢查：尋找局部或非典型徵象</h2>
+<h2 id="bt-s3">三、神經學檢查：尋找局部或非典型徵象</h2>
 <p>一般阿茲海默症的神經學檢查在疾病早期通常「相對正常」，因此<strong>任何顯著的局部神經學徵象，都應提高對非典型病因的警覺</strong>：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>發現</th><th>提示病因</th></tr></thead>
@@ -133,7 +153,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>眼球運動障礙（垂直性凝視麻痺）</td><td>進行性上眼神經核麻痺</td></tr>
 </tbody></table></div>
 <hr>
-<h2>四、精神科檢查：與第三篇的神經精神症狀互相對照</h2>
+<h2 id="bt-s4">四、精神科檢查：與第三篇的神經精神症狀互相對照</h2>
 <p>身體評估的精神科部分，重點在於<strong>當下狀態的客觀觀察</strong>，與第③篇病史中的神經精神症狀報告相互佐證：</p>
 <ul>
 <li><strong>情緒與情感</strong>：當下是否表現出憂鬱、焦慮、淡漠的客觀徵象（語調平淡、缺乏眼神接觸、反應遲緩）</li>
@@ -145,7 +165,7 @@ article, article *{overflow-wrap:break-word}
 <p>指引提醒：<strong>急性意識狀態改變（注意力波動、警覺度異常）必須優先排除譫妄</strong>（見第⑥篇 Box 4），譫妄與失智症可同時存在，但處置邏輯完全不同——譫妄是急症，須先找出並處理誘因。</p>
 </blockquote>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s5">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
@@ -163,7 +183,7 @@ article, article *{overflow-wrap:break-word}
 <p>最後一定要提：<strong>警覺度的波動是急症的訊號，不是慢慢來就好的事</strong>。如果病人這幾天忽然變得時而清醒時而恍神，我會先排除譫妄誘因（感染、藥物、電解質），而不是急著安排失智症的後續檢查——順序錯了，會耽誤真正緊急的問題。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s6">參考文獻</h2>
 <ol>
 <li>Atri A, Dickerson BC, Clevenger C, et al. Alzheimer's Association clinical practice guideline for the Diagnostic Evaluation, Testing, Counseling, and Disclosure of Suspected Alzheimer's Disease and Related Disorders (DETeCD-ADRD): Executive summary of recommendations for primary care. <em>Alzheimer's Dement</em>. 2025;21:e14333. doi:10.1002/alz.14333</li>
 <li>Nasreddine ZS, et al. The Montreal Cognitive Assessment, MoCA: a brief screening tool for mild cognitive impairment. <em>J Am Geriatr Soc</em>. 2005;53(4):695-699.</li>

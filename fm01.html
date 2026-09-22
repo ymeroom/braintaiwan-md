@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/fm01.html">
 </head>
@@ -97,16 +116,17 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 01 篇</strong>　纖維肌痛症影響全球 <strong>2% 到 8%</strong> 的人口，集中在工作年齡層，女性是男性的三倍。它沒有生物標記、沒有影像診斷、沒有實驗室數據，於是長年被放在「查不出東西」的那一格。但這份 2025 年的綜論從第一段就把立場講明了：問題不在周邊組織，而在中樞如何處理痛覺訊號。這一篇處理定義、流行病學，以及支撐「中樞敏感化」這個說法的神經化學證據。</p>
 </blockquote>
-<h2>一個至今沒有共識的診斷</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一個至今沒有共識的診斷</a></li><li><a href="#bt-s2">中樞敏感化：把「痛覺處理障礙」講成可驗證的東西</a></li><li><a href="#bt-s3">四組神經傳導物質，方向各不相同</a></li><li><a href="#bt-s4">神經發炎：從功能影像走到分子影像</a></li><li><a href="#bt-s5">這篇綜論自己承認的缺口</a></li><li><a href="#bt-s6">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">一個至今沒有共識的診斷</h2>
 <p>纖維肌痛症（fibromyalgia, FM）被定義為慢性疾患，症狀範圍很寬：廣泛性疼痛、疲勞、睡眠障礙，加上認知功能障礙、焦慮、憂鬱與情緒困難，並伴隨日常活動能力的下降。</p>
 <p>流行病學的三個數字值得先記住：盛行率 <strong>2%–8%</strong>、主要影響<strong>工作年齡人口</strong>、女男比 <strong>3:1</strong>。第三個數字後面會反覆出現——它同時是荷爾蒙假說的起點，也是「男性 FM 研究不足」這個缺口的來源。</p>
 <p>病因學上，綜論的措辭相當保守：沒有單一致病因子，一般認為是<strong>遺傳易感性、免疫與神經內分泌功能異常、環境因子</strong>（特別是心理或生理壓力源）的組合。然後接了一句很重的話——目前對於<strong>病因機轉、分類、治療都沒有共識</strong>。</p>
 <p>這句話定義了整個系列的閱讀方式。後面每一組數字都要放在「這是假說而非定論」的框裡看。</p>
-<h2>中樞敏感化：把「痛覺處理障礙」講成可驗證的東西</h2>
+<h2 id="bt-s2">中樞敏感化：把「痛覺處理障礙」講成可驗證的東西</h2>
 <p>「FM 是中樞神經系統的疼痛處理障礙，使病人對疼痛過度敏感」——這句話本身只是換句話說。真正把它變成可檢驗主張的是影像學證據。</p>
 <p>早在 <strong>2004 年</strong>，Gracely 等人就做了關鍵的那個實驗：給予<strong>相同強度的壓力刺激</strong>，FM 病人在處理疼痛的腦區活化明顯大於對照組，主要落在<strong>後腦島（posterior insula）與次級體感覺皮質（secondary somatosensory cortex）</strong>。</p>
 <p>這個設計的重要性在於它控制了輸入。刺激強度相同，輸出反應不同，差異就只能來自中間的處理環節。這是「放大器壞了，不是感測器壞了」這個比喻真正的實驗基礎。</p>
-<h2>四組神經傳導物質，方向各不相同</h2>
+<h2 id="bt-s3">四組神經傳導物質，方向各不相同</h2>
 <p>綜論指出，<strong>單胺類傳導功能異常</strong>是目前 FM 最主要的可觀察變化，具體表現為脊髓下行抗痛路徑層次上——興奮性傳導物質<strong>升高</strong>、抑制性傳導物質<strong>降低</strong>。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>傳導物質</th><th>在 FM 的方向</th><th>綜論提供的具體證據</th></tr></thead>
@@ -119,7 +139,7 @@ article, article *{overflow-wrap:break-word}
 <p>另外還有多巴胺調節失常與內生性類鴉片活性改變，共同構成「FM 病理生理源自中樞」的論點。</p>
 <p>兩點需要標記出來。第一，<strong>麩胺酸與 GABA 都是雙向的</strong>——綜論沒有說「越低越好」或「越高越糟」，而是說偏離最適區間即可致病。這在後面談藥物治療時會變成一個限制：單向調節某個傳導物質未必安全。</p>
 <p>第二，<strong>綜論在此處有一個化學名稱錯誤</strong>：原文將多巴胺寫為「dopamine (3-hydroxytryptamine)」。3-hydroxytryptamine 屬於色胺類命名，血清素是 5-hydroxytryptamine；多巴胺的化學名為 3,4-dihydroxyphenethylamine。這是筆誤而非論點問題，但引用時不應照抄。</p>
-<h2>神經發炎：從功能影像走到分子影像</h2>
+<h2 id="bt-s4">神經發炎：從功能影像走到分子影像</h2>
 <p>中樞敏感化的下一層機轉是<strong>神經發炎</strong>——膠細胞活化，以及中樞與周邊神經系統釋出促發炎趨化因子與細胞激素。</p>
 <p>Seo 等人用 <strong>[¹¹C]-(R)-PK11195</strong>（一種轉位蛋白 TSPO 的正子造影配體，由活化的微膠細胞或星狀細胞表現）標定出 FM 與複雜性局部疼痛症候群（CRPS）病人神經發炎異常的腦區：雙側中央後回、左側中央前回初級運動皮質、左側頂上回、左側內側額葉、左側額上回、初級體感覺皮質、左側楔前葉。</p>
 <p>綜論對這些位置各自給了機轉解釋：</p>
@@ -132,7 +152,7 @@ article, article *{overflow-wrap:break-word}
 <p>值得注意的是，該研究發現 FM 病人在<strong>中央前回與中央後回</strong>的神經發炎程度高於 CRPS 病人與健康對照——也就是說，這不只是「慢性疼痛都會這樣」。</p>
 <p>結構層面同樣有變化。FM 病人在右側顳上回、左右側顳中回、左側額上回、右側梭狀回與左側杏仁核的<strong>皮質厚度下降</strong>，並伴隨前額葉皮質、杏仁核、前扣帶迴皮質的<strong>灰質體積減少</strong>。</p>
 <p>同一份研究還把<strong>情感性疼痛程度</strong>與左側內側額葉、左側頂上回、左側杏仁核的神經發炎連了起來。加上壓力與創傷後壓力症（PTSD）和神經發炎升高的關聯，綜論提出一個推論方向：<strong>心理創傷與壓力可能是 FM 神經發炎與病理症狀的主要驅動力之一</strong>。</p>
-<h2>這篇綜論自己承認的缺口</h2>
+<h2 id="bt-s5">這篇綜論自己承認的缺口</h2>
 <p>綜論在導論就列出文獻的空白，這幾條決定了後面所有建議的強度上限：</p>
 <ul>
 <li><strong>診斷上的挑戰</strong>——沒有專一性生物標記</li>
@@ -142,7 +162,7 @@ article, article *{overflow-wrap:break-word}
 <li>研究<strong>偏重症狀減輕</strong>，而非生活品質、功能或病人滿意度的改善</li>
 </ul>
 <p>最後一條在臨床上最實際。它意味著大多數 FM 試驗回答的是「痛有沒有少一點」，而不是「這個人的生活有沒有變好」。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s6">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>文獻實際說法</th></tr></thead>
 <tbody>

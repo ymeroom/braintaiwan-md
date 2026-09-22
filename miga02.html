@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/miga02.html">
 </head>
@@ -98,10 +117,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 2 篇</strong>　分層照護的兩端，靠的就是這幾支「高度推薦（Group I）」的口服藥：中重度發作的主力 <strong>翠普登（triptans）</strong>、輕中度的第一線 <strong>NSAIDs</strong>，以及最安全、兒童與孕婦首選的 <strong>乙醯胺酚（acetaminophen）</strong>。本篇談它們的劑量、證據、副作用、禁忌，以及一個臨床上很實用的加分招——<strong>triptan＋NSAID 併用</strong>。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、翠普登 triptans [Grade A, Group I]：中重度發作的主力</a></li><li><a href="#bt-s2">二、NSAIDs [Grade A, Group I]：輕中度的第一線</a></li><li><a href="#bt-s3">三、乙醯胺酚 acetaminophen [Grade A, Group I]：最安全、特殊族群首選</a></li><li><a href="#bt-s4">四、加分招：triptan ＋ NSAID 併用，比單用更好</a></li><li><a href="#bt-s5">臨床要點摘要</a></li><li><a href="#bt-s6">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>這三類藥都掛著「<strong>Grade A, Group I</strong>」——證據最強、最高度推薦。它們各有定位：triptan 是偏頭痛<strong>專一</strong>藥物、對付中重度發作；NSAIDs 與 acetaminophen 是<strong>非專一</strong>止痛藥、撐起輕中度與特殊族群。把它們用好用滿，就能涵蓋大多數病人。</p>
 <hr>
-<h2>一、翠普登 triptans [Grade A, Group I]：中重度發作的主力</h2>
+<h2 id="bt-s1">一、翠普登 triptans [Grade A, Group I]：中重度發作的主力</h2>
 <p>Triptans 是<strong>血清素 5-HT1B/1D 受體的促效劑</strong>，透過收縮顱內血管、抑制三叉神經痛覺傳遞而止痛，是第一個為偏頭痛量身設計的藥。全球有 7 種，<strong>台灣上市兩種</strong>：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>劑型與常用劑量</th><th>重點</th></tr></thead>
@@ -122,7 +142,7 @@ article, article *{overflow-wrap:break-word}
 </blockquote>
 <p>此外，使用 triptan 後 6 小時內不可用 ergotamine；用 ergotamine 後 24 小時內不可用 triptan，以免血管收縮作用疊加。</p>
 <hr>
-<h2>二、NSAIDs [Grade A, Group I]：輕中度的第一線</h2>
+<h2 id="bt-s2">二、NSAIDs [Grade A, Group I]：輕中度的第一線</h2>
 <p>非類固醇消炎止痛藥是分層照護中<strong>輕至中度發作的第一選擇</strong>，便宜、好取得、證據紮實：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>常用劑量</th></tr></thead>
@@ -135,21 +155,21 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>要留意的是<strong>腸胃道與腎臟副作用</strong>：消化道潰瘍或出血風險者、長期使用者要特別小心，建議<strong>搭配胃腸保護、避免長期天天吃</strong>。新型選擇性 COX-2 抑制劑（如 celecoxib）腸胃道風險較低，可作為替代。</p>
 <hr>
-<h2>三、乙醯胺酚 acetaminophen [Grade A, Group I]：最安全、特殊族群首選</h2>
+<h2 id="bt-s3">三、乙醯胺酚 acetaminophen [Grade A, Group I]：最安全、特殊族群首選</h2>
 <ul>
 <li><strong>單純止痛藥中，acetaminophen 1000 mg</strong> 對輕至中度偏頭痛有效，是證據與安全性兼具的選擇；</li>
 <li><strong>它最大的價值在「誰能用」</strong>——<strong>兒童與孕婦的首選急性止痛藥</strong>，正是 acetaminophen；</li>
 <li>對中重度發作，單用 acetaminophen 效果有限，可考慮<strong>複方</strong>（與 aspirin、caffeine 組成的 FDC）或改用其他層級藥物。</li>
 </ul>
 <hr>
-<h2>四、加分招：triptan ＋ NSAID 併用，比單用更好</h2>
+<h2 id="bt-s4">四、加分招：triptan ＋ NSAID 併用，比單用更好</h2>
 <p>這是指引特別點名、臨床上很實用的一招：<strong>一顆 triptan 加一顆 NSAID，止痛效果優於任何一者單用</strong>。</p>
 <ul>
 <li>經典組合是 <strong>sumatriptan 85 mg ＋ naproxen 500 mg</strong>（國外有複方錠），多個試驗與 Cochrane 統合分析證實：併用在 2 小時止痛、持續無痛與減少復發上，都優於單用任一藥；</li>
 <li>機轉互補——triptan 快速止痛、NSAID 延長作用並壓制發炎，<strong>對單用 triptan 容易復發的人尤其值得一試</strong>。</li>
 </ul>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s5">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>等級</th><th>定位與重點</th></tr></thead>
 <tbody>
@@ -167,7 +187,7 @@ article, article *{overflow-wrap:break-word}
 <p>最後那招 <strong>triptan 配 NSAID</strong>，是我手上對付「吃 triptan 有效但常常復發」病人的王牌——一前一後、一快一久，常常就把那一整天救回來了。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s6">參考文獻</h2>
 <ol>
 <li>Lau CI, Wang YF, and the Treatment Guideline Subcommittee of the Taiwan Headache Society. 2022 Taiwan Guidelines for Acute Treatment of Migraine. <em>Acta Neurol Taiwan</em> 2022;31:89-112.</li>
 <li>Ferrari MD, Roon KI, Lipton RB, Goadsby PJ. Oral triptans (serotonin 5-HT1B/1D agonists) in acute migraine treatment: a meta-analysis of 53 trials. <em>Lancet</em> 2001;358:1668-1675.</li>

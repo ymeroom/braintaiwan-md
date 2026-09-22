@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/naed05.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 05 篇</strong>　這份指引在兒童與全般性癲癇上的收穫極不平均：兒童失神癲癇有一篇 Class I 研究，強到足以把 2004 年的建議翻過來；除此之外，青少年肌陣攣癲癇、青少年失神癲癇、全般性強直陣攣發作全都沒有可用資料。同時，三種第三代抗癲癇藥在這段期間拿到了單一治療的適應症——靠的不是新試驗，是法規上的族群外推。這一篇處理這個落差。</p>
 </blockquote>
-<h2>唯一被翻過來的那一格</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 8 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">唯一被翻過來的那一格</a></li><li><a href="#bt-s2">ETS 與 VPA 之間怎麼選</a></li><li><a href="#bt-s3">一篇統計顯著、卻無法產生任何建議的兒科研究</a></li><li><a href="#bt-s4">全般性癲癇：資料幾乎不存在</a></li><li><a href="#bt-s5">第三代藥怎麼在沒有新試驗的情況下拿到適應症</a></li><li><a href="#bt-s6">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">唯一被翻過來的那一格</h2>
 <p>第 01 篇那張 2004 年的表裡，lamotrigine 在「兒童失神癲癇」欄位是「是」。2018 年更新把這一格改掉了，依據是這個主題唯一的一篇 Class I 研究。</p>
 <p>研究比較三個藥的療效、耐受性與神經心理影響：</p>
 <div class="bt-tablewrap"><table>
@@ -119,7 +139,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>而這兩項差異在 <strong>12 個月的追蹤評估中都維持住了</strong>——不是短期波動。</p>
 <p>結論因此是：<strong>LTG 在兒童失神癲癇的療效很可能不如 ETS 或 VPA</strong>（1 篇 Class I 研究），且 VPA 的注意力障礙較常見。</p>
-<h2>ETS 與 VPA 之間怎麼選</h2>
+<h2 id="bt-s2">ETS 與 VPA 之間怎麼選</h2>
 <p>建議寫成：<strong>除非有基於不良反應特徵的充分理由，否則在治療兒童失神癲癇的失神發作時，應優先考慮 ETS 或 VPA 而非 LTG（Level B）。</strong></p>
 <p>指引把 ETS 與 VPA 並列，但上面那兩層結果其實已經給了排序的線索：療效兩者相當，注意力損害 VPA 較多。在一個學齡兒童身上，注意力是直接影響學習與課堂表現的終點，不是次要的舒適度問題。</p>
 <p>不過 ETS 有一條硬限制，指引在臨床脈絡裡單獨標了出來：<strong>ETS 只適用於沒有合併 GTC 發作的兒童失神癲癇。</strong> ethosuximide 對強直陣攣發作沒有保護力，所以一旦這個孩子除了失神之外還有過 GTC 發作，ETS 就不是可用的單一治療。</p>
@@ -132,7 +152,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>ETS 與 VPA 皆因不良反應無法使用</td><td>LTG 才進入考慮（療效較差但仍為選項）</td></tr>
 </tbody></table></div>
 <p>要注意最後一列的措辭。建議說的是「優先考慮 ETS 或 VPA <strong>而非</strong> LTG」，不是「不要用 LTG」。LTG 在這篇研究裡的療效較差，但它並沒有被排除——建議本身就留了「除非有基於不良反應特徵的充分理由」這個出口。</p>
-<h2>一篇統計顯著、卻無法產生任何建議的兒科研究</h2>
+<h2 id="bt-s3">一篇統計顯著、卻無法產生任何建議的兒科研究</h2>
 <p>兒童的局部癲癇與全般性起源 GTC 發作，這次更新只有一篇 Class II 研究，設計是 <strong>topiramate 高劑量對低劑量</strong>：<strong>400 mg/d</strong> 對 <strong>50 mg/d</strong>。</p>
 <p>結果在統計上很漂亮：</p>
 <div class="bt-tablewrap"><table>
@@ -149,7 +169,7 @@ article, article *{overflow-wrap:break-word}
 <p>理由不難理解。50 mg/d 在兒童身上接近一個刻意設定的低效對照，而 400 mg/d 在實務上不會用於這個族群。這個試驗證明的是「TPM 有劑量反應關係」——這是法規上證明藥效存在的常見手法——但它沒有回答任何一個臨床醫師會問的問題，因為兩個劑量都不是實際會開的劑量。</p>
 <p>於是最終的處理是：<strong>即使資料顯示 400 mg/d 可能優於 50 mg/d，仍無法就所研究的劑量給出任何建議。</strong> 一篇 Class II、結果顯著的研究，產出零條建議。</p>
 <p>這件事本身是很好的評讀訓練：<strong>研究品質、統計顯著性、臨床適用性是三個獨立的維度</strong>，三者都要過關才產生得出建議。</p>
-<h2>全般性癲癇：資料幾乎不存在</h2>
+<h2 id="bt-s4">全般性癲癇：資料幾乎不存在</h2>
 <p>成人與兒童的新診斷全般性癲癇，這次更新只有一篇 Class III 研究可用（SANAD-Arm B，已於第 04 篇處理），結論是<strong>證據不足以比較 LTG、TPM 與 VPA 的療效</strong>。青少年與成人混合族群的 KOMET 同樣是 Class III、同樣 Level U。</p>
 <p>指引在未來研究建議裡把缺口列得很完整，攤開來看規模相當可觀：</p>
 <div class="bt-tablewrap"><table>
@@ -165,7 +185,7 @@ article, article *{overflow-wrap:break-word}
 <p>摘要裡的說法更簡短：關於新診斷全般性強直陣攣發作、青少年肌陣攣癲癇或青少年失神癲癇的療效資料<strong>是缺乏的</strong>，第三代抗癲癇藥用於新診斷癲癇的療效資料同樣缺乏。</p>
 <p>指引直接寫下一句話：<strong>兒科新診斷癲癇病人的隨機對照試驗需求是明確的。</strong></p>
 <p>另外一個對照組的事實值得記住：在所有第二代抗癲癇藥裡，<strong>只有 oxcarbazepine 有一篇 Class I 研究支持它在新診斷局部癲癇的療效</strong>——而那篇研究做的是兒童與青少年，對照藥是 phenytoin。</p>
-<h2>第三代藥怎麼在沒有新試驗的情況下拿到適應症</h2>
+<h2 id="bt-s5">第三代藥怎麼在沒有新試驗的情況下拿到適應症</h2>
 <p>這裡有一個必須分清楚的落差。指引說第三代抗癲癇藥在新診斷癲癇「資料缺乏、Level U」，但同一份指引也記載了 FDA 的核准：</p>
 <blockquote>
 <p>近期 FDA 的一項策略允許<strong>跨族群外推療效</strong>，因此就局部癲癇而言，<strong>eslicarbazepine 與 lacosamide</strong>（兒科僅限口服劑型）作為附加或單一治療、用於 <strong>≥4 歲</strong>者，以及 <strong>perampanel</strong> 作為單一治療，都取得了 FDA 核准。</p>
@@ -180,7 +200,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>兩者並不衝突，因為它們回答的是不同的問題。<strong>FDA 問的是「這個藥可不可以被合法標示為此用途」，指引問的是「有沒有比較性證據告訴我該不該選它」。</strong> 一個藥可以完全合法地用於新診斷癲癇，同時在指引裡沒有任何等級——因為從來沒有人把它拿去和 carbamazepine 或 lamotrigine 比過。</p>
 <p>這也解釋了為什麼指引的最後一條未來研究建議是：那些已被證實與 LTG（局部癲癇）或與 CBZ-CR、VPA（全般性癲癇）相當的藥，應該與<strong>第三代抗癲癇藥</strong>進行雙盲對照平行試驗的頭對頭比較。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s6">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>文獻實際說法</th></tr></thead>
 <tbody>

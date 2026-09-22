@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/iim01.html">
 </head>
@@ -97,13 +116,14 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 01 篇</strong>　「多發性肌炎」（polymyositis）這個用了一百多年的診斷，在 2026 年這篇 NEJM 綜論裡只剩下一句話的位置：一小群不符合任何亞型的病人，而且被明講「現在相對罕見」。這一篇先處理分類——五個亞型是怎麼一個一個被切出來的、發生率與盛行率到底多低、遺傳能解釋多少，以及一個貫穿全系列的分水嶺：哪兩型的預後是「功能」，哪三型的預後是「命」。</p>
 </blockquote>
-<h2>一個病名的退場</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 7 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一個病名的退場</a></li><li><a href="#bt-s2">五個亞型，兩種預後語言</a></li><li><a href="#bt-s3">這個病到底有多少人</a></li><li><a href="#bt-s4">遺傳只能解釋一小部分</a></li><li><a href="#bt-s5">值得標出來的：五個亞型，但圖只畫四個</a></li><li><a href="#bt-s6">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">一個病名的退場</h2>
 <p>發炎性肌肉病變（inflammatory myopathies）的分類史，讀起來像是一連串「從 polymyositis 裡搬走一塊」的過程。</p>
 <p>polymyositis 這個詞出現在 <strong>1886 年</strong>，dermatomyositis 出現在 <strong>1891 年</strong>。真正把它們變成可操作診斷的是 <strong>Bohan 與 Peter 在 1975 年</strong>建立的診斷準則——那組準則的核心分野是<strong>有沒有皮膚表現</strong>。之後每隔幾年就有一塊被切走：<strong>1990 年抗合成酶症候群</strong>（antisynthetase syndrome）、<strong>1995 年包涵體肌炎</strong>（inclusion-body myositis）、<strong>2004 年免疫媒介壞死性肌病</strong>（immune-mediated necrotizing myopathies）。每一個次分類都有自己的表型、自己的肌肉病理特徵、自己的專屬抗體。</p>
 <p>再加上一群本來被叫做 polymyositis、但其實發生在<strong>系統性硬化症或混合型結締組織疾病</strong>這類全身性自體免疫疾病脈絡下的病人——他們現在叫做<strong>重疊性肌炎</strong>（overlapping myositis）。</p>
 <p>搬到最後，polymyositis 這個名字底下剩下的，是「<strong>少數不符合任何一個亞型的病人</strong>」。原文的措辭很克制但意思很清楚：這些個案目前仍被稱為 polymyositis，但<strong>這個實體現在被認為相對罕見</strong>。</p>
 <p>值得注意的是 dermatomyositis 走的是另一條路。原文說得直白：<strong>皮肌炎這個實體本身從來沒有被質疑過</strong>，被拆開的是它的內部——依據專屬抗體，分出預後截然不同的次族群。</p>
-<h2>五個亞型，兩種預後語言</h2>
+<h2 id="bt-s2">五個亞型，兩種預後語言</h2>
 <p>新的分類是五個：<strong>包涵體肌炎、免疫媒介壞死性肌病、抗合成酶症候群、重疊性肌炎、皮肌炎</strong>。</p>
 <p>但真正決定臨床思考方式的不是這五個名字，而是它們自動分成的兩個陣營：</p>
 <div class="bt-tablewrap"><table>
@@ -114,7 +134,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>這個二分法是整篇綜論的骨架。它解釋了為什麼包涵體肌炎的章節在談「幾年後需要助行器」，而抗 MDA5 皮肌炎的章節在談「死亡率超過 50%」——兩邊在量的根本不是同一件事。</p>
 <p>「絕大多數的發炎性肌肉病變都帶有一個肌炎專一性自體抗體，而<strong>這個抗體同時決定診斷、亞型與預後</strong>」——這句話是全篇的樞紐，第三篇會整篇處理它。</p>
-<h2>這個病到底有多少人</h2>
+<h2 id="bt-s3">這個病到底有多少人</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>指標</th><th>數字</th></tr></thead>
 <tbody>
@@ -129,13 +149,13 @@ article, article *{overflow-wrap:break-word}
 <li>免疫媒介壞死性肌病、抗合成酶症候群、重疊性肌炎<strong>在兒童罕見</strong>。</li>
 <li>包涵體肌炎<strong>幾乎都在 35 歲之後才開始</strong>，最常出現在<strong>大約 60 歲</strong>。</li>
 </ul>
-<h2>遺傳只能解釋一小部分</h2>
+<h2 id="bt-s4">遺傳只能解釋一小部分</h2>
 <p>基因體關聯研究把最強的訊號指向 <strong>HLA 區域</strong>，而且各亞型的關聯模式不同。但真正值得記的是另一個數字：<strong>同卵雙胞胎的遺傳率估計高達 24%</strong>。</p>
 <p>原文對這個數字的解讀方向很值得注意——它沒有被拿來強調「這個病有遺傳性」，而是被拿來強調<strong>環境因素的影響力</strong>。同卵雙胞胎共享 100% 的基因，若遺傳率只有 24%，剩下的四分之三就落在基因以外。</p>
 <p>被點名的環境因素分兩類：<strong>感染性</strong>，以及<strong>非感染性</strong>——後者原文舉的例子是<strong>抽菸、紫外線照射、癌症，以及某些藥物如 statin</strong>。</p>
 <p>statin 在這裡第一次出現，但它在這個系列會出現三次，而且每一次的角色都不一樣：這裡是誘發因子，第三篇是 anti-HMGCR 抗體的抗原線索，第四篇則是一個違反直覺的預後訊號——<strong>曾用過 statin 的 anti-HMGCR 陽性病人，肌肉功能預後比沒用過的更好</strong>。</p>
 <p>最後一個範圍界定：<strong>免疫檢查點抑制劑引起的肌病</strong>（immune checkpoint inhibitor–induced myopathy）被明確排除在本綜論之外，它被歸類為腫瘤科領域的免疫相關不良事件。這在 2026 年是個實務上的缺口——這類病人在臨床上正在快速增加，而這篇綜論不處理它們。</p>
-<h2>值得標出來的：五個亞型，但圖只畫四個</h2>
+<h2 id="bt-s5">值得標出來的：五個亞型，但圖只畫四個</h2>
 <p>這篇綜論的兩張主圖——<strong>圖 1（肌肉侵犯模式）與圖 2（肌外侵犯光譜）——都只涵蓋四個亞型</strong>：包涵體肌炎、免疫媒介壞死性肌病、抗合成酶症候群、皮肌炎。圖 2 的圖說甚至直接寫成「四大主要族群」（four main groups）。</p>
 <p>缺席的是<strong>重疊性肌炎</strong>。但它在正文的五亞型清單裡、在重點摘要（Key Points）裡、在表 1 的抗體分類裡（anti-PM/Scl、anti-Ku、anti-RNP）都在。病理生理那一節也一樣，只談四個亞型的分子特徵——因為轉錄體分析辨識出的是<strong>四種特徵性分子印記</strong>。</p>
 <p>這不是錯誤，但讀圖的人要知道：<strong>這兩張圖不能拿來回答「重疊性肌炎長什麼樣」</strong>。而重疊性肌炎恰好是最容易在風濕科與神經科之間被丟來丟去的一群。</p>
@@ -146,7 +166,7 @@ article, article *{overflow-wrap:break-word}
 <p>兩個陣營的分法在門診很好用。第一次見到一個肌炎病人，我會先問自己：這個人的風險主要在「幾年後能不能走」，還是在「這幾個月肺會不會壞掉」。前者可以慢慢排檢查，後者不行——第四篇會看到抗 MDA5 那一群的數字有多急。</p>
 </blockquote>
 <p>回到那個退場的病名。把 polymyositis 拆成五塊，表面上是分類學的整理，實際上換掉的是整個診斷流程的順序：從「看皮膚有沒有疹子」，換成「看無力的分布長什麼樣、CK 高幾倍、抗體是哪一個」。下一篇就從最床邊的那一層開始——<strong>只靠無力的分布和一個 CK 數字，能走多遠</strong>。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s6">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
 <tbody>

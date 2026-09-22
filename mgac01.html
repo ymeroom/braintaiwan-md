@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/mgac01.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 01 篇</strong>　台灣頭痛學會的偏頭痛急性治療準則，上一版是 2022 年，這一版刊在 2026 年的 <em>Journal of the Chinese Medical Association</em>（正式排版前版本）。四年間台灣多了一個能開的急性藥，於是整張選藥地圖跟著重畫。這一篇先處理三件事：這次到底改了什麼、指引裡的療效數字和分級要怎麼讀，以及貫穿全文的兩個原則——分層照護與及早用藥。</p>
 </blockquote>
-<h2>四年之間換掉了什麼</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 8 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">四年之間換掉了什麼</a></li><li><a href="#bt-s2">療效數字的幾把尺</a></li><li><a href="#bt-s3">分級是兩個軸，不是一個</a></li><li><a href="#bt-s4">分層照護：依失能程度，而不是一路升階</a></li><li><a href="#bt-s5">及早用藥：時機本身就是劑量</a></li><li><a href="#bt-s6">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">四年之間換掉了什麼</h2>
 <p>2022 年版的英文摘要裡，中重度發作的建議是這樣寫的：<strong>口服或鼻噴 triptan，以及 ergotamine/caffeine 複方。</strong> Gepants 與 ditans 只出現在「未來或許有角色」的位置，因為當時三個新藥雖然都有試驗證據、也已經通過美國 FDA，<strong>唯台灣尚未上市。</strong></p>
 <p>2026 年版把這兩件事都改了。</p>
 <p><strong>Rimegepant 是截至 2026 年台灣唯一核准用於偏頭痛急性治療的 gepant</strong>，分級直接給到 Grade A、Group I，跟 triptan 同一格。而且它在台灣<strong>同時核准用於急性治療與預防</strong>。</p>
@@ -112,7 +132,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>有一點要先講清楚。2022 年版還有 ditans（lasmiditan）與神經調節裝置的段落，這份 2026 年的英文全文沒有這兩節。它的標題本來就寫「藥物治療」（pharmacologic），但摘要又說委員會同時審視了藥物與非藥物治療的證據，而<strong>完整未刪節的中文版是以附錄形式另外刊出</strong>。所以比較準確的說法是「本篇英文版未涵蓋」，而不是「2026 年版刪掉了」。</p>
 <p>指引本身也附了一段免責聲明：<strong>建議反映的是最佳證據與專家共識，但不一定完全吻合核准適應症或健保給付規定</strong>，並請臨床醫師依衛福部與健保署的最新規定。若無特別註明，建議都是針對成人。</p>
-<h2>療效數字的幾把尺</h2>
+<h2 id="bt-s2">療效數字的幾把尺</h2>
 <p>這份指引的每個藥都掛著一串百分比，但百分比背後量的東西不一樣。指引的 Note 2 把臨床試驗常用的幾把尺列出來，先把它們分清楚，後面四篇的數字才不會讀錯。</p>
 <p>頭痛嚴重度通常分四級：<strong>0 為不痛、1 為輕度、2 為中度、3 為重度。</strong></p>
 <div class="bt-tablewrap"><table>
@@ -126,7 +146,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>治療增益為什麼重要？因為<strong>安慰劑在偏頭痛治療的效果通常在 30% 左右</strong>。一個藥兩小時緩解率 50%，扣掉安慰劑，真正屬於藥的那一段可能只剩一半。</p>
 <p>同一個藥換一把尺，數字差距可以很大。第 02 篇會看到 triptan 標準劑量的兩小時解除率是 18–50%，兩小時緩解率卻是 42–76%。兩個都對，只是「好一點」和「不痛了」本來就是兩件事。</p>
-<h2>分級是兩個軸，不是一個</h2>
+<h2 id="bt-s3">分級是兩個軸，不是一個</h2>
 <p>每個藥名後面都會跟著一組像 [Grade A, Group I] 的標記。Grade 講的是證據強度，Group 講的是綜合推薦程度，兩者分開評。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>證據強度</th><th>定義</th></tr></thead>
@@ -145,7 +165,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>Group V</td><td>療效與安慰劑相當，或研究結果不一致；<strong>不建議</strong></td></tr>
 </tbody></table></div>
 <p>兩個軸分開看，才解釋得了幾個乍看奇怪的組合。<strong>Aspirin 是 Grade A、Group IV</strong>——證據很硬，但腸胃道風險讓它被放到後面。<strong>注射型 prochlorperazine 是 Grade B、Group I</strong>——證據沒有那麼漂亮，推薦程度卻是最高一級。證據強度不等於推薦強度，這份指引裡到處都是這種例子。</p>
-<h2>分層照護：依失能程度，而不是一路升階</h2>
+<h2 id="bt-s4">分層照護：依失能程度，而不是一路升階</h2>
 <p>偏頭痛的嚴重度與失能程度，在不同病人之間、甚至同一個人不同次發作之間都差很多。<strong>「分層照護」（stratified care）是依功能受損的程度決定治療強度，常用的評估工具是偏頭痛失能評估量表（MIDAS）。</strong></p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>失能程度</th><th>起手</th><th>反應不佳時</th></tr></thead>
@@ -155,7 +175,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>指引另外點名 rimegepant 適合三種人：<strong>對 triptan 沒反應者、有心血管禁忌者、急性藥使用頻繁者。</strong> NSAID 因腸胃道風險要小心；抗多巴胺藥可作為輔助。台灣、美國、英國、德國、丹麥與歐洲頭痛聯盟的指引都支持分層照護，<strong>其中有些改用疼痛強度作為分層依據。</strong></p>
 <p>最後這句話有一個讀的時候容易滑過去的地方。正文用的分層軸是 MIDAS 失能分級，但結論段寫成「<strong>NSAID 用於輕中度偏頭痛、triptan 用於中重度發作</strong>」——那是疼痛強度的語言。兩把尺在多數病人身上會指向同一個方向，但失能程度量的是整體生活受影響多少，疼痛強度量的是這一次發作多痛。一個 MIDAS 輕度的病人，某一次發作照樣可以是重度疼痛。</p>
-<h2>及早用藥：時機本身就是劑量</h2>
+<h2 id="bt-s5">及早用藥：時機本身就是劑量</h2>
 <p><strong>Triptan 越早吃效果越好。</strong> Spectrum Study 把這件事量得很清楚：口服 sumatriptan 50 mg 在疼痛還是輕度時服用，比晚一點才吃有效得多。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>Sumatriptan 50 mg</th><th>輕度時服用</th><th>較晚服用</th></tr></thead>
@@ -173,7 +193,7 @@ article, article *{overflow-wrap:break-word}
 <p>分級那兩張表值得多看一眼。臨床上我們習慣把「A 級證據」當成「一定要用」，但 aspirin 的 Grade A、Group IV 和 prochlorperazine 的 Grade B、Group I 放在一起，說明寫指引的人其實在做另一種判斷：證據夠不夠硬是一回事，值不值得優先用是另一回事。</p>
 </blockquote>
 <p>四年前摘要裡那句「gepants 未來或許有角色」，如今變成了 Group I。下一個四年，會是哪一行字從「或許」變成表格裡的一格？</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s6">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>指引實際說法</th></tr></thead>
 <tbody>

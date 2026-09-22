@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/lbp02.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 02 篇</strong>　非特異性下背痛沒有一個屬於自己的診斷檢查。它的診斷是把會出事的那幾種病——骨折、癌症、感染、軸性脊椎關節炎、馬尾——一個一個排除之後，剩下來的那個名字。這一篇談的就是這場排除法怎麼做：哪些紅旗真的把機率推高、哪些理學檢查測得準、以及那幾個預後篩檢工具到底能不能信。上一篇留的伏筆「不依皮節分布」，在這裡會變成區分神經根病變的關鍵。</p>
 </blockquote>
-<h2>診斷的方向是反的</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">診斷的方向是反的</a></li><li><a href="#bt-s2">紅旗：把機率推高，但沒有一面旗能單獨定案</a></li><li><a href="#bt-s3">馬尾：只佔 0.1%，卻是唯一不能等的那一個</a></li><li><a href="#bt-s4">神經學評估：一個幾乎驗不出陰性的招牌測試</a></li><li><a href="#bt-s5">預後篩檢工具：輔助判斷，不是取代判斷</a></li><li><a href="#bt-s6">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">診斷的方向是反的</h2>
 <p>一般看病是「湊齊條件、確立診斷」。非特異性下背痛剛好相反：<strong>它的診斷是在排除特定的脊椎與非脊椎病因之後才成立的</strong>（A diagnosis of nonspecific low back pain is made after excluding specific spinal and nonspinal disorders as causes of the pain）。所以整場評估的重點不是「證明它是非特異性」，而是「確定它不是別的」。</p>
 <p>那「別的」有多罕見？數字給了一個很清楚的比例尺：<strong>腰椎神經根病變或脊椎狹窄佔基層下背痛初診的 5% 至 10%</strong>；而<strong>椎體骨折、軸性脊椎關節炎、椎體感染、惡性腫瘤，以及來自內臟或血管的牽連痛，各自都不到 1%</strong>。換句話說，門診裡九成以上的下背痛，排除法的結論就是「沒查到那些」。</p>
-<h2>紅旗：把機率推高，但沒有一面旗能單獨定案</h2>
+<h2 id="bt-s2">紅旗：把機率推高，但沒有一面旗能單獨定案</h2>
 <p>綜論講得很坦白：<strong>個別的症狀或徵象，對於揪出嚴重底層病理的診斷價值通常有限</strong>（Individual signs and symptoms often have limited diagnostic value）。紅旗的作用不是「有就是」，而是把驗後機率往上推。幾個真正把數字推動的：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>紅旗</th><th>指向</th><th>驗後機率</th></tr></thead>
@@ -112,9 +132,9 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>值得注意的是，即使是最有力的兩面旗（長期類固醇、癌症史），驗後機率也才三成——<strong>紅旗陽性遠不等於確診，它是「該再查」的門檻，不是終點</strong>。而且綜論補了一句實務判斷：多面紅旗同時出現，才應該進一步拉高警覺、考慮做 MRI。</p>
 <p>感染與軸性脊椎關節炎各有自己的線索。<strong>感染</strong>要問發燒、靜脈注射毒品、近期感染或脊椎手術史。<strong>軸性脊椎關節炎</strong>的樣子很特別——年輕（&lt;45 歲）隱匿發作、晨僵至少 30 分鐘、運動後改善但休息不會、痛在左右臀之間交替、夜裡會痛醒。這一組合在一個年輕人的慢性下背痛裡出現時，方向就跟「非特異性」分岔了。</p>
-<h2>馬尾：只佔 0.1%，卻是唯一不能等的那一個</h2>
+<h2 id="bt-s3">馬尾：只佔 0.1%，卻是唯一不能等的那一個</h2>
 <p>有一種情況不走機率邏輯，直接進入急件。馬尾症候群（腰薦神經根受壓）<strong>只影響基層中 0.1% 的下背痛病人</strong>，但它的表現——<strong>新發生的尿滯留或失禁、鞍區麻木、下肢進行性運動無力</strong>——一旦出現，就要<strong>立刻 MRI 並由神經外科緊急評估</strong>。這裡的閾值跟前面完全不同：紅旗是「多幾面才動」，馬尾是「一個就動」。</p>
-<h2>神經學評估：一個幾乎驗不出陰性的招牌測試</h2>
+<h2 id="bt-s4">神經學評估：一個幾乎驗不出陰性的招牌測試</h2>
 <p>當病人有背痛加腿痛時，判斷是不是神經根病變，靠的是把症狀對回神經地圖：<strong>沿 L4、L5 或 S1 皮節分布的腿痛，加上無力、皮節感覺喪失或反射減弱，才符合腰椎神經根病變</strong>。這就是上一篇「不依皮節分布」那句伏筆的用處——非特異性下背痛的放射痛沒有這張地圖，神經根病變有。</p>
 <p>最常被使用的直腿抬高測試，數字卻很不對稱：</p>
 <div class="bt-tablewrap"><table>
@@ -124,7 +144,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>交叉直腿抬高（crossed SLR）</td><td>0.28（95% CI 0.22–0.35）</td><td>0.90（95% CI 0.85–0.94）</td></tr>
 </tbody></table></div>
 <p>這兩列數字剛好互為鏡像，說明了一件臨床上很實用的事。<strong>直腿抬高陰性幾乎可以讓你放心沒有椎間盤突出（敏感度 0.92）——但陽性幾乎不能證明有（特異度只有 0.28）</strong>，太多人抬腿都會痛。反過來，<strong>交叉直腿抬高很少陽性，一旦陽性卻很有份量（特異度 0.90）</strong>。一個用來排除、一個用來確認，兩個要一起讀。（這份 Cochrane 統合分析納入的研究中位數為 126 人，IQR 71–2504。）而脊椎狹窄的樣子又不一樣：<strong>站立與行走誘發、坐下或腰椎前彎後緩解的臀腿症狀</strong>——這是它跟神經根病變的分野。</p>
-<h2>預後篩檢工具：輔助判斷，不是取代判斷</h2>
+<h2 id="bt-s5">預後篩檢工具：輔助判斷，不是取代判斷</h2>
 <p>綜論列了四個在初診時用來估計「這個人會不會恢復不良」的工具。它們的重點不是診斷，而是分流——決定誰需要更積極的照護。但先看清楚它們的鑑別力（C statistic，0.5 等於丟銅板、1.0 是完美）：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>工具</th><th>用途</th><th>鑑別力（C statistic）</th></tr></thead>
@@ -142,7 +162,7 @@ article, article *{overflow-wrap:break-word}
 <p>紅旗的驗後機率那一欄也值得慢慢看。連癌症史都只把脊椎惡性腫瘤的機率推到 33%，代表紅旗從來不是拿來「確診」的，是拿來決定「要不要再查一層」的。臨床上真正危險的不是漏掉單一紅旗，而是看到多面旗還安慰自己「應該只是拉傷」。綜論那句「多面紅旗同時出現要拉高警覺」，比任何單一數字都實用。</p>
 </blockquote>
 <p>馬尾那 0.1% 是整篇裡閾值邏輯最特別的一段。它罕見到幾乎不會遇到，但它是唯一一個「一個徵象就要立刻動」的情況——新發尿滯留、鞍區麻木、進行性無力。把排除法的耐心用在這裡是危險的；其他病可以觀察、可以追蹤，馬尾不行。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s6">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
 <tbody>

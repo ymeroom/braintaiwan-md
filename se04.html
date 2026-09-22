@@ -86,6 +86,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/se04.html">
 </head>
@@ -115,6 +134,7 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 4 篇</strong>　參考文獻：Kapur J, et al. (ESETT Investigators). Randomized Trial of Three Anticonvulsant Medications for Status Epilepticus. <em>N Engl J Med</em>. 2019;381:2103–2113. ／ Dalziel SR, et al. (ConSEPT Investigators). Levetiracetam versus phenytoin for second-line treatment of convulsive status epilepticus in children. <em>Lancet</em>. 2019;393:2135–2145.</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、確立期 SE 的時間點</a></li><li><a href="#bt-s2">二、ESETT 試驗——三選一的答案是：都差不多</a></li><li><a href="#bt-s3">三、各第二線藥物的臨床特性</a></li><li><a href="#bt-s4">四、Phenobarbital——被遺忘的老將</a></li><li><a href="#bt-s5">五、給藥後 60 分鐘未停止——進入難治性 SE 流程</a></li><li><a href="#bt-s6">小結：ESETT 之後的臨床選藥邏輯</a></li></ol></details><!-- bt-toc:end -->
 
 <hr>
 
@@ -122,7 +142,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>一、確立期 SE 的時間點</h2>
+<h2 id="bt-s1">一、確立期 SE 的時間點</h2>
 
 <p>當以下任一條件成立，即進入確立期 SE，應立即準備第二線 AED：</p>
 <ul>
@@ -137,7 +157,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>二、ESETT 試驗——三選一的答案是：都差不多</h2>
+<h2 id="bt-s2">二、ESETT 試驗——三選一的答案是：都差不多</h2>
 
 <div class="trial-box">
   <h3>ESETT 試驗（2019, NEJM）</h3>
@@ -172,7 +192,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>三、各第二線藥物的臨床特性</h2>
+<h2 id="bt-s3">三、各第二線藥物的臨床特性</h2>
 
 <div class="drug-card">
   <div class="drug-name">Levetiracetam（左乙拉西坦）— 多數情境的首選</div>
@@ -222,7 +242,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>四、Phenobarbital——被遺忘的老將</h2>
+<h2 id="bt-s4">四、Phenobarbital——被遺忘的老將</h2>
 
 <p>苯巴比妥（phenobarbital）在 ESETT 之前是許多機構的第二選擇，現在則多被定位為「第三線」或「第二線藥物失效後的備案」：</p>
 
@@ -238,7 +258,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>五、給藥後 60 分鐘未停止——進入難治性 SE 流程</h2>
+<h2 id="bt-s5">五、給藥後 60 分鐘未停止——進入難治性 SE 流程</h2>
 
 <p>若第二線 AED 使用後 30–60 分鐘，發作仍持續或意識未改善，應診斷為<strong>難治性 SE</strong>，進入麻醉藥物治療。此時：</p>
 
@@ -255,7 +275,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>小結：ESETT 之後的臨床選藥邏輯</h2>
+<h2 id="bt-s6">小結：ESETT 之後的臨床選藥邏輯</h2>
 
 <div class="bt-tablewrap"><table>
   <thead><tr><th>藥物</th><th>優先情境</th><th>避免情境</th></tr></thead>

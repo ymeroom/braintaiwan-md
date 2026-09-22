@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/trep05.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 05 篇</strong>　難治性局部癲癇兒童病人的加藥治療，這次更新了三個藥的證據；但如果問題換成「兒童能不能單獨用這些新藥」，指引的答案是一片空白——沒有任何研究能回答。同一時間，FDA 卻已經用另一套邏輯，讓 eslicarbazepine、lacosamide、perampanel 拿到兒童或單一治療適應症。這篇處理這兩件事怎麼同時成立。</p>
 </blockquote>
-<h2>兒童難治性局部癲癇加藥治療：三個藥、三個年齡窗</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">兒童難治性局部癲癇加藥治療：三個藥、三個年齡窗</a></li><li><a href="#bt-s2">兒童單一治療：問題問了，答案是「沒有資料，不下建議」</a></li><li><a href="#bt-s3">FDA 用另一套邏輯填補了這個空白</a></li><li><a href="#bt-s4">這份指引沒有找到新的安全疑慮</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">兒童難治性局部癲癇加藥治療：三個藥、三個年齡窗</h2>
 <p>2004 年的指引確立 gabapentin、lamotrigine、oxcarbazepine、topiramate 對兒童難治性局部癲癇的加藥治療有效。這次更新新增 4 篇研究：2 篇 levetiracetam、1 篇 oxcarbazepine、1 篇 zonisamide。</p>
 <h3>Levetiracetam：兩個年齡層各一篇 Class I</h3>
 <p>第一篇涵蓋 4–16 歲兒童與青少年，目標劑量 60 mg/kg/d：levetiracetam（LEV）組每週 responder rate 與每週發作頻率的中位數減少幅度都顯著更高。LEV 組不良反應更常見——嗜睡、意外傷害、嘔吐、厭食、鼻炎、敵意、咳嗽增加、咽炎、緊張——但因不良反應而退出試驗的比例反而是安慰劑組較高。</p>
@@ -109,20 +129,20 @@ article, article *{overflow-wrap:break-word}
 <h3>Zonisamide：不良反應「發生率」沒差，「因此退出」的方向卻相反</h3>
 <p>1 篇 Class I 研究收案 6–17 歲兒童與青少年，比較 8 mg/kg/d zonisamide（ZNS）與安慰劑。12 週後 responder rate 在 ZNS 組顯著更高。不良反應<strong>整體發生率</strong>兩組沒有差異，但因不良反應而退出試驗的比例反而<strong>安慰劑組更高</strong>；ZNS 組較常見的不良反應是食慾下降、體重下降、嗜睡、嘔吐、腹瀉。</p>
 <p><strong>結論</strong>：ZNS 很可能作為兒童與青少年難治性局部癲癇的加藥治療有效（1 篇 Class I）——<strong>Level B，適用年齡 6–17 歲</strong>。clobazam、eslicarbazepine、lacosamide、perampanel、pregabalin、rufinamide、tiagabine、vigabatrin 這 8 個藥在這個族群完全沒有資料——<strong>Level U</strong>。</p>
-<h2>兒童單一治療：問題問了，答案是「沒有資料，不下建議」</h2>
+<h2 id="bt-s2">兒童單一治療：問題問了，答案是「沒有資料，不下建議」</h2>
 <p>指引原文對這個問題的完整回答只有一句話：</p>
 <blockquote>
 <p>No data are available to answer this question. Thus, no recommendation is made.</p>
 </blockquote>
 <p>沒有任何研究測試過這些新藥在兒童難治性局部癲癇的單一治療效果。對照第 03 篇成人單一治療至少還有 5 篇歷史對照 Class III 研究可以評分，兒童這一塊是徹底的空白，連可以打分數的材料都不存在。</p>
-<h2>FDA 用另一套邏輯填補了這個空白</h2>
+<h2 id="bt-s3">FDA 用另一套邏輯填補了這個空白</h2>
 <p>指引摘要提到一項關鍵政策：一項比較成人與兒童使用相同核准 AED 的藥物動力學／藥效學分析顯示，當血中濃度相近時，兩個族群的發作控制幅度相似。FDA 根據這項分析，允許將<strong>成人局部癲癇的療效資料，向下外推到 4 歲以上兒童</strong>——不需要在兒童族群重新做安慰劑對照試驗。</p>
 <p>這項政策的實際結果：eslicarbazepine 與 lacosamide（兒童僅口服劑型）已核准用於 4 歲以上病人的加藥或單一治療，perampanel 已核准用於單一治療。對照本系列前幾篇的證據等級——lacosamide 作為單一治療在成人是 <strong>Level U</strong>（1 篇 Class III 研究，證據不足以判斷），perampanel 完全沒有單一治療的臨床試驗——這兩個藥拿到的核准適應症，是指引自己給的證據等級<strong>回答不出來</strong>的。</p>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>
 <p>「指引證據等級」與「FDA 核准適應症」回答的其實是兩個不同問題：前者問「有沒有直接的臨床試驗支持」，後者問「藥理學推論加上既有安全性資料，夠不夠讓主管機關核准使用」。外推政策本身有它的科學依據——藥物動力學相近時療效相近，這在其他領域也是常見的核准邏輯——但臨床工作者需要知道，仿單上的適應症不等於背後一定有一篇對應的隨機對照試驗。跟家屬解釋兒童用藥選擇時，我會把「這個藥核准可以用」與「這個藥在這個年齡層有直接試驗證實」分開講清楚，尤其是單一治療這種指引自己都承認「無法回答」的情境。</p>
 </blockquote>
-<h2>這份指引沒有找到新的安全疑慮</h2>
+<h2 id="bt-s4">這份指引沒有找到新的安全疑慮</h2>
 <p>指引也直接回答了一個問題：2004 年評估過的這些藥，有沒有新發現的嚴重不良反應？答案是沒有。未來研究建議則指出兩個系統性缺口：新藥之間幾乎沒有頭對頭試驗，而且新藥試驗普遍採用「強制劑量遞增」設計，導致不良反應發生率偏高——這一點在本系列前幾篇（pregabalin、lacosamide 的臨床脈絡段落）反覆出現。指引建議未來試驗改用貼近臨床實務的劑量與彈性給藥設計，並補齊兒童安慰劑對照與頭對頭試驗的空缺。</p>
 <p><strong>主要來源</strong></p>
 <p>Kanner AM, Ashman E, Gloss D, et al. Practice guideline update summary: Efficacy and tolerability of the new antiepileptic drugs II: Treatment-resistant epilepsy. <em>Epilepsy Currents</em>. 2018;18(4):269–278.</p>

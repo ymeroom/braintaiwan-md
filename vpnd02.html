@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/vpnd02.html">
 </head>
@@ -97,11 +116,12 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 02 篇</strong>　麻疹是這篇綜論裡最戲劇性的例子——它有一支能提供終身免疫的高度安全疫苗，美國曾在 2000 年宣告消除，整個美洲在 2016 年通過認證，然後它回來了。這一篇看麻疹的神經侵犯有哪幾種、時間軸差多遠，以及為什麼「95%」這個數字對麻疹特別不容妥協。</p>
 </blockquote>
-<h2>12 到 18：一個幾乎沒有其他病比得上的傳染數</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">12 到 18：一個幾乎沒有其他病比得上的傳染數</a></li><li><a href="#bt-s2">神經侵犯有三條路，時間軸差到 10 年</a></li><li><a href="#bt-s3">曾經被宣告消除，然後倒退</a></li><li><a href="#bt-s4">95% 掉下去之後，SSPE 開始回頭</a></li><li><a href="#bt-s5">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">12 到 18：一個幾乎沒有其他病比得上的傳染數</h2>
 <p>麻疹病毒是高度傳染性的全身性感染，經由<strong>呼吸道飛沫與小顆粒氣膠</strong>傳播。基本再生數（R₀）——一個病原傳播力的流行病學指標——<strong>高達 12 到 18</strong>，意思是在易感族群中，一個麻疹病例可以長成估計 12 到 18 個次級病例。</p>
 <p>這個數字值得多想一秒。R₀ 12–18 是傳染病裡的極端值，而群體免疫門檻與 R₀ 直接掛鉤：R₀ 越高，需要免疫的人口比例就越高。麻疹的門檻因此被推到 <strong>95%</strong>——不是 80%、不是 90%，是 95%。這也是為什麼麻疹永遠是第一個回來的病：它是那道牆上最薄的地方，一有裂縫它就先進來。</p>
 <p>死亡率的部分，儘管預防與治療都有進展，<strong>麻疹的死亡率仍然偏高，尤其是五歲以下兒童，全球每年 10 萬到 20 萬人死亡</strong>。</p>
-<h2>神經侵犯有三條路，時間軸差到 10 年</h2>
+<h2 id="bt-s2">神經侵犯有三條路，時間軸差到 10 年</h2>
 <p>麻疹的神經併發症不是同一件事的輕重之分，而是機轉完全不同的三條路。</p>
 <p><strong>急性期（數天到數週）：免疫媒介的腦炎或 ADEM。</strong> 綜論的說法是，原發感染期間的中樞神經侵犯——以急性免疫媒介腦炎或急性脫髓鞘腦脊髓炎（ADEM）的形式——<strong>發生於約 0.1% 的病例</strong>。而<strong>急性中樞神經疾病者最多有 20% 會死亡</strong>，存活者中有高比例留下神經失能。</p>
 <p>這裡有一個值得攤開的細節：綜論在導論段落引用的數字是「每 1000 名麻疹兒童有 1 到 3 人併發腦炎，其中 10–15% 死亡、另 25% 留下永久後遺症」，而麻疹專章寫的是「約 0.1% 病例」與「最多 20% 死亡」。1–3/1000 換算是 0.1–0.3%，所以 0.1% 落在那個區間的下緣；但致死率一邊寫 10–15%、一邊寫 up to 20%，兩個數字<strong>在同一篇文章裡沒有被調和</strong>。引用時要留意自己引的是哪一段。</p>
@@ -115,7 +135,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>SSPE</td><td>遲發（年）</td><td>病毒持續感染致神經退化</td><td>每 25,000 名兒童 1 例；2017 年美國研究顯示風險高於先前認知，&lt;5 歲尤甚</td></tr>
 </tbody></table></div>
 <p>小於五歲這件事在兩處重複出現——死亡率最高的是五歲以下，SSPE 風險最高的也是五歲以下。而麻疹疫苗的第一劑排在 12–15 個月。中間那段空窗，正是靠周圍的人幫忙擋。</p>
-<h2>曾經被宣告消除，然後倒退</h2>
+<h2 id="bt-s3">曾經被宣告消除，然後倒退</h2>
 <p>在嬰兒常規麻疹接種實施之後，美國於 2000 年宣告成功消除麻疹——WHO 對「消除」的定義是<strong>在具備良好運作監測系統的前提下，某一界定地理區域內至少 12 個月沒有本土麻疹病毒傳播</strong>——這個狀態維持了將近二十年。<strong>整個美洲區在 2016 年通過麻疹消除認證</strong>，是唯一達成此目標的區域。</p>
 <p>二十世紀末，<strong>手上握著一支高度安全有效、可提供終身免疫的疫苗</strong>，全球根除麻疹被認為是可以達成的目標。</p>
 <p>然後：</p>
@@ -125,7 +145,7 @@ article, article *{overflow-wrap:break-word}
 <li>在低接種率的情況下，美國正在經歷<strong>十多年來規模最大的一次麻疹疫情：1,681 人感染，其中 93% 未接種或接種狀態不明</strong>。這些感染造成 <strong>203 例（12%）住院與 3 例確認死亡</strong>。</li>
 </ul>
 <p>那個 93% 是整段裡最有訊息量的數字。它把「疫苗是否有效」這個問題直接關掉了——出事的幾乎都是沒打的人。</p>
-<h2>95% 掉下去之後，SSPE 開始回頭</h2>
+<h2 id="bt-s4">95% 掉下去之後，SSPE 開始回頭</h2>
 <p>綜論點出一個令人不安的連鎖：一個被擔心的、疫苗誘導免疫力衰退與麻疹再現的後果，是 <strong>SSPE 的抬頭，特別是在已開發國家——那裡的 SSPE 發生率已經隨著麻疹疫苗覆蓋率跌破達成群體免疫所需的 95% 目標而上升</strong>。</p>
 <p>這件事的時間結構值得看清楚。SSPE 是遲發的，潛伏期以年計。所以今天看到的 SSPE 個案，反映的是好幾年前那一批沒接種、感染了麻疹的孩子。而今天沒接種的孩子，會在好幾年後才出現在神經科診間。<strong>接種率的帳，是延遲清算的。</strong></p>
 <p>疫苗本身的規格很單純：</p>
@@ -142,7 +162,7 @@ article, article *{overflow-wrap:break-word}
 <p>至於 R₀ 12–18 與 95% 門檻的關係，我覺得這是最值得對家長講的一段。因為它解釋了一件反直覺的事：為什麼麻疹的「差一點」不算數。90% 的覆蓋率在很多疾病是很好的成績，在麻疹是失敗。這不是道德要求，是算術。</p>
 </blockquote>
 <p>美洲在 2016 年拿到麻疹消除認證，是唯一做到的區域。九年後，同一塊大陸上有一國正在數 1,681 個病例。從「唯一達成」到「規模最大」中間沒有發生任何病毒學上的改變——麻疹還是那個麻疹，疫苗還是那支疫苗。變的只有打的人數。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s5">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
 <tbody>

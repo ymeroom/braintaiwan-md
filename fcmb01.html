@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/fcmb01.html">
 </head>
@@ -97,13 +116,14 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 1 篇</strong>　談法布瑞氏症的腦部影像，很少有人把腦微出血放進清單。台大與成大這篇研究發現：CMB 不但常見，還以腦葉為主，而且和小血管病影像標記無關——這是一個被忽略的影像簽名。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">這群病人是誰</a></li><li><a href="#bt-s2">微出血的分布，才是重點</a></li><li><a href="#bt-s3">它和「小血管病」其實沒關係</a></li><li><a href="#bt-s4">SWI 上的黑點，不是只有一種故事</a></li></ol></details><!-- bt-toc:end -->
 <p>談到法布瑞氏症（Fabry disease）的腦部影像，多數人第一個想到的是白質高訊號（WMH）、椎基底動脈延長擴張（dolichoectasia），還有 T1 上那個經典的 pulvinar sign。腦微出血（cerebral microbleeds, CMB）幾乎不在清單上——不是因為它不重要，而是因為過去沒人認真數過。</p>
 <p>台大醫院與成大醫院這篇回溯性研究，把注意力放到熱感磁振（susceptibility-weighted imaging, SWI）上那些不到幾毫米、黑點狀的含鐵血黃素沉積。結果出乎意料：CMB 不但常見，而且分布方式和我們對「小血管病」的直覺完全對不上。</p>
-<h2>這群病人是誰</h2>
+<h2 id="bt-s1">這群病人是誰</h2>
 <p>研究收了 26 位經基因定序確診的法布瑞氏症患者，平均年齡 55.8 歲，男性佔 92%。這是一群以心臟或神經症狀表現、在 2016 到 2022 年間接受含熱感序列腦部 MRI 的成人。有兩個背景條件會影響整篇的解讀，先記住。</p>
 <p>第一，其中 14 位（54%）帶有台灣特別盛行的 <strong>IVS4+919G&gt;A</strong> 晚發型變異，這型以心臟表現為主、典型腦部侵犯較輕。第二，26 人中有 22 位（85%）在照 MRI 前已經規律接受酵素替代治療（ERT）。也就是說，這是一個「大多已被治療」的世代——這點在解釋為什麼白質病灶偏輕時會再回來談。</p>
 <p>至於整體小血管病負荷，其實不重：腦室旁與深部白質的 Fazekas 中位數都只有 1 分（PWMH 1 [0,1]、DWMH 1 [1,1]），只有 1 人出現 pulvinar sign，2 人（8%）有基底動脈延長擴張。背景乾淨，反而讓 CMB 的訊號更清楚。</p>
-<h2>微出血的分布，才是重點</h2>
+<h2 id="bt-s2">微出血的分布，才是重點</h2>
 <p>26 人裡 16 人（62%）驗出 CMB。單看盛行率就已經偏高，但真正的亮點在<strong>分布</strong>。</p>
 <p>在這 16 人中，只有 1 人是純深部（strictly deep）型；其餘 15 人全都至少有一顆腦葉（lobar）微出血。再往下拆，7 人是<strong>純腦葉型</strong>，8 人是<strong>混合但以腦葉為主</strong>（mixed，lobar-predominant）。換句話說，有 CMB 的病人裡 94%（15/16）踩在腦葉這一側。</p>
 <p>數量的跨度很大，從 1 顆到 36 顆（中位數 2.5，四分位距 1–16），代表這不是零星雜訊，有些人是成片的。而在腦區層次，<strong>顳葉</strong>是最常被點名的位置（中位數 1，四分位距 1–2）。</p>
@@ -111,11 +131,11 @@ article, article *{overflow-wrap:break-word}
 <p><strong>為什麼「腦葉 vs 深部」要分這麼細</strong></p>
 <p>在一般老年族群，微出血的位置是有臨床語意的：深部（基底核、視丘、腦幹）多半指向高血壓性小動脈病；純腦葉型則讓人優先想到腦類澱粉血管病（CAA）。這篇的價值在於：法布瑞氏症的微出血「長得像」腦葉型，卻幾乎確定不是 CAA——它把一個熟悉的影像形態，接到了一個完全不同的病因脈絡上。</p>
 </blockquote>
-<h2>它和「小血管病」其實沒關係</h2>
+<h2 id="bt-s3">它和「小血管病」其實沒關係</h2>
 <p>如果 CMB 是法布瑞氏症小血管病變的一部分，那它應該和其他小血管病影像標記同進退——白質病灶多、腔隙多、血管周邊間隙（EPVS）嚴重的人，微出血也該更多。</p>
 <p>結果剛好相反。腦葉 CMB 陽性組的深部白質 Fazekas 反而<strong>較低</strong>（DWMH 1 [0–1] vs. 1 [1–1]，p = 0.044），基底核的 EPVS 也<strong>較不嚴重</strong>（1 [1–1] vs. 1 [1–2]，p = 0.023）。腔隙、pulvinar sign、基底動脈延長擴張在兩組間都沒有差別。傳統腦血管危險因子也對不上號。</p>
 <p>作者因此下了一個相當直接的結論：法布瑞氏症的腦葉微出血，<strong>不能用小血管病來解釋</strong>。它更像是一條獨立的病理路徑。至於這條路徑通往哪裡——答案指向心臟，是本系列第二篇要談的。</p>
-<h2>SWI 上的黑點，不是只有一種故事</h2>
+<h2 id="bt-s4">SWI 上的黑點，不是只有一種故事</h2>
 <p>值得替臨床端補一句：SWI 上的點狀低訊號本來就「同影異源」。除了小血管病，還可能是腦類澱粉血管病、鈣化、海綿狀血管瘤、瀰漫性軸突損傷、出血性微轉移、放射治療後變化，乃至微栓子造成的皮質微梗塞。所以看到腦葉微出血，不該反射性歸給高血壓或老化；在對的臨床背景下（年輕、心肌肥厚、蛋白尿、家族史），它可能是一條把你導向罕病診斷的線索。</p>
 <blockquote class="commentary">
 <h3>🩺 神經專科 施懿恩醫師觀察</h3>

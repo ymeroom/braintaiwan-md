@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/miga03.html">
 </head>
@@ -98,8 +117,9 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 3 篇</strong>　第一線藥之外，臨床上還有幾位常被用到、卻角色微妙的配角：曾經是偏頭痛代名詞、如今退居第二線的 <strong>麥角胺（ergotamine/caffeine）</strong>；方便但要小心的 <strong>複方止痛藥</strong>；以及功能遠不只「止吐」的 <strong>止吐劑</strong>——其中 <strong>prochlorperazine 注射劑</strong> 在 2022 版被升級為高度推薦。本篇把這三類配角的定位講清楚。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、麥角胺 ergotamine / caffeine [Grade B, Group II]：退居第二線</a></li><li><a href="#bt-s2">二、複方止痛藥（FDC）：方便，但要看用量</a></li><li><a href="#bt-s3">三、止吐劑：功能遠不只止吐</a></li><li><a href="#bt-s4">臨床要點摘要</a></li><li><a href="#bt-s5">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
-<h2>一、麥角胺 ergotamine / caffeine [Grade B, Group II]：退居第二線</h2>
+<h2 id="bt-s1">一、麥角胺 ergotamine / caffeine [Grade B, Group II]：退居第二線</h2>
 <p>麥角胺曾是偏頭痛急性治療的代表藥，但在 triptan 問世後，<strong>因為「專一性與療效都不如 triptan」而退居第二線</strong>。</p>
 <ul>
 <li><strong>機轉</strong>：同樣作用於血清素 5-HT1B/1D 受體，但<strong>選擇性差</strong>，會額外影響多巴胺、正腎上腺素等系統，因此<strong>副作用（尤其噁心嘔吐）較多</strong>；</li>
@@ -112,7 +132,7 @@ article, article *{overflow-wrap:break-word}
 <p>一句話總結：麥角胺不是不能用，而是<strong>「triptan 的備胎」</strong>——當 triptan 不適合或拿不到時的選項。</p>
 </blockquote>
 <hr>
-<h2>二、複方止痛藥（FDC）：方便，但要看用量</h2>
+<h2 id="bt-s2">二、複方止痛藥（FDC）：方便，但要看用量</h2>
 <p>複方固定劑量製劑（fixed-dose combination, FDC）把多種成分組在一起，常見如 <strong>acetaminophen／aspirin／caffeine</strong>、麥角胺／咖啡因等。</p>
 <ul>
 <li><strong>優點</strong>：成分互補、服用方便，對部分輕中度病人實用；</li>
@@ -121,7 +141,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>此外，<strong>高劑量阿斯匹靈（aspirin 900–1000 mg）</strong> 雖有 Grade A 證據能止痛，但 2022 版因其腸胃道副作用，<strong>將它「降級」為急救（rescue）用藥</strong>——這點留待第五篇細談。</p>
 <hr>
-<h2>三、止吐劑：功能遠不只止吐</h2>
+<h2 id="bt-s3">三、止吐劑：功能遠不只止吐</h2>
 <p>偏頭痛發作常伴隨噁心、嘔吐，還會拖慢胃排空、讓口服藥吸收變差。止吐劑因此身兼三職：<strong>止吐、改善口服藥吸收，部分本身還能止痛</strong>。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>等級</th><th>重點</th></tr></thead>
@@ -137,7 +157,7 @@ article, article *{overflow-wrap:break-word}
 <li>對嚴重噁心、無法口服的病人，「<strong>注射止吐劑＋補液</strong>」常是急診的標準起手式。</li>
 </ul>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s4">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>類別</th><th>等級</th><th>定位與提醒</th></tr></thead>
 <tbody>
@@ -156,7 +176,7 @@ article, article *{overflow-wrap:break-word}
 <p>至於<strong>止吐劑</strong>，是最被低估的一群。很多人以為它只負責「止吐」，但在急診，一支 prochlorperazine 打下去，吐止了、頭也鬆了——它本身就是止痛藥。這次指引把它升級成高度推薦，完全反映了第一線的真實經驗。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s5">參考文獻</h2>
 <ol>
 <li>Lau CI, Wang YF, and the Treatment Guideline Subcommittee of the Taiwan Headache Society. 2022 Taiwan Guidelines for Acute Treatment of Migraine. <em>Acta Neurol Taiwan</em> 2022;31:89-112.</li>
 <li>Tfelt-Hansen P, Saxena PR, Dahlöf C, et al. Ergotamine in the acute treatment of migraine: a review and European consensus. <em>Brain</em> 2000;123:9-18.</li>

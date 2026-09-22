@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/rls03.html">
 </head>
@@ -97,9 +116,10 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 3 篇</strong>　上一篇談 RLS 的診斷與週期性肢動，這篇把處置的順序講清楚：在你開出任何一種會跟病人糾纏好幾年的藥物之前，先停下來問兩件事——這條腿背後有沒有一個可以修掉的原因？病人現在的鐵存夠不夠？這兩個問題答對了，後面的藥可能根本不必開那麼重。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、次發性 RLS 的常見源頭</a></li><li><a href="#bt-s2">二、會誘發或惡化的藥物——值得逐一點名</a></li><li><a href="#bt-s3">三、鐵：RLS 處置的第一步</a></li><li><a href="#bt-s4">四、補鐵怎麼補</a></li><li><a href="#bt-s5">臨床要點摘要</a></li><li><a href="#bt-s6">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>很多被當成「原發性」在治療的不寧腿，其實背後藏著一個還沒被看見的原因。RLS 分原發與次發兩種，次發性的意思很直白：腿之所以鬧，是因為身體別的地方出了狀況。把那個狀況處理掉，腿就可能跟著安靜下來。所以正確的開場不是「該用哪種藥」，而是「這是不是次發性的，有沒有我能逆轉的源頭」。</p>
-<h2>一、次發性 RLS 的常見源頭</h2>
+<h2 id="bt-s1">一、次發性 RLS 的常見源頭</h2>
 <p>會推著一個人走進不寧腿的，往往是這幾類底牌：</p>
 <ul>
 <li><strong>缺鐵</strong>——這是次發性裡最重要、也最值得追的一個，後面整篇的主軸都在它身上。</li>
@@ -111,7 +131,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>懷孕</strong>——孕婦的盛行率是非孕婦的約三倍，多數在生產後緩解，所以更該往「可逆」這邊想。</li>
 </ul>
 <p>這些放在一起看，會發現一個共通的態度：RLS 不是一個只能靠藥壓住的終點站，它常常是一個指標，指向別處某個沒處理好的問題。先把可逆的修掉，是省力也省藥的做法。</p>
-<h2>二、會誘發或惡化的藥物——值得逐一點名</h2>
+<h2 id="bt-s2">二、會誘發或惡化的藥物——值得逐一點名</h2>
 <p>比「漏掉次發原因」更尷尬的，是醫師自己開的藥把腿給點著了。有一份名單，臨床上很值得記在心裡：</p>
 <ul>
 <li><strong>抗多巴胺藥</strong>——RLS 的根本失調就在多巴胺系統，擋它等於正中要害。</li>
@@ -123,14 +143,14 @@ article, article *{overflow-wrap:break-word}
 <li><strong>乙型阻斷劑（beta-blockers）</strong>——心血管病人很常在用。</li>
 </ul>
 <p>把這份名單擺在床邊問診裡，常常會發現病人「最近變嚴重」的時間點，剛好對上某顆新藥的開始。停掉或換掉一個惡化因子，有時候比加藥更乾淨。</p>
-<h2>三、鐵：RLS 處置的第一步</h2>
+<h2 id="bt-s3">三、鐵：RLS 處置的第一步</h2>
 <p>鐵代謝是整個 RLS 處置的起點，不是配角。要查的不只一個數字，而是一組——<strong>serum iron、transferrin saturation、ferritin、TIBC</strong> 都該看，這樣才看得出鐵到底是不足、是運送出了問題、還是儲存空掉了。</p>
 <p>這裡有一個最容易被誤解的切點：</p>
 <blockquote>
 <p><strong>ferritin &lt; 50 ng/mL 的患者就該補鐵——不是等到貧血才補。</strong></p>
 </blockquote>
 <p>這句話值得停一下。一般人對「缺鐵」的直覺是綁在貧血上的：血色素還沒掉，就覺得鐵夠了。但 RLS 不照這個規矩走。它在意的是<strong>腦子裡</strong>的鐵夠不夠，而腦內的鐵儲存可能在全身血色素還很漂亮的時候就已經見底。ferritin 50 這個門檻，比一般「缺鐵」的標準寬鬆得多，正是為了把這群「血不貧、腦缺鐵」的人撈出來。</p>
-<h2>四、補鐵怎麼補</h2>
+<h2 id="bt-s4">四、補鐵怎麼補</h2>
 <p>口服方案本身不複雜，但細節決定吸收：</p>
 <ul>
 <li><strong>ferrous sulfate 325 mg</strong>，搭配<strong>維生素 C 250 mg</strong>——維生素 C 是來幫鐵的吸收一把。</li>
@@ -140,7 +160,7 @@ article, article *{overflow-wrap:break-word}
 <p>這幾個動作的共同目的只有一個：讓更多的鐵真的進到身體裡，而不是隨著食物一起被擋在門外。鐵的吸收率本來就不高，食物、鈣、茶咖啡都會搶位子，所以「空腹、加維生素 C、吃完忍一小時」這套組合，是把效率榨到最高的標準動作。</p>
 <p>如果口服這條路走不通——吸收太差、腸胃受不了、或者鐵掉得比補得還快——還有<strong>靜脈補鐵</strong>這條路可以走。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s5">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
@@ -159,7 +179,7 @@ article, article *{overflow-wrap:break-word}
 <p>補鐵的吃法，我會特別交代「空腹、配維生素 C、吃完忍一小時別吃東西」。聽起來囉嗦，但鐵的吸收就是這麼挑——你把這三件事做齊，跟隨便配飯吃下去，進到身體裡的量是兩回事。先把可逆的修掉，把鐵補到位，剩下真正需要長期用藥的人，其實沒有想像中那麼多。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s6">參考文獻</h2>
 <ol>
 <li>Gossard TR, Trotti LM, Videnovic A, St Louis EK. Restless Legs Syndrome. <em>StatPearls</em>. NCBI Bookshelf NBK430878 (updated 2023-02-27).</li>
 <li>Allen RP, Picchietti DL, Garcia-Borreguera D, et al. Restless legs syndrome/Willis-Ekbom disease diagnostic criteria: updated International Restless Legs Syndrome Study Group (IRLSSG) consensus criteria. <em>Sleep Med</em>. 2014;15(8):860-873.</li>

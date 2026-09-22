@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/vpnd05.html">
 </head>
@@ -97,14 +116,15 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 05 篇</strong>　前四篇談的是不打疫苗會發生什麼。這一篇反過來，談打了之後可能發生什麼——GBS、ADEM、橫貫性脊髓炎、腦靜脈竇栓塞。這些是真的，而且神經科醫師是最常被問到的人。綜論在這一章給了一個罕見的組合：把 1976 年豬流感疫苗那次唯一有說服力的因果證據攤開，然後用同一組數字示範相對風險與絕對風險為什麼會給出完全相反的情緒。</p>
 </blockquote>
-<h2>先把最硬的證據放上桌</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 12 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">先把最硬的證據放上桌</a></li><li><a href="#bt-s2">1976 年那一次，是唯一有說服力的</a></li><li><a href="#bt-s3">哪些人真的該小心</a></li><li><a href="#bt-s4">神經科病人的特殊焦慮</a></li><li><a href="#bt-s5">猶豫的三個 C</a></li><li><a href="#bt-s6">打不到疫苗的人，跟不想打的人一樣多</a></li><li><a href="#bt-s7">次世代技術能解什麼、不能解什麼</a></li><li><a href="#bt-s8">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">先把最硬的證據放上桌</h2>
 <p>疫苗確實會造成不良事件，<strong>大多數是輕微的——發燒與畏寒、頭痛、身體痠痛、注射部位刺激</strong>。</p>
 <p>嚴重的那一類，包括免疫媒介神經症候群如<strong>格林－巴利症候群（GBS）、ADEM 與橫貫性脊髓炎</strong>，以及神經血管併發症如<strong>腦靜脈竇栓塞</strong>——綜論的定性是：<strong>罕見，且發生頻率一般低於自然感染本身的併發症</strong>。</p>
 <p>最後那半句是整章的支點。它不是說風險是零，是說比較的對象搞錯了。真正的對照組不是「不打疫苗、什麼事都不會發生」，而是「不打疫苗、然後遇上那個病」。</p>
 <p>因果關係難以判定則是另一個問題。美國由 CDC 與 FDA 共同管理的<strong>疫苗不良事件通報系統（VAERS）</strong>負責蒐集潛在疫苗安全問題的資料，但綜論直言：<strong>缺乏對照的流行病學研究，使得建立或推翻疫苗與不良事件之間的因果關係都變得困難</strong>。這句話兩頭都咬——它讓人無法證實，也讓人無法證偽。</p>
 <p>GBS 已被關聯到多種疫苗，包括<strong>流感、重組帶狀皰疹、呼吸道融合病毒與 COVID-19 疫苗</strong>。但綜論下了一個很克制的判語：<strong>即使 GBS 是接種後最廣為人知的潛在不良事件之一，這個關聯基本上是時序上的，並沒有清楚的因果證據</strong>（the association is largely temporal without clear evidence of causation）。</p>
 <p>「時序關聯」是流行病學裡最容易被誤讀的詞。任何一支每年打進幾千萬手臂的疫苗，後面幾週一定會有人得 GBS——因為 GBS 本來就有背景發生率。要證明疫苗多造成了幾例，得有對照組。</p>
-<h2>1976 年那一次，是唯一有說服力的</h2>
+<h2 id="bt-s2">1976 年那一次，是唯一有說服力的</h2>
 <p>支持 GBS 與疫苗因果連結的<strong>最有說服力的流行病學證據，可以追溯到 1976 年美國的豬流感大規模接種計畫</strong>。</p>
 <p>數字是這樣的：<strong>1976 年 10 月至 12 月間接種的 4500 萬人當中，通報了 532 例 GBS，多數發生在接種後 5 週內，但風險上升持續達 10 週</strong>。</p>
 <p>然後是關鍵的兩個風險表述：</p>
@@ -117,17 +137,17 @@ article, article *{overflow-wrap:break-word}
 <p><strong>這是同一件事的兩種說法。</strong> 相對風險 4 到 8 倍——聽起來是災難。可歸因風險每十萬人不到 1 例——聽起來幾乎可以忽略。兩個數字都對，差別只在於基準線很低：把一個很小的數乘以 8，還是一個很小的數。</p>
 <p>而這是 1976 年那批疫苗、那個製程的數據。它至今仍被引用，正是因為後來再也沒有出現同等強度的證據。</p>
 <p>至於機轉，綜論列了三種假說：<strong>分子擬態</strong>——疫苗誘發的抗體與周邊神經的髓鞘或軸突抗原決定位交叉反應，造成免疫媒介的脫髓鞘或軸突損傷；疫苗病毒或疫苗相關產物的直接傷害；或是本身有 GBS 的基因易感性，在接觸疫苗相關抗原刺激後被觸發。</p>
-<h2>哪些人真的該小心</h2>
+<h2 id="bt-s3">哪些人真的該小心</h2>
 <p>綜論的整體立場是：<strong>風險－效益評估對絕大多數人強烈支持接種，但某些疫苗對特定次族群可能是禁忌——例如免疫功能受損者或懷孕期間使用活性減毒疫苗</strong>。</p>
 <p>活性減毒疫苗的邏輯值得說清楚。它的設計是造成一次輕微的自限性感染來訓練免疫系統。但在易感族群身上，<strong>這種原意輕微的感染可能觸發嚴重疾病，帶著與自然感染相同的神經併發症</strong>——可能是病毒直接感染，也可能是像 ADEM 或 GBS 這樣的免疫媒介旁感染過程。</p>
 <p>兩個具體例子：<strong>黃熱病疫苗可造成急性至亞急性的發燒性腦膜炎或腦炎</strong>；而<strong>麻疹疫苗——同樣是活性減毒、常與腮腺炎和德國麻疹一起以 MMR 施打——被關聯到極為罕見的麻疹包涵體腦炎個案</strong>。</p>
 <p>第 02 篇談過 MIBE 是免疫低下者被野生麻疹病毒感染腦部的結果。同樣的併發症也可以來自疫苗株——極為罕見，但機轉是一致的，都是細胞免疫擋不住。</p>
 <p>還有一個很少被提起、但臨床上重要的可能性：<strong>接種後的嚴重神經併發症，有可能是一個先前未知的先天或後天免疫缺損的初次表現</strong>。也就是說，出事的那個孩子，問題可能不在疫苗，而在他本來就有一個沒被診斷出來的免疫缺陷——疫苗只是把它照出來。這對後續的處置意義完全不同。</p>
-<h2>神經科病人的特殊焦慮</h2>
+<h2 id="bt-s4">神經科病人的特殊焦慮</h2>
 <p>綜論特別點名了我們的族群：<strong>多發性硬化症或其他神經系統自體免疫疾病的病人，對於接種是否可能誘發復發或加重病情，可能有獨特的疑慮</strong>。而正在使用免疫調節或免疫抑制治療的自體免疫病人，疫苗的安全性是另一個焦慮來源。</p>
 <p>然後是給神經科醫師的話：<strong>正如神經科醫師在推動疫苗接種以預防全球感染的倡議中扮演關鍵角色，了解疫苗對我們神經疾病病人的特定風險，也能幫助我們管理這些風險</strong>。有效的溝通應該涵蓋：<strong>哪些族群應避免活性減毒疫苗（例如免疫功能不全者），以及哪些族群對特定類型疫苗應審慎（例如有 GBS 病史者）</strong>。</p>
 <p>這是整篇綜論唯一一段直接對神經科醫師說話的文字，而它把角色定得很平衡——不是無條件的推廣者，是那個知道例外在哪裡的人。</p>
-<h2>猶豫的三個 C</h2>
+<h2 id="bt-s5">猶豫的三個 C</h2>
 <p>WHO 免疫戰略諮詢專家小組（SAGE）的概念模型把影響接種決策的因素分成三層：<strong>情境因素</strong>（環境、政治、社會文化）、<strong>個人或群體因素</strong>（個人經驗、知識、信念與態度），以及<strong>疫苗本身的因素</strong>（成本、接種時程）。</p>
 <p>而驅動疫苗猶豫的因素被歸納成<strong>三個 C：信心（confidence）、自滿（complacency）與便利（convenience）</strong>。</p>
 <div class="bt-tablewrap"><table>
@@ -140,7 +160,7 @@ article, article *{overflow-wrap:break-word}
 <p>「自滿」那一條是第 01 篇留下的伏筆的解答。麻疹在疫苗普及之前是每個家長都認識的病；現在沒人看過，於是感知風險趨近於零。<strong>疫苗的成功本身，就是製造自滿的原因。</strong></p>
 <p>還有一個常被誤判的細節：綜論提醒，<strong>不像健康的社會決定因素與健康結果之間的關係，影響疫苗猶豫的因素（例如教育程度或社經地位）不一定總是朝同一個方向作用</strong>。高教育程度不必然等於高接種意願——這推翻了「衛教做足就會解決」的直覺。</p>
 <p>錯誤認知的實際規模有數據。一項在法國巴黎針對 HIV 感染者的研究中，<strong>接種覆蓋率從 B 型肝炎的 77.3% 到 MMR 的 31.4% 不等</strong>。不接種的主要理由包括<strong>害怕打針，以及認為疫苗是禁忌、不太有用、甚至有害的信念</strong>。其他常見的錯誤認知則圍繞著「必要性」——認為多數疫苗可預防的感染還沒嚴重到需要預防，或<strong>認為疫苗只適用於高風險族群</strong>。</p>
-<h2>打不到疫苗的人，跟不想打的人一樣多</h2>
+<h2 id="bt-s6">打不到疫苗的人，跟不想打的人一樣多</h2>
 <p>覆蓋率的另一半問題是可近性，而這一塊的數字同樣不好看。</p>
 <p>2023 年 CDC 一份追蹤 WHO 與 UNICEF 接種覆蓋率趨勢的報告發現，白喉、破傷風與百日咳疫苗的覆蓋率仍低於 COVID-19 疫情之前的水準，<strong>2022 年有 1430 萬名兒童仍未接種——比 2019 年增加 11%</strong>。這些未接種兒童多數在中低所得國家（LMICs），這些國家的接種率恢復明顯不及高所得國家。</p>
 <p>障礙的成因被拆得很細：<strong>可負擔性、影響服務可及性與品質的地理因素、被削弱的醫療基礎建設，以及在戰爭與其他政治衝突影響地區的接種治理複雜性</strong>。</p>
@@ -148,7 +168,7 @@ article, article *{overflow-wrap:break-word}
 <p>最後那一項是 WHO 稱為<strong>整合式健康服務（IHS）</strong>的例子——<strong>以人為中心的連續性服務管理與遞送</strong>，涵蓋健康促進、疾病預防、診斷治療、復健與安寧。實務上的做法包括<strong>全國接種日，以及利用既有基礎設施如校園計畫</strong>來觸及兒童與青少年。</p>
 <p>這裡有一個關於門檻的數字值得記住：模型研究顯示，<strong>COVID-19 疫苗覆蓋率跌破 90% 的門檻，族群層次的效益就會減損</strong>。不同疾病門檻不同（麻疹是 95%），但邏輯一致——疫苗的效益不是線性累加的，它有一個懸崖。</p>
 <p>性別與性別角色也在其中。<strong>日本腦炎、腮腺炎、腦膜炎與狂犬病等感染在男性比女性更盛行</strong>，主因是暴露風險較高，某些情況下則是疫苗誘導免疫較弱。反向的問題則出現在許多中低所得國家：<strong>文化或可近性障礙可能限制女孩的接種覆蓋率</strong>，提高她們罹患可預防疾病的風險。而<strong>懷孕又增加一個維度，因為活性減毒疫苗是禁忌，造成免疫空隙以及對母親與胎兒的潛在風險</strong>。</p>
-<h2>次世代技術能解什麼、不能解什麼</h2>
+<h2 id="bt-s7">次世代技術能解什麼、不能解什麼</h2>
 <p>早期世代的疫苗使用活性減毒生物、不活化病原或次單元蛋白，<strong>需要 5 到 15 年的開發時程與複雜的生產流程</strong>。</p>
 <p>mRNA 平台改變的是這個時程。它<strong>把經密碼子最佳化、編碼抗原的 mRNA 送進宿主細胞，由細胞轉譯成正確摺疊的抗原、經主要組織相容性複合體途徑呈現，誘發體液與細胞免疫反應</strong>。而實驗性的<strong>自我擴增型 mRNA 疫苗</strong>進一步強化宿主細胞內的抗原生產。</p>
 <p>模組化是關鍵優勢：<strong>這些模組化疫苗系統只需要替換編碼抗原的 mRNA 序列</strong>，就能快速開發並規模化生產以因應變異株。</p>
@@ -165,7 +185,7 @@ article, article *{overflow-wrap:break-word}
 <p>至於「教育程度不一定朝同一個方向作用」這句，我覺得是整篇最不舒服但最重要的一句。它把我們最愛的那個假設——「衛教做足就會好」——直接拆了。在門診裡不打疫苗的家長，很多不是資訊不足，是資訊太多、來源太雜、而且他們讀過的東西比我以為的多。對那樣的人講衛教，不會有效。</p>
 </blockquote>
 <p>整個系列繞了一圈，最後停在一個很不像醫學問題的地方：疫苗技術已經好到可以在幾週內為新病原做出候選疫苗，熱穩定配方快要解決冷鏈，模組化生產可以隨變異株換序列。可是麻疹還是回來了，小兒麻痺還在癱瘓十個月大的嬰兒。缺的那一塊從來不在實驗室裡。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s8">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
 <tbody>

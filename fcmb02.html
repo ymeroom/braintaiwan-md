@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/fcmb02.html">
 </head>
@@ -97,8 +116,9 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 2 篇</strong>　腦葉微出血既然和小血管病脫鉤，那它跟什麼綁在一起？這篇研究給的答案不在腦，而在心臟——左心室後壁厚度是唯一撐過多變項調整的獨立預測因子。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 3 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">唯一站得住的獨立預測因子</a></li><li><a href="#bt-s2">微栓子假說：黑點可能是心臟寄來的</a></li><li><a href="#bt-s3">深部微出血：更晚期的心臟受損</a></li></ol></details><!-- bt-toc:end -->
 <p>上一篇留下一個懸念：法布瑞氏症的腦葉微出血（CMB）既然和小血管病影像標記脫鉤，那它到底跟什麼綁在一起？這篇研究給的答案，方向不在腦，而在<strong>心臟</strong>。</p>
-<h2>唯一站得住的獨立預測因子</h2>
+<h2 id="bt-s1">唯一站得住的獨立預測因子</h2>
 <p>作者把有腦葉 CMB（n = 15）和沒有的（n = 11）兩組拉出來比。單變項分析裡，好幾個變數達到顯著：缺少 IVS4+919G&gt;A 變異、<strong>左心室後壁厚度（LVPWd）增加</strong>、HbA1c 較低、驗尿試紙蛋白尿陽性、基底核 EPVS 較輕。</p>
 <p>但單變項容易互相干擾。真正的考驗是把年齡、IVS4+919G&gt;A 變異、LVPWd、試紙蛋白尿一起放進多變項邏輯迴歸。結果只有一個變數撐過調整、仍然獨立顯著——<strong>LVPWd</strong>（校正後 OR = 1.83，95% CI 1.01–3.34，p = 0.048）。</p>
 <p>翻成白話：左心室後壁每厚一毫米，出現腦葉微出血的勝算約提高八成。而且這不是二分法的有無而已——LVPWd 和微出血的<strong>數量</strong>也呈正相關（Spearman r = 0.44，p = 0.028）。心臟愈肥厚，腦裡的黑點愈多。</p>
@@ -107,11 +127,11 @@ article, article *{overflow-wrap:break-word}
 <p><strong>為什麼盯著 LVPWd，而不是血壓或血糖</strong></p>
 <p>這裡的因果邏輯很乾淨：如果微出血源於高血壓小血管病，那該和血壓、HbA1c、白質病灶正相關。但實際上陽性組血壓沒比較高、HbA1c 還比較低（5.6% vs. 6.2%，p = 0.016）、白質病灶還比較輕。當傳統血管路徑全被排除、唯一留下的是心肌肥厚，指針自然轉向「心臟來源」的機轉。</p>
 </blockquote>
-<h2>微栓子假說：黑點可能是心臟寄來的</h2>
+<h2 id="bt-s2">微栓子假說：黑點可能是心臟寄來的</h2>
 <p>那心臟肥厚怎麼會在腦葉留下含鐵血黃素？作者傾向的解釋是<strong>心因性微栓子（cardioembolic microemboli）</strong>。</p>
 <p>這條線索並非憑空推論。文獻早就注意到心臟與 CMB 的連結：肥厚型心肌病中，最大心室壁厚度與血栓栓塞風險相關；而心室壁增厚正是法布瑞氏症的招牌特徵。缺血性中風族群裡，心房病變（atrial cardiopathy）也和 CMB 有關，支持「心因性栓子」這個共同源頭。更關鍵的是有病理報告直接觀察到微梗塞旁伴隨含鐵血黃素沉積——也就是說，SWI 上那些黑點，可能是一顆顆微小栓塞梗塞留下的痕跡，而不是滲漏性小血管病。</p>
 <p>這也回頭解釋了第一篇的謎題：<strong>為什麼 CMB 和其他小血管病標記無關</strong>。因為它們根本不是同一種病——一個是心臟丟出來的微栓子在皮質落腳，一個是腦內小動脈自己的退化。</p>
-<h2>深部微出血：更晚期的心臟受損</h2>
+<h2 id="bt-s3">深部微出血：更晚期的心臟受損</h2>
 <p>研究還做了一個補充分析，把有沒有<strong>深部</strong> CMB 的人再比一次。有深部 CMB 的病人，抗栓劑使用率更高（56% vs. 0%，p = 0.034）、proBNP 更高（1326 vs. 43.78 pg/mL，p = 0.039）、室間隔更厚（IVSd 18.6 ± 4.2 vs. 14.6 ± 3.8 mm，p = 0.048）。傳統血管危險因子與其他小血管病影像則沒有差別。</p>
 <p>作者把這條線索接成一個時序假說：純腦葉型多見於較年輕的病人，混合但以腦葉為主的分布多見於年長者，而深部 CMB 代表<strong>更進展的心臟受損、更晚期的疾病</strong>。心臟壞得愈久愈重，微出血就從腦葉往深部蔓延。要提醒的是，這個亞組分析受混合型 CMB、樣本數小、缺乏縱貫資料影響，只能當作假說，不是定論。</p>
 <blockquote class="commentary">

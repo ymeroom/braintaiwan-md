@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/edh03.html">
 </head>
@@ -97,16 +116,17 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 03 篇</strong>　問「EDH 應該在受傷後幾小時內開刀」，文獻會給你一個令人意外的答案：沒有關係。但如果把問題改成「瞳孔變大之後幾分鐘內開刀」，同一批文獻會給出一條陡峭到近乎殘酷的曲線。這一篇處理手術時機、轉院爭議，以及指引為什麼在術式上幾乎沒有話說。</p>
 </blockquote>
-<h2>先確認在講哪一群人</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 7 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">先確認在講哪一群人</a></li><li><a href="#bt-s2">從受傷開始算：找不到關係</a></li><li><a href="#bt-s3">從瞳孔開始算：曲線很陡</a></li><li><a href="#bt-s4">轉院：一個沒有被好好回答的問題</a></li><li><a href="#bt-s5">術式：指引幾乎沒有話說</a></li><li><a href="#bt-s6">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">先確認在講哪一群人</h2>
 <p>手術時機這件事只對一個特定亞群有意義：<strong>EDH 造成腦部結構壓迫、且拖下去會導致不良預後的患者</strong>。指引把這群人定義為<strong>有瞳孔異常、且／或 GCS 小於 9（昏迷）</strong>者。</p>
 <p>這群人比想像中少。整體來看，EDH 患者中只有 <strong>21% 到 34%</strong> 在到院時 GCS 小於 8 或 9。換句話說，三分之二以上的 EDH 患者，時機問題對他們並不迫切。</p>
 <p>指引的時機建議也精準地只針對這一群：<strong>強烈建議急性 EDH 且昏迷（GCS &lt; 9）合併瞳孔不等（anisocoria）的患者，應盡速接受手術清除。</strong></p>
-<h2>從受傷開始算：找不到關係</h2>
+<h2 id="bt-s2">從受傷開始算：找不到關係</h2>
 <p>如果把所有 GCS 的患者一起分析，研究<strong>找不到</strong>手術時機與預後之間的關係。</p>
 <p>Lee 等人的 200 位手術患者研究說得最清楚。他們用多變項分析檢驗兩個時間定義——<strong>受傷後 4 小時內手術</strong>，以及<strong>到院後 2 小時內手術</strong>——結果都<strong>未能顯示與預後有顯著關係</strong>。</p>
 <p>這個陰性結果很容易被誤讀成「時機不重要」。但同一份研究緊接著找到了顯著關聯：<strong>腦疝持續時間</strong>（以瞳孔不等為指標）與預後顯著相關。</p>
 <p>也就是說，時鐘擺錯位置了。從撞擊那一刻開始計時，中間包含了太多不確定的變異——有人撞完立刻被送來，有人在家躺了六小時；有人的血腫兩小時就長到 60 cm³，有人的一整天都沒動。<strong>真正在傷害腦子的不是受傷後經過的時間，是腦幹被壓迫後經過的時間。</strong></p>
-<h2>從瞳孔開始算：曲線很陡</h2>
+<h2 id="bt-s3">從瞳孔開始算：曲線很陡</h2>
 <p>換一個計時起點，數字立刻變得銳利。</p>
 <p>Lee 等人依「瞳孔不等到減壓之間的間隔」分層：</p>
 <div class="bt-tablewrap"><table>
@@ -137,7 +157,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>兩小時這條線，把死亡率從 17% 推到 56%，把良好恢復從 67% 壓到 13%。</p>
 <p>Sakas 等人的研究處理最極端的一端：分析 40 位在出現<strong>雙側固定散大瞳孔</strong>後接受開顱的重度 TBI 患者（其中 11 位為 EDH）。結果 EDH 的死亡率（<strong>18%</strong>）顯著低於硬腦膜下血腫（<strong>64%</strong>）——再一次印證 EDH 是顱內血腫中最值得積極處理的那一種。但同一份研究也給出一條紅線：<strong>固定散大瞳孔持續超過 6 小時者，無論 SDH 或 EDH，全部死亡。</strong></p>
-<h2>轉院：一個沒有被好好回答的問題</h2>
+<h2 id="bt-s4">轉院：一個沒有被好好回答的問題</h2>
 <p>急性 EDH 應該在最近的醫院處理，還是轉到專責創傷中心？指引承認這個問題「已被爭論許久，但在研究中記載得很差」。</p>
 <p>現有的三份研究都指向「直接送到神經外科中心比較好」，但每一份都有嚴重的方法學問題。</p>
 <p>Wester 研究 83 位接受開顱的急性 EDH 患者，其中 28 位由外院轉入，11 位在外院接受了緊急手術。<strong>由非神經外科醫師在外院手術者，三個月預後顯著較差</strong>，作者主要歸因於初次手術的技術不足。但指引隨即指出：作者<strong>沒有控制到院 GCS 與瞳孔檢查等干擾因子</strong>。</p>
@@ -152,12 +172,12 @@ article, article *{overflow-wrap:break-word}
 <p>六個月預後在直接入院組顯著較好，而兩組之間最明顯的差別就是那段從神經學惡化到手術的延遲：0.7 小時對 3.2 小時。</p>
 <p>指引在推論上很小心，只寫了一句邏輯上必然成立的話：昏迷且有瞳孔異常的患者，清除 EDH 的間隔愈長，預期預後愈差；因此<strong>轉院造成的延遲，會讓這群患者的手術間隔變長</strong>。</p>
 <p>這句話的謹慎值得欣賞。它沒有說「所以應該直接轉創傷中心」，也沒有說「所以應該就近手術」——因為這些研究全部是非對照的，無法排除病情較重的患者本來就比較可能被轉送。</p>
-<h2>術式：指引幾乎沒有話說</h2>
+<h2 id="bt-s5">術式：指引幾乎沒有話說</h2>
 <p>方法學建議只有兩句：<strong>沒有足夠資料支持任何單一手術方法；然而，開顱（craniotomy）能較完整地清除血腫。</strong></p>
 <p>值得注意這兩句話的語氣落差。第一句是明確的「證據不足」，第二句只是一個技術上的觀察，沒有連到預後。指引沒有比較開顱、顱骨切除與鑽孔引流的預後差異，因為沒有這樣的研究可以引用。</p>
 <p>指引自己列出的未來研究方向也反映了這些缺口：轉院相對於直接入院對手術時機與預後的影響；<strong>辨識出不會從手術獲益的亞群</strong>——年長、GCS 低、有瞳孔異常且合併腦內病灶者；以及手術技術。</p>
 <p>第二項特別值得停一下。它承認在 EDH 這個「開了就會好」的疾病裡，可能存在一群開了也不會好的人，而目前我們認不出他們是誰。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s6">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>計時起點</th><th>與預後的關係</th></tr></thead>
 <tbody>

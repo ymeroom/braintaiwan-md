@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/asdh02.html">
 </head>
@@ -97,14 +116,15 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 02 篇</strong>　ASDH 的重症照護幾乎等同於顱內壓的攻防。但把常用的五種手段攤開來看，它們的證據強度差距極大：有的是明確有效，有的只被允許當作暫時措施，有的則已經被大型試驗證明有害。這一篇把它們分層。</p>
 </blockquote>
-<h2>22 mmHg 這個數字</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 7 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">22 mmHg 這個數字</a></li><li><a href="#bt-s2">第一層：物理性的、低風險的</a></li><li><a href="#bt-s3">第二層：只能拖時間的</a></li><li><a href="#bt-s4">第三層：已被否定的</a></li><li><a href="#bt-s5">低溫療法：從有希望到只剩下退燒</a></li><li><a href="#bt-s6">臨床要點摘要</a></li><li><a href="#bt-s7">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">22 mmHg 這個數字</h2>
 <p>顱內壓上升的處置是頭部外傷的核心，而顱內壓上升的情況在 ASDH 中經常發生。</p>
 <p>綜論給的門檻是：<strong>顱內壓上升（超過 22 mmHg）可能導致 TBI 患者預後不良</strong>。也因此，神經外傷領域引入了各種降低顱內壓的流程。</p>
 <p>這個 22 mmHg 值得留意它的措辭。它是一個與不良預後相關的閾值，不是一條「超過就開刀、低於就安心」的操作線。綜論用的是「可能導致預後不良」，而不是「應於此值介入」。臨床上把它當成風險升高的參考點比較安全。</p>
-<h2>第一層：物理性的、低風險的</h2>
+<h2 id="bt-s2">第一層：物理性的、低風險的</h2>
 <p>頭部抬高 30 度並鬆開頸圈，可以改善靜脈回流並協助降低顱內壓。</p>
 <p>這條建議的性質跟後面所有藥物或手術手段都不同——它幾乎沒有代價。而且「鬆開頸圈」這個細節常被忽略：頸圈壓迫頸靜脈會妨礙靜脈回流，抬高床頭的效果會被自己戴著的固定裝置抵銷掉一部分。在頸椎尚未清除疑慮的患者身上，這是一個需要與脊椎保護一起權衡的動作，但至少該被意識到。</p>
-<h2>第二層：只能拖時間的</h2>
+<h2 id="bt-s3">第二層：只能拖時間的</h2>
 <p>有兩種手段被綜論明確限定為暫時性措施。</p>
 <p><strong>過度換氣</strong>可藉由誘發血管收縮來降低顱內壓。機轉直接、起效快。但代價也很直接：呼吸性鹼中毒可能加劇次發性缺血。</p>
 <p>這裡的邏輯值得攤開講，因為它是整份綜論裡最漂亮的一組反例。過度換氣降顱內壓靠的正是腦血管收縮——而腦血管收縮本身就會減少腦血流。你用來救腦的手段，跟你想避免的傷害，是同一個生理過程。</p>
@@ -112,10 +132,10 @@ article, article *{overflow-wrap:break-word}
 <p>從 25 到 30 這個變動不是微調，而是方向上的修正：從「壓得愈低愈好」改成「不能壓太低」。指引的定位則更保守——建議將過度換氣作為降低顱內壓上升的<strong>暫時性措施</strong>。</p>
 <p><strong>高滲透壓或高張性輸液治療</strong>的處境類似。它可以形成滲透壓梯度，使液體由腦細胞內液空間移動至循環系統。但綜論緊接著限制：它只能暫時使用，直到手術治療介入為止。</p>
 <p>換句話說，這兩項都不是治療，是橋接。它們買到的是把病人送進開刀房的時間。如果沒有一個後續的確定性處置在等著，單靠它們撐著並不構成一個計畫。</p>
-<h2>第三層：已被否定的</h2>
+<h2 id="bt-s4">第三層：已被否定的</h2>
 <p>靜脈注射類固醇對 ASDH 患者沒有證據支持其效益。綜論的用詞更進一步：<strong>在大規模、前瞻性隨機分派多中心研究中，使用類固醇反而對 ASDH 患者造成有害的效果</strong>。</p>
 <p>這條之所以值得單獨標記，是因為它跟慢性硬腦膜下血腫的情況形成對照。在整個硬腦膜下血腫的領域裡，類固醇都是那個「機轉聽起來合理、試驗做下去卻是害的」的例子。腦水腫用類固醇、發炎過程用抗發炎藥，推論都很順，結果都不成立。</p>
-<h2>低溫療法：從有希望到只剩下退燒</h2>
+<h2 id="bt-s5">低溫療法：從有希望到只剩下退燒</h2>
 <p>低溫療法在 ASDH 患者的治療上是個難題，綜論用的字是 challenging。</p>
 <p>起點是有理由樂觀的。心跳停止與心肌梗塞後的輕度治療性低溫，已顯示可改善患者的存活率並增加良好神經學預後。這是低溫療法在其他領域確實成功的紀錄。</p>
 <p>但用到 TBI 上就不一樣了。綜論直說，低溫用於 TBI 尚未確立其明確的可用性；動物模型的結果與臨床領域的表現呈現不同樣貌。</p>
@@ -125,7 +145,7 @@ article, article *{overflow-wrap:break-word}
 <p>Shaefi 等人分析了 2007 年以後發表的 8 項 TBI 低溫治療隨機對照試驗。這些試驗大多數未發現低溫治療帶來改善，不過仍有部分次族群的患者可能從低溫中獲益。整體而言，設計較佳的研究普遍不支持在嚴重 TBI 使用低溫。</p>
 <p>他們給的建議相當務實：<strong>應避免經驗性使用低溫</strong>；低溫可在非常有限的情況下使用，重點放在維持體溫控制，目的是避免高體溫。</p>
 <p>這個結論的重心已經從「降溫治療」移到「不要發燒」。綜論最後留了一句餘地：輕度低溫或許可以嘗試應用於可能獲益的 TBI 患者身上——但這句話在前面那一整段否定證據的脈絡下，讀起來比較像是保留未來研究空間，而不是一條可執行的建議。</p>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s6">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>手段</th><th>綜論立場</th><th>分層</th></tr></thead>
 <tbody>
@@ -139,7 +159,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>低溫（BTF 指引）</td><td>早期 2.5 小時內、短期 48 小時、預防性使用時傾向無改善</td><td>限定於特定使用方式</td></tr>
 <tr><td>低溫（Shaefi 等，8 項 RCT）</td><td>多數未見改善；應避免經驗性使用，重點在避免高體溫</td><td>目標已轉為體溫控制</td></tr>
 </tbody></table></div>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s7">臨床判讀重點</h2>
 <p>把這一章讀成一張分層表，比讀成一份清單有用。</p>
 <p><strong>第一層</strong>是頭部抬高與鬆開頸圈，代價低、機轉清楚，沒有理由不做。</p>
 <p><strong>第二層</strong>是過度換氣與高滲透壓治療。這兩項的共同特徵是，綜論都替它們加了時間限制——一個被指引定位為暫時性措施，一個被寫明只能用到手術介入為止。它們的價值在於爭取時間，前提是有個東西在時間的另一端等著。若把橋接手段當成終點，等於是在沒有計畫的情況下消耗生理儲備。</p>

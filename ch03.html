@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/ch03.html">
 </head>
@@ -97,6 +116,7 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 3 篇</strong>　維持性預防藥（如 verapamil）需要數週才達有效劑量，但發作期的病人每天痛好幾次、等不了。<strong>過渡性預防（transitional prophylaxis）</strong>就是那座「橋」——用快速起效的療法在短期內壓下發作，撐到維持藥生效。本篇談兩大主角：<strong>口服類固醇</strong>與<strong>枕下／枕大神經類固醇注射</strong>。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、口服類固醇——最常用的「橋」</a></li><li><a href="#bt-s2">二、枕下／枕大神經類固醇注射——免於全身性副作用的選擇</a></li><li><a href="#bt-s3">三、其他過渡性選項</a></li><li><a href="#bt-s4">四、過渡性預防的使用策略</a></li><li><a href="#bt-s5">臨床要點摘要</a></li><li><a href="#bt-s6">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>叢發性頭痛的預防分成兩種角色，缺一不可：</p>
 <ul>
@@ -105,7 +125,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>關鍵策略：<strong>兩者可同時啟動</strong>——維持藥（如 verapamil）開始慢慢加量的同時，先用過渡性療法快速止住發作；等維持藥達到有效劑量、發作受控後，<strong>再把過渡性藥物逐步停掉</strong>。</p>
 <hr>
-<h2>一、口服類固醇——最常用的「橋」</h2>
+<h2 id="bt-s1">一、口服類固醇——最常用的「橋」</h2>
 <p>口服類固醇是最廣泛使用、起效最快的過渡性預防，能在數天內顯著壓低發作頻率。</p>
 <p><strong>用法</strong>：常用 <strong>prednisone 1 mg/kg/day（約 60–80 mg/day）起始</strong>，維持數天後<strong>逐步減量</strong>，整個療程<strong>不超過 2–3 週</strong>。</p>
 <p><strong>證據</strong>：</p>
@@ -124,7 +144,7 @@ article, article *{overflow-wrap:break-word}
 <p>臨床提醒：類固醇給病人的「戲劇性緩解」常讓人想一直用下去，但<strong>它不是長期方案</strong>。每次開立都要同步問自己：「維持藥開了嗎？預計幾天後可以開始減類固醇？」</p>
 </blockquote>
 <hr>
-<h2>二、枕下／枕大神經類固醇注射——免於全身性副作用的選擇</h2>
+<h2 id="bt-s2">二、枕下／枕大神經類固醇注射——免於全身性副作用的選擇</h2>
 <p>對於不適合或不願用口服類固醇者，<strong>枕下（suboccipital）／枕大神經（greater occipital nerve, GON）注射</strong>提供局部、單次、全身副作用低的過渡性預防。</p>
 <p><strong>機轉</strong>：枕大神經與三叉神經在<strong>三叉頸複合體（trigeminal cervical complex）</strong>有功能連結，阻斷枕神經可調節三叉血管系統的疼痛傳遞。</p>
 <p><strong>證據</strong>：</p>
@@ -141,7 +161,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>評等</strong>：依研究有 Grade A–C 的支持，是準則明確推薦的過渡性選項</li>
 </ul>
 <hr>
-<h2>三、其他過渡性選項</h2>
+<h2 id="bt-s3">三、其他過渡性選項</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>療法</th><th>角色</th></tr></thead>
 <tbody>
@@ -149,7 +169,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td><strong>預防性（preemptive）口服 sumatriptan</strong></td><td>Monstad 1995 顯示發作期規律服用可減少發作，但有每日用量與心血管考量，非主流</td></tr>
 </tbody></table></div>
 <hr>
-<h2>四、過渡性預防的使用策略</h2>
+<h2 id="bt-s4">四、過渡性預防的使用策略</h2>
 <p>把過渡與維持放在同一張時間軸上理解，最清楚：</p>
 <ol>
 <li><strong>確診當下</strong>：同時啟動「<strong>過渡性（快速壓制）</strong>」＋「<strong>維持性（verapamil 等，開始緩慢加量）</strong>」</li>
@@ -158,7 +178,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>整個發作期結束</strong>（連續 2 週無發作）後，再把維持藥逐步減停（第四篇）</li>
 </ol>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s5">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>準則重點</th></tr></thead>
 <tbody>
@@ -176,7 +196,7 @@ article, article *{overflow-wrap:break-word}
 <p>對不適合全身性類固醇的病人——糖尿病、消化性潰瘍、感染風險高、或者就是不想吃一大堆藥的——<strong>枕大神經注射</strong>是很漂亮的替代方案：一針、局部、撐好幾週，特別適合一天痛很多次的人。下一篇，我們談接手的主力：維持性預防，從首選的 verapamil 講起。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s6">參考文獻</h2>
 <ol>
 <li>Yang FC, Tsai CL, Lin GY, et al. 2022 Taiwan Guidelines for Acute and Preventive Treatment of Cluster Headaches. <em>Acta Neurol Taiwan</em>. 2022;31(4):254-273.</li>
 <li>Obermann M, Nägel S, Ose C, et al. Safety and efficacy of prednisone versus placebo in short-term prevention of episodic cluster headache: a multicentre, double-blind, randomised controlled trial. <em>Lancet Neurol</em>. 2021;20(1):29-37.</li>

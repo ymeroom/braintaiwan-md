@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/csvd05.html">
 </head>
@@ -97,23 +116,24 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 05 篇</strong>　絕大多數 CSVD 是散發型的，危險因子清單看起來與一般心血管疾病沒有兩樣。真正值得理解的是中間那一段：從長期高血壓到白質高訊號之間，小動脈管壁究竟經歷了什麼結構改變，又為什麼結果會同時包含缺血與出血。</p>
 </blockquote>
-<h2>危險因子：熟悉的名單，不同的標的器官</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">危險因子：熟悉的名單，不同的標的器官</a></li><li><a href="#bt-s2">管壁的結構改變</a></li><li><a href="#bt-s3">從管壁到病灶</a></li><li><a href="#bt-s4">發炎的角色</a></li><li><a href="#bt-s5">臨床要點摘要</a></li><li><a href="#bt-s6">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">危險因子：熟悉的名單，不同的標的器官</h2>
 <p>這篇綜論的立場很明確：多數情況下 CSVD 屬散發型，其發生主要與年齡以及常見的血管疾病危險因子相關，其中又以高血壓與糖尿病為主。其他危險因子包括目前吸菸與曾經吸菸、阻塞性睡眠呼吸中止、慢性腎病，以及分支動脈粥瘤病（branch atheromatous disease）。</p>
 <p>這份清單的前半段沒有意外，後半段則值得停留。阻塞性睡眠呼吸中止被列入，把夜間間歇性缺氧與血壓變異度帶進了小血管病的討論；慢性腎病被列入，則反映腎絲球與腦部穿通支同屬高流量、低阻力的小血管床，承受相似的壓力負荷。這篇綜論在預後段落補上一組具體數據：腎絲球過濾率下降與無症狀缺血病灶更頻繁出現相關，且與高血壓無關；估計腎絲球過濾率低於 60 mL/min/1.73 m² 是腦白質損傷加重的獨立危險因子。</p>
 <p>「與高血壓無關」與「獨立危險因子」這兩個限定詞，讓腎功能不只是共病，而是本身帶有訊息的風險指標。臨床上，一位血壓控制尚可但 eGFR 持續下降的患者，其小血管風險並沒有因為血壓數字漂亮而被抵銷。</p>
 <p>分支動脈粥瘤病則是另一個層次的概念。它描述的是穿通支起始處的粥狀硬化斑塊阻塞開口，病灶因此可能較大、範圍沿穿通支縱向延伸，臨床上也較常出現早期神經功能惡化。把它與典型腔隙病變並列為危險因子，提醒的是「小血管中風」內部並非同質，病因機轉可以不同。</p>
-<h2>管壁的結構改變</h2>
+<h2 id="bt-s2">管壁的結構改變</h2>
 <p>機轉端的敘述從高血壓開始。這篇綜論指出，主要與高血壓相關的病理過程作用於血管壁，導致脂質透明變性（lipohyalinosis）與纖維透明變性（fibrohyalinosis）的發生；伴隨結締組織纖維增生與血管周邊腔擴張，造成收縮能力喪失，進而形成血管硬化。此外，因血腦障壁受損而出現血管內皮功能障礙。</p>
 <p>這段描述可以拆成一條因果鏈來讀。長期壓力負荷改變管壁組成，脂質與纖維物質沉積取代了原本具彈性的結構；結締組織增生使管壁增厚僵硬；收縮能力喪失代表血管失去依需求調整口徑的本事。而血管周邊腔擴張這一項，正好對應第 02 篇談過的影像表徵——擴大的血管周邊腔並非單純的解剖變異，它在這條機轉鏈上有位置。</p>
 <p>血管壁失去收縮能力的後果，比單純狹窄更麻煩。腦部的灌流依賴自動調節：血壓波動時，小動脈以收縮或舒張維持流量穩定。當這個能力喪失，灌流就變得直接受制於全身血壓，血壓偏低時容易缺血，血壓偏高時管壁又承受過度壓力。</p>
-<h2>從管壁到病灶</h2>
+<h2 id="bt-s3">從管壁到病灶</h2>
 <p>這篇綜論接著指出，對小穿通血管造成損傷的第二常見原因是類澱粉血管病（CAA）。這些改變導致低灌流或血流障礙，與異常的自我調節及血管壁通透性受損相關，並造成多發性的中風病灶。</p>
 <p>「多發性」這個詞回應了臨床觀察：CSVD 的病灶很少是單一的。當自動調節失效發生在整個小血管床，受影響的就不會只有一條穿通支，而是散布於基底核、視丘、橋腦與白質的多個位置。這也是為什麼影像上通常看到的是病灶群，而非孤立病變。</p>
 <p>血管壁通透性受損則把血腦障壁推到中心位置。管壁不再是密封的界面，血漿成分滲入周邊組織，這個過程被認為與白質損傷的形成有關，同時也讓「缺血」不足以完整解釋白質高訊號的成因。</p>
-<h2>發炎的角色</h2>
+<h2 id="bt-s4">發炎的角色</h2>
 <p>最後一項機轉是發炎。這篇綜論指出，發炎過程在致病機轉中也扮演重要角色，依據是腦脊髓液與血液中發炎指標升高，具體提到介白素-6（interleukin 6）與 C 反應蛋白（CRP）。</p>
 <p>要注意這裡的證據型態。所引述的是發炎指標在患者體內升高這個相關性觀察，而不是抗發炎介入能改變病程的試驗結果。發炎在 CSVD 中是否為驅動因素、旁觀者或後果，這篇綜論並未給出結論，臨床上也不應據此推導治療方向。</p>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s5">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>層次</th><th>綜論所載內容</th><th>判讀界線</th></tr></thead>
 <tbody>
@@ -127,7 +147,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>病灶形成</td><td>低灌流或血流障礙，伴異常自我調節與管壁通透性受損，造成多發性中風病灶</td><td>病灶多為群集而非孤立</td></tr>
 <tr><td>發炎</td><td>腦脊髓液與血中 IL-6、CRP 升高</td><td>屬相關性觀察，非治療依據</td></tr>
 </tbody></table></div>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s6">臨床判讀重點</h2>
 <p>第一個判讀重點是把高血壓的角色說準。在這條機轉鏈上，高血壓不是眾多危險因子之一，而是管壁病理敘述的起點——脂質透明變性與纖維透明變性被直接歸因於與高血壓相關的病理過程。這給了血壓控制在 CSVD 上的特殊地位，也預告了第 07 篇的治療結論。</p>
 <p>第二個重點是自動調節失效帶來的雙向風險。當小動脈失去收縮能力，灌流直接跟著全身血壓走。這使得血壓管理在這群患者身上不只是「越低越好」的問題，而是同時要避免高壓對管壁的持續傷害，與低壓時段造成的灌流不足。綜論本身未給出具體血壓目標，臨床上仍應回到現行指引與個別狀況判斷。</p>
 <p>第三個重點是不要把 CSVD 簡化為單純的缺血問題。管壁通透性受損與血腦障壁失能被寫進機轉，意味著白質病變的形成不只是「血流不夠」。這也呼應第 03 篇提到的出血面向——同一組結構脆弱的管壁，既可能閉塞，也可能破裂。</p>

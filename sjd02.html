@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/sjd02.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 02 篇</strong>　修格連氏症候群的終生 B 細胞淋巴瘤風險是 5–10%，而指引在流程圖上把話講得很硬：<strong>Early diagnosis of lymphoma is crucial for curative management</strong>。問題是，指引整理出來的預測因子有一整排，卻沒有任何一條建議把它們換算成「該多久追一次、追什麼」。這一篇處理淋巴瘤風險分層、疾病進展的預測標記、確診後該做的共病檢查，以及早期治療高球蛋白血症到底有沒有用。</p>
 </blockquote>
-<h2>一個可以直接算的機率階梯</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 12 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一個可以直接算的機率階梯</a></li><li><a href="#bt-s2">切片能不能預測，證據自己在打架</a></li><li><a href="#bt-s3">發病年齡改變的是時間表</a></li><li><a href="#bt-s4">一致浮現的六項，加上四個警訊</a></li><li><a href="#bt-s5">預測進展的因子，和預測淋巴瘤的高度重疊</a></li><li><a href="#bt-s6">共病：乳糜瀉是一般人的十倍</a></li><li><a href="#bt-s7">早期治療高球蛋白血症有沒有用</a></li><li><a href="#bt-s8">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">一個可以直接算的機率階梯</h2>
 <p>證據回顧從 493 篇篩到 32 篇全文，最後只有 4 篇進入統合分析。這個漏斗本身就說明了問題的規模。</p>
 <p>最實用的一份是病例對照研究：381 名沒有非何杰金氏淋巴瘤（NHL）的原發性 SD，對上 92 名合併 NHL 的 SD。它找出七個獨立預測因子——唾液腺腫大、淋巴結腫大、雷諾現象、anti-Ro 與／或 La 抗體、類風濕因子（RF）、單株丙球蛋白病變，以及補體 C4 偏低，其中 <strong>low complement component 4 (C4) most predictive</strong>。</p>
 <p>真正好用的是後面那個階梯：</p>
@@ -121,17 +141,17 @@ article, article *{overflow-wrap:break-word}
 <tr><td>多中心病例對照</td><td>101 人</td><td>唾液腺腫大、RF、低 C4、冷凝球蛋白血症、淋巴球低下與 ESSDAI 疾病活動度皆為多變項分析中的預測因子</td></tr>
 </tbody></table></div>
 <p>Brito-Zerón 那篇還拆出一件有意思的事：MALT 淋巴瘤與<strong>全身疾病活動度</strong>相關（診斷時冷凝球蛋白 P = 0.002、低 C3 P = 0.018、ESSDAI ≥4 P = 0.001、高關節 DAS 分數 P &lt; 0.001），而非 MALT 的 B 細胞淋巴瘤<strong>與全身活動度無關</strong>，主要風險因子是貧血、單株丙球蛋白病變、冷凝球蛋白與低 C4。同一個疾病的兩種淋巴瘤，預測邏輯不一樣。</p>
-<h2>切片能不能預測，證據自己在打架</h2>
+<h2 id="bt-s2">切片能不能預測，證據自己在打架</h2>
 <p>生發中心（germinal centres）曾被寄予厚望。Theander 等人回顧 175 人的唾液腺切片，<strong>25%</strong> 在診斷時就有生發中心形式的淋巴組織化；追蹤期間 7 人發生淋巴瘤，其中 <strong>6 人</strong>在診斷時有生發中心。</p>
 <p>但接下來那句是關鍵：<code>this finding was not confirmed in a subsequent very small study</code>——後續一份只有 11 人的極小型研究比較了發生淋巴瘤者與未發生者的切片，兩組的生發中心形成率<strong>同樣低</strong>。</p>
 <p>focus score 的證據比較站得住。Risselada 等人回溯 174 名原發性 SD，以<strong>三個以上 foci</strong> 為門檻，對淋巴瘤的陽性預測值 <strong>16%</strong>、陰性預測值 <strong>98%</strong>。另一份 794 人的回溯回顧中 34 人發生淋巴瘤，同樣支持 focus score 與淋巴瘤的關聯。更近期的研究則發現診斷時的 focus score、冷凝球蛋白血症與唾液腺腫大是獨立危險因子，而 <strong>focus score ≥4 者從 SD 診斷到淋巴瘤診斷的時間顯著短於 &lt;4 者（4 年 vs 9 年）</strong>。</p>
 <p>那個 98% 的陰性預測值和 16% 的陽性預測值放在一起，用途就清楚了：它是排除工具不是納入工具。而 4 年對 9 年講的不是會不會發生，是還剩多少時間。</p>
-<h2>發病年齡改變的是時間表</h2>
+<h2 id="bt-s3">發病年齡改變的是時間表</h2>
 <p>Goules 等人比較了 <strong>379 名 35 歲以前發病</strong>與 <strong>293 名 65 歲以後發病</strong>的個案。</p>
 <p>年輕發病組的獨立相關因子是冷凝球蛋白血症、C4 低補體、淋巴結腫大與唾液腺腫大；年長發病組則是唾液腺腫大、C4 低補體與<strong>男性</strong>。</p>
 <p>真正影響追蹤策略的是分布：<strong>早發族群的淋巴瘤呈現兩個發生高峰——發病後 3 年內，以及 10 年之後</strong>；晚發族群則集中在<strong>前 6 年</strong>。早發的人有一段中間的相對安全期，然後風險又回來；晚發的人風險前置。</p>
 <p>兒童型 SD（jSD）也不是免疫的。指引記載 MALT 淋巴瘤可以是 jSD 的初始表現，或與復發性腮腺炎、淋巴結腫大及自體抗體並存。</p>
-<h2>一致浮現的六項，加上四個警訊</h2>
+<h2 id="bt-s4">一致浮現的六項，加上四個警訊</h2>
 <p>把上面所有研究的差異放一邊，指引整理出<strong>始終一致</strong>出現的預測因子：</p>
 <ul>
 <li>低 C3／C4，其中低 C4 是最強的預測因子</li>
@@ -148,7 +168,7 @@ article, article *{overflow-wrap:break-word}
 <li>Consider a minor labial salivary gland biopsy to provide additional prognostic data regarding lymphoma risk in both seronegative and seropositive individuals (2, C) (SOA 92.7%)</li>
 </ul>
 <p>第一條是整份指引裡少數的 (1, A)，而且 SOA 98.75% 幾乎是滿分。第二條把切片的角色從診斷擴張到預後，但只有 (2, C)——條件式建議、低品質證據。</p>
-<h2>預測進展的因子，和預測淋巴瘤的高度重疊</h2>
+<h2 id="bt-s5">預測進展的因子，和預測淋巴瘤的高度重疊</h2>
 <p>Q4b 問的是另一件事：哪些標記能預測疾病進展或腺外表現。指引直接指出兩者「有相似與重疊之處」。</p>
 <p>單中心橫斷研究（64 人）給出的關聯是：ANA 與較年輕發病及腎侵犯相關（RR 1.25）；anti-Ro 與較年輕、腎侵犯（RR 1.36）及高 ESSDAI 相關；anti-La 與腎侵犯正相關（RR 3.4），與關節侵犯負相關（RR 2.75）；RF 與血液學侵犯相關；高球蛋白血症與較年輕發病相關。另一份 275 人的回溯回顧則確認了持續血清學疾病活動度與 RF 陽性之間的關聯。</p>
 <p>有人提出過三層的表型分層：</p>
@@ -161,7 +181,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>指引最後把「與進展至全身性腺外疾病風險較高」的特徵收斂成五項：anti-Ro 陽性、發病年齡較輕、族裔（黑人／非裔美國人）、男性、RF 陽性。</p>
 <p>建議只有一條，而且刻意寫得很寬：<strong>Baseline assessment of individuals with SD should include a thorough clinical and serological evaluation to inform the risk of development of extraglandular features and disease progression (1, B) (SOA 97.6%)</strong>。</p>
-<h2>共病：乳糜瀉是一般人的十倍</h2>
+<h2 id="bt-s6">共病：乳糜瀉是一般人的十倍</h2>
 <p>Q5 這一節是確診之後真正要動手做的部分，而它的清單比多數人的習慣長。</p>
 <p><strong>甲狀腺與代謝。</strong> 以健保紀錄辨識的族群系列中，最常見的共病是高血壓、退化性關節炎、骨質疏鬆與憂鬱，其中 <strong>22% 併存甲狀腺疾病</strong>。英國 UKPSSR 世代則顯示共病隨年齡與 BMI 增加，最常見依序為 OA（36%）、胃食道逆流（31%）、高血壓（20%）、慢性膀胱炎（10%）、高膽固醇血症（10%）、氣喘（9%）、骨質疏鬆（8%）、纖維肌痛症（8%）、腸躁症（8%）與缺血性心臟病（5%）。</p>
 <p><strong>乳糜瀉。</strong> 匈牙利研究在 SD 族群中找到 <strong>4.5%</strong> 有乳糜瀉證據，而歐洲一般人口的盛行率是 <strong>4.5–5.5 per 1000</strong>。另一份歐洲研究中，抗組織轉麩醯胺酸酶（TTG）抗體在 SD 出現於 <strong>12%</strong>、對照組 <strong>4%</strong>，進一步檢查後<strong>超過 70%</strong> 的 anti-TTG 陽性者有切片證實的乳糜瀉。指引的結論是一句話：<code>coeliac disease is 10 times more common in SD than in the normal population</code>。</p>
@@ -175,13 +195,13 @@ article, article *{overflow-wrap:break-word}
 <li>Be aware of and consider screening for commonly associated conditions, as guided by age and/or clinical presentation (1, B) (SOA 94.7%)</li>
 </ul>
 <p>基線應執行、並依臨床需要重複的追加檢查是：肝功能（必要時加驗抗粒線體抗體）、TTG、免疫球蛋白與血清電泳、血清碳酸氫鹽、肌酸激酶。流程圖那一版列得更全：臨床檢查、尿液試紙、常規血液（FBC、U&amp;E／LFT）、免疫球蛋白、C3／C4、甲狀腺功能、TTG、CK、血清碳酸氫鹽、anti-CCP、類風濕因子、維生素 D、anti-dsDNA。</p>
-<h2>早期治療高球蛋白血症有沒有用</h2>
+<h2 id="bt-s7">早期治療高球蛋白血症有沒有用</h2>
 <p>Q11 只有一份世代研究撐著。</p>
 <p>KISS 世代追蹤 <strong>256 人共 3 年</strong>，發現持續性高球蛋白血症與<strong>唾液流量下降（P = 0.008）</strong>及<strong>實質器官損傷（P = 0.039）</strong>相關；反過來，IgG 濃度下降者隨時間的器官損傷較少。這裡的器官損傷定義是神經或胸膜肺損傷、腎功能損害或淋巴增生疾病。使用 HCQ 與較少的實質器官損傷相關（P = 0.008）。</p>
 <p>指引自己列了限制：整體人數少，3 年追蹤可能不足以反映長期結果。但作者的結論是監測 IgG 有助於預測結果，且高球蛋白血症是一個值得作為治療標的的候選。</p>
 <p>另一份 221 人的多中心回溯研究中 77% 曾使用 HCQ，治療組隨時間的關節炎、疲勞、紫斑、雷諾現象與高球蛋白血症盛行率都較低。此外，在一群有部分 SD 特徵但基線不符合診斷準則的個案中，高球蛋白血症與低補體血症被證實能預測日後進展為 SD。</p>
 <p>建議寫得非常保守：<strong>In SD with significant hypergammaglobulinemia consider a trial of HCQ for 6–12 months (2, C) (SOA 94.2%)</strong>。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s8">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>指引實際說法</th></tr></thead>
 <tbody>

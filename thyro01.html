@@ -66,6 +66,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/thyro01.html">
 </head>
@@ -88,14 +107,15 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 1 篇</strong>　Lancet 2017 年這篇 Seminar 開場先把數字攤開——盛行率、危險因子、遺傳率，接著把病因拆成原發性、中樞型、周邊型三層，原發性底下又藏著一長串你以為早就熟悉、其實沒仔細算過比例的細節。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">盛行率：一個看你怎麼定義的數字</a></li><li><a href="#bt-s2">誰的風險比較高</a></li><li><a href="#bt-s3">病因分三層，但原發性占了絕大多數</a></li><li><a href="#bt-s4">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>未經治療的甲狀腺低能症，嚴重時可以要命；但輕重的光譜拉得很開，一端幾乎沒有症狀，另一端是黏液水腫昏迷（myxedema coma）。先把定義釘死：顯性（overt）甲狀腺低能症，是 TSH 高於參考範圍上限、同時 free T4 低於參考範圍下限；亞臨床（subclinical）則是 TSH 高、但 free T4 還在正常範圍內——這篇 Seminar 講的是前者，亞臨床的部分前一篇 Lancet Seminar 已經處理過。</p>
-<h2>盛行率：一個看你怎麼定義的數字</h2>
+<h2 id="bt-s1">盛行率：一個看你怎麼定義的數字</h2>
 <p>顯性甲狀腺低能症的盛行率，在美國約 0.3–3.7%，在歐洲約 0.2–5.3%——這個區間之所以拉得這麼開，是因為研究之間定義不同。一篇涵蓋 9 個歐洲國家的統合分析換了一種算法：把顯性病例和沒被診斷出來的輕度病例一起算進去，估計出來的盛行率直接跳到約 5%。同一個病，換一把尺，數字可以差到十幾倍。</p>
-<h2>誰的風險比較高</h2>
+<h2 id="bt-s2">誰的風險比較高</h2>
 <p>危險因子清單不長，但每一項都值得記住：女性、年齡超過 65 歲、白人族群（種族之間的差異目前證據還少）。有自體免疫疾病病史的人——第一型糖尿病、自體免疫萎縮性胃炎、乳糜瀉——比較常見甲狀腺低能症；唐氏症與透納氏症患者的風險也增加。反過來，吸菸與適量飲酒則與較低的風險相關，這個方向乍看違反直覺，但 Seminar 只是陳述相關性，沒有進一步解釋機轉。</p>
 <p>遺傳的比重也不小：血清 TSH 濃度的遺傳率估計約 65%，free T4 濃度的遺傳率約 23–65%。只是 GWAS 目前找到的基因座，加起來也只能解釋甲狀腺功能變異度裡的一小部分，這些基因座多半落在自體免疫相關基因、或甲狀腺特異的調控基因上。</p>
-<h2>病因分三層，但原發性占了絕大多數</h2>
+<h2 id="bt-s3">病因分三層，但原發性占了絕大多數</h2>
 <p>Seminar 把甲狀腺低能症的病因分成三大類，中樞型與周邊型合計不到 1%——換句話說，臨床上遇到的甲狀腺低能症，幾乎都是原發性。</p>
 <h3>一、原發性（甲狀腺本身出問題）</h3>
 <p>碘充足地區最常見的病因，是慢性自體免疫甲狀腺炎（Hashimoto's thyroiditis）。這個病有多常見，可以從一個側面數字感受：一般族群中約有 11% 的人，甲狀腺過氧化酶抗體（TPOAb）呈現升高。</p>
@@ -116,7 +136,7 @@ article, article *{overflow-wrap:break-word}
 <h3>三、周邊型（甲狀腺以外的問題）</h3>
 <p>這一類極罕見。消耗性甲狀腺低能症（consumptive hypothyroidism）是腫瘤組織異常表現 deiodinase 3 造成的，最早的病例報告見於嬰兒肝臟血管瘤。甲狀腺荷爾蒙抵抗症候群——常見於 MCT8/SLC16A2、SECISBP2、THRA、THRB 基因突變——則是另一種型態：這類病人 TSH 通常正常，卻可能出現組織特異性的低能症表現，也就是說,不同組織對甲狀腺荷爾蒙的反應可以不一致。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s4">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>

@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/mg01.html">
 </head>
@@ -97,25 +116,26 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 1 篇</strong>　以 StatPearls 流病與臨床表現為主軸 重症肌無力（myasthenia gravis, MG）的名字聽起來很重，但它的麻煩不在「力氣小」，而在「力氣留不住」——同一塊肌肉，早上還好好的，到了傍晚就垮了。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、它最特別的指紋：愈用愈沒力，休息又回來</a></li><li><a href="#bt-s2">二、最常先垮的，是眼睛</a></li><li><a href="#bt-s3">三、它落在哪些人身上</a></li><li><a href="#bt-s4">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>先把神經跟肌肉之間那一小段交接想清楚，這個病就好懂一半。大腦要肌肉「動」，指令得從神經末梢交到肌肉上，這個交接口叫神經肌肉接合處（neuromuscular junction, NMJ）。神經這一端釋出乙醯膽鹼，飄過那道窄窄的縫，落在肌肉那端的受體上，肌肉收到才會收縮。整個過程像神經把「動」的指令，從一個閘口遞給肌肉。</p>
 <p>MG 出問題的地方，就在這個閘口的接收端。自體抗體跑去攻擊肌肉這一側的受體，把接收的位子一個一個堵住、拆掉。指令還在發，乙醯膽鹼還在飄過去，但能接的位子變少了——所以一開始還勉強傳得過去，傳著傳著就傳不動了。<strong>力氣不是一下子沒有，是一邊用一邊漏掉。</strong></p>
 <hr>
-<h2>一、它最特別的指紋：愈用愈沒力，休息又回來</h2>
+<h2 id="bt-s1">一、它最特別的指紋：愈用愈沒力，休息又回來</h2>
 <p>如果只能記 MG 的一件事，記這個就好：<strong>易疲勞型無力（fatigable weakness）</strong>。同一塊肌肉，活動之後變弱，休息之後又恢復，而且傍晚、一天快結束的時候最明顯。</p>
 <p>這個時間特性，是 MG 跟其他「沒力」最不一樣的地方。一般的累，是全身性的、睡一覺就好；中風或神經壓迫的無力，是固定在某條神經或某個區域、不會隨一天的時段忽好忽壞。MG 的力氣會跟著「你今天用了它多少」起伏——早上量還算正常，連續講話、咀嚼、爬樓梯之後就掉下來，坐著歇一會兒又拉回來一些。</p>
 <p>把這條線索翻成病人會講的話，常常是這樣：早上眼睛睜得開，傍晚眼皮就垂下來蓋住一半；一頓飯吃到後面愈嚼愈沒力、嗆到；講話講久了聲音愈來愈悶。重點不是「哪裡沒力」，而是「同一個地方，隨著使用和時段，沒力的程度在變」。這個會浮動、活動後加重、休息後改善的曲線，才是 MG 真正的指紋。</p>
 <hr>
-<h2>二、最常先垮的，是眼睛</h2>
+<h2 id="bt-s2">二、最常先垮的，是眼睛</h2>
 <p>MG 偏好攻擊的肌肉是有順序的。約 <strong>85%</strong> 的患者在第一次發病時就有眼外肌受累，最常見的是眼瞼下垂（ptosis）和複視（diplopia）——一隻眼皮垂下來，或看東西變成兩個。眼睛的肌肉小、又一整天都在用，所以這道閘口最先吃不消，也讓很多人是先被當成眼睛的問題在看。</p>
 <p>往下走是延髓肌群（bulbar），管吞嚥和講話，約 <strong>15%</strong> 的患者一發病就有這類症狀：吃東西嗆、講話含糊或鼻音變重。再往外是四肢，MG 的肢體無力以<strong>近端為主</strong>——肩膀、大腿這種靠軀幹的肌肉，比手指、腳掌這些遠端先出事，所以抬手梳頭、從椅子上站起來會特別吃力。</p>
 <hr>
-<h2>三、它落在哪些人身上</h2>
+<h2 id="bt-s3">三、它落在哪些人身上</h2>
 <p>從流病看，MG 沒有想像中罕見。美國的盛行率約 <strong>每 10 萬人 20 例</strong>。</p>
 <p>它的年齡分布是一個很特別的雙峰：<strong>40 歲以前發病的，以女性為主；50 歲以後發病的，以男性為主。</strong> 同一個病，在人生的兩端各有一個高峰，主角性別還剛好對調——這也提醒臨床上，一位三十幾歲的女性和一位六十幾歲的男性，可能得的是同一個病。</p>
 <p>還有一點對台灣讀者特別相關：<strong>兒童型 MG 在西方少見，但在亞洲常見得多，約占 15 歲以下患者的一半（50%）。</strong> 同樣一個病名，在不同地區的年齡樣貌可以差這麼多。對我們而言，「小孩會不會得 MG」這個問題的答案，跟教科書裡那句「兒童少見」其實不太一樣。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s4">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>

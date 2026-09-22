@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/pd01.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 1 篇</strong>　台灣動作障礙學會（TMDS）於 2023 年發表更新版《巴金森氏症實證治療共識》，整合 MDS、AAN 等國際指引的最新證據，提供符合台灣健保與臨床現實的治療建議。本系列五篇按「早期 → 進展期 → 裝置治療 → 非運動症狀」架構拆解這份共識。首篇從疾病全貌出發，談「何時、從哪裡開始」的治療決策。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、巴金森氏症的兩大症狀域</a></li><li><a href="#bt-s2">二、診斷：用英國 PD Brain Bank 標準，但要排除紅旗</a></li><li><a href="#bt-s3">三、疾病修飾治療：目前仍無實證支持</a></li><li><a href="#bt-s4">四、何時開始藥物治療？</a></li><li><a href="#bt-s5">五、台灣的特殊考量</a></li><li><a href="#bt-s6">臨床要點摘要</a></li><li><a href="#bt-s7">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>巴金森氏症（Parkinson's disease, PD）是台灣最常見的神經退化疾病之一，盛行率預計在 2030 年翻倍。它不只是「手抖」——<strong>運動症狀與非運動症狀同等重要</strong>，而現有治療幾乎全是症狀緩解，沒有任何藥物被確認能改變疾病進程。這個前提，是理解整份指引的起點。</p>
 <hr>
-<h2>一、巴金森氏症的兩大症狀域</h2>
+<h2 id="bt-s1">一、巴金森氏症的兩大症狀域</h2>
 <h3>運動症狀（Motor Symptoms）</h3>
 <p>四大核心運動症狀：</p>
 <div class="bt-tablewrap"><table>
@@ -124,7 +144,7 @@ article, article *{overflow-wrap:break-word}
 <p>臨床提醒：<strong>RBD</strong>（睡眠中大聲說話、拳打腳踢）往往比巴金森氏症的運動症狀早出現多年，是重要的前驅症狀標誌。</p>
 </blockquote>
 <hr>
-<h2>二、診斷：用英國 PD Brain Bank 標準，但要排除紅旗</h2>
+<h2 id="bt-s2">二、診斷：用英國 PD Brain Bank 標準，但要排除紅旗</h2>
 <p>TMDS 2023 共識沿用 <strong>MDS 診斷標準</strong>（參考自英國 PD Brain Bank criteria），核心是：</p>
 <ol>
 <li>確認<strong>動作遲緩</strong>（bradykinesia）——必要條件</li>
@@ -141,7 +161,7 @@ article, article *{overflow-wrap:break-word}
 <li>對稱性起病且快速進展</li>
 </ul>
 <hr>
-<h2>三、疾病修飾治療：目前仍無實證支持</h2>
+<h2 id="bt-s3">三、疾病修飾治療：目前仍無實證支持</h2>
 <p>這是臨床上最常被患者詢問的問題：「有沒有藥可以讓病情不要惡化？」</p>
 <p>目前的答案是<strong>沒有被確認的疾病修飾（neuroprotective）藥物</strong>：</p>
 <ul>
@@ -151,7 +171,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>因此，<strong>「什麼時候開始治療」由症狀對生活品質的影響決定，而非由「搶先治療以護神經」的邏輯決定</strong>。</p>
 <hr>
-<h2>四、何時開始藥物治療？</h2>
+<h2 id="bt-s4">四、何時開始藥物治療？</h2>
 <p>TMDS 共識依循國際指引的共識：</p>
 <blockquote>
 <p><strong>當巴金森氏症症狀影響到患者的日常功能與生活品質時，即應啟動藥物治療。</strong></p>
@@ -164,7 +184,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p><strong>輕微症狀、無功能影響時</strong>，可暫觀察，或考慮 MAO-B 抑制劑（症狀輕微且兼顧可能的疾病修飾作用）。</p>
 <hr>
-<h2>五、台灣的特殊考量</h2>
+<h2 id="bt-s5">五、台灣的特殊考量</h2>
 <p>TMDS 共識特別提醒幾點在台灣臨床現場需注意的事：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>議題</th><th>說明</th></tr></thead>
@@ -178,7 +198,7 @@ article, article *{overflow-wrap:break-word}
 <p>這些限制貫穿整份共識——國際指引的 A 級建議不等於台灣臨床可立即執行，TMDS 共識在每個建議旁都標明台灣現況。</p>
 </blockquote>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s6">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>共識重點</th></tr></thead>
 <tbody>
@@ -196,7 +216,7 @@ article, article *{overflow-wrap:break-word}
 <p>這份共識的最大價值，是給了台灣臨床醫師一份<strong>符合本地健保現實</strong>的藥物選擇路徑。接下來幾篇，我們從最核心的藥物選擇開始談起。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s7">參考文獻</h2>
 <ol>
 <li>Treatment Guideline Subcommittee of Taiwan Movement Disorder Society. Evidence-Based Taiwan Consensus Recommendations for the treatment of Parkinson's disease. <em>Acta Neurologica Taiwanica</em>. 2023;32(3):145–.</li>
 <li>Postuma RB, Berg D, Stern M, et al. MDS clinical diagnostic criteria for Parkinson's disease. <em>Mov Disord</em>. 2015;30(12):1591-601.</li>

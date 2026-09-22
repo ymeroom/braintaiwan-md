@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/cts01.html">
 </head>
@@ -97,9 +116,10 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 1 篇</strong>　腕隧道症候群是上肢最常見的夾擠性神經病變。這篇談它有多常見、哪些人風險高、正中神經被壓到會麻在哪裡，以及那個很多病人會自己表演給你看的動作——半夜手麻醒來、甩一甩手就好——為什麼在診斷上其實很有分量。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">先看數字：誰會得腕隧道症候群</a></li><li><a href="#bt-s2">腕隧道裡面有什麼</a></li><li><a href="#bt-s3">麻在哪裡：正中神經的地盤</a></li><li><a href="#bt-s4">為什麼先麻、後無力：感覺纖維比較脆弱</a></li></ol></details><!-- bt-toc:end -->
 <p>門診遇到一個中年女性抱怨「晚上睡到一半手麻醒過來，要甩一甩才會好」，很多人第一時間想到的是循環不好或落枕。但這個描述本身，就已經把腕隧道症候群（carpal tunnel syndrome, CTS）擺在鑑別診斷的最前面了。</p>
 <p>這一系列導讀依據的是 <em>American Family Physician</em> 2016 年 Wippermann 與 Goerl 的回顧。CTS 是<strong>上肢最常見的夾擠性神經病變</strong>，成因是正中神經穿過腕隧道時受到壓迫。它常常讓人失能，又特別容易在基層醫療遇到——所以第一線怎麼辨識、怎麼分流，比想像中重要。</p>
-<h2>先看數字：誰會得腕隧道症候群</h2>
+<h2 id="bt-s1">先看數字：誰會得腕隧道症候群</h2>
 <p>CTS 影響大約 <strong>3%</strong> 的成年人口。<strong>女性得病的機會是男性的三倍</strong>，而且盛行率與嚴重度都隨年齡上升。</p>
 <p>危險因子分兩大類。一類是<strong>工作型態</strong>：需要高度重複、出力，或使用手持振動工具的活動，會顯著提高風險。有一項大型前瞻性世代研究發現，<strong>用力的手部出力（forceful hand exertion）是工作者發生 CTS 最重要的因子</strong>——這點很值得跟病人談，因為它比「打字打太多」這種常見誤解更貼近證據。另一類是<strong>個人與家族因素</strong>：家族史，以及糖尿病、肥胖、甲狀腺低能症、懷孕、類風濕性關節炎的病史。</p>
 <div class="bt-tablewrap"><table>
@@ -109,12 +129,12 @@ article, article *{overflow-wrap:break-word}
 <tr><td>個人病史</td><td>糖尿病、肥胖、甲狀腺低能症、懷孕、類風濕性關節炎</td></tr>
 <tr><td>其他</td><td>家族史、女性、年齡增長</td></tr>
 </tbody></table></div>
-<h2>腕隧道裡面有什麼</h2>
+<h2 id="bt-s2">腕隧道裡面有什麼</h2>
 <p>解剖很單純但關鍵。腕隧道的<strong>上方（superiorly）是腕橫韌帶</strong>，<strong>下方（inferiorly）是腕骨</strong>，中間穿過去的是<strong>正中神經加上前臂的九條屈肌腱</strong>。這是一個空間固定、內容物擁擠的通道——只要隧道內壓力上升，最容易被犧牲的就是那條神經。壓力升高導致正中神經受壓、受損，就是整個病的核心。</p>
-<h2>麻在哪裡：正中神經的地盤</h2>
+<h2 id="bt-s3">麻在哪裡：正中神經的地盤</h2>
 <p>CTS 的招牌是<strong>正中神經分布區的疼痛與感覺異常</strong>，這個範圍包括<strong>拇指、食指、中指的掌側，以及無名指的橈側一半</strong>。症狀變異其實很大，有時只落在手腕或整隻手，有時往前臂放射、偶爾甚至到肩膀。</p>
 <p>這裡有一個病人自己會表演的招牌動作。很多病人是<strong>手麻醒來後甩手來緩解</strong>——這叫做<strong>甩手徵象（flick sign）</strong>，它對 CTS 的<strong>敏感度 93%、特異度 96%</strong>。這個數字很漂亮，意思是當病人主動描述「我都要這樣甩一甩才會好」，你幾乎可以把它當成一條很強的診斷線索。其他會誘發症狀的情境，是需要反覆手腕彎曲或手抬高的動作，例如開車、或講電話講很久。</p>
-<h2>為什麼先麻、後無力：感覺纖維比較脆弱</h2>
+<h2 id="bt-s4">為什麼先麻、後無力：感覺纖維比較脆弱</h2>
 <p>CTS 的症狀有個順序，理解它就能判斷病程走到哪一步。<strong>感覺纖維比運動纖維更容易被壓迫</strong>，所以病程早期以<strong>感覺異常與疼痛</strong>為主。等到更嚴重、連運動纖維都受影響時，才會出現<strong>拇指外展與對掌的無力</strong>——病人會描述抓不住東西、打不開罐子、扣不上釦子。</p>
 <p>最需要警覺的是一個容易被誤讀為「好轉」的徵象：<strong>疼痛消失是晚期表現，代表的是永久性的感覺喪失</strong>。病人（甚至醫師）可能以為不痛了就是好了，實際上是神經已經傷到不會再傳痛覺。把這個順序記在心上——先麻痛、後無力、最後連痛都沒了——就能在門診分辨出哪些人還在可逆的窗口內，哪些人已經在跟時間賽跑。</p>
 <blockquote class="commentary">

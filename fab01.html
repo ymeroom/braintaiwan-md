@@ -77,6 +77,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/fab01.html">
 </head>
@@ -99,13 +118,14 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 1 篇</strong>　根據 Germain 等人 2022 classic Fabry disease 專家共識 Germain DP, Altarescu G, Barriales-Villa R, et al. <em>Mol Genet Metab</em> 2022;137(1-2):49-61. doi:10.1016/j.ymgme.2022.07.010</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、病理基礎：一個酵素缺陷，多個器官受害</a></li><li><a href="#bt-s2">二、classic vs later-onset：兩種表型，預後與器官分布不同</a></li><li><a href="#bt-s3">三、診斷流程：男女都要做基因檢測</a></li><li><a href="#bt-s4">四、VUS 的處理：用藥前必須先確認致病性</a></li><li><a href="#bt-s5">五、家族篩檢：一個指標個案，串起整個家系</a></li><li><a href="#bt-s6">六、為什麼「早診斷」這件事一直被強調</a></li><li><a href="#bt-s7">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>Fabry disease（法布瑞氏症，OMIM 301500）對神經科醫師其實一點都不陌生——年輕型中風、肢端灼痛、白質病變，背後可能就是它。但因為是多器官、罕見、且早期症狀非特異，診斷常被延誤多年。2022 年一群國際專家依系統性文獻回顧整理出 classic Fabry 的實務共識，本系列五篇即以此為本。首篇談最根本的：這是什麼病、怎麼分型、怎麼確診。</p>
 <hr>
-<h2>一、病理基礎：一個酵素缺陷，多個器官受害</h2>
+<h2 id="bt-s1">一、病理基礎：一個酵素缺陷，多個器官受害</h2>
 <p>Fabry disease 是 <strong>X 染色體性聯遺傳的溶體儲積症</strong>，肇因於 <em>GLA</em> 基因致病變異，導致酵素 <strong>α-galactosidase A（α-Gal A）</strong> 缺乏或活性嚴重不足。結果是醣鞘脂質——主要是 <strong>globotriaosylceramide（Gb3）</strong> 及其去醯基衍生物 <strong>globotriaosylsphingosine（lyso-Gb3）</strong>——堆積於體液與多種組織（腎、心、中樞與周邊神經系統），造成進行性器官損傷、危及生命的併發症與早逝風險。</p>
 <hr>
-<h2>二、classic vs later-onset：兩種表型，預後與器官分布不同</h2>
+<h2 id="bt-s2">二、classic vs later-onset：兩種表型，預後與器官分布不同</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>Classic（典型型）</th><th>Later-onset（晚發型）</th></tr></thead>
 <tbody>
@@ -116,7 +136,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p><strong>女性表型更廣</strong>：因 X 染色體去活化（X-inactivation），從無症狀到嚴重受累皆有（嚴重者罕見）。器官侵犯的型態與嚴重度取決於 <em>GLA</em> 變異與各器官的 X-inactivation 模式。值得注意：女性發生腎衰竭的機率比男性<strong>低 10–20 倍</strong>。</p>
 <hr>
-<h2>三、診斷流程：男女都要做基因檢測</h2>
+<h2 id="bt-s3">三、診斷流程：男女都要做基因檢測</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>對象</th><th>診斷重點</th></tr></thead>
 <tbody>
@@ -126,7 +146,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p><strong>為什麼女性不能只看酵素？</strong> 因 X-inactivation，女性帶因者血中 α-Gal A 活性可能落在正常範圍，酵素法會漏診——這是臨床上最常見的陷阱之一。</p>
 <hr>
-<h2>四、VUS 的處理：用藥前必須先確認致病性</h2>
+<h2 id="bt-s4">四、VUS 的處理：用藥前必須先確認致病性</h2>
 <p>當基因檢測發現<strong>意義不明變異（variant of unknown significance, VUS）</strong>時：</p>
 <ul>
 <li>需要<strong>臨床、生化或組織病理證據和／或家族史</strong>來確認或排除其致病性</li>
@@ -137,13 +157,13 @@ article, article *{overflow-wrap:break-word}
 <p>部分多型性（如某些 <em>GLA</em> 變異）在體外造成 α-Gal A 部分下降，卻非致病——不先釐清就用藥，可能誤導後續判讀。</p>
 </blockquote>
 <hr>
-<h2>五、家族篩檢：一個指標個案，串起整個家系</h2>
+<h2 id="bt-s5">五、家族篩檢：一個指標個案，串起整個家系</h2>
 <p>確認指標個案（index case）後，應提供<strong>級聯式家族基因檢測（cascade genetic testing）</strong>。這是罕見遺傳病早期發現的關鍵——許多家族成員在無症狀或輕症階段就能被找出，爭取在器官受損前介入。</p>
 <hr>
-<h2>六、為什麼「早診斷」這件事一直被強調</h2>
+<h2 id="bt-s6">六、為什麼「早診斷」這件事一直被強調</h2>
 <p>現行臨床實務中 Fabry <strong>診斷常被延誤</strong>，導致治療太晚啟動——等到器官損傷已成形，疾病特異性治療的效益就有限。這也是後續每一篇都會回到的主軸：<strong>診斷與治療的時機，決定了能保住多少器官功能。</strong></p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s7">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>

@@ -81,6 +81,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/se03.html">
 </head>
@@ -110,6 +129,7 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 3 篇</strong>　參考文獻：Silbergleit R, et al. (RAMPART Study Group). Intramuscular versus Intravenous Therapy for Prehospital Status Epilepticus. <em>N Engl J Med</em>. 2012;366:591–600. ／ Prasad M, et al. Anticonvulsant therapy for status epilepticus. <em>Cochrane Database Syst Rev</em>. 2014.</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 3 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、為什麼 BZD 是第一線？</a></li><li><a href="#bt-s2">二、RAMPART 試驗——肌肉注射打破靜脈依賴</a></li><li><a href="#bt-s3">三、各種 BZD 的比較與劑量</a></li><li><a href="#bt-s4">四、給藥的時間與流程</a></li><li><a href="#bt-s5">五、呼吸監測——治療的必要代價</a></li><li><a href="#bt-s6">小結</a></li></ol></details><!-- bt-toc:end -->
 
 <hr>
 
@@ -117,7 +137,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>一、為什麼 BZD 是第一線？</h2>
+<h2 id="bt-s1">一、為什麼 BZD 是第一線？</h2>
 
 <p>BZD 透過與 GABA<sub>A</sub> 受體上的苯二氮平結合位點（BZD site）作用，增強氯離子通道開放頻率，強化大腦的抑制性訊號。在 SE 的早期，GABA<sub>A</sub> 受體仍在細胞表面，BZD 能迅速終止發作。</p>
 
@@ -125,7 +145,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>二、RAMPART 試驗——肌肉注射打破靜脈依賴</h2>
+<h2 id="bt-s2">二、RAMPART 試驗——肌肉注射打破靜脈依賴</h2>
 
 <div class="trial-box">
   <h3>RAMPART 試驗（2012, NEJM）</h3>
@@ -144,7 +164,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>三、各種 BZD 的比較與劑量</h2>
+<h2 id="bt-s3">三、各種 BZD 的比較與劑量</h2>
 
 <p>臨床可用的 BZD 各有其給藥途徑與特性，應根據現場條件靈活選擇：</p>
 
@@ -168,7 +188,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>四、給藥的時間與流程</h2>
+<h2 id="bt-s4">四、給藥的時間與流程</h2>
 
 <div class="bt-tablewrap"><table>
   <thead><tr><th>時間點</th><th>處置</th><th>重點</th></tr></thead>
@@ -186,7 +206,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>五、呼吸監測——治療的必要代價</h2>
+<h2 id="bt-s5">五、呼吸監測——治療的必要代價</h2>
 
 <p>BZD 的主要副作用是呼吸抑制與低血壓。給藥後必須：</p>
 
@@ -201,7 +221,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>小結</h2>
+<h2 id="bt-s6">小結</h2>
 
 <p>苯二氮平類藥物的選擇邏輯簡單而實用：<strong>有靜脈通路給 lorazepam，沒有給肌肉 midazolam</strong>。院前或急診的首要任務是不要因為等 IV 而延誤給藥。RAMPART 試驗清楚說明了這一點。下一篇將討論當兩劑 BZD 都失敗之後，第二線抗癲癇藥物如何選擇——以及 ESETT 試驗帶來的挑戰性結果。</p>
 

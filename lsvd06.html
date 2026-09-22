@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/lsvd06.html">
 </head>
@@ -97,11 +116,12 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 6 篇</strong>　前面用數字建立了一個奇怪的事實：大血管「變寬」和小血管「崩解」綁在一起。這一篇來回答為什麼。答案不是單一機轉，而是三條互相補強的線索——共享的基因、共同的結締組織缺陷、還有機械應力——合起來把大動脈擴張和內因性小動脈病，接成一條連續光譜。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">線索一：共享的基因</a></li><li><a href="#bt-s2">線索二：共同的結締組織缺陷</a></li><li><a href="#bt-s3">線索三：機械應力</a></li><li><a href="#bt-s4">三條線索合起來</a></li></ol></details><!-- bt-toc:end -->
 <p>一個直覺上的違和感值得先講明：狹窄是「管腔變小」、擴張是「管壁變大」，兩者方向相反，為什麼是擴張、而不是狹窄，和小血管病走在一起？線索在於——<strong>擴張反映的不是脂肪斑塊，而是血管牆壁本身的結構出了問題</strong>。而牆壁的問題，大血管和小血管可以共享同一個病根。</p>
-<h2>線索一：共享的基因</h2>
+<h2 id="bt-s1">線索一：共享的基因</h2>
 <p>最硬的證據來自遺傳學。<strong>COL4A1 與 COL4A2</strong> ——編碼基底膜第四型膠原蛋白的基因——的突變，同時出現在 dolichoectasia 與 cSVD 的病人身上，而且在全基因組關聯研究（GWAS）中與 WMH 相關。第四型膠原是血管基底膜的主要結構蛋白，它出問題，等於整套血管牆壁的地基不穩——不分大小血管。</p>
 <p>另一個更戲劇性的例子是 <strong>NOTCH3／CADASIL</strong>。CADASIL 是最典型的單基因型 cSVD，由 NOTCH3 突變造成。有意思的是，無論在人體病理或動物模型，CADASIL 都被發現<strong>大顱內動脈也出現擴張與迂曲</strong>。也就是說，一個「小血管病的原型疾病」，同時會讓大血管變寬變長——這正是「大擴張」與「小血管病」同源最直接的實證。作者把這串成一句話：存在一條<strong>把大血管變寬與內因性小血管動脈病連起來的遺傳連續光譜</strong>。</p>
-<h2>線索二：共同的結締組織缺陷</h2>
+<h2 id="bt-s2">線索二：共同的結締組織缺陷</h2>
 <p>第二條線索是組織層級的。Fisher 以及後續研究描述 cSVD 的小動脈有<strong>微小動脈擴張、彈性膜斷裂、中膜稀疏（medial rarefaction）</strong>——這些變化可能來自<strong>細胞外基質（ECM）失衡與基質金屬蛋白酶（MMP）活性失調</strong>。其中 MMP-3 就被發現和顱內動脈擴張相關。</p>
 <p>把這個機轉放大來看很優雅：同一套 ECM／MMP 的失調，在<strong>大血管</strong>表現為管壁變弱、變寬（擴張），在<strong>小動脈</strong>表現為節段性崩解（segmental disorganization）。一種牆壁的病，兩種尺度的表現。這解釋了為什麼影像上「基底動脈變寬」會和「小動脈壞掉」如影隨形——它們是同一個結締組織病理在不同口徑血管上的投影。</p>
 <div class="bt-tablewrap"><table>
@@ -111,9 +131,9 @@ article, article *{overflow-wrap:break-word}
 <tr><td>ECM／MMP 失調</td><td>彈性膜斷裂、變弱變寬</td><td>中膜稀疏、節段性崩解</td></tr>
 <tr><td>機械應力</td><td>迂曲動脈施壓於穿通支</td><td>局部血流擾動、微血管損傷</td></tr>
 </tbody></table></div>
-<h2>線索三：機械應力</h2>
+<h2 id="bt-s3">線索三：機械應力</h2>
 <p>第三條線索比較「物理」。變寬、迂曲的動脈會對<strong>穿通小動脈施加機械應力</strong>，擾動局部血流、促成微血管損傷。這條機轉有一個很具體的影像佐證——在這個 cohort 裡，<strong>BADE 病人的橋腦梗塞較多</strong>（第五篇提過的 16.3% vs 5.8%）。橋腦的穿通支正是直接從基底動脈發出的，一條變寬迂曲的基底動脈就近壓迫、擾流，落點自然偏橋腦。機轉與影像在這裡對得上，讓機械應力這條線索不只是推測。</p>
-<h2>三條線索合起來</h2>
+<h2 id="bt-s4">三條線索合起來</h2>
 <p>這三條路不是互斥的候選，而是同一張圖的三個面向：<strong>基因決定了牆壁蛋白與訊號的底子，ECM／MMP 失調是牆壁崩壞的執行機制，機械應力則是迂曲幾何對鄰近穿通支的在地傷害。</strong> 合起來，它們把「大血管變寬」和「內因性小血管動脈病」接成一條連續光譜——而不是兩個剛好共存的獨立現象。</p>
 <p>這也正是為什麼狹窄接不上這條光譜：動脈粥狀狹窄是<strong>脂質與斑塊</strong>的病，走的是完全不同的病生理，所以它和 cSVD 沾不上邊、只和它自己那條動脈粥狀路徑上的中風相關。</p>
 <blockquote class="commentary">

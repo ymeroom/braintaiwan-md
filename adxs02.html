@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/adxs02.html">
 </head>
@@ -97,8 +116,9 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 2 篇</strong>　病人被轉診上來之後，專科醫師該做什麼？本篇對應指引建議 13（Recommendation 13）：<strong>專科評估的核心，是執行完整病史與辦公室神經/精神/認知功能檢查，以確立認知行為症候群分類與病因</strong>，並視需要啟動跨領域團隊協作。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、專科評估的兩大任務</a></li><li><a href="#bt-s2">二、辦公室檢查該涵蓋的範圍</a></li><li><a href="#bt-s3">三、何時這已經足夠，何時還需要更多</a></li><li><a href="#bt-s4">四、跨領域團隊：失智症專科評估不是醫師一人的工作</a></li><li><a href="#bt-s5">臨床要點摘要</a></li><li><a href="#bt-s6">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
-<h2>一、專科評估的兩大任務</h2>
+<h2 id="bt-s1">一、專科評估的兩大任務</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>任務</th><th>內容</th></tr></thead>
 <tbody>
@@ -106,7 +126,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>鑑別可能病因</td><td>在症候群分類基礎上，結合危險因子病史、發病模式、檢查發現，鎖定最可能的病因或共病組合</td></tr>
 </tbody></table></div>
 <p>這兩項任務與<a href="adx06.html">基層篇第⑥篇</a>介紹的三步驟診斷流程（認知/功能狀態 → 症候群 → 病因）是同一套邏輯的延伸，差別在於專科評估<strong>更深入、更聚焦於基層無法單獨完成的鑑別</strong>。</p>
-<h2>二、辦公室檢查該涵蓋的範圍</h2>
+<h2 id="bt-s2">二、辦公室檢查該涵蓋的範圍</h2>
 <p>指引建議 13 列出專科辦公室評估應包含的功能面向：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>評估重點</th></tr></thead>
@@ -115,7 +135,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>神經精神症狀</td><td>系統性評估憂鬱、焦慮、淡漠、激動、精神病性症狀，必要時使用結構化量表</td></tr>
 <tr><td>神經學功能</td><td>完整神經學檢查，特別留意巴金森氏症候群徵象、皮質感覺/視覺功能、原始反射、步態與平衡</td></tr>
 </tbody></table></div>
-<h2>三、何時這已經足夠，何時還需要更多</h2>
+<h2 id="bt-s3">三、何時這已經足夠，何時還需要更多</h2>
 <p>多數病人在完成專科辦公室評估後，症候群分類與病因鑑別已可達到足夠的臨床確定性，可以進入照護計畫階段。但當以下情況出現時，需要進一步檢測：</p>
 <ul>
 <li>辦公室評估結果與報告症狀不一致（如檢查正常但症狀持續令人擔憂）</li>
@@ -123,7 +143,7 @@ article, article *{overflow-wrap:break-word}
 <li>複雜共病（如感覺/動作障礙、多重用藥、物質使用、精神共病）干擾判讀</li>
 </ul>
 <p>這些情況通常導向神經心理評估（詳見<a href="adxs03.html">第③篇</a>）或分層檢測架構中更高層級的檢查（詳見<a href="adxs05.html">第⑤篇</a>）。</p>
-<h2>四、跨領域團隊：失智症專科評估不是醫師一人的工作</h2>
+<h2 id="bt-s4">四、跨領域團隊：失智症專科評估不是醫師一人的工作</h2>
 <p>指引強調，完整的專科/次專科評估理想上由跨領域團隊共同完成：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>角色</th><th>功能</th></tr></thead>
@@ -137,7 +157,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>不是每位病人都需要動用全部團隊成員——<strong>依個案複雜度與不確定性程度，選擇性啟動</strong>，才是符合資源現實的做法。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s5">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
@@ -153,7 +173,7 @@ article, article *{overflow-wrap:break-word}
 <p>辦公室評估「結果與症狀不一致」這個觸發條件，臨床上比想像中常見。最常見的情境是：病人主訴記憶力差，但簡式智能測驗（MMSE）分數正常。這時候不該直接安慰病人「沒事」，而該想到：<strong>MMSE 的天花板效應對高教育程度病人特別明顯</strong>，這正是轉介正式神經心理測驗的典型理由，而不是診斷的終點。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s6">參考文獻</h2>
 <ol>
 <li>Dickerson BC, Atri A, Clevenger C, et al. The Alzheimer's Association clinical practice guideline for the Diagnostic Evaluation, Testing, Counseling, and Disclosure of Suspected Alzheimer's Disease and Related Disorders (DETeCD-ADRD): Executive summary of recommendations for specialty care. <em>Alzheimer's Dement</em>. 2025;21:e14337. doi:10.1002/alz.14337</li>
 <li>Cordell CB, et al. Alzheimer's Association recommendations for operationalizing the detection of cognitive impairment during the Medicare Annual Wellness Visit. <em>Alzheimer's Dement</em>. 2013;9(2):141-150.</li>

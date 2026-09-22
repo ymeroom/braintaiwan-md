@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/dms04.html">
 </head>
@@ -97,22 +116,23 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 04 篇</strong>　IRIS 試驗常被引用為「pioglitazone 能減少中風復發」的證據。回去看原文，這句話需要修正——複合終點確實顯著，但<strong>單獨看中風並不顯著</strong>。這一篇處理這個差別，以及它為什麼重要。</p>
 </blockquote>
-<h2>IRIS 收的是什麼人</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 3 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">IRIS 收的是什麼人</a></li><li><a href="#bt-s2">結果要分兩層看</a></li><li><a href="#bt-s3">PROactive 的次族群訊號</a></li><li><a href="#bt-s4">代價那一欄</a></li><li><a href="#bt-s5">怎麼讀這一篇</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">IRIS 收的是什麼人</h2>
 <p>IRIS（Insulin Resistance Intervention After Stroke）收的族群很特別：<strong>沒有糖尿病</strong>、但有胰島素阻抗、且在過去 6 個月內發生過缺血性中風的病人。</p>
 <p>這個設計本身就是一個假說：如果胰島素阻抗是中風復發的驅動因素，那麼改善胰島素阻抗——而不是降血糖——就應該能減少復發。pioglitazone 是胰島素增敏劑，除了控制血糖之外也降低胰島素阻抗。</p>
-<h2>結果要分兩層看</h2>
+<h2 id="bt-s2">結果要分兩層看</h2>
 <p><strong>複合終點：顯著。</strong> 致死或非致死性中風、或心肌梗塞的主要終點，在 4.8 年的追蹤中發生於 pioglitazone 組的 9%、安慰劑組的 11.8%（HR 0.76；95% CI 0.62–0.93；p = 0.007）。</p>
 <p><strong>單獨看中風：不顯著。</strong> 綜論原文寫得毫不含糊——中風單獨的發生率在 pioglitazone 組與安慰劑組之間沒有差異（HR 0.82；95% CI 0.61–1.10；p = 0.19）。</p>
 <p>這兩行數字放在一起，指向同一個結論：IRIS 的陽性結果由心肌梗塞那一側撐起來的成分，比中風那一側多。</p>
 <p>引用時說「pioglitazone 減少心血管事件」是準確的；說「pioglitazone 減少中風」則超出了這個試驗能支持的範圍。</p>
-<h2>PROactive 的次族群訊號</h2>
+<h2 id="bt-s3">PROactive 的次族群訊號</h2>
 <p>更早的 PROactive 試驗收了 5238 名有高度大血管事件風險的第二型糖尿病病人，隨機分派接受 pioglitazone 或安慰劑，追蹤 34.5 個月。主要次要終點（全因死亡、非致死性心肌梗塞、中風）的差異未達統計顯著。</p>
 <p>但一項事後分析發現了一個有方向性的訊號：在<strong>先前已經中風過</strong>的病人身上，pioglitazone 與致死及非致死性中風的減少有關（HR 0.53；95% CI 0.34–0.85；p = 0.0085）；而在<strong>沒有中風病史</strong>的病人身上，看不到治療效果。</p>
 <p>事後分析的證據等級不高，但它與 IRIS 的族群設定指向同一件事：這類藥物的效益可能集中在已經有腦血管事件、且有胰島素阻抗的次族群。</p>
-<h2>代價那一欄</h2>
+<h2 id="bt-s4">代價那一欄</h2>
 <p>pioglitazone 不是沒有成本的選擇。已知的不良反應包括體重增加、周邊水腫、骨折風險上升，以及心衰竭惡化——最後這一點使它在心衰竭病人身上是禁忌。</p>
 <p>NICE NG28 在 2026 年版把 pioglitazone 放在腎功能不佳且 DPP-4 抑制劑不可用時的後線選項（1.18.4），並在共享決策的條文裡直接把它當成「可能讓病人無法遵循某個治療選項」的例子（1.9.2）。這個位置反映的正是效益與代價的比值。</p>
-<h2>怎麼讀這一篇</h2>
+<h2 id="bt-s5">怎麼讀這一篇</h2>
 <p>胰島素阻抗這條線的臨床價值，可能不在於 pioglitazone 這個藥，而在於它指認出來的那群病人——已經中風過、沒有糖尿病、但胰島素阻抗明顯。這群人在傳統的糖尿病分類裡是隱形的，因為他們的血糖是正常的。</p>
 <p>下一篇的 LAMP 試驗用了同一個思路，但換了藥。</p>
 <blockquote class="commentary">

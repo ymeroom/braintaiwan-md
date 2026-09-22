@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/cvt07.html">
 </head>
@@ -97,22 +116,23 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 07 篇</strong>　CVT 的核心原則在特殊族群仍是及早辨認與控制靜脈血栓，但妊娠與哺乳的藥物限制、兒童的誘發背景與證據基礎，以及 VITT 的免疫性機轉，使治療不能直接複製一般成人路徑。</p>
 </blockquote>
-<h2>妊娠與產褥：最高風險在生產後</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">妊娠與產褥：最高風險在生產後</a></li><li><a href="#bt-s2">兒童與新生兒：先辨認誘因，再選擇療程</a></li><li><a href="#bt-s3">VITT：少見但處置路徑完全不同</a></li><li><a href="#bt-s4">臨床要點摘要</a></li><li><a href="#bt-s5">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">妊娠與產褥：最高風險在生產後</h2>
 <p>妊娠造成的凝血變化會持續到產褥期，使 CVT 風險上升；最高風險時段包括第三孕期與產後前 6 週。約 80% pregnancy-related CVT 發生於 delivery 後，因此病史詢問不能在生產完成時就把妊娠相關風險歸零。產後新出現或持續加重的頭痛，若合併癲癇、局灶缺損、視覺症狀或意識改變，仍需把 CVT 放在鑑別診斷前段。</p>
 <p>pregnancy 中 VKA（包括 warfarin）會增加 fetal embryopathy 與胎兒、新生兒出血，因此 contraindicated；急性治療主要使用 LMWH。AHA 2024 科學聲明的 key points 建議，pregnancy 中的 CVT 以 full-dose LMWH throughout pregnancy，產後再以 LMWH 或 VKA（target INR 2.0–3.0）至少持續 6 週，且總療程至少 3 個月。這是一條最低療程框架，實際長度仍需納入誘發因子是否消退、復發與出血風險。</p>
 <p>既往 CVT 不構成 future pregnancy 的 contraindication。包含 17 studies、393 次妊娠的 systematic review 報告 recurrent CVT 約 8/1000 pregnancies，noncerebral VTE 約 22/1000 pregnancies；使用 antithrombotic prophylaxis 者有較低復發趨勢。基於妊娠帶來的額外風險，future pregnancy 與 postpartum 通常建議 LMWH prophylaxis。這項建議應在孕前或早孕期由神經科、婦產科與血液科共同規劃，而不是等症狀出現才處理。</p>
 <p>產後照護還要處理一個常見盲點：患者可能因照顧新生兒、睡眠不足與一般產後不適，而低估持續頭痛或神經症狀。臨床團隊應清楚交代哪些變化需要立即回診，並在藥物選擇時同時確認哺乳、出血與服藥可行性。這不是把所有產後頭痛醫療化，而是在最高風險時段維持合理警覺，避免用「正常產後反應」過早關閉鑑別診斷。</p>
-<h2>兒童與新生兒：先辨認誘因，再選擇療程</h2>
+<h2 id="bt-s2">兒童與新生兒：先辨認誘因，再選擇療程</h2>
 <p>CVT 在 neonates 比較常見，兒童常見情境包括 sepsis（如 mastoiditis、Lemierre syndrome、meningitis）、head trauma、hypoxia、dehydration，以及 congenital heart disease、cancer、iron deficiency/anemia、nephrotic syndrome 或 inflammatory bowel disease。症狀可為 headache、seizures、focal neurological deficits 或 coma；年齡小、表達有限與影像可能需要 anesthesia，都會增加診斷困難。</p>
 <p>children acute CVT 通常使用 LMWH 或 UFH。premature 與 term neonates 的急性抗凝較具爭議，但科學聲明指出其使用仍屬合理：現有資料沒有顯示治療後出血增加，而未抗凝可能導致 thrombus propagation。整體而言，children mortality 約 3%，recurrent venous thrombosis 約 6%，復發常與未給抗凝及未再通相關；這些數字反映群體資料，不應被用來推估單一兒童的必然結果。</p>
 <p>兒科證據近年有所增加。Kids-DOTT 在 provoked VTE 比較 6 週與 3 個月療程，其中包含 59 名 CVT 患者，結果支持特定低風險兒童較短療程的非劣性，但不能無條件套用所有 pediatric CVT。EINSTEIN-Jr 則將 114 名 confirmed CVT children 以 2:1 分派至 rivaroxaban 或 standard care；先接受 initial heparinization，之後治療 3 個月。研究期間 rivaroxaban 組 73 人無 symptomatic recurrent VTE，standard care 組 41 人有 1 例；樣本與事件數仍有限，藥物與療程應依年齡、體重、誘因與出血風險決定。</p>
 <p>即使急性期存活與基本功能良好，長期仍可能出現 epilepsy、cognitive impairment、intracranial hypertension，neonatal CVT 後也可能有 infantile spasms。兒童追蹤因此不能只記錄再通與粗略神經學檢查，還應包含發展、認知、學習、頭痛與癲癇風險。</p>
 <p>兒科研究的解讀尤其需要注意年齡與病因異質性。新生兒、感染相關個案、慢性疾病患者與較大兒童的出血及復發風險並不相同；一項試驗中的短療程或特定藥物結果，不能自動套用到所有年齡層。較好的做法是先確認患者是否接近研究族群，再把家庭照護能力、給藥方式與追蹤可近性納入選擇。對成長中的兒童而言，學習與發展軌跡也是重要結果，而非附帶觀察。</p>
-<h2>VITT：少見但處置路徑完全不同</h2>
+<h2 id="bt-s3">VITT：少見但處置路徑完全不同</h2>
 <p>Vaccine-induced immune thrombotic thrombocytopenia（VITT）是在特定 adenovirus-based SARS-CoV-2 vaccine 後曾被報告的罕見免疫性血栓併發症，可合併 CVT、thrombocytopenia 與 platelet factor 4（PF4）antibodies。本段目的不是延伸成當代一般疫苗建議，而是保留一個高風險臨床辨識點：若病史與 thrombocytopenia 使人懷疑 VITT，應啟動血液科與多專科評估。</p>
 <p>suspected VITT 建議進行 PF4 antibody testing，並避免 heparin products。科學聲明整理的處置包括 intravenous immunoglobulin（IVIG）1 g/kg daily，共 2 days，並曾建議 steroids；platelet transfusion 不建議。抗凝初期通常選擇 nonheparin parenteral anticoagulant，如 argatroban 或 fondaparinux，待 platelet count 完全恢復後再考慮轉為 oral anticoagulant。這類患者的血栓與出血風險同時升高，治療應由熟悉 VITT 的團隊執行，不能只依一般 CVT 流程自行替換藥物。</p>
 <p>VITT 的歷史背景也提醒讀者，科學聲明描述的是特定時期與特定疫苗平台下的罕見安全訊號，不能被延伸成對所有疫苗或所有頭痛的推論。真正觸發專門路徑的是合適的暴露時間、血栓表現、血小板下降與 PF4 相關證據的組合。若缺少這些要素，臨床仍應回到一般 CVT 與其他頭痛原因的標準評估。</p>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s4">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>族群／情境</th><th>核心處置</th><th>必須保留的界線</th></tr></thead>
 <tbody>
@@ -122,7 +142,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>suspected VITT</td><td>PF4 testing、avoid heparin、IVIG 1 g/kg daily 2 days、先用 argatroban/fondaparinux</td><td>不建議 platelet transfusion；需血液科與多專科處置</td></tr>
 <tr><td>長期追蹤</td><td>VTE recurrence 約 1%–4%/year；CVT recurrence 通常 &lt;1%–2%/year</td><td>mRS 0–2 不等於完全恢復或已返工返學</td></tr>
 </tbody></table></div>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s5">臨床判讀重點</h2>
 <p>特殊族群的判讀不只是換藥名。妊娠與產褥要把風險時間軸延伸至產後，並主動規劃 future pregnancy；兒童要先辨認感染、脫水、創傷、貧血與慢性疾病等誘因，再解讀有限但逐漸增加的隨機試驗；VITT 則須辨認 thrombocytopenia/PF4 免疫路徑，避免 heparin。這三者共通之處，是不能把一般成人研究的納入條件與結論直接外推。</p>
 <p>長期追蹤也應超越 mRS。CVT 後 long-term VTE recurrence 約 1%–4%/year，CVT recurrence 通常 &lt;1%–2%/year；同時，患者可能持續有 headache、fatigue、mood、cognition 與 epilepsy 問題。即使 mRS 0–2，仍可能無法 return to work or school。對兒童而言，對應的是返學、發展與認知表現；對產後患者，則還包含育兒功能與後續妊娠規劃。</p>
 <blockquote class="commentary">

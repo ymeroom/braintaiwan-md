@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/mtd03.html">
 </head>
@@ -97,11 +116,12 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 03 篇</strong>　我們習慣用「mtDNA 拷貝數」來衡量粒線體 DNA 維持的好壞。這篇綜論指出另一個維度：<strong>包裝</strong>。mtDNA 是被 TFAM 壓縮成 nucleoid 的，包裝一旦鬆掉，nucleoid 變大、跑進內體、最後活化 cGAS-STING——而拷貝數可能還沒開始掉。這一篇處理 TFAM、POLG、TOP1MT 與核苷酸供應，並帶出整個系列最反直覺的一個發現：<strong>mtDNA 釋放變少，臨床反而更糟。</strong></p>
 </blockquote>
-<h2>nucleoid：不是散裝的 DNA</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 9 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">nucleoid：不是散裝的 DNA</a></li><li><a href="#bt-s2">Tfam 缺失：四個接連發生的事</a></li><li><a href="#bt-s3">那個「Sting 剔除就救回來」的實驗</a></li><li><a href="#bt-s4">病人只有兩位</a></li><li><a href="#bt-s5">POLG：整個系列最反直覺的一段</a></li><li><a href="#bt-s6">TOP1MT 與核苷酸供應</a></li><li><a href="#bt-s7">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">nucleoid：不是散裝的 DNA</h2>
 <p>粒線體含有多份環狀 mtDNA，被壓縮在稱為 <strong>nucleoid</strong> 的核蛋白結構裡，而 nucleoid <strong>調節 mtDNA 的定位、分布與表現</strong>。mtDNA 的複製由核基因編碼的酶自主調控，負責起始、延長與終止。除此之外，nucleoid 在 <strong>mtDNA 的維持、數量與完整性</strong>上都有重要角色，並與粒線體健康相連。</p>
 <p>而 nucleoid 的主要結構成分是 <strong>粒線體轉錄因子 A（TFAM）</strong>——一個核基因編碼的蛋白，<strong>使 nucleoid 壓縮，調節其架構、mtDNA 複製與轉錄</strong>。</p>
 <p>一個蛋白同時管三件事：壓縮、複製、轉錄。這也解釋了為什麼 TFAM 一動，後面全部跟著動。</p>
-<h2>Tfam 缺失：四個接連發生的事</h2>
+<h2 id="bt-s2">Tfam 缺失：四個接連發生的事</h2>
 <p>小鼠 Tfam 耗竭的表型是一條連貫的因果鏈：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>階段</th><th>現象</th></tr></thead>
@@ -112,15 +132,15 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>原始研究把這條鏈的細節補得更滿：Tfam 半量小鼠的胚胎纖維母細胞出現 mtDNA 複製壓力、<strong>與 TFAM 結合的大型 mtDNA nucleoid 被釋放</strong>，而<strong>回收路徑中的內體破裂會活化 cGAS-STING</strong>。這解釋了「經內體路徑運送」這句話的物理意義——mtDNA 不是自由地漂在細胞質裡，它是先被包進內體、內體再破掉。</p>
 <p>另一條線走的是發炎小體：在<strong>經 LPS 預備刺激的巨噬細胞</strong>中，<strong>氧化的 TFAM 促進新 mtDNA 的合成，而這觸發 NLRP3 發炎小體複合體的活化</strong>。這裡的 mtDNA 不是舊的漏出來，是<strong>新合成的</strong>——同一個蛋白，在不同狀態下走向不同的免疫路徑。</p>
-<h2>那個「Sting 剔除就救回來」的實驗</h2>
+<h2 id="bt-s3">那個「Sting 剔除就救回來」的實驗</h2>
 <p>整篇綜論裡最乾淨的因果證明在腎臟：</p>
 <p><strong>腎小管特異性的 Tfam 缺失造成腎纖維化，而令人矚目的是，同時剔除 Sting 挽救了發炎與纖維化的表型。</strong></p>
 <p>作者用了 strikingly 這個字。理由很清楚——如果纖維化是「能量不足導致細胞死亡」的結果，剔除一個免疫接頭蛋白不應該有用。它有用，就代表<strong>病理的執行者是免疫路徑，不是能量赤字本身</strong>。原始研究同時記錄到 mtDNA 包裝受損、mtDNA 釋放與 cGAS-STING 活化，而透過剔除抑制 STING 減輕了腎纖維化。</p>
-<h2>病人只有兩位</h2>
+<h2 id="bt-s4">病人只有兩位</h2>
 <p>然後是這個領域慣有的落差。<strong>帶有致病性雙等位基因 TFAM 突變的病人，全世界只有兩例報告</strong>，兩位都表現為<strong>新生兒肝衰竭（肝硬化、脂肪變性與膽汁鬱積）</strong>，並有<strong>伴隨 nucleoid 變大的 mtDNA 耗竭</strong>。</p>
 <p>作者指出，<strong>肝纖維化的快速進展被認為與 mtDNA 釋放及發炎有關</strong>。這是推論，不是量測——兩位病人不足以做任何統計。</p>
 <p>支持這個推論的旁證來自兩個方向：影響 TFAM 表現的其他突變顯示 <strong>mtDNA 穩定性喪失與第一型干擾素反應</strong>；而<strong>非酒精性脂肪肝炎併顯著肝纖維化的病人，循環 mtDNA 與粒線體來源的損傷相關分子模式明顯增加</strong>。作者立刻補上但書：<strong>這些事件之間的因果關係仍需進一步釐清。</strong></p>
-<h2>POLG：整個系列最反直覺的一段</h2>
+<h2 id="bt-s5">POLG：整個系列最反直覺的一段</h2>
 <p><strong>POLG 促進 mtDNA 的複製與修復，其突變是 PMD 最常見的原因之一</strong>，臨床表現範圍很廣，主要侵犯<strong>腦、骨骼肌與肝臟</strong>：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>一端</th><th>另一端</th></tr></thead>
@@ -137,7 +157,7 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p>這一段有兩處參考文獻編號與內容對不上：mutator 小鼠 LPS 的那句掛的是 Cox10 腎臟研究的編號（應為 Polg^D257A 的那一篇），而第 05 篇會提到的周邊巨噬細胞那句掛的是 DNMT3A/TET2 巨噬細胞研究的編號。內容敘述與表 1 一致，是編號誤植；引用時請直接回查表 1 的對應研究。</p>
 </blockquote>
-<h2>TOP1MT 與核苷酸供應</h2>
+<h2 id="bt-s6">TOP1MT 與核苷酸供應</h2>
 <p>複製要能終止，需要 <strong>粒線體拓樸異構酶 1（TOP1MT）</strong>來解除 mtDNA 的超螺旋。一個<strong>致病性 TOP1MT 突變在一個近親聯姻家族的數名成員中造成自體免疫疾病，包括全身性紅斑狼瘡與類風濕性關節炎，並伴隨細胞質 mtDNA 與第一型干擾素表現增加</strong>。細胞模型端則顯示 TOP1MT 剔除的胚胎纖維母細胞呈現<strong>融合的粒線體形態、mtDNA 外流至細胞質增加與 cGAS-STING 活化</strong>。</p>
 <p>一個粒線體基因，一個看起來完全屬於風濕科的表型。這是本系列反覆出現的主題：<strong>粒線體疾病與先天免疫異常的邊界，比教科書上畫的模糊。</strong></p>
 <p>mtDNA 維持機器還包含負責核苷酸池運輸與生合成的酶。<strong>胸苷激酶 2（TK2）磷酸化嘧啶核苷、去氧胞苷與去氧胸苷，其突變造成嚴重早發或進行性晚發的粒線體肌病變併 mtDNA 耗竭</strong>。</p>
@@ -152,7 +172,7 @@ article, article *{overflow-wrap:break-word}
 <p>TK2 那一段對肌肉病理科很實用。<strong>TK2 缺乏的肌肉切片有巨噬細胞浸潤與干擾素基因過度表現</strong>——這在鑑別診斷上很容易被讀成發炎性肌病變。如果一位嬰兒或兒童的肌肉切片同時有 COX 陰性纖維、破碎紅纖維與肌內膜發炎，發炎的存在<strong>不排除</strong>粒線體病；在這個框架下，那個發炎可能正是粒線體病的一部分。而 TK2 缺乏是有核苷替代治療在發展的少數粒線體病之一，診斷延誤的代價不一樣。</p>
 </blockquote>
 <p>包裝、複製、核苷酸供應——這一篇處理的是 mtDNA 怎麼被做出來與維持住。但細胞還有另一半工作：把壞掉的 mtDNA 清掉。清運系統如果罷工，發炎的來源就不是漏出來的，而是清不掉的。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s7">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
 <tbody>

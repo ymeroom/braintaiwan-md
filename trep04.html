@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/trep04.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 04 篇</strong>　前兩篇處理的都是局部（focal）癲癇。這一篇轉向兩個不同族群：難治性全般性癲癇（generalized epilepsy, GE）合併全身強直陣攣（GTC）發作或青少年肌躍型癲癇（JME），以及 Lennox-Gastaut 症候群（LGS）。這裡也會出現 rufinamide，但這次的研究族群、劑量單位、療效終點都跟第 02 篇裡被誤標成 LGS 的那組完全不同——這才是真正屬於 LGS 的證據。</p>
 </blockquote>
-<h2>難治性全般性癲癇：Lamotrigine 與 Levetiracetam</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">難治性全般性癲癇：Lamotrigine 與 Levetiracetam</a></li><li><a href="#bt-s2">Lennox-Gastaut 症候群：Clobazam 與真正的 Rufinamide 證據</a></li><li><a href="#bt-s3">兩組 Rufinamide 證據，一次並排看</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">難治性全般性癲癇：Lamotrigine 與 Levetiracetam</h2>
 <p>2004 年的指引只確立 topiramate 對難治性 GTC 發作（成人與兒童）的加藥治療有效。這次更新新增了 3 篇 lamotrigine 研究與 2 篇 levetiracetam 研究。</p>
 <h3>Lamotrigine</h3>
 <p>第一篇 Class II 研究涵蓋 2–55 歲病人，依年齡與合併用藥調整劑量：12 週後 GTC 發作頻率的中位數減少幅度與 responder rate，lamotrigine（LTG）組都顯著更高，最常見不良反應是頭暈、嗜睡、噁心。第二篇 Class II 研究顯示，從劑量遞增期到維持期，LTG 組 GTC 發作較安慰劑組的中位數下降幅度都顯著更多，因不良反應停藥的比例低，且<strong>沒有出現皮疹通報</strong>。第三篇是 Class I 研究，測試控釋劑型（LTG-XR），涵蓋青少年與成人：LTG-XR 組每週 GTC 發作頻率的中位數減少幅度更大、responder rate 更高，最常見不良反應是噁心、嘔吐、複視。</p>
@@ -109,7 +129,7 @@ article, article *{overflow-wrap:break-word}
 <p>因為多數特發性全般性癲癇病人的發作用藥物就能良好控制，「難治性」在這個族群本來就少見；這批試驗的結果能否外推到症候群相似但未達難治程度的病人，指引自己也標註「不確定」。</p>
 </blockquote>
 <p><strong>建議</strong>：LTG 免釋與控釋劑型應被考慮作為難治性 GE 合併 GTC 發作成人病人的加藥治療（Level B）；LEV 應被考慮作為難治性 GTC 發作與難治性 JME 的加藥治療（Level B）。</p>
-<h2>Lennox-Gastaut 症候群：Clobazam 與真正的 Rufinamide 證據</h2>
+<h2 id="bt-s2">Lennox-Gastaut 症候群：Clobazam 與真正的 Rufinamide 證據</h2>
 <p>2004 年的指引確立 felbamate、lamotrigine、topiramate 對 LGS 有效。這次更新新增了 clobazam 與 rufinamide 的研究。</p>
 <h3>Clobazam</h3>
 <p>2 篇 Class II 研究比較 clobazam（CLB）與安慰劑，測試 0.25、0.5、1 mg/kg 三個每日劑量。相對基準期，三個劑量組的每週跌倒發作頻率都顯著下降，高劑量組下降幅度最大；非跌倒型發作也隨劑量下降。最常見不良反應包括嗜睡、嗜睡感、鎮靜、唾液分泌過多、便秘、攻擊行為、輕躁與失眠；導致停藥最常見的是嗜睡感、攻擊行為、共濟失調與疲倦。</p>
@@ -118,7 +138,7 @@ article, article *{overflow-wrap:break-word}
 <p>2 篇 Class I 研究比較 rufinamide（RFN）與安慰劑，收案對象是兒童與年輕成人，測試劑量最高到 45 mg/kg/d——注意這裡的劑量單位是「每公斤體重」，跟第 02 篇成人局部癲癇那組研究用固定的「每日毫克數」不同，是兩組完全獨立的試驗。RFN 組在總發作頻率、跌倒發作頻率的中位數減少幅度，以及僵直—失張力發作的中位數變化幅度上都顯著更好。最常見不良反應是嗜睡、嘔吐與食慾下降。</p>
 <p><strong>結論</strong>：RFN 確立作為 LGS 的加藥治療有效（2 篇 Class I 研究）——<strong>Level A</strong>。</p>
 <p><strong>建議</strong>：對 LGS，RFN 應被視為確立有效的加藥治療（Level A），CLB 應被考慮使用（Level B）。</p>
-<h2>兩組 Rufinamide 證據，一次並排看</h2>
+<h2 id="bt-s3">兩組 Rufinamide 證據，一次並排看</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th></th><th>第 02 篇：成人局部癲癇</th><th>本篇：LGS</th></tr></thead>
 <tbody>

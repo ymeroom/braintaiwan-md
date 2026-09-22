@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/srr01.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 01 篇</strong>　AHA/ASA 在 2026 年發布新版《成人中風復健與恢復指引》，距離上一版 2016 年整整十年，全文 145 頁。這個系列用十篇把它拆開讀。第一篇先處理兩個最常在病房被問到的問題：中風後什麼時候可以下床，以及出院以後該去哪裡繼續復健。前者指引給了一條少見的「3: Harm」，後者則是一條建立在觀察性研究上、卻被評為 Class 1 的建議。</p>
 </blockquote>
-<h2>先看指引怎麼定義「恢復」</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 11 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">先看指引怎麼定義「恢復」</a></li><li><a href="#bt-s2">一個會影響後面九篇的政策</a></li><li><a href="#bt-s3">什麼時候可以下床</a></li><li><a href="#bt-s4">出院以後去哪裡</a></li><li><a href="#bt-s5">IRF 優於 SNF 的 Class 1，建立在觀察性研究上</a></li><li><a href="#bt-s6">門診復健與早期支持性出院</a></li><li><a href="#bt-s7">家屬主導的復健為什麼是 No Benefit</a></li><li><a href="#bt-s8">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">先看指引怎麼定義「恢復」</h2>
 <p>這份指引開頭有一段話，寫得不像一般指引。<strong>它說中風後的恢復很少是線性的，範圍超出身體功能，也沒有明確的終點；恢復不是回到從前的自己，而是發展出一個有韌性的新自己。</strong> 這段話直接變成了整份指引最上面的「新增重點」：<strong>復健被定義為一個沒有既定終點的長期過程，評估與介入可以貫穿一生。</strong></p>
 <p>整體框架用的是世界衛生組織的 ICF 模型：<strong>功能分成身體功能與結構的損傷（例如肌肉、神經連結）、活動受限（例如走路、穿衣、洗衣服），以及在生活角色與社區中的參與受限（例如參加宗教活動、就業、參加社區活動、探望親戚）。</strong></p>
 <p>時間分期也統一了。指引依一份共識聲明，把中風恢復切成五期：</p>
@@ -111,11 +131,11 @@ article, article *{overflow-wrap:break-word}
 <tr><td>慢性期</td><td>超過 6 個月</td></tr>
 </tbody></table></div>
 <p>但指引也坦白說，<strong>大部分復健研究是在慢性期或晚期亞急性期做的</strong>，因為這樣比較好避開自發性恢復與同時進行的標準復健兩個干擾。所以除非有安全考量，<strong>指引大多刻意不指定介入的時機</strong>；劑量（強度、排程、總量）也一樣，<strong>除非有明確證據，否則推薦裡不寫劑量</strong>。</p>
-<h2>一個會影響後面九篇的政策</h2>
+<h2 id="bt-s2">一個會影響後面九篇的政策</h2>
 <p>讀這份指引之前要先知道一件事：<strong>AHA 的政策在 2016 年之後改了，這版指引刻意不收錄「FDA 未特別核准用於中風恢復」的器材或藥物的推薦，這些主題改放在正文裡，當成需要更多研究的知識缺口。</strong> 過去版本已經推薦過的藥物與技術則「沿用保留」（grandfathered）。</p>
 <p>這代表後面幾篇讀到某個治療「沒有推薦」時，要先分清楚是「證據說沒用」，還是「沒有 FDA 適應症所以不寫」。兩者在推薦表上看起來一樣都是空白，意義卻完全不同。</p>
 <p>另外，<strong>這份指引的每一條推薦都獲得 82.2% 到 100% 投票寫作小組成員的同意</strong>；文獻搜尋在 2025 年 6 月到 10 月間進行。</p>
-<h2>什麼時候可以下床</h2>
+<h2 id="bt-s3">什麼時候可以下床</h2>
 <p>這是整篇最明確的一組推薦。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>推薦</th><th>COR</th><th>LOE</th></tr></thead>
@@ -129,7 +149,7 @@ article, article *{overflow-wrap:break-word}
 <p>早期活動的好處也寫得具體。<strong>它能減少肺炎、深部靜脈血栓、壓瘡、攣縮與便秘等醫療併發症。</strong> 執行的人不限於治療師：<strong>早期活動可以由物理治療師、職能治療師、護理人員，甚至受過訓練的家屬來做。</strong></p>
 <p>不過指引自己的知識缺口寫得比推薦更誠實：<strong>目前的資料指出了有益的時間窗（24 到 48 小時）與有害的強度，但在任何中風族群中都還沒有建立最佳活動劑量。</strong> 另外，<strong>資料不成比例地集中在缺血性中風，還需要有大量腦出血病人的前瞻性資料。</strong> 至於極早期活動為什麼有害，<strong>腦血流自動調節、血流動力學與心臟功能不足、代謝需求增加，這些理論都還停留在推測階段</strong>。</p>
 <p>有一處源文要留意：<strong>早期活動的支持文字寫「分級流程見 Figure 1」，但全文唯一的一張 Figure 1 是「從急性中風到復健與恢復的路徑圖」</strong>，畫的是出院去向，不是活動流程。讀者照著去翻會找不到。</p>
-<h2>出院以後去哪裡</h2>
+<h2 id="bt-s4">出院以後去哪裡</h2>
 <p>美國的急性後期照護選項比台灣多一層，指引的推薦是圍繞這些場域寫的。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>場域</th><th>指引的描述</th></tr></thead>
@@ -152,7 +172,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>輕到中度活動受限者，建議<strong>早期支持性出院</strong>（ESD）加多專業服務，結局與院內復健相當</td><td>1</td><td style="white-space:nowrap">B-R</td></tr>
 <tr><td>早期出院加上<strong>家屬主導</strong>的居家復健，與單純早期出院相比<strong>沒有效果</strong></td><td>3: No Benefit</td><td style="white-space:nowrap">B-R</td></tr>
 </tbody></table></div>
-<h2>IRF 優於 SNF 的 Class 1，建立在觀察性研究上</h2>
+<h2 id="bt-s5">IRF 優於 SNF 的 Class 1，建立在觀察性研究上</h2>
 <p>第二條是整張表裡最值得細讀的。它是 Class 1，證據等級卻是 B-NR（非隨機）。</p>
 <p>指引沒有迴避這一點：<strong>比較 IRF 與 SNF 結局的觀察性研究本質上受限於非隨機設計、兩個場域病人的基線差異，以及即使做了統計校正仍然存在的未測量干擾因子疑慮。</strong> 它給出的理由是一致性：<strong>有研究用了工具變數分析與傾向分數等多種統計校正，IRF 相對 SNF 的優勢仍然存在；整體而言，儘管有觀察性研究的限制，多項研究結果的一致性支持 IRF 是適當病人的首選。</strong></p>
 <p>指引還順手糾正了一篇系統性回顧：<strong>Alcusky 等人的回顧在功能結局部分，把 1 篇研究誤歸為比較 IRF 與 SNF，但那篇實際上比較的是不同場域的亞急性復健；排除之後，剩下 4 篇都顯示 IRF 病人功能結局較好。</strong> 同一段也寫到，<strong>有 2 篇研究顯示 IRF 費用較高</strong>。</p>
@@ -173,11 +193,11 @@ article, article *{overflow-wrap:break-word}
 <tr><td>病前失智</td><td>16%</td></tr>
 </tbody></table></div>
 <p>排在最後的是病前失智，只有 16% 的專家認為它是關鍵因素。</p>
-<h2>門診復健與早期支持性出院</h2>
+<h2 id="bt-s6">門診復健與早期支持性出院</h2>
 <p>門診復健的證據是一篇 Cochrane 回顧：<strong>14 個試驗、1617 名病人，不良結局的勝算降低（Peto OR 0.72，95% CI 0.57–0.92；P=0.009），個人日常生活活動分數增加（SMD 0.14，95% CI 0.02–0.25；P=0.02）。</strong> 另一項研究則發現，<strong>出院回家後前 30 天接受門診治療的人，接下來 30 天再住院的機率較低。</strong></p>
 <p>早期支持性出院在歐洲、澳洲與紐西蘭已經研究了超過 20 年。<strong>2017 年 Cochrane 回顧（17 個試驗、2422 名病人）發現它讓住院天數縮短約 5 天，改善日常活動獨立性，並提高住在家裡的機會，而且沒有增加再住院率，也沒有對生活品質或照顧者情緒造成負面影響。</strong> 效益最明顯的族群是<strong>能在協助下行走的中度失能病人</strong>，而且要由協調的多專業團隊執行。成本則是<strong>從略為減少到小幅增加都有</strong>。</p>
 <p>但 <strong>2022 年的系統性回顧與統合分析只看到住院天數縮短的趨勢</strong>，死亡、再住院與日常生活活動都沒有不良影響。指引的解釋是：<strong>很多研究納入的是較輕的中風，天花板效應可能讓細微的功能改善測不出來。</strong></p>
-<h2>家屬主導的復健為什麼是 No Benefit</h2>
+<h2 id="bt-s7">家屬主導的復健為什麼是 No Benefit</h2>
 <p>最後一條的證據是印度的 ATTEND 試驗。<strong>14 家醫院、1200 名剛中風且有指定照顧者的成人，隨機分到家屬接受結構化復健訓練（包括目標設定與任務導向活動）或常規照護；復健從住院開始，回家後持續 2 個月。</strong> 結果是<strong>6 個月時，兩組的死亡或依賴比例沒有顯著差異。</strong></p>
 <p>指引的詮釋很直接：<strong>在印度這類專業復健資源有限的低資源環境，單純訓練家屬可能不足以改善中風恢復</strong>；結論落在政策面，<strong>醫療政策應支持偏遠與資源不足地區公平取得急性後期復健服務。</strong></p>
 <blockquote class="commentary">
@@ -187,7 +207,7 @@ article, article *{overflow-wrap:break-word}
 <p>ATTEND 是一個很有分量的陰性試驗。1200 人、14 家醫院，把家屬訓練成復健主力，結果沒有差。它讓人不太舒服的地方在於，台灣很多中風病人出院後，實際上就是家屬在做復健。</p>
 </blockquote>
 <p>指引把恢復定義成沒有終點的過程，卻也在同一章承認，連最基本的「每天該動多少」都還沒有答案。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s8">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>指引實際說法</th></tr></thead>
 <tbody>

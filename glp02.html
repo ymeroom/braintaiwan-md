@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/glp02.html">
 </head>
@@ -97,12 +116,13 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 02 篇</strong>　同樣的葡萄糖，從嘴巴進去會刺激腸泌素釋放，從血管打進去幾乎不會。這個看起來像冷知識的對比，其實是整個 GLP-1 藥理學的地基。這一篇把綜論的機轉拆成三條互不相干的線——胰島那條（降血糖）、脂肪那條（GIP 在做的事）、以及下視丘那條（減重與食慾），並且說明為什麼綜論的摘要與正文在「腸道菌群」這一項上鬆緊不一致。</p>
 </blockquote>
-<h2>地基：分泌必須從腸道那一端啟動</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 8 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">地基：分泌必須從腸道那一端啟動</a></li><li><a href="#bt-s2">第一條線：胰島</a></li><li><a href="#bt-s3">那個摘要說得比正文有把握的機轉</a></li><li><a href="#bt-s4">第二條線：脂肪，而且主要是 GIP 在做</a></li><li><a href="#bt-s5">第三條線：下視丘，而 glucagon 在這裡換了角色</a></li><li><a href="#bt-s6">那個與血糖控制脫鉤的體重迴路</a></li><li><a href="#bt-s7">三條線併起來看</a></li><li><a href="#bt-s8">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">地基：分泌必須從腸道那一端啟動</h2>
 <p><strong>GLP-1 與 GIP 是對腸道內的葡萄糖濃度做出反應而分泌的，相對之下，靜脈給予的葡萄糖對腸泌素釋放只造成微不足道的改變。</strong></p>
 <p>這句話值得停一下。它意味著這套系統偵測的不是「血裡有多少糖」，而是「有東西正在被吃進來」。這也是為什麼它被叫做腸泌素效應。</p>
 <p>而分泌的條件不只葡萄糖：<strong>當血糖升高時，這些腸道胜肽也會對攝入的蛋白質與脂質產物做出反應而釋放，在關鍵時刻增強胰島素釋放。</strong></p>
 <p>「在關鍵時刻」是綜論自己的措辭，而它正好對應到這類藥物一個很重要的安全性特徵——後面第 05 篇會看到，單獨使用 GLP-1 受體促效劑並不造成低血糖。</p>
-<h2>第一條線：胰島</h2>
+<h2 id="bt-s2">第一條線：胰島</h2>
 <p>受體分布的邏輯很單純：<strong>因為主要作用模式是以葡萄糖依賴的方式刺激胰島素分泌，胰島 beta 細胞擁有這些胜肽受體的最高濃度。</strong></p>
 <p>訊號路徑則是這樣：</p>
 <div class="bt-tablewrap"><table>
@@ -117,12 +137,12 @@ article, article *{overflow-wrap:break-word}
 <p>除了促胰島素之外，這條線還有三個動作：<strong>GLP-1 與 GIP 直接促進胰島素分泌，但也抑制 glucagon，並刺激 beta 細胞的促存活與增生機轉以維持胰島細胞質量。</strong></p>
 <p>還有一個不靠胰島素的降糖途徑：<strong>GLP-1 也會減緩胃排空、降低胃蠕動，這兩者都能降低血漿葡萄糖濃度。</strong></p>
 <p>這一句在臨床上有兩個下游後果，剛好一好一壞——它是降糖與飽足感的來源，也是噁心、便秘與（在手術麻醉情境下）胃內容物滯留的來源。</p>
-<h2>那個摘要說得比正文有把握的機轉</h2>
+<h2 id="bt-s3">那個摘要說得比正文有把握的機轉</h2>
 <p>腸道菌群這一項要特別分清楚。</p>
 <p>正文的寫法是保守的：<strong>有些證據顯示 GLP-1 受體促效劑可能調節腸道菌相，藉此改善葡萄糖耐受，不過還需要更多研究。</strong></p>
 <p>但綜論的摘要把它列為機轉之一——<strong>包括減緩胃排空、抑制 glucagon 分泌、腸道微生物體的有益改變，以及對下視丘核的直接作用以增強飽足感</strong>；Key Points 也寫成<strong>促成有益的腸道微生物體</strong>。</p>
 <p>同一篇文章裡，摘要與 Key Points 的語氣是「這是機轉」，正文的語氣是「還需要更多研究」。讀綜論時遇到這種鬆緊不一致，該採信的是正文那一版。</p>
-<h2>第二條線：脂肪，而且主要是 GIP 在做</h2>
+<h2 id="bt-s4">第二條線：脂肪，而且主要是 GIP 在做</h2>
 <p>GLP-1 在這條線上幾乎不出力：<strong>GLP-1 受體促效劑對肌肉或脂肪組織的胰島素敏感度影響極小，但透過脂肪代謝的改變，對葡萄糖耐受有其他間接效果。</strong></p>
 <p>真正在脂肪組織裡工作的是 GIP：</p>
 <div class="bt-tablewrap"><table>
@@ -133,13 +153,13 @@ article, article *{overflow-wrap:break-word}
 <tr><td>合起來的意義</td><td>這些性質<strong>增強了雙重治療的效果</strong></td></tr>
 </tbody></table></div>
 <p>「促進脂質儲存」讀起來像是與減重目標相反的作用，但綜論把它放在葡萄糖耐受的脈絡下——降低循環游離脂肪酸對代謝是有利的。這是雙重促效劑為什麼在降糖上能贏過單一 GLP-1 的一部分解釋。</p>
-<h2>第三條線：下視丘，而 glucagon 在這裡換了角色</h2>
+<h2 id="bt-s5">第三條線：下視丘，而 glucagon 在這裡換了角色</h2>
 <p>glucagon 的雙面性是這一段最有意思的地方。</p>
 <p>它的本業是升血糖：<strong>glucagon 是一個反向調節荷爾蒙，藉由刺激肝臟的肝糖分解與糖質新生來升高血糖。</strong></p>
 <p>但它同時<strong>因為在下視丘腹內側核（ventromedial hypothalamus）的直接作用而增加飽足感</strong>。</p>
 <p>所以綜論的立場是：<strong>glucagon 或其促效劑在固定的複方組合策略中可能是有用的輔助</strong>，特別是因為<strong>glucagon 也能減少肝內脂肪浸潤並促進脂解</strong>。</p>
 <p>這解釋了為什麼三重促效劑會把一個「升血糖荷爾蒙」放進減重藥裡——在中樞它做的是相反方向的事。</p>
-<h2>那個與血糖控制脫鉤的體重迴路</h2>
+<h2 id="bt-s6">那個與血糖控制脫鉤的體重迴路</h2>
 <p>接著是神經科最該讀的一段。</p>
 <p><strong>下視丘神經中樞在血糖控制與體重維持上的調節，是 GLP-1 受體促效劑的特徵性作用。</strong></p>
 <p>受體的位置寫得很具體：<strong>GLP-1 受體大量存在於弓狀核（arcuate nucleus），該處含有 agouti 相關蛋白與神經胜肽 Y 細胞</strong>；也存在於<strong>下視丘中同時會產生 GLP-1 的區域</strong>，不過<strong>GLP-1 被認為主要在腦幹生成</strong>。</p>
@@ -155,7 +175,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>受質利用的轉移</td><td>有證據顯示 GLP-1 在室旁核與弓狀核<strong>都</strong>改變受質利用，<strong>朝脂質氧化偏移，呼吸交換率下降</strong></td></tr>
 </tbody></table></div>
 <p>弓狀核管血糖、室旁核管飽足——同一個受體、相鄰的兩個核區，做的是兩件不同的事。這是「體重與血糖分開控制」這句話在解剖上的具體樣子。</p>
-<h2>三條線併起來看</h2>
+<h2 id="bt-s7">三條線併起來看</h2>
 <p>綜論自己的總結是：<strong>GLP-1 受體促效劑不論有無併用 GIP 促效劑，都透過直接刺激胰島素釋放，以及對脂肪代謝、胃排空與腸道蠕動的間接作用，對血糖動態產生深遠影響。</strong></p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th></th><th>作用位置</th><th>主要效果</th><th>誰在出力</th></tr></thead>
@@ -173,7 +193,7 @@ article, article *{overflow-wrap:break-word}
 <p>至於三重促效劑把 glucagon 加進來這件事，機轉上讀起來很優雅——外周升糖、中樞增加飽足、順便減少肝內脂肪。但這也意味著它的淨效果高度依賴劑量與比例。這種「靠比例平衡兩個相反方向」的藥物設計，長期安全性資料出來之前我會保守一點。</p>
 </blockquote>
 <p>同一個葡萄糖從不同的路徑進入身體，命運完全不同；同一個 glucagon 在肝臟與在下視丘做的事恰好相反。機轉讀完之後，真正的問題是這些路徑在人身上能換到多少 HbA1c——那是下一篇的事。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s8">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
 <tbody>

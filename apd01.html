@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/apd01.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 1 篇</strong>　2024 年 CurePSP「照護中心網絡」的診斷與治療工作小組於《Neurology: Clinical Practice》發表一份專為<strong>社區一般神經科醫師</strong>設計的非典型巴金森症候群（atypical parkinsonian disorders, APD）診斷流程。它的核心精神是：用一張流程圖、幾張表格，加上「仔細病史 + 神經學檢查 + 一張非顯影腦部 MRI」，讓基層醫師能在轉診前先做出<strong>臨時診斷</strong>。本系列三篇拆解這份共識：第一篇談「何時該起疑」。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、最常見的起疑點：levodopa 反應不如預期</a></li><li><a href="#bt-s2">二、把「非典型特徵」分成五大類</a></li><li><a href="#bt-s3">三、幾個高鑑別力的運動學細節</a></li><li><a href="#bt-s4">四、初步工具其實很樸素：病史、神經學檢查、一張非顯影 MRI</a></li><li><a href="#bt-s5">五、診斷是「迭代」的，不是一次定生死</a></li><li><a href="#bt-s6">臨床要點摘要</a></li><li><a href="#bt-s7">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>從巴金森氏症（Parkinson's disease, PD）的診斷做出去，最常見也最危險的陷阱，是把一位非典型巴金森症候群的病人長期當成 PD 在治療。這類病人從症狀出現到「被懷疑」是 APD，平均可能要 3–4 年——以 PSP 為例，這幾乎等於發病後存活期的一半。共識的第一個任務，就是把「該起疑的訊號」講清楚。</p>
 <hr>
-<h2>一、最常見的起疑點：levodopa 反應不如預期</h2>
+<h2 id="bt-s1">一、最常見的起疑點：levodopa 反應不如預期</h2>
 <p>對一位已經被診斷為 PD 的病人，<strong>最常提示應重新考慮 APD 的單一線索，就是對 levodopa 的反應微弱或只是短暫</strong>。</p>
 <p>MDS 對 PD、PSP、MSA 的診斷標準對「levodopa 反應」的定義略有差異，但一個典型門檻是：</p>
 <blockquote>
@@ -108,7 +128,7 @@ article, article *{overflow-wrap:break-word}
 </blockquote>
 <p>需要注意的是，反應不佳並非 APD 的「鐵證」——DLB、PSP-P、MSA-P、腦炎後巴金森症、黑質結構性病變都可能對 levodopa 有部分反應。它是「重新評估的起點」，而不是終點。</p>
 <hr>
-<h2>二、把「非典型特徵」分成五大類</h2>
+<h2 id="bt-s2">二、把「非典型特徵」分成五大類</h2>
 <p>共識流程圖的藍色方框列出「對 PD 而言非典型、應啟動本演算法」的特徵，並歸為五類。臨床上記住這五個面向，問診與檢查就有了結構：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>類別</th><th>代表性警訊</th></tr></thead>
@@ -123,7 +143,7 @@ article, article *{overflow-wrap:break-word}
 <p>臨床提醒：這五類不是要你「逐項打勾」，而是提供五個觀察軸。多數 APD 的線索，會集中落在其中一兩個軸上——例如 MSA 偏自律神經與小腦、PSP 偏眼動與早期跌倒、CBS 偏不對稱皮質徵象。</p>
 </blockquote>
 <hr>
-<h2>三、幾個高鑑別力的運動學細節</h2>
+<h2 id="bt-s3">三、幾個高鑑別力的運動學細節</h2>
 <p>共識特別點出幾個在診間就能觀察、且對區分 PD 與 APD 很有幫助的細節：</p>
 <ul>
 <li><strong>手指輕敲 / 寫字的「衰減」型態</strong>：PD 的特徵是動作幅度在數秒內<strong>逐漸</strong>變小（decrement）；退化型 APD 則是<strong>一開始就小、但不再持續惡化</strong>。</li>
@@ -132,7 +152,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>跌倒的脈絡</strong>：PSP-RS 常是「無法用其他神經學發現解釋」的早期跌倒；MSA-C 的早期跌倒則發生在共濟失調或姿勢性低血壓的背景下。</li>
 </ul>
 <hr>
-<h2>四、初步工具其實很樸素：病史、神經學檢查、一張非顯影 MRI</h2>
+<h2 id="bt-s4">四、初步工具其實很樸素：病史、神經學檢查、一張非顯影 MRI</h2>
 <p>一旦起疑，共識主張的初步評估<strong>並不昂貴</strong>：詳細病史、針對性的神經學檢查，加上一張<strong>非顯影腦部 MRI</strong>，多數情況已足夠。神經學檢查除了標準項目外，應特別加入：</p>
 <ol>
 <li>量測<strong>站立姿勢的血壓與脈搏</strong>（臥到站）</li>
@@ -148,7 +168,7 @@ article, article *{overflow-wrap:break-word}
 <p>神經源性姿勢性低血壓（nOH）的床邊定義：站立 3 分鐘內收縮壓下降 ≥ 20 mmHg 和／或舒張壓下降 ≥ 10 mmHg，且<strong>心跳未能代償性加快</strong>（收縮壓每降 2 mmHg、心跳增加不到 1 次/分）。把臥站血壓量測列為疑似 APD 的常規，幾乎不花成本卻常有高產出。</p>
 </blockquote>
 <hr>
-<h2>五、診斷是「迭代」的，不是一次定生死</h2>
+<h2 id="bt-s5">五、診斷是「迭代」的，不是一次定生死</h2>
 <p>這份共識反覆強調的觀念：<strong>APD 的診斷是一個迭代過程</strong>，會隨著新症狀出現、新技術問世、對疾病理解的進展而被修正。對應到臨床做法：</p>
 <ul>
 <li>進展異常快速的未診斷病人，建議<strong>每 1–2 個月回診一次</strong>，或考慮住院檢查。</li>
@@ -156,7 +176,7 @@ article, article *{overflow-wrap:break-word}
 <li>演算法的每一步都保留「轉診上級中心」的選項：當醫師覺得這樣對病人最好時，隨時可以轉。</li>
 </ul>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s6">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>共識重點</th></tr></thead>
 <tbody>
@@ -174,7 +194,7 @@ article, article *{overflow-wrap:break-word}
 <p>至於「levodopa 反應不好」這件事，我想提醒一點：別太快下結論。劑量不夠、加得太慢、病人自己減藥，都會偽裝成「反應差」。共識給的 1,000 mg/day、1–2 個月、UPDRS III 改善 25% 這個門檻，存在的意義就是逼我們<strong>先把藥試到位</strong>，再來談是不是 APD。下一篇，我們把七大 APD 一個一個攤開來看。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s7">參考文獻</h2>
 <ol>
 <li>Bruno MK, Dhall R, Duquette A, et al. A General Neurologist's Practical Diagnostic Algorithm for Atypical Parkinsonian Disorders: A Consensus Statement. <em>Neurology: Clinical Practice</em>. 2024;14(6):e200345.</li>
 <li>Postuma RB, Berg D, Stern M, et al. MDS clinical diagnostic criteria for Parkinson's disease. <em>Mov Disord</em>. 2015;30(12):1591-601.</li>

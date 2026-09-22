@@ -66,6 +66,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/lfm_crhm01.html">
 </head>
@@ -88,7 +107,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．大師篇</strong>　過去臨床常聚焦於單一指標的控制——降血糖、降血壓、降體重；然而在 2026 年最新臨床實證與指引導向藥物治療（GDMT）時代，全球頂尖專家的共識正迅速轉向「跨器官保護（Cardiovascular-Renal-Hepatic-Metabolic, CRHM）」。本文彙整 2026 Boehringer ClinicalPath Forum 國際權威學者的重磅演講精華與臨床反思。</p>
 </blockquote>
-<h2>🧭 前言與學習總結：當代慢性病治療的「典範轉移」</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">🧭 前言與學習總結：當代慢性病治療的「典範轉移」</a></li><li><a href="#bt-s2">💡 Master 1 學習心得：超越現行指引——心腎殘餘風險與「醛固酮突破」</a></li><li><a href="#bt-s3">💡 Master 2 學習心得：中風與糖尿病——「壓力性高血糖比值 (SHR)」的臨床震撼</a></li><li><a href="#bt-s4">💡 Master 3 學習心得：肥胖醫學新視界——從「減重數字」邁向「器官健康」</a></li><li><a href="#bt-s5">💡 Master 4 學習心得：心衰竭與心腎代謝症候群（CKM）的雙向解鎖</a></li><li><a href="#bt-s6">📊 大師思維與傳統臨床思維對照表</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">🧭 前言與學習總結：當代慢性病治療的「典範轉移」</h2>
 <p>過去我們在臨床訓練中，常習慣於「單一疾病、單一指標」的處置模式：</p>
 <ul>
 <li>血糖高了 → 降 HbA1c</li>
@@ -99,7 +119,7 @@ article, article *{overflow-wrap:break-word}
 <p>然而，本次參與 <strong>2026 Boehringer ClinicalPath Forum</strong>，聆聽來自全球腎臟、神經、內分泌與心臟領域頂尖大師的連番演講，內心受到極大的震撼與啟發。大師們反覆傳遞同一個核心訊息：<strong>「人體的器官衰退從非獨立發生，發炎、異位脂肪浸潤與微血管硬化是心、腎、肝、腦共同的致病軸線。」</strong></p>
 <p>當代醫學的思維已正式從<strong>「控制單一檢驗數值」</strong>全面昇華為<strong>「跨器官終點保護（Organ Health Protection）」</strong>。以下特別整理本次大師課堂的四大核心學習心得與臨床反思。</p>
 <hr>
-<h2>💡 Master 1 學習心得：超越現行指引——心腎殘餘風險與「醛固酮突破」</h2>
+<h2 id="bt-s2">💡 Master 1 學習心得：超越現行指引——心腎殘餘風險與「醛固酮突破」</h2>
 <p><strong>主講大師</strong>：Prof. David Cherney (University of Toronto / UHN, Canada)   <strong>演講主題</strong>：<em>Beyond Guidelines: Residual CRM Risk in the GDMT Era</em></p>
 <h3>🧠 我的學習筆記與反思：</h3>
 <ol>
@@ -108,7 +128,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>未來的治療武器</strong>：Prof. Cherney 介紹了目前臨床試驗中最令人期待的<strong>上游醛固酮合成酶抑制劑（Aldosterone Synthase Inhibitor, ASI）</strong>。不同於下游受體拮抗劑，ASI 直接切斷合成源頭（CYP11B2），能更乾淨地阻斷醛固酮的毒性，為重度心腎衰竭帶來全新曙光。</li>
 </ol>
 <hr>
-<h2>💡 Master 2 學習心得：中風與糖尿病——「壓力性高血糖比值 (SHR)」的臨床震撼</h2>
+<h2 id="bt-s3">💡 Master 2 學習心得：中風與糖尿病——「壓力性高血糖比值 (SHR)」的臨床震撼</h2>
 <p><strong>主講大師</strong>：Prof. Georgios Tsivgoulis (National and Kapodistrian University of Athens, Greece)   <strong>演講主題</strong>：<em>Interconnectedness of Diabetes Mellitus and Stroke: Pathophysiology and Management</em></p>
 <h3>🧠 我的學習筆記與反思：</h3>
 <ol>
@@ -122,7 +142,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>長期預防</strong>：SGLT2i 與 GLP-1 RA 在中風次級預防上展現了強大的全身血管保護效應。</li>
 </ul>
 <hr>
-<h2>💡 Master 3 學習心得：肥胖醫學新視界——從「減重數字」邁向「器官健康」</h2>
+<h2 id="bt-s4">💡 Master 3 學習心得：肥胖醫學新視界——從「減重數字」邁向「器官健康」</h2>
 <p><strong>主講大師</strong>：Dr. Jaime Almandoz (UT Southwestern Medical Center, USA)   <strong>演講主題</strong>：<em>Advancing Obesity Management: Moving from weight loss to organ health</em></p>
 <h3>🧠 我的學習筆記與反思：</h3>
 <ol>
@@ -137,7 +157,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>門診溝通的典範轉移</strong>：面對肥胖患者，醫師開立現代藥物時的對話不應再是「幫你減幾公斤穿漂亮衣服」，而是「透過消除異位脂肪，保護你的心臟、腎臟與肝臟不走向衰竭」。</li>
 </ol>
 <hr>
-<h2>💡 Master 4 學習心得：心衰竭與心腎代謝症候群（CKM）的雙向解鎖</h2>
+<h2 id="bt-s5">💡 Master 4 學習心得：心衰竭與心腎代謝症候群（CKM）的雙向解鎖</h2>
 <p><strong>主講大師</strong>：Prof. Javed Butler (Baylor Scott &amp; White Health, USA)   <strong>演講主題</strong>：<em>Cardiorenal &amp; CKM Syndrome in Heart Failure Management</em></p>
 <h3>🧠 我的學習筆記與反思：</h3>
 <ol>
@@ -145,7 +165,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>CKM 症候群的提早篩檢</strong>：不要等心臟超音波 EF 下降或腎臟 eGFR 腰斬才開始用好藥。在微量白蛋白尿（UACR）升高、代謝異常的早期階段，就應該果斷啟動多重器官保護藥物。</li>
 </ol>
 <hr>
-<h2>📊 大師思維與傳統臨床思維對照表</h2>
+<h2 id="bt-s6">📊 大師思維與傳統臨床思維對照表</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>臨床面向</th><th>過去傳統思維 (Old Practice)</th><th>大師前沿思維 (Master Insight 2026)</th></tr></thead>
 <tbody>

@@ -66,6 +66,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/ich03.html">
 </head>
@@ -88,21 +107,22 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 3 篇</strong>　涵蓋 ESO/EANS 2025 指引的 PICO 3 系列（止血治療與抗栓藥逆轉） 所有止血藥的故事，幾乎都長一樣：它能讓血塊少漲一點，卻沒有一個能讓病人活下來或站起來。這篇把每一種藥逐個拆開，把該記的劑量、時間窗、INR 門檻一個個釘上去。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 9 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">沒吃抗栓藥的腦出血：rFVIIa 與傳明酸</a></li><li><a href="#bt-s2">吃抗血小板藥的腦出血：別輸血小板</a></li><li><a href="#bt-s3">吃抗凝血劑的腦出血：逐藥對應的逆轉</a></li><li><a href="#bt-s4">把整篇收束成一句話</a></li><li><a href="#bt-s5">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>腦出血最致命的不是出血那一刻，而是接下來那幾個小時血腫還在偷偷長大。血腫擴大跟著功能變差與死亡綁在一起，所以所有止血治療的整個目的，就是一件事——把這個擴大擋住。指引把這些藥依「病人有沒有在吃抗栓藥」分成三類來看：沒吃抗栓藥的、吃抗血小板的、吃抗凝血劑的。而評估每一種藥的時候，盯的永遠是同四個結局：第 90 天的死亡、第 90 天的死亡或失能（mRS 4–6）、24 小時的血腫擴大、以及血栓栓塞事件——前三個是它能不能幫上忙，最後一個是它會不會反過來害人。</p>
 <p>把這四個結局擺在一起讀，整篇就會浮出一個很尷尬的對比：好幾種藥在「24 小時血腫擴大」這一欄真的有效，可是一路看到「死亡或失能」那一欄，數字就回到原點。擋得住擴大，卻救不了命運——這就是這一篇要反覆出現的那條線。</p>
 <hr>
-<h2>沒吃抗栓藥的腦出血：rFVIIa 與傳明酸</h2>
+<h2 id="bt-s1">沒吃抗栓藥的腦出血：rFVIIa 與傳明酸</h2>
 <p>先講最單純的一群——沒在吃任何抗栓藥的自發性腦出血。</p>
 <p><strong>重組第七凝血因子（rFVIIa）</strong> 的結論是：建議不要常規使用，並把病人收進進行中的臨床試驗。證據等級 Very Low，建議強度 Weak against。為什麼語氣這麼曖昧？因為九個 RCT 合起來，它在效益這一側的方向其實是好看的——死亡或失能 OR 0.71、任何原因死亡 OR 0.69，都偏向 rFVIIa，連 24 小時血腫擴大也是 OR 0.65 偏向它。問題是三個數字全都不顯著，信賴區間都跨過 1。更不利的是，血栓栓塞事件的方向反而偏向對照組（OR 1.20）。一個效益不確定、風險方向又偏壞的藥，自然只能「建議反對常規使用」，把希望留給還沒讀出的試驗。</p>
 <p><strong>傳明酸（TXA）</strong> 走的是另一條路。指引同樣建議把病人收進 RCT，正式建議的證據等級評為 Low（其證據主體則因偏倚風險偏高被描述為中等品質）。它在「死亡或失能」這個最硬的結局上 OR 1.00——一刀切下去，完全沒有差別。但它在 24 小時血腫擴大上是 OR 0.82 而且顯著，血栓事件沒有顯著增加。這就是這一篇主旋律的最乾淨範例：它確實擋住了一部分擴大，卻沒能把這個影像上的好處兌現成病人的命運。也因為這個「擋得住擴大」是真的，指引給了一句共識：當病人無法被納入進行中的 RCT 時，可以考慮用 TXA 來減少血腫擴大（投票 13/15）。</p>
 <hr>
-<h2>吃抗血小板藥的腦出血：別輸血小板</h2>
+<h2 id="bt-s2">吃抗血小板藥的腦出血：別輸血小板</h2>
 <p>接著是吃阿斯匹靈、保栓通這類抗血小板藥的病人出血。直覺上會想「那就補血小板回去吧」——這個直覺，指引明確要你收手。</p>
 <p><strong>血小板輸注</strong>的建議是：不要使用。證據等級 Moderate，建議強度 Weak against。理由很硬：唯一一個 RCT（PATCH 那一類設計）顯示，輸血小板讓第 90 天的死亡或失能反而<strong>增加</strong>，OR 2.04 而且顯著。也就是說，這個看似補回戰力的動作，實際上把病人推向更差的結局。死亡與血腫擴大這兩欄雖然沒到顯著，但方向也都不利。一個會讓病人變糟的介入，沒有理由繼續做。</p>
 <p><strong>去氨加壓素（desmopressin）</strong> 則停在「不確定」。唯一一個小型 RCT（54 人）在各個結局都是中性、沒有訊號，證據等級很低，所以指引的態度是收進 RCT 再看——既不推、也還不到反對。</p>
 <hr>
-<h2>吃抗凝血劑的腦出血：逐藥對應的逆轉</h2>
+<h2 id="bt-s3">吃抗凝血劑的腦出血：逐藥對應的逆轉</h2>
 <p>這一段最需要把劑量與門檻一個個釘清楚，因為不同的抗凝藥，逆轉的武器完全不同。</p>
 <h3>吃 warfarin（維生素 K 拮抗劑）：PCC 加維生素 K</h3>
 <p>對 VKA 相關的腦出血，指引的共識講得很具體：用 <strong>4-factor PCC（凝血酶原複合體濃縮物）</strong>，劑量依 INR 分檔——<strong>INR ≥ 2.0 給 30–50 IU/kg</strong>，<strong>INR 1.3–1.9 給 10 IU/kg</strong>，而且<strong>一律合併靜脈維生素 K 10 mg</strong>（投票 15/15）。</p>
@@ -116,12 +136,12 @@ article, article *{overflow-wrap:break-word}
 <h3>吃 dabigatran（直接凝血酶抑制劑）：idarucizumab 立刻給</h3>
 <p>對 dabigatran 相關的腦出血，共識最乾脆：<strong>立刻用 idarucizumab 2–2.5 g 靜脈注射</strong>，把 dTT（稀釋凝血酶時間）與 ECT（蝮蛇毒凝血時間）正常化（投票 15/15）。它是 dabigatran 的專一抗體片段，2016 年起全球核准。雖然沒有 RCT，但 REVERSE-AD 這個前瞻案例系列裡，53 名腦出血病人全數達到 dTT 或 ECT 正常化的主要終點，前五天也沒有嚴重血栓事件。對這一類病人，逆轉這件事本身爭議不大。</p>
 <hr>
-<h2>把整篇收束成一句話</h2>
+<h2 id="bt-s4">把整篇收束成一句話</h2>
 <p>指引的討論段把這一切收得很坦白：到目前為止，<strong>沒有任何一種止血藥被證明能帶來臨床效益</strong>——所以指引對「改善臨床結局」這件事，一個藥都不敢推薦。它們唯一被建議的角色，是在特定情境下「考慮用來防止血腫擴大」。</p>
 <p>而在防擴大這件事上，各藥的證據強度並不一樣：rFVIIa 只是方向偏好、TXA 在一般自發性腦出血顯著、VKA 相關出血方向偏好 PCC 加維生素 K，而真正有明確顯著效果的是 andexanet alfa 對 Xa 抑制劑相關出血。也正因如此，指引在 Xa 抑制劑這一塊把 andexanet 放在第一位，PCC 只在「andexanet 拿不到」的時候才考慮——因為血腫擴大在早期幾小時風險最高、擴大又跟高死亡綁死，所以哪怕代價是多一點血栓風險，那個能確實壓住擴大的選擇，仍然排在前面。</p>
 <p>擋得住擴大，救不了命運。當這兩件事在同一個病人身上分道揚鑣，醫師要選的，從來不是哪個藥的 OR 比較漂亮，而是這一刻的擴大風險，和那一份血栓代價，到底哪一邊比較等不起。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s5">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>情境</th><th>建議 / 共識</th><th>劑量、門檻與關鍵數字</th></tr></thead>
 <tbody>

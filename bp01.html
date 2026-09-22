@@ -77,6 +77,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/bp01.html">
 </head>
@@ -99,10 +118,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 1 篇</strong>　依據美國耳鼻喉頭頸外科學會 2013 臨床實務指引 Baugh RF, Basura GJ, Ishii LE, et al. Clinical Practice Guideline: Bell's Palsy. <em>Otolaryngol Head Neck Surg</em> 2013;149(3 Suppl):S1-S27. doi:10.1177/0194599813505967</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、第一刀：周邊 vs 中樞——前額是分水嶺</a></li><li><a href="#bt-s2">二、典型 Bell's palsy 的臨床樣貌</a></li><li><a href="#bt-s3">三、嚴重度：House-Brackmann 分級</a></li><li><a href="#bt-s4">四、指引怎麼說：先用病史與理學檢查排除其他原因</a></li><li><a href="#bt-s5">五、不該叫 Bell's palsy 的「紅旗」清單</a></li><li><a href="#bt-s6">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>Bell's palsy（貝爾氏麻痺）是<strong>急性、單側、原因不明的周邊型顏面神經（CN VII）麻痺</strong>，也是急性單側顏面癱瘓最常見的原因，年發生率約每十萬人 15–30 例。它的名字本身就點出核心：這是一個<strong>排除性診斷（diagnosis of exclusion）</strong>——當你叫得出它的名字時，代表你已經把其他會癱掉一張臉的病排掉了。本系列首篇談的，就是這個「排除」的功夫。</p>
 <hr>
-<h2>一、第一刀：周邊 vs 中樞——前額是分水嶺</h2>
+<h2 id="bt-s1">一、第一刀：周邊 vs 中樞——前額是分水嶺</h2>
 <p>面對一張歪掉的臉，臨床上要回答的第一個問題不是「是不是 Bell's palsy」，而是「<strong>這是周邊還是中樞</strong>」。關鍵在前額：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>周邊型（下運動神經元，LMN）</th><th>中樞型（上運動神經元，UMN）</th></tr></thead>
@@ -114,7 +134,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p><strong>前額保留（forehead sparing）＝高度警訊</strong>：這通常代表中樞病灶（如中風），應走急性腦血管路徑，而非當成 Bell's palsy 處理。反之，前額一起癱掉支持周邊型，但「周邊型」不等於「Bell's palsy」——還要再排其他周邊原因。</p>
 <hr>
-<h2>二、典型 Bell's palsy 的臨床樣貌</h2>
+<h2 id="bt-s2">二、典型 Bell's palsy 的臨床樣貌</h2>
 <p>顏面神經不只管表情肌。沿途分支被波及時，會出現一組可預期的伴隨症狀，反而有助於定位在周邊：</p>
 <ul>
 <li><strong>急性發作</strong>：數小時至數日內進展，<strong>72 小時內達到最嚴重</strong></li>
@@ -129,7 +149,7 @@ article, article *{overflow-wrap:break-word}
 <p>進展超過 72 小時仍在惡化、或數週才「慢慢歪」，都不像 Bell's palsy——要往腫瘤等緩慢過程想。</p>
 </blockquote>
 <hr>
-<h2>三、嚴重度：House-Brackmann 分級</h2>
+<h2 id="bt-s3">三、嚴重度：House-Brackmann 分級</h2>
 <p>溝通與追蹤預後時，建議用 House-Brackmann（H-B）分級描述麻痺嚴重度，從 I（正常）到 VI（完全無動作）：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>分級</th><th>描述</th></tr></thead>
@@ -143,7 +163,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>實務上更簡單的二分法也很關鍵：<strong>「完全（complete）vs 不完全（incomplete）麻痺」</strong>——這直接影響預後與後續是否考慮電生理檢查（見第五篇）。</p>
 <hr>
-<h2>四、指引怎麼說：先用病史與理學檢查排除其他原因</h2>
+<h2 id="bt-s4">四、指引怎麼說：先用病史與理學檢查排除其他原因</h2>
 <p>AAO-HNS 2013 指引的第一條行動聲明就是：<strong>臨床醫師應以病史與理學檢查評估病人，以排除可辨識的顏面麻痺原因</strong>。Bell's palsy 的診斷建立在「典型表現 ＋ 沒有紅旗」之上，而不是任何一項特定檢查。</p>
 <p>對應的，指引同時給了兩條「不要」：</p>
 <ul>
@@ -152,7 +172,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>換言之，面對一個典型、急性、單側、前額一起癱、72 小時內到頂、其餘神經學檢查正常的病人，<strong>不需要先衝去抽血或做 MRI</strong>——過度檢查既無助診斷也延誤治療。重點是把該問的紅旗問清楚。</p>
 <hr>
-<h2>五、不該叫 Bell's palsy 的「紅旗」清單</h2>
+<h2 id="bt-s5">五、不該叫 Bell's palsy 的「紅旗」清單</h2>
 <p>以下任一出現，就要跳出 Bell's palsy 的框架，啟動進一步檢查或轉介：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>紅旗</th><th>要想到的鑑別</th></tr></thead>
@@ -168,7 +188,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>下一篇，我們回到病因本身：為什麼一條躲在顳骨裡的神經會突然發炎水腫——HSV 再活化假說與顏面神經管的解剖宿命。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s6">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>重點</th><th>內容</th></tr></thead>
 <tbody>

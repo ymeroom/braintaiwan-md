@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/glp03.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 03 篇</strong>　綜論用了「小型革命」這個詞來形容 GLP-1 受體促效劑對第二型糖尿病治療的影響，而支撐這個評價的是一串試驗名稱：DURATION-1、SUSTAIN 3、PIONEER 2、SURPASS-1、SURPASS-2。這一篇把這條證據鏈按時間順序攤開，並且標出兩處讀的時候會卡住的地方——SURPASS-1 的試驗全名與正文描述對不上，而 DURATION-1 的試驗期別在敘述上顛倒了。</p>
 </blockquote>
-<h2>從一天兩針到一週一針</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 7 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">從一天兩針到一週一針</a></li><li><a href="#bt-s2">加上 GIP 之後的數字</a></li><li><a href="#bt-s3">三重促效劑與兩個新的可能</a></li><li><a href="#bt-s4">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">從一天兩針到一週一針</h2>
 <p><strong>GLP-1 受體促效劑的隨機安慰劑對照試驗提供了強力證據支持它們的使用</strong>——綜論接著加了一句自我評價：<strong>事實上，它們預示了第二型糖尿病治療方式的一場小型革命。</strong></p>
 <p>第一個關鍵比較是同一個藥物的兩種劑型：</p>
 <div class="bt-tablewrap"><table>
@@ -120,7 +140,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>其他更大型試驗</td><td>vs metformin 以外的替代二線治療</td><td>明確支持長效 GLP-1 受體促效劑<strong>較優</strong></td></tr>
 </tbody></table></div>
 <p>PIONEER 2 那一行值得注意：這是一個口服 GLP-1 藥物贏過一個口服 SGLT2 抑制劑的比較，而 SGLT2 抑制劑本身就是近年心腎保護的另一條主線。這一比對照的不只是降糖幅度，也是兩類藥物在二線位置上的競爭。</p>
-<h2>加上 GIP 之後的數字</h2>
+<h2 id="bt-s2">加上 GIP 之後的數字</h2>
 <p>tirzepatide 是分水嶺：<strong>它是第一個核准用於治療第二型糖尿病的 GLP-1 與 GIP 雙重受體促效劑。</strong></p>
 <p>SURPASS-1 的數字是這一篇裡最漂亮的：</p>
 <div class="bt-tablewrap"><table>
@@ -145,7 +165,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>對照胰島素</td><td><strong>三個 tirzepatide 劑量全都優於長效或超長效胰島素</strong>在控制高血糖上的表現</td></tr>
 </tbody></table></div>
 <p>這兩行放在一起讀才完整：tirzepatide 15 mg 贏的是 semaglutide <strong>1.0 mg</strong>；當 semaglutide 加到 <strong>2.0 mg</strong>，兩者就打平了。頭對頭比較裡的劑量對應關係，是這類「誰比較強」的問題唯一有意義的讀法。</p>
-<h2>三重促效劑與兩個新的可能</h2>
+<h2 id="bt-s3">三重促效劑與兩個新的可能</h2>
 <p><strong>retatrutide 是第三代的三重 GLP-1–GIP–glucagon 受體促效劑</strong>，在<strong>一個大型第二期隨機試驗中，於第二型糖尿病參與者身上發揮了極佳的降糖效果，優於安慰劑與 dulaglutide 兩者。</strong></p>
 <p>而綜論由此往前推了兩步，兩步都還沒有落地：</p>
 <p><strong>第一步是糖尿病前期。</strong> 隨著新的雙重與三重促效劑問世，<strong>幾種使用 GLP-1 受體促效劑的新演算法具有潛力</strong>，具體來說是<strong>應用這些藥物來預防糖尿病前期轉變為糖尿病</strong>——而這個轉變<strong>在 3 年期間發生於大約每三個受影響者中的一人</strong>。</p>
@@ -160,7 +180,7 @@ article, article *{overflow-wrap:break-word}
 <p>第 2 階段第一型糖尿病那一段我讀得最保留。神經科遇到的自體免疫疾病都在教同一件事：能改善生理指標，不等於改變了免疫破壞的進程。「逆轉葡萄糖耐受不良」與「保住 beta 細胞」是兩個不同的終點，綜論只寫了前者。</p>
 </blockquote>
 <p>一場被作者稱為小型革命的治療改變，兩個還停在「早期報告」與「具有潛力」的延伸應用，和一個試驗名稱與描述對不上的漂亮數字——血糖只是這類藥物的起點，下一篇要看的是心臟與腎臟那些更硬的終點。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s4">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
 <tbody>

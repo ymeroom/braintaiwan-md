@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/dms03.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 03 篇</strong>　骨幹綜論的 Table 1 把 16 個降糖藥心血管結局試驗的中風風險比排在一起。這張表最有價值的地方，是它讓「哪一類藥能減少中風」這個問題失去模糊空間——答案跟多數人的印象不太一樣。</p>
 </blockquote>
-<h2>先看表</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 3 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">先看表</a></li><li><a href="#bt-s2">這張表說了三件事</a></li><li><a href="#bt-s3">metformin 這個老藥</a></li><li><a href="#bt-s4">為什麼一張表值得單獨寫一篇</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">先看表</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>試驗</th><th>人數</th><th>藥物</th><th>類別</th><th>中位追蹤（年）</th><th>中風 HR（95% CI）</th><th>p</th></tr></thead>
 <tbody>
@@ -119,16 +139,16 @@ article, article *{overflow-wrap:break-word}
 <tr><td>VERTIS CV</td><td>8246</td><td>Ertugliflozin</td><td>SGLT-2i</td><td>3.5</td><td>1.06（0.82–1.37）</td><td>NR</td></tr>
 </tbody></table></div>
 <p>NR = 未報告。* SELECT 收的是過重或肥胖但<strong>沒有糖尿病</strong>的病人。</p>
-<h2>這張表說了三件事</h2>
+<h2 id="bt-s2">這張表說了三件事</h2>
 <p><strong>第一，DPP-4 抑制劑五個試驗，全部沒有顯著效果。</strong> 五個信賴區間全部跨過 1，橫跨 5380 到 16,492 人、追蹤 1.5 到 6.3 年。這不是檢定力不足的問題，是效果不存在。</p>
 <p><strong>第二，SGLT-2 抑制劑四個試驗，也全部沒有顯著效果。</strong> 而且方向不一致——EMPA-REG 的點估計是 1.18、DECLARE 是 1.01、VERTIS 是 1.06，三個大於 1；只有 CANVAS 的 0.87 小於 1。這一點值得停下來想：SGLT-2 抑制劑在心衰竭與腎臟終點上的成績非常好，好到它在 2026 年的 NICE 指引裡被推到第一線；但<strong>在中風這個特定終點上，它沒有拿出證據</strong>。</p>
 <p>綜論的結論寫得直接：DPP-4 抑制劑、SGLT-2 抑制劑與胰島素，看起來都不影響中風的發生率。</p>
 <p><strong>第三，GLP-1 受體促效劑七個試驗，只有兩個顯著。</strong> SUSTAIN-6（semaglutide，HR 0.61）與 REWIND（dulaglutide，HR 0.76）。其餘五個都沒過線，包括同樣是 semaglutide 的 SELECT 與 PIONEER-6。</p>
 <p>所以嚴格地說，這裡有效的不是「GLP-1 這個類別」，而是特定藥物在特定族群與特定追蹤長度下的特定結果。把它讀成類效應（class effect）是過度推論。</p>
-<h2>metformin 這個老藥</h2>
+<h2 id="bt-s3">metformin 這個老藥</h2>
 <p>綜論給的數字是：metformin 單方治療在隨機對照試驗（RR 0.66；95% CI 0.50–0.87；p = 0.004）與世代研究（RR 0.67；95% CI 0.55–0.81；p &lt; 0.0001）中都能降低中風風險，兩種研究設計給出幾乎相同的點估計。</p>
 <p>不過綜論也提醒，這個有利效果在合併治療的情境下並不一致，所以不能直接外推到「metformin 加在任何組合裡都會減少中風」。</p>
-<h2>為什麼一張表值得單獨寫一篇</h2>
+<h2 id="bt-s4">為什麼一張表值得單獨寫一篇</h2>
 <p>心血管結局試驗的主要終點通常是 MACE 這個複合終點——心血管死亡、心肌梗塞、中風三者合一。複合終點顯著，不代表其中每一個成分都顯著；而中風往往是三者中事件數最少、最不容易達到統計顯著的那一個。</p>
 <p>把中風單獨拆出來排成一張表，就是把「這個藥對 MACE 有效」與「這個藥能減少中風」這兩件事分開。對神經科來說，後者才是我們要回答的問題。</p>
 <blockquote class="commentary">

@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/cbm01.html">
 </head>
@@ -96,8 +115,9 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>失智症血液檢測專題</strong>　這兩年市面上突然冒出許多「抽一管血就能知道是不是失智症／阿茲海默症」的檢測，有些甚至開放民眾自費、自行上網下單。它們是真的能診斷失智症，還是行銷話術跑得比證據快？本文從一個臨床醫師的角度，把「檢測在驗什麼」「市面上有哪些」「準確度到底如何」「面對病人詢問時該怎麼說」一次講清楚。本文為臨床導讀，與本站<a href="bbm01.html">阿茲海默症血液生物標記 2025 臨床指引導讀</a>（專科記憶門診適用範圍）互補。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 10 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、先講結論：問題不在「血能不能驗」，而在「宣稱」與「對象」</a></li><li><a href="#bt-s2">二、最常被混淆的一件事：「驗到病理」≠「診斷失智症」</a></li><li><a href="#bt-s3">三、市面上到底有哪些檢測？</a></li><li><a href="#bt-s4">四、哪一種分析物比較可靠？p-tau217 領先，Aβ42/40 較脆弱</a></li><li><a href="#bt-s5">五、為什麼換個對象、準確度就崩盤？貝氏定理在作怪</a></li><li><a href="#bt-s6">六、法規通過 ≠ 可以拿來篩檢無症狀的人</a></li><li><a href="#bt-s7">七、會干擾數值、讓報告失準的因素</a></li><li><a href="#bt-s8">八、面對病人或家屬拿著報告來問，臨床上怎麼說</a></li><li><a href="#bt-s9">臨床要點摘要</a></li><li><a href="#bt-s10">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
-<h2>一、先講結論：問題不在「血能不能驗」，而在「宣稱」與「對象」</h2>
+<h2 id="bt-s1">一、先講結論：問題不在「血能不能驗」，而在「宣稱」與「對象」</h2>
 <p>血液生物標記（blood-based biomarkers, BBM）這幾年的進步是真的——尤其是血漿 <strong>p-tau217</strong>，偵測腦中阿茲海默病理的能力已經逼近腦脊髓液（CSF）與類澱粉蛋白正子造影（amyloid PET）。2025 年，美國 FDA 也首次核准了一項血漿檢測用於協助阿茲海默症診斷。</p>
 <p>問題出在行銷與適用對象之間的落差。許多市售檢測（特別是開放民眾自費、不需症狀即可下單的版本）把訊息簡化成「抽血驗失智症」「一滴血及早發現阿茲海默症」。這句話有兩個根本性的錯誤：</p>
 <ol>
@@ -105,7 +125,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>它們的準確度只在「有症狀、且已進入評估流程」的對象身上成立；換成無症狀的健康人去驗，數字會崩盤。</strong></li>
 </ol>
 <p>把這兩點想清楚，後面的內容就只是把它說細。</p>
-<h2>二、最常被混淆的一件事：「驗到病理」≠「診斷失智症」</h2>
+<h2 id="bt-s2">二、最常被混淆的一件事：「驗到病理」≠「診斷失智症」</h2>
 <p>這是整篇文章最重要的觀念，值得反覆強調。</p>
 <p><strong>失智症（dementia）是一個臨床診斷</strong>：指認知功能（記憶、語言、執行、視空間等）相較於過去明顯退步，且已經影響到日常生活與自理能力。它要靠病史、知情者報告、認知測驗與功能評估才能成立——沒有任何一管血可以單獨告訴你「這個人失智了」。</p>
 <p><strong>血液生物標記驗的是「阿茲海默病理」</strong>：也就是腦中是否有異常堆積的 β 類澱粉蛋白（amyloid）與磷酸化 tau 蛋白。這跟「失智症」是兩件不同層次的事：</p>
@@ -121,7 +141,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>病理陰性 ≠ 沒有失智症。</strong> 失智症的病因很多：血管性、路易氏體、額顳葉退化、常壓性水腦症、藥物、代謝與精神疾病……一份「阿茲海默病理陰性」的血檢，完全無法排除這些其他原因造成的失智。</li>
 </ul>
 <p>所以「抽血驗失智症」這句話，從定義上就是過度宣稱。它頂多能說「抽血評估腦中是否已有阿茲海默病理」，而且還要附上一大堆前提。</p>
-<h2>三、市面上到底有哪些檢測？</h2>
+<h2 id="bt-s3">三、市面上到底有哪些檢測？</h2>
 <p>目前可取得的血漿阿茲海默生物標記檢測，主要圍繞幾種分析物：<strong>p-tau217、%p-tau217、p-tau181、Aβ42/40 比值</strong>，部分加上 <strong>GFAP、NfL</strong>。要分辨手上這份報告的份量，先看兩件事：<strong>測哪個分析物</strong>，以及<strong>法規身分是「FDA 核准」還是「實驗室自建檢測（LDT）」</strong>。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>類型</th><th>代表</th><th>主要分析物</th><th>法規身分</th><th>標示用途</th></tr></thead>
@@ -136,7 +156,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>「FDA 核准」的份量跟「LDT」不同。</strong> FDA 核准代表經過正式審查，且<strong>標示用途寫得很保守</strong>——只用於「已有症狀、正在被評估」的人，而且是<strong>輔助</strong>工具，不是單獨下診斷。多數市售檢測其實是 LDT（實驗室自建檢測），品質與驗證程度差異很大，沒有統一的把關標準。</li>
 <li><strong>最具爭議的是 DTC（直接面對消費者）版本</strong>：開放民眾不經醫師、不需症狀就自行下單。把一個「為有症狀者設計」的工具賣給健康的擔心者，正是下一節要談的「準確度崩盤」問題的溫床。</li>
 </ul>
-<h2>四、哪一種分析物比較可靠？p-tau217 領先，Aβ42/40 較脆弱</h2>
+<h2 id="bt-s4">四、哪一種分析物比較可靠？p-tau217 領先，Aβ42/40 較脆弱</h2>
 <p>不是每個分析物都一樣準：</p>
 <ul>
 <li><strong>p-tau217 / %p-tau217</strong>：目前血漿中表現最好的標記，與 amyloid PET、CSF 的一致性最高，是這波進展的主角。以「比值」或「百分比」呈現（如 %p-tau217、APS2）通常比單一濃度更穩定。</li>
@@ -145,7 +165,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>GFAP、NfL</strong>：反映星狀膠細胞活化與神經軸突損傷，<strong>非阿茲海默專一</strong>，比較適合當輔助或追蹤指標，不能拿來「診斷阿茲海默症」。</li>
 </ul>
 <p>更關鍵的是：即使是同一個分析物，<strong>不同廠牌、不同平台的準確度差很多</strong>。Alzheimer's Association 2025 指引整理數十種市售分析物／平台組合，整體敏感度橫跨約 <strong>49–91%</strong>、特異度約 <strong>62–97%</strong>——也就是說，「血漿 p-tau217」這幾個字本身不保證準確，得看是誰家、哪台儀器、用什麼切點。</p>
-<h2>五、為什麼換個對象、準確度就崩盤？貝氏定理在作怪</h2>
+<h2 id="bt-s5">五、為什麼換個對象、準確度就崩盤？貝氏定理在作怪</h2>
 <p>這是民眾最難直覺理解、卻最致命的一點。一個檢測的「敏感度／特異度」是固定的，但<strong>報告陽性時「真的有病理」的機率（陽性預測值 PPV）會隨著受檢族群的「檢測前機率」而大幅改變</strong>。</p>
 <p>以一個敏感度、特異度都假設為 90% 的不錯檢測為例，套進不同對象：</p>
 <div class="bt-tablewrap"><table>
@@ -158,7 +178,7 @@ article, article *{overflow-wrap:break-word}
 <p>（上表為固定 90%／90% 的示意計算，用來說明趨勢；實際數字隨檢測與族群而異。）</p>
 <p>看出問題了嗎？<strong>同一支檢測，用在記憶門診的症狀病人身上很有用；用在無症狀的健康人身上，每兩個陽性就有一個是錯的。</strong> 而 DTC 自費版瞄準的，正是這群「沒症狀、但很擔心」的人——這也是專家強烈反對把這類檢測當「健檢／篩檢」項目的核心理由。</p>
 <p>反過來說，這類檢測在<strong>低機率族群「陰性」時的排除力（NPV）很高</strong>——這也是為什麼指引把它定位成「初篩排除」工具，而不是「篩檢確診」工具。</p>
-<h2>六、法規通過 ≠ 可以拿來篩檢無症狀的人</h2>
+<h2 id="bt-s6">六、法規通過 ≠ 可以拿來篩檢無症狀的人</h2>
 <p>2025 年美國 FDA 核准 Lumipulse 血漿檢測是一個里程碑，但它的<strong>標示用途寫得很克制</strong>，值得逐字看懂：</p>
 <ul>
 <li>對象限定為<strong>年齡 ≥55 歲、且已出現認知障礙、正在接受阿茲海默症評估</strong>的人；</li>
@@ -166,7 +186,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>沒有</strong>核准用於無症狀者的篩檢，也<strong>沒有</strong>核准當作健康檢查項目。</li>
 </ul>
 <p>換句話說，連最具公信力的那一張核准，講的都是「有症狀、來看病、醫師評估中」。把它延伸成「健康人定期抽血篩失智」，是超出證據與法規範圍的使用。</p>
-<h2>七、會干擾數值、讓報告失準的因素</h2>
+<h2 id="bt-s7">七、會干擾數值、讓報告失準的因素</h2>
 <p>就算對象選對了，下面這些情況也可能讓 BBM 數值偏移，需要謹慎判讀：</p>
 <ul>
 <li><strong>腎功能</strong>：慢性腎臟病、eGFR 下降會墊高血漿 p-tau 等標記，可能造成偽陽性；</li>
@@ -176,7 +196,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>抽血與檢體處理流程（pre-analytics）</strong>：採血管、離心、保存、運送條件都會影響結果，<strong>Aβ42/40 尤其敏感</strong>。</li>
 </ul>
 <p>這也是為什麼「報告數字」不能脫離臨床脈絡單獨解讀——同樣一個陽性，在一位有腎臟病的高齡者身上，意義要打折。</p>
-<h2>八、面對病人或家屬拿著報告來問，臨床上怎麼說</h2>
+<h2 id="bt-s8">八、面對病人或家屬拿著報告來問，臨床上怎麼說</h2>
 <p>把上面的觀念翻譯成門診可用的幾句話：</p>
 <ol>
 <li><strong>先確認「有沒有症狀」。</strong> 無症狀者拿著自費陽性報告來，第一件事是說明：這代表「風險」與「可能已有病理」，不等於「已經失智」，更不需要因此恐慌。</li>
@@ -185,7 +205,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>問清楚是哪一種檢測。</strong> 是 FDA 核准的、還是 LDT？測的是 p-tau217 還是脆弱的 Aβ42/40？這會影響你對這份報告的信任度。</li>
 <li><strong>誠實面對「知道了能怎樣」。</strong> 在已有疾病修飾治療（如抗類澱粉蛋白單株抗體）的時代，確認病理確實更有意義；但對不打算或不適合治療的人，也要尊重「不一定要知道」的選擇。</li>
 </ol>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s9">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
@@ -206,7 +226,7 @@ article, article *{overflow-wrap:break-word}
 <p>我不反對血液生物標記——用在對的人身上（有症狀、已進入評估），它真的能省下不少侵入性檢查，這是進步。我反對的是把它包裝成「抽血驗失智症」的健檢項目，賣給沒症狀、只是擔心的人。<strong>好的工具用錯對象，製造的焦慮往往多過它能提供的答案。</strong> 如果你手上正好有一份這樣的報告，先別急著對號入座——帶著它，找神經科或記憶門診，好好做一次完整評估，比盯著那個數字有用得多。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s10">參考文獻</h2>
 <ol>
 <li>Palmqvist S, Whitson HE, Allen LA, et al. Alzheimer's Association Clinical Practice Guideline on the use of blood-based biomarkers in the diagnostic workup of suspected Alzheimer's disease within specialized care settings. <em>Alzheimer's Dement</em>. 2025;21:e70535. doi:10.1002/alz.70535</li>
 <li>Hansson O, Edelmayer RM, Boxer AL, et al. The Alzheimer's Association appropriate use recommendations for blood biomarkers in Alzheimer's disease. <em>Alzheimers Dement</em>. 2022;18:2669-2686.</li>

@@ -66,6 +66,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/b1205.html">
 </head>
@@ -88,15 +107,16 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 5 篇</strong>　涵蓋 NG239 §1.6 追蹤與後續照護（1.6.1–1.6.14）、§1.7 自體免疫胃炎的胃癌監測（1.7.1–1.7.2）</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、口服病人：先確認有沒有真的在吃</a></li><li><a href="#bt-s2">二、肌注病人：不要重驗初診那個數值</a></li><li><a href="#bt-s3">三、自體免疫胃炎：追蹤裡藏著一條胃癌的線</a></li><li><a href="#bt-s4">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <p>開始補 B12 之後最常被忽略的一句話是：什麼時候該回來看，以及回來要看什麼。NG239 給的預設答案很乾脆——<strong>治療開始後 3 個月安排第一次回診</strong>，這段時間足夠讓治療顯出效果；但症狀嚴重的人可以提早，因為早點看到才有機會及時換藥或調整；而<strong>懷孕或哺乳的人縮短到 1 個月</strong>，因為這時候顧的是兩個人，不能等（1.6.1）。這裡要先講清楚一件事：NG239 這整章是建立在「沒有證據」之上的——委員會找不到哪一種追蹤策略最有效的實證，所以以下所有時程與做法，都是專家共識，不是試驗數據。</p>
 <p>每一次回診，核心動作只有一個：<strong>問症狀</strong>（1.6.2）。改善了沒、有沒有惡化、有沒有冒出新的問題，尤其要問那些嚴重到影響日常生活的症狀。血液數值反而退居次要——這一點在肌注病人身上會變得更明顯，等下會談。接下來的分流，關鍵是兩件事的組合：<strong>病人吃的是口服還是肌注</strong>，以及<strong>缺乏的原因可不可逆、有沒有被解決</strong>。</p>
-<h2>一、口服病人：先確認有沒有真的在吃</h2>
+<h2 id="bt-s1">一、口服病人：先確認有沒有真的在吃</h2>
 <p>口服 B12 的第一次回診，第一件事不是評估療效，而是<strong>確認劑量對不對、有沒有真的照吃</strong>（1.6.3）。這句聽起來像廢話，但它是為了抓出順從性問題——症狀沒改善，可能不是藥不夠力，而是藥根本沒進去。</p>
 <p>確認完之後，照症狀變化分三條路走：</p>
 <p><strong>症狀改善不夠。</strong> 這時候要調整治療，方向有兩個：<strong>把口服劑量加到許可上限</strong>，如果已經是最大劑量了，就<strong>換成肌肉注射</strong>（1.6.4）。要往哪邊走，得把病人的偏好一起算進去。</p>
 <p><strong>症狀惡化或冒出新症狀。</strong> 這是最需要停下來想的一種情況——要<strong>想到別的診斷</strong>，別把所有不對勁都掛在缺 B12 上（1.6.5）。同時，如果這個人當初診斷時沒驗過 <strong>serum MMA 或 plasma homocysteine</strong>，現在可以補驗（MMA 是首選，但不是每個地方都驗得到，驗不到就用 homocysteine）；而且<strong>補驗期間治療要繼續，等結果出來再決定</strong>，免得空窗期症狀惡化（1.6.5–1.6.6）。若結果支持缺乏或結果不確定，就要改治療；反過來，如果驗出來像是缺乏已經不存在、症狀卻還在往上走，那更是要去找別的病因。</p>
 <p><strong>症狀改善、已不影響日常生活。</strong> 這時候要不要繼續，取決於病因（1.6.8–1.6.9）。<strong>病因未解決、或病因不明——繼續口服，並約下次回診</strong>（大約回到原本的回診節奏）；<strong>病因已解決——可以考慮停藥</strong>，因為症狀不太會回來，但一定要衛教病人：症狀若再出現就回來，因為那可能代表缺乏又回來了。</p>
-<h2>二、肌注病人：不要重驗初診那個數值</h2>
+<h2 id="bt-s2">二、肌注病人：不要重驗初診那個數值</h2>
 <p>肌注這邊有一條很容易被忽略、卻很重要的原則：<strong>不要重複初診的那個診斷性檢驗</strong>（1.6.10）。理由很直白——治療本身會干擾檢驗，重驗出來的數字沒辦法真實反映治療到底做得好不好。所以肌注病人的回診，重心要放在<strong>症狀與徵象</strong>，而不是抽血數字。</p>
 <p>分流邏輯和口服類似，但終點不同：</p>
 <p><strong>症狀沒改善、惡化、或有新症狀。</strong> 這通常代表<strong>藥效在下一針之前就退掉了</strong>，處理方式是<strong>依 SPC（藥品仿單）增加注射頻率</strong>；同時一樣要<strong>想到別的診斷</strong>，避免漏掉其他病因、也避免打了不必要的針（1.6.11）。</p>
@@ -104,10 +124,10 @@ article, article *{overflow-wrap:break-word}
 <p><strong>可逆但未解決、或病因不明。</strong> <strong>繼續打，並約下次回診</strong>（1.6.13）。道理和口服那條一樣：在病因被查清楚並解決之前貿然停藥，症狀會回來或惡化。</p>
 <p><strong>病因已解決、症狀也好了。</strong> 這時候才可以<strong>考慮停藥或降低注射頻率</strong>，一樣要衛教復發就回診（1.6.14）。</p>
 <p>把口服和肌注兩邊擺在一起看，會發現真正決定「能不能停」的從來不是劑型，而是同一個問題——<strong>這個缺乏的根，拔掉了沒有</strong>。拔掉了，才有停的空間；沒拔掉或不知道根在哪，就得一路陪著。</p>
-<h2>三、自體免疫胃炎：追蹤裡藏著一條胃癌的線</h2>
+<h2 id="bt-s3">三、自體免疫胃炎：追蹤裡藏著一條胃癌的線</h2>
 <p>到這裡，追蹤的故事還沒講完，因為有一群人的回診裡藏著一條和 B12 無關、卻更要命的線——<strong>自體免疫胃炎</strong>。NG239 特別把它獨立成一節（§1.7）：這類病人<strong>胃神經內分泌瘤（gastric neuroendocrine tumour）的發生率升高，胃腺癌（gastric adenocarcinoma）的風險也可能升高</strong>（1.7.1）。同樣地，這一節背後沒有「監測能改善結局」的證據，委員會是基於經驗，決定把這個風險講出來，讓病人願意主動回報消化道的異常。</p>
 <p>實務上的觸發點很具體：<strong>當自體免疫胃炎的病人出現新的或惡化的上消化道症狀——消化不良、噁心、嘔吐——要考慮轉介胃鏡，並依 NICE 的疑似癌症指引處理</strong>（1.7.2）。換句話說，對這群人來說，一次看似普通的「胃不舒服」，不能只當成胃炎的老毛病帶過。</p>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s4">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>

@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/dmdx05.html">
 </head>
@@ -97,17 +116,18 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 5 篇</strong>　有兩群病人特別容易被分錯型:一種是基因出了問題、卻被當成第 1 或第 2 型的;另一種是懷孕時才浮現的高血糖。前者認出來可能直接換掉整套治療,後者則要把「幾週該驗、用哪一套門檻」分清楚——兩套 GDM 標準混用,是很實際的錯誤。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 3 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、抓住「6 個月」這條線</a></li><li><a href="#bt-s2">二、MODY：看表型，也看家族的垂直傳遞</a></li><li><a href="#bt-s3">三、妊娠糖尿病：早期辨識，和 24–28 週的常規篩檢</a></li><li><a href="#bt-s4">臨床要點摘要（GDM 24–28 週診斷門檻，Table 2.8）</a></li></ol></details><!-- bt-toc:end -->
 <p>單基因糖尿病聽起來罕見，確實也只占糖尿病不到 5%。但它的重點不在比例，而在於<strong>認出來可能整個改變治療與家族諮詢的方向</strong>。</p>
-<h2>一、抓住「6 個月」這條線</h2>
+<h2 id="bt-s1">一、抓住「6 個月」這條線</h2>
 <p>ADA 建議 2.29a 講得很硬：不管病人現在幾歲，只要糖尿病是在<strong>出生後 6 個月內</strong>診斷的，就該做新生兒糖尿病的基因檢測。道理是自體免疫第 1 型幾乎不在 6 個月前發生，而這群極早發病的病人裡，大約 80–85% 找得到單基因病因。</p>
 <p>而且找到病因不只是換個病名。KATP 相關的新生兒糖尿病常牽涉 KCNJ11 或 ABCC8 這兩個基因，其中 30–50% 的人，改用高劑量口服磺醯脲類（sulfonylurea）取代胰島素之後，血糖反而控制得更好——這是診斷直接改寫處方的例子。</p>
-<h2>二、MODY：看表型，也看家族的垂直傳遞</h2>
+<h2 id="bt-s2">二、MODY：看表型，也看家族的垂直傳遞</h2>
 <p>另一種情境是建議 2.29b 指的：兒童或年輕成人，不太像第 1 型也不太像第 2 型，而且家族一代接一代都有糖尿病、像自體顯性遺傳，那就該驗青少年成年型糖尿病（MODY）。MODY 典型在 25 歲前發病，核心是胰島素分泌受損、但胰島素作用幾乎正常，一路自體顯性傳下來。</p>
 <p>基因亞型同樣決定用藥。三種最常見的 MODY 裡，GCK-MODY 在非孕期通常根本不需要治療；HNF1A-MODY 和 HNF4A-MODY 則對磺醯脲類敏感，直接拿它當第一線。</p>
-<h2>三、妊娠糖尿病：早期辨識，和 24–28 週的常規篩檢</h2>
+<h2 id="bt-s3">三、妊娠糖尿病：早期辨識，和 24–28 週的常規篩檢</h2>
 <p>懷孕這邊有兩個時間點。第一個是<strong>早期</strong>：依建議 2.31，15 週前對有風險因子的孕婦（Table 2.5）先驗有沒有未診斷的糖尿病，也可以考慮全部都驗；這一關同時會篩出「異常糖代謝」——A1C 5.9–6.4%（41–47 mmol/mol），或空腹血糖 110–125 mg/dL（6.1–6.9 mmol/L）。第二個是<strong>常規</strong>：先前沒查出糖尿病的孕婦，建議 2.32 要在 24–28 週篩妊娠糖尿病（GDM）。</p>
 <p>到了 24–28 週這關，有一步法和兩步法兩條路，負荷劑量、要不要空腹、抽幾次、怎麼算陽性都不一樣——這正是最容易把兩套標準混用的地方。</p>
-<h2>臨床要點摘要（GDM 24–28 週診斷門檻，Table 2.8）</h2>
+<h2 id="bt-s4">臨床要點摘要（GDM 24–28 週診斷門檻，Table 2.8）</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>方法</th><th>做法</th><th>門檻（任一達標即診斷）</th></tr></thead>
 <tbody>

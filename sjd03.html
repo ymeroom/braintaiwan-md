@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/sjd03.html">
 </head>
@@ -97,12 +116,13 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 03 篇</strong>　乾眼這一節的系統性回顧撈出 1083 篇，最後只留下 26 篇，而指引自己承認：<strong>very few looking exclusively at SD-related dry eye</strong>。也就是說，接下來所有的建議幾乎都建立在「一般乾眼族群」的證據上。這一篇把從潤滑劑到血清眼藥水的階梯走一遍，並標出那條 SOA 只有 84.5% 的建議——它是整份指引裡工作小組最不同意的一條。</p>
 </blockquote>
-<h2>先把 SD 的乾眼拆成三件事</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 11 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">先把 SD 的乾眼拆成三件事</a></li><li><a href="#bt-s2">潤滑劑：第一線，但沒有哪一種被證明比較好</a></li><li><a href="#bt-s3">血清眼藥水：兩份統合分析，結論不一樣</a></li><li><a href="#bt-s4">局部類固醇：小到中度，而且要短期</a></li><li><a href="#bt-s5">免疫調節眼藥水：ciclosporin 之外，英國幾乎都拿不到</a></li><li><a href="#bt-s6">瞼板腺：熱敷拿到 A，儀器拿到 84.5%</a></li><li><a href="#bt-s7">剩下四個項目</a></li><li><a href="#bt-s8">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">先把 SD 的乾眼拆成三件事</h2>
 <p>指引特別在正式文獻回顧之外加了一段提醒，因為把 SD 的乾眼當成「淚水不夠」會漏掉一半的問題。</p>
 <p>它的組成是三層：<strong>水液性淚液不足</strong>（aqueous tear deficiency）、<strong>瞼板腺功能障礙</strong>（meibomian gland dysfunction），以及<strong>表面發炎</strong>。有效的處置必須同時處理水液與瞼板腺的不足，並治療表面發炎。</p>
 <p>然後是那句每個看乾眼的人都該記住的話：<strong>Frequently, symptoms outweigh the signs</strong>——症狀常常大於徵象。而更重要的是最後一句：<code>Some individuals have corneal neuropathic pain that does not resolve with these treatments</code>。有一部分人的痛是角膜神經病變性疼痛，把上面三層全部治好也不會消失。</p>
 <p>環境的部分有具體數字。低濕度會加速淚液蒸發，英國健康安全署（UKHSE）建議工作場所相對濕度應在 <strong>40% 到 70%</strong> 之間，而<strong>低於 20% 時連健康的工作者都會開始出現乾眼問題</strong>。至於點藥頻率，證據指向 <strong>2–3 小時一次</strong>為最佳。</p>
-<h2>潤滑劑：第一線，但沒有哪一種被證明比較好</h2>
+<h2 id="bt-s2">潤滑劑：第一線，但沒有哪一種被證明比較好</h2>
 <p>Cochrane 回顧納入 <strong>43 篇 RCT、3497 名</strong>乾眼受試者。結論是潤滑眼藥水整體安全、療效相近，能一致改善眼部症狀；最常見的不良事件是視力模糊、眼部不適與異物感。但試驗設計與報告的不一致造成高偏誤風險，<strong>沒有辦法指認出哪一種配方優於其他</strong>。</p>
 <p>較新的一篇系統性回顧納入 <strong>64 篇</strong>，給出的操作細節比較實用：</p>
 <ul>
@@ -117,19 +137,19 @@ article, article *{overflow-wrap:break-word}
 <p>組合的部分有幾條可以直接用：sodium hyaluronate 併用 carboxymethylcellulose 比兩者單用都有效；HA 與 sodium hyaluronate 加入 trehalose 有益；輔酶 Q10 可增強 HA 的效果。</p>
 <p>指引最後給了一段罕見的「我們實際上都怎麼開」：白天用含 sodium hyaluronate 的藥水、晚上用眼藥膏；carmellose 基底的藥水可能有較好的停留時間；含 polyvinyl alcohol 或含脂質的複方藥水有助於穩定淚膜。後面接著兩句很務實的提醒——<strong>一律開無防腐劑</strong>，以及配方經常變動、有些藥水會短時間內停供，要準備好替換，而替換時仍要確保是無防腐劑的選項。</p>
 <p><strong>Advise regular use of a preservative free lubricating eye drop (e.g. 2–3 hourly) (1, A) (SOA 94.4%)</strong></p>
-<h2>血清眼藥水：兩份統合分析，結論不一樣</h2>
+<h2 id="bt-s3">血清眼藥水：兩份統合分析，結論不一樣</h2>
 <p>血液衍生的眼藥水分自體（自身周邊血液製備，如自體血清、富血小板血漿、血小板溶解液）與異體（捐贈者來源，如異體周邊血清、臍帶血清）。一份先導研究比較兩者，療效與耐受性相當。</p>
 <p>第一份系統性回顧與統合分析納入 <strong>19 篇、729 人</strong>，其中 10 篇比較自體血清與潤滑眼藥水。結果是 OSDI 與 TBUT 有<strong>改善的趨勢</strong>，但 Schirmer 與螢光染色兩組無差異。</p>
 <p>較新的一份只收 RCT——<strong>7 篇、267 人</strong>——結論就硬了：自體血清眼藥水相較潤滑眼藥水，在 <strong>OSDI、TBUT 與 Rose Bengal 染色分數</strong>上有統計顯著的改善，且使用者回報較好的症狀緩解。Schirmer 與螢光染色仍然沒有差異。</p>
 <p>同一個介入、兩份統合分析，差別在納入標準。這也是為什麼建議寫成「在傳統眼藥水最大化處置後仍有持續症狀者」才使用。</p>
 <p><strong>Autologous or allogeneic serum eye drops may be offered to individuals with ongoing symptoms despite maximal management with conventional eye drops (1, A) (SOA 91.9%)</strong></p>
 <p>指引另外註明：在英國，血清眼藥水僅能透過專門中心依 NHS 政策取得。</p>
-<h2>局部類固醇：小到中度，而且要短期</h2>
+<h2 id="bt-s4">局部類固醇：小到中度，而且要短期</h2>
 <p>Cochrane 針對乾眼疾病局部皮質類固醇的回顧納入 <strong>22 篇 RCT、4169 名</strong>受試者。相較單用潤滑劑，結果是：病人回報症狀有<strong>小到中度</strong>改善、角膜染色分數有小到中度改善、TBUT 略增，但<strong>淚液滲透壓沒有變化</strong>。</p>
 <p>loteprednol etabonate（LE）的 16 篇研究（14 篇前瞻、2 篇回溯）顯示它能降低發炎徵象而<strong>不造成臨床顯著的眼壓上升</strong>。還有一個實用細節：<strong>先用 LE 前置處理可以減少之後點 ciclosporin 時的刺痛感</strong>。</p>
 <p>最直接的比較是一份 40 人的隨機臨床試驗，對象是 SD 相關乾眼，比較 fluorometholone 0.1% 與 ciclosporin 0.05% 眼藥水。八週後<strong>兩者都</strong>降低了角膜螢光染色與 OSDI，並增加結膜杯狀細胞密度；差別在起效速度——<strong>fluorometholone 在第 4 週就有效益，但第 8 週兩組沒有顯著差異</strong>。</p>
 <p><strong>Topical steroid eye drops, under ophthalmic supervision, may be offered short term to individuals with ongoing persistent inflammation despite maximal management with conventional eye drops (1, A) (SOA 94.9%)</strong></p>
-<h2>免疫調節眼藥水：ciclosporin 之外，英國幾乎都拿不到</h2>
+<h2 id="bt-s5">免疫調節眼藥水：ciclosporin 之外，英國幾乎都拿不到</h2>
 <p>局部免疫調節藥物的系統性文獻回顧納入 <strong>26 篇試驗，其中 24 篇為 RCT</strong>，涵蓋 ciclosporin、diquafosol、lifitegrast 與 rebamipide，而它發現<strong>各研究回報的結果彼此不一致</strong>。</p>
 <p>ciclosporin 的具體樣貌是這樣：一份 ciclosporin 乳劑研究顯示乾燥顯著改善，<strong>另外兩份沒有</strong>。在三份收納不同成因水液性乾眼的研究中，ciclosporin 組的角膜染色與 Schirmer 分數顯著改善，其中一份也顯示 TBUT 顯著改善。但<strong>在收納蒸發型乾眼的研究中，改善的幅度較不明顯</strong>。</p>
 <p>兒童的部分：ciclosporin 眼藥水可基於角結膜炎的療效，在 4 歲以上兒童與青少年 off-label 使用，但<strong>jSD 沒有任何已發表的研究</strong>。</p>
@@ -144,7 +164,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>Diquafosol</td><td>九篇 RCT 的統合分析：Schirmer、螢光染色與 TBUT 皆顯著優於對照</td><td>日本可用；日本指引亦依成人資料推薦用於 jSD</td></tr>
 </tbody></table></div>
 <p><strong>Topical ciclosporin eye drops, under ophthalmic supervision, may be indicated for those with persistent surface inflammation despite maximal management with conventional eye drops (1, B) (SOA 94.9%)</strong></p>
-<h2>瞼板腺：熱敷拿到 A，儀器拿到 84.5%</h2>
+<h2 id="bt-s6">瞼板腺：熱敷拿到 A，儀器拿到 84.5%</h2>
 <p>瞼板腺功能障礙（MGD）的實證治療系統性回顧找出 35 篇文章，結論是<strong>八種標準治療形式全部對 MGD 有效</strong>——自行施作的眼瞼熱敷、熱脈動治療、脈衝光、瞼板腺探針、抗生素、含脂質眼藥水與 perfluorohexyloctane——只是臨床改善的幅度不一。</p>
 <p><strong>熱敷</strong>的證據最乾淨：八篇研究（五篇 RCT、三篇非隨機）全部顯示在症狀與淚膜指標上達成臨床改善。建議因此很直接：</p>
 <p><strong>Advise a heated eyelid compress for at least 10 min daily (1, A) (SOA 94.9%)</strong></p>
@@ -152,12 +172,12 @@ article, article *{overflow-wrap:break-word}
 <p>三者的共同建議是整份指引裡最微妙的一條：</p>
 <p><strong>Lipiflow, IPL therapy and meibomian gland probing are not currently NHS funded as treatments within the UK. There is currently insufficient evidence to recommend their routine use. However, these procedures are safe with, in some cases, weak evidence of benefit in dry eye and individuals may decide to undergo these treatments in the private sector (2, C) (SOA 84.5%)</strong></p>
 <p>SOA <strong>84.5%</strong> —— 這是本系列目前為止看到最低的同意度，而收錄門檻是 80%。這條建議差一點就進不了指引。它的內容也確實不尋常：先說證據不足以推薦常規使用，再說這些處置是安全的，最後說病人可以自己決定去自費做。</p>
-<h2>剩下四個項目</h2>
+<h2 id="bt-s7">剩下四個項目</h2>
 <p><strong>抗生素。</strong> 針對合併瞼板腺功能障礙或眼瞼炎之乾眼疾病的抗生素治療回顧納入 22 篇。口服與局部抗生素都造成<strong>短期</strong>改善，但<strong>停藥後改善無法維持</strong>，證據不足以推薦長期使用。建議是可短期給予具抗發炎作用的口服或局部抗生素 (2, B) (SOA 92.3%)。</p>
 <p><strong>含脂質眼藥水。</strong> 2012 年的系統性回顧納入三篇脂質體眼噴霧與四篇含脂質眼藥水研究。<strong>沒有一篇沒有偏誤</strong>，只有三篇是雙盲。所有受試者都回報症狀改善，但其中兩篇的改善是短暫的；五篇測量 TBUT 的研究中有四篇改善。建議為輔助治療 (2, C) (SOA 90.2%)。</p>
 <p><strong>淚點栓塞。</strong> Cochrane 回顧納入 18 篇試驗、711 人，整體結論是<strong>效益證據不確定</strong>，儘管個別研究提示淚點塞可能改善症狀。專家意見是它在特定情況下適用，但<strong>在某些情況下可能讓角膜表面發炎惡化</strong>，病人選擇很重要。建議 (1, C) SOA 96.3%——注意這是強度 1 但證據 C，也就是第 01 篇提過的那個組合。</p>
 <p><strong>雄性素補充。</strong> 七篇研究全部很小（10–62 人），多數收納不同成因的乾眼，其中三篇是 RCT。五篇使用含 1–5% 睪固酮的補充藥膏塗抹於皮膚，一篇用口服 DHEA 膠囊，一篇用含 DHEA 的眼藥水。<strong>六篇在 2–4 週的短期研究期間顯示益處，唯一一篇純 SD 族群的研究顯示無益處</strong>，而所有研究都太短，無法評估長期效益。結論是證據不足以推薦 (2 C) (SOA 96.3%)。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s8">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>指引實際說法</th></tr></thead>
 <tbody>

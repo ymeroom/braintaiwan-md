@@ -66,6 +66,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/nmdar04.html">
 </head>
@@ -88,27 +107,28 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 4 篇</strong>　以 Abboud 2021 最佳實務劑量與 Titulaer 2013 世代治療數據為主軸 這個病的治療其實只有一句口訣：先把第一線打滿、把腫瘤找出來拿掉，然後盯著時鐘——兩到四週沒有像樣的反應，就升級。這一篇把每一格劑量、每一個切點、每一筆世代數字攤開來講。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、第一線：三種武器，加上一把外科刀</a></li><li><a href="#bt-s2">二、有沒有畸胎瘤，反應差很多</a></li><li><a href="#bt-s3">三、計時器：2–4 週沒反應就升級</a></li><li><a href="#bt-s4">四、第二線：rituximab 與 cyclophosphamide</a></li><li><a href="#bt-s5">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>抗 NMDA 受體腦炎是少數「治對了就會好」的腦炎，但好不好，很大一部分押在前面那幾週做了什麼。它是抗體媒介、而且可逆的病——抗體把神經元表面的 NMDA 受體交聯、內化，受體一少症狀就出來；只要把抗體壓下去、把製造抗體的源頭（畸胎瘤）拿掉，受體會回來，人也會回來。所以治療的邏輯不是「選一種藥」，而是一套有先後、有時間切點的流程：第一線打滿、腫瘤拿掉、計時觀察、必要時升級第二線。</p>
-<h2>一、第一線：三種武器，加上一把外科刀</h2>
+<h2 id="bt-s1">一、第一線：三種武器，加上一把外科刀</h2>
 <p>第一線免疫治療有三條路，劑量與療程都很具體（Abboud 2021 最佳實務建議）。</p>
 <p>第一條是<strong>高劑量靜脈注射 methylprednisolone</strong>，1 g/day，連續打 3–7 天，把急性發炎先壓下來。第二條是<strong>靜脈免疫球蛋白（IVIg）</strong>，總劑量 2 g/kg、分 2–5 天給完，最常見的給法就是 0.4 g/kg/day 連打 5 天。第三條是<strong>血漿置換（PLEX）</strong>，做 5–10 次、隔日一次，把血裡的抗體洗掉。</p>
 <p>這三種常常不是單選題。Titulaer 2013 的世代裡，最常見的組合就是<strong>類固醇＋IVIg</strong>（佔接受第一線者的 44%）；單看各成分使用比例，類固醇 84%、IVIg 69%、血漿置換 33%。</p>
 <p>但第一線真正的第四把武器，是手術。這個病有相當比例是畸胎瘤觸發的，把腫瘤拿掉等於關掉抗體工廠——所以指引把「腫瘤切除」和免疫治療綁在一起算作第一線處置。這一點，下一段的數字會講得很白。</p>
-<h2>二、有沒有畸胎瘤，反應差很多</h2>
+<h2 id="bt-s2">二、有沒有畸胎瘤，反應差很多</h2>
 <p>第一線到底有沒有用？Titulaer 2013 給的整體數字是：501 例可評估的病人裡，<strong>94%（472/501）接受了第一線免疫治療或腫瘤切除</strong>；其中<strong>53%（251/472）在 4 週內就改善</strong>。換句話說，第一線打下去，大約一半的人四週內會動。</p>
 <p>但「一半」這個平均值底下，藏著一條很重要的分線——有沒有畸胎瘤。對第一線治療<strong>加上手術</strong>的反應率，<strong>有畸胎瘤者約 80%、無畸胎瘤者約 48%</strong>。差了三十幾個百分點。原因不難理解：畸胎瘤是看得見、拿得掉的抗原來源，切掉它就斷了源頭；找不到腫瘤的人，免疫攻擊從哪來、怎麼停，本來就更難拿捏。</p>
 <p>這也呼應更早的 Dalmau 2008 觀察——100 例中 75 人恢復或僅輕微缺損、25 人嚴重缺損或死亡，而<strong>早期接受腫瘤治療＋免疫治療的人，預後較佳、復發較少</strong>。早、找腫瘤、一起治，這三件事從十幾年前就是同一個方向。</p>
-<h2>三、計時器：2–4 週沒反應就升級</h2>
+<h2 id="bt-s3">三、計時器：2–4 週沒反應就升級</h2>
 <p>第一線打下去之後，最關鍵的動作不是換藥，而是看時鐘。</p>
 <p>升級第二線的時機，Abboud 2021 給了一個很乾脆的切點：<strong>把第一線治療最佳化之後，2–4 週仍然沒有有意義的反應，就升級</strong>。重點在「最佳化」三個字——不是隨便打一輪沒反應就跳，而是該給的劑量、該找的腫瘤都到位了，再用兩到四週這個窗口判斷。</p>
 <p>實務上大家什麼時候升級，其實有分歧。專家調查顯示：<strong>50% 的人要等多種第一線藥物都失敗才加第二線、32% 一種失敗就加、15% 一開始就常規併用</strong>。同一個病、同一份指引，升級的板機鬆緊差很多——這也說明「2–4 週」是個原則，不是鐵律。</p>
-<h2>四、第二線：rituximab 與 cyclophosphamide</h2>
+<h2 id="bt-s4">四、第二線：rituximab 與 cyclophosphamide</h2>
 <p>升級之後，主力是兩種藥（Abboud 2021）。</p>
 <p><strong>rituximab</strong> 的給法有兩種：375 mg/m² 每週一次、共 4 週；或者 1000 mg 兩劑、間隔 2 週。<strong>cyclophosphamide</strong> 則是 600–1000 mg/m²。真正難治、這兩種都壓不住的，文獻上還會再往後考慮 bortezomib、tocilizumab 這類更後線的選項。</p>
 <p>第二線實際用得多嗎？Titulaer 2013 的數字是：<strong>27%（134/501）接受了第二線</strong>（rituximab、cyclophosphamide 或兩者），其中 rituximab 20%、cyclophosphamide 16%。也就是說，大約四分之一的病人最後走到了升級這一步。</p>
 <p>升級值不值得？這是 Titulaer 2013 最有說服力的一筆數據。在<strong>第一線失敗的人</strong>當中，有 57% 接受了第二線，而<strong>接受第二線者的預後明顯比沒接受的好（OR 2.69）</strong>；這群升級的病人裡，<strong>84/125（67%）達到良好預後</strong>。所以「第一線沒效就放棄」是錯的——第一線失敗恰恰是該升級、而且升級會有回報的時刻。</p>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s5">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>項目</th><th>內容</th><th>來源</th></tr></thead>
 <tbody>

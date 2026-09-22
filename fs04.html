@@ -77,6 +77,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/fs04.html">
 </head>
@@ -99,10 +118,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 4 篇</strong>　根據美國神經學學會（AAN）2025 功能性癲癇發作實踐指引執行摘要．對應 Recommendation 5 Tolchin B, Goldstein LH, Reuber M, et al. <em>Neurology</em> 2026;106:e214466</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、系統性回顧的範疇</a></li><li><a href="#bt-s2">二、核心療效結論（整體心理介入）</a></li><li><a href="#bt-s3">三、認知行為治療（CBT）次分析</a></li><li><a href="#bt-s4">四、兩個重要限制</a></li><li><a href="#bt-s5">五、家庭與照護者的角色</a></li><li><a href="#bt-s6">六、指引的臨床建議（Recommendation 5）</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>功能性癲癇發作的治療核心是心理介入——這不是憑直覺的推論，而是系統性回顧 12 項研究後得出的實證結論。AAN 指引以 GRADE 方法學評估現有證據，提供了目前最完整的療效分析。本文逐一檢視各介入的實證強度，以及臨床醫師該如何依指引推薦患者接受治療。</p>
 <hr>
-<h2>一、系統性回顧的範疇</h2>
+<h2 id="bt-s1">一、系統性回顧的範疇</h2>
 <p>指引搜尋 Medline、Embase、PsychINFO、CINAHL 四大資料庫，涵蓋至 2025 年 2 月的文獻，最終納入 <strong>12 項 Class II–III 研究</strong>。評估的心理介入包括：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>介入類型</th><th>代表研究</th></tr></thead>
@@ -117,7 +137,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>錄影回饋心理治療</td><td>Aboukasm 1998</td></tr>
 </tbody></table></div>
 <hr>
-<h2>二、核心療效結論（整體心理介入）</h2>
+<h2 id="bt-s2">二、核心療效結論（整體心理介入）</h2>
 <blockquote>
 <p>指引對所有結論的確信度（confidence）多為「低」或「極低」，主因是納入研究多屬 Class III。「possibly effective（可能有效）」即反映此一證據強度。</p>
 </blockquote>
@@ -139,7 +159,7 @@ article, article *{overflow-wrap:break-word}
 <li>「憂鬱」信賴區間跨越零值，<strong>證據不足以下定論</strong>。</li>
 </ul>
 <hr>
-<h2>三、認知行為治療（CBT）次分析</h2>
+<h2 id="bt-s3">三、認知行為治療（CBT）次分析</h2>
 <p>因介入異質性高，指引另針對<strong>唯一有多項研究支持</strong>的功能性癲癇發作特異性 CBT 進行次分析：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>結果指標</th><th>結果</th><th>確信度</th></tr></thead>
@@ -152,13 +172,13 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>CBT 是目前研究數量最多的單一模式，代表方案包括 Goldstein 等人的 CODES 方案（12 次、4–5 個月）。</p>
 <hr>
-<h2>四、兩個重要限制</h2>
+<h2 id="bt-s4">四、兩個重要限制</h2>
 <ol>
 <li><strong>缺乏長期資料</strong>：所有研究追蹤時間<strong>皆不超過 1 年</strong>。這是與患者溝通時必須誠實告知的局限。</li>
 <li><strong>證據等級偏低</strong>：多為 Class III 研究，故結論多以「possibly（可能）」表述。</li>
 </ol>
 <hr>
-<h2>五、家庭與照護者的角色</h2>
+<h2 id="bt-s5">五、家庭與照護者的角色</h2>
 <p>治療成效取決於社會支持網絡的參與：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>建議</th><th>內容</th><th>層級</th></tr></thead>
@@ -167,7 +187,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>5E</td><td>兒童患者的心理治療<strong>必須</strong>納入家庭</td><td>Level B</td></tr>
 </tbody></table></div>
 <hr>
-<h2>六、指引的臨床建議（Recommendation 5）</h2>
+<h2 id="bt-s6">六、指引的臨床建議（Recommendation 5）</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>建議</th><th>內容</th><th>層級</th></tr></thead>
 <tbody>

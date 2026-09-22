@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/miga05.html">
 </head>
@@ -98,8 +117,9 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 5 篇</strong>　前四篇談的是「一般發作怎麼選藥」。最後一篇，處理最棘手的場景：一場<strong>拖過 72 小時、怎麼吃都壓不下來</strong>的偏頭痛重積（status migrainosus），以及第一線藥失敗後的<strong>急救（rescue）武器</strong>。我們也會把 <strong>孕婦、兒童、老年</strong> 這些特殊族群的用藥眉角一次講清楚，最後再把「每週 ≤ 2 天」這條紅線釘牢。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、偏頭痛重積（status migrainosus）：點滴室裡的硬仗</a></li><li><a href="#bt-s2">二、急救（rescue）藥物：第一線失敗後的後手</a></li><li><a href="#bt-s3">三、特殊族群：誰能用、誰不能用</a></li><li><a href="#bt-s4">四、再釘一次紅線：每週 ≤ 2 天</a></li><li><a href="#bt-s5">臨床要點摘要</a></li><li><a href="#bt-s6">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
-<h2>一、偏頭痛重積（status migrainosus）：點滴室裡的硬仗</h2>
+<h2 id="bt-s1">一、偏頭痛重積（status migrainosus）：點滴室裡的硬仗</h2>
 <p>當一次偏頭痛<strong>持續超過 72 小時、且一般急性藥都無效</strong>時，稱為「偏頭痛重積」。這是急診／住院場景，指引給的策略是組合拳：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>角色</th><th>藥物</th><th>等級／說明</th></tr></thead>
@@ -113,7 +133,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>要點：<strong>「類固醇＋補液」是重積的第一線</strong>；類固醇的另一個價值是<strong>降低頭痛在數天內復發</strong>。鎂則對<strong>有先兆或低血鎂</strong>的病人特別值得一試。</p>
 <hr>
-<h2>二、急救（rescue）藥物：第一線失敗後的後手</h2>
+<h2 id="bt-s2">二、急救（rescue）藥物：第一線失敗後的後手</h2>
 <p>當第一線藥無效、或病人有禁忌時，才動用的「後手」。這次指引對幾支藥的定位做了重要調整：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>等級</th><th>2022 版定位</th></tr></thead>
@@ -129,7 +149,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>鴉片類盡量避免</strong>：單純口服 tramadol 缺乏良好試驗、IV tramadol 與 morphine 證據不足，且有依賴與 MOH 風險，<strong>不建議常規用於偏頭痛</strong>；tramadol/acetaminophen 複方只在其他藥無效後當急救。</li>
 </ul>
 <hr>
-<h2>三、特殊族群：誰能用、誰不能用</h2>
+<h2 id="bt-s3">三、特殊族群：誰能用、誰不能用</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>族群</th><th>建議用藥</th><th>應避免</th></tr></thead>
 <tbody>
@@ -143,7 +163,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>老年與心血管族群</strong>要避開會收縮血管的 triptan／ergotamine，這也是為什麼第四篇的 <strong>gepants/ditans 未來對這群人特別重要</strong>。</li>
 </ul>
 <hr>
-<h2>四、再釘一次紅線：每週 ≤ 2 天</h2>
+<h2 id="bt-s4">四、再釘一次紅線：每週 ≤ 2 天</h2>
 <p>整個系列的收尾，回到那條最容易被忽略、卻最重要的原則：</p>
 <blockquote>
 <p><strong>任何急性治療藥物，原則上每週使用不宜超過 2 天。</strong></p>
@@ -154,7 +174,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>急性治療與預防治療，從來不是二選一，而是一起把偏頭痛管好的兩條腿。</strong></li>
 </ul>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s5">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>2022 台灣指引重點</th></tr></thead>
 <tbody>
@@ -177,7 +197,7 @@ article, article *{overflow-wrap:break-word}
 <p>最後，<strong>孕婦</strong>永遠是最讓人謹慎的一群——記住「<strong>普拿疼能用、麥角胺絕對不行</strong>」這條底線，就能避開大多數地雷。而那條貫穿五篇的紅線「<strong>每週別超過兩天</strong>」，請容我再講最後一次：<strong>它決定的不只是這一次發作，而是病人未來會不會變成天天都痛的人。</strong></p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s6">參考文獻</h2>
 <ol>
 <li>Lau CI, Wang YF, and the Treatment Guideline Subcommittee of the Taiwan Headache Society. 2022 Taiwan Guidelines for Acute Treatment of Migraine. <em>Acta Neurol Taiwan</em> 2022;31:89-112.</li>
 <li>Orr SL, Friedman BW, Christie S, et al. Management of adults with acute migraine in the emergency department: the American Headache Society evidence assessment of parenteral pharmacotherapies. <em>Headache</em> 2016;56:911-940.</li>

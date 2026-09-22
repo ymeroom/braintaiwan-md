@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/lsvd05.html">
 </head>
@@ -97,8 +116,9 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 5 篇</strong>　第二個主角上場，畫面完全翻轉。如果說狹窄和 cSVD 幾乎沾不上邊，那基底動脈擴張就是另一個極端——它和腔隙亞型、和幾乎每一個 cSVD marker、和一年的進展，全都綁在一起。這篇看它強到什麼程度，也看一個一定要守住的解讀分寸：影像上綁得再緊，都不等於一年內臨床會惡化。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">幾乎命中每一個 cSVD marker</a></li><li><a href="#bt-s2">更關鍵的是：它會往前走</a></li><li><a href="#bt-s3">不是切點的巧合：連續管徑也同向</a></li><li><a href="#bt-s4">一定要守住的分寸：影像進展 ≠ 一年臨床惡化</a></li></ol></details><!-- bt-toc:end -->
 <p>換個主角，故事整個反過來。229 人裡 <strong>36 人（15.7%）有基底動脈擴張（BADE）</strong>。和狹窄相反，<strong>BADE 在腔隙中風比非腔隙更常見：29/131（22.1%）對 7/98（7.1%）</strong>，校正後與腔隙亞型<strong>強相關——OR 4.67（95% CI 1.87–13.14）</strong>。一個 OR 0.49、一個 OR 4.67，兩個大血管表型站在光譜的兩端，這就是全篇最核心的對比。</p>
-<h2>幾乎命中每一個 cSVD marker</h2>
+<h2 id="bt-s1">幾乎命中每一個 cSVD marker</h2>
 <p>BADE 不只偏向腔隙亞型，它幾乎把 cSVD 的整組影像特徵都掃了一遍。校正人口學與血管危險因子後，基線時 BADE 與以下全部相關：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>cSVD marker</th><th>BADE 的效應量（95% CI）</th></tr></thead>
@@ -111,12 +131,12 @@ article, article *{overflow-wrap:break-word}
 <tr><td>腦體積（萎縮）</td><td>無關聯</td></tr>
 </tbody></table></div>
 <p>對照之下，LAS 在同一組分析裡幾乎全數落空——這就是第三篇「狹窄與 cSVD 無關」的另一面。BADE 唯一沒碰到的是腦萎縮，這個「缺口」其實有意義：它暗示 BADE 連結的是<strong>血管性的小血管損傷</strong>，而不是廣泛的神經退化。</p>
-<h2>更關鍵的是：它會往前走</h2>
+<h2 id="bt-s2">更關鍵的是：它會往前走</h2>
 <p>橫斷面的關聯還可能被反向因果或殘餘干擾質疑，但縱向資料把 BADE 的角色鎖得更死。一年追蹤時，<strong>BADE 與所有 cSVD marker 依然相關，並且和 WMH 進展相關（β 0.15，95% CI 0.01–0.29，per log10 體積）</strong>。也就是說，有 BADE 的人，白質病變在一年內是<strong>繼續擴張</strong>的。</p>
 <p>incident 梗塞也同向：<strong>BADE 與新發梗塞相關（OR 2.29，95% CI 1.01–5.14）、與較多的梗塞數相關（β 0.97，95% CI 0.51–1.42）</strong>，而這些新病灶 75–86% 是皮質下的。第四篇提過，皮質下 incident 梗塞和 BADE 綁在一起（86% vs 67.5%），腦幹／橋腦受累也在 BADE 較多（16.3% vs 5.8%）——後者呼應了「迂曲的基底動脈對橋腦穿通支施壓」的機轉，第六篇會展開。</p>
-<h2>不是切點的巧合：連續管徑也同向</h2>
+<h2 id="bt-s3">不是切點的巧合：連續管徑也同向</h2>
 <p>會不會 BADE 這個二元判定，只是切點訂得剛好？作者早有準備。把 BADE 換成<strong>連續的 ICA／MCA／BA 直徑</strong>再跑一次，關聯<strong>同向</strong>——動脈愈寬，cSVD 愈重。這種近似 dose-response 的關係，比單一閾值更難反駁，也把「擴張」從一個診斷標籤，提升成一個連續的血管表型。</p>
-<h2>一定要守住的分寸：影像進展 ≠ 一年臨床惡化</h2>
+<h2 id="bt-s4">一定要守住的分寸：影像進展 ≠ 一年臨床惡化</h2>
 <p>這裡是我最想幫你踩煞車的地方。BADE 和影像綁得這麼緊，很容易讓人以為「有 BADE 的人一年後會更失能、更失智、走更慢」。<strong>但資料不支持這個推論。</strong></p>
 <p>單變項分析裡，BADE 確實和較高的 mRS、較長的 Timed Up-and-Go 相關（LAS 則和較低的 MoCA 相關）。可是<strong>校正後，LAS 與 BADE 都沒有獨立預測基線或一年的功能（mRS）、認知（MoCA、Trail Making Test）、行動（TUG）預後</strong>（Table 4）。那些單變項的關聯，多半是年齡與 baseline cSVD 負擔在背後拉線。</p>
 <p>所以正確的讀法是：BADE 標記的是<strong>小血管病的影像嚴重度與進展速度</strong>，它是一個好的<strong>影像生物標記</strong>；但在一年這個時間尺度上，它還沒轉譯成可測得的臨床惡化。這個區分很重要——它讓我們把 BADE 當成「值得追蹤與介入的風險標記」，而不是「一年內會變差的預言」。</p>

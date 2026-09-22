@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/mg03.html">
 </head>
@@ -97,22 +116,23 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 3 篇</strong>　前兩篇談了重症肌無力（myasthenia gravis, MG）的盛行率與背後那群攻擊神經肌肉接合處的自體抗體。這一篇把鏡頭拉到診間：當一個 MG 病人走進來，無力最先從哪裡冒出來？又是什麼樣的情況，會讓這個慢性病在幾小時內變成需要插管的急症？</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">當無力爬到喉嚨：延髓症狀</a></li><li><a href="#bt-s2">肌無力危象：這個慢性病的急診面孔</a></li><li><a href="#bt-s3">臨床要點摘要</a></li><li><a href="#bt-s4">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>幾乎每四個剛確診的 MG 病人裡，就有三、四個是因為眼睛出問題才被注意到。初次表現時約 85% 的人有眼外肌受累，而且形式很固定：一邊或兩邊的眼皮垂下來（ptosis），或者看東西變成兩個（diplopia）。原因不難理解——控制眼球與眼瞼的那幾條小肌肉，整天都在做高頻率的微調，神經肌肉接合處的傳遞效率一旦打折，最先撐不住的就是它們。所以「傍晚眼皮越來越重、晚上看電視看到重影」常常是病人自己講出來的第一句線索。</p>
 <p>MG 的無力有個和其他神經肌肉疾病很不一樣的指紋：<strong>它會累</strong>。活動後加重、休息後改善、一天結束時最明顯——這就是所謂的易疲勞型無力（fatigable weakness）。同一條肌肉早上還算堪用，到了傍晚卻軟掉，這種隨時間擺盪的模式，本身就是診斷的提示。</p>
 <p>把眼睛之外的部位放進來看，無力的分布也有規律。肢體方面是<strong>近端重於遠端</strong>——也就是抬手梳頭、從椅子上站起來、爬樓梯這些用到肩膀和大腿根部的動作先吃力，而手指的精細動作相對保留。這和很多周邊神經病變「遠端先壞」的方向剛好相反。</p>
 <hr>
-<h2>當無力爬到喉嚨：延髓症狀</h2>
+<h2 id="bt-s1">當無力爬到喉嚨：延髓症狀</h2>
 <p>大約 15% 的病人，在第一次發病時無力就已經爬到了延髓（bulbar）支配的肌肉群——吞嚥和構音。這群人吃飯會嗆、講話到一半聲音變含糊或帶鼻音、咀嚼到後面會累到合不上嘴。</p>
 <p>延髓症狀之所以值得特別拉出來講，是因為它和「傍晚加重」這個時間特性疊在一起時，藏著風險。吞嚥和呼吸用的是同一套高度依賴神經肌肉傳遞的肌肉群；當一整天的活動把傳遞效率耗到最低、又正好落在一天的尾端，最容易出狀況的時刻，往往就是晚餐到入睡前這段時間。一個白天看起來只是「有點累、說話有點糊」的病人，可能在夜裡走向真正危險的那一步。</p>
 <hr>
-<h2>肌無力危象：這個慢性病的急診面孔</h2>
+<h2 id="bt-s2">肌無力危象：這個慢性病的急診面孔</h2>
 <p>那一步，叫做肌無力危象（myasthenic crisis）。</p>
 <p>定義很直接——無力嚴重到呼吸肌也撐不住，病人無法維持自己的通氣，需要進加護病房、常常需要插管。它把 MG 從一個「門診慢性病」瞬間翻成一個會致命的急症。前面講的吞嚥變差、聲音變鼻音、白天就明顯的全身疲憊，常是危象的前哨；當這些症狀在傍晚或夜間急遽惡化，就是不能再等的訊號。</p>
 <p>危象最能說明這個病這幾十年的進步，是死亡率的對比。<strong>過去，肌無力危象的死亡率高達 50% 到 80%</strong>——換句話說，一旦呼吸衰竭，病人有一半以上回不來。<strong>而現在，這個數字已經降到約 4.47%。</strong></p>
 <p>把死亡率從一半以上壓到不到 5%，靠的不是某一顆神奇的藥，而是兩件事的合力：一是加護病房的呼吸支持，讓病人在最危險的時候有機器替他撐住通氣，爭取到時間；二是快速起效的療法——把循環中那些攻擊接合處的致病抗體，在短時間內大幅清掉或中和掉。靜脈免疫球蛋白（IVIG）與血漿置換（plasmapheresis）就是扮演這個角色的兩張王牌，它們也是這個系列第五篇要細談的主角。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s3">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
@@ -131,7 +151,7 @@ article, article *{overflow-wrap:break-word}
 <p>至於死亡率從 50–80% 掉到 4.47% 這組數字，我每次講都覺得它值得被記住。它提醒我們，MG 不是個「沒辦法」的病——把病人在對的時間送到對的地方，給他呼吸支持，再把抗體清掉，預後是可以被整個翻轉的。下一篇，我們回到診斷：當症狀像 MG，我們手上有哪些工具能把它釘死。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s4">參考文獻</h2>
 <ol>
 <li>StatPearls. <em>Myasthenia Gravis</em>. NCBI Bookshelf NBK559331.</li>
 </ol>

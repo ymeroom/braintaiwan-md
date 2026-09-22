@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/adxt02.html">
 </head>
@@ -97,11 +116,12 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 2 篇</strong>　失智症的精神行為症狀（neuropsychiatric symptoms, NPS）——憂鬱、焦慮、激動、冷漠、妄想——對病人生活品質與照顧者負荷的影響，常常比認知退化本身更直接。本篇整理指引收錄的精神行為症狀量表，以及憂鬱、焦慮、激動三類最常見共病症狀的專門評估工具。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、精神行為症狀：常常比認知症狀先出現</a></li><li><a href="#bt-s2">二、精神行為症狀綜合量表</a></li><li><a href="#bt-s3">三、憂鬱症評估工具</a></li><li><a href="#bt-s4">四、焦慮與激動評估工具</a></li><li><a href="#bt-s5">臨床要點摘要</a></li><li><a href="#bt-s6">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
-<h2>一、精神行為症狀：常常比認知症狀先出現</h2>
+<h2 id="bt-s1">一、精神行為症狀：常常比認知症狀先出現</h2>
 <p>「輕度行為障礙（mild behavioral impairment, MBI）」這個研究構念之所以重要，是因為愈來愈多證據顯示：<strong>性格、動機、情緒或社交行為的改變，可能早於明顯的認知退化出現</strong>，是阿茲海默症與相關失智症的前驅期訊號之一，而不只是退化後的「併發症」。</p>
 <p>臨床上常見的辨識陷阱，是把<strong>冷漠（apathy）誤判為憂鬱（depression）</strong>——兩者外觀類似（活動減少、興趣降低），但冷漠的病人通常沒有憂鬱核心的悲傷情緒或負面認知，治療策略也不同。同樣地，妄想性的疑心（例如懷疑伴侶不忠、懷疑東西被偷）需要與焦慮性的擔心區分。<strong>精神行為症狀量表的價值，正是用結構化的條目把這些容易混淆的症狀群拆開來看</strong>。</p>
-<h2>二、精神行為症狀綜合量表</h2>
+<h2 id="bt-s2">二、精神行為症狀綜合量表</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>工具</th><th>題數／形式</th><th>主要用途與特點</th></tr></thead>
 <tbody>
@@ -113,7 +133,7 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p>NPI-Q 是目前臨床最普及的選擇——它快、知情者填寫即可、同時量化症狀嚴重度與對照顧者的衝擊，這個「照顧者困擾度」分數，往往是判斷是否需要藥物或非藥物介入的關鍵依據。MBI-C 則是目前少數專門針對<strong>前驅期</strong>行為改變設計的工具，在懷疑早期阿茲海默症但認知測驗仍正常的病人身上特別有意義。</p>
 </blockquote>
-<h2>三、憂鬱症評估工具</h2>
+<h2 id="bt-s3">三、憂鬱症評估工具</h2>
 <p>失智症與憂鬱症的共病率高，且兩者的症狀有重疊（精神運動遲緩、注意力不集中、興趣減少），鑑別格外重要：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>工具</th><th>題數／形式</th><th>主要用途與特點</th></tr></thead>
@@ -125,7 +145,7 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p>選擇邏輯很清楚：<strong>病人仍有自評能力</strong>用 GDS 或 PHQ-9；<strong>病人認知退化已影響自評可靠度</strong>，CSDD 不依賴病人自述，是更適合的工具。</p>
 </blockquote>
-<h2>四、焦慮與激動評估工具</h2>
+<h2 id="bt-s4">四、焦慮與激動評估工具</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>工具</th><th>題數／形式</th><th>主要用途與特點</th></tr></thead>
 <tbody>
@@ -134,7 +154,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td><strong>CMAI</strong></td><td>Cohen-Mansfield Agitation Inventory，29 項行為</td><td>僅記錄行為的出現與頻率（不評嚴重度），多用於專科或機構照護情境</td></tr>
 </tbody></table></div>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s5">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
@@ -153,7 +173,7 @@ article, article *{overflow-wrap:break-word}
 <p>CSDD 我會特別推薦給中重度失智的家庭使用，因為它不需要病人自己回答問題，完全由照顧者觀察與臨床人員訪談完成評分——這對很多家屬來說反而是個解脫：他們終於有一個「正式工具」可以表達「我覺得他最近心情很不好，但他自己說不出來」這件事。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s6">參考文獻</h2>
 <ol>
 <li>Atri A, Dickerson BC, Clevenger C, et al. The Alzheimer's Association clinical practice guideline for the diagnostic evaluation, testing, counseling, and disclosure of suspected Alzheimer's disease and related disorders (DETeCD-ADRD): Validated clinical assessment instruments. <em>Alzheimer's Dement</em>. 2025;21:e14335. doi:10.1002/alz.14335</li>
 <li>Cummings JL, et al. The Neuropsychiatric Inventory: comprehensive assessment of psychopathology in dementia. <em>Neurology</em>. 1994;44(12):2308-2314.</li>

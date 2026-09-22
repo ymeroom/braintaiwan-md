@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/lbp03.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 03 篇</strong>　這是整個系列裡最反直覺的一篇。病人痛，很自然想照張片子看看哪裡壞了；醫師照了，也很容易在報告上找到「椎間盤退化」「小面關節病變」來對應那個痛。問題是——這些變化在完全不痛的人身上，出現的比例幾乎一模一樣。這一篇談影像該什麼時候照、以及為什麼「照到退化」常常不是答案，而是新問題的開始。</p>
 </blockquote>
-<h2>常規影像：對非特異性下背痛，指引說不要</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">常規影像：對非特異性下背痛，指引說不要</a></li><li><a href="#bt-s2">那個讓「照到退化」失去意義的數字</a></li><li><a href="#bt-s3">照到之後，麻煩才開始</a></li><li><a href="#bt-s4">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">常規影像：對非特異性下背痛，指引說不要</h2>
 <p>先講結論，因為它很乾脆。<strong>對任何病程的非特異性下背痛，常規用 X 光、電腦斷層或磁振造影都不建議</strong>——理由是這些檢查<strong>不會改善臨床結果，反而可能找到一堆偶見的發現，導致額外檢查與不必要的介入</strong>（these tests do not improve clinical outcomes and may identify incidental findings that lead to additional testing and unnecessary interventions）。</p>
 <p>影像不是完全不能照，而是要有理由。綜論把時機講得很明確：<strong>影像應保留給有嚴重或進行性神經缺損（如運動無力、鞍區麻木、尿滯留），或有嚴重疾病徵象（如癌症、感染、骨折、馬尾症候群）的病人</strong>。這正好接續第 02 篇的紅旗——影像是紅旗的下游，不是下背痛的預設動作。</p>
-<h2>那個讓「照到退化」失去意義的數字</h2>
+<h2 id="bt-s2">那個讓「照到退化」失去意義的數字</h2>
 <p>為什麼指引對常規影像這麼保留？一份以社群為基礎、納入 <strong>3369 名成人</strong>（平均 53 歲、51% 女性）的前瞻世代研究，把問題攤開來看：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>族群</th><th>MRI 上有退化變化的比例</th></tr></thead>
@@ -111,7 +131,7 @@ article, article *{overflow-wrap:break-word}
 <p><strong>77.8% 對 74.4%。</strong>痛的人和不痛的人，MRI 上退化的比例幾乎沒差。如果一個發現在有病和沒病的人身上一樣普遍，它作為「病因」的解釋力就趨近於零。</p>
 <p>而且退化是年齡的常態，不是疾病的印記。這些變化的比例<strong>隨年齡上升——40 歲以下約一半、70 歲以上超過九成</strong>，而且在<strong>沒有下背痛症狀的人身上一樣常見</strong>。單看椎間盤退化，在沒有下背痛的人裡，就從 41–49 歲的 <strong>38.1%</strong>、爬到 50–59 歲的 <strong>58.1%</strong>、再到 60–68 歲的 <strong>81.9%</strong>。換句話說，一個 65 歲的人 MRI 上有椎間盤退化，機率上他跟同齡不痛的人沒有兩樣——那份報告描述的是他的年齡，不是他的痛。</p>
 <p>平片也是同一回事：<strong>腰椎的退化變化（椎間盤退化、小面關節病變、終板變化）是常見的影像發現，可能與下背痛無關</strong>（common imaging findings and may not be associated with low back pain）。</p>
-<h2>照到之後，麻煩才開始</h2>
+<h2 id="bt-s3">照到之後，麻煩才開始</h2>
 <p>影像真正的風險不在輻射或費用，而在它會改寫病人對自己身體的理解。綜論寫得很直接：<strong>腰椎影像上的退化發現，可能導致把症狀錯誤歸因到這些發現上（例如「退化性椎間盤疾病」或「椎間盤突出」），進而造成病人焦慮增加、診斷不當，以及那些不會改善結果的不必要檢查與治療</strong>。</p>
 <p>這是一條會自我延續的鏈：照片子 → 看到退化 → 貼上一個聽起來很嚴重的標籤 → 病人開始害怕彎腰、害怕活動 → 活動減少讓恢復更慢 → 更相信自己「背壞了」。而這一切的起點，可能只是一個本來會自己好的非特異性下背痛，加上一張任何同齡人都會有的片子。</p>
 <p>給病人的衛教因此有一句固定訊息（綜論 Box 2）：影像<strong>經常找到椎間盤突出、突起、退化、小面關節病變這類偶見發現，這些在沒有疼痛的人身上也很常見，通常反映的是與年齡相關的變化，而不是症狀的來源</strong>。這句話的功能，是把「片子上的異常」和「你的痛」這兩件事，重新拆開。</p>
@@ -121,7 +141,7 @@ article, article *{overflow-wrap:break-word}
 <p>神經科這一側特別要小心的是「歸因的順序」。正確的順序是先有紅旗或神經學徵象，才去照影像找對應的結構；錯誤的順序是先照了影像、看到退化，再回頭把病人的痛塞進那個發現裡。後者製造的醫源性焦慮，有時候比原本的痛還難處理——因為你要拆掉的，是一張白紙黑字的報告在病人心裡種下的東西。</p>
 </blockquote>
 <p>這一篇跟第 01 篇是連著的。那時候說退化變化沒有進入危險因子清單，理由在這裡補齊了：一個在有病與沒病的人身上一樣普遍的發現，既預測不了誰會痛，也解釋不了為什麼痛。影像看得見的東西，和真正在痛的東西，中間隔著的距離，比報告讓人以為的遠得多。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s4">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
 <tbody>

@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/hunger03.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 03 篇</strong>　第三個飢餓機制來自不屬於人體的細胞。腸道菌透過三條路改寫宿主的飢餓：直接影響控制飢餓的荷爾蒙、製造模仿宿主荷爾蒙的<strong>擬肽（peptidomimetics）</strong>、以及產生直接作用於飢餓迴路的<strong>代謝物</strong>。機轉一條比一條精巧，其中大腸桿菌製造的 ClpB 幾乎是 α-MSH 的細菌版。但原文對這整個領域的定位相當節制：多數研究是描述性的、動物模型的、或小樣本橫斷面的，而以調整腸道菌來減少飢餓的臨床試驗<strong>產生了互相衝突的資料</strong>。</p>
 </blockquote>
-<h2>先看作者怎麼定位這個領域</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 8 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">先看作者怎麼定位這個領域</a></li><li><a href="#bt-s2">路徑一：直接改寫宿主荷爾蒙</a></li><li><a href="#bt-s3">路徑二：代謝物（postbiotics）</a></li><li><a href="#bt-s4">路徑三：擬肽——細菌版的飽足荷爾蒙</a></li><li><a href="#bt-s5">這條路上有哪些訊號分子被指認過</a></li><li><a href="#bt-s6">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">先看作者怎麼定位這個領域</h2>
 <p>在展開任何機轉之前，這篇綜論先把限制寫清楚，這決定了整篇的讀法：</p>
 <ul>
 <li>腸道菌是共生體，提供宿主對病原的保護，並參與免疫系統的編程與<strong>能量代謝等關鍵代謝功能的控制</strong>。腸道菌也透過釋放酵素與滋養性代謝物（例如<strong>短鏈脂肪酸</strong>）為宿主提供能量。</li>
@@ -107,12 +127,12 @@ article, article *{overflow-wrap:break-word}
 <li>因此，<strong>腸道菌在影響人類宿主飢餓上的確切角色仍需進一步釐清</strong>。</li>
 </ul>
 <p>重點摘要那一頁講得更短：腸道菌的組成與功能<strong>可能</strong>影響飢餓迴路，然而其<strong>確切角色仍有待確立</strong>。</p>
-<h2>路徑一：直接改寫宿主荷爾蒙</h2>
+<h2 id="bt-s2">路徑一：直接改寫宿主荷爾蒙</h2>
 <p>微生物能影響腸道、脂肪組織與胰臟所製造的飢餓控制荷爾蒙的釋放，包括 <strong>ghrelin、leptin 與胰島素</strong>。</p>
 <p><strong>leptin 這一條有兩個層次。</strong>第一，<strong>腸道菌多樣性降低（即菌叢失衡的指標）與較高的血清 leptin 濃度相關</strong>，在瘦與胖的人身上皆然。第二，在肥胖者身上，<strong>腸道通透性增加</strong>可促使微生物成分自腸腔進入宿主脂肪組織，透過<strong>抑制 leptin 訊號</strong>改變能量代謝，導致血糖失調，在部分情況下導致第 2 型糖尿病。</p>
 <p><strong>prebiotic 這一條的成人與兒童結果不一致。</strong>在成人（瘦與肥胖皆有）中，來自腸道菌的益生元——<strong>菊糖（inulin）與寡果糖（oligofructose）</strong>——似乎透過<strong>增加 GLP-1 與 PYY 的合成</strong>、同時<strong>抑制 ghrelin 產生</strong>來抑制飢餓。但在肥胖兒童的研究中，補充<strong>富含寡果糖的菊糖</strong>導致食物攝取減少，而這與<strong>隨後 ghrelin 濃度上升</strong>相關，且<strong>未影響 GLP-1、PYY 或胰島素</strong>路徑。作者對這個落差的判讀是：成人與兒童研究之間的不一致結果<strong>可能與年齡相關差異有關，但最可能是由於研究設計與詮釋上的差異</strong>。</p>
 <p><strong>胰島素這一條</strong>：如同 leptin 與 ghrelin，胰島素可透過影響 <strong>AgRP 神經元</strong>來調節飢餓，並可受腸道菌影響。<strong>腸道細菌多樣性降低與胰島素阻抗增加相關</strong>。此外，在一項涉及肥胖小鼠的研究中，益生菌改變了腸道微生物組成並抑制飢餓，機轉是<strong>降低胰島素阻抗與抑制神經肽 Y（NPY）表現</strong>。</p>
-<h2>路徑二：代謝物（postbiotics）</h2>
+<h2 id="bt-s3">路徑二：代謝物（postbiotics）</h2>
 <p>微生物衍生的代謝物是微生物–腸–腦軸的關鍵訊號媒介。這條路的細節最多，而且<strong>同一類分子在恆定性與享樂性兩條飢餓路上作用方向相反</strong>：</p>
 <p><strong>短鏈脂肪酸</strong>——包括<strong>丁酸（butyrate）、丙酸（propionate）與醋酸（acetate）</strong>——是細菌發酵難消化多醣（例如纖維）的生物產物。它們的作用依受體而分岔：</p>
 <div class="bt-tablewrap"><table>
@@ -129,11 +149,11 @@ article, article *{overflow-wrap:break-word}
 <li><strong>吲哚（indole）</strong>：可透過<strong>刺激 GLP-1 釋放</strong>來抑制飢餓。另有研究顯示吲哚<strong>刺激色胺酸產生</strong>，進而導致腸內分泌細胞釋放 <strong>5- 羥色胺（5-HT）</strong>；多項研究顯示 5-HT 透過<strong>改善胰島素敏感性與影響 AgRP 神經元</strong>，在抑制飢餓上扮演關鍵角色。</li>
 <li><strong>GABA</strong>：腸道菌可由<strong>膳食麩胺酸</strong>製造 GABA。GABA 是介導腸腦溝通的關鍵分子之一，包括透過<strong>活化 AgRP 神經元</strong>進行飢餓控制。肥胖者的<strong>麩胺酸發酵性腸道微生物豐度降低</strong>，並對應<strong>循環麩胺酸上升</strong>——這一發現與動物模型中已顯示的麩胺酸在能量平衡中的角色相互印證。</li>
 </ul>
-<h2>路徑三：擬肽——細菌版的飽足荷爾蒙</h2>
+<h2 id="bt-s4">路徑三：擬肽——細菌版的飽足荷爾蒙</h2>
 <p>這是三條路裡最直接的一條。多項研究顯示腸道菌可製造<strong>在結構與功能上模仿飢餓控制蛋白質的蛋白質</strong>，被歸類為<strong>擬肽（peptidomimetics）</strong>，模仿的對象包括 <strong>PYY、ghrelin 與 leptin</strong>。</p>
 <p>最好的例子是 <strong>casein 分解酶 B（caseinolytic peptidase B, ClpB）</strong>，由*<em>大腸桿菌（</em>Escherichia coli<em>）<strong>製造，其效應</strong>類似宿主自身製造的飢餓抑制物 α- 黑色素細胞刺激素（α-MSH）<strong>。具體而言，活體動物模型顯示，</strong>如同 α-MSH，ClpB 提高血清 GLP-1 與 PYY 濃度，並活化抑制飢餓的下視丘神經元</em>*。</p>
 <p>作者的結論是：這些資料提示腸道菌也能<strong>透過特異的擬肽抑制飢餓</strong>。</p>
-<h2>這條路上有哪些訊號分子被指認過</h2>
+<h2 id="bt-s5">這條路上有哪些訊號分子被指認過</h2>
 <p>原文以表格列出各條微生物驅動飢餓路徑及其對應的研究物種。依機制重整後的分布是這樣的——注意物種欄位，它決定了每一條線的證據強度：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>機制層</th><th>涉及分子</th><th>已有<strong>人類</strong>資料</th><th>僅見於<strong>小鼠</strong></th></tr></thead>
@@ -151,7 +171,7 @@ article, article *{overflow-wrap:break-word}
 <p>ClpB 是全篇我唯一覺得有機會走到臨床的東西，而且它的重要性可能不在減重。同一個分子在第四篇會再出現一次，角色完全不同——在神經性厭食症的段落裡，ClpB 與 LPS 從腸腔進入全身循環被視為腸道菌失衡影響進食障礙發生的可能路徑。一個細菌蛋白同時出現在「可能抑制飢餓的治療標的」與「可能促成進食障礙的致病因子」兩個位置，本身就說明這個領域現在的解析度。</p>
 </blockquote>
 <p>原文對微生物驅動飢餓的收尾停在一個未解的位置：機轉已經指認出三條路、十幾個分子，但人類身上真正的角色仍待釐清。相對地，有一小群人的飢餓失調原因是完全確定的——確定到可以定位在染色體上。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s6">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
 <tbody>

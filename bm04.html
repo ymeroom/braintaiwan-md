@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/bm04.html">
 </head>
@@ -97,18 +116,19 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 4 篇</strong>　腦轉移的全身藥物，選什麼不是看它「長在腦子裡」，而是看原發癌的組織型與分子標記。這篇把乳癌、肺癌、黑色素瘤三大宗的藥物證據攤開講，以及一個很多人沒想到的細節——類固醇會拉低免疫治療的成效。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">乳癌腦轉移：HER2 陽性是標靶最有戲的一群</a></li><li><a href="#bt-s2">肺癌腦轉移：有沒有驅動突變，走完全不同的路</a></li><li><a href="#bt-s3">黑色素瘤腦轉移：BRAF 標靶與雙免疫的兩條主線</a></li></ol></details><!-- bt-toc:end -->
 <p>先破除一個直覺。過去總覺得「藥進不了腦」，但多數腦轉移在 MRI 或 CT 上會強化，代表那裡的<strong>血腦障壁功能是破的</strong>——靜脈注射的藥物，預期會像顯影劑一樣分布進去，也就是說全身性藥物對這些會強化的腦轉移，可能跟對付其他部位的轉移一樣有效。但要保留一點：像單株抗體、抗體藥物複合體這類大分子，顯影劑能進不代表它們就能充分穿透，這點仍不確定。</p>
 <p>真正的選藥原則是：<strong>藥物選擇由組織型與分子腫瘤型別決定，不是由病灶在腦中的位置決定</strong>。若可行，優先以腦轉移病灶（而非原發灶）的分子檢查來挑標靶與免疫治療〔EANO：IV, C；ESMO：IV, B〕。血腦障壁穿透力較好的藥，預期在受障壁部分保護的腫瘤區域控制得更好。決策時還要一起看顱內與顱外的疾病活性、毒性、以及過去用過哪些線〔EANO：IV, A；ESMO：IV, B〕。</p>
 <p>還有一個容易被忽略、卻很關鍵的點：<strong>類固醇會對免疫治療的成效有負面影響</strong>。這在後面選藥、尤其打算用免疫檢查點抑制劑時，會直接牽動「該不該、能不能減類固醇」的判斷。</p>
-<h2>乳癌腦轉移：HER2 陽性是標靶最有戲的一群</h2>
+<h2 id="bt-s1">乳癌腦轉移：HER2 陽性是標靶最有戲的一群</h2>
 <p>全身治療在乳癌腦轉移扮演重要角色。傳統化療如 capecitabine、cyclophosphamide、5-FU、methotrexate、vincristine、cisplatin、etoposide、vinorelbine、gemcitabine 都用過，多數反應率超過 <strong>30%</strong>。但真正拉開差距的是 <strong>HER2 陽性</strong>這一群。</p>
 <p>在沒有手術指徵、神經功能保留（PS 0–2）的病人身上，lapatinib 加 capecitabine 對<strong>曾接受放射</strong>的腦轉移產生 <strong>38%</strong> 的腦部反應率，對<strong>未曾治療</strong>的腦轉移更達 <strong>66%</strong>。NALA 試驗比較 neratinib 加 capecitabine 與 lapatinib 加 capecitabine，130 位帶無症狀穩定腦轉移的病人裡，需要介入處理腦轉移（多為放射）的累積發生率，從 <strong>29% 降到 23%</strong>（P = 0.04）。抗體藥物複合體也交出成績：T-DM1 在 EMILIA 的次分析（95 位無症狀 CNS 轉移）顯示整體存活 <strong>26.8 個月</strong>、優於 lapatinib 加 capecitabine 組的 <strong>12.9 個月</strong>；回溯分析的反應率最高到 <strong>44%</strong>。第三線的 HER2CLIMB 試驗中，tucatinib、capecitabine 加 trastuzumab 這組在 291 位腦轉移病人的次分析裡，中位整體存活 <strong>18.1 個月</strong>，優於對照的 <strong>12.0 個月</strong>。至於 HER2 陰性的族群，abemaciclib 在荷爾蒙受體陽性／HER2 陰性、且已重度治療過的腦轉移病人，顱內臨床效益率 <strong>25%</strong>、中位無惡化存活 <strong>4.4 個月</strong>。</p>
 <p>預防腦轉移是新興題目。CLEOPATRA 研究中，病人一開始沒有腦轉移，但 <strong>13%</strong> 在首次復發時復發在腦部；在這群人，加上 pertuzumab 讓發生腦轉移的中位時間從 <strong>12 個月延到 15 個月</strong>。反面例子是 CEREBEL，並未證明 lapatinib 加 capecitabine 在預防腦轉移上優於 trastuzumab 加 capecitabine。</p>
-<h2>肺癌腦轉移：有沒有驅動突變，走完全不同的路</h2>
+<h2 id="bt-s2">肺癌腦轉移：有沒有驅動突變，走完全不同的路</h2>
 <p><strong>非小細胞肺癌（NSCLC）沒有可作用的驅動基因變異</strong>時，標準走免疫檢查點抑制——PD-L1 陽性（大於 50%）用單藥抗 PD-1／PD-L1，否則合併鉑類化療。專門針對無症狀腦轉移的資料不多，但早期數據顯示 pembrolizumab 對未治療的 NSCLC 腦轉移安全有效，CNS 反應率約 <strong>30%</strong>；nivolumab 的效果也在回溯分析獲得確認。一項多中心彙整分析中，「活動性」腦轉移病人（n = 73）的顱內反應率為 <strong>27.3%</strong>。</p>
 <p><strong>有驅動突變</strong>的 NSCLC 走的是另一條路。帶 EGFR 突變，或 ALK、ROS1、RET 重組的病人，腦轉移的累積發生率比沒有驅動基因的更高，但他們的存活也更好——EGFR 突變 NSCLC 中位存活可超過 <strong>3 年</strong>，ALK 重組更超過 <strong>5 年</strong>。酪胺酸激酶抑制劑（TKI）因此成為多模式治療的標準組成，因為它對顱外與顱內轉移的反應率都比傳統化療高。CNS 反應率受兩件事影響：TKI 的效價，以及它穿透血腦障壁的能力（牽涉到跟 P-醣蛋白的交互作用）。特定 TKI 在 EGFR、ALK、ROS1、RET、NTRK、NRG1 重組以及 MET 第 14 外顯子跳躍突變上展現顯著 CNS 活性；至於 KRAS G12C 與 BRAF 突變的標靶資料還很有限。</p>
 <p><strong>小細胞肺癌（SCLC）</strong>廣泛期的標準，是鉑類加 etoposide 化療合併免疫檢查點抑制〔EANO：II, B；ESMO：II, B〕；不過免疫治療在有腦轉移的 SCLC 是否加分，還有待正式證實。</p>
-<h2>黑色素瘤腦轉移：BRAF 標靶與雙免疫的兩條主線</h2>
+<h2 id="bt-s3">黑色素瘤腦轉移：BRAF 標靶與雙免疫的兩條主線</h2>
 <p>傳統化療（temozolomide、dacarbazine、fotemustine）對黑色素瘤腦轉移效果有限。<strong>BRAF 突變</strong>的病人是另一回事：單用 BRAF 抑制劑（vemurafenib 或 dabrafenib）顱內反應率介於 <strong>15%–40%</strong>，合併 BRAF 標靶治療在無症狀、未治療的腦轉移可把反應率提升到最高約 <strong>60%</strong>——跟其他器官的反應率相近，但整體反應持續時間偏短。</p>
 <p>免疫這邊，抗 PD-1 單藥或 ipilimumab 加 nivolumab 都試過：在無症狀腦轉移，現有資料偏好<strong>雙免疫合併</strong>，整體反應率約 <strong>50%</strong>、反應持續合理，18 個月時無惡化存活超過 50%。因此 <strong>ipilimumab 加 nivolumab 是首選的第一線治療，不只用於 BRAF 野生型，也用於 BRAF 突變的無症狀病人</strong>〔EANO：II, B；ESMO：II, B〕。但要注意：在需要類固醇的<strong>有症狀</strong>腦轉移，雙免疫的顱內反應率掉到 <strong>21%</strong>——這正好呼應前面說的，類固醇會拖累免疫治療。至於有症狀、多顆、需要 4 毫克以上 dexamethasone 的 BRAF 突變病人，若適合進一步治療，應接受 dabrafenib 加 trametinib。</p>
 <div class="bt-tablewrap"><table>

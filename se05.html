@@ -88,6 +88,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/se05.html">
 </head>
@@ -117,6 +136,7 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 5 篇</strong>　參考文獻：Ferlisi M, Shorvon S. The outcome of therapies in refractory and super-refractory convulsive status epilepticus. <em>Epilepsia</em>. 2012;53(8):1505–1513. ／ Hirsch LJ, et al. American Clinical Neurophysiology Society's Standardized Critical Care EEG Terminology. <em>J Clin Neurophysiol</em>. 2021. ／ Gaspard N, et al. New-onset refractory status epilepticus (NORSE). <em>Epilepsia</em>. 2018;59(11):2004–2013.</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、定義：難治性 vs. 超難治性</a></li><li><a href="#bt-s2">二、麻醉藥物——第三線治療</a></li><li><a href="#bt-s3">三、EEG 監測目標：到底要壓多深？</a></li><li><a href="#bt-s4">四、超難治性 SE 的多模式治療</a></li><li><a href="#bt-s5">五、NORSE 與 FIRES——病因未明的惡夢</a></li><li><a href="#bt-s6">六、停藥策略與長期管理</a></li><li><a href="#bt-s7">系列總結</a></li></ol></details><!-- bt-toc:end -->
 
 <hr>
 
@@ -124,7 +144,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>一、定義：難治性 vs. 超難治性</h2>
+<h2 id="bt-s1">一、定義：難治性 vs. 超難治性</h2>
 
 <div class="stage-row">
   <div class="stage-card stage-rse">
@@ -141,7 +161,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>二、麻醉藥物——第三線治療</h2>
+<h2 id="bt-s2">二、麻醉藥物——第三線治療</h2>
 
 <p>RSE 確診後，應立即準備氣管插管、ICU 轉入，並啟動連續靜脈麻醉藥物：</p>
 
@@ -177,7 +197,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>三、EEG 監測目標：到底要壓多深？</h2>
+<h2 id="bt-s3">三、EEG 監測目標：到底要壓多深？</h2>
 
 <p>麻醉藥物的劑量調整以 EEG 為依據。目前主流共識的<strong>治療目標依嚴重程度遞增</strong>：</p>
 
@@ -196,7 +216,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>四、超難治性 SE 的多模式治療</h2>
+<h2 id="bt-s4">四、超難治性 SE 的多模式治療</h2>
 
 <p>SRSE 的治療缺乏高品質 RCT，多為個案報告與觀察性研究。以下為現有文獻支持的選項：</p>
 
@@ -211,7 +231,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>五、NORSE 與 FIRES——病因未明的惡夢</h2>
+<h2 id="bt-s5">五、NORSE 與 FIRES——病因未明的惡夢</h2>
 
 <div class="norse-box">
   <div class="norse-title">NORSE（New Onset Refractory Status Epilepticus）</div>
@@ -257,7 +277,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>六、停藥策略與長期管理</h2>
+<h2 id="bt-s6">六、停藥策略與長期管理</h2>
 
 <p>當發作控制超過 24–48 小時，應開始<strong>逐步減少</strong>麻醉藥物：</p>
 
@@ -271,7 +291,7 @@ article, article *{overflow-wrap:break-word}
 
 <hr>
 
-<h2>系列總結</h2>
+<h2 id="bt-s7">系列總結</h2>
 
 <p>從第一篇的 5 分鐘法則，到第五篇的 NORSE 免疫治療——癲癇重積狀態是一個從分鐘到週，從急診到 ICU，跨越神經學、重症醫學與免疫學的複合性疾病。</p>
 

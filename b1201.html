@@ -66,6 +66,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/b1201.html">
 </head>
@@ -88,25 +107,26 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 1 篇</strong>　NICE NG239 §1.2「辨識維生素 B12 缺乏」的六條建議——症狀為什麼靠不住、什麼人幾乎一定缺、以及要抽血的那條門檻怎麼畫。 一個站不太穩、老是踩空的中年人，血球數完全正常，很容易被打發成「年紀到了」——但腳底那種踩在棉花上的麻，可能是 B12 正在悄悄離開他的脊髓。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 8 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、先記住兩個「幾乎一定缺」的族群</a></li><li><a href="#bt-s2">二、血球正常，不能拿來排除診斷</a></li><li><a href="#bt-s3">三、它會躲在精神科的診斷後面——但別只憑這個抽血</a></li><li><a href="#bt-s4">四、抽血的那條門檻：一個症狀 ＋ 一個風險因子</a></li><li><a href="#bt-s5">五、為什麼年紀愈大愈要留意</a></li><li><a href="#bt-s6">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>維生素 B12 缺乏最麻煩的地方，是它幾乎沒有一張自己的臉。NICE NG239 的第一條建議（1.2.1）講得很直白：這個病的症狀和徵象<strong>因人而異</strong>，而且<strong>幾乎都不是它專屬的</strong>。同一個缺乏，在甲身上是說不出原因的疲倦，在乙身上是走路開始飄、在丙身上卻是記性變差被懷疑失智。你沒辦法靠「典型長相」把它認出來，因為它根本沒有典型長相。</p>
 <p>這件事對神經內科特別重要，因為 B12 缺乏傷到神經時，往往比血液端更早、更難回頭。</p>
 <hr>
-<h2>一、先記住兩個「幾乎一定缺」的族群</h2>
+<h2 id="bt-s1">一、先記住兩個「幾乎一定缺」的族群</h2>
 <p>指引裡有一條講得非常肯定的話（1.2.2）：做過<strong>全胃切除（total gastrectomy）</strong>或<strong>完全迴腸末端切除（complete terminal ileal resection）</strong>的人，如果沒有在補 B12——不管是口服還是肌肉注射——那麼缺乏是「highly likely」，高度可能。</p>
 <p>為什麼可以講得這麼死？因為 B12 的吸收是一條很專一的產線：胃分泌內在因子（intrinsic factor）把 B12 綁起來，一路送到迴腸末端才被吸收進身體。把胃整個拿掉，內在因子沒了；把迴腸末端整段切掉，吸收的閘口沒了。這兩個位置任何一個斷掉，飲食裡再多 B12 也進不來。所以這類手術通常在開刀當下就會安排終身補充——但指引特別提醒，有些人可能中途沒接上（例如當年在國外開刀、回國後就斷了），這時要主動把治療接回去。</p>
 <p>臨床上遇到這兩種手術史的人出現任何說不清的神經症狀，順序應該倒過來想：不是「會不會是 B12」，而是「這幾乎就是 B12，除非證明不是」。</p>
 <hr>
-<h2>二、血球正常，不能拿來排除診斷</h2>
+<h2 id="bt-s2">二、血球正常，不能拿來排除診斷</h2>
 <p>這大概是整篇最該被貼在牆上的一條（1.2.3）：<strong>不要只因為沒有貧血、也沒有巨球性（macrocytosis），就排除 B12 缺乏的診斷。</strong></p>
 <p>坊間有個很頑固的誤解，以為 B12 缺乏一定會先讓血球變大、變少，血球正常就代表沒事。指引寫這條，就是為了打掉這個迷思。真實情況是：B12 對造血和對神經是兩條相對獨立的戰線，神經那條可以先垮，血液那條還撐著看起來一切正常。等你想到「反正血球沒問題」而放過它，脊髓可能已經在流失。</p>
 <p>換句話說，正常的血球數是一個<strong>很差的擋箭牌</strong>。神經症狀擺在眼前時，它擋不掉你該有的懷疑。</p>
 <hr>
-<h2>三、它會躲在精神科的診斷後面——但別只憑這個抽血</h2>
+<h2 id="bt-s3">三、它會躲在精神科的診斷後面——但別只憑這個抽血</h2>
 <p>指引第四條（1.2.4）提醒：B12 缺乏可能伴隨<strong>心理健康問題</strong>，包括憂鬱、焦慮、甚至精神病（psychosis）的症狀。</p>
 <p>不過這條要小心讀。委員會同時講明白了：憂鬱、焦慮這些問題<strong>幾乎和所有慢性病都沾得上邊</strong>，並沒有強到足以「一看到情緒問題就去驗 B12」的證據。所以指引沒有把「有心理症狀」單獨列為抽血理由。它的意思比較像是——當你已經因為別的線索在懷疑 B12 時，別忘了情緒和精神症狀也可能是它的一部分；但不要反過來，把它當成篩檢憂鬱症病人的例行動作。</p>
 <hr>
-<h2>四、抽血的那條門檻：一個症狀 ＋ 一個風險因子</h2>
+<h2 id="bt-s4">四、抽血的那條門檻：一個症狀 ＋ 一個風險因子</h2>
 <p>到底什麼時候該送檢驗？指引把門檻畫得很清楚（1.2.5）：同時具備<strong>至少 1 個常見症狀或徵象（Box 1）</strong>，<strong>和至少 1 個常見風險因子（Box 2）</strong>，就該提供初步診斷檢驗。</p>
 <p>委員會的邏輯是機率式的：症狀不專一、風險因子也不專一，任何單獨一項都不足以指向 B12。但當「一個症狀」和「一個風險因子」疊在同一個人身上，缺乏的可能性就明顯升高，值得抽一管血確認。</p>
 <p>那如果<strong>只有症狀、卻找不到任何風險因子</strong>呢？指引留了第六條（1.2.6）：這時靠<strong>臨床判斷</strong>決定要不要驗。因為 B12 缺乏的症狀和一大堆別的病共用，光有症狀不夠力；但委員會也承認，有些人確實在沒有已知風險因子的情況下缺乏，也有人只是自己不知道身上有哪些風險因子。所以這一格不給硬規則，交回給醫師的手感。</p>
@@ -133,11 +153,11 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>同樣地，委員會依專家證詞說明，Box 2 的所有風險因子在<strong>孕期與哺乳期一樣適用</strong>。</p>
 <hr>
-<h2>五、為什麼年紀愈大愈要留意</h2>
+<h2 id="bt-s5">五、為什麼年紀愈大愈要留意</h2>
 <p>指引的 Context 段給了一組值得記住的數字：B12 缺乏<strong>在年長者更常見</strong>，估計影響約 <strong>5% 的 65–74 歲</strong>族群，以及<strong>超過 10% 的 75 歲以上</strong>族群。</p>
 <p>有意思的是，委員會討論過要不要把「年齡」本身列進 Box 2，最後決定<strong>不列</strong>。理由是：老化確實會讓腸胃道的生理改變影響 B12 的攝取與吸收，年長者也更容易因為認知退化或失智而吃得不好——但年齡<strong>本身不算風險因子</strong>，單憑年紀大、沒有其他症狀或風險因子，並不足以構成抽血的理由。年齡是背景音，不是觸發鍵。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s6">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>

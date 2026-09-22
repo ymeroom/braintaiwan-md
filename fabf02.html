@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/fabf02.html">
 </head>
@@ -95,7 +114,7 @@ article, article *{overflow-wrap:break-word}
   <div class="series-nav"><a href="fabf01.html" class="series-link">① 破除「帶因者」迷思</a><a href="fabf02.html" class="series-link active">② 沉默的心與腎</a><a href="fabf03.html" class="series-link">③ 疼痛、中風與憂鬱</a></div>
   <article class="article">
 <p>有一件事,是法布瑞氏症最不講理的地方:等到你「感覺到」心臟或腎臟不對勁的時候,傷害通常已經累積很久了。這對女性患者尤其危險,因為她們常被歸類成「症狀輕微」,監測也就跟著鬆懈。這篇 2025 年的回顧把心臟和腎臟這兩條「沉默的傷害路線」攤開來看,數字讀起來相當不安。</p>
-<h2>心臟:女性最常見、也最要命的器官</h2>
+<h2 id="bt-s1">心臟:女性最常見、也最要命的器官</h2>
 <p>心臟侵犯是女性法布瑞氏症最常見的嚴重表現,一份 248 人的資料裡,59% 的女性有心臟受累,平均年齡才 33.5 歲。而心臟也是她們最主要的死因——多份登錄顯示,50% 到 57% 的女性死於心血管疾病,中位年齡 64 到 66 歲;相較之下,美國一般女性(全年齡)心血管死亡的比例是 21.8%。</p>
 <p>法布瑞氏症傷心臟的方式,是 GL3 堆進心肌細胞,把心臟一步步「撐厚、撐硬」。最早的跡象可能是心跳過慢(竇性心搏過緩),兒童時期就能看到;接著是左心室肥厚、舒張功能變差、傳導異常;再往後是心肌纖維化、微血管性心絞痛、心臟衰竭,甚至猝死。</p>
 <p>左心室肥厚在女性患者身上的比例是 18.2% 到 37.4%,中位年齡大約 50 歲;而挪威一份 1420 人的一般女性資料裡,同樣年齡層只有 9.1%。差距是三到四倍。</p>
@@ -104,7 +123,7 @@ article, article *{overflow-wrap:break-word}
 <p>纖維化,簡單說就是心肌被疤痕組織取代——疤是不會恢復的,而且是致命性心律不整和猝死的溫床。用心臟磁振造影上的「延遲釓顯影」可以看到這些疤。一項 58 位女性的研究裡,在還沒有心臟肥厚的患者中,23% 已經測得到纖維化,最年輕出現纖維化的只有 36 歲,而 46 歲以下根本還沒看到心臟變厚。另一項 59 人的研究,37% 測得到纖維化。</p>
 <p>台灣的資料更是把這件事講白了。台灣有一個晚發型的 IVS4+919G&gt;A 突變特別常見,篩檢資料顯示,這些帶因女性當中,16.7% 在心臟還沒變厚之前,就已經有明顯的纖維化——研究者用「insidious(陰險)、持續、而且不可逆」來形容這種傷害。</p>
 <p>換句話說,如果只盯著「心臟有沒有變厚」來決定要不要積極處理,對女性來說,很可能等到看見的時候,疤已經留下了。心律不整也一樣要注意——它是女性最常見的心臟事件之一,第三個十年就可能出現,而其中約一半是有症狀的;心房顫動在女性患者身上又比一般族群更常見、更早發生,而心房顫動本身會把中風風險再往上推。</p>
-<h2>腎臟:血中肌酸酐正常,不代表腎臟沒事</h2>
+<h2 id="bt-s2">腎臟:血中肌酸酐正常,不代表腎臟沒事</h2>
 <p>腎臟走的是同一套「先傷害、後現形」的劇本,而且更會騙人。</p>
 <p>臨床上判斷腎功能,最常用的是抽血看肌酸酐、估算腎絲球過濾率(eGFR),還有驗尿看蛋白尿。問題是,在女性法布瑞氏症患者身上,這三個指標都正常的時候,腎臟可能早就在流血。</p>
 <p>有一項研究替 13 位肌酸酐正常、蛋白尿也極少的女性做腎臟切片,結果 31%(四位)已經有超過 50% 的足細胞「足突消失」——足細胞是腎絲球過濾網上的守門員,它的足突一旦消失、細胞一旦流失,就通往蛋白尿、慢性腎病、最後腎衰竭。另一項針對腎病變「臨床上很輕微」的 24 位女性,切片也看到了腎絲球硬化和間質纖維化。指標告訴你沒事,顯微鏡下卻已經開打。</p>

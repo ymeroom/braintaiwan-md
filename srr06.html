@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/srr06.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 06 篇</strong>　指引第四章專講評估，分成五節：失能與復健需求（§4.1）、動作（§4.2）、溝通（§4.3）、認知與知覺（§4.4）、感覺（§4.5）。這一章的「新增重點」寫的是更強調標準化、有效的評估工具，並把評估擴大到視覺、聽覺與知覺。讀完會發現一個反覆出現的主題：病人自述與客觀測量常常對不上，而且對不上的方向，多半是病人低估了自己的問題。</p>
 </blockquote>
-<h2>評估的時間軸：至少一年</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 9 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">評估的時間軸：至少一年</a></li><li><a href="#bt-s2">動作評估：九條推薦</a></li><li><a href="#bt-s3">溝通評估：文化與語言史</a></li><li><a href="#bt-s4">認知與知覺：MoCA、MMSE、OCS</a></li><li><a href="#bt-s5">感覺：病人不知道自己看不到</a></li><li><a href="#bt-s6">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">評估的時間軸：至少一年</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>推薦</th><th>COR</th><th>LOE</th></tr></thead>
 <tbody>
@@ -111,7 +131,7 @@ article, article *{overflow-wrap:break-word}
 <p>病人自述與傳統量表的落差，在這一節就先出現了：<strong>有幾項研究報告，傳統的失能量表（如 mRS）與病人自覺的健康狀態之間有差異</strong>，所以指引強調要納入病人自評結果。</p>
 <p>CAT 的做法值得一提：<strong>CAT-FAS 題庫有 58 題，同時測量 4 個領域；當多做一題帶來的 Rasch 信度增加小於 0.010 時就停止施測</strong>，因為再做下去精確度也不會明顯提高。缺點是<strong>研究目前只限於亞急性期。</strong></p>
 <p>知識缺口的第一條把第一篇的主題又帶回來：<strong>中風恢復差異很大，復健卻沒有既定的終點</strong>，很難決定正式的失能評估什麼時候該停。</p>
-<h2>動作評估：九條推薦</h2>
+<h2 id="bt-s2">動作評估：九條推薦</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>推薦</th><th>COR</th><th>LOE</th></tr></thead>
 <tbody>
@@ -139,7 +159,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>上肢三個工具的比較：<strong>Wolf 動作功能測試最貼近生活（轉鑰匙、拿鉛筆、迴紋針和汽水罐），Action Research Arm Test 有 19 項任務，Box and Block 最不貼近生活，但只要計算 60 秒內搬過的積木數。前兩者大約要 15 分鐘。</strong></p>
 <p>預測演算法那一條，知識缺口補了一句：<strong>上肢恢復已經有機器學習與預測演算法，下肢還沒有。</strong></p>
-<h2>溝通評估：文化與語言史</h2>
+<h2 id="bt-s3">溝通評估：文化與語言史</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>推薦</th><th>COR</th><th>LOE</th></tr></thead>
 <tbody>
@@ -152,7 +172,7 @@ article, article *{overflow-wrap:break-word}
 <p>言談任務的重要性，指引用一個具體例子說明：<strong>NIHSS 現在也納入了圖片描述任務。</strong> 語用障礙（apragmatism）不是失語，病人字詞和文法都對，卻抓不到對話的言外之意；<strong>知識缺口特別點名需要研究失語症以外、右半球中風後的語言障礙，也就是語用障礙。</strong></p>
 <p>文化那一條是 Class 1，但支持文字舉的證據是：<strong>一群語言治療師把「個別化評估」這種文化回應實務評為中等重要到重要（3.6/5.0）</strong>，接著說<strong>需要更多研究來發展具文化敏感度的診斷工具。</strong> 等級是 Class 1，證據則比較接近專業共識。</p>
 <p>遠距評估的限制也寫出來了：<strong>現有的中風溝通標準化評估，大多缺乏以遠距平台施測失語症評估的信效度。</strong></p>
-<h2>認知與知覺：MoCA、MMSE、OCS</h2>
+<h2 id="bt-s4">認知與知覺：MoCA、MMSE、OCS</h2>
 <p><strong>大約 50% 的急性中風病人有認知或知覺障礙</strong>，而<strong>急性期的認知障礙會增加失智風險。</strong></p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>推薦</th><th>COR</th><th>LOE</th></tr></thead>
@@ -173,7 +193,7 @@ article, article *{overflow-wrap:break-word}
 <p><strong>一項設計良好的觀察研究結論是，OCS 比 MoCA 更能偵測中風特有的認知障礙，例如空間忽略、失用與讀寫能力。</strong> 另一個重點：<strong>除了 OCS，大多數簡短多領域篩檢工具都不評估知覺</strong>，而且<strong>簡短篩檢工具與執行功能測驗的相關性只有中等</strong>，所以指引要求篩檢要另外納入執行功能與知覺。</p>
 <p>文化調適的證據來自<strong>54 項觀察研究的系統性回顧：即使翻譯並做了文化調適，MoCA、OCS、MMSE 在不同文化族群的診斷準確度與最佳切點差異仍然很大。</strong></p>
 <p>遠距施測：<strong>視訊施測的 MoCA 總分與親自施測相當，但信度與測量精確度可能有差異；完整神經心理測驗組中，只有 Hopkins 語文學習測驗在視訊施測時表現較差。</strong></p>
-<h2>感覺：病人不知道自己看不到</h2>
+<h2 id="bt-s5">感覺：病人不知道自己看不到</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>推薦</th><th>COR</th><th>LOE</th></tr></thead>
 <tbody>
@@ -191,7 +211,7 @@ article, article *{overflow-wrap:break-word}
 <p>一半的視覺障礙病人不會自己說，這跟上一篇的尿失禁、疼痛是同一個模式。這一章反覆在講同一件事：不問、不測，就不會知道。</p>
 </blockquote>
 <p>3 個月時生活自理的人，每 6 個人就有 1 個在一年內變得需要人照顧，這些人在出院後的哪個時間點被看見了？</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s6">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>指引實際說法</th></tr></thead>
 <tbody>

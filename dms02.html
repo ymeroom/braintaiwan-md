@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/dms02.html">
 </head>
@@ -97,27 +116,28 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 02 篇</strong>　急性缺血性中風的病人抽出來血糖偏高，這件事本身幾乎不帶診斷資訊——因為壓力性高血糖與慢性糖尿病在急診那一刻長得一模一樣。這一篇處理兩件事：怎麼把兩者分開，以及為什麼「把血糖壓下來」這個直覺，在隨機試驗裡一再失敗。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">高血糖與糖尿病是兩回事</a></li><li><a href="#bt-s2">血栓溶解治療的兩條線</a></li><li><a href="#bt-s3">為什麼「積極降血糖」在試驗裡一直失敗</a></li><li><a href="#bt-s4">低血糖同樣有害</a></li></ol></details><!-- bt-toc:end -->
 <blockquote>
 <p><strong>本篇的來源與其他四篇不同。</strong> 第 01、03、04、05 篇的每一項數值都能回查 PMC 的 JATS 全文並逐字核對。這一篇的血糖門檻與 SHR 定義來自 2026 年 8 月 16 日 Boehringer ClinicalPath Forum 現場投影片（Tsivgoulis 講次）；SHINE 的數字取自 JAMA 2019 摘要（該文不在 PMC 開放取用集內，僅有摘要）。門檻值請以貴院採用的指引版本為準。</p>
 </blockquote>
-<h2>高血糖與糖尿病是兩回事</h2>
+<h2 id="bt-s1">高血糖與糖尿病是兩回事</h2>
 <p>急性期高血糖的定義本身就有兩套門檻，取決於病人空腹與否。臨床上常見的界定是空腹血糖超過 124 mg/dL，或隨機血糖超過 200 mg/dL。</p>
 <p>真正的問題在於，這個數字沒辦法告訴你眼前這個人是誰。中風急性期的高血糖可能來自三種完全不同的狀況：本來就有糖尿病、這次才被診斷出糖尿病、或者只是急性壓力反應——最後這一群人的血糖會在頭幾天自己降回來，而且不會發展成糖尿病。</p>
 <p>要把「今天的血糖」與「這幾個月的血糖」分開，方法是<strong>壓力性高血糖比值</strong>（stress hyperglycemia ratio, SHR）：用入院血糖除以由 HbA1c 推算出的慢性平均血糖。比值大於 1.0 表示這次的血糖高過這個人平常的水準，也就是真正的壓力性高血糖。SHR 愈高預後愈差，而且這個關聯在<strong>沒有糖尿病</strong>的病人身上更明顯。</p>
 <p>這是個違反直覺的方向：同樣一個 250 mg/dL，出現在長期血糖失控的人身上，反而不如出現在平常血糖正常的人身上來得凶險。</p>
-<h2>血栓溶解治療的兩條線</h2>
+<h2 id="bt-s2">血栓溶解治療的兩條線</h2>
 <p>急性缺血性中風要不要打血栓溶解劑，血糖是要先看的項目之一，而且兩端都有界線。</p>
 <p><strong>血糖低於 50 mg/dL 是絕對禁忌。</strong> 理由不是出血風險，而是診斷問題——嚴重低血糖本身就會造成局部神經學缺損，眼前這些症狀可能根本不是中風。</p>
 <p><strong>血糖高於 400 mg/dL 是相對禁忌</strong>，這一端的顧慮才是出血轉化。</p>
 <p>治療門檻一般落在 180 mg/dL 以上，目標區間 140 到 180 mg/dL。</p>
-<h2>為什麼「積極降血糖」在試驗裡一直失敗</h2>
+<h2 id="bt-s3">為什麼「積極降血糖」在試驗裡一直失敗</h2>
 <p>高血糖與差預後的關聯很強，於是「把它壓下來應該會更好」成為一個非常有吸引力的假說。這個假說被反覆檢驗，結果一致。</p>
 <p>早期的 GIST-UK 用葡萄糖－鉀－胰島素輸注對上生理食鹽水，功能結局與存活都沒有改善。後續的統合分析也是同一個方向：嚴格血糖控制沒有改善功能結局、沒有降低死亡率，但<strong>顯著增加低血糖</strong>。</p>
 <p>規模最大的一次是 SHINE 試驗，收了 <strong>1151 名</strong>急性缺血性中風合併高血糖的成人，隨機分派到積極治療（目標血糖 <strong>80–130 mg/dL</strong>）或標準治療（目標 <strong>80–179 mg/dL</strong>）。90 天改良 Rankin 量表達到良好結局的比例，積極組 <strong>20.5%</strong>、標準組 <strong>21.6%</strong>，差異未達統計顯著。</p>
 <p>作者給的結論一句話：與標準血糖控制相比，積極控制並未改善急性缺血性中風合併高血糖病人的 90 天功能結局。</p>
 <p>失敗的原因大概有三層。目標區間在各研究之間差異很大，難以互相比較；胰島素給法很難精準到不誤傷；而最根本的一點是，急性期高血糖對神經組織造成的傷害可能在入院前就已經發生，事後把數字壓下來並不能倒轉它。</p>
 <p>換句話說，高血糖在這裡比較像<strong>壞預後的標記</strong>，而不是可以介入的因果環節。這個區別在臨床上很重要：它不代表可以不管血糖，而是代表「把數字修漂亮」不該被誤認為「病人變好了」。</p>
-<h2>低血糖同樣有害</h2>
+<h2 id="bt-s4">低血糖同樣有害</h2>
 <p>這一點常被忽略。急性中風期的低血糖一樣會惡化結局，而且積極降糖正是製造低血糖的原因。</p>
 <p>實務上的意思是：血糖監測要夠密（一般建議每 4 到 6 小時），發現快速惡化或意識改變時要立刻排除低血糖，以及避免為了追求正常化而過度介入。指引給的方向是維持在建議區間內，而不是把血糖壓到正常值。</p>
 <blockquote class="commentary">

@@ -72,6 +72,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/bppv01.html">
 </head>
@@ -90,21 +109,22 @@ article, article *{overflow-wrap:break-word}
 <main>
   <div class="series-nav"><a href="bppv01.html" class="series-link active">① 病生理與風險</a><a href="bppv02.html" class="series-link">② 後半規管 BPPV</a><a href="bppv03.html" class="series-link">③ 水平半規管基本</a><a href="bppv04.html" class="series-link">④ 水平半規管進階</a><a href="bppv05.html" class="series-link">⑤ 前半規管與難治</a></div>
   <article class="article">
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">打破「單純退化」的迷思：系統性風險因子的介入</a></li><li><a href="#bt-s2">管酸症與頂帽酸症：從流體力學看臨床差異</a></li><li><a href="#bt-s3">診斷的靈魂：Ewald's Laws 的立體轉譯</a></li></ol></details><!-- bt-toc:end -->
 <h1>BPPV（良性陣發性姿勢性眩暈／耳石症）導讀 ①：從病生理到最新風險因子</h1>
 <blockquote>
 <p><strong>系列導讀．第 1 篇</strong> 良性陣發性姿勢性眩暈 (BPPV) 絕非僅是單純的「耳石掉落」這般機械性問題。要掌握精準的復位技巧，臨床醫師必須將視角從單一的解剖構造，擴展至全身骨質代謝的動態平衡，並深刻理解 Ewald 法則如何主導內耳的流體力學。</p>
 </blockquote>
-<h2>打破「單純退化」的迷思：系統性風險因子的介入</h2>
+<h2 id="bt-s1">打破「單純退化」的迷思：系統性風險因子的介入</h2>
 <p>在臨床上，BPPV 雖然有高達 2.4% 至 10% 的終身盛行率，且常被視為隨年齡增長而自然發生的特發性疾病，但這種「單純退化」的觀點已逐漸被推翻。流行病學顯示，女性罹患 BPPV 的風險顯著高於男性（盛行率約為 3.2% 對 1.6%），這強烈暗示了賀爾蒙與骨質代謝在發病機制中的關鍵角色。</p>
 <p>近年越來越多的研究將 BPPV 重新定調為一種與全身骨質代謝異常息息相關的疾病。內耳的碳酸鈣耳石（otoconia）並非穩固不變的結構，而是處於持續的生成與吸收之中。當患者存在骨質密度低下、骨質疏鬆症，或是血清維生素 D 濃度不足時，這層維持耳石穩定的微環境就會被破壞。特別是在停經後女性中，雌激素的急遽下降不僅加速了全身骨骼的去礦物質化，同樣也影響了耳石的更新代謝，導致耳石更容易從胞囊（utricular macula）上剝落。這解釋了為何許多頑固型或反覆復發的 BPPV 患者，往往合併有潛在的骨質代謝異常。</p>
 <blockquote>
 <p>💡 <strong>臨床觀察：為何患者主訴「早上起床最暈」？</strong> 這並非心理作用，而是有著明確的微觀物理基礎。脫落的碳酸鈣耳石在內淋巴液中並不是死物，它們會經歷持續的溶解與再沉澱（dissolution and re-precipitation）循環。在夜間睡眠期間，由於頭部長時間缺乏劇烈活動，內淋巴液流動停滯，碳酸鈣微粒會傾向於沉澱並聚集（aggregate）成較大、較具質量的碎塊。當早晨患者第一次起身或轉頭時，這些巨大碎塊產生的流體推力最為強烈，引發劇烈的眩暈。而隨著白天的日常活動，耳石群在內淋巴液中被不斷翻攪，部分產生溶解或重新分散，質量的分散使得對頂帽（cupula）的牽扯力減弱，這也是為何患者常覺得「到了下午眩暈感就減輕了」的真實原因。</p>
 </blockquote>
-<h2>管酸症與頂帽酸症：從流體力學看臨床差異</h2>
+<h2 id="bt-s2">管酸症與頂帽酸症：從流體力學看臨床差異</h2>
 <p>臨床上將 BPPV 區分為管酸症（Canalolithiasis）與頂帽酸症（Cupulolithiasis），這兩者的差異不僅在於發作時間的長短，更在於它們如何干擾半規管的微觀流體力學。</p>
 <p>在<strong>管酸症</strong>中，脫落的耳石於半規管的內淋巴液中自由游動。當頭部位置改變時，耳石並不會立刻移動，它必須先積累足夠的重力位能來克服內淋巴液的黏滯阻力（viscous drag），這也就是臨床上進行誘發測試時觀察到<strong>潛伏期（latency）</strong>的成因。一旦耳石開始滾動，帶動內淋巴液推擠頂帽，眼震隨之發生；當耳石到達半規管的最低點停止滾動，眼震便會隨之消失。管酸症具有顯著的疲勞性（fatigability），當臨床醫師短時間內反覆執行誘發測試時，原本聚集的耳石群會在管內被分散，加上中樞神經的適應機制，使得眼震強度一次比一次微弱。</p>
 <p>相對地，<strong>頂帽酸症</strong>是耳石碎片直接黏附在壺腹頂帽上，使其比重異常增加而對重力變得敏感。理論上，只要患者的頭部維持在特定位置，受到重力牽扯的頂帽就會一直處於偏折狀態，產生的眩暈與眼震應該「永不停止」。然而，在真實的臨床實務中，頂帽酸症的眼震通常只會持續幾分鐘。這種理論與現實的落差，主要源自於<strong>周邊受器疲乏（peripheral receptor fatigue）</strong>以及強大的<strong>中樞前庭適應（central vestibular adaptation）</strong>。大腦會主動抑制這種持續且不合理的單向訊號輸入，加上機械結構張力的逐漸衰減，使得看似無止盡的眼震最終仍會停歇。</p>
-<h2>診斷的靈魂：Ewald's Laws 的立體轉譯</h2>
+<h2 id="bt-s3">診斷的靈魂：Ewald's Laws 的立體轉譯</h2>
 <p>所有的復位手法，本質上就是一場在 3D 迷宮中的重力導航。要精準導航，臨床醫師的腦中必須內建 Ewald 的三大法則，並將其與眼震方向緊密結合。</p>
 <ol>
 <li><strong>第一法則（不對稱性原理）</strong>：半規管在受到興奮性刺激時所產生的反應，永遠強於受到抑制性刺激時的反應。這是我們在水平半規管 BPPV 中，用來判斷「哪一邊病得比較重」（側化，Lateralization）的基石。強烈眼震的那一側，往往對應著興奮性的刺激流向。</li>

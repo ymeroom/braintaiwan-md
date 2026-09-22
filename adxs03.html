@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/adxs03.html">
 </head>
@@ -97,8 +116,9 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 3 篇</strong>　對應指引建議 14（Recommendation 14）：當辦公室評估不足以解決診斷不確定性時，<strong>正式神經心理評估</strong>是下一步的關鍵工具。本篇談轉介時機與必測的認知領域。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、何時該轉介神經心理評估</a></li><li><a href="#bt-s2">二、必測的五大認知領域</a></li><li><a href="#bt-s3">三、神經心理評估結果如何餵回診斷流程</a></li><li><a href="#bt-s4">四、複雜因子：教育、語言、文化、共病</a></li><li><a href="#bt-s5">臨床要點摘要</a></li><li><a href="#bt-s6">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
-<h2>一、何時該轉介神經心理評估</h2>
+<h2 id="bt-s1">一、何時該轉介神經心理評估</h2>
 <p>指引建議 14（證據強度 A）列出兩種主要情境：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>情境</th><th>具體描述</th></tr></thead>
@@ -107,7 +127,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>辦公室評估異常，但判讀有不確定性</td><td>因教育程度、語言、文化背景、感覺/動作障礙等因素，難以確定異常表現是否真正反映認知缺損</td></tr>
 </tbody></table></div>
 <p>這兩種情境看似相反（一個「正常但懷疑」，一個「異常但存疑」），但背後是同一個原則：<strong>當簡易工具的解析力不足以支撐臨床決策時，就該升級到正式神經心理測驗</strong>。</p>
-<h2>二、必測的五大認知領域</h2>
+<h2 id="bt-s2">二、必測的五大認知領域</h2>
 <p>指引明確列出神經心理評估至少應涵蓋的測試領域：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>領域</th><th>評估重點</th><th>臨床意義</th></tr></thead>
@@ -121,14 +141,14 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p>為什麼特別強調「延遲自由回憶與線索回憶」？因為這是區分<strong>阿茲海默症型記憶缺損</strong>（提示線索無法挽救表現，代表海馬迴儲存功能本身受損）與<strong>額葉/注意力型記憶缺損</strong>（提示線索可顯著改善表現，代表問題出在提取策略而非儲存）最敏感的測驗設計。</p>
 </blockquote>
-<h2>三、神經心理評估結果如何餵回診斷流程</h2>
+<h2 id="bt-s3">三、神經心理評估結果如何餵回診斷流程</h2>
 <p>神經心理評估的產出不只是一份分數報告，而是應該回答兩個臨床問題：</p>
 <ol>
 <li><strong>缺損型態是否符合特定症候群分類？</strong>（健忘型／語言型／視覺空間型／執行功能型／混合型）</li>
 <li><strong>缺損嚴重度是否達到失智症門檻，或仍屬輕度認知障礙（MCI）？</strong></li>
 </ol>
 <p>這兩個問題的答案，直接決定後續是否需要進入分層檢測架構的更高層級（詳見<a href="adxs05.html">第⑤篇</a>），以及病因鑑別地圖該往哪個方向聚焦（詳見<a href="adxs04.html">第④篇</a>）。</p>
-<h2>四、複雜因子：教育、語言、文化、共病</h2>
+<h2 id="bt-s4">四、複雜因子：教育、語言、文化、共病</h2>
 <p>指引特別提醒，神經心理測驗的常模多建立在特定教育程度與文化族群上，以下因子都可能扭曲表現，需要有經驗的神經心理師納入判讀：</p>
 <ul>
 <li>低教育程度或文盲：多數常模測驗在此族群的特異度較低，易產生偽陽性</li>
@@ -138,7 +158,7 @@ article, article *{overflow-wrap:break-word}
 <li>物質使用、多重用藥：可能造成獨立於失智症之外的認知影響</li>
 </ul>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s5">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
@@ -155,7 +175,7 @@ article, article *{overflow-wrap:break-word}
 <p>教育程度與常模的落差，在台灣的臨床情境特別需要留意——尤其是面對教育程度較低、或主要使用台語/客語/原住民語而非華語的長者。我會盡量找熟悉在地語言文化、有相應常模經驗的神經心理師合作，而不是直接套用標準化測驗的截斷分數做判斷。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s6">參考文獻</h2>
 <ol>
 <li>Dickerson BC, Atri A, Clevenger C, et al. The Alzheimer's Association clinical practice guideline for the Diagnostic Evaluation, Testing, Counseling, and Disclosure of Suspected Alzheimer's Disease and Related Disorders (DETeCD-ADRD): Executive summary of recommendations for specialty care. <em>Alzheimer's Dement</em>. 2025;21:e14337. doi:10.1002/alz.14337</li>
 <li>Sabbagh MN, et al. Early detection of mild cognitive impairment (MCI) in primary care. <em>J Prev Alzheimers Dis</em>. 2020;7(3):165-170.</li>

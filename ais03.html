@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/ais03.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 3 篇</strong>　靜脈血栓溶解（IVT）行之有年，但 2026 指引帶來這一章近年最大的變化：<strong>tenecteplase（TNK）正式與 alteplase 並列為 4.5 小時內的首選溶栓劑</strong>。本篇整理用藥選擇、時效原則、延伸時間窗，以及一個重要的「反向」結論——<strong>輕微、非致殘性的中風，溶栓不一定划算</strong>。承接第 2 篇的影像選病，下啟第 4 篇的機械取栓。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、用藥選擇：TNK 與 alteplase 並列首選（COR 1）</a></li><li><a href="#bt-s2">二、時效原則：快，而且別被影像拖住（COR 1）</a></li><li><a href="#bt-s3">三、延伸時間窗：影像選對人，4.5 小時不是終點（COR 2a）</a></li><li><a href="#bt-s4">四、反向結論：非致殘性輕中風，溶栓不一定划算</a></li><li><a href="#bt-s5">五、輔助抗栓：argatroban、eptifibatide 加上去沒有用</a></li><li><a href="#bt-s6">六、兩個必須會處理的溶栓併發症</a></li><li><a href="#bt-s7">臨床要點摘要</a></li><li><a href="#bt-s8">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>靜脈溶栓的目標是<strong>溶開血栓、恢復血流</strong>。過去三十年的基石是 alteplase（rt-PA）；2026 指引最受矚目的更新，是把單次推注、操作更簡便的 tenecteplase 推上同等地位。但指引也清楚劃出邊界：<strong>溶栓越快越好、但不是人人都該打</strong>。</p>
 <hr>
-<h2>一、用藥選擇：TNK 與 alteplase 並列首選（COR 1）</h2>
+<h2 id="bt-s1">一、用藥選擇：TNK 與 alteplase 並列首選（COR 1）</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>劑量</th><th>給藥方式</th></tr></thead>
 <tbody>
@@ -117,14 +137,14 @@ article, article *{overflow-wrap:break-word}
 <p>台灣現況：台灣腦中風學會 2026 TNK 共識已依 TFDA 2026 仿單與最新證據整理臨床建議；<strong>實際適應症、藥品供應與給付狀態仍應依使用當下的最新仿單、院內藥事與 protocol 確認。</strong></p>
 </blockquote>
 <hr>
-<h2>二、時效原則：快，而且別被影像拖住（COR 1）</h2>
+<h2 id="bt-s2">二、時效原則：快，而且別被影像拖住（COR 1）</h2>
 <ul>
 <li><strong>盡速給藥</strong>：符合 4.5 小時內溶栓條件者應<strong>盡快施打</strong>，避免因追加 CTA/MRA、CT/MR 灌流等多模式影像而延誤（呼應第 2 篇）。</li>
 <li><strong>致殘性 deficit 不必看 NIHSS 高低</strong>：對 4.5 小時內、具<strong>致殘性神經功能缺損</strong>的病人，應快速溶栓，<strong>不需以進階影像篩選、也不應因 NIHSS 分數而卻步</strong>。</li>
 <li>每延遲一分鐘，就多損失一片可挽救的腦組織。</li>
 </ul>
 <hr>
-<h2>三、延伸時間窗：影像選對人，4.5 小時不是終點（COR 2a）</h2>
+<h2 id="bt-s3">三、延伸時間窗：影像選對人，4.5 小時不是終點（COR 2a）</h2>
 <p>對發病已超過 4.5 小時、或醒後中風（發病時間不明）者，只要影像顯示<strong>可挽救的半暗帶</strong>，仍可能從溶栓獲益：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>情境</th><th>條件</th></tr></thead>
@@ -135,7 +155,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>支持證據來自 <strong>EXTEND、WAKE-UP、EPITHET</strong> 等試驗：用影像「挑出時間軸雖晚、但組織還活著」的病人，把治療窗從僵硬的時鐘改成<strong>以組織為準</strong>。</p>
 <hr>
-<h2>四、反向結論：非致殘性輕中風，溶栓不一定划算</h2>
+<h2 id="bt-s4">四、反向結論：非致殘性輕中風，溶栓不一定划算</h2>
 <p>不是所有中風都該溶栓。對 <strong>4.5 小時內、非致殘性（如孤立性感覺異常）</strong> 的輕微中風：</p>
 <ul>
 <li>試驗（<strong>ARAMIS、TEMPO-2</strong>）顯示溶栓<strong>未能展現額外效益</strong>，且 alteplase 組反而有更多早期神經惡化與出血。</li>
@@ -143,14 +163,14 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>這是一個成熟的「減法」——把溶栓的出血風險留給真正會因中風致殘的人。</p>
 <hr>
-<h2>五、輔助抗栓：argatroban、eptifibatide 加上去沒有用</h2>
+<h2 id="bt-s5">五、輔助抗栓：argatroban、eptifibatide 加上去沒有用</h2>
 <p>近年有研究嘗試在溶栓之外<strong>併用抗栓藥物</strong>（如直接凝血酶抑制劑 argatroban、GP IIb/IIIa 抑制劑 eptifibatide）以增強療效：</p>
 <ul>
 <li>結果<strong>未顯示效益</strong>。</li>
 <li>指引明確：<strong>不建議</strong>以輔助抗栓藥物來增強溶栓療效。</li>
 </ul>
 <hr>
-<h2>六、兩個必須會處理的溶栓併發症</h2>
+<h2 id="bt-s6">六、兩個必須會處理的溶栓併發症</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>併發症</th><th>處置重點</th></tr></thead>
 <tbody>
@@ -158,7 +178,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>口舌血管性水腫</td><td>多與 ACE 抑制劑相關；停溶栓與 ACEi；methylprednisolone、抗組織胺；嚴重時 epinephrine、icatibant；保護呼吸道</td></tr>
 </tbody></table></div>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s7">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>2026 指引重點</th></tr></thead>
 <tbody>
@@ -177,7 +197,7 @@ article, article *{overflow-wrap:break-word}
 <p>還有那句老話：<strong>致殘性中風，別被 NIHSS 數字綁架、也別被一整套影像拖住。</strong> 該打的針，三分鐘內決定，比什麼都重要。出血併發症雖然少，但每個會溶栓的人都該把 sICH 與血管性水腫的處置背在腦子裡。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s8">參考文獻</h2>
 <ol>
 <li>Prabhakaran S, Gonzalez NR, Zachrison KS, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke: A Guideline From the AHA/ASA. <em>Stroke</em>. 2026;57. doi:10.1161/STR.0000000000000513</li>
 <li>Menon BK, et al. Intravenous tenecteplase compared with alteplase for acute ischaemic stroke in Canada (AcT). <em>Lancet</em>. 2022;400(10347):161-169.</li>

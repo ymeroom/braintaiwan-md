@@ -72,6 +72,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/tn05.html">
 </head>
@@ -90,11 +109,12 @@ article, article *{overflow-wrap:break-word}
 <main>
   <div class="series-nav"><a href="tn01.html" class="series-link">① 臨床困境與分類</a><a href="tn02.html" class="series-link">② 痛覺傳遞的 3D 迴路</a><a href="tn03.html" class="series-link">③ 離子通道微觀戰場</a><a href="tn04.html" class="series-link">④ 神經免疫與表觀遺傳</a><a href="tn05.html" class="series-link active">⑤ 藥物進展與未來</a></div>
   <article class="article">
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">二線與三線藥物：不只是備案，更是精準打擊</a></li><li><a href="#bt-s2">急性發作期的「拆彈」策略</a></li><li><a href="#bt-s3">新興藥物與未來研發方向：從單點突破到微環境重塑</a></li></ol></details><!-- bt-toc:end -->
 <h1>三叉神經痛導讀 ⑤：藥物進展與未來展望</h1>
 <blockquote>
 <p><strong>系列導讀．第 5 篇</strong> 面對三叉神經痛，當第一線的鈉通道阻斷劑（如 Carbamazepine）遭遇療效瓶頸或產生強烈副作用時，臨床醫師必須精準切換戰術。本篇將盤點目前二/三線藥物的機轉定位，探討急性發作時的急救策略，並展望未來基於分子標靶的新興療法。</p>
 </blockquote>
-<h2>二線與三線藥物：不只是備案，更是精準打擊</h2>
+<h2 id="bt-s1">二線與三線藥物：不只是備案，更是精準打擊</h2>
 <p>當傳統的鈉通道封鎖策略走到極限，我們必須從其他的離子通道或受體下手：</p>
 <ol>
 <li><strong>鈣離子通道調節劑 (Gabapentin / Pregabalin)</strong>：</li>
@@ -108,14 +128,14 @@ article, article *{overflow-wrap:break-word}
 <li><strong>GABA 受體致效劑 (Baclofen)</strong>：</li>
 </ol>
 <p>   身為 GABA<code>_B</code> 受體致效劑，Baclofen 能促進鉀離子外流並抑制鈣通道，造成神經元超極化（hyperpolarization），從中樞層面踩下神經放電的煞車。    - <strong>臨床定位</strong>：雖然單一使用的止痛效果有限，但它特別適用於<strong>合併多發性硬化症 (MS)</strong> 的 TN 患者，因為它能同時緩解神經痛與肌肉痙攣。</p>
-<h2>急性發作期的「拆彈」策略</h2>
+<h2 id="bt-s2">急性發作期的「拆彈」策略</h2>
 <p>當 TN 出現嚴重的急性惡化（Acute Exacerbation Episodes），患者可能痛到無法進食、說話甚至張口，此時傳統的口服慢速滴定已緩不濟急，我們需要能迅速截斷痛覺訊號的急救藥物：</p>
 <ul>
 <li><strong>Lidocaine (利多卡因)</strong>：作為強效鈉通道阻斷劑，可透過靜脈滴注、局部注射或鼻噴劑給予，能以最快速度暫時關閉神經纖維的傳導。</li>
 <li><strong>Fosphenytoin / Phenytoin (磷苯妥英/苯妥英)</strong>：透過靜脈給予，除了強力阻斷鈉通道外，還能增強 GABA 的抑制作用，是醫院急診室中對抗重度神經痛發作的利器。</li>
 <li><strong>Sumatriptan (舒馬曲坦)</strong>：這原本是偏頭痛的特效藥（5-HT<code>_{1B/1D}</code> 受體致效劑），但透過皮下注射或鼻噴給藥，在部分 TN 急性發作患者身上也觀察到了阻斷神經性發炎與止痛的奇效。</li>
 </ul>
-<h2>新興藥物與未來研發方向：從單點突破到微環境重塑</h2>
+<h2 id="bt-s3">新興藥物與未來研發方向：從單點突破到微環境重塑</h2>
 <p>未來的 TN 治療，正逐步跳脫單純的「阻斷放電」，轉向更精準的標靶與微環境重塑：</p>
 <ol>
 <li><strong>肉毒桿菌素 A (BoNT-A) 的全新定位</strong>：</li>

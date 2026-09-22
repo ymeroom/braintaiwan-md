@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/edh01.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 01 篇</strong>　急性硬腦膜外血腫（EDH）在教科書上是一個線條乾淨的故事：年輕人撞到頭、中腦膜動脈被扯破、短暫昏迷後清醒、再度昏迷、開刀、痊癒。這份 2006 年的 Brain Trauma Foundation 手術治療指引把每一段都拆開來對照文獻，結果是那個故事有一半以上的細節撐不住。這一篇處理流行病學、出血來源、臨床表現，以及預後到底由什麼決定。</p>
 </blockquote>
-<h2>這是一種年輕人的病</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 8 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">這是一種年輕人的病</a></li><li><a href="#bt-s2">中腦膜動脈的迷思</a></li><li><a href="#bt-s3">清醒期沒有那麼可靠</a></li><li><a href="#bt-s4">死亡率：EDH 是顱內血腫裡預後最好的那一種</a></li><li><a href="#bt-s5">決定預後的六個因子</a></li><li><a href="#bt-s6">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">這是一種年輕人的病</h2>
 <p>在電腦斷層成為外傷後顱內病灶首選影像之後，EDH 在頭部外傷（TBI）患者中的發生率被報告在 <strong>2.7% 到 4%</strong> 之間。這個數字看起來不高，但族群一旦限縮，比例就跳上去：在昏迷的 TBI 患者中，<strong>高達 9%</strong> 帶有需要開顱清除的 EDH。</p>
 <p>年齡分布很有特色。EDH 的發生高峰落在第二個十年，患者平均年齡介於 <strong>20 到 30 歲</strong>，而在 <strong>50 至 60 歲以上的族群相當罕見</strong>。兒童患者的平均年齡則在 <strong>6 到 10 歲</strong>之間，極幼兒與新生兒少見。</p>
 <p>這條年齡曲線值得跟硬腦膜下血腫並排看。慢性與急性硬腦膜下血腫的重心在老年，靠的是腦萎縮與橋靜脈拉扯；EDH 的重心在青壯年，靠的是硬腦膜與顱骨之間那層黏得很緊的界面被外力剝開。年紀愈大，硬腦膜與顱骨內板黏合得愈牢，血反而不容易撐出這個腔隙。</p>
@@ -111,19 +131,19 @@ article, article *{overflow-wrap:break-word}
 <tr><td>兒童</td><td>跌倒</td><td>49%（25–59%）</td></tr>
 <tr><td>兒童</td><td>交通事故</td><td>34%（25–41%）</td></tr>
 </tbody></table></div>
-<h2>中腦膜動脈的迷思</h2>
+<h2 id="bt-s2">中腦膜動脈的迷思</h2>
 <p>EDH 可能源自中腦膜動脈、中腦膜靜脈、板障靜脈或靜脈竇的損傷。指引在這裡用了一個很克制的措辭：「<strong>歷史上</strong>，中腦膜動脈出血一直被認為是 EDH 的主要來源。」</p>
 <p>接著它給出反證。一份納入 102 位兒童與 387 位成人的報告顯示，動脈性出血只在 <strong>36% 的成人</strong>與 <strong>18% 的兒童</strong>身上被確認為出血來源。兒童中有 <strong>31%</strong> 根本找不到出血源，而靜脈性出血在兩個年齡層都大約佔 <strong>32%</strong>。</p>
 <p>換算一下：成人有將近三分之二的 EDH，出血來源不是動脈。</p>
 <p>這件事會影響床邊的直覺。如果心裡預設的模型是「動脈出血、壓力高、擴大快」，那麼碰到一個薄的、看起來不像會長大的 EDH 時，容易低估它；反過來也容易高估。實際上 EDH 的擴大速度是一個從很快到幾乎不動的連續光譜，而影像上看不出出血源。</p>
 <p>位置分布上，手術系列中的 EDH 較常出現在<strong>顳頂與顳部</strong>。<strong>2 至 5%</strong> 的患者為雙側 EDH，右側略多於左側。顳部這個位置在後面兩篇還會反覆出現——它是保守治療失敗的主要預測因子。</p>
-<h2>清醒期沒有那麼可靠</h2>
+<h2 id="bt-s3">清醒期沒有那麼可靠</h2>
 <p>古典描述的「清醒期」（lucid interval）指的是患者一開始意識不清、接著清醒、然後再度惡化。這個現象在七項研究、共 963 位接受 EDH 手術的患者中，出現在 <strong>456 位（47%）</strong>身上。</p>
 <p>不到一半。</p>
 <p>更值得記住的是另外一端：<strong>12% 到 42%</strong> 的患者在受傷到手術之間<strong>全程保持清醒</strong>，而高達 <strong>27%（範圍 3–27%）</strong>的患者在神經學檢查上完全正常。</p>
 <p>把這三個數字放在一起，臨床意義就浮出來了。清醒期是一個<strong>支持診斷</strong>的線索，但它的缺席完全不能排除 EDH；一個意識清楚、神經學檢查乾淨的頭部外傷患者，仍然可能帶著一個正在長大的硬腦膜外血腫。</p>
 <p>其餘的表現包括昏迷（<strong>22 到 56%</strong> 的患者在到院時或手術前昏迷）、瞳孔異常（<strong>18 到 44%</strong>）、局部神經學缺損如偏癱、去大腦強直，以及癲癇。兒童 EDH 的早期癲癇發生率為 <strong>8%</strong>。</p>
-<h2>死亡率：EDH 是顱內血腫裡預後最好的那一種</h2>
+<h2 id="bt-s4">死亡率：EDH 是顱內血腫裡預後最好的那一種</h2>
 <p>接受手術清除 EDH 的患者，涵蓋所有年齡與所有 GCS，整體死亡率約為 <strong>10%（範圍 7–12.5%）</strong>。相對應的兒童病例系列則約為 <strong>5%</strong>。</p>
 <p>Gennarelli 等人分析 1107 位昏迷 TBI 患者的病灶類型、到院 GCS 與三個月預後，得到一組很有教學價值的對照：</p>
 <div class="bt-tablewrap"><table>
@@ -135,7 +155,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>同樣是 GCS 3 到 5 的深度昏迷，硬腦膜下出血的死亡率是 EDH 的兩倍有餘。而 EDH 患者只要 GCS 落在 6 到 8，死亡率就掉到個位數。</p>
 <p>這組數字解釋了為什麼 EDH 在神經外科裡有「值得積極處理」的地位：它的傷害主要來自可以被移除的佔位效應，而不是像硬腦膜下血腫那樣，來自血腫底下那層手術刀碰不到的原發性腦損傷。</p>
-<h2>決定預後的六個因子</h2>
+<h2 id="bt-s5">決定預後的六個因子</h2>
 <p>指引列出六項影響 EDH 術後預後的重要因子：<strong>GCS、年齡、瞳孔異常、合併顱內病灶、神經學惡化到手術之間的時間，以及顱內壓</strong>。</p>
 <p><strong>GCS 是最強的單一預測因子。</strong> 三項使用多變項迴歸的研究發現，在接受 EDH 手術的患者中，GCS 比年齡更能預測預後。另外三項多變項研究（共 284 位患者）指出，<strong>到院 GCS 是六個月預後最顯著的決定因子</strong>。在一項 200 位開顱患者的研究中，到院 GCS 與術前 GCS 都與一年後的功能預後相關。</p>
 <p><strong>年齡的影響比想像中弱。</strong> 指引寫得很直接：年齡對預後的影響，在 EDH 這個亞群中「不如在整體 TBI 患者中那麼明顯」。van den Brink 等人分析 98 位各年齡層的開顱患者，六個月預後的顯著因子是 GCS、年齡，以及 CT 上的外傷性蜘蛛網膜下腔出血。不過該研究的年齡分層仍然呈現清楚的梯度：</p>
@@ -160,7 +180,7 @@ article, article *{overflow-wrap:break-word}
 <p><strong>顱骨骨折的角色反而混亂。</strong> 骨折出現在 <strong>70 至 95%</strong> 的病例中，但它對預後的影響有爭議：Kuday 等人在 115 位手術患者中觀察到骨折與不良預後顯著相關；Lee 等人在 200 位相同處理的患者中看不到這個關聯；而 Rivas 等人<strong>反而</strong>報告有顱骨骨折者死亡率顯著較低。</p>
 <p>顯著的顱外損傷出現在 <strong>7 至 23%</strong> 的手術患者身上。Lobato 等人的系列中顱外損傷佔 20%，而這個亞群的死亡率（<strong>7.6%</strong>）低於整體死亡率（<strong>28%</strong>）。至於低血壓與 EDH 預後的關係，指引明講：<strong>沒有找到資料</strong>。</p>
 <p><strong>顱內壓只有一項研究。</strong> 這是整章最薄的一塊證據。Lobato 等人在 64 位清除 EDH 後的昏迷患者中，對 54 位（83%）監測顱內壓：<strong>ICP &gt;15 mmHg</strong> 出現在 <strong>67%</strong> 的病例，而 <strong>ICP &gt;35 mmHg</strong> 與較高死亡率顯著相關。整份指引裡，探討術後 ICP 與六個月預後關係的研究，就只有這一篇。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s6">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>文獻實際說法</th></tr></thead>
 <tbody>

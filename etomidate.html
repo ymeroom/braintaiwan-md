@@ -61,6 +61,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/etomidate.html">
 <meta property="og:url" content="https://md.braintaiwan.com/etomidate.html">
@@ -88,6 +107,7 @@ article, article *{overflow-wrap:break-word}
 </header>
 <main>
   <article class="article">
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 7 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、物質本體：不是 Midazolam，是麻醉誘導劑 Etomidate</a></li><li><a href="#bt-s2">二、雙重毒性機轉：神經與內分泌兩條獨立路徑</a></li><li><a href="#bt-s3">三、各器官系統毒性對照</a></li><li><a href="#bt-s4">四、臨床時序：三個時間尺度</a></li><li><a href="#bt-s5">五、診斷與鑑別：把電子煙史問出來</a></li><li><a href="#bt-s6">六、急症處置</a></li><li><a href="#bt-s7">七、法規與通報</a></li><li><a href="#bt-s8">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 
 <blockquote class="lay">
 <p>👥 <strong>找給民眾／家長看的版本？</strong>白話解說＋家長辨識清單在 <a href="https://media.braintaiwan.com/posts/zombie-vape.html">BrainTaiwan Media：孩子手指發黑，我以為他只是沒洗手 →</a></p>
@@ -97,7 +117,7 @@ article, article *{overflow-wrap:break-word}
 <p>「喪屍煙彈」近兩年在台灣青少年族群快速擴散，臨床上開始出現以<strong>不明原因色素沉著、慢性疲倦、反覆腹痛</strong>就診，最終追溯到電子煙使用的個案。它的主成分常被誤認，毒性機轉也與一般鎮靜劑不同。本文整理依託咪酯的神經與內分泌雙重毒性、臨床時序、鑑別診斷與急症處置，供第一線辨識之用。</p>
 
 <hr>
-<h2>一、物質本體：不是 Midazolam，是麻醉誘導劑 Etomidate</h2>
+<h2 id="bt-s1">一、物質本體：不是 Midazolam，是麻醉誘導劑 Etomidate</h2>
 <p>許多新聞與部分衛教資料將「喪屍煙彈」成分誤植為<strong>咪達唑侖（Midazolam）</strong>——那是苯二氮平類鎮靜劑。實際主成分為<strong>依託咪酯（Etomidate）</strong>，一種<strong>咪唑類（imidazole）短效靜脈麻醉誘導劑</strong>，兩者藥理完全不同。其化學近親<strong>美托咪酯（Metomidate）</strong>與<strong>異丙帕酯（propoxate）</strong>結構僅差數個碳、常被混入，毒性相當。</p>
 <p>依託咪酯臨床上用於急救插管與短時鎮靜誘導，優點是<strong>對血流動力學影響極小</strong>（適合休克病人）。正因「起效快、代謝快、藥理單純」，被提煉混入電子煙油，自中國大陸於 2023 年起滲入台灣，販售話術為「放鬆／助眠／合法替代大麻」。台灣已於 <strong>2024 年 11 月將依託咪酯列為第二級毒品</strong>。</p>
 <blockquote>
@@ -105,7 +125,7 @@ article, article *{overflow-wrap:break-word}
 </blockquote>
 
 <hr>
-<h2>二、雙重毒性機轉：神經與內分泌兩條獨立路徑</h2>
+<h2 id="bt-s2">二、雙重毒性機轉：神經與內分泌兩條獨立路徑</h2>
 <p>依託咪酯的傷害並非單一系統，而是<strong>兩條平行路徑</strong>——這是與一般鎮靜劑濫用最不同、也最容易被忽略之處。</p>
 
 <h3>路徑 A：GABA<sub>A</sub> 受體強化 → 全腦抑制與肌躍症</h3>
@@ -119,7 +139,7 @@ article, article *{overflow-wrap:break-word}
 </blockquote>
 
 <hr>
-<h2>三、各器官系統毒性對照</h2>
+<h2 id="bt-s3">三、各器官系統毒性對照</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>系統</th><th>機轉</th><th>臨床表現</th></tr></thead>
 <tbody>
@@ -131,7 +151,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 
 <hr>
-<h2>四、臨床時序：三個時間尺度</h2>
+<h2 id="bt-s4">四、臨床時序：三個時間尺度</h2>
 <p>急性顫抖最顯眼，但<strong>真正致命且易被忽略的是亞急性與慢性的內分泌崩壞</strong>。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>分期</th><th>時程</th><th>臨床表現</th></tr></thead>
@@ -142,7 +162,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 
 <hr>
-<h2>五、診斷與鑑別：把電子煙史問出來</h2>
+<h2 id="bt-s5">五、診斷與鑑別：把電子煙史問出來</h2>
 <p>面對<strong>不明原因色素沉著 ＋ 低血壓 ＋ 低血糖 ＋ 低鈉</strong>的年輕病患，臨床圖像可酷似原發性腎上腺功能不全。關鍵在於<strong>主動詢問電子煙／物質使用史</strong>，因為本症病因是<strong>可逆的外源性酵素抑制</strong>，與器質性疾病的處置與預後截然不同。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>鑑別診斷</th><th>區辨要點</th></tr></thead>
@@ -160,7 +180,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 
 <hr>
-<h2>六、急症處置</h2>
+<h2 id="bt-s6">六、急症處置</h2>
 <blockquote class="danger">
 <h3>🚨 須立即辨識的致命情境</h3>
 <p><strong>腎上腺危象（adrenal crisis）：</strong>嚴重低血壓／休克、低血糖、低鈉、意識改變，常於感染或身體壓力下誘發。處置——立即靜脈 <strong>hydrocortisone 100 mg</strong>（續以分次或持續輸注）、積極補液（生理食鹽水 ± 葡萄糖）、矯正電解質與低血糖，勿等檢驗結果才給類固醇。</p>
@@ -170,11 +190,11 @@ article, article *{overflow-wrap:break-word}
 <p>穩定後轉介內分泌科評估腎上腺功能恢復，並接軌成癮防治（精神科成癮門診／各縣市成癮防治中心）。多數腎上腺抑制在停止暴露後可逆，但神經損傷與成癮可能持續。</p>
 
 <hr>
-<h2>七、法規與通報</h2>
+<h2 id="bt-s7">七、法規與通報</h2>
 <p>依託咪酯已於 <strong>2024 年 11 月列為第二級毒品</strong>，製造、運輸、販賣最重無期徒刑，單純持有亦有刑責。臨床上應向病人與家屬澄清「買來自用不違法」的錯誤認知，同時說明<strong>就醫紀錄具保密保障</strong>，鼓勵據實告知使用史以利診治。</p>
 
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s8">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>

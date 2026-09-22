@@ -66,6 +66,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/b1204.html">
 </head>
@@ -88,34 +107,35 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 4 篇</strong>　以 NICE NG239 §1.5「Managing vitamin B12 deficiency」建議 1.5.1–1.5.17 為主軸 同一張檢驗單、同一個偏低的 B12 數字，走到治療這一步，答案會因為「為什麼低」而分岔成好幾條路——有人終身打針，有人吃幾個月藥、把源頭處理掉就能停。這一篇把 NG239 的分岔口一個一個攤開。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 8 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、先講所有人都適用的兩件事</a></li><li><a href="#bt-s2">二、吸收不良：分成「終身打針」和「可能能停」兩群</a></li><li><a href="#bt-s3">三、藥物引起：重點不在補，在那顆藥</a></li><li><a href="#bt-s4">四、笑氣：補的同時要勸戒</a></li><li><a href="#bt-s5">五、飲食性：最容易誤判，也最需要問清楚</a></li><li><a href="#bt-s6">六、病因不明：先口服，第一次追蹤看反應</a></li><li><a href="#bt-s7">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>拿到一個 B12 偏低的結果，最先該問的不是「要口服還是打針」，而是「這個人為什麼會低」——因為 NG239 整個 §1.5 的設計，就是讓補法跟著病因走。同樣的數值，吸收不良的人可能要終身肌肉注射，飲食造成的人也許改個飲食加吃幾個月藥就好，藥物引起的人重點反而在那顆藥能不能停。委員會自己講得很白：治療的目標是把 B12 濃度拉回來，但要怎麼拉、拉多久，得同時看病因和症狀。所以這一篇不是「B12 怎麼補」的單一食譜，而是一張分岔的路線圖。</p>
-<h2>一、先講所有人都適用的兩件事</h2>
+<h2 id="bt-s1">一、先講所有人都適用的兩件事</h2>
 <p>不管病因是什麼，開始補之前有兩句話要先跟病人說清楚。</p>
 <p>第一句是關於「什麼時候會好」。委員會提醒，反應因人、因病因而異：症狀<strong>可能在兩週內開始改善，但也可能拖到三個月</strong>才有感覺；更要先打預防針的是，<strong>初期甚至可能先變差</strong>。把這條時間軸講在前面，病人才不會兩週沒起色就慌著換藥或放棄——同時也要告訴他，如果症狀沒有照預期改善，什麼時候該回來求助（1.5.1）。這一段的邏輯很實際：B12 治療的實證大多建立在抽血數字上，對「症狀改善、生活品質」這類病人真正在乎的結果著墨很少，所以委員會寧可把期待值管理做在前面。</p>
 <p>第二句是給孕婦和哺乳的人。如果補充是在<strong>懷孕或哺乳之前</strong>就開始的，那就<strong>繼續補、日後再評估</strong>要不要停（1.5.2）。理由很簡單：B12 補充沒有已知的害處，貿然停掉反而可能讓症狀回來或惡化。這是「多做無害、少做有險」的權衡。</p>
-<h2>二、吸收不良：分成「終身打針」和「可能能停」兩群</h2>
+<h2 id="bt-s2">二、吸收不良：分成「終身打針」和「可能能停」兩群</h2>
 <p>如果原因是吸收不良，NG239 又把它切成兩半，差別在於這個吸收不良是不是不可逆。</p>
 <p><strong>第一群是回不去的——終身肌肉注射。</strong> 確診（或高度疑似）<strong>自體免疫胃炎</strong>的人、做過<strong>全胃切除</strong>、或做過<strong>完全迴腸切除</strong>的人，都歸這一群（1.5.3）。道理是他們的腸胃道已經永久失去吸收 B12 的能力，口服往往無效，只能靠打針繞過腸道。特別要注意「疑似」兩個字：自體免疫胃炎本來就難確診，委員會刻意把「很可能是」的人跟「確診」的人放在同一條路上一起打針——這是為了不要讓一個難確診的病，拖到把神經傷害變成永久性。</p>
 <p><strong>第二群是有機會回頭的——補，但可以之後重評。</strong> 其他原因的吸收不良，像<strong>乳糜瀉、部分胃切除、部分迴腸切除、某些減重手術</strong>，也一樣要補 B12，但這群人不見得需要終身治療：只要底下的吸收不良被控制住（例如乳糜瀉靠無麩質飲食），身體有機會重新吸收，缺乏長期來看可能逆轉（1.5.4）。給法上，委員會<strong>傾向肌肉注射優於口服</strong>——因為口服到底吸收進去多少很難抓，打針比較能確保劑量到位；但也沒有把口服排除，畢竟這群人缺乏口服無效的證據。真要口服，<strong>劑量要用到每天至少 1 mg</strong>（1.5.5），因為對照試驗就是用這個劑量，沒有理由相信更低的劑量在疑似或確診吸收不良的人身上會有效。</p>
-<h2>三、藥物引起：重點不在補，在那顆藥</h2>
+<h2 id="bt-s3">三、藥物引起：重點不在補，在那顆藥</h2>
 <p>藥物造成的缺乏，補法反而是次要問題，主角是那顆藥。</p>
 <p>給法上很寬鬆——<strong>口服或肌肉注射擇一皆可</strong>，看臨床判斷加上病人偏好（1.5.6），因為沒有證據說哪一種比較好。而且只要人還在吃那顆藥，B12 就要<strong>持續補下去</strong>，否則缺乏不會自己解決。</p>
 <p>真正的關鍵動作，是回頭審視那顆藥能不能<strong>停掉或換掉</strong>。如果可以停、可以換，而且停換之後病人不再有缺乏的症狀，那就該<strong>重新評估</strong>還需不需要繼續補（1.5.7）——因為造成缺乏的源頭已經被移走了。這一段其實是在提醒：面對藥物引起的 B12 缺乏，開補充品之外，別忘了那張處方箋本身可能才是能一勞永逸的地方。</p>
-<h2>四、笑氣：補的同時要勸戒</h2>
+<h2 id="bt-s4">四、笑氣：補的同時要勸戒</h2>
 <p>娛樂性使用笑氣（nitrous oxide）造成的缺乏，處理邏輯跟藥物那組很像，只是多了一個勸戒的動作。</p>
 <p>笑氣會讓體內的 B12 失去活性而造成缺乏，長期效應目前還不清楚。給法同樣是<strong>口服或肌注擇一</strong>，看判斷和偏好（1.5.8）。但補的同時，一定要<strong>勸病人停止娛樂性使用笑氣</strong>，否則缺乏只會愈補愈追不上（1.5.9）。等他真的戒掉、症狀也消失了，就<strong>重新評估</strong>還要不要繼續補（1.5.10）——不過委員會也提醒，戒掉之後可能還得補一陣子，因為缺乏要多久才完全恢復，目前並不清楚。</p>
-<h2>五、飲食性：最容易誤判，也最需要問清楚</h2>
+<h2 id="bt-s5">五、飲食性：最容易誤判，也最需要問清楚</h2>
 <p>飲食造成的缺乏是可逆的，但也是最容易被「想當然」誤判的一群，所以 NG239 在這裡花的篇幅最多。</p>
 <p><strong>第一步是問，而不是假設。</strong> 委員會強調要跟疑似或確診飲食性缺乏的人好好談他吃什麼、喝什麼，連同症狀、徵象、危險因子一起看，才能確定飲食真的是原因（1.5.11）。因為很容易把「素食」直接當成答案——但吃素的人可能從<strong>酵母抽取物、強化早餐穀片</strong>這類非肉魚奶的來源攝取到 B12，<strong>素食未必是唯一的原因</strong>。如果太快認定是飲食問題，反而可能漏掉像自體免疫胃炎這種放著不管會出大事的病因。</p>
 <p><strong>第二步是選對補充品。</strong> 市售口服補充品差異很大，有些有效，有些根本 B12 含量不夠或型式不對，甚至是<strong>假補充品或 B12 類似物（analogues）</strong>，拿來治缺乏並不合適。委員會於是列出該認明的型式：含 <strong>cyanocobalamin、methylcobalamin 或 adenosylcobalamin</strong> 的才算數（1.5.12–1.5.13）。所以問診時順手問一句他在藥局買了什麼 OTC，往往比想像中重要。</p>
 <p><strong>第三步才是開藥。</strong> 有些人光靠改飲食就能逆轉，不一定要治療；但因為這方面證據不足，委員會還是建議對部分人<strong>考慮口服補充</strong>，確保需要時能快又有效地補上（1.5.14）。孕哺婦如果開口服，<strong>劑量至少 1 mg/日</strong>，因為這時候身體對 B12 的需求更高（1.5.15）。</p>
 <p><strong>但有些飲食性的人，該直接改打針。</strong> 兩種情況要跳過口服：一是<strong>有快速惡化的風險</strong>、治療必須馬上見效以免嚴重影響生活品質；二是<strong>對口服順從性有疑慮</strong>（1.5.16）。後者委員會點名了幾類人——<strong>高齡且近期住過院、又有多重共病或衰弱（連到營養不良、失智、失代償）、譫妄或認知障礙、遊民</strong>等等；這些人本來每天就要吞好幾種藥，改肌注等於少一種藥要記，也更能確保 B12 真的補進去。這條「順從性有疑慮就改打針」是相對於過去的一個改變。</p>
-<h2>六、病因不明：先口服，第一次追蹤看反應</h2>
+<h2 id="bt-s6">六、病因不明：先口服，第一次追蹤看反應</h2>
 <p>如果查完該查的、既找不到已知或疑似病因，又不像吸收不良，那就照最單純的方式處理。</p>
 <p>委員會在沒有證據的情況下，憑經驗建議：這種人一樣要補，而且<strong>考慮口服優於肌注</strong>（1.5.17）。理由是這群人應該已經做過必要檢查、排除了吸收不良，那口服照理就該能把缺乏補回來。但別忘了加一句但書——<strong>在第一次追蹤時評估口服的反應</strong>，確認它真的有效，沒效再說。</p>
 <p>最後兩個實務註記。成本上，肌肉注射如果<strong>用超過六個月，其實比口服便宜</strong>，這也是為什麼在吸收不良、需要長期治療的族群，指引不太糾結打針的成本。至於「病人能不能自己在家打」，NG239 目前只把它列為<strong>研究建議</strong>——沒有比較自我注射和專業人員注射的證據，而且皮下注射屬於<strong>仿單標示外（off-label）</strong>用法，所以委員會沒有正式推薦。</p>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s7">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>病因</th><th>給法</th><th>療程／要點</th><th>建議</th></tr></thead>
 <tbody>

@@ -83,6 +83,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/tnk01.html">
 </head>
@@ -104,10 +123,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 1 篇</strong>　台灣腦中風學會在 2026 年提出 Tenecteplase（TNK）靜脈血栓溶解治療共識。本篇先回答最常見的問題：TNK 和 alteplase 到底差在哪裡？大型試驗支持的是「更好」、還是「不劣」？單次推注又會如何改變急診與轉院流程？</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、TNK 與 alteplase：差異先看這張表</a></li><li><a href="#bt-s2">二、證據支持的是「非劣性」，不要說成全面勝出</a></li><li><a href="#bt-s3">三、真實世界資料：效果相當，出血沒有明顯增加</a></li><li><a href="#bt-s4">四、單次推注真正改變的是照護流程</a></li><li><a href="#bt-s5">五、導入 TNK 前，團隊至少要回答五個問題</a></li><li><a href="#bt-s6">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>急性缺血性腦中風的治療核心沒有改變：<strong>符合條件就要儘快恢復腦部血流</strong>。改變的是，我們現在多了一個有大型隨機試驗支持的靜脈溶栓選項。</p>
 <p>Tenecteplase 並不是全新的分子。它是 alteplase 的基因工程改造型 rt-PA，原本已長期用於心肌梗塞；近年累積的腦中風研究，才讓它逐步走進急性中風治療。</p>
-<h2>一、TNK 與 alteplase：差異先看這張表</h2>
+<h2 id="bt-s1">一、TNK 與 alteplase：差異先看這張表</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>Tenecteplase（TNK）</th><th>Alteplase</th></tr></thead>
 <tbody>
@@ -119,7 +139,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>實務影響</td><td>不需持續掛幫浦，利於快速轉送</td><td>轉送期間仍須維持輸注與監測</td></tr>
 </tbody></table></div>
 <p>TNK 的長半衰期使它能以一次推注完成給藥。這不只是「少掛一袋點滴」：在院際轉送、橋接機械取栓、護理交班與劑量核對上，都可能少一個容易出錯或延誤的環節。</p>
-<h2>二、證據支持的是「非劣性」，不要說成全面勝出</h2>
+<h2 id="bt-s2">二、證據支持的是「非劣性」，不要說成全面勝出</h2>
 <p>共識整理了多項 TNK 0.25 mg/kg 與 alteplase 0.9 mg/kg 的試驗：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>試驗</th><th>年份／期別</th><th>共識整理的主要訊息</th></tr></thead>
@@ -132,7 +152,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>這組證據最穩妥的解讀是：<strong>TNK 0.25 mg/kg 的整體功能預後不劣於 alteplase，而流程更簡單；在部分大血管阻塞與早期再灌流指標上，TNK 可能有優勢。</strong></p>
 <p>但不能把「部分指標較佳」擴張成「所有病人都優於 alteplase」。不同試驗的收案族群、影像條件、嚴重度與主要終點不完全相同，臨床選擇仍應回到適應症、禁忌症、最新仿單與院內流程。</p>
-<h2>三、真實世界資料：效果相當，出血沒有明顯增加</h2>
+<h2 id="bt-s3">三、真實世界資料：效果相當，出血沒有明顯增加</h2>
 <p>共識引用涵蓋超過 9,000 名患者的 real-world data 與統合分析，重點包括：</p>
 <ul>
 <li>出院或 90 天良好功能預後：TNK 與 alteplase 相當，部分分析顯示 TNK 具優勢。</li>
@@ -141,7 +161,7 @@ article, article *{overflow-wrap:break-word}
 <li>90 天死亡率：沒有顯著差異。</li>
 </ul>
 <p>高齡不是自動排除條件。針對 80 歲以上患者的系統性回顧與網絡統合分析顯示，TNK 0.25 mg/kg 的功能預後與死亡率大致與 alteplase 相當，部分研究的 sICH 風險甚至略低。不過，高齡患者仍須逐一評估溶栓禁忌、出血風險與治療目標。</p>
-<h2>四、單次推注真正改變的是照護流程</h2>
+<h2 id="bt-s4">四、單次推注真正改變的是照護流程</h2>
 <p>TNK 的臨床價值不只來自藥理，也來自流程：</p>
 <ol>
 <li><strong>降低輸注錯誤</strong>：不需計算 10% bolus 與剩餘 90% 的輸注速率。</li>
@@ -151,7 +171,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>有機會縮短 door-to-needle time</strong>：但前提是院內已有清楚、熟練的 protocol。</li>
 </ol>
 <p>藥物本身不會自動縮短時間。若藥品取得、體重確認、劑量核對、配製與雙人覆核沒有事先設計，換藥反而可能在導入初期製造新延誤。</p>
-<h2>五、導入 TNK 前，團隊至少要回答五個問題</h2>
+<h2 id="bt-s5">五、導入 TNK 前，團隊至少要回答五個問題</h2>
 <ul>
 <li>適用哪些急性缺血性腦中風患者？禁忌症與 alteplase 是否一致？</li>
 <li>採五階梯體重分層，還是 0.25 mg/kg 精確計算？低體重如何處理？</li>
@@ -165,7 +185,7 @@ article, article *{overflow-wrap:break-word}
 <h3>🩺 臨床小結</h3>
 <p>TNK 的優勢不是一句「比較方便」就能說完。單次推注把藥物、護理、轉送與取栓銜接重新串成更短的流程；但證據的核心仍是 <strong>0.25 mg/kg 對 alteplase 的非劣性</strong>，不是無條件全面取代。真正安全的世代交替，靠的是清楚劑量、標準化配製與團隊演練。</p>
 </blockquote>
-<h2>參考文獻</h2>
+<h2 id="bt-s6">參考文獻</h2>
 <ol>
 <li>台灣腦中風學會 TNK 共識小組。急性缺血性腦中風 Tenecteplase 靜脈血栓溶解治療共識。2026。</li>
 <li>Menon BK, et al. Intravenous tenecteplase compared with alteplase for acute ischaemic stroke in Canada (AcT). <em>Lancet</em>. 2022;400:161-169.</li>

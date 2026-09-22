@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/sjd06.html">
 </head>
@@ -97,12 +116,13 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 06 篇</strong>　anti-Ro 陽性的女性懷孕時，先天性胎兒心臟傳導阻滯（CHB）的盛行率是 1.8%。這個數字聽起來不高，但它是不可逆的，而且一旦發生，下一胎的復發率會顯著上升。這一篇處理孕前諮詢、HCQ 與低劑量 aspirin 的證據，以及當胎兒已經出現不完全阻滯時那個至今沒有國際共識的問題——氟化類固醇到底有沒有用。</p>
 </blockquote>
-<h2>風險從抗體開始</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 7 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">風險從抗體開始</a></li><li><a href="#bt-s2">PATCH：唯一一個改變了機率的介入</a></li><li><a href="#bt-s3">已經出現阻滯之後：證據往反方向走</a></li><li><a href="#bt-s4">一條 SOA 98.9% 的建議</a></li><li><a href="#bt-s5">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">風險從抗體開始</h2>
 <p>母體循環中的 <strong>anti-Ro 與／或 anti-La 抗體</strong>與<strong>先天性胎兒心臟傳導阻滯（CHB）</strong>及<strong>先天性新生兒狼瘡疹（cNL）</strong>相關。</p>
 <p>風險不是均一的。研究提示 <strong>CHB 的盛行率在高效價抗體者與兩種抗體皆陽性者較高</strong>；而 <strong>cNL 在女嬰與暴露於 anti-La 抗體者較高</strong>。</p>
 <p>還有一條在諮詢時特別重要：<strong>在發生過一次 CHB 之後，後續懷孕的復發率顯著較高。</strong></p>
 <p>盛行率的數字來自一篇系統性回顧，納入 <strong>16 篇病例對照與觀察性研究</strong>，代表 <strong>1706 名 anti-Ro 抗體陽性</strong>與 <strong>454 名 anti-La 抗體陽性</strong>的女性，<strong>CHB 盛行率為 1.8%</strong>。但這篇回顧有一個明確的限制：<strong>無法判定這個數字是否會被是否使用 HCQ 所修飾。</strong></p>
-<h2>PATCH：唯一一個改變了機率的介入</h2>
+<h2 id="bt-s2">PATCH：唯一一個改變了機率的介入</h2>
 <p>指引在這裡用了一個轉折詞（However），因為接下來的證據方向是相反的。</p>
 <p><strong>PATCH</strong> 是一項多中心開放標籤臨床試驗，收納 <strong>54 名曾有 CHB 胎兒的女性</strong>，結果顯示 <strong>HCQ 400 mg／日把復發的盛行率降到預期值的 50% 以下</strong>。</p>
 <p>另外一份多中心病例對照研究納入 <strong>556 名</strong>由 anti-Ro 與／或 anti-La 抗體陽性、且有潛在風濕疾病之母親所生的兒童，發現 <strong>HCQ 暴露與 cNL 風險降低相關</strong>。</p>
@@ -123,7 +143,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>三條建議之間的差異值得停下來看。抗體陽性者是「考慮」（consider）且只有 (2, C)；而<strong>曾經發生過 CHB 的人是「提供」（offer），等級升到 (1, B)</strong>。同一個藥、同一個劑量，因為事前機率不同，建議的語氣與證據等級都跟著改變。這是整份指引裡風險分層做得最乾淨的一處。</p>
 <p>流程圖的對應條目只有一句：<strong>If planning pregnancy - counsel re neonatal lupus and congenital heart block</strong>。</p>
-<h2>已經出現阻滯之後：證據往反方向走</h2>
+<h2 id="bt-s3">已經出現阻滯之後：證據往反方向走</h2>
 <p>Q17 問的是一個更急迫的問題——當胎兒已經出現不完全傳導阻滯或水腫變化時，氟化類固醇與／或免疫球蛋白能不能降低 CHB 的機率。</p>
 <p><strong>Ruffatti 等人</strong>前瞻性治療了 <strong>12 名帶有 CHB 胎兒的母親</strong>，療程是自偵測到 CHB 起直到分娩為止：<strong>每週血漿置換、每兩週 IVIG、每日 betamethasone 4 mg</strong>。結果依阻滯程度分得很開：</p>
 <div class="bt-tablewrap"><table>
@@ -137,13 +157,13 @@ article, article *{overflow-wrap:break-word}
 <p>但更大的證據體並不支持這個療法。一篇針對<strong>產前氟化類固醇預防 CHB</strong> 的系統性回顧與統合分析納入 <strong>12 篇研究</strong>，結論是：<strong>氟化類固醇對已有 CHB 的胎兒沒有提供顯著益處。</strong></p>
 <p>還有一份單中心的 <strong>59 例</strong> CHB 回顧，比較兩組給藥策略：<strong>29 例在妊娠 &lt;24 週使用 dexamethasone 8 mg／日</strong>，對上 <strong>30 例使用 4 mg／日或在 &gt;24 週才開始</strong>。結果是早期高劑量組有 <strong>5／29 例 CHB 消解</strong>，對照組 <strong>0 例</strong>。</p>
 <p>然後是那句把整個結果抵銷掉的話：<strong>這 5 例的 CHB 全部在產前或產後再度出現。</strong></p>
-<h2>一條 SOA 98.9% 的建議</h2>
+<h2 id="bt-s4">一條 SOA 98.9% 的建議</h2>
 <p>在這樣的證據狀態下，指引給的建議是這樣寫的：</p>
 <p><strong>Refer urgently to specialist centre if CHB is detected for consideration of treatment with dexamethasone (2, C) (SOA 98.9%)</strong></p>
 <p><strong>SOA 98.9% 是本系列目前看到最高的同意度</strong>，而它的證據等級是 C。工作小組幾乎全體同意的，不是「dexamethasone 有效」，而是「發現 CHB 要緊急轉介到專科中心，讓他們去考慮要不要用 dexamethasone」。</p>
 <p>這個寫法把決定權推給了專科中心，而指引也說明了為什麼：<strong>英國目前的實務並不一致，部分單位（例如大奧蒙德街醫院的專家）在偵測到 CHB 後即以 dexamethasone 治療，而目前沒有關於最佳實務的國際共識。</strong></p>
 <p>在一個沒有共識的問題上，把建議寫成轉診而不是處方，可能是唯一誠實的做法。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s5">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>指引實際說法</th></tr></thead>
 <tbody>

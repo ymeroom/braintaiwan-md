@@ -77,6 +77,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/bp03.html">
 </head>
@@ -99,10 +118,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 3 篇</strong>　依據 AAO-HNS 2013 指引與 AAN 2012 實證更新 Gronseth GS, Paganoni S. Evidence-based guideline update: steroids and antivirals for Bell palsy. <em>Neurology</em> 2012;79(22):2209-2213.</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 3 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、指引立場：強度最高的一條</a></li><li><a href="#bt-s2">二、證據從哪來：兩個關鍵 RCT</a></li><li><a href="#bt-s3">三、為什麼是 72 小時？</a></li><li><a href="#bt-s4">四、實務劑量（成人，常見方案）</a></li><li><a href="#bt-s5">五、開藥前要過的「安全濾網」</a></li><li><a href="#bt-s6">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>如果整個 Bell's palsy 的處置只能記住一件事，那就是這一篇：<strong>在症狀發作 72 小時內給口服類固醇</strong>。這是 AAO-HNS 2013 指引中<strong>唯一的「強烈建議（strong recommendation）」</strong>，也是 AAN 2012 實證更新給到 <strong>Level A</strong> 的介入。其他都可以討論，這件事不該漏。</p>
 <hr>
-<h2>一、指引立場：強度最高的一條</h2>
+<h2 id="bt-s1">一、指引立場：強度最高的一條</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>指引</th><th>立場</th><th>強度</th></tr></thead>
 <tbody>
@@ -111,7 +131,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>兩大指引在類固醇上<strong>罕見地完全一致</strong>，且給了各自體系裡最高的建議強度——這在神經科治療指引中並不常見，值得記住。</p>
 <hr>
-<h2>二、證據從哪來：兩個關鍵 RCT</h2>
+<h2 id="bt-s2">二、證據從哪來：兩個關鍵 RCT</h2>
 <p>類固醇的地位，主要建立在兩個設計良好的隨機對照試驗上：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>試驗</th><th>設計與發現</th></tr></thead>
@@ -121,7 +141,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>兩個試驗都指向同一結論：<strong>真正改善預後的是類固醇，不是抗病毒</strong>。這也是為什麼第四篇談抗病毒時，語氣會保守許多。</p>
 <hr>
-<h2>三、為什麼是 72 小時？</h2>
+<h2 id="bt-s3">三、為什麼是 72 小時？</h2>
 <p>回到第二篇的病生理：核心病灶是<strong>神經在狹窄骨管內的發炎水腫與受壓缺血</strong>。類固醇的角色是<strong>及早壓下發炎、減輕水腫</strong>，在不可逆的軸突變性發生前打斷「腫脹→受壓→缺血」的循環。</p>
 <ul>
 <li><strong>時間窗</strong>：實證支持的給藥時機是<strong>症狀發作 72 小時內</strong>，越早越好</li>
@@ -129,7 +149,7 @@ article, article *{overflow-wrap:break-word}
 <li>把它當作「<strong>急性介入</strong>」而非慢性病用藥——延誤等於浪費黃金窗</li>
 </ul>
 <hr>
-<h2>四、實務劑量（成人，常見方案）</h2>
+<h2 id="bt-s4">四、實務劑量（成人，常見方案）</h2>
 <p>指引未硬性規定單一處方，臨床常用的是兩大 RCT 採用的方案，療程約 10 天（含或不含逐步減量）：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>方案</th><th>劑量</th></tr></thead>
@@ -142,7 +162,7 @@ article, article *{overflow-wrap:break-word}
 <p>劑量與療程請依各院常規與個案調整；上述為文獻常用範例，非唯一正解。</p>
 </blockquote>
 <hr>
-<h2>五、開藥前要過的「安全濾網」</h2>
+<h2 id="bt-s5">五、開藥前要過的「安全濾網」</h2>
 <p>口服短療程類固醇整體安全，但仍應評估與衛教：</p>
 <ul>
 <li><strong>血糖</strong>：糖尿病或臨界者會升糖，需監測與調整降糖治療</li>
@@ -154,7 +174,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>衛教重點：這是<strong>短期、有時限的療程</strong>，目的是搶救神經功能恢復，多數人可安全完成。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s6">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>重點</th><th>內容</th></tr></thead>
 <tbody>

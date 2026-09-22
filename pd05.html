@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/pd05.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 5 篇</strong>　運動症狀是巴金森氏症的門面，但非運動症狀才是影響生活品質最深遠的層面——也是最容易在門診被忽略的部分。本系列最終篇涵蓋 TMDS 2023 共識的五大非運動症狀領域：憂鬱、疲憊與衝動控制障礙、巴金森失智與精神症狀、自律神經功能障礙，以及睡眠障礙。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 8 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、憂鬱（Depression）</a></li><li><a href="#bt-s2">二、疲憊（Fatigue）</a></li><li><a href="#bt-s3">三、衝動控制障礙（ICD）與多巴胺失調症候群（DDS）</a></li><li><a href="#bt-s4">四、巴金森氏症失智（PDD）與精神症狀（Psychosis）</a></li><li><a href="#bt-s5">五、自律神經功能障礙（Autonomic Dysfunction）</a></li><li><a href="#bt-s6">六、睡眠障礙（Sleep Disorders）</a></li><li><a href="#bt-s7">臨床要點摘要</a></li><li><a href="#bt-s8">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>TMDS 2023 共識用近半數篇幅處理非運動症狀，這本身就是一個訊號：<strong>巴金森氏症的非運動症狀不是「附帶問題」，而是整體照護品質的核心</strong>。以下五大領域逐一拆解。</p>
 <hr>
-<h2>一、憂鬱（Depression）</h2>
+<h2 id="bt-s1">一、憂鬱（Depression）</h2>
 <h3>盛行率</h3>
 <ul>
 <li>重鬱症（major depression）：2–3%</li>
@@ -127,7 +147,7 @@ article, article *{overflow-wrap:break-word}
 <li>重複經顱磁刺激（rTMS）：部分研究有效，但尚未成為常規</li>
 </ul>
 <hr>
-<h2>二、疲憊（Fatigue）</h2>
+<h2 id="bt-s2">二、疲憊（Fatigue）</h2>
 <h3>特點</h3>
 <ul>
 <li>盛行率：達 <strong>40–80%</strong>；是巴金森氏症患者自陳最困擾症狀之一</li>
@@ -148,7 +168,7 @@ article, article *{overflow-wrap:break-word}
 <p><strong>運動介入也對疲憊有效</strong>：多篇研究顯示有規律有氧運動的患者，疲憊感降低幅度顯著（見第三篇運動復健章節）。</p>
 </blockquote>
 <hr>
-<h2>三、衝動控制障礙（ICD）與多巴胺失調症候群（DDS）</h2>
+<h2 id="bt-s3">三、衝動控制障礙（ICD）與多巴胺失調症候群（DDS）</h2>
 <p>ICD 詳見第二篇的處方警告，本篇補充<strong>發生後的處理策略</strong>：</p>
 <h3>ICD 的處理</h3>
 <ol>
@@ -177,7 +197,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>5</td><td>DBS 可作為難治性 ICD 的選項</td></tr>
 </tbody></table></div>
 <hr>
-<h2>四、巴金森氏症失智（PDD）與精神症狀（Psychosis）</h2>
+<h2 id="bt-s4">四、巴金森氏症失智（PDD）與精神症狀（Psychosis）</h2>
 <h3>失智（PDD）</h3>
 <ul>
 <li>多篇研究顯示巴金森氏症發病 20 年後，幾乎不可避免發展為失智</li>
@@ -223,7 +243,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td><strong>Pimavanserin</strong></td><td>高選擇性 5-HT2A 拮抗劑；2016 年 FDA 核准；台灣 <strong>2023 年尚未核准</strong></td></tr>
 </tbody></table></div>
 <hr>
-<h2>五、自律神經功能障礙（Autonomic Dysfunction）</h2>
+<h2 id="bt-s5">五、自律神經功能障礙（Autonomic Dysfunction）</h2>
 <h3>姿勢性低血壓（Orthostatic Hypotension, OH）</h3>
 <p>定義：站立後 3 分鐘內收縮壓下降 ≥ 20 mmHg 或舒張壓下降 ≥ 10 mmHg。</p>
 <p><strong>非藥物處理（優先）：</strong></p>
@@ -265,7 +285,7 @@ article, article *{overflow-wrap:break-word}
 <li>流涎（Drooling）：Atropine 或 scopolamine 局部使用、肉毒桿菌素注射</li>
 </ul>
 <hr>
-<h2>六、睡眠障礙（Sleep Disorders）</h2>
+<h2 id="bt-s6">六、睡眠障礙（Sleep Disorders）</h2>
 <p>巴金森氏症的睡眠問題多樣，需針對不同類型分別處理：</p>
 <h3>失眠</h3>
 <div class="bt-tablewrap"><table>
@@ -301,7 +321,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>CPAP（持續正壓呼吸）</strong>：標準治療，同時可能改善認知功能</li>
 </ul>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s7">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>症狀</th><th>首選藥物</th><th>需特別注意</th></tr></thead>
 <tbody>
@@ -324,7 +344,7 @@ article, article *{overflow-wrap:break-word}
 <p>睡眠問題中，<strong>RBD 值得特別關注</strong>——它本身就是疾病進展的標誌，而且床旁安全（移走尖銳物、地板鋪軟墊、甚至分床）是最立即可做的事。Clonazepam 有效，但老年患者需評估跌倒風險；Melatonin 是相對安全的替代選項。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s8">參考文獻</h2>
 <ol>
 <li>Treatment Guideline Subcommittee of TMDS. Evidence-Based Taiwan Consensus Recommendations for the treatment of Parkinson's disease. <em>Acta Neurologica Taiwanica</em>. 2023;32(3):145–.</li>
 <li>Emre M, Aarsland D, Albanese A, et al. Rivastigmine for dementia associated with Parkinson's disease. <em>N Engl J Med</em>. 2004;351(24):2509-18.</li>

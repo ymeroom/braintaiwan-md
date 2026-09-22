@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/adx03.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 3 篇</strong>　CORE 3 要求臨床人員把病史詢問之外的關鍵資訊系統性補齊，分成四大面向：<strong>認知功能、日常生活功能（ADL）、精神行為症狀、感覺動作功能</strong>。這一篇談的是「除了記憶力，還要問什麼」。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、認知功能：五大認知領域逐一檢視</a></li><li><a href="#bt-s2">二、日常生活功能（ADL）：基本 vs 工具性</a></li><li><a href="#bt-s3">三、精神行為症狀（神經精神症狀，NPS）</a></li><li><a href="#bt-s4">四、感覺動作功能：別忽略身體檢查線索</a></li><li><a href="#bt-s5">臨床要點摘要</a></li><li><a href="#bt-s6">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>失智症的表現遠不止記憶力衰退。如果只問「記不記得東西放哪裡」，會漏掉一大群以語言、視覺空間、行為或動作症狀為主的病人。CORE 3 的四象限架構，正是為了避免這種「以偏概全」的漏診。</p>
 <hr>
-<h2>一、認知功能：五大認知領域逐一檢視</h2>
+<h2 id="bt-s1">一、認知功能：五大認知領域逐一檢視</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>認知領域</th><th>詢問重點</th></tr></thead>
 <tbody>
@@ -114,7 +134,7 @@ article, article *{overflow-wrap:break-word}
 <p>不同認知領域受損的組合模式，直接對應到第⑥篇要談的「認知行為症候群分類」——這是診斷三步驟中的第二步。</p>
 </blockquote>
 <hr>
-<h2>二、日常生活功能（ADL）：基本 vs 工具性</h2>
+<h2 id="bt-s2">二、日常生活功能（ADL）：基本 vs 工具性</h2>
 <p>功能影響的程度，是區分「正常老化／MCI／失智症」的關鍵分水嶺（見第⑥篇 Table 1 診斷標準）：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>類別</th><th>範例</th><th>臨床意義</th></tr></thead>
@@ -124,7 +144,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>指引建議具體詢問：「上次他自己處理銀行事務／繳費／開車是什麼時候？有沒有出現錯誤或危險情況？」——具體事件遠比「會不會做」這種是非題更有診斷價值。</p>
 <hr>
-<h2>三、精神行為症狀（神經精神症狀，NPS）</h2>
+<h2 id="bt-s3">三、精神行為症狀（神經精神症狀，NPS）</h2>
 <p>行為與情緒改變不只是「合併症狀」，在某些病因（如行為變異型額顳葉退化症）中，行為改變本身就是<strong>首發且最主要</strong>的臨床表現：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>症狀類別</th><th>常見表現</th></tr></thead>
@@ -138,7 +158,7 @@ article, article *{overflow-wrap:break-word}
 <p>指引提醒：<strong>精神行為症狀必須與原發性精神疾病做鑑別</strong>（見第④篇 Box 3），尤其是老年首次發病的憂鬱症、焦慮症或精神病，可能是失智症的早期表現，也可能是獨立的精神科病因——兩者處置方向截然不同。</p>
 </blockquote>
 <hr>
-<h2>四、感覺動作功能：別忽略身體檢查線索</h2>
+<h2 id="bt-s4">四、感覺動作功能：別忽略身體檢查線索</h2>
 <p>非典型動作症狀，往往是區分阿茲海默症與其他 ADRD 病因的重要線索：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>動作/感覺表現</th><th>提示病因</th></tr></thead>
@@ -150,7 +170,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>常壓性水腦症（NPH）的「步態障礙＋尿失禁＋認知障礙」三主症雖少見，但因<strong>可經手術治療而部分逆轉</strong>，是評估中絕不能漏掉的鑑別診斷。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s5">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
@@ -168,7 +188,7 @@ article, article *{overflow-wrap:break-word}
 <p>而步態與小便控制的問題，我會提醒所有基層同仁：<strong>千萬別忘了常壓性水腦症</strong>。它是少數「做了影像、轉了神經外科，病人真的會變好」的失智症病因，漏診的代價非常高。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s6">參考文獻</h2>
 <ol>
 <li>Atri A, Dickerson BC, Clevenger C, et al. Alzheimer's Association clinical practice guideline for the Diagnostic Evaluation, Testing, Counseling, and Disclosure of Suspected Alzheimer's Disease and Related Disorders (DETeCD-ADRD): Executive summary of recommendations for primary care. <em>Alzheimer's Dement</em>. 2025;21:e14333. doi:10.1002/alz.14333</li>
 <li>Cummings JL, et al. The Neuropsychiatric Inventory: comprehensive assessment of psychopathology in dementia. <em>Neurology</em>. 1994;44(12):2308-2314.</li>

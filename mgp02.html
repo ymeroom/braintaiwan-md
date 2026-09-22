@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/mgp02.html">
 </head>
@@ -97,23 +116,24 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 02 篇</strong>　以 Brown, St George-Hyslop, Paolicelli &amp; Lemke（<em>Nat Rev Neurol</em> 2026;22:54–69）為主軸 「微膠細胞圍繞在斑塊旁邊」這個病理切片上再熟悉不過的畫面，長期被直覺解讀成「正在清除斑塊」。這篇綜論引用的幾組剔除實驗，講的卻是另一個故事：微膠細胞清不掉已經沉積的緻密核心斑塊，反而更像是在把它蓋起來。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">緻密核心斑塊是什麼</a></li><li><a href="#bt-s2">清空微膠細胞之後，斑塊反而變少了</a></li><li><a href="#bt-s3">Huang 等人的剔除實驗：拆掉建築工，核心反而變少</a></li><li><a href="#bt-s4">一個尺寸上的提醒：微膠細胞吃不下整顆斑塊</a></li><li><a href="#bt-s5">TREM2：把微膠細胞黏在斑塊上的那個受體</a></li><li><a href="#bt-s6">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
 <hr>
-<h2>緻密核心斑塊是什麼</h2>
+<h2 id="bt-s1">緻密核心斑塊是什麼</h2>
 <p>阿茲海默症的類澱粉斑塊（plaque）分兩種型態。緻密核心斑塊（dense-core plaque）是 AD 最具代表性的組織病理特徵：中心是高度壓實、呈 β-摺疊結構的 Aβ 纖維核心，外圍環繞一圈由纖維、原纖維、寡聚體與其他蛋白質、細胞碎片組成的瀰漫暈圈（halo），整個構造再被反應性微膠細胞包圍；若外圍還有變性神經突起，就稱為「神經炎性斑塊」（neuritic plaque）。</p>
-<h2>清空微膠細胞之後，斑塊反而變少了</h2>
+<h2 id="bt-s2">清空微膠細胞之後，斑塊反而變少了</h2>
 <p>第一組實驗看的是：如果在<strong>斑塊已經形成之後</strong>才清空微膠細胞，會發生什麼事？答案是幾乎沒差——轉基因小鼠腦中清除微膠細胞之後，緻密核心斑塊的數量、可溶性與不可溶性 Aβ 總量都沒有明顯改變，唯一的變化是不帶核心的瀰漫斑塊數量增加。這已經和「微膠細胞是清道夫」的直覺不太合。</p>
 <p>真正翻轉這個直覺的是第二組實驗：在<strong>斑塊形成之前</strong>用 CSF1R 抑制劑清空 5xFAD 小鼠的微膠細胞，後續發展出的緻密核心斑塊數量大幅減少——而且僅存的少數緻密核心斑塊，一定伴隨著殘留的微膠細胞。清空微膠細胞的小鼠還出現另一個代價：血管壁的類澱粉沉積增加、血管病理惡化，很像腦澱粉血管病變（CAA）。更關鍵的是，一旦停止 CSF1R 抑制、讓微膠細胞重新出現，緻密核心斑塊又會跟著長出來。</p>
 <p>作者的結論寫得很直接：<strong>微膠細胞並不容易清除緻密核心 Aβ 斑塊，反而像是在建構它們。</strong></p>
-<h2>Huang 等人的剔除實驗：拆掉建築工，核心反而變少</h2>
+<h2 id="bt-s3">Huang 等人的剔除實驗：拆掉建築工，核心反而變少</h2>
 <p>微膠細胞怎麼「建構」斑塊？一個機轉假說來自 Huang 等人的研究：斑塊周圍的微膠細胞表現 TAM 受體 MERTK 與 AXL——這兩個是重要的吞噬受體——剔除編碼這兩個受體的基因後，類澱粉小鼠模型裡微膠細胞對 Aβ 的吞噬能力<strong>下降了十倍</strong>。</p>
 <p>照常理，吞噬能力砍到十分之一，斑塊應該會累積得更多才對。但實驗結果相反：<strong>MERTK／AXL 剔除鼠的緻密核心斑塊反而比對照組少。</strong></p>
 <p>作者提出的解釋是：微膠細胞的 MERTK 與 AXL 在斑塊暈圈裡負責吞噬細胞碎片，而這些碎片同時會結合 Aβ 原纖維，於是這批 Aβ 被一併帶進、濃縮進微膠細胞溶酶體——溶酶體的酸性環境有利於聚集。在溶酶體裡，Aβ 被壓實成一種難以被消化的形態，最後被胞吐出來，或誘發微膠細胞死亡而釋出不可溶的 Aβ，這批 Aβ 就構成了緻密核心。少了 MERTK 與 AXL，這整條「濃縮壓實」的流程被打斷，緻密核心斑塊減少，取而代之的是瀰漫斑塊與暈圈增加、神經炎性病變與 CAA 病理增加、微膠細胞與斑塊的互動也減少。</p>
 <p>這個結果指向一個和直覺相反的推論：<strong>微膠細胞的吞噬之所以有保護效果，可能不是靠清除斑塊，而是靠把 Aβ 聚集、成核、壓實成一個核心，讓它在裡面造成的傷害比散在瀰漫暈圈裡更小。</strong></p>
-<h2>一個尺寸上的提醒：微膠細胞吃不下整顆斑塊</h2>
+<h2 id="bt-s4">一個尺寸上的提醒：微膠細胞吃不下整顆斑塊</h2>
 <p>原文有一句提醒很值得記下：微膠細胞的體積<strong>約 10 微米</strong>，緻密核心斑塊的體積<strong>約 50 微米</strong>，前者小到不可能把後者整個吞下去——所以就算真的存在「吞噬核心」這件事，也只能是一小塊一小塊地啃。顯微影像確實顯示微膠細胞會伸出突起、穿過暈圈碰到核心；ApoE 可以在微膠細胞與斑塊之間被觀察到，斑塊附近微膠細胞的溶酶體裡也含有 Aβ 聚集體——這些觀察都與「微膠細胞吞噬瀰漫暈圈的 Aβ、以及核心的碎塊」相符，而這些被吞下的 Aβ 聚集體之後又可能被胞吐出來，進一步促成斑塊的壓實、生長與擴散。</p>
-<h2>TREM2：把微膠細胞黏在斑塊上的那個受體</h2>
+<h2 id="bt-s5">TREM2：把微膠細胞黏在斑塊上的那個受體</h2>
 <p>TREM2 在斑塊周圍微膠細胞上表現上升，能媒介微膠細胞對 Aβ 寡聚體與原纖維的胞吞或吞噬。像 R47H 這類會讓 TREM2 喪失結合並清除 Aβ 能力的變異型，與 AD 風險有強烈關聯（第 6 篇會再深入談這個基因）。把 <em>Trem2</em> 剔除鼠跟 AD 轉基因小鼠模型交配後，斑塊總負荷跟帶有正常 <em>Trem2</em> 的小鼠差不多——但斑塊周圍聚集的微膠細胞變少、斑塊壓實程度變差、暈圈變大、神經炎性病變增加。這組結果與 MERTK／AXL 的故事互相呼應：<strong>TREM2 媒介的是微膠細胞與斑塊的貼附，讓暈圈裡的 Aβ 得以被壓實進核心，藉此保護腦組織免於瀰漫、鬆散型 Aβ 造成的傷害。</strong></p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s6">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>文獻實際說法</th></tr></thead>
 <tbody>

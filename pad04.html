@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/pad04.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 04 篇</strong>　運動做完了、症狀還在，接下來有兩條路：藥物與血管重建。這一篇要處理的是三個容易被混淆的比較。第一，唯一被指引推薦用於走路障礙的藥，效果只有監督式運動的五分之一多一點。第二，semaglutide 進來了，但它改善走路的幅度和 cilostazol 幾乎一樣。第三，血管重建那些看起來很漂亮的三位數公尺數，跟運動的公尺數不是同一種比較。</p>
 </blockquote>
-<h2>Cilostazol：唯一被推薦，也僅止於此</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 8 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">Cilostazol：唯一被推薦，也僅止於此</a></li><li><a href="#bt-s2">Semaglutide 走進了走路距離這個終點</a></li><li><a href="#bt-s3">血管重建：先講位置</a></li><li><a href="#bt-s4">CLEVER：主要終點打平，病人自己回答的那個沒打平</a></li><li><a href="#bt-s5">那些三位數的公尺數，是組內比較</a></li><li><a href="#bt-s6">血管內還是開刀</a></li><li><a href="#bt-s7">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">Cilostazol：唯一被推薦，也僅止於此</h2>
 <p><strong>Cilostazol 是一種第三型磷酸二酯酶抑制劑，也是美國心臟協會（AHA）與美國心臟學院（ACC）聯合臨床實務指引中，唯一推薦用於周邊動脈疾病所致走路障礙的藥物。</strong></p>
 <p>唯一，聽起來很有分量。但綜論下一句就把期待壓下去：<strong>然而 cilostazol 的效益是輕微的。</strong></p>
 <p><strong>在隨機臨床試驗的統合分析中，cilostazol 相較於安慰劑，使周邊動脈疾病參與者的最大跑步機走路距離增加 40 公尺。</strong></p>
@@ -113,7 +133,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>絕對禁忌</td><td><strong>有任何心衰竭的周邊動脈疾病病人不應開立</strong></td></tr>
 </tbody></table></div>
 <p>最後那一條的理由值得完整讀：<strong>因為其他第三型磷酸二酯酶抑制劑與心衰竭病人死亡率上升有關，所以 cilostazol 不應開給有任何心衰竭的周邊動脈疾病病人。</strong> 注意用詞是「任何心衰竭」，不是「嚴重心衰竭」——這是類效應的外推，門檻壓得很低。開場那位 62 歲病人的病史裡特別寫了一句「沒有心衰竭的症狀或病史」，就是為了讓這個選項留在桌上。</p>
-<h2>Semaglutide 走進了走路距離這個終點</h2>
+<h2 id="bt-s2">Semaglutide 走進了走路距離這個終點</h2>
 <p>這是這份 2026 年綜論相對於舊版最新的一塊。</p>
 <p><strong>一項納入 792 名周邊動脈疾病合併第二型糖尿病參與者的隨機臨床試驗顯示，給予 semaglutide 52 週相較於安慰劑，改善了追蹤時最大跑步機走路距離與基線值的比值（點估計 1.13；95% 信賴區間 1.06 至 1.21；P&lt;0.001）。</strong></p>
 <p>先注意這個終點的形狀：它不是「多走幾公尺」，而是<strong>追蹤值除以基線值的比值</strong>。1.13 代表比基線多走 13%。這種比值型終點在不同基線的人身上代表的絕對距離差很多。</p>
@@ -129,21 +149,21 @@ article, article *{overflow-wrap:break-word}
 <tr><td>Liraglutide</td><td>55 人、開放標籤、對常規照護</td><td>六分鐘走路距離</td><td>+25 公尺</td></tr>
 <tr><td>（對照）監督式運動</td><td>隨機試驗統合分析</td><td>最大跑步機走路距離</td><td>+180 公尺</td></tr>
 </tbody></table></div>
-<h2>血管重建：先講位置</h2>
+<h2 id="bt-s3">血管重建：先講位置</h2>
 <p><strong>血管內、手術或混合式血管重建，應保留給在運動治療之後仍有生活受限的缺血性下肢症狀的病人。</strong></p>
 <p>方法上：<strong>手術式血管重建通常是從阻塞動脈移除斑塊（即動脈內膜切除術），或繞過狹窄或阻塞的動脈。血管內血管重建則通常以導管移位或移除動脈粥狀硬化斑塊。</strong> 明確的血管內治療包括<strong>未塗藥或塗藥氣球擴張術，以及裸金屬或塗藥支架</strong>；而<strong>斑塊旋切術或碎石術可以改變嚴重鈣化的斑塊，協助氣球或支架撐開</strong>。</p>
 <p>而效益高度依賴血管口徑：<strong>下肢血管內血管重建的效益，在較大的近端動脈（例如主動脈髂動脈段）最大也最持久。</strong> 反過來說：<strong>在有跛行的病人中，膝下（infrapopliteal）動脈血管內血管重建的效益尚不明確。</strong></p>
 <p>第 01 篇那句「糖尿病病人膝下動脈硬化的盛行率較高」，在這裡收尾了——病灶最集中的位置，正好是介入證據最弱的位置。</p>
-<h2>CLEVER：主要終點打平，病人自己回答的那個沒打平</h2>
+<h2 id="bt-s4">CLEVER：主要終點打平，病人自己回答的那個沒打平</h2>
 <p><strong>主動脈髂動脈血管重建對走路表現的效果，與監督式跑步機運動相似。</strong></p>
 <p>而唯一的頭對頭試驗把這件事拆得更細。<strong>在 CLEVER 隨機臨床試驗中，111 名主動脈髂動脈周邊動脈疾病病人接受監督式運動或血管內血管重建，最大跑步機走路時間（主要結局）的改善程度兩組相似；但病人自述結局，例如走路障礙問卷的距離分數（範圍 0 到 100，分數愈高代表走路困難愈少），血管內血管重建顯著優於監督式運動（分數平均變化 43.8 對 25.1；P=0.03）。</strong></p>
 <p>客觀測驗打平，病人自己填的量表分出勝負。這種分歧不容易解釋成單一方向——它可能代表跑步機測驗抓不到病人真正在意的功能，也可能反映一個沒有辦法盲化的試驗裡，接受了手術的人對自己狀況的評分方式不同。綜論沒有替讀者裁決。</p>
-<h2>那些三位數的公尺數，是組內比較</h2>
+<h2 id="bt-s5">那些三位數的公尺數，是組內比較</h2>
 <p>這是這一篇最重要的判讀陷阱。</p>
 <p>Table 2 給了血管重建的療效數字：<strong>股膕動脈血管內氣球擴張術使最大跑步機走路距離增加 110 至 202 公尺，主動脈髂動脈血管內氣球擴張術增加 316 至 685 公尺</strong>——而綜論在兩處都加註了<strong>（組內比較）</strong>。</p>
 <p>組內比較的意思是「治療後對治療前」，沒有扣掉對照組。同一張表上，監督式運動寫的是「六分鐘走路距離比對照組多 31.8 公尺、最大跑步機走路距離比對照組多 180 公尺」，那是組間差異。</p>
 <p><strong>685 公尺與 180 公尺不能直接相減、也不能直接比大小。</strong> 這一點加上前面 CLEVER 主要終點打平的結果，讀起來就一致了：如果主動脈髂動脈血管重建真的比監督式運動多出好幾百公尺，那個頭對頭試驗不會打平。</p>
-<h2>血管內還是開刀</h2>
+<h2 id="bt-s6">血管內還是開刀</h2>
 <p><strong>目前沒有比較手術式與血管內血管重建治療失能性跛行的確定性隨機臨床試驗。</strong></p>
 <p>現有的是觀察性比較：<strong>在一項比較 592 名接受血管內血管重建與 342 名接受開放式繞道手術治療跛行病人的研究中</strong>，兩組各有各的代價。</p>
 <div class="bt-tablewrap"><table>
@@ -162,7 +182,7 @@ article, article *{overflow-wrap:break-word}
 <p>至於 CLEVER 的分歧——客觀終點打平、病人自述終點贏——這在神經科其實很熟悉。我們在巴金森氏症與頭痛的試驗裡不斷遇到同一個問題：一個無法盲化的介入，加上一個由病人自己填的量表，那個差距要怎麼歸因。我不會因此否定 43.8 對 25.1，但我也不會把它當成和主要終點同等級的證據。</p>
 </blockquote>
 <p>一顆老藥、一個新藥、兩種侵入性做法，在同一張圖上被畫成長短不一的長條，而其中有幾條的量尺根本不同——下一篇要離開腿，去看這個病真正致命的那一端：怎麼避免心肌梗塞與中風。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s7">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
 <tbody>

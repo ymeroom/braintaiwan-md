@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/asdh04.html">
 </head>
@@ -97,54 +116,55 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 04 篇</strong>　CRASH-3 常被說成「TXA 對腦外傷有效」，但它的整體結果其實是陰性的。另一半要談的是保守治療後在第 13 天前後突然惡化的亞急性血腫——一個在門診追蹤時最容易被漏掉的時間點。</p>
 </blockquote>
-<h2>TXA 在做什麼</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 9 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">TXA 在做什麼</a></li><li><a href="#bt-s2">CRASH-2：成功，但收的不是腦外傷</a></li><li><a href="#bt-s3">CRASH-3：整體是陰性的</a></li><li><a href="#bt-s4">訊號在哪裡</a></li><li><a href="#bt-s5">手術中的出血</a></li><li><a href="#bt-s6">亞急性期擴大型血腫：一個時間上的陷阱</a></li><li><a href="#bt-s7">第 13 天</a></li><li><a href="#bt-s8">機轉未明，但風險因子已知</a></li><li><a href="#bt-s9">該怎麼開</a></li><li><a href="#bt-s10">臨床要點摘要</a></li><li><a href="#bt-s11">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">TXA 在做什麼</h2>
 <p>Tranexamic acid（TXA）是由離胺酸胺基酸製成的合成物質，藉由結合至纖溶酶原（plasminogen），阻止纖溶酶原與纖維蛋白的交互作用及血塊溶解，發揮抗纖維蛋白溶解的作用。</p>
 <p>簡單說，它不是幫你把血止住，而是<strong>不讓已經形成的血塊被拆掉</strong>。這個機轉上的區別會影響對它的期待：TXA 保護的是既有的止血成果，所以理論上愈早給、能保護的東西愈多。</p>
 <p>TXA 被用於減少外傷出血，且仿單外使用相當廣泛。</p>
 <p>至於安全性的疑慮，綜論的敘述有個轉折：依 TXA 的藥效動力學，它可能增加血栓栓塞併發症的可能性；然而臨床試驗報告並未發現血栓栓塞事件的發生率增加。</p>
 <p>理論上該擔心，實際上沒觀察到——這個落差在後面兩個試驗裡會反覆出現。</p>
-<h2>CRASH-2：成功，但收的不是腦外傷</h2>
+<h2 id="bt-s2">CRASH-2：成功，但收的不是腦外傷</h2>
 <p>2010 年，一項關於 TXA 對重大出血外傷患者之死亡、血管阻塞事件與輸血影響的重要研究發表，也就是 CRASH-2 試驗。</p>
 <p>規模值得記住：這項隨機對照試驗在 <strong>50 個國家、274 家醫院</strong>進行。</p>
 <p>結果是正面的。使用 TXA 的組別全因死亡率顯著降低，因出血導致的死亡風險亦顯著降低；而血管阻塞事件在兩組間並無顯著差異。</p>
 <p>但這裡有一個決定性的限定條件，綜論寫得很清楚：<strong>這項研究的設計對象是各類外傷患者（非顱內外傷）</strong>。</p>
 <p>所以 CRASH-2 沒有回答腦外傷的問題。它回答的是「大量出血的外傷病人給 TXA 有沒有用」，答案是有。也正因如此，CRASH-2 的研究團隊宣告了 TXA 用於 TBI 的可能性，並表示需要進一步研究——這句話直接催生了下一個試驗。</p>
-<h2>CRASH-3：整體是陰性的</h2>
+<h2 id="bt-s3">CRASH-3：整體是陰性的</h2>
 <p>CRASH-3 依據 CRASH-2 的資料設計，探討 TXA 對急性 TBI 患者之死亡、血管阻塞事件及其他併發症的影響，且<strong>只納入 TBI 患者</strong>。</p>
 <p>主要結果是：<strong>整體的頭部外傷相關死亡率在兩組間相近（TXA 18.5% vs. 安慰劑 19.8%）</strong>。</p>
 <p>這個數字必須小心陳述。它是「頭部外傷相關死亡率（head injury related death rate）」，不是全因死亡率；而兩組相近的意思，就是主要結果沒有達到顯著差異。如果一篇文章只寫「CRASH-3 證明 TXA 對腦外傷有效」，那是跳過了這一行。</p>
-<h2>訊號在哪裡</h2>
+<h2 id="bt-s4">訊號在哪裡</h2>
 <p>綜論接著解釋研究團隊為何要往次族群走。理由是：嚴重頭部外傷本身——無論有無血腫——就是死亡的獨立風險因子，因此在嚴重外傷患者身上，TXA 無法影響頭部外傷相關死亡率。</p>
 <p>於是他們排除嚴重外傷組後進行次族群分析，發現在<strong>輕度至中度</strong>頭部外傷患者中，使用 TXA 可降低頭部外傷相關死亡率。</p>
 <p>另外他們也依「從受傷到治療的時間」分析，結果顯示在輕度至中度頭部外傷患者中，<strong>早期治療比晚期治療更有效</strong>。血管阻塞事件的風險在兩組間相近。</p>
 <p>綜論的總結是：CRASH-3 顯示了 TXA 用於頭部外傷患者的可能性；若在外傷後儘速使用，TXA 可能降低輕度至中度 TBI 患者的死亡率，且不增加血管阻塞事件的風險。</p>
 <p>這個結論的措辭是「可能性」，不是「已證實」。次族群分析的性質決定了它的證據位階——它足以支持一個假說、足以影響臨床傾向，但它不是主要結果。把次族群的正面訊號當成試驗的結論來引用，是解讀臨床試驗時最常見的失誤之一。</p>
 <p>而「早期給藥更有效」這件事，回頭看 TXA 的機轉其實是自洽的：它保護的是既有血塊，那麼在血塊還在、還沒被溶解掉的時候給，能保護的自然比較多。</p>
-<h2>手術中的出血</h2>
+<h2 id="bt-s5">手術中的出血</h2>
 <p>除了死亡率，綜論也提到另一個面向。Ebrahimi 等人報告，TXA 可能減少 SDH 與 EDH 患者的手術相關出血；接受 TXA 的組別在手術中的平均出血量低於安慰劑組。</p>
 <p>綜論綜合各項報告後給的立場是：適當地給予 TXA 可能降低 TBI 相關死亡率而不產生併發症；此外若 TBI 患者需要手術，可能減少手術相關出血並減少輸血。</p>
-<h2>亞急性期擴大型血腫：一個時間上的陷阱</h2>
+<h2 id="bt-s6">亞急性期擴大型血腫：一個時間上的陷阱</h2>
 <p>接下來是完全不同的主題，但同樣關於時間。</p>
 <p>亞急性硬腦膜下血腫（saSDH）在時序上被定義為：<strong>由 ASDH 演變而來、發生於頭部外傷後 4 至 21 天內</strong>的血腫。</p>
 <p>它的臨床意義來自血腫的擴大以及隨之而來的顱內高壓。而所謂<strong>擴大型 saSDH</strong>，定義為初始未接受手術的 ASDH，在亞急性期出現快速神經學惡化與血腫體積擴大者。</p>
 <p>請注意這個定義的前提：<strong>初始未接受手術</strong>。也就是說，這是保守治療族群專屬的併發症，是「決定先觀察」這個決策的下游風險。</p>
 <p>發生率是這一段最重要的數字：<strong>擴大型 saSDH 據報告發生於約 10% 至 30% 保守治療的 ASDH 患者</strong>。</p>
 <p>這裡值得指出綜論內部的一個張力。前段稱「有問題的 saSDH 在 ASDH 的一般病程中是罕見的併發症」，後段卻給出 10% 至 30% 的比例。兩者的分母不同——前者可能是指全體 ASDH，後者明確限定於保守治療者——但即使如此，在保守治療族群中十分之一到三分之一的比例，用「罕見」來形容並不貼切。臨床上應以後面那個有明確分母的數字為準。</p>
-<h2>第 13 天</h2>
+<h2 id="bt-s7">第 13 天</h2>
 <p>臨床惡化通常發生得很快。而擴大型 saSDH 的臨床關注與手術介入，<strong>通常發生在頭部外傷後約 13 天</strong>。</p>
 <p>綜論因此給了一條相當具體的建議：<strong>ASDH 患者應在頭部外傷後第 13 天前後接受腦部 CT</strong>；年長且 ASDH 體積相對較大的患者，應密切監測是否發生擴大型 saSDH。</p>
 <p>在一份多數建議都很保守的綜論裡，出現一個明確的天數是罕見的。這個數字的來源是觀察到的臨床介入時間點，把它當成安排追蹤影像的參考時機是合理的；但要記得它是分布的中心，不是邊界——4 至 21 天的定義區間才是應該保持警覺的完整範圍。</p>
-<h2>機轉未明，但風險因子已知</h2>
+<h2 id="bt-s8">機轉未明，但風險因子已知</h2>
 <p>擴大型 saSDH 的確切機轉仍未闡明。綜論列出幾項可能涉及的因素：年齡較大、出血傾向、初始血腫較厚、血紅素濃度較低、血中白血球計數較高。</p>
 <p>另外綜論提出一個值得注意的觀點：saSDH 可能是與慢性硬腦膜下血腫<strong>不同的疾病實體</strong>，而腦脊髓液可能在其質量效應的增加中扮演角色。</p>
 <p>這一點在教學上容易被壓平。時間軸上 saSDH 落在急性與慢性之間，很自然會被當成「慢性硬腦膜下血腫的早期型態」，但綜論明確地把它們分開。若把 saSDH 直接套用慢性硬腦膜下血腫的認知——包含病程速度的預期——會低估它的惡化速度，因為 saSDH 的臨床惡化是快速的。</p>
-<h2>該怎麼開</h2>
+<h2 id="bt-s9">該怎麼開</h2>
 <p>各種手術方式都曾被提出用於 saSDH，包括開顱術（craniotomy）、顱骨切除術（craniectomy）與鑽孔術（burr-hole）。</p>
 <p>綜論的推理很清楚：既然手術目的是讓症狀快速且安全地緩解，那麼從這個角度出發，可以考慮採用侵襲性最小的手術。</p>
 <p>支持這個做法的是 Ha 等人的報告：<strong>23 例擴大型 saSDH 中僅 1 例以開顱術治療，其餘皆以鑽孔或扭鑽顱骨切開術併閉式引流處理，且無任何一例需要再次手術</strong>。</p>
 <p>背後的解釋是血腫的物理狀態：saSDH 可說是處於液化狀態，因此單純的閉式引流即足以緩解臨床症狀。</p>
 <p>換句話說，時間替外科醫師做了一部分工作。急性期需要開顱才能清除的血塊，到了亞急性期已經液化到可以用引流處理——這也是為什麼在這個階段，微創手術不是妥協，而是恰當的選擇。</p>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s10">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>主題</th><th>綜論內容</th><th>判讀界線</th></tr></thead>
 <tbody>
@@ -161,7 +181,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>疾病定位</td><td>可能與慢性硬腦膜下血腫為不同疾病實體，CSF 可能參與質量效應</td><td>惡化速度快，勿套用慢性血腫的預期</td></tr>
 <tr><td>手術方式</td><td>23 例中僅 1 例開顱，餘以鑽孔／扭鑽併閉式引流，無再手術</td><td>血腫已液化，閉式引流即足夠</td></tr>
 </tbody></table></div>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s11">臨床判讀重點</h2>
 <p>這一章的兩個主題表面上無關，實際上共用同一個教訓：<strong>細節藏在限定條件裡</strong>。</p>
 <p>CRASH-2 的限定條件是「非顱內外傷」，CRASH-3 的限定條件是「整體陰性、訊號在次族群」，擴大型 saSDH 的限定條件是「初始未接受手術」。三者只要漏掉一個，結論就會被放大到它撐不住的範圍。</p>
 <p>關於 TXA，比較穩健的讀法是：它在一般外傷大出血有明確證據（CRASH-2），在 TBI 整體沒有達到主要終點（CRASH-3），但在輕至中度且早期給藥的次族群顯示出訊號，同時安全性訊號一致良好——血管阻塞事件在兩個試驗都沒有增加。這是一個「值得考慮、但別說已證實」的位置。</p>

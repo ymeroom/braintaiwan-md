@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/nphn05.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 05 篇</strong>　這一篇回答原文四個誤解裡的後兩個——<strong>分流手術的風險是否大於好處</strong>、<strong>術後改善是否只是短暫或沒有臨床意義</strong>。這是這篇綜論最有份量的一章，因為它手上握著一個新東西：<strong>二〇二五年一個雙盲、安慰劑對照的隨機試驗</strong>，而且巧的是，那篇試驗就發表在同一期《新英格蘭醫學期刊》（Luciano 等人，393:2198-209），本文作者 Williams 也在其中。一個被懷疑了六十年的手術，終於有了安慰劑對照的答案。</p>
 </blockquote>
-<h2>先看 2024 年 Cochrane 的合併結果</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 9 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">先看 2024 年 Cochrane 的合併結果</a></li><li><a href="#bt-s2">2025 年那個試驗：把安慰劑做到底</a></li><li><a href="#bt-s3">手術怎麼選、閥門怎麼管</a></li><li><a href="#bt-s4">誤解三：風險真的大於好處嗎</a></li><li><a href="#bt-s5">誤解四：改善只是短暫的嗎</a></li><li><a href="#bt-s6">拖延的代價：六年死亡率 2.6 倍</a></li><li><a href="#bt-s7">症狀回來了怎麼辦</a></li><li><a href="#bt-s8">未來方向</a></li><li><a href="#bt-s9">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">先看 2024 年 Cochrane 的合併結果</h2>
 <p>原文從<strong>二〇二四年的 Cochrane 回顧</strong>開始，它納入了<strong>四個隨機安慰劑對照試驗</strong>：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>結果</th><th>數值</th></tr></thead>
@@ -109,7 +129,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>對照組是<strong>沒有裝分流管的病人，或裝了可調壓分流管但把閥門設在不作用模式（inactive mode）以製造安慰劑條件</strong>的病人。後面這個設計很聰明——病人身上有管子、有傷口、有一切手術的儀式感，只是水不流。這解決了外科試驗最難處理的那個問題。</p>
 <p>「認知證據不清楚」這一句要老實傳達給家屬。如果一個家庭是抱著「開完刀記憶會回來」的期待走進手術室，那期待落空的機率不低。<strong>這個手術目前證據最紮實的收穫是腳。</strong></p>
-<h2>2025 年那個試驗：把安慰劑做到底</h2>
+<h2 id="bt-s2">2025 年那個試驗：把安慰劑做到底</h2>
 <p>接著是新證據。一個<strong>多中心、雙盲、安慰劑對照的隨機試驗，納入 99 位受試者</strong>，收案條件是——這點非常關鍵——<strong>以「CSF 引流後步行速度是否改善」來挑選病人</strong>（也就是第 04 篇那套預後檢查）。</p>
 <p>安慰劑組的做法是：裝上分流管，但把閥門設在<strong>高開啟壓，使 CSF 無法引流</strong>。</p>
 <p><strong>術後 3 個月</strong>的結果：</p>
@@ -128,7 +148,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>這組數字必須整組一起看。步行速度那個差距（0.23 對 0.03）幾乎不留爭辯空間——<strong>分流手術對步態的療效不是安慰劑效應</strong>。但同一個試驗也把代價量化了：<strong>每八到九個開放引流的病人，會有一個出現硬腦膜下出血</strong>。這是知情同意時一定要講的數字。</p>
 <p>還要留意這個試驗的族群邊界：受試者是<strong>依 CSF 引流後步速改善來挑選</strong>的，所以這個療效估計適用於「預後檢查陽性」的人，不能直接外推到沒做檢查、或檢查陰性的人身上。第 04 篇說的「你怎麼量，決定了你能證明什麼」，在這裡完全兌現。</p>
-<h2>手術怎麼選、閥門怎麼管</h2>
+<h2 id="bt-s3">手術怎麼選、閥門怎麼管</h2>
 <p><strong>術式選擇</strong>：<strong>腦室—腹腔（VP）、腦室—心房（VA）、腰椎—腹腔（LP）分流系統的療效相近。</strong></p>
 <p><strong>內視鏡第三腦室造廔術（ETV）</strong>：只有一個小型試驗評估過它（把 CSF 從第三腦室直接導入蛛網膜下腔），結果與分流手術相比<strong>被認為並無定論（inconclusive）</strong>。</p>
 <p><strong>藥物</strong>：<strong>acetazolamide</strong> 偶爾被用來減少 CSF 生成，但<strong>缺乏隨機對照試驗證明其有效</strong>。</p>
@@ -141,7 +161,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>有一個安全細節必須記牢：<strong>多數可調壓磁性閥門的設定可能被強力外部磁場（例如 MRI）意外改變</strong>。原文的建議是——<strong>在身體「任何部位」做完 MRI 之後，都要確認或校正閥門設定</strong>。不是只有頭部 MRI，是膝蓋、腰椎、腹部，任何部位。</p>
 <p>另外，如前一篇提過的：<strong>分流後腦室體積的縮小通常很小</strong>，不做仔細的體積定量，CT 或 MRI 上<strong>可能看不出變化</strong>。不要用影像去判斷分流有沒有效。</p>
-<h2>誤解三：風險真的大於好處嗎</h2>
+<h2 id="bt-s4">誤解三：風險真的大於好處嗎</h2>
 <p>最常見的嚴重併發症有三個：<strong>感染、導管置放不當造成的腦損傷、硬腦膜下出血</strong>。</p>
 <p>原文列出用來降低這些問題的做法：<strong>謹慎的病人篩選、使用可調壓閥門、手術技術的改進（如神經導航）、腹腔導管的腹腔鏡置放、感染預防措施</strong>。</p>
 <p>而數字是這樣的：</p>
@@ -153,7 +173,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>原文對這兩個數字並列的解讀是：<strong>在有 iNPH 治療經驗的中心，結果可能比較好。</strong></p>
 <p>這個對照要小心讀。左邊是五個經驗豐富中心的 iNPH 病人一年結果，右邊是全美各種原因水腦症、各種中心的再手術率——<strong>族群、時間尺度、終點都不同</strong>，不能直接相減。它是一個提示（做量大的地方比較好），不是一個嚴格的比較。原文自己在 Figure 2C 的說明裡也加了一句相同性質的警語：那張併發症圓餅圖來自<strong>單一多中心研究、未提供平均百分比與信賴區間，可能無法一般化</strong>。</p>
-<h2>誤解四：改善只是短暫的嗎</h2>
+<h2 id="bt-s5">誤解四：改善只是短暫的嗎</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>追蹤結果</th><th>數值</th></tr></thead>
 <tbody>
@@ -164,13 +184,13 @@ article, article *{overflow-wrap:break-word}
 <tr><td>生活品質</td><td>多數病人在術後 <strong>5 年間</strong>有改善；治療<strong>大致上具成本效益</strong></td></tr>
 </tbody></table></div>
 <p>「4 年後仍有超過 75% 維持改善」這個數字，直接回應了六〇、七〇年代留下的那個印象——<strong>改善只是曇花一現</strong>。而「退化主要發生在 80 歲以上」這句話的言外之意，是下一段的重點。</p>
-<h2>拖延的代價：六年死亡率 2.6 倍</h2>
+<h2 id="bt-s6">拖延的代價：六年死亡率 2.6 倍</h2>
 <p>這是整篇綜論裡我認為最該被記住的臨床論點。</p>
 <p>一個瑞典世代研究發現：<strong>因為與健康無關的原因（例如排程）而使分流手術被迫延遲超過 6 個月的病人，到手術時症狀已顯著惡化，且術後的改善也少於在診斷後 3 個月內接受手術的病人。</strong></p>
 <p>而同一個世代追蹤 <strong>6 年</strong>之後：<strong>延遲超過 6 個月者的死亡率，是較早手術者的 2.6 倍。</strong></p>
 <p>請注意這個研究設計的巧妙之處——延遲的原因<strong>與病人的健康狀況無關</strong>，所以「病得比較重所以排比較後面」這種反向因果被大幅削弱了。這讓那個 2.6 倍相當有說服力。</p>
 <p>把它跟第 01 篇的流行病學放在一起，圖像就完整了：一個記憶門診裡 15% 的人可能有這個病、瑞典每十萬人只有 2.2 個人被開刀、而每拖半年，六年死亡率變成 2.6 倍。<strong>「先觀察看看」在這個病身上不是中性的選項。</strong></p>
-<h2>症狀回來了怎麼辦</h2>
+<h2 id="bt-s7">症狀回來了怎麼辦</h2>
 <p>如果症狀在初步緩解後又回來，原文列出三個方向：</p>
 <ol>
 <li><strong>調整閥門設定</strong>以增加 CSF 引流</li>
@@ -178,14 +198,14 @@ article, article *{overflow-wrap:break-word}
 <li><strong>尋找在分流置放後才出現的共病</strong></li>
 </ol>
 <p>第 3 點很容易被忽略。一位 iNPH 術後兩年開始又走不好的長輩，答案可能是分流管、可能是閥門設定，但也可能是新長出來的巴金森氏症、頸椎脊髓病變或周邊神經病變——回到第 03 篇那張 Table 1 重跑一次。</p>
-<h2>未來方向</h2>
+<h2 id="bt-s8">未來方向</h2>
 <p>原文的結尾點出兩條路：</p>
 <ul>
 <li><strong>機轉面</strong>：腦的 glymphatic 循環、脈絡叢功能、腦水分運輸、遺傳傾向的研究，可能有助於釐清病因與病理生理</li>
 <li><strong>治療面</strong>：正在發展<strong>新的手術方式與藥物</strong>，透過<strong>減少 CSF 生成或增加 CSF 引流</strong>來縮小腦室</li>
 </ul>
 <p>而全文的總結是這樣寫的：<strong>iNPH 是一個常見、經常未被診斷的疾病，影響步態、認知與排尿控制，可在 60 歲以上的人身上造成失能。一套包含鑑別診斷、預後檢查、適當時給予分流手術、以及長期追蹤的處置方式，可以帶來良好的結果。</strong></p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s9">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>NEJM 這篇的實際說法</th></tr></thead>
 <tbody>

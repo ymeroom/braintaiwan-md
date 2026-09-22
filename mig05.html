@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/mig05.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 5 篇</strong>　前四篇談的多是<strong>陣發性偏頭痛</strong>的口服與針劑。最後一篇把版圖補齊：每月頭痛 ≥ 15 天的<strong>慢性偏頭痛（chronic migraine, CM）</strong> 第一線怎麼選、<strong>肉毒桿菌素（onabotulinumtoxinA）</strong> 的 PREEMPT 注射、<strong>月經型偏頭痛</strong>的短期預防，以及維生素、礦物質與神經調節等<strong>輔助／替代療法</strong>。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、慢性偏頭痛（CM）的第一線</a></li><li><a href="#bt-s2">二、肉毒桿菌素：onabotulinumtoxinA（PREEMPT 注射法）</a></li><li><a href="#bt-s3">三、月經型偏頭痛：短期（圍經期）預防</a></li><li><a href="#bt-s4">四、輔助與替代療法</a></li><li><a href="#bt-s5">五、特殊族群的提醒</a></li><li><a href="#bt-s6">臨床要點摘要</a></li><li><a href="#bt-s7">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>偏頭痛預防不是「一套打天下」。慢性偏頭痛、月經型偏頭痛各有專屬策略；而對不適合或不願長期吃藥的人，輔助療法也提供了實證可循的選項。這一篇把這些「特殊情境」一次收齊。</p>
 <hr>
-<h2>一、慢性偏頭痛（CM）的第一線</h2>
+<h2 id="bt-s1">一、慢性偏頭痛（CM）的第一線</h2>
 <p>慢性偏頭痛（每月頭痛 ≥ 15 天、其中 ≥ 8 天為偏頭痛、持續 ≥ 3 個月）的第一線，與陣發性略有不同——<strong>多了肉毒桿菌素，且 topiramate 仍是主力</strong>：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>第一線藥（CM）</th><th>等級</th><th>重點</th></tr></thead>
@@ -112,7 +132,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>而<strong>陣發性偏頭痛的各種口服預防藥，也可作為慢性偏頭痛的第二線</strong>選擇。</p>
 <hr>
-<h2>二、肉毒桿菌素：onabotulinumtoxinA（PREEMPT 注射法）</h2>
+<h2 id="bt-s2">二、肉毒桿菌素：onabotulinumtoxinA（PREEMPT 注射法）</h2>
 <p><strong>OnabotulinumtoxinA</strong> 是慢性偏頭痛的招牌針劑，依 <strong>PREEMPT</strong> 臨床試驗的注射方案施打：</p>
 <ul>
 <li><strong>適應症界定明確</strong>：<strong>只用於慢性偏頭痛</strong>，對陣發性偏頭痛並無預防效果——這是最常被搞混的一點。</li>
@@ -121,7 +141,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>優點</strong>：全身性副作用少，適合不耐口服藥、或合併藥物過度使用的慢性偏頭痛患者。</li>
 </ul>
 <hr>
-<h2>三、月經型偏頭痛：短期（圍經期）預防</h2>
+<h2 id="bt-s3">三、月經型偏頭痛：短期（圍經期）預防</h2>
 <p>月經型偏頭痛有其週期可預測的特性，因此採<strong>短期預防（short-term / mini-prophylaxis）</strong>，而非長期天天吃藥：</p>
 <ul>
 <li>於<strong>月經前後數天</strong>（圍經期）短期給予 <strong>非類固醇消炎止痛藥（NSAIDs，如 naproxen）</strong> 或 <strong>長效型翠普登（triptans，如 frovatriptan、naratriptan）</strong>。</li>
@@ -129,7 +149,7 @@ article, article *{overflow-wrap:break-word}
 <li>若同時有非經期發作或本身頻率高，則仍依一般原則加上常規預防治療。</li>
 </ul>
 <hr>
-<h2>四、輔助與替代療法</h2>
+<h2 id="bt-s4">四、輔助與替代療法</h2>
 <p>對不適合、不願長期用藥，或想加上「非處方」輔助的患者，指引也納入幾項實證選項：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>項目</th><th>用法／重點</th></tr></thead>
@@ -141,14 +161,14 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>這些輔助療法的證據強度不一，多作為<strong>加成或替代</strong>，而非取代核心預防藥；但對在意藥物副作用、或備孕／哺乳等用藥受限的族群，是值得納入討論的選項。</p>
 <hr>
-<h2>五、特殊族群的提醒</h2>
+<h2 id="bt-s5">五、特殊族群的提醒</h2>
 <ul>
 <li><strong>孕婦／育齡女性</strong>：<strong>topiramate（D 級，唇顎裂）與 valproate（致畸胎）應避免</strong>；可優先考慮較安全的選項並充分衛教，鎂等輔助療法相對溫和。</li>
 <li><strong>長者</strong>：flunarizine／cinnarizine 注意憂鬱與錐體外症候群；用藥宜更低劑量、更慢調整。</li>
 <li><strong>共病導向</strong>：合併高血壓選乙型阻斷劑或 candesartan、合併失眠／憂鬱選 amitriptyline、合併肥胖／癲癇選 topiramate——讓一支藥同時解決兩個問題。</li>
 </ul>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s6">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>情境</th><th>首選策略</th></tr></thead>
 <tbody>
@@ -166,7 +186,7 @@ article, article *{overflow-wrap:break-word}
 <p>至於 B2、鎂、CoQ10，我從不誇大它們的威力，但對<strong>備孕、哺乳、或就是怕吃藥</strong>的病人，它們是門好用的「低風險入場券」。整份指引走到最後，核心精神其實沒變過——<strong>對的人、對的藥、對的療程，再加上一本好好記的頭痛日記。</strong></p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s7">參考文獻</h2>
 <ol>
 <li>Wu JW, Yang CP, and the Treatment Guideline Subcommittee of the Taiwan Headache Society. 2022 Taiwan Guidelines for Preventive Treatment of Migraine. <em>Acta Neurol Taiwan</em> 2022;31:164-202.</li>
 <li>Aurora SK, Dodick DW, Turkel CC, et al. OnabotulinumtoxinA for treatment of chronic migraine: pooled results from the double-blind, randomized, placebo-controlled phases of the PREEMPT clinical program. <em>Headache</em> 2010;50:921-936.</li>

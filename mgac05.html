@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/mgac05.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 05 篇</strong>　前四篇談的多半是病人在家裡吞的藥。這一篇走進急診與病房：抗多巴胺注射劑、類固醇、鎂離子、valproate，以及持續超過 72 小時的偏頭痛重積狀態、什麼時候該住院、住院能做什麼。這也是指引裡證據最薄、表格與正文最常對不上的一段。</p>
 </blockquote>
-<h2>抗多巴胺藥：急診的主角</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 8 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">抗多巴胺藥：急診的主角</a></li><li><a href="#bt-s2">其他注射藥：證據一路往下</a></li><li><a href="#bt-s3">Valproate 那一列：表格停在 2022 年</a></li><li><a href="#bt-s4">偏頭痛重積狀態：超過 72 小時之後</a></li><li><a href="#bt-s5">什麼時候住院、住院做什麼</a></li><li><a href="#bt-s6">住院戒斷：藥物過度使用頭痛的最後一步</a></li><li><a href="#bt-s7">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">抗多巴胺藥：急診的主角</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>分級</th><th>Table 1 劑量</th></tr></thead>
 <tbody>
@@ -111,7 +131,7 @@ article, article *{overflow-wrap:break-word}
 <p>口服組合也有證據：<strong>口服 sumatriptan 50 mg 併用 metoclopramide 10 mg 可以增強療效。</strong></p>
 <p>副作用是錐體外徑症狀：<strong>靜坐不能（16%）與肌張力不全（4%），可用靜脈 diphenhydramine 減少，但可能伴隨鎮靜、低血壓與抗膽鹼副作用。</strong></p>
 <p><strong>Droperidol 肌肉注射（2.5–8.25 mg）已證實有效，但中樞神經副作用較多，且有 QT 延長風險</strong>，所以只留給難治或重積狀態。Table 1 把兩句話寫在同一格：「<strong>副作用大，不做為第一線；難治的重積狀態可考慮。</strong>」給藥途徑在同一份指引裡有兩種寫法：第 3.5 節與 Table 1 是肌肉注射 2.5–8.25 mg，後面重積狀態那一節寫的是<strong>靜脈注射 2.5 mg</strong>。2022 年版總表則是 droperidol 2.75 mg 靜脈注射，旁邊還有一列 chlorpromazine 25 mg 靜脈注射；2026 年的英文版已經不列 chlorpromazine。</p>
-<h2>其他注射藥：證據一路往下</h2>
+<h2 id="bt-s2">其他注射藥：證據一路往下</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>正文分級</th><th>Table 1</th></tr></thead>
 <tbody>
@@ -124,7 +144,7 @@ article, article *{overflow-wrap:break-word}
 <p><strong>鎂離子調節 NMDA 受體與鈣平衡，缺乏時可能誘發偏頭痛，但靜脈鎂的證據好壞參半。</strong> 2019 年的統合分析顯示<strong>一小時緩解改善、先兆縮短、救援用藥減少，但結果仍無定論，可在標準治療失敗時考慮。</strong> Table 1 的說明是：<strong>無定論，可能只對特定病人有效（例如血清鎂偏低或有先兆者）。</strong></p>
 <p><strong>Valproate 靜脈注射 300–1200 mg 在一個試驗中讓 63% 的病人疼痛改善</strong>，但其他隨機試驗發現它<strong>不如 prochlorperazine 10 mg，也不優於 NSAID、triptan 或抗多巴胺藥。</strong> 指引的建議是<strong>難治與住院病例可試單次 800–1000 mg 靜脈注射，孕婦除外。</strong></p>
 <p><strong>Lidocaine 鼻內或靜脈給藥，尚未被確切證實有效。</strong></p>
-<h2>Valproate 那一列：表格停在 2022 年</h2>
+<h2 id="bt-s3">Valproate 那一列：表格停在 2022 年</h2>
 <p>上面那張表的 valproate 列，是我在這份指引裡找到最明確的內部不一致，而且有兩處：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>Valproate 靜脈注射</th><th>推薦組別</th><th>劑量</th></tr></thead>
@@ -135,7 +155,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>我把原文表格的影像調出來確認過。組別那一格，2026 年的表格保留了 2022 年的 Group V，正文則已經改成 Group IV——看起來是正文更新了、表格沒跟上。劑量那一格則是另一個問題：正文與 2022 年版都是 1200，只有 2026 年表格是 1300，比較像是新出現的誤植。</p>
 <p>Group IV 與 V 在臨床上的差別不是細節。IV 是「前述藥物無效或特殊情況才考慮」，V 是「療效與安慰劑相當或結果不一致，不建議」。一個是還能用，一個是不要用。</p>
-<h2>偏頭痛重積狀態：超過 72 小時之後</h2>
+<h2 id="bt-s4">偏頭痛重積狀態：超過 72 小時之後</h2>
 <p><strong>偏頭痛重積狀態（status migrainosus）是持續超過 72 小時的失能性偏頭痛，會明顯損害生活品質。</strong> 到了這個階段，前幾篇的藥很多都失靈了：<strong>中樞敏感化與皮膚異感痛讓 triptan 與麥角胺的效果下降，噁心嘔吐又常讓口服藥無法使用。</strong></p>
 <p><strong>高品質證據是缺乏的。</strong> 指引能給的是：</p>
 <div class="bt-tablewrap"><table>
@@ -149,7 +169,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>Gepants</td><td><strong>重積狀態的資料付之闕如</strong></td></tr>
 </tbody></table></div>
 <p>類固醇那一格值得對照摘要來讀。摘要與結論都寫：<strong>重積狀態建議非經腸道類固醇合併靜脈輸液。</strong> 正文卻把靜脈類固醇標成 Grade C、Group III，並註明各指引意見不一。這個「摘要建議、正文保留」的落差，2022 年版就已經存在：當時的摘要寫<strong>非經腸道類固醇與補液是重積狀態的第一線治療</strong>，而正文標題是<strong>類固醇 (steroids) iv [Grade C, Group III]</strong>。四年過去，摘要的措辭從「第一線」收斂成「建議」，正文的 Grade C、Group III 則原封不動。</p>
-<h2>什麼時候住院、住院做什麼</h2>
+<h2 id="bt-s5">什麼時候住院、住院做什麼</h2>
 <p>住院的適應症有五條：<strong>門診或急診治療失敗、口服無效或無法口服、需要進一步評估或密切監測、有妨礙門診處理的複雜因素，或其他臨床判斷支持住院。</strong></p>
 <p>住院治療本身<strong>大致比照急診，只是重複給藥並加上多專科支持。</strong> 這裡出現了本篇標題那件事：<strong>靜脈 prochlorperazine（每 8 小時 5–10 mg）被廣泛使用，雖然仿單建議只能肌肉注射。</strong> 指引的立場是，<strong>靜脈給藥的療效與耐受性有臨床證據支持，可在病人知情同意並監測錐體外徑症狀的前提下使用。</strong></p>
 <p>支撐這件事的是一個台灣研究：</p>
@@ -162,7 +182,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>14 個月後仍未過度用藥（MOH 病人）</td><td><strong>70%</strong></td></tr>
 </tbody></table></div>
 <p>輔助用藥包括<strong>類固醇、靜脈鎂（每 12–24 小時 1 g）與 valproate。</strong> 鎂在這裡的寫法比前面強：<strong>鎂對有先兆的偏頭痛有效，但腎功能不全者禁用。</strong> 前面第 3.6 節說靜脈鎂「證據好壞參半、無定論」，到了住院段落變成「有效」，同一種藥在兩節之間的語氣不太一樣。</p>
-<h2>住院戒斷：藥物過度使用頭痛的最後一步</h2>
+<h2 id="bt-s6">住院戒斷：藥物過度使用頭痛的最後一步</h2>
 <p>第 04 篇講到用藥天數的紅線。越過紅線之後，有一部分病人需要住院戒斷：<strong>住院戒斷可能對 MOH 有幫助，特別是過度使用鴉片類、巴比妥類或複方止痛藥，或合併精神共病、遵從性差的病人。</strong> 做法是<strong>在開始預防性治療的同時，用 prochlorperazine 或 valproate 作為橋接治療，協助戒斷。</strong></p>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>
@@ -171,7 +191,7 @@ article, article *{overflow-wrap:break-word}
 <p>最讓我在意的是「gepants 在重積狀態的資料付之闕如」這一句。這份指引花了一整節把 rimegepant 推到第一線，而最需要一顆不收縮血管、不會造成藥物過度使用頭痛的藥的場景——連續三天痛到吐、已經吃了一堆藥的病人——恰好是沒有資料的地方。</p>
 </blockquote>
 <p>四年之間，門診那一端多了一個 Group I 的新藥；重積狀態那一端，類固醇依舊是 Grade C，摘要只把「第一線」改成了「建議」。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s7">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>指引實際說法</th></tr></thead>
 <tbody>

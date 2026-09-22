@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/adxs05.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 5 篇</strong>　對應指引建議 15（Recommendation 15）：當症候群與初步病因鑑別仍有不確定性時，<strong>該依個人風險輪廓選擇性加做檢測，而不是一次性開立大量檢查</strong>。本篇整理完整的 Tier 1–4/X 檢測架構（Table 4）。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、核心原則：精準勝過全面</a></li><li><a href="#bt-s2">二、五層檢測架構總覽</a></li><li><a href="#bt-s3">三、Tier 1–2：多數鑑別已可在這裡完成</a></li><li><a href="#bt-s4">四、Tier 3：專科決策的主戰場</a></li><li><a href="#bt-s5">五、Tier 4：罕見、不典型、快速進展時才動用</a></li><li><a href="#bt-s6">六、Tier X：站在臨床與研究的交界</a></li><li><a href="#bt-s7">臨床要點摘要</a></li><li><a href="#bt-s8">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
-<h2>一、核心原則：精準勝過全面</h2>
+<h2 id="bt-s1">一、核心原則：精準勝過全面</h2>
 <p>指引建議 15（證據強度 A）明確指出：<strong>額外的 Tier 2–4 檢測應依個人風險輪廓選擇性加做，而非「散彈打鳥」式的全面篩檢</strong>。這個原則的臨床理由很實際——許多 Tier 3–4 檢測昂貴、有侵入性，或特異度有限，盲目擴大篩檢範圍只會增加偽陽性、增加病人負擔，卻不一定提高診斷準確性。</p>
-<h2>二、五層檢測架構總覽</h2>
+<h2 id="bt-s2">二、五層檢測架構總覽</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>層級</th><th>對象</th><th>內容類型</th></tr></thead>
 <tbody>
@@ -113,9 +133,9 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p>各層的劃分邏輯是<strong>可近性遞減、特異度與侵入性遞增</strong>：Tier 1 幾乎人人可做、Tier 4/X 則保留給高度不確定或非典型的病例。</p>
 </blockquote>
-<h2>三、Tier 1–2：多數鑑別已可在這裡完成</h2>
+<h2 id="bt-s3">三、Tier 1–2：多數鑑別已可在這裡完成</h2>
 <p>延續<a href="adx06.html">基層篇第⑥篇</a>的內容，Tier 1–2 的價值在於<strong>用最低成本排除常見可逆病因，並縮小症候群分類的不確定性</strong>。專科介入的價值，通常出現在 Tier 1–2 已完成、結果仍無法充分解釋臨床表現的病例。</p>
-<h2>四、Tier 3：專科決策的主戰場</h2>
+<h2 id="bt-s4">四、Tier 3：專科決策的主戰場</h2>
 <p>Tier 3 是本系列後續幾篇（<a href="adxs06.html">第⑥篇 FDG PET</a>、<a href="adxs07.html">第⑦篇 CSF 與類澀蛋白 PET</a>）會深入討論的層級，這裡先建立整體脈絡：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>用途分類</th><th>對應檢測</th></tr></thead>
@@ -126,17 +146,17 @@ article, article *{overflow-wrap:break-word}
 <tr><td>路易氏體相關</td><td>DAT-SPECT、心臟核醫顯影（MIBG）</td></tr>
 <tr><td>癲癇/腦病變相關</td><td>腦電圖</td></tr>
 </tbody></table></div>
-<h2>五、Tier 4：罕見、不典型、快速進展時才動用</h2>
+<h2 id="bt-s5">五、Tier 4：罕見、不典型、快速進展時才動用</h2>
 <p>Tier 4 檢測的共同特徵是：<strong>目標病因發生率低，但漏診代價高</strong>（如可治療的自體免疫腦炎、CJD）。啟動 Tier 4 的典型情境包括：</p>
 <ul>
 <li>快速進展型失智症（數週至數月內顯著惡化）</li>
 <li>高度不典型表現，且 Tier 1–3 仍無法解釋</li>
 <li>疑似遺傳性病因家族史明確（詳見<a href="adxs08.html">第⑧篇</a>的基因檢測討論）</li>
 </ul>
-<h2>六、Tier X：站在臨床與研究的交界</h2>
+<h2 id="bt-s6">六、Tier X：站在臨床與研究的交界</h2>
 <p>Tier X 涵蓋目前仍在快速發展、尚未完全標準化進入常規臨床使用的項目，例如血液生物標記（如 p-tau217）、皮膚切片 α-突觸核蛋白檢測，以及 tau PET。指引的態度是<strong>承認其潛力，但目前仍建議在具備適當判讀能力的中心、依適當使用標準謹慎導入</strong>，而非作為常規篩檢工具。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s7">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
@@ -154,7 +174,7 @@ article, article *{overflow-wrap:break-word}
 <p>Tier X 的項目，我會非常謹慎地跟病人說明：<strong>這些是還在發展中的工具，目前不建議作為唯一的診斷依據</strong>。尤其血液生物標記在台灣的可近性與報告判讀標準化程度仍在發展，病人若主動詢問，我會說明目前的角色定位，而不是直接安排。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s8">參考文獻</h2>
 <ol>
 <li>Dickerson BC, Atri A, Clevenger C, et al. The Alzheimer's Association clinical practice guideline for the Diagnostic Evaluation, Testing, Counseling, and Disclosure of Suspected Alzheimer's Disease and Related Disorders (DETeCD-ADRD): Executive summary of recommendations for specialty care. <em>Alzheimer's Dement</em>. 2025;21:e14337. doi:10.1002/alz.14337</li>
 <li>Geschwind MD. Rapidly progressive dementia. <em>Continuum (Minneap Minn)</em>. 2016;22(2):510-537.</li>

@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/dmdx02.html">
 </head>
@@ -97,12 +116,13 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 2 篇</strong>　A1C 方便、不必空腹、一次抽血就有,是很多人偏愛的診斷工具。但它量的其實是「血糖黏在血色素上」的結果——只要紅血球本身出了狀況,這個數字就會偏離真正的血糖,而且偏得你不一定看得出來。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 3 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、什麼時候 A1C 會假高、什麼時候會假低</a></li><li><a href="#bt-s2">臨床要點摘要</a></li><li><a href="#bt-s3">二、遇到這些情況，直接改用血糖</a></li><li><a href="#bt-s4">三、那 0.3% 的種族差異，不該變成校正公式</a></li><li><a href="#bt-s5">四、血糖和 A1C 兜不攏的時候</a></li></ol></details><!-- bt-toc:end -->
 <p>先弄清楚 A1C 到底在量什麼。它反映的是紅血球一生（大約 120 天）裡，血糖和血色素結合的累積結果。但這不是把 120 天平均攤開來看——<strong>越近期的血糖，權重越重</strong>，所以臨床上有意義的變化，往往不用等紅血球走完整個生命週期就會浮現。</p>
 <p>問題也就藏在這裡：A1C 同時受「血糖」跟「紅血球的時間軸」兩件事影響。只要紅血球活得比預期久或短，數字就會失真。</p>
-<h2>一、什麼時候 A1C 會假高、什麼時候會假低</h2>
+<h2 id="bt-s1">一、什麼時候 A1C 會假高、什麼時候會假低</h2>
 <p>抓住一個原則就好：<strong>紅血球更新變快，A1C 通常偏低；更新變慢，A1C 通常偏高</strong>。更新變快的情境，像失血、輸血、溶血、葡萄糖-6-磷酸去氫酶缺乏（G6PD deficiency）、或正在打紅血球生成素（erythropoietin）——新生的紅血球還來不及累積糖化，平均值就被拉低。反過來，缺鐵性貧血會讓 A1C 上升。</p>
 <p>還有一票情況會干擾判讀：肝硬化、腎衰竭、透析、HIV、懷孕。檢驗層面則怕血色素變異（hemoglobin variants）、嚴重高三酸甘油酯血症、嚴重高膽紅素血症。</p>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s2">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>情境</th><th>對 A1C 的影響</th></tr></thead>
 <tbody>
@@ -111,12 +131,12 @@ article, article *{overflow-wrap:break-word}
 <tr><td>檢驗干擾</td><td>血色素變異、嚴重高三酸甘油酯血症、嚴重高膽紅素血症</td></tr>
 <tr><td>該改用血糖診斷</td><td>某些血色素變異、懷孕、G6PD 缺乏、HIV，及任何改變紅血球更新的情況</td></tr>
 </tbody></table></div>
-<h2>二、遇到這些情況，直接改用血糖</h2>
+<h2 id="bt-s3">二、遇到這些情況，直接改用血糖</h2>
 <p>ADA 建議 2.4 畫了一條很清楚的線：當某些血色素變異、懷孕、G6PD 缺乏、HIV，或任何會改變紅血球更新的狀況，讓 A1C 跟血糖的關係脫鉤時，<strong>診斷就別再用 A1C，改用血漿血糖標準</strong>。</p>
 <p>血色素變異還要看檢驗方法。帶鐮刀型血球特質（sickle cell trait）的人，應該挑一個不受該變異干擾的 A1C 檢驗，最新的干擾清單放在 ngsp.org/interf.asp。另一個例子是 X 性聯的 G6PD G202A 變異，在美國約 11% 的黑人身上帶有。</p>
-<h2>三、那 0.3% 的種族差異，不該變成校正公式</h2>
+<h2 id="bt-s4">三、那 0.3% 的種族差異，不該變成校正公式</h2>
 <p>有研究發現，相較非西語裔白人或西語裔，黑人的 A1C 大約高出 0.3%。但 ADA 特別提醒：<strong>不要拿種族或血統，去代理一個我們還沒搞懂的基因差異</strong>。而且一個讓人安心的觀察是——A1C 和併發症風險的關聯，在黑人與非西語裔白人族群其實相近。</p>
-<h2>四、血糖和 A1C 兜不攏的時候</h2>
+<h2 id="bt-s5">四、血糖和 A1C 兜不攏的時候</h2>
 <p>如果血糖值跟 A1C 持續而且明顯地對不上（consistent and substantial discordance），建議 2.3 要你去查是不是檢驗出了問題或受到干擾。真的需要追蹤長期血糖時，果糖胺（fructosamine）、糖化白蛋白（glycated albumin）這些替代指標可以派上用場。</p>
 <p>至於即時檢測的 POC A1C，想拿來篩檢或診斷，門檻不低：得是 FDA 核准可供診斷的機型，而且要在 CLIA 認證、執行中等複雜度以上、由受訓人員操作的實驗室裡做。一般診間那台，適合拿來監測，不適合直接下診斷。</p>
 <blockquote class="commentary">

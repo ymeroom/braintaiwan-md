@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/fus04.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 04 篇</strong>　如果立即用藥能降低兩年內的復發，那它應該也能改善長期預後——這個推論很自然，但證據說不是。追蹤超過三年的緩解率，立即治療組 88%、延遲治療組 87%。這一篇處理長期預後的兩篇研究，以及 ILAE 2014 年那個「10 年內復發風險 ≥60% 就可診斷癲癇」的新定義為何在實務上難以套用。</p>
 </blockquote>
-<h2>兩篇研究，一個結論</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">兩篇研究，一個結論</a></li><li><a href="#bt-s2">一個值得注意的數字對不上</a></li><li><a href="#bt-s3">「早治療不改變命運」的臨床意義</a></li><li><a href="#bt-s4">ILAE 2014 的新定義，以及它的執行困難</a></li><li><a href="#bt-s5">那什麼時候該用藥？</a></li><li><a href="#bt-s6">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">兩篇研究，一個結論</h2>
 <p>評估長期預後的證據只有 <strong>1 篇 Class I</strong> 與 <strong>1 篇 Class II</strong>，合計 <strong>1,231 位</strong>患者。指引用的終點是<strong>癲癇緩解率</strong>（seizure remission rate）——維持一段特定期間完全無發作，通常是 2 到 5 年。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>研究</th><th>等級</th><th>人數</th><th>立即治療</th><th>立即治療組緩解</th><th>延遲治療組緩解</th><th>追蹤</th></tr></thead>
@@ -111,16 +131,16 @@ article, article *{overflow-wrap:break-word}
 <p>指引還加了兩條註腳，把退路也堵住了。FIRST 研究中追蹤更久的患者，其<strong>五年緩解率</strong>同樣沒有顯著差異；MESS 研究中追蹤更久的患者，較長期的緩解率也沒有顯著差異。所以這不是「追蹤還不夠久」的問題。</p>
 <p>至於死亡率，只有 <strong>1 篇 Class III</strong> 研究處理，它顯示立即治療在 <strong>20 年</strong>期間<strong>不影響死亡率</strong>——但指引明講這篇受限於樣本數，證據強度有限。</p>
 <p>由此得出 Level B 建議：<strong>在較長期（超過 3 年）的尺度上，立即用藥不太可能改善持續緩解的預後。</strong></p>
-<h2>一個值得注意的數字對不上</h2>
+<h2 id="bt-s2">一個值得注意的數字對不上</h2>
 <p>把 Table 3 與前兩篇的表格並排，會發現 FIRST 研究的人數不一致：<strong>在 Table 1 與 Table 2 裡是 397 人，在 Table 3 裡是 419 人。</strong></p>
 <p>指引沒有解釋這個差異。合理的推測是不同分析納入的次族群不同——這份指引明訂排除就診時已有多次發作的患者，而 FIRST 試驗本身收案時包含了一部分這類病人，因此不同的分析可能套用了不同的納入條件。但這只是推測，正文未加說明。</p>
 <p>這不影響 88% 對 87% 這個結論，因為兩組的差距實在太小了。但引用細部數字時值得知道這件事。</p>
-<h2>「早治療不改變命運」的臨床意義</h2>
+<h2 id="bt-s3">「早治療不改變命運」的臨床意義</h2>
 <p>把第三篇與這一篇疊起來看，浮現的是一個相當清楚的圖像：</p>
 <p><strong>立即用藥改變的是接下來兩年的發作次數，不是這個病最終會走到哪裡。</strong></p>
 <p>一個延到第二次發作才開始治療的病人，最後達到長期緩解的機率跟一開始就用藥的人一樣。他只是在中間那段時間多冒了一些復發的風險。</p>
 <p>這個結構會直接改變門診對話的框架。問題不再是「用藥能不能治好我」，而是「我願不願意為了降低未來兩年的復發風險，承擔兩年以上的服藥與副作用」——而這是一個<strong>價值判斷</strong>，不是醫學判斷。指引的建議措辭也完全順著這個邏輯：臨床醫師是否建議立即用藥，應基於個別化評估，權衡復發風險與藥物不良反應，<strong>納入病人在充分知情後的偏好</strong>，並且明確告知立即治療不會改善長期緩解預後、但會降低後續兩年的發作風險。</p>
-<h2>ILAE 2014 的新定義，以及它的執行困難</h2>
+<h2 id="bt-s4">ILAE 2014 的新定義，以及它的執行困難</h2>
 <p>2014 年 ILAE 提出一個影響深遠的癲癇臨床定義。傳統上診斷癲癇需要<strong>至少兩次無誘發性發作</strong>；新定義把範圍擴大，納入<strong>一次無誘發性發作且未來 10 年復發風險至少 60%</strong> 的人。</p>
 <p>這個改變在概念上很漂亮：它承認一個帶著舊中風、EEG 有棘波的人，在生物學上已經是癲癇，不必等到第二次發作才給診斷。指引也指出，這份 ILAE 報告正是在強調對首次無誘發性發作者估計復發風險的重要性。</p>
 <p>問題出在執行。</p>
@@ -128,11 +148,11 @@ article, article *{overflow-wrap:break-word}
 <p>第二，也是更根本的——上一篇談過的<strong>風險不可相加</strong>。只有兩篇研究分析過風險因子的加成效應，結論還互相矛盾：一篇認為唯一的獨立風險因子是 EEG 癲癇樣異常，另一篇認為是遠端症狀性病因。ILAE 自己在報告中也承認：「由於缺乏這些風險如何結合的資料，無法套用任何公式來計算加成風險；這類風險必須由個別化的考量來決定。」</p>
 <p>指引因此下了一個相當直白的判斷：如同本文分析所示、也如同 ILAE 自己所提醒的，<strong>特定風險因子及其交互作用的證據不足，構成了這個定義的限制。</strong></p>
 <p>換句話說，ILAE 給了一個以 60% 為門檻的診斷標準，但沒有人有辦法可靠地算出任何一位病人的那個百分比。</p>
-<h2>那什麼時候該用藥？</h2>
+<h2 id="bt-s5">那什麼時候該用藥？</h2>
 <p>指引在臨床脈絡裡點出一個對照組，這個對照組其實是實務上最有用的錨點。</p>
 <p>當一位首次發作的病人<strong>接續發生了第二次發作</strong>，開始用藥是已被廣泛接受的原則，因為此時再發作的風險非常高：<strong>1 年 57%、4 年 73%</strong>。而且每經歷一次復發，風險會依比例再升高，發作之間的間隔也會縮短。</p>
 <p>指引接著說了一句很實用的話：<strong>在某些情況下，一位首次發作病人的統計風險可能逼近那些已經發作多次、一般認為應該用藥的病人。</strong> 這就是風險分層真正的用途——不是為了算出一個百分比，而是為了辨認出「這個人雖然只發作過一次，但他看起來已經像是發作過兩次的人」。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s6">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>文獻實際說法</th></tr></thead>
 <tbody>

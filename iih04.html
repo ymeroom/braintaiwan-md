@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/iih04.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 04 篇</strong>　腰椎穿刺長年被當成特發性顱內高壓的確診步驟。但這篇綜論花了整整一節，講的其實是它的不確定性：讀數會被姿勢改變、俯臥時忘了加 9 公分針長就會低估、20 到 30 公分水柱之間根本無法區分病人與健康人。最後綜論給出一個在教科書裡不常見的立場——在選定的病人身上，這個步驟可以省略。</p>
 </blockquote>
-<h2>那條線畫在哪裡</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 7 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">那條線畫在哪裡</a></li><li><a href="#bt-s2">這是一次快照，而血壓沒有人只量一次</a></li><li><a href="#bt-s3">那個最容易被忽略的 9 公分</a></li><li><a href="#bt-s4">綜論真正大膽的一段：可以不做</a></li><li><a href="#bt-s5">該做的時候，就做得徹底一點</a></li><li><a href="#bt-s6">反覆穿刺不是策略——除了兩種例外</a></li><li><a href="#bt-s7">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">那條線畫在哪裡</h2>
 <p>前提先講清楚：<strong>如果神經影像已經排除佔位性病灶與靜脈栓塞，接下來通常會做腰椎穿刺</strong>，目的有兩個——測量腰椎蜘蛛膜下腔的<strong>開放壓（opening pressure）</strong>，以及取腦脊髓液（CSF）化驗。</p>
 <p>診斷標準是：<strong>在側臥姿勢下，壓力計讀數高於 25 公分水柱（18.4 毫米汞柱），若 CSF 成分正常且臨床情境相符，即視為特發性顱內高壓的診斷依據。</strong></p>
 <p>然後綜論立刻把這條線的兩端都拆了：</p>
@@ -108,7 +128,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>偽陽性</td><td>在某些系列中，<strong>2.5% 沒有這個病的人</strong>，開放壓高於這個數值</td></tr>
 </tbody></table></div>
 <p>一條被廣泛使用的診斷截斷值，兩端都在漏水。而第 03 篇那個數字放在這裡看更刺眼——<strong>肥胖者的 ICP 中位數本來就比非肥胖者高 10 到 15%</strong>，而這個病的病人九成五以上是肥胖女性。</p>
-<h2>這是一次快照，而血壓沒有人只量一次</h2>
+<h2 id="bt-s2">這是一次快照，而血壓沒有人只量一次</h2>
 <p>綜論用了一個很好懂的類比：<strong>腰椎穿刺捕捉的是單一時刻的壓力讀數，但就像血壓一樣，顱內壓（ICP）會隨著活動與姿勢大幅變動。</strong></p>
 <p>沒有人會用一次血壓決定一個人是不是高血壓，但我們一直用一次腰椎穿刺決定一個人是不是顱內高壓。</p>
 <p>而且這次快照本身還很容易失真。<strong>由於肥胖，這些病人的腰椎穿刺可能難以執行</strong>，綜論列了四個造成讀數不準的來源：</p>
@@ -120,13 +140,13 @@ article, article *{overflow-wrap:break-word}
 <tr><td>用力憋氣（straining）</td><td>瞬間推高壓力</td></tr>
 <tr><td>針的位置不對</td><td>讀數不代表蜘蛛膜下腔壓力</td></tr>
 </tbody></table></div>
-<h2>那個最容易被忽略的 9 公分</h2>
+<h2 id="bt-s3">那個最容易被忽略的 9 公分</h2>
 <p>因為執行困難，<strong>許多病人被轉介給放射科醫師，而後者常常在病人俯臥的姿勢下操作。</strong></p>
 <p>於是就有了這條非常具體、非常容易被漏掉的操作細節：</p>
 <p><strong>在俯臥姿勢下執行腰椎穿刺時，必須把針的長度（9 公分）加到壓力計中液柱的高度上。如果沒有做這個步驟，回報的 ICP 數值可能是不準確的。</strong></p>
 <p>方向是可以推出來的：俯臥時穿刺點在上、蜘蛛膜下腔在下，針本身的長度就是一段沒有被算進去的液柱高度。少加這 9 公分，等於系統性地低估壓力——而 9 公分在一條畫在 25 公分的線上，是足以把診斷從陽性翻成陰性的量級。</p>
 <p>這件事對神經科的意義是：<strong>看到一份影像科回報的開放壓，第一個該問的問題是姿勢，第二個是有沒有加針長。</strong></p>
-<h2>綜論真正大膽的一段：可以不做</h2>
+<h2 id="bt-s4">綜論真正大膽的一段：可以不做</h2>
 <p>這一節的重點不是怎麼做，而是要不要做。</p>
 <p>綜論的論證是這樣走的：<strong>當視乳突水腫輕微或不存在時，腰椎穿刺得到的開放壓很可能落在 20 到 30 公分水柱之間。而落在這個範圍的讀數提供的診斷資訊很少——因為它與健康人記錄到的壓力範圍重疊。</strong></p>
 <p>換句話說，最需要靠腰椎穿刺幫忙下決定的那群病人（眼底看不出來的那些），恰恰是腰椎穿刺最幫不上忙的一群。</p>
@@ -140,7 +160,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>不做 CSF 化驗最大的代價，是漏掉一個模仿特發性顱內高壓的無菌性腦膜炎。這個風險有被量化過：<strong>在一個回溯性系列中，因未做 CSF 分析而漏掉無菌性腦膜炎個案的風險低於 1%。</strong></p>
 <p>「無腦膜強化」這個條件因此不是順帶一提——它就是用影像去承接原本由 CSF 化驗承擔的那個排除工作。</p>
-<h2>該做的時候，就做得徹底一點</h2>
+<h2 id="bt-s5">該做的時候，就做得徹底一點</h2>
 <p>反過來，<strong>當視乳突水腫是中度到重度時，腰椎穿刺就有診斷價值</strong>，因為這時壓力讀數很可能高得毫不含糊。</p>
 <p>而這時候的腰椎穿刺同時是治療：</p>
 <div class="bt-tablewrap"><table>
@@ -153,7 +173,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>CSF 化驗</td><td>檢查葡萄糖、蛋白質與細胞數；若結果正常，不需再做其他 CSF 檢驗</td></tr>
 </tbody></table></div>
 <p>「持續漏一週是好事」這一點，跟一般腰椎穿刺後的處理直覺完全相反。在多數情境下，穿刺後頭痛會讓人考慮打血液貼片止漏；但在這個病，那個漏洞正在幫忙降壓。</p>
-<h2>反覆穿刺不是策略——除了兩種例外</h2>
+<h2 id="bt-s6">反覆穿刺不是策略——除了兩種例外</h2>
 <p><strong>連續多次腰椎穿刺是一個不切實際的高 ICP 處理策略</strong>，除非是作為嚴重視力喪失時的暫時性措施。<strong>一旦腰椎穿刺確認了診斷，重複測量的價值就很有限。</strong></p>
 <p>但綜論留了一個非常具體的例外，而且它正好接上第 02 篇最後那個場景：</p>
 <p><strong>有視神經萎縮、又無法配合視野檢查的病人。</strong> 在這種情況下，眼底檢查可能看不到什麼視乳突水腫（因為視神經盤已經萎縮），但<strong>隱匿的視力喪失可能正在無人察覺地進展</strong>。此時<strong>唯一能確定 ICP 有被適當控制的方法，可能就是用腰椎穿刺去測量它——有時候還得反覆測。</strong></p>
@@ -165,7 +185,7 @@ article, article *{overflow-wrap:break-word}
 <p>反倒是「該做的時候放 30 到 40 毫升、不必測關閉壓、不要打血液貼片」這三句，在門診與病房的實際落差可能更大。我們被訓練成盡量少放、放完測關閉壓、頭痛就想止漏——這三個習慣在這個病身上都要反過來想一次。</p>
 </blockquote>
 <p>一個被寫進診斷標準的數字，兩端都在漏水；一個被當成確診步驟的操作，在最需要它的族群裡提供的資訊最少。而下一篇會看到，治療的決定其實從來不是由那個數字驅動的——是由視神經。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s7">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
 <tbody>

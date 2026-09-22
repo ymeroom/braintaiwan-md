@@ -66,6 +66,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/thyro03.html">
 </head>
@@ -88,21 +107,22 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p>系列導讀第三篇：TSH 抽血報告看起來就是一個數字，但這個數字會被時間、季節、抗體、藥物,甚至一顆保健品悄悄動過手腳。這篇講診斷定義背後的統計限制,以及那些容易被忽略的檢驗陷阱。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">USPSTF 想把「overt」留給有症狀的人,但做不到</a></li><li><a href="#bt-s2">TSH 不是一個固定的數字,它有自己的日夜節奏</a></li><li><a href="#bt-s3">參考範圍是統計出來的,不是為你量身訂做的</a></li><li><a href="#bt-s4">報告會被污染:抗體、肝素、生物素</a></li><li><a href="#bt-s5">重症病人:甲狀腺荷爾蒙偏低是常態,不代表要治療</a></li><li><a href="#bt-s6">篩不篩?學會之間吵不出共識</a></li><li><a href="#bt-s7">臨床要點摘要</a></li><li><a href="#bt-s8">🩺 施懿恩小評論</a></li></ol></details><!-- bt-toc:end -->
 <p>一張 TSH 報告單交到手上,高於切點,低於切點,看起來像是非黑即白的判斷。原發性甲狀腺低能症的定義也確實寫得很直白——TSH 高於參考範圍、free T4 低於參考範圍,最常用的切點是 0.4–4.0 mIU/L。但這句話裡藏著一個但書:實際切點依檢驗方法與受檢族群而異。同一個病人,換一家檢驗室,數字可能就落在切點的兩側。</p>
-<h2>USPSTF 想把「overt」留給有症狀的人,但做不到</h2>
+<h2 id="bt-s1">USPSTF 想把「overt」留給有症狀的人,但做不到</h2>
 <p>美國預防服務工作小組建議把「overt hypothyroidism」這個詞保留給真的有臨床症狀的病例。立意很好——用症狀而非單純數字去定義疾病,聽起來更貼近臨床。問題是甲狀腺低能症的表現本來就極度多變,這個定義在實務上很難一致執行。更麻煩的是,不少病人是開始服用 levothyroxine 之後,回頭才意識到自己先前其實已經有症狀——只是那些疲勞、怕冷、便秘平常就被歸類成「年紀大了」或「最近比較累」。</p>
-<h2>TSH 不是一個固定的數字,它有自己的日夜節奏</h2>
+<h2 id="bt-s2">TSH 不是一個固定的數字,它有自己的日夜節奏</h2>
 <p>TSH 有日夜週期性波動,傍晚通常較高;嚴重甲狀腺低能症患者的 TSH 分泌型態可能變得不規則。除此之外還有季節性變化——冬春季偏高,秋夏偏低。同一個病人在不同時段、不同季節抽血,數字本來就會不一樣。也因為這層生理波動與干擾因素的複雜度,不建議常規加測 total T3、total T4 或 free T3,這些指標在診斷原發性甲狀腺低能症上幫助有限。</p>
-<h2>參考範圍是統計出來的,不是為你量身訂做的</h2>
+<h2 id="bt-s3">參考範圍是統計出來的,不是為你量身訂做的</h2>
 <p>檢驗報告上那個「正常範圍」是怎麼來的?統計方法很單純:找一群健康人,量出他們的 TSH 與 free T4,取第 2.5 百分位到第 97.5 百分位當作範圍上下限。這代表這個範圍完全沒有把個人的症狀或未來不良事件風險算進去——研究顯示,即使數值仍落在這個統計範圍之內,甲狀腺功能的變異程度仍然和不良事件風險有關。參考範圍本身也不是一成不變的:它會隨年齡、性別、種族而不同,而且成人的 TSH 參考範圍上限通常隨年齡增加而上移。同一個 TSH 數字,套在 30 歲和 80 歲的人身上,意義不見得相同。</p>
-<h2>報告會被污染:抗體、肝素、生物素</h2>
+<h2 id="bt-s4">報告會被污染:抗體、肝素、生物素</h2>
 <p>有三種常見情況會讓報告說謊。人類抗動物抗體可以造成 TSH 假性升高,同時也會干擾 free T4 平衡透析法的檢測;肝素,包括低分子量肝素,會造成 free T4 假性升高;而高劑量生物素——現在很多人保健品裡就有——會干擾以生物素為基礎的甲狀腺功能檢測方法,造成假性結果。這三個因素平常都不會寫在報告單上提醒你,但只要病人剛好在服用抗凝血劑、剛好前一天吞了生物素保健品,數字就可能失真。</p>
-<h2>重症病人:甲狀腺荷爾蒙偏低是常態,不代表要治療</h2>
+<h2 id="bt-s5">重症病人:甲狀腺荷爾蒙偏低是常態,不代表要治療</h2>
 <p>非甲狀腺疾病(non-thyroidal illness)是另一個容易誤判的情境。嚴重疾病時,甲狀腺荷爾蒙常常偏低,但 TSH 通常仍在正常範圍(恢復期則可能暫時升高)。這種現象幾乎在所有重症患者身上都會出現,所以重症患者不應常規檢測甲狀腺功能,除非真的懷疑合併甲狀腺疾病或中樞型低能症。目前也沒有證據支持在重症患者中給予甲狀腺荷爾蒙替代治療會帶來益處。看到加護病房病人 T4 偏低就想補充,反而可能是多此一舉。</p>
-<h2>篩不篩?學會之間吵不出共識</h2>
+<h2 id="bt-s6">篩不篩?學會之間吵不出共識</h2>
 <p>一般族群到底該不該篩檢甲狀腺功能,目前缺乏共識。美國甲狀腺學會(ATA)、美國臨床內分泌醫師學會、拉丁美洲甲狀腺學會建議在特定年齡後篩檢,大約是 35 歲後每 5 年一次、60 歲後定期篩檢,女性尤其如此;USPSTF 則認為目前證據不足以支持或反對篩檢;英國皇家內科醫學院更直接,認為一般族群篩檢並無正當性。</p>
 <p>但三方倒是在另一件事上有共識:「case finding」——針對特定高風險族群主動找病例是合理的。這些族群包括失智症、不孕症、自體免疫疾病、高膽固醇血症、經痛、有自體免疫甲狀腺低能症家族史的人,以及正在服用 amiodarone 或鋰鹽者,或有醫源性甲狀腺低能症風險者(例如頸部放療後)。一般篩檢沒共識,不代表這些族群可以被放過。</p>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s7">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>項目</th><th>重點</th></tr></thead>
 <tbody>
@@ -115,7 +135,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>篩檢立場</td><td>ATA/AACE/LATS:&gt;35 歲每 5 年、≥60 歲定期;USPSTF:證據不足;英國皇家內科醫學院:一般篩檢不正當;三方皆支持在特定族群 case finding</td></tr>
 <tr><td>Case finding 族群</td><td>失智症、不孕症、自體免疫疾病、高膽固醇血症、經痛、自體免疫甲狀腺低能症家族史、amiodarone 或鋰鹽使用者、醫源性風險者(如頸部放療後)</td></tr>
 </tbody></table></div>
-<h2>🩺 施懿恩小評論</h2>
+<h2 id="bt-s8">🩺 施懿恩小評論</h2>
 <p>我看門診常遇到的情境是:病人拿著上一次抽血報告來問「這個 TSH 到底算不算高」。這篇最提醒我的一點,是那個參考範圍本身的性質——它只是健康人群裡統計出來的第 2.5 到 97.5 百分位,從來沒有承諾「範圍內就沒有風險」。所以與其糾結一個數字有沒有超標,更該問的是這個數字放在這個病人身上、這個年紀、這個抽血時段,代表什麼。</p>
 <p>另一個我會特別跟住院醫師強調的,是重症病人那段。加護病房裡看到 T4 偏低就想補充治療,是很直覺的反應,但這篇講得很清楚——幾乎所有重症患者都會出現這種型態,TSH 通常仍正常,而目前沒有證據支持治療有益。抽這張血之前,先問自己是不是真的懷疑甲狀腺本身出問題,而不是把重症的生理反應誤讀成疾病。至於生物素——現在保健品這麼普及,下次遇到數字怪異又對不上臨床表現的報告,不妨先問一句:「最近有沒有在吃生物素?」</p>
 <hr>

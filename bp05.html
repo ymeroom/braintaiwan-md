@@ -77,6 +77,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/bp05.html">
 </head>
@@ -99,10 +118,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 5 篇</strong>　依據 AAO-HNS 2013 指引 Baugh RF, Basura GJ, Ishii LE, et al. <em>Otolaryngol Head Neck Surg</em> 2013;149(3 Suppl):S1-S27.</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、眼睛保護：最不該被遺漏的支持治療</a></li><li><a href="#bt-s2">二、預後：大多會好，但分兩群人</a></li><li><a href="#bt-s3">三、電生理檢查：只在「完全麻痺」才談</a></li><li><a href="#bt-s4">四、何時回頭懷疑診斷：三個月法則與轉介</a></li><li><a href="#bt-s5">五、指引「沒有建議」的灰區：別過度治療</a></li><li><a href="#bt-s6">六、後遺症：恢復不完全時的長期問題</a></li><li><a href="#bt-s7">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>類固醇開了、抗病毒談過了，治療看似結束——但最容易出事的，往往是那隻<strong>閉不起來的眼睛</strong>。Bell's palsy 大多會好，可是在等待恢復的這段時間，角膜每天都暴露在乾燥與外傷的風險裡。這一篇收尾：眼睛保護、預後、何時該回頭懷疑診斷，以及那些「指引說了也別做」的事。</p>
 <hr>
-<h2>一、眼睛保護：最不該被遺漏的支持治療</h2>
+<h2 id="bt-s1">一、眼睛保護：最不該被遺漏的支持治療</h2>
 <p>AAO-HNS 指引明確建議：<strong>對閉眼功能受損的病人，應實施眼睛保護</strong>。原因是運動纖維癱瘓導致眼瞼閉合不全（lagophthalmos）、瞬目減少、淚膜不穩，可造成<strong>暴露性角膜病變</strong>，嚴重者潰瘍、甚至失明。</p>
 <p>實務措施：</p>
 <div class="bt-tablewrap"><table>
@@ -117,7 +137,7 @@ article, article *{overflow-wrap:break-word}
 <p>這部分是「零證據爭議、純獲益」的介入——別讓病人帶著一隻沒被保護的眼睛回家。</p>
 </blockquote>
 <hr>
-<h2>二、預後：大多會好，但分兩群人</h2>
+<h2 id="bt-s2">二、預後：大多會好，但分兩群人</h2>
 <p>Bell's palsy 整體預後良好，核心原因是多數病灶為<strong>傳導阻斷（neurapraxia）而非軸突斷裂</strong>：</p>
 <ul>
 <li>約 <strong>70%</strong> 未治療者最終可完全恢復；加上類固醇後更高</li>
@@ -132,7 +152,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>較差的危險因子</td><td>完全麻痺、高齡、糖尿病、合併味覺／淚液嚴重受損</td></tr>
 </tbody></table></div>
 <hr>
-<h2>三、電生理檢查：只在「完全麻痺」才談</h2>
+<h2 id="bt-s3">三、電生理檢查：只在「完全麻痺」才談</h2>
 <p>指引對電生理（ENoG、EMG）的立場很精準，剛好對應上面的分群：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>情境</th><th>指引立場</th></tr></thead>
@@ -142,7 +162,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>換言之，電生理不是診斷工具，而是<strong>完全麻痺者的預後分層工具</strong>，且通常在發病後一段時間（神經變性顯現後）才有意義。</p>
 <hr>
-<h2>四、何時回頭懷疑診斷：三個月法則與轉介</h2>
+<h2 id="bt-s4">四、何時回頭懷疑診斷：三個月法則與轉介</h2>
 <p>AAO-HNS 指引建議：<strong>對三個月內未恢復顏面功能的病人，應重新評估或轉介</strong>。這是把第一篇的「紅旗」延伸到時間軸上的安全網：</p>
 <ul>
 <li><strong>3 個月仍無恢復</strong> → 重新評估診斷、考慮影像（排除腫瘤等）</li>
@@ -150,7 +170,7 @@ article, article *{overflow-wrap:break-word}
 <li>轉介對象常為<strong>耳鼻喉／顏面神經專科或神經科</strong>，視情況加做 MRI</li>
 </ul>
 <hr>
-<h2>五、指引「沒有建議」的灰區：別過度治療</h2>
+<h2 id="bt-s5">五、指引「沒有建議」的灰區：別過度治療</h2>
 <p>有幾項常被詢問的介入，指引刻意<strong>不給建議（no recommendation）</strong>，代表證據不足以支持常規使用——臨床上不應視為標準療法：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>介入</th><th>指引態度</th></tr></thead>
@@ -161,7 +181,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>重點訊息：<strong>做好「該做的」（類固醇＋眼睛保護），別急著做「證據不足的」。</strong></p>
 <hr>
-<h2>六、後遺症：恢復不完全時的長期問題</h2>
+<h2 id="bt-s6">六、後遺症：恢復不完全時的長期問題</h2>
 <p>完全麻痺或恢復不良者，可能因神經<strong>異常再生（aberrant regeneration）</strong>留下後遺症，需提前衛教與轉介整合照護：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>後遺症</th><th>表現</th></tr></thead>
@@ -173,7 +193,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>慢性後遺症的處置（如肉毒桿菌素、顏面復健、整形重建）屬專科範疇，應適時轉介。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s7">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>重點</th><th>內容</th></tr></thead>
 <tbody>

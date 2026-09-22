@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/lsvd07.html">
 </head>
@@ -97,8 +116,9 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 7 篇</strong>　單中心研究再漂亮，也會被問一句：「會不會只是你這群病人特別？」作者早想到了，同步做了系統性回顧與 meta 分析，把結論放進 27 篇、9515 名腔隙中風病人的全局裡檢驗。這一篇看外部證據怎麼替本研究背書，也看它怎麼解釋過去文獻為什麼一直吵不出結果。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">狹窄：同側盛行率低，而且沒有 laterality</a></li><li><a href="#bt-s2">為什麼過去文獻一直吵不出結果</a></li><li><a href="#bt-s3">兩個把觀點釘死的經典證據</a></li><li><a href="#bt-s4">擴張：外部證據同樣支持</a></li><li><a href="#bt-s5">小結：本研究不是孤例</a></li></ol></details><!-- bt-toc:end -->
 <p>前六篇都在講「這一個 cohort」。但一個好的病因主張，要能在別人的資料裡也站得住。這篇的系統性回顧（MEDLINE 檢索至 2025-06-22、隨機效應 meta）就是這個外部檢驗。</p>
-<h2>狹窄：同側盛行率低，而且沒有 laterality</h2>
+<h2 id="bt-s1">狹窄：同側盛行率低，而且沒有 laterality</h2>
 <p>第一個關鍵數字：在 <strong>27 篇、共 9515 名腔隙中風病人</strong>中，<strong>同側 LAS 的合併盛行率只有 11%（95% CI 8%–15%）</strong>。也就是說，絕大多數腔隙中風病人，同側根本沒有相關的大動脈狹窄。</p>
 <p>盛行率有族群差異——<strong>亞洲族群 19%、白人族群 9%</strong>。這個差異臨床上要記住（顱內動脈粥狀狹窄在亞洲人本來就較盛行），但它改變的是「共病的頻率」，不改變「是不是因果」這個更根本的問題。</p>
 <p>而回答因果的，是 <strong>laterality（側性）</strong>。如果狹窄真的造成同側的腔隙病灶，那同側的狹窄盛行率應該高於對側。可是在 <strong>13 篇直接比較同側與對側的研究</strong>中，<strong>兩者沒有顯著差異（合併風險差 0.01，95% CI −0.04 到 0.06）</strong>。狹窄在病灶同側、對側一樣多——這對「狹窄致病」是很不利的證據，也正好和本研究 per-person 那個 36.8% territory concordance（第三篇）對得起來。</p>
@@ -109,16 +129,16 @@ article, article *{overflow-wrap:break-word}
 <tr><td>亞洲 vs 白人</td><td>19% vs 9%</td><td>共病頻率有族群差異</td></tr>
 <tr><td>同側 vs 對側風險差</td><td>0.01（−0.04–0.06）</td><td>無 laterality，不利因果</td></tr>
 </tbody></table></div>
-<h2>為什麼過去文獻一直吵不出結果</h2>
+<h2 id="bt-s2">為什麼過去文獻一直吵不出結果</h2>
 <p>回顧也解釋了長年的矛盾。<strong>社區世代</strong>裡，LAS 常和 lacunes、WMH 相關；但<strong>中風世代</strong>的結果就不一致了。而且即使關聯存在，LAS 和 lacunes 或 WMH 之間也<strong>沒有一致的 laterality</strong>。多數研究則報告 LAS 和微出血、PVS 無關。</p>
 <p>這種「有時相關、有時不相關、相關也對不上側」的凌亂，作者歸因於方法學：許多舊研究缺適當對照組、對干擾因子校正不足、納入異質的族群或疾病分期——於是共同危險因子（高血壓、糖尿病）製造出的<strong>假關聯</strong>，就被誤讀成因果。本研究的價值，正是用嚴格對照與校正，把「共病」和「因果」乾淨地分開。</p>
-<h2>兩個把觀點釘死的經典證據</h2>
+<h2 id="bt-s3">兩個把觀點釘死的經典證據</h2>
 <p>回顧裡有兩塊拼圖特別有力。</p>
 <p>其一是 <strong>SPS3 試驗</strong>：<strong>17.3% 的腔隙中風病人有 ICAS，但只有 1.8% 是相關的同側狹窄</strong>。這個 17.3% 對 1.8% 的落差，幾乎就是「共病 vs 因果」的數量級縮影——狹窄常常在，但真正能怪到它頭上的，寥寥無幾。</p>
 <p>其二是回到源頭的 <strong>Fisher</strong>。他檢查的 4 個病人在<strong>病人層級</strong>都有嚴重動脈硬化（反映共享危險因子），但<strong>病灶層級</strong>的分析顯示：多數腔隙病灶歸因於內因性小血管病——<strong>節段性小動脈崩解 40/50（80%）</strong>；而母動脈的粥狀斑塊<strong>直接塞住</strong>供應腔隙的那條小動脈，罕見得很——<strong>只有 3/50（6%）</strong>。半世紀前的病理，和今天的影像 meta 指向同一個結論。</p>
-<h2>擴張：外部證據同樣支持</h2>
+<h2 id="bt-s4">擴張：外部證據同樣支持</h2>
 <p>至於另一個主角，<strong>15 篇橫斷面研究評估 dolichoectasia，都顯示它與腔隙中風及多個 cSVD marker 相關，並被一篇 meta 分析進一步支持</strong>。也就是說，「擴張連結 cSVD」不只是本研究的發現，而是文獻裡站得住的一致訊號。</p>
-<h2>小結：本研究不是孤例</h2>
+<h2 id="bt-s5">小結：本研究不是孤例</h2>
 <p>把外部證據收攏：狹窄在腔隙中風同側盛行率低（11%）、無 laterality、與 cSVD marker 關聯凌亂——與本研究一致；擴張則跨 15 篇加 meta 一致連結 cSVD——也與本研究一致。這個 cohort 不是特例，它是把一個長年被方法學噪音蓋住的真相，用乾淨設計顯影出來。</p>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

@@ -66,6 +66,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/gbs05.html">
 </head>
@@ -88,10 +107,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 5 篇</strong>　涵蓋 PICO 14（預後／mEGOS）、PICO 12（疼痛）、PICO 13（疲憊），以及復健與支持照護 GBS 的預後出了名地難猜——同樣四週內癱掉的兩個人，半年後一個跑步、一個還在輪椅上。但「難猜」不等於「不能算」。指引最有用的一句話是：別等到事情發生才知道，發病早期就把壞預後的風險估出來，治療和諮詢都靠它定錨。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 7 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、先講量表：GBS-DS 把「能不能走」變成一個數字</a></li><li><a href="#bt-s2">二、mEGOS：發病早期就能算的預後分數</a></li><li><a href="#bt-s3">三、壞預後因子：哪些線索該讓你提高警覺</a></li><li><a href="#bt-s4">四、疼痛（PICO 12）：常見、會痛得很厲害，還可能先於無力</a></li><li><a href="#bt-s5">五、疲憊（PICO 13）：恢復期最常被低估的殘留</a></li><li><a href="#bt-s6">六、復健與支持照護：恢復是一場可以延續數月的長期戰</a></li><li><a href="#bt-s7">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>GBS 的預後其實可以早早算出來——這是這份指引最反直覺、也最實用的一點。家屬問得最多的從來不是抗體、不是電生理，而是那句「他什麼時候能走路？」「會不會留下後遺症？」過去我們只能含糊地說「每個人不一樣」。現在不同了，發病第一週就能用一個分數，把「六個月能不能自己走」的機率算到病人面前。長期預後的核心指標，說穿了就是這一件事：<strong>六個月後能不能不靠人獨自走十公尺</strong>。</p>
 <hr>
-<h2>一、先講量表：GBS-DS 把「能不能走」變成一個數字</h2>
+<h2 id="bt-s1">一、先講量表：GBS-DS 把「能不能走」變成一個數字</h2>
 <p>要談預後，得先有共同語言。GBS 用的主量表是 <strong>GBS 失能分數（GBS-DS，舊稱 Hughes scale）</strong>，從 0 到 6 共七級，焦點放在最要命的兩件事——能不能走、能不能自己呼吸：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>分數</th><th>狀態</th></tr></thead>
@@ -107,11 +127,11 @@ article, article *{overflow-wrap:break-word}
 <p>幾乎所有臨床試驗收的「嚴重 GBS」都落在 <strong>GBS-DS 3 到 5</strong> 這一段，這也是治療該不該下手的分界。記住那條線：<strong>3 分＝有人扶才能走＝無法獨走</strong>，這四個字就是整個預後討論的軸心。</p>
 <p>GBS-DS 的好處是簡單、跨研究可比；缺點是它只盯著走路和呼吸，對手部功能、日常生活、顱神經、疼痛、疲憊、生活品質一概看不見。所以指引另外保留了 <strong>MRC 加總分</strong>（量肌力）和 <strong>I-RODS</strong>（量日常失能）當補充——一個量表抓不住全貌。</p>
 <hr>
-<h2>二、mEGOS：發病早期就能算的預後分數</h2>
+<h2 id="bt-s2">二、mEGOS：發病早期就能算的預後分數</h2>
 <p>真正的主角是 <strong>mEGOS（modified Erasmus GBS Outcome Score，改良 Erasmus GBS 預後分數）</strong>。它能在<strong>發病當下</strong>與<strong>第 7 天</strong>兩個時間點，估算病人在 4 到 26 週時「無法獨走」的風險。指引明確建議：<strong>在疾病早期就評估壞預後的風險</strong>——不是等惡化、不是等併發症，是一開始就算。</p>
 <p>mEGOS 餵進去的，正是那幾個壞預後因子：年齡、前驅腹瀉、入院時的失能分數與肢體無力程度。算出來的數字越高，半年後還走不了的機率越大。更貼心的是，IGOS 驗證研究顯示 mEGOS 在荷蘭以外的國家也準；而且有<strong>區域特化版</strong>——專為歐洲／北美病人校正過的版本，在這些地區估「無法獨走」更精準。換句話說，這不是一條套在所有人身上的死公式，而是會按地區微調的工具。</p>
 <hr>
-<h2>三、壞預後因子：哪些線索該讓你提高警覺</h2>
+<h2 id="bt-s3">三、壞預後因子：哪些線索該讓你提高警覺</h2>
 <p>指引把預後因子按證據強度分了級，臨床上最該記住的是<strong>高確定度</strong>那一組：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>確定度</th><th>壞預後因子</th></tr></thead>
@@ -128,7 +148,7 @@ article, article *{overflow-wrap:break-word}
 <p>CMAP 振幅這條值得多說一句。指引給了一個可操作的切點：當<strong>遠端 CMAP 平均振幅低於正常下限的 20%（至少平均 3 條運動神經）</strong>，與 3 到 6 個月無法獨走相關——這反映的是軸突嚴重受損、得靠再生才能恢復的那群人。所以討論預後時，別只看臨床分數，把電生理這個數字也放進去。</p>
 <p>至於前驅感染本身、頸部肌肉無力、巨細胞病毒（CMV）感染這些，多半<strong>不是獨立的</strong>壞預後因子（CMV 可能只在第 8 週時稍微相關）。神經絲輕鏈（NFL）升高與軸突損傷和壞預後有關，但是否獨立於其他因子，目前還不知道——這是還沒填上的一塊。</p>
 <hr>
-<h2>四、疼痛（PICO 12）：常見、會痛得很厲害，還可能先於無力</h2>
+<h2 id="bt-s4">四、疼痛（PICO 12）：常見、會痛得很厲害，還可能先於無力</h2>
 <p>疼痛在 GBS 裡很常見，<strong>任何時期都可能出現，甚至先於無力</strong>就來報到，而且可能非常嚴重。它的型態很雜——背痛、肩胛間痛、肌肉痛、神經根分布的放射痛，或四肢的痛性感覺異常都有。型態不同，處理也不同，所以指引建議先問清楚：<strong>這是神經性痛還是傷害感受性痛（尤其肌肉骨骼痛）？</strong></p>
 <p>藥物上，指引給的是兩條弱建議：<strong>弱建議使用 gabapentin 或 carbamazepine 止痛</strong>，同時<strong>弱建議反對用高劑量類固醇治痛</strong>（methylprednisolone 對疼痛或失能大概都沒清楚好處）。實務的階梯則寫在 GPP 裡：</p>
 <ul>
@@ -138,12 +158,12 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>說到底，指引的態度是：<strong>GBS 的神經性痛沒有理由跟一般周邊神經的神經性痛分開處理</strong>——比照慢性神經痛指引（三環、pregabalin、gabapentin，或 duloxetine／venlafaxine 當第一線）來就好。</p>
 <hr>
-<h2>五、疲憊（PICO 13）：恢復期最常被低估的殘留</h2>
+<h2 id="bt-s5">五、疲憊（PICO 13）：恢復期最常被低估的殘留</h2>
 <p>等無力都好了，很多病人卻說「就是累」。疲憊是 GBS <strong>38% 到 86%</strong> 的殘留主訴，在恢復期尤其常見，偏偏成因複雜、又最容易被旁人當成「想太多」。壞消息是——<strong>目前沒有特效藥</strong>。</p>
 <p>指引<strong>弱建議反對使用 amantadine</strong>：一個 80 人的 cross-over 試驗顯示它對疲憊、生活品質、參與度通通沒效。其他藥物（modafinil、methylphenidate、抗憂鬱劑等）在別的疾病或許有用，但在 GBS 沒有被好好研究過，所以指引對它們<strong>不做正反建議</strong>。</p>
 <p>非藥物方面，<strong>運動訓練對疲憊也不做正反建議</strong>——但語氣是偏正面的：小型研究顯示對已大致恢復的病人，運動可耐受、主觀上有益，幾乎不太可能造成傷害。換句話說，沒證據說它有效，但也沒理由攔著病人去動。</p>
 <hr>
-<h2>六、復健與支持照護：恢復是一場可以延續數月的長期戰</h2>
+<h2 id="bt-s6">六、復健與支持照護：恢復是一場可以延續數月的長期戰</h2>
 <p>這是整篇最該被放大的一段，因為它最容易在忙亂的急性照護裡被忘掉。指引的 GPP 很明確：<strong>急性期、還在住院的時候，就要開始物理治療、職能治療、語言治療與復健</strong>——不是等出院、不是等病情穩定，是在病床上就開始。</p>
 <p>接下來的路也寫清楚了：</p>
 <ul>
@@ -153,7 +173,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>最後這點，常被當成客套話帶過，但它其實是有重量的臨床提醒：一個幾週前還在跑步、突然全身癱在加護病房的人，和守在床邊的家屬，承受的不只是肌肉的損失。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s7">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>

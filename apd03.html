@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/apd03.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 3 篇</strong>　第一篇談「何時起疑」、第二篇談「可能是什麼」，這一篇談「如何把懷疑往確定推一步」。共識的態度很節制：<strong>多數 APD 不需要 MRI 以外的檢查</strong>。但當需要時，知道哪一張影像招牌、哪一項生物標記真正有用、以及它們的限制，才不會做了一堆檢查卻得不到答案。本篇也收束在最重要的決策——何時該轉診、何時可以「保守觀察」。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、MRI 招牌徵象：認得出來就少走很多路</a></li><li><a href="#bt-s2">二、生物標記與非 MRI 影像：哪個對哪個 APD 有用</a></li><li><a href="#bt-s3">三、別忘了「可逆/可處理」與年輕病人的篩檢</a></li><li><a href="#bt-s4">四、何時轉診、何時「保守觀察」</a></li><li><a href="#bt-s5">臨床要點摘要</a></li><li><a href="#bt-s6">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>共識一句很重的話值得先記下：<strong>「對 APD 而言，一份好的病史與神經學檢查，加上『時間』這帖藥，就是最好的診斷工具。」</strong> 影像與生物標記是輔助，不是主角。實務上常見的是——一旦臨床懷疑 APD，光靠一張 MRI 就能落到具體診斷。</p>
 <hr>
-<h2>一、MRI 招牌徵象：認得出來就少走很多路</h2>
+<h2 id="bt-s1">一、MRI 招牌徵象：認得出來就少走很多路</h2>
 <h3>PSP</h3>
 <ul>
 <li><strong>蜂鳥徵（hummingbird sign）</strong>：正中矢狀面中腦背側萎縮，狀如蜂鳥的頭與喙。</li>
@@ -125,7 +145,7 @@ article, article *{overflow-wrap:break-word}
 <p>把 Table 2 當成「看到這個影像 → 想到這個診斷」的反查表：中腦/基底節腫塊→腫瘤；嚴重多發基底節病灶→Wilson 病；DWI 基底節異常→CJD；基底節鈣化→副甲狀腺低下；齒狀核/基底節/視丘鐵沉積→NBIA/血漿銅藍蛋白缺乏症。影像有時直接給答案。</p>
 </blockquote>
 <hr>
-<h2>二、生物標記與非 MRI 影像：哪個對哪個 APD 有用</h2>
+<h2 id="bt-s2">二、生物標記與非 MRI 影像：哪個對哪個 APD 有用</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>檢查</th><th>重點用途與表現</th></tr></thead>
 <tbody>
@@ -141,7 +161,7 @@ article, article *{overflow-wrap:break-word}
 <p>共識的提醒：MRI 以外的檢查，<strong>只應由熟悉這些結果在 APD 中意義與限制的臨床醫師</strong>來開立與解讀——別把判讀責任丟給病理或放射科報告。</p>
 </blockquote>
 <hr>
-<h2>三、別忘了「可逆/可處理」與年輕病人的篩檢</h2>
+<h2 id="bt-s3">三、別忘了「可逆/可處理」與年輕病人的篩檢</h2>
 <ul>
 <li><strong>50 歲前</strong>出現任何動作障礙者，最常被指示的體液標記是<strong>血清銅藍蛋白、血清銅、24 小時尿銅</strong>，以排除 <strong>Wilson 病</strong>。</li>
 <li>年輕巴金森症（尤其合併肌張力不全）可考慮：甲狀腺/副甲狀腺荷爾蒙、神經棘紅血球抹片、HIV、RPR。</li>
@@ -152,7 +172,7 @@ article, article *{overflow-wrap:break-word}
 <p>關於 Whipple 病：許多教科書建議在疑似 PSP 時排除它，但共識直言——資深的 PSP 門診醫師幾乎沒真的遇過，<strong>不建議</strong>單為此對外觀像 PSP 的病人做腰椎穿刺。節制，本身就是一種臨床判斷。</p>
 </blockquote>
 <hr>
-<h2>四、何時轉診、何時「保守觀察」</h2>
+<h2 id="bt-s4">四、何時轉診、何時「保守觀察」</h2>
 <p>演算法在<strong>任何一步</strong>都允許「停下流程、轉介次專科」——只要對病人最有利。常見時機：醫師的訓練與經驗不足以繼續、或可治療的 APD 都已排除之後。</p>
 <p>但共識也明確給了一條「保守選項」：</p>
 <blockquote>
@@ -161,7 +181,7 @@ article, article *{overflow-wrap:break-word}
 <p>這條路適合：病人與家屬希望聚焦於症狀緩解與舒適、無法或不願長途奔波於遠方次專科、或有失智、嚴重運動失能、嚴重共病者。此時神經科醫師應保持聯繫，並鼓勵家屬電話回報任何新症狀。</p>
 <p><strong>最重要的原則</strong>：所有 APD 的檢查提案（包含回診本身），都應與病人及家屬討論，確認「可能得到的資訊」與「他們更大的臨床目標」一致。這一點，社區醫師與遠方學術次專科醫師同樣做得到。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s5">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>共識重點</th></tr></thead>
 <tbody>
@@ -180,7 +200,7 @@ article, article *{overflow-wrap:break-word}
 <p>最後，那條「保守觀察、3–6 個月再評估」的路，常被當成「沒本事才這樣」。我不這麼看。在還沒有疾病修飾治療的現實下，<strong>誠實地告訴病人「目前我們先這樣追蹤」，並保持聯繫</strong>，本身就是一種高品質的照護。診斷是一場馬拉松，不是一次定生死——這正是整份共識最想留給基層醫師的態度。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s6">參考文獻</h2>
 <ol>
 <li>Bruno MK, Dhall R, Duquette A, et al. A General Neurologist's Practical Diagnostic Algorithm for Atypical Parkinsonian Disorders: A Consensus Statement. <em>Neurology: Clinical Practice</em>. 2024;14(6):e200345.</li>
 <li>Quattrone A, Nicoletti G, Messina D, et al. MR imaging index for differentiation of progressive supranuclear palsy from Parkinson disease and the Parkinson variant of multiple system atrophy. <em>Radiology</em>. 2008;246(1):214-21.</li>

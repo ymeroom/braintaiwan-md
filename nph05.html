@@ -66,6 +66,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/nph05.html">
 </head>
@@ -88,8 +107,9 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 5 篇</strong>　以日本 iNPH 2021 指引的鑑別診斷與共病章節為主軸：把 iNPH 和阿茲海默症、巴金森氏症／PSP、血管性失智、續發性 NPH 一個個拆開，再談混合病理為什麼很常見、又怎麼稀釋手術反應。 一位 75 歲老先生走路碎步、記性變差、半夜尿不住，影像有腦室擴大——這組合可以是阿茲海默、可以是巴金森、可以是小中風後遺症，也可以是那個少數開刀會好的 iNPH。麻煩在於，這幾件事還常常同時發生在同一顆腦袋裡。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 8 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">為什麼 iNPH 最容易被當成阿茲海默</a></li><li><a href="#bt-s2">巴金森、PSP：都是走不好，但走法不同</a></li><li><a href="#bt-s3">血管性失智與白質病變：不是排除手術的理由</a></li><li><a href="#bt-s4">續發性 NPH：這個反而好認</a></li><li><a href="#bt-s5">混合病理：iNPH 很少「乾乾淨淨」</a></li><li><a href="#bt-s6">被影子吃掉的那一群</a></li></ol></details><!-- bt-toc:end -->
 <hr>
-<h2>為什麼 iNPH 最容易被當成阿茲海默</h2>
+<h2 id="bt-s1">為什麼 iNPH 最容易被當成阿茲海默</h2>
 <p>日本指引在開宗明義就講得很直白：iNPH 病人「frequently misdiagnosed with Alzheimer's disease and other neurodegenerative diseases」，因為它的神經影像特徵很難跟一般的腦萎縮分開。老人家走不穩、忘東忘西、尿失禁，這三件事在高齡族群本來就太常見、太不specific，於是水腦症這個少數可逆的原因常常就被當成「老了、退化了」放過去。</p>
 <p>要把 iNPH 從阿茲海默裡撈出來，臨床上其實有一條蠻好用的線索：認知受損的「長相」不一樣。比起阿茲海默，iNPH 病人的定向感與記憶障礙比較輕（milder disorientation and memory impairment），但額葉功能的問題更明顯——注意力差、精神運動速度（psychomotor speed）變慢、語言流暢度下降、執行功能障礙（dysexecutive syndrome）。換句話說，阿茲海默是記憶先垮、iNPH 是「反應慢、提不起勁、想不到詞」先出來。指引特別提到，iNPH 病人的記憶「再認（recognition）」往往保留得比「自由回憶（free recall）」好，這跟阿茲海默那種連提示都救不回來的記憶崩塌很不一樣。</p>
 <p>行為精神症狀也給線索。iNPH 最突出的是冷漠／無動機（apathy），日本一份 BPSD 調查裡 apathy 高達 70.3%，焦慮 25.0%；而妄想、激動、易怒、憂鬱的頻率和嚴重度都比阿茲海默低，遊走等異常行為更是只有 10% 左右。一個整天「懶懶的、不想動」但不太會妄想吵鬧的失智長輩，值得多想一下水腦。</p>
@@ -97,18 +117,18 @@ article, article *{overflow-wrap:break-word}
 <p>腦室擴大本身分不了家——Evans index &gt;0.3 雖然是水腦的定義門檻，但老化和神經退化疾病一樣會讓腦室變大，健康老人也會有，所以它「cannot be used as a sign for excluding neurodegenerative diseases」。真正能跟阿茲海默的萎縮拉開距離的是 DESH 那套分布：腦室擴大、Sylvian fissure 變寬，但高凸面與中線的蛛網膜下腔被擠扁。指引講 DESH「can be distinguished from atrophy in Alzheimer's disease」。</p>
 <p>更實用的是胼胝體角（callosal angle, CA）。在 90° 這個切點上，用 CA 區分 iNPH 與阿茲海默的敏感度 97%、特異度 88%、陽性預測值 93%——iNPH 多半 CA &lt;90°，正常人 &gt;90°。海馬迴的線索方向相反：阿茲海默海馬迴萎縮明顯，iNPH 的海馬迴萎縮反而輕、海馬旁裂（parahippocampal sulcus）的擴大也不明顯。這幾點合起來，影像就有機會把「擠出來的水腦」和「縮掉的退化」分開。</p>
 <p>腦脊髓液生物標記也是一條路。iNPH 病人的 CSF Aβ42 比健康人低，但 p-tau 和 t-tau 比阿茲海默病人低——量 Aβ42、p-tau、t-tau 對鑑別阿茲海默是有幫助的。不過指引也誠實提醒，這些標記反映的是阿茲海默的病理變化，「are not specific markers of iNPH」，它們是用來抓阿茲海默，不是用來證明 iNPH。</p>
-<h2>巴金森、PSP：都是走不好，但走法不同</h2>
+<h2 id="bt-s2">巴金森、PSP：都是走不好，但走法不同</h2>
 <p>iNPH 的步態本身就帶巴金森味：小碎步、磁性步態（magnet gait，腳像黏在地上）、寬底步態，起步可能凍結（freezing）。指引甚至記了一筆，55% 的 iNPH 病人有動作遲緩（bradykinesia），上肢拿東西的速度變慢、握力代償變大，「resembles the involuntary motor dysfunction of the upper limbs seen in Parkinson's disease」。難怪會混。</p>
 <p>分辨的關鍵在「外部提示有沒有效」。巴金森病人對地上的指示線、地標這類視覺提示（external triggers）通常有反應，跨過去步伐就順了；iNPH 病人則「have little effect on improving gait」——提示救不了。另外巴金森的步態障礙通常不對稱、合併靜止性顫抖與對左多巴反應，iNPH 則是對稱、下半身為主、顫抖少。</p>
 <p>PSP（進行性核上麻痺）也要放進來想，因為它一樣有早期跌倒、額葉認知和步態不穩；影像上 PSP 看的是中腦萎縮（蜂鳥徵），跟 iNPH 那種腦室為主的擴大不同。指引在影像章節也提到上中腦輪廓徵（upper midbrain profile sign）這類矢狀面線索，用來把 iNPH、阿茲海默、PSP 在影像上分開。</p>
 <p>至於路易體疾病（Lewy body disease, LBD），這條線特別容易交纏。指引記載：127 名 definite iNPH 病人中，有 21 人被懷疑合併 LBD，其中 7 人 MIBG 心肌掃描顯示吸收下降——也就是說，這些巴金森樣的表現「probably due to the coexistence of Parkinson-related diseases」。這已經不只是鑑別，而是共病了，下一段會細談。</p>
-<h2>血管性失智與白質病變：不是排除手術的理由</h2>
+<h2 id="bt-s3">血管性失智與白質病變：不是排除手術的理由</h2>
 <p>老人的腦室周圍白質常有缺血性變化（leukoaraiosis），這在嚴重 iNPH 病人身上比健康老人更常見，提示合併缺血。直覺上會想：這人是血管性失智吧、別開刀了。但指引的態度很明確——iNPH 一篇被引用的經典文獻標題就直接寫「vascular white matter changes on MR images must not exclude patients from shunt surgery」。白質病變多的人 tap test 反應確實傾向比較差（白質變化程度與 tap test 反應呈負相關），但這是預後修正因子，不是排除診斷的鐵閘。</p>
 <p>換句話說，血管性病變與 iNPH 不是二選一。它會壓低手術的天花板，卻不該讓病人連被評估的機會都沒有。</p>
-<h2>續發性 NPH：這個反而好認</h2>
+<h2 id="bt-s4">續發性 NPH：這個反而好認</h2>
 <p>把 iNPH 跟續發性 NPH（sNPH）分開，相對簡單。sNPH 是在某個明確的中樞神經事件之後才出現——蛛網膜下腔出血、腦膜炎、頭部外傷是代表。指引說 sNPH「is not difficult to diagnose, as it tends to follow an obvious etiological event」，因為症狀和腦室擴大前面通常有個說得出來的原因。iNPH 的「特發性」恰恰相反，是找不到前因、慢慢來的。</p>
 <p>possible iNPH 的診斷標準裡也把這件事寫進去：要排除「可能造成腦室擴大的前置疾病（蛛網膜下腔出血、腦膜炎、頭部外傷、先天／發育性水腦、導水管狹窄）不明顯」。另外還有一群灰色地帶——延遲發病的先天性水腦，像 LOVA（成人長期顯性腦室擴大）和 PaVM。國際指引把 NPH 臨床發病年齡定在 ≥40 歲，這個寬鬆切點難免會把這些延遲發病的先天個案掃進來；但真正的 iNPH 大型世代平均發病年齡約 75 歲，40 幾歲發病的非常少。年紀太輕、腦室大得離譜、有導水管狹窄，就要往先天那邊想，這在第 1、2 篇影像與分類已經鋪過。</p>
-<h2>混合病理：iNPH 很少「乾乾淨淨」</h2>
+<h2 id="bt-s5">混合病理：iNPH 很少「乾乾淨淨」</h2>
 <p>到這裡是這篇真正要講的事。把 iNPH 跟每個退化病一個個分開，是教科書式的理想；現實裡，這些病理常常擠在同一顆腦袋。</p>
 <p>數字會說話。一份用 CSF α-synuclein RT-QuIC 與阿茲海默核心標記評估 293 名 iNPH 病人的研究發現，60 人（20.5%）有 α-synuclein 種子活性，代表合併路易體病理（對照的 CJD 組只有 6.7%，p = 0.002）；同一群人裡 24.0% 是類澱粉陽性（A+），代表合併 Aβ 沉積。而病理研究的數字更高，iNPH 合併阿茲海默病理可達 65%，而且神經炎性斑塊（neuritic plaques）的比例會隨失智嚴重度往上爬——GDS 3 是 18%，GDS ≥6 高達 75%。也就是說，失智越重的 iNPH，越可能底下藏著阿茲海默。</p>
 <p>這些共病不是默默躺著，它們會改變病人的長相。路易體陽性的 iNPH 軸性與上肢僵硬分數較高（p = 0.003、0.011）、MMSEc 較低（p = 0.003），碎步步態（petit-pas gait）71.4% vs 42.4%（p = 0.007）、起步遲疑 21.4% vs 7.1%（p = 0.036）——全都往巴金森那邊靠。類澱粉陽性的病人則認知分數較低（MMSEc，p = 0.037），往阿茲海默那邊靠。臨床上看到的「巴金森味重」或「失智味重」的 iNPH，很可能就是底下那層共病在說話。</p>
@@ -116,7 +136,7 @@ article, article *{overflow-wrap:break-word}
 <p>混合病理對手術的意義，在於它修掉的是長期天花板，而不是「能不能開」。日本指引講得清楚：短期預後受手術併發症、病程、嚴重度、tap test 反應、DESH 影響；長期預後則「more affected by comorbidities」——中風影響功能預後、癌症影響生命預後、阿茲海默影響認知、巴金森影響運動，全都會壓低長期成績。</p>
 <p>指引甚至給了量化工具：Kiefer 共病指數 ≤3 分時，術後 2 年改善率 93%；&gt;4 分改善率就低；≥6 分基本上別期待改善。但它也補了一句很重要的限制——這個指數「does not include cognitive impairment, such as Alzheimer's disease」，而認知共病恰恰是 iNPH 最大宗的共病之一。所以實務上會建議術前用生物標記去「預測」是否合併阿茲海默，好把預後講得誠實一點。</p>
 <p>關鍵在於：合併病理不等於不要開。前面那份 293 人的研究有個漂亮的反證——CSF 生物標記（不論路易體或類澱粉）「no significant associations with surgical outcome at 6 months」，6 個月的分流反應（mRS 進步 1 分）跟有沒有共病沒顯著關聯。綜述也直接寫：不應僅因病人已有另一種神經退化疾病就排除 iNPH，辨識「雙診斷」病人反而有助於分流後步態與尿失禁的改善。畢竟即使阿茲海默那部分沒救，把水腦造成的步態與膀胱問題引流掉，病人的生活品質仍可能實質改善。</p>
-<h2>被影子吃掉的那一群</h2>
+<h2 id="bt-s6">被影子吃掉的那一群</h2>
 <p>回到那位 75 歲的老先生。社區層級的數字提醒我們，問題可能比想像中大：瑞典一份 791 名 70 歲社區居民的 MRI 研究裡，5.1% 符合國際指引的 iNPH 放射學特徵，1.5% 達到 possible iNPH，而「No participants had ventricular shunts on MRI」——即便影像上看得到，幾乎沒有人被治療過。另一份急診世代研究更刺眼：影像疑似 iNPH 者中，41.7% 的檢查被判讀為陰性，腦室擴大只在 33.3% 的報告裡被提到；回覆問卷的醫師裡，多達三分之一「had never heard of iNPH」。</p>
 <p>所以鑑別診斷的難，從來不只是阿茲海默、巴金森、血管性、續發性這幾條線怎麼切。真正卡住的地方，是這些病理常常疊在一起，而那層可逆的水腦，往往就被當成退化的影子，連被看一眼的機會都沒有。</p>
 

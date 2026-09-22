@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/fmn03.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 03 篇</strong>　纖維肌痛症沒有任何一項專一性的抽血或影像檢查，但這不代表它只能靠印象。過去三十多年，診斷準則從醫師按壓 18 個壓痛點，一路演變成完全由病人自填的問卷，而 NEJM 這篇最重要的一句診斷立場是：<strong>它不是排除診斷</strong>。這一篇拆解準則的演變、2016 年 ACR 那條 FS score 門檻，以及三個實務上真的能用的評估工具，最後談抽血到底要驗什麼、又不是為了驗什麼。</p>
 </blockquote>
-<h2>準則演變：壓痛點如何退場</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 7 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">準則演變：壓痛點如何退場</a></li><li><a href="#bt-s2">2016 年最關鍵的一句：不是排除診斷</a></li><li><a href="#bt-s3">ACR 的 FS score：一個門檻與一個連續量尺</a></li><li><a href="#bt-s4">三個實務工具</a></li><li><a href="#bt-s5">抽血：不是為了確診，是為了排除「像它的病」</a></li><li><a href="#bt-s6">檢查要做多少，看情境</a></li><li><a href="#bt-s7">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">準則演變：壓痛點如何退場</h2>
 <p>第一套<strong>以研究為基礎</strong>的纖維肌痛症診斷準則發表於 <strong>1990 年</strong>，內容包含<strong>廣泛性疼痛</strong>，以及在<strong>至少 18 個預先指定部位中的 11 個</strong>出現<strong>壓痛點</strong>（tender points，指那些即使輕觸也會誘發疼痛的特定身體區域）。</p>
 <p>這套「11/18 壓痛點」用了很多年，但它有個結構性問題——壓痛點要靠醫師按壓判定，主觀、耗時，且與性別和心理狀態高度相關。</p>
 <p>於是準則開始往「不靠壓痛點」的方向走：</p>
@@ -106,10 +126,10 @@ article, article *{overflow-wrap:break-word}
 <li><strong>2011 年</strong>：修訂版<strong>完全依賴病人自我報告的症狀</strong>。它有兩個組成——<strong>廣泛疼痛指數（Widespread Pain Index, WPI）</strong>與<strong>症狀嚴重度分數（Symptom Severity Score, SSS）</strong>。WPI 評估 <strong>19 個部位</strong>的慢性疼痛，記錄疼痛的廣泛程度；SSS 記錄其他<strong>中樞介導症狀</strong>（例如疲勞、睡眠問題、憂鬱情緒）的有無與嚴重度。</li>
 <li><strong>2016 年</strong>：原作者群再度修訂，把<strong>廣泛性疼痛</strong>定義為「疼痛出現在 WPI 所含<strong>五個區域中的四個以上</strong>、且分布於多個部位」。</li>
 </ul>
-<h2>2016 年最關鍵的一句：不是排除診斷</h2>
+<h2 id="bt-s2">2016 年最關鍵的一句：不是排除診斷</h2>
 <p>2016 年這次修訂，除了收緊廣泛疼痛的定義，還強調了一件在臨床上被嚴重低估的事：<strong>纖維肌痛症不是排除診斷（not a diagnosis of exclusion），應當「不論是否存在其他診斷」都可以被診斷。</strong></p>
 <p>這句話值得標記，因為它推翻了一個很常見的臨床習慣——「等我把所有其他病都排除完，才敢下纖維肌痛症」。2016 準則明講：你不需要先排除類風濕、狼瘡、甲狀腺問題才能診斷它；它可以與這些病<strong>並存</strong>（呼應第 02 篇的 bottom-up 疊加）。</p>
-<h2>ACR 的 FS score：一個門檻與一個連續量尺</h2>
+<h2 id="bt-s3">ACR 的 FS score：一個門檻與一個連續量尺</h2>
 <p>根據 Figure 1，<strong>2016 年 ACR 診斷準則把 WPI 的資料與 SSS 的資料結合，得出「纖維肌痛症嚴重度分數（Fibromyalgia Severity score, FS score）」</strong>。診斷成立的推定條件是：</p>
 <ul>
 <li>疼痛出現在 WPI 身體圖的<strong>五個區域中至少四個</strong>，且</li>
@@ -120,7 +140,7 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>與站上另一份導讀的對照</strong>：本站 J Clin Med 綜論導讀（fm04）描述 2016 準則時，用的是「WPI ≥7 且 SSS ≥5、或 WPI 4–6 且 SSS ≥9」的兩條並行路徑。NEJM 這篇則用「FS score（＝WPI＋SSS 的合計嚴重度）&gt; 13、且 ≥4／5 區域」的合計門檻來呈現同一套 2016 修訂。兩者是同一準則的不同操作化寫法，讀者交叉比對時不必困惑；需要精確判定時，請回查原始 ACR 2016 文件。</p>
 </blockquote>
-<h2>三個實務工具</h2>
+<h2 id="bt-s4">三個實務工具</h2>
 <p>NEJM 這篇的 Figure 1 提供了三個臨床可用的資源，這是它比一般綜論更「能落地」的地方。</p>
 <h3>WPI ＋ SSS ＝ FS score</h3>
 <p>如前所述，<strong>WPI 評估 19 個部位的慢性疼痛</strong>（記錄廣泛性），<strong>SSS 記錄非疼痛症狀</strong>，兩者合成 FS score，作為 nociplasticity 程度的替代測量。</p>
@@ -145,7 +165,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>PROMIS-29+2</td><td>病人自填</td><td>身心健康 10 個面向，7 天回顧</td><td>T 分數（平均 50、標準差 10），可與族群比較</td></tr>
 <tr><td>COPC-S</td><td>病人自填</td><td>10 種慢性重疊疼痛狀況</td><td>10–15 分鐘完成</td></tr>
 </tbody></table></div>
-<h2>抽血：不是為了確診，是為了排除「像它的病」</h2>
+<h2 id="bt-s5">抽血：不是為了確診，是為了排除「像它的病」</h2>
 <p>儘管<strong>沒有任何纖維肌痛症的專一性實驗室檢查</strong>，抽血仍有角色——但角色是<strong>辨識其他可能並存的內科狀況</strong>，不是確診纖維肌痛症本身。</p>
 <p>原文明確列出<strong>一般應執行、用來篩檢「模仿纖維肌痛症之狀況」的檢查</strong>：</p>
 <ul>
@@ -154,14 +174,14 @@ article, article *{overflow-wrap:break-word}
 <li><strong>全血球計數（CBC）與肝功能</strong>：篩檢一般內科狀況</li>
 </ul>
 <p>這份清單的邏輯要抓對：驗這些不是要「驗出纖維肌痛症」，而是要<strong>確認沒有一個會假扮成它的病被漏掉</strong>。診斷本身仍是臨床診斷。</p>
-<h2>檢查要做多少，看情境</h2>
+<h2 id="bt-s6">檢查要做多少，看情境</h2>
 <p>Key Points 裡有一條很實用的分流原則：<strong>纖維肌痛症要做多少檢查，取決於臨床情境。</strong></p>
 <ul>
 <li><strong>從童年就開始、且長時間緩慢演變</strong>的廣泛疼痛病人，<strong>只需要極少的檢查</strong>（這對應第 02 篇的 top-down 型）。</li>
 <li><strong>急性或亞急性發作</strong>的病人，則<strong>需要較完整的檢查</strong>——因為突然發作更可能藏著一個需要處理的底層新病。</li>
 </ul>
 <p>這條原則讓「不是排除診斷」不至於被誤用成「什麼都不用查」——關鍵是病史的時間軸。</p>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s7">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>NEJM 這篇的實際說法</th></tr></thead>
 <tbody>

@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/adx06.html">
 </head>
@@ -97,8 +116,9 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 6 篇</strong>　CORE 6 是整份指引的診斷核心：先用<strong>三步驟</strong>把臨床印象結構化，再用<strong>分層檢測（Tier 1–4）</strong>決定要做哪些檢查、做到什麼程度。這一篇也會談到讓這份指引特別「2025」的部分——<strong>疾病修飾治療時代下，生物標記檢測的角色變化</strong>。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、診斷三步驟：從「有沒有問題」到「是什麼問題」</a></li><li><a href="#bt-s2">二、步驟二的症候群分類，對應常見病因</a></li><li><a href="#bt-s3">三、分層檢測（Tiered Testing）：不是每個人都要做到 PET</a></li><li><a href="#bt-s4">四、疾病修飾治療時代：生物標記角色的轉變</a></li><li><a href="#bt-s5">五、別忘了排除譫妄與快速進展型失智症的紅旗</a></li><li><a href="#bt-s6">臨床要點摘要</a></li><li><a href="#bt-s7">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
-<h2>一、診斷三步驟：從「有沒有問題」到「是什麼問題」</h2>
+<h2 id="bt-s1">一、診斷三步驟：從「有沒有問題」到「是什麼問題」</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>步驟</th><th>問題</th><th>依據</th></tr></thead>
 <tbody>
@@ -110,7 +130,7 @@ article, article *{overflow-wrap:break-word}
 <p>三步驟是循序的：<strong>先確定有沒有失智，再確定是哪種症候群，最後才談病因</strong>。跳過前面步驟直接猜病因，是臨床上常見的判斷捷徑陷阱。</p>
 </blockquote>
 <hr>
-<h2>二、步驟二的症候群分類，對應常見病因</h2>
+<h2 id="bt-s2">二、步驟二的症候群分類，對應常見病因</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>認知行為症候群</th><th>最常見對應病因</th></tr></thead>
 <tbody>
@@ -123,7 +143,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>混合型表現</td><td>混合型病理（AD + 血管性最常見）</td></tr>
 </tbody></table></div>
 <hr>
-<h2>三、分層檢測（Tiered Testing）：不是每個人都要做到 PET</h2>
+<h2 id="bt-s3">三、分層檢測（Tiered Testing）：不是每個人都要做到 PET</h2>
 <p>指引把檢查依複雜度與可近性分成四層，<strong>多數病人在基層的 Tier 1–2 就能完成大部分鑑別</strong>：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>層級</th><th>內容</th><th>適用情境</th></tr></thead>
@@ -134,7 +154,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td><strong>Tier 4／X</strong>（次專科/研究級）</td><td>tau PET、其他研究性生物標記；快速進展型失智症的加速工作流程（如 CJD 相關 CSF 標記、腦電圖、自體免疫腦炎抗體）</td><td>高度不確定病例、非典型快速病程、臨床試驗納入評估</td></tr>
 </tbody></table></div>
 <hr>
-<h2>四、疾病修飾治療時代：生物標記角色的轉變</h2>
+<h2 id="bt-s4">四、疾病修飾治療時代：生物標記角色的轉變</h2>
 <p>抗類澀蛋白單株抗體治療（lecanemab、donanemab）的問世，讓「確認類澀蛋白病理是否存在」從學術問題變成<strong>直接影響治療適應性的臨床決策</strong>：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>議題</th><th>指引立場</th></tr></thead>
@@ -145,13 +165,13 @@ article, article *{overflow-wrap:break-word}
 <tr><td>基層角色</td><td>基層醫師的角色是<strong>及早識別、完成 Tier 1–2、適時轉診</strong>，生物標記確認與治療啟動多由專科/失智症中心執行</td></tr>
 </tbody></table></div>
 <hr>
-<h2>五、別忘了排除譫妄與快速進展型失智症的紅旗</h2>
+<h2 id="bt-s5">五、別忘了排除譫妄與快速進展型失智症的紅旗</h2>
 <ul>
 <li><strong>譫妄排除</strong>：急性發作、注意力與警覺度波動、明確誘因（感染、藥物、術後）——這是急症，需先處理誘因，待譫妄解除後再重新評估認知基線，<strong>不要在譫妄急性期下失智症診斷</strong>。</li>
 <li><strong>快速進展型失智症加速工作流程</strong>：數週至數月內顯著惡化，應提高至 Tier 4／X 等級的緊急評估，考慮 CJD、自體免疫性腦炎、副腫瘤症候群、代謝/中毒因素，必要時儘速轉診。</li>
 </ul>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s6">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
@@ -169,7 +189,7 @@ article, article *{overflow-wrap:break-word}
 <p>三步驟的邏輯，我會建議每位基層同仁刻意練習：<strong>先問有沒有失智（步驟一），再問是哪種型態（步驟二），最後才猜病因（步驟三）</strong>。順序顛倒，容易過早鎖定一個病因標籤，反而忽略了後面該補的檢查。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s7">參考文獻</h2>
 <ol>
 <li>Atri A, Dickerson BC, Clevenger C, et al. Alzheimer's Association clinical practice guideline for the Diagnostic Evaluation, Testing, Counseling, and Disclosure of Suspected Alzheimer's Disease and Related Disorders (DETeCD-ADRD): Executive summary of recommendations for primary care. <em>Alzheimer's Dement</em>. 2025;21:e14333. doi:10.1002/alz.14333</li>
 <li>Jack CR Jr, et al. NIA-AA Research Framework: Toward a biological definition of Alzheimer's disease. <em>Alzheimer's Dement</em>. 2018;14(4):535-562.</li>

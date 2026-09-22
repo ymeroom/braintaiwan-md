@@ -77,6 +77,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/ins03.html">
 </head>
@@ -99,10 +118,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 3 篇</strong>　當失眠認知行為治療（CBT-I）效果不足或無法執行，藥物才登場——但 AASM 2017 對幾乎每一種助眠藥都只給「弱建議」。本篇彙整 AASM 2017 藥物指引與 ACP 2016 立場，談如何依「症狀型態」與病人條件選藥。 依據 AASM 2017（Sateia, <em>J Clin Sleep Med</em> 2017）與 ACP 2016（Qaseem, <em>Ann Intern Med</em> 2016）。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、總原則：藥物是 CBT-I 的輔助，不是替代</a></li><li><a href="#bt-s2">二、AASM 2017 的分流：入睡困難 vs 睡眠維持困難</a></li><li><a href="#bt-s3">三、各類助眠藥一覽</a></li><li><a href="#bt-s4">四、選藥的實務考量</a></li><li><a href="#bt-s5">五、療程與退場：開藥時就規劃停藥</a></li><li><a href="#bt-s6">臨床要點摘要</a></li><li><a href="#bt-s7">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>慢性失眠的治療骨幹是 <strong>CBT-I</strong>，不是安眠藥。ACP 2016 立場明確：<strong>所有成人慢性失眠應先接受 CBT-I</strong>（強建議），藥物只在 CBT-I 不足或無法取得時作為<strong>短期輔助</strong>並與病人共同決策。AASM 2017 則把藥物逐一評等——訊息同樣謙遜：<strong>幾乎每一種藥都是弱建議（weak / conditional）</strong>。理解這份「藥效有限」的底色，是正確選藥的前提。</p>
 <hr>
-<h2>一、總原則：藥物是 CBT-I 的輔助，不是替代</h2>
+<h2 id="bt-s1">一、總原則：藥物是 CBT-I 的輔助，不是替代</h2>
 <p>無論 ACP 或 AASM，藥物治療都遵循幾條共通原則：</p>
 <ul>
 <li><strong>先非藥物</strong>：CBT-I 為第一線（詳見本系列第 1、2 篇），藥物用於 CBT-I 反應不足、無法取得或病人偏好下的補強。</li>
@@ -114,7 +134,7 @@ article, article *{overflow-wrap:break-word}
 <p>🩺 <strong>臨床重點</strong>：AASM 2017 對列入「建議使用」的藥<strong>全部只給弱建議</strong>，這不是技術細節而是核心訊息——效益相對於風險的優勢有限，臨床改善常小於病人預期。請把藥物定位為「幫病人撐過一段、同時把 CBT-I 接上去」的輔助，而非長期解方。</p>
 </blockquote>
 <hr>
-<h2>二、AASM 2017 的分流：入睡困難 vs 睡眠維持困難</h2>
+<h2 id="bt-s2">二、AASM 2017 的分流：入睡困難 vs 睡眠維持困難</h2>
 <p>AASM 2017 最實用的設計，是把藥物<strong>依目標症狀分類建議</strong>。所有以下建議皆為<strong>弱建議</strong>（相對於不使用該藥）：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>目標症狀</th><th>AASM 2017 建議「可使用」的藥</th></tr></thead>
@@ -130,7 +150,7 @@ article, article *{overflow-wrap:break-word}
 <p>🩺 <strong>臨床重點</strong>：別把抗組織胺（<code>diphenhydramine</code>）或褪黑激素當成「比較安全所以可以隨便長期吃」。前者有抗膽鹼負擔（口乾、便祕、認知混亂、跌倒，長者尤甚），後者在外購保健品中劑量與純度不一、慢性失眠療效證據薄弱。AASM 對兩者都是「不建議常規使用」。</p>
 </blockquote>
 <hr>
-<h2>三、各類助眠藥一覽</h2>
+<h2 id="bt-s3">三、各類助眠藥一覽</h2>
 <p>把「建議使用」的藥按機轉整理，方便對照選藥：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>類別</th><th>代表藥</th><th>機轉</th><th>適用症狀</th><th>注意</th></tr></thead>
@@ -143,7 +163,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>兩點關鍵：<code>BZRA</code>（<code>苯二氮平類</code>＋<code>Z 類藥物</code>的合稱）受體選擇性雖有高下，但<strong>依賴、耐受、跌倒與隔日宿醉風險都在</strong>，<code>Z 類藥物</code>不該被當成「沒有成癮性」。相對地，<code>ramelteon</code>（無依賴、針對入睡）與<strong>低劑量 <code>doxepin</code></strong>（H1 拮抗助眠、低劑量下抗膽鹼副作用不顯著、適合睡眠維持）是機轉較溫和的選項。至於 <code>trazodone</code>，缺乏足夠療效證據且有姿勢性低血壓與隔日鎮靜顧慮，與抗組織胺、褪黑激素一樣被 AASM 列為「不建議常規使用」。</p>
 <hr>
-<h2>四、選藥的實務考量</h2>
+<h2 id="bt-s4">四、選藥的實務考量</h2>
 <p>指引給的是「可考慮的清單」，落地仍須個人化權衡：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>考量面向</th><th>重點</th></tr></thead>
@@ -158,7 +178,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>療效追蹤主客觀並行：<strong><code>ISI</code></strong>（整體嚴重度）、<strong><code>SOL</code></strong>（入睡快慢）、<strong><code>WASO</code></strong>（維持品質）、<strong><code>TST</code></strong>（總睡眠時間）。若指標未改善，應重檢診斷、共病（如未處理的 <code>OSA</code>、<code>RLS</code>）與 CBT-I 執行。</p>
 <hr>
-<h2>五、療程與退場：開藥時就規劃停藥</h2>
+<h2 id="bt-s5">五、療程與退場：開藥時就規劃停藥</h2>
 <p>藥物的「開始」與「結束」應一起設計：</p>
 <ul>
 <li><strong>短期為原則</strong>：以數週為度，搭配 CBT-I 同步進行，讓非藥物治療接手。</li>
@@ -169,7 +189,7 @@ article, article *{overflow-wrap:break-word}
 <p>🩺 <strong>臨床重點</strong>：最常見的臨床陷阱不是「選錯藥」，而是「沒有退場計畫」。BZRA 開立時若未同步啟動 CBT-I 並約定減量節點，數週的處方很容易演變成數年的依賴。把停藥規劃寫進第一次的共同決策裡。</p>
 </blockquote>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s6">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
@@ -188,7 +208,7 @@ article, article *{overflow-wrap:break-word}
 <p>把藥當成「替病人爭取時間、讓行為治療生效」的橋樑，而不是終點。新一代的 <code>DORA</code> 提供了不走 GABA 的另一條路，下一篇我們專門談它。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s7">參考文獻</h2>
 <ol>
 <li>Sateia MJ, Buysse DJ, Krystal AD, et al. Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy of Sleep Medicine Clinical Practice Guideline. <em>J Clin Sleep Med</em>. 2017;13(2):307-349.</li>
 <li>Qaseem A, Kansagara D, Forciea MA, et al. Management of Chronic Insomnia Disorder in Adults: A Clinical Practice Guideline From the American College of Physicians. <em>Ann Intern Med</em>. 2016;165(2):125-133.</li>

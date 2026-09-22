@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/adxs07.html">
 </head>
@@ -97,8 +116,9 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 7 篇</strong>　對應指引建議 17 與 18：當結構性影像（±FDG PET）之後仍有不確定性時，<strong>腦脊髓液（CSF）生物標記</strong>與<strong>類澀蛋白 PET（amyloid PET）</strong>是確認阿茲海默症病理是否存在的兩條主要路徑。本篇整理兩者的適應症、準確度與選擇邏輯。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、CSF 生物標記（建議 17，證據強度 B）</a></li><li><a href="#bt-s2">二、類澀蛋白 PET（建議 18，證據強度 B）</a></li><li><a href="#bt-s3">三、CSF 還是類澀蛋白 PET？選擇邏輯</a></li><li><a href="#bt-s4">臨床要點摘要</a></li><li><a href="#bt-s5">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
-<h2>一、CSF 生物標記（建議 17，證據強度 B）</h2>
+<h2 id="bt-s1">一、CSF 生物標記（建議 17，證據強度 B）</h2>
 <h3>適應症</h3>
 <p>依適當使用標準（appropriate use criteria），在結構性影像（±FDG PET）之後仍有診斷不確定性時，可考慮安排 CSF 阿茲海默症生物標記檢測。</p>
 <h3>準確度與最佳組合指標</h3>
@@ -123,7 +143,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <h3>非阿茲海默症 ADRD 的 CSF 標記：仍在發展中</h3>
 <p>目前針對原發性 tau 蛋白病變、TDP-43 病理、血管性病因的 CSF 生物標記，<strong>尚未有臨床可用的標準化檢測</strong>；α-突觸核蛋白的 CSF 與皮膚切片種子擴增分析技術則屬於新興、逐漸成熟中的工具（對應<a href="adxs05.html">第⑤篇</a>提到的 Tier X）。</p>
-<h2>二、類澀蛋白 PET（建議 18，證據強度 B）</h2>
+<h2 id="bt-s2">二、類澀蛋白 PET（建議 18，證據強度 B）</h2>
 <h3>適應症</h3>
 <p>依適當使用標準，在結構性影像（±FDG PET）和/或 CSF 檢測之後仍有不確定性時，可考慮安排類澀蛋白 PET。</p>
 <h3>準確度</h3>
@@ -138,7 +158,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <h3>給付現況與適當使用標準的擴充</h3>
 <p>美國 CMS 自 2023 年 10 月起，取消過去對類澀蛋白 PET 給付範圍的全國性覆蓋決定（NCD）限制，<strong>擴大了臨床可近性</strong>（詳見<a href="adxs08.html">第⑧篇</a>疾病修飾治療時代的脈絡討論）。同時，<strong>修訂版類澀蛋白影像工作小組（Amyloid Imaging Taskforce, AIT）適當使用標準，已將適用範圍擴充至涵蓋 tau PET</strong>，反映分子影像在臨床路徑中的角色持續擴大。</p>
-<h2>三、CSF 還是類澀蛋白 PET？選擇邏輯</h2>
+<h2 id="bt-s3">三、CSF 還是類澀蛋白 PET？選擇邏輯</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>考量因子</th><th>偏向 CSF</th><th>偏向類澀蛋白 PET</th></tr></thead>
 <tbody>
@@ -150,7 +170,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>兩者並非互斥的競爭關係，而是<strong>依病人個別狀況（禁忌症、可近性、其他資訊需求）選擇其一</strong>，指引並未明確建議何者優先，留給臨床判斷空間。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s4">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
@@ -167,7 +187,7 @@ article, article *{overflow-wrap:break-word}
 <p>我也會特別跟病人說明：<strong>這兩項檢測確認的是「類澀蛋白病理是否存在」，不是「會不會發病」或「多快發病」</strong>——尤其當檢測動機與評估抗類澀蛋白單株抗體治療適應性有關時（詳見<a href="adxs08.html">第⑧篇</a>），這個區別需要在告知檢測前先溝通清楚，避免病人對結果產生過度的預後焦慮。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s5">參考文獻</h2>
 <ol>
 <li>Dickerson BC, Atri A, Clevenger C, et al. The Alzheimer's Association clinical practice guideline for the Diagnostic Evaluation, Testing, Counseling, and Disclosure of Suspected Alzheimer's Disease and Related Disorders (DETeCD-ADRD): Executive summary of recommendations for specialty care. <em>Alzheimer's Dement</em>. 2025;21:e14337. doi:10.1002/alz.14337</li>
 <li>Hansson O, et al. The Alzheimer's Association international guidelines for handling of cerebrospinal fluid for routine clinical measurements of amyloid β and tau. <em>Alzheimer's Dement</em>. 2021;17(9):1575-1582.</li>

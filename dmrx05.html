@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/dmrx05.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 5 篇</strong>　一份藥物治療指引，通常管到「該開什麼藥」為止。NG28 在 2026 年版多寫了一節，管的是<strong>開了之後有沒有人真的拿到</strong>。這一節的存在，比它的內容更值得注意。</p>
 </blockquote>
-<h2>臨床要點摘要</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">臨床要點摘要</a></li><li><a href="#bt-s2">一、加藥有順序，而且順序綁在劑量上</a></li><li><a href="#bt-s3">二、真正不尋常的是 1.12</a></li><li><a href="#bt-s4">三、同一個鏡頭在這份指引裡出現兩次</a></li><li><a href="#bt-s5">四、藥物討論不只是講藥</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>主題</th><th>NG28 2026 建議</th></tr></thead>
 <tbody>
@@ -107,19 +127,19 @@ article, article *{overflow-wrap:break-word}
 <tr><td>使用不平等</td><td>委託者、提供者與醫療人員應處理 SGLT-2 抑制劑取得與使用率的不平等（1.12.1）</td></tr>
 <tr><td>平行條文</td><td>連續血糖監測也有結構完全相同的不平等條文（1.7.10）</td></tr>
 </tbody></table></div>
-<h2>一、加藥有順序，而且順序綁在劑量上</h2>
+<h2 id="bt-s2">一、加藥有順序，而且順序綁在劑量上</h2>
 <p>1.20.1 的原則是逐步導入藥物，逐一確認每種藥的耐受度與效果。1.20.2 把這個原則落成具體的觸發條件：當成人第二型糖尿病患者以 metformin 加一種或多種其他藥物起始治療時，要一次導入一種藥、從 metformin 開始並確認耐受度；<strong>若要使用 SGLT-2 抑制劑，在 metformin 達到最大耐受劑量時就開始</strong>；<strong>若要使用 GLP-1 受體促效劑或 tirzepatide，在 SGLT-2 抑制劑達到最大耐受劑量時就開始</strong>。</p>
 <p>這個寫法值得注意的地方是它把「什麼時候加下一個」綁在前一個藥的劑量狀態上，而不是綁在血糖有沒有達標上。第一篇談的典範轉移，在這裡落成了操作。</p>
 <p>1.20.2 另外附了一條交叉參照：關於如何避免起始降血糖治療對眼睛造成負面影響，見 NICE 糖尿病視網膜病變指引中「HbA1c 快速下降的影響」一節。</p>
-<h2>二、真正不尋常的是 1.12</h2>
+<h2 id="bt-s3">二、真正不尋常的是 1.12</h2>
 <p>1.12 這一節的標題就是「處理 SGLT-2 抑制劑使用上的不平等」。1.12.1 的建議對象不是醫師個人，而是<strong>委託者、提供者與醫療人員</strong>，要求他們透過三個動作處理 SGLT-2 抑制劑取得與使用率的不平等：監測誰在使用 SGLT-2 抑制劑、找出符合資格但使用率較低的群體、擬定計畫接觸這些群體並鼓勵他們使用。</p>
 <p>委員會的理由寫得很直接：分析顯示，對符合資格接受 SGLT-2 抑制劑的第二型糖尿病患者而言，考慮到 NICE 自 2022 年起就已推薦，實際使用率偏低。而這個落差與<strong>年齡、性別、族裔與社經剝奪程度</strong>有關。</p>
 <p>委員會進一步指出，達成更高且更平等的使用率，將使住在最弱勢地區的人獲得更大的淨效益；這一點與另一條「研究如何改善最弱勢族群取得與被處方 SGLT-2 抑制劑」的研究建議合起來，可能有助於處理健康不平等。</p>
 <p>這條理由在第 3 篇提過的早發型那一節裡也出現過一次：健康不平等的資料顯示，住在最弱勢地區的人從 SGLT-2 抑制劑獲得最大的健康效益，委員會認為這是確保<strong>普及取得</strong>的重要理由。</p>
-<h2>三、同一個鏡頭在這份指引裡出現兩次</h2>
+<h2 id="bt-s4">三、同一個鏡頭在這份指引裡出現兩次</h2>
 <p>如果只看 1.12，會以為那是為了 SGLT-2 抑制劑特別加的一條。但 1.7.10 的措辭幾乎逐字平行：委託者、提供者與醫療人員應透過監測誰在使用連續血糖監測、找出符合資格但使用率較低的群體、擬定計畫接觸這些群體並鼓勵其使用，來處理<strong>連續血糖監測</strong>取得與使用率的不平等。</p>
 <p>一份指引在兩個不同的介入上套用同一個結構，這就不是特例而是一種立場：推薦一項介入的同時，也要求追蹤這項推薦有沒有落到人身上。</p>
-<h2>四、藥物討論不只是講藥</h2>
+<h2 id="bt-s5">四、藥物討論不只是講藥</h2>
 <p>1.9.1 要求在討論藥物的同時，一併討論飲食建議與健康生活的其他面向（例如增加身體活動），以支持病人的個人化糖尿病管理計畫。1.9.2 則列出了選藥討論該涵蓋的四個面向：各藥物對 HbA1c 與體重的影響、各藥物在預防與處理心血管與腎臟疾病上的效力、可能讓病人無法遵循某個治療選項的因素，以及成本——同一藥物類別中有一種以上同樣適合時，使用最便宜的那個。</p>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

@@ -77,6 +77,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/ins02.html">
 </head>
@@ -99,10 +118,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 2 篇</strong>　面對慢性失眠成人，國際指引的共識不是「先開哪顆安眠藥」，而是「先做 CBT-I」。本篇拆解失眠認知行為治療（CBT-I）的核心組成、建議力度，以及台灣臨床落地的可近性問題。 依據 ACP 2016、AASM 2021 行為與心理治療指引（Edinger 2021）、VA/DoD 2019。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 7 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、為什麼第一線是 CBT-I，而不是安眠藥？</a></li><li><a href="#bt-s2">二、CBT-I 的核心組成</a></li><li><a href="#bt-s3">三、AASM 2021 的建議力度：多組成 strong，單一組成 conditional</a></li><li><a href="#bt-s4">四、可近性問題與數位 CBT-I（dCBT-I）</a></li><li><a href="#bt-s5">五、評估與追蹤工具</a></li><li><a href="#bt-s6">六、適用範圍與族群調整</a></li><li><a href="#bt-s7">臨床要點摘要</a></li><li><a href="#bt-s8">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>許多醫師面對失眠的直覺反應仍是「開一顆助眠藥」。但過去十年的主要指引——ACP 2016、AASM 2021、VA/DoD 與歐洲睡眠研究學會——第一線答案高度一致：<strong>所有慢性失眠的成年人，都應先接受失眠認知行為治療（CBT-I）</strong>。藥物（詳見本系列第 3 篇）是 CBT-I 無法取得、無效或患者拒絕時的後續選項，而非起手式。</p>
 <hr>
-<h2>一、為什麼第一線是 CBT-I，而不是安眠藥？</h2>
+<h2 id="bt-s1">一、為什麼第一線是 CBT-I，而不是安眠藥？</h2>
 <p>ACP 2016 寫得很明確：所有成人慢性失眠應「先以 CBT-I 作為初始治療」（strong recommendation），藥物僅在 CBT-I 失敗後、與患者共同決策下短期使用。AASM 2021、VA/DoD 2019 與歐洲指引立場一致。背後有三個理由：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>CBT-I</th><th>助眠藥物</th></tr></thead>
@@ -117,7 +137,7 @@ article, article *{overflow-wrap:break-word}
 <p>🩺 <strong>臨床重點</strong>：CBT-I 的優勢不在「短期睡得比較好」，而在<strong>長期與停藥後仍維持</strong>。當患者問「這跟吃藥差在哪？」，最有力的回答是：藥停了通常就回到原點，CBT-I 學會的東西會留下來。</p>
 </blockquote>
 <hr>
-<h2>二、CBT-I 的核心組成</h2>
+<h2 id="bt-s2">二、CBT-I 的核心組成</h2>
 <p>CBT-I 是一套<strong>多組成</strong>（multicomponent）的結構式療法，通常 4–8 次療程，由行為、認知與衛教組合而成：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>組成</th><th>核心原理</th><th>實務重點</th></tr></thead>
@@ -139,7 +159,7 @@ article, article *{overflow-wrap:break-word}
 <p>🩺 <strong>臨床重點</strong>：把「睡眠衛生」當成 CBT-I 是臨床最常見的誤解。<strong>單給一張睡眠衛生衛教單≠做了 CBT-I</strong>——衛生是必要基礎，但療效主力來自刺激控制與睡眠限制這兩個行為組成。</p>
 </blockquote>
 <hr>
-<h2>三、AASM 2021 的建議力度：多組成 strong，單一組成 conditional</h2>
+<h2 id="bt-s3">三、AASM 2021 的建議力度：多組成 strong，單一組成 conditional</h2>
 <p>AASM 2021 以 GRADE 方法評估各療法，層次很清楚：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>介入</th><th>AASM 2021 建議力度</th></tr></thead>
@@ -153,14 +173,14 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>唯有<strong>完整的多組成 CBT-I</strong> 拿到強建議；任一組成單獨抽出，證據力度都降到 conditional——臨床意義是：<strong>組合才是療效來源</strong>。對人力或時間受限的場域，AASM 也認可較精簡的<strong>簡式行為治療（BTIs／BBTI）</strong>，通常聚焦刺激控制與睡眠限制兩大核心、療程更短，作為擴大可近性的折衷。</p>
 <hr>
-<h2>四、可近性問題與數位 CBT-I（dCBT-I）</h2>
+<h2 id="bt-s4">四、可近性問題與數位 CBT-I（dCBT-I）</h2>
 <p>CBT-I 的最大瓶頸不是療效，而是<strong>供給</strong>：受過訓練、能執行標準 CBT-I 的治療師遠少於需求。這在台灣尤其明顯——具 CBT-I 訓練的臨床心理師／治療師人力有限，許多門診實務上以<strong>衛教＋簡式行為介入</strong>（固定起床時間、刺激控制原則、睡眠日記）替代完整療程。</p>
 <p><strong>數位 CBT-I（dCBT-I）</strong>是擴大可近性的主要解法：透過 app 或網路平台提供結構化模組，多項試驗顯示對失眠嚴重度有臨床意義的改善，且可大規模觸及。階梯式照護（stepped care）的邏輯是：<strong>先試低強度的數位／簡式介入，反應不足者再轉介完整面對面 CBT-I 或進入藥物討論（第 3 篇）</strong>。</p>
 <blockquote class="commentary">
 <p>🩺 <strong>臨床重點</strong>：在台灣，「沒有治療師可轉介」不該成為直接開藥的理由。<strong>固定起床時間、睏了才上床、清醒 20 分鐘就離床</strong>這三條刺激控制核心，任何科別都能在診間口頭交代，配合睡眠日記，就是可執行的最小版 CBT-I。</p>
 </blockquote>
 <hr>
-<h2>五、評估與追蹤工具</h2>
+<h2 id="bt-s5">五、評估與追蹤工具</h2>
 <p>CBT-I 的評估與療效追蹤仰賴標準化工具，臨床應至少熟悉 <code>ISI</code> 與睡眠日記：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>工具</th><th>全名</th><th>用途</th></tr></thead>
@@ -173,7 +193,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>睡眠日記是 CBT-I 的「儀表板」——睡眠限制的臥床時間處方、放寬時機，全依日記數據決定，而非單靠 <code>PSG</code>（失眠診斷本身不常規需要 <code>PSG</code>，僅在懷疑 <code>OSA</code>、<code>RLS</code> 等共病時安排）。</p>
 <hr>
-<h2>六、適用範圍與族群調整</h2>
+<h2 id="bt-s6">六、適用範圍與族群調整</h2>
 <p>CBT-I 並非只適用於「單純」失眠。對<strong>共病憂鬱、焦慮、慢性疼痛、PTSD</strong> 的失眠，CBT-I 同樣有效，且常能連帶改善共病——共病不是禁忌，反而往往是更該做 CBT-I 的理由（必要時調整內容與節奏）。</p>
 <p>但其中的<strong>睡眠限制</strong>會短期增加睡眠剝奪，在某些族群需謹慎或調整：</p>
 <ul>
@@ -184,7 +204,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>對這些族群，可採較溫和的臥床限制、加強監測，或以刺激控制為主軸。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s7">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
@@ -203,7 +223,7 @@ article, article *{overflow-wrap:break-word}
 <p>當 CBT-I 試過仍不足，或患者一開始就需要藥物銜接，下一篇（第 3 篇）我們談各類助眠藥的實證與選藥原則；長期用藥怎麼安全減量，留到第 5 篇。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s8">參考文獻</h2>
 <ol>
 <li>Edinger JD, Arnedt JT, Bertisch SM, et al. Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep Medicine clinical practice guideline. <em>J Clin Sleep Med</em>. 2021;17(2):255-262.</li>
 <li>Qaseem A, Kansagara D, Forciea MA, et al. Management of chronic insomnia disorder in adults: a clinical practice guideline from the American College of Physicians. <em>Ann Intern Med</em>. 2016;165(2):125-133.</li>

@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/ssp03.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 03 篇</strong>　抗血栓是次級預防裡試驗最多、數字最密的一塊。這一篇要處理兩條主線：非心源性中風的短期雙抗（有一個很窄的時間窗），以及心房顫動的抗凝血（DOAC 取代 warfarin，但它降的其實不是缺血性中風）。把這兩條線分清楚，是不搞混病人用藥的關鍵。</p>
 </blockquote>
-<h2>短期雙抗：對象很窄，時間窗更窄</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">短期雙抗：對象很窄，時間窗更窄</a></li><li><a href="#bt-s2">Ticagrelor 這條支線：多防了一點中風，多賠了一點出血</a></li><li><a href="#bt-s3">雙抗之後：回到單一抗血小板</a></li><li><a href="#bt-s4">心房顫動這條線：DOAC，但它降的不是缺血性中風</a></li><li><a href="#bt-s5">什麼時候開始抗凝血？OPTIMAS 解掉了這個疑慮</a></li><li><a href="#bt-s6">把「哪種病人用哪種抗血栓」講成一張表</a></li><li><a href="#bt-s7">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">短期雙抗：對象很窄，時間窗更窄</h2>
 <p>隨機試驗顯示，短期雙重抗血小板治療（DAPT）對預防早期復發性中風有益——但對象限定得很清楚：非心源性的<strong>輕型</strong>缺血性中風（NIHSS ≤3），或<strong>高風險</strong> TIA（ABCD² 分數 ≥4，量表 0 到 7，分數愈高風險愈大），而且是那些不適合溶栓、取栓或頸動脈血管重建的病人。</p>
 <p>三個關鍵試驗把效益幅度釘了出來：</p>
 <div class="bt-tablewrap"><table>
@@ -108,7 +128,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>這兩個試驗的療程長度不一樣（POINT 90 天、CHANCE 21 天），但把它們的匯總分析放在一起，得到的是這篇最重要的一句話：<strong>DAPT 的最大效益落在中風後的前 10 到 21 天，而較長的治療期會伴隨主要出血風險上升</strong>。</p>
 <p>換句話說，雙抗是一個有明確「賞味期限」的策略。前兩三週它在防止早期復發，之後它防的東西愈來愈少、造成的出血愈來愈多。多給的每一天，天秤都在往出血那邊傾。</p>
-<h2>Ticagrelor 這條支線：多防了一點中風，多賠了一點出血</h2>
+<h2 id="bt-s2">Ticagrelor 這條支線：多防了一點中風，多賠了一點出血</h2>
 <p>除了 clopidogrel，ticagrelor 也被拿來試。把 ticagrelor 加到阿斯匹靈上，90 天的中風或死亡風險低於單用阿斯匹靈（5.5% vs 6.6%，P=0.02）——但這個效益被出血抵銷了一部分：致命性出血與腦內出血上升（0.4% vs 0.1%）。</p>
 <p>CHANCE-2 則問了一個更精準的問題。它納入 6,412 名帶有 CYP2C19 功能喪失等位基因的中國病人（這群人代謝 clopidogrel 的能力較差），比較 ticagrelor+阿斯匹靈 對上 clopidogrel+阿斯匹靈：</p>
 <div class="bt-tablewrap"><table>
@@ -118,10 +138,10 @@ article, article *{overflow-wrap:break-word}
 <tr><td>Clopidogrel + 阿斯匹靈</td><td><strong>7.6%</strong>（P=0.008）</td></tr>
 </tbody></table></div>
 <p>CHANCE-2 的意義不只在於 ticagrelor 贏了，而在於它點出 clopidogrel 有一個藥物基因學的軟肋——對代謝不良的帶因者，clopidogrel 效果打折，換 ticagrelor 才拉得回來。這在東亞族群特別有臨床意義，因為 CYP2C19 功能喪失等位基因在亞洲人身上比例偏高。</p>
-<h2>雙抗之後：回到單一抗血小板</h2>
+<h2 id="bt-s3">雙抗之後：回到單一抗血小板</h2>
 <p>DAPT 結束後，通常接續單用阿斯匹靈或 clopidogrel。這個做法的根據是那些「沒有顯示長期 DAPT 優於阿斯匹靈於晚期預防」的試驗結果——長期雙抗不會多防什麼，只會多出血。</p>
 <p>單一抗血小板（阿斯匹靈）另外被建議用於一種特定情況：有症狀的大血管顱內狹窄（50 到 99%）的長期治療。這是顱內動脈粥狀硬化這一類機轉的標準內科處置底盤。</p>
-<h2>心房顫動這條線：DOAC，但它降的不是缺血性中風</h2>
+<h2 id="bt-s4">心房顫動這條線：DOAC，但它降的不是缺血性中風</h2>
 <p>先講一個檢查上的重點。在隱源性中風的病人，用外接或植入式監測器做長時間心律監測，比 24 小時監測更能偵測到心房顫動。這件事直接影響機轉分類——很多被歸為「隱源性」的病人，延長監測後才抓到陣發性心房顫動，機轉就從「來源未定」變成「心源性栓塞」，用藥也跟著從抗血小板換成抗凝血。至於像 NT-proBNP 這類生物標記，雖然與心房顫動負荷相關，但目前中風指引並不建議用它來決策。</p>
 <p>在已確立的非瓣膜性心房顫動病人身上，以直接口服抗凝血劑（DOAC）進行凝血酶或第 Xa 因子抑制，是第一線治療。一份比較 DOAC（dabigatran、apixaban、rivaroxaban 或 edoxaban）與 warfarin 的隨機試驗統合分析，結果值得逐句拆開：</p>
 <ul>
@@ -130,10 +150,10 @@ article, article *{overflow-wrap:break-word}
 <li>而缺血性中風本身，DOAC 相比 warfarin 並沒有顯著更低。</li>
 </ul>
 <p>這是整篇裡最容易被讀錯的一個結果。「DOAC 讓中風少 19%」聽起來像它比較會防缺血性中風，但真相是：它主要贏在少造成出血性中風。DOAC 相對 warfarin 的優勢，一大半是安全性的優勢，不是抗缺血能力的優勢。理解這一點，才不會對 DOAC 的「抗栓效力」有過高期待。</p>
-<h2>什麼時候開始抗凝血？OPTIMAS 解掉了這個疑慮</h2>
+<h2 id="bt-s5">什麼時候開始抗凝血？OPTIMAS 解掉了這個疑慮</h2>
 <p>過去大家怕在急性缺血性中風後太早給抗凝血劑會誘發出血。多個試驗處理了這個疑慮。以 OPTIMAS（Optimal Timing of Anticoagulation after Acute Ischaemic Stroke）為例，在 3,621 名有心房顫動且近期中風的病人中，早期起始 DOAC（≤4 天）在 90 天的復合終點（復發缺血性中風、腦內出血或全身性栓塞）上，不劣於較晚治療（7 到 14 天）。這個試驗裡有四分之一的病人是陣發性心房顫動。</p>
 <p>不過並非所有心源性栓塞都用 DOAC。其他高風險心源性來源——如左心室血栓、機械瓣膜置換、或二尖瓣狹窄——一般仍以維生素 K 拮抗劑（warfarin）治療，這些情境 DOAC 沒有取代它。</p>
-<h2>把「哪種病人用哪種抗血栓」講成一張表</h2>
+<h2 id="bt-s6">把「哪種病人用哪種抗血栓」講成一張表</h2>
 <p>抗血栓最容易在臨床上出錯的地方，是把機轉配錯藥。這張對照可以當底稿：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>病人情境</th><th>抗血栓策略</th></tr></thead>
@@ -144,7 +164,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>非瓣膜性心房顫動</td><td>DOAC 第一線；早期起始（≤4 天）不劣於延後</td></tr>
 <tr><td>左心室血栓／機械瓣膜／二尖瓣狹窄</td><td>維生素 K 拮抗劑（warfarin）</td></tr>
 </tbody></table></div>
-<h2>臨床判讀重點</h2>
+<h2 id="bt-s7">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>文獻實際說法</th></tr></thead>
 <tbody>

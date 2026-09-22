@@ -77,6 +77,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/narc04.html">
 </head>
@@ -99,19 +118,20 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 4 篇</strong>　白天睡不停不等於猝睡症。要把這個診斷敲定，ICSD-3 要求症狀達到一定門檻，再加上三條客觀路徑擇一過關。本篇拆解這道閘門，並把睡眠醫學裡那兩個關鍵檢查——MSLT 與腦脊髓液 hypocretin——講清楚，順帶釐清 NT1 和 NT2 到底差在哪。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">MSLT：把「白天有多想睡」量化出來</a></li><li><a href="#bt-s2">CSF hypocretin-1：直接量那個缺掉的東西</a></li><li><a href="#bt-s3">NT1 與 NT2：分在「有沒有猝倒、缺不缺 hypocretin」</a></li><li><a href="#bt-s4">診斷與分型臨床要點</a></li><li><a href="#bt-s5">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>診斷猝睡症的第一道門檻，是症狀本身要夠頻繁、夠持久：白天那種無法抗拒、會把人拉進睡眠的嗜睡，必須<strong>每週至少出現 3 次，且持續至少 3 個月</strong>。光是「最近很累」「常打瞌睡」過不了這一關。跨過門檻之後，ICSD-3 還要你從下面三條路裡，至少滿足一條：一是 <strong>hypocretin 缺乏</strong>；二是<strong>有猝倒，而且至少每個月發作數次</strong>；三是 <strong>MSLT 結果陽性</strong>。</p>
 <p>這三條路不是並列的選擇題那麼隨意，它們其實對應到「你手上有哪種證據」。有典型猝倒、又有客觀睡眠檢查支持，診斷最穩；只有白天嗜睡、沒有猝倒，那就得靠 MSLT 或 hypocretin 來補上客觀證據。</p>
-<h2>MSLT：把「白天有多想睡」量化出來</h2>
+<h2 id="bt-s1">MSLT：把「白天有多想睡」量化出來</h2>
 <p>多次入睡潛伏期測試（MSLT, Multiple Sleep Latency Test）的設計很直白——既然主訴是「白天動不動就睡著」，那就在白天給病人幾次睡覺的機會，看他多快睡著、睡著之後會不會異常地快速掉進 REM。</p>
 <p>具體做法是：白天安排 <strong>4 到 5 次、每次 20 分鐘</strong>的小睡機會，每次間隔 <strong>2 小時</strong>。技術員紀錄兩個數字——病人平均多久入睡，以及這幾次小睡裡有幾次一躺下沒多久就進入 REM。</p>
 <p>判讀陽性有兩個條件要同時成立：<strong>平均入睡潛伏期 &lt; 8 分鐘</strong>，而且出現 <strong>≥ 2 次入睡期 REM（SOREMPs, sleep-onset REM periods）</strong>。所謂 SOREMP，指的是 REM 潛伏期 &lt; 15 分鐘——正常人入睡後通常要過 60 到 90 分鐘才進 REM，猝睡症患者卻可能幾分鐘就闖進去，這正是「REM 調控失靈」在檢查上的指紋。</p>
 <p>要強調的是，這兩個條件是「且」不是「或」。只睡得快、卻沒有兩次以上的 SOREMP，或反過來，都不算數。</p>
-<h2>CSF hypocretin-1：直接量那個缺掉的東西</h2>
+<h2 id="bt-s2">CSF hypocretin-1：直接量那個缺掉的東西</h2>
 <p>如果說 MSLT 是從行為層面間接推測，那腦脊髓液裡的 hypocretin-1（即 orexin）就是直接去量「病灶本身」。前面系列談過，NT1 的核心病變就是下視丘外側 hypocretin 神經元的流失——那把這個物質的濃度直接抽出來量，邏輯上最接近源頭。</p>
 <p>診斷切點是 <strong>CSF hypocretin-1 &lt; 110 pg/mL</strong>，或<strong>低於該檢驗正常均值的 1/3</strong>（用比值是為了校正不同實驗室之間的測值差異）。在分型上，這個檢查很有區辨力：<strong>NT1 患者多半低下，NT2 患者則通常正常</strong>。</p>
 <p>實務上腰椎穿刺有侵入性，不是每個病人都需要走到這一步；但在分型有疑義、或猝倒不典型時，hypocretin 是少數能把答案釘死的工具。</p>
-<h2>NT1 與 NT2：分在「有沒有猝倒、缺不缺 hypocretin」</h2>
+<h2 id="bt-s3">NT1 與 NT2：分在「有沒有猝倒、缺不缺 hypocretin」</h2>
 <p>猝睡症分成第一型（NT1）和第二型（NT2），分界其實圍著同一條軸打轉——<strong>hypocretin 系統壞了沒</strong>。</p>
 <ul>
 <li><strong>NT1</strong>：有猝倒，<strong>或</strong>有 hypocretin 缺乏（兩者只要其一）。這就是傳統說的「合併猝倒的猝睡症」，背後是 hypocretin 神經元的流失。</li>
@@ -119,7 +139,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>換句話說，猝倒和 hypocretin 缺乏是 NT1 的兩張通行證，任一張即可；而 NT2 是「臨床與睡眠檢查都符合猝睡症，但少了 NT1 那兩個標誌」的一群人。這也解釋了為什麼前面那三條診斷路徑裡，「猝倒」和「hypocretin 缺乏」會跟 MSLT 並列——它們同時是診斷依據，也是分型依據。</p>
 <hr>
-<h2>診斷與分型臨床要點</h2>
+<h2 id="bt-s4">診斷與分型臨床要點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>項目</th><th>重點</th></tr></thead>
 <tbody>
@@ -140,7 +160,7 @@ article, article *{overflow-wrap:break-word}
 <p>至於 hypocretin，它最大的價值是在 NT1 與 NT2 之間畫出一條相對乾淨的線。不過腰椎穿刺畢竟有侵入性，我不會每個人都送——真正派上用場的，往往是那些猝倒長得不典型、或臨床與 MSLT 兜不攏的個案。一個還沒收尾的問題是：被歸進 NT2 的這群人，未來有多少會隨著 hypocretin 神經元繼續流失而冒出猝倒、轉成 NT1？這條界線，也許沒有我們畫的那麼穩。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s5">參考文獻</h2>
 <ol>
 <li>StatPearls. <em>Narcolepsy</em>. NCBI Bookshelf NBK459236.</li>
 <li>American Academy of Sleep Medicine. <em>International Classification of Sleep Disorders, 3rd ed. (ICSD-3)</em>.</li>

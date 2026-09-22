@@ -77,6 +77,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/ins01.html">
 </head>
@@ -99,10 +118,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 1 篇</strong>　失眠是「主觀抱怨＋日間損害」的臨床診斷，而非單看睡了幾小時；本篇先把定義、流行病學與三大診斷系統講清楚，並提醒最常見的陷阱——把所有「睡不著」都當成原發性失眠，而漏掉背後的 OSA、RLS 或憂鬱。 依據 ICSD-3（AASM, 2014）、DSM-5（APA, 2013）與 ICD-11（WHO, 2022）。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 8 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、失眠的定義：主觀抱怨 ＋ 日間損害</a></li><li><a href="#bt-s2">二、流行病學：症狀很常見，疾病沒那麼多</a></li><li><a href="#bt-s3">三、三大診斷系統怎麼說</a></li><li><a href="#bt-s4">四、失眠很少獨來：從「次發」到「共病性失眠」</a></li><li><a href="#bt-s5">五、評估流程與鑑別診斷</a></li><li><a href="#bt-s6">六、3P 模式：理解失眠如何被「維持」</a></li><li><a href="#bt-s7">臨床要點摘要</a></li><li><a href="#bt-s8">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>失眠是門診與住院最常被提起、卻最常被草草處理的主訴之一。病人說「我睡不著」，醫師開一顆助眠藥，療程就結束了。但失眠症（insomnia disorder）是一個有明確操作型定義的臨床診斷，<strong>它的核心不是睡眠時數，而是「在有足夠睡眠機會下仍睡不好」加上「白天因此受損」</strong>。把這兩個支柱搞清楚，是後續所有治療決策（CBT-I、選藥、減藥）的起點。</p>
 <hr>
-<h2>一、失眠的定義：主觀抱怨 ＋ 日間損害</h2>
+<h2 id="bt-s1">一、失眠的定義：主觀抱怨 ＋ 日間損害</h2>
 <p>三大診斷系統對失眠的核心描述高度一致，可拆成三個要件：</p>
 <ul>
 <li><strong>夜間症狀</strong>：在<strong>有足夠睡眠機會與環境</strong>的前提下，仍出現難以入睡（入睡困難）、難以維持睡眠（夜間易醒、入睡後清醒時間 <code>WASO</code> 過長）或太早醒來且無法再入睡（早醒）。</li>
@@ -114,7 +134,7 @@ article, article *{overflow-wrap:break-word}
 <p>🩺 <strong>臨床重點</strong>：別用「一天該睡 8 小時」當門檻。睡眠需求個體差異大，<strong>有日間損害才構成失眠症</strong>；沒有日間後果、自覺睡得夠的「短睡者」不需要被貼上失眠的標籤，也不需要用藥。</p>
 </blockquote>
 <hr>
-<h2>二、流行病學：症狀很常見，疾病沒那麼多</h2>
+<h2 id="bt-s2">二、流行病學：症狀很常見，疾病沒那麼多</h2>
 <p>區分「失眠症狀」與「失眠症」對解讀盛行率很重要：</p>
 <ul>
 <li><strong>失眠症狀</strong>（偶爾睡不著）在成人相當普遍，約<strong>三成</strong>民眾在過去一年曾有過。</li>
@@ -123,7 +143,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>這個落差提醒我們：多數「睡不著」是短暫、自限的，不必都升級為慢性病處理；但一旦符合慢性失眠症，它就是一個會自我延續、且與多種共病互相加成的長期狀況，值得正規評估與治療。</p>
 <hr>
-<h2>三、三大診斷系統怎麼說</h2>
+<h2 id="bt-s3">三、三大診斷系統怎麼說</h2>
 <p><code>DSM-5</code>、<code>ICSD-3</code>、<code>ICD-11</code> 對慢性失眠症的核心門檻幾乎一致——<strong>頻率每週 ≥3 次、病程 ≥3 個月、有日間後果、且需排除其他更能解釋的原因</strong>。差異主要在編碼與分類用語：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>系統（年份）</th><th>診斷名稱</th><th>頻率</th><th>病程</th><th>必備要件</th><th>短期型</th></tr></thead>
@@ -134,7 +154,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>三者的共通骨架可記成四件事：<strong>頻率、病程、日間後果、排除其他原因</strong>。值得注意的是，DSM-5 已<strong>取消「原發性 vs 次發性失眠」的二分</strong>，改以單一 Insomnia Disorder 涵蓋，並允許在合併其他疾病時並列診斷——這正呼應下一節「共病性失眠」的觀念轉變。</p>
 <hr>
-<h2>四、失眠很少獨來：從「次發」到「共病性失眠」</h2>
+<h2 id="bt-s4">四、失眠很少獨來：從「次發」到「共病性失眠」</h2>
 <p>臨床上純粹、孤立存在的失眠是少數；絕大多數失眠都與其他狀況交織。需要主動搜尋的共病可分四類：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>類別</th><th>常見元凶</th></tr></thead>
@@ -149,7 +169,7 @@ article, article *{overflow-wrap:break-word}
 <p>🩺 <strong>臨床重點</strong>：把所有「睡不著」都當原發性失眠，是門診最常見的陷阱。<strong>開助眠藥之前，先問三件事</strong>——有沒有打鼾／目擊呼吸中止／晨起頭痛（篩 <code>OSA</code>）、傍晚有沒有下肢難以名狀的不適且一動就緩解（篩 <code>RLS</code>）、最近情緒與興趣如何（篩憂鬱）。漏掉 OSA 而長期給鎮靜安眠藥，可能讓呼吸事件惡化。</p>
 </blockquote>
 <hr>
-<h2>五、評估流程與鑑別診斷</h2>
+<h2 id="bt-s5">五、評估流程與鑑別診斷</h2>
 <p>失眠的診斷<strong>以臨床病史為主，不依賴儀器</strong>。建議的評估順序：</p>
 <ol>
 <li><strong>詳細睡眠病史</strong>：入睡潛伏期（<code>SOL</code>）、夜醒次數與 <code>WASO</code>、起床時間、總睡眠時間（<code>TST</code>）、上床到下床的臥床時間、白天嗜睡與功能、用藥與物質、作息規律性。</li>
@@ -162,7 +182,7 @@ article, article *{overflow-wrap:break-word}
 <p>🩺 <strong>臨床重點</strong>：<code>PSG</code> 對單純失眠沒有診斷價值，<strong>常規對失眠做 PSG 是資源誤用</strong>。它的角色是「揪出偽裝成失眠的其他睡眠障礙」，而不是用來確認失眠本身。</p>
 </blockquote>
 <hr>
-<h2>六、3P 模式：理解失眠如何被「維持」</h2>
+<h2 id="bt-s6">六、3P 模式：理解失眠如何被「維持」</h2>
 <p>Spielman 的 <strong>3P 模式</strong>是理解慢性失眠的經典框架，也是銜接治療的關鍵：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>因子</th><th>內容</th><th>臨床意義</th></tr></thead>
@@ -173,7 +193,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>關鍵洞見是：誘發事件常已遠去，失眠卻持續，靠的就是這些<strong>維持因子</strong>自我強化。而這些行為與認知層面的維持因子，<strong>正是失眠認知行為治療（CBT-I）中睡眠限制（sleep restriction）、刺激控制（stimulus control）與認知重建所要鬆動的標的</strong>——這也是為什麼第一線治療不是藥，而是 CBT-I。<strong>詳見本系列第 2 篇（CBT-I）。</strong></p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s7">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
@@ -192,7 +212,7 @@ article, article *{overflow-wrap:break-word}
 <p>所以這個系列的第一篇，我不急著談藥。先學會「正確地診斷與鑑別」，把偽裝成失眠的 OSA、RLS、憂鬱挑出來，再用 3P 框架看清失眠如何被維持——下一篇，我們就從第一線的 CBT-I 談起。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s8">參考文獻</h2>
 <ol>
 <li>American Academy of Sleep Medicine. <em>International Classification of Sleep Disorders (ICSD-3)</em>. 3rd ed. Darien, IL: AASM; 2014.</li>
 <li>American Psychiatric Association. <em>Diagnostic and Statistical Manual of Mental Disorders (DSM-5)</em>. 5th ed. Arlington, VA: APA; 2013.</li>

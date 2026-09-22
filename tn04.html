@@ -72,6 +72,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/tn04.html">
 </head>
@@ -90,29 +109,30 @@ article, article *{overflow-wrap:break-word}
 <main>
   <div class="series-nav"><a href="tn01.html" class="series-link">① 臨床困境與分類</a><a href="tn02.html" class="series-link">② 痛覺傳遞的 3D 迴路</a><a href="tn03.html" class="series-link">③ 離子通道微觀戰場</a><a href="tn04.html" class="series-link active">④ 神經免疫與表觀遺傳</a><a href="tn05.html" class="series-link">⑤ 藥物進展與未來</a></div>
   <article class="article">
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">神經膠質細胞：從保母到疼痛共犯</a></li><li><a href="#bt-s2">趨化因子 (Chemokines)：神經與免疫的通訊密碼</a></li><li><a href="#bt-s3">細胞內的激酶風暴與抗氧化救贖</a></li><li><a href="#bt-s4">表觀遺傳學 (Epigenetics)：疼痛記憶的深刻烙印</a></li></ol></details><!-- bt-toc:end -->
 <h1>三叉神經痛導讀 ④：神經免疫與表觀遺傳學</h1>
 <blockquote>
 <p><strong>系列導讀．第 4 篇</strong> 長期以來，我們將神經痛的焦點完全放在「神經元」本身的電氣異常上。然而，2026 年的研究揭示了一個更為複雜的真相：神經膠質細胞（Glial cells）並非無辜的旁觀者，而是推動 TN 發病與慢性化的關鍵黑手。這種「神經-免疫交互作用」與深層的表觀遺傳調控，解釋了為何疼痛記憶如此難以抹滅。</p>
 </blockquote>
-<h2>神經膠質細胞：從保母到疼痛共犯</h2>
+<h2 id="bt-s1">神經膠質細胞：從保母到疼痛共犯</h2>
 <p>在中樞與周邊神經系統中，星狀膠質細胞 (Astrocytes)、微膠細胞 (Microglia) 與衛星膠質細胞 (SGCs) 原本扮演著滋養與保護神經元的「保母」角色。但當三叉神經遭遇慢性壓迫或局部去髓鞘損傷時，這些膠質細胞會被徹底「激怒」，轉變為疼痛的放大器。</p>
 <ul>
 <li><strong>衛星膠質細胞 (SGCs)</strong>：SGCs 像繭一樣緊密包覆著三叉神經節 (TG) 內的神經元。當 TN 發生時，SGCs 不僅失去了清除細胞外鉀離子（透過 Kir4.1 下調）的能力，還會被活化（伴隨 GFAP 表現上調），直接釋放發炎物質干擾周圍的神經元。</li>
 <li><strong>微膠細胞 (Microglia)</strong>：作為神經系統的專職免疫細胞，微膠細胞在神經受損後會被迅速激活，轉變為吞噬型態。它們會吞噬受損的髓鞘，並大量釋放促發炎細胞激素（如 IL-1<code>\beta</code>, TNF-<code>\alpha</code>）。這些細胞激素能直接與神經元上的受體結合，大幅降低神經元的痛覺閾值，產生劇烈的神經性發炎反應。</li>
 </ul>
-<h2>趨化因子 (Chemokines)：神經與免疫的通訊密碼</h2>
+<h2 id="bt-s2">趨化因子 (Chemokines)：神經與免疫的通訊密碼</h2>
 <p>被激怒的膠質細胞是如何與神經元進行惡意「對話」的？答案就在於各種趨化因子及其受體所構成的通訊網路。</p>
 <ul>
 <li><strong>CCL2 / CCR2 軸</strong>：在神經損傷後，三叉神經節內的 CCL2 表達會顯著上調。CCL2 結合到受體 CCR2 後，會透過啟動細胞內的 ERK 傳遞路徑，直接增加神經元上 Nav1.8 鈉離子通道的密度與電流強度。這是一個完美的「免疫刺激 <code>\rightarrow</code> 電氣放大」範例。</li>
 <li><strong>CXCL13 / CXCR5 軸</strong>：這是一個更為活躍且多功能的通訊網路。它不僅存在於周邊的 TG，還廣泛分佈於脊髓與前扣帶迴 (ACC) 中。它能介導神經元與神經元之間、神經元與星狀膠質細胞之間的對話。研究更發現，這條通訊軸的活躍，不僅放大了痛覺，還與患者的「負面情緒反應 (negative affect)」密切相關。</li>
 </ul>
-<h2>細胞內的激酶風暴與抗氧化救贖</h2>
+<h2 id="bt-s3">細胞內的激酶風暴與抗氧化救贖</h2>
 <p>當這些神經免疫訊號進入神經元內部，會啟動一連串的激酶反應，徹底改變神經元的運作模式：</p>
 <ul>
 <li><strong>MAPK 途徑 (ERK, JNK, p38)</strong>：在 TN 狀態下高度活化。這條激酶途徑宛如一條高速公路，不僅傳遞痛覺訊號，還能進入細胞核，直接轉錄並調控 Nav1.7 鈉通道的表現與更多促發炎細胞激素的生成。</li>
 <li><strong>NRF2 (抗氧化轉錄因子)</strong>：在充滿敵意的氧化壓力（ROS）環境中，這是一個極為重要的<strong>保護性靶點</strong>。正常情況下，NRF2 會被 KEAP1 蛋白綁定並降解。但在 TN 患者腦脊髓液中，氧化壓力指標顯著升高。若能透過藥物抑制 KEAP1，釋放並穩定 NRF2，讓其活化下游的抗氧化基因，就能產生強大的抗神經痛效果。這也啟發了科學家嘗試「老藥新用」（如乳癌藥物 Exemestane）來治療 TN 的新思維。</li>
 </ul>
-<h2>表觀遺傳學 (Epigenetics)：疼痛記憶的深刻烙印</h2>
+<h2 id="bt-s4">表觀遺傳學 (Epigenetics)：疼痛記憶的深刻烙印</h2>
 <p>為何有些患者在微血管減壓術 (MVD) 解除了神經壓迫後，疼痛依然如鬼魅般糾纏？這必須從表觀遺傳學尋找解答。</p>
 <p>環境壓力、長期發炎與神經損傷，能透過化學修飾直接改變特定基因的表現，這就像是在神經系統的軟體上寫入了惡意的「疼痛記憶」，而無需改變硬體（DNA 序列）。</p>
 <ul>

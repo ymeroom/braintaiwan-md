@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/bm03.html">
 </head>
@@ -97,22 +116,23 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 3 篇</strong>　多數腦轉移病人的治療目標，不是根治，而是延緩神經惡化、在可接受的生活品質下延長存活。這篇談三種局部治療——手術、立體定位放射（SRS）、全腦放射（WBRT）——各自的位置，以及過去的主角 WBRT 為什麼一步步退到後排。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">手術：單顆腦轉移的角色沒有爭議</a></li><li><a href="#bt-s2">立體定位放射手術（SRS）：今日的局部治療主力</a></li><li><a href="#bt-s3">全腦放射（WBRT）：為什麼從主角退位</a></li><li><a href="#bt-s4">預防性顱腦照射（PCI）：小細胞肺癌的特例</a></li><li><a href="#bt-s5">局部治療的建議一覽</a></li></ol></details><!-- bt-toc:end -->
 <p>先把治療目標講清楚，後面的取捨才有依據。對大多數腦轉移病人來說，治療的目的是<strong>預防或延緩神經功能惡化、在可接受的生活品質下延長存活</strong>；只有少數病灶小、數量少的病人，有機會長期存活甚至治癒。多數腦轉移病人最後是死於全身疾病，不是死於腦轉移——這句話會反覆影響每一個「要不要做這個局部治療」的決定。</p>
-<h2>手術：單顆腦轉移的角色沒有爭議</h2>
+<h2 id="bt-s1">手術：單顆腦轉移的角色沒有爭議</h2>
 <p><strong>單顆腦轉移、全身疾病控制良好的病人，手術切除的治療價值沒有爭議</strong>〔EANO：I, A；ESMO：II, A〕。切除的完整程度跟局部控制直接相關，切得愈乾淨、復發愈少；而<strong>整塊（en bloc）切除</strong>比分塊（piecemeal）切除，復發率與軟腦膜播散的風險都更低。手術後應該在 <strong>48 小時內</strong>做一次 MRI，確認切除的範圍——這張片子也是日後追蹤的基準。</p>
 <p>多顆腦轉移不是手術的禁區，有幾個情況該為了「立即的治療效果」考慮開刀：<strong>大於 3 公分</strong>、造成顱內壓升高或位在功能區（eloquent）造成神經缺損的病灶；位在<strong>後顱窩</strong>、有阻塞性水腦風險的病灶；以及<strong>囊性或壞死性</strong>病灶——這類對 SRS 的反應通常不如實心病灶，有時可先抽吸囊液再做放射手術。手術還有一個別的治療給不了的好處：它能讓類固醇快速減量，反過來優化後續治療（特別是免疫檢查點抑制）的效果。至於雷射間質熱療（LITT）這類新工具，目前主要用在復發腦瘤與放射壞死，在腦轉移的角色還需要更多研究。</p>
 <p>除了緊急情況，所有手術指徵都該在<strong>多專科腫瘤團隊會議</strong>上權衡風險與效益，並決定需要哪種分子病理檢查、確保取到足夠且合格的組織。</p>
-<h2>立體定位放射手術（SRS）：今日的局部治療主力</h2>
+<h2 id="bt-s2">立體定位放射手術（SRS）：今日的局部治療主力</h2>
 <p>SRS 指的是用立體定位或影像導引、以約 <strong>1 毫米</strong>的準確度，把高劑量放射精準送到顱內目標。常見做法是<strong>單次分程，劑量介於 15–24 Gy</strong>。若病灶較大（大於 3 公分）、鄰近腦幹等高風險結構、或曾接受過放射，則偏好<strong>分次 SRS</strong>，典型是 27 Gy 分 3 次或 30 Gy 分 5 次。</p>
 <p>SRS 的證據這幾年一路擴張。加在 WBRT 上，能改善 1–3 顆腦轉移病人的整體存活；而更關鍵的轉變是 <strong>SRS 單獨用於更多顆病灶</strong>。一項前瞻多中心研究（JLGK0901）納入 1194 位 1–10 顆腦轉移、只做 SRS 的病人，結果 <strong>2–4 顆與 5–10 顆病人的存活相近，中位數都約 10.8 個月</strong>；治療相關毒性低，當累積腫瘤體積小於 15 毫升時，兩組以簡易智能量表（MMSE）評估的神經認知功能也相當。這也是後面「5–10 顆、累積體積 &lt; 15 ml 可考慮 SRS」建議的來源。</p>
 <p>另一個重要應用是<strong>術後空腔的 SRS</strong>。因為單純手術後局部復發率高，兩項隨機試驗探討了這件事：Brown 等人把 194 位病人隨機分到術後 WBRT 或 SRS，兩組整體存活沒有差別，但<strong>認知功能下降在 WBRT 組更常見</strong>；Mahajan 等人把 132 位完全切除的病人隨機分到術後 SRS 或觀察，<strong>術後 SRS 顯著改善了局部無復發</strong>。空腔較大時，會採風險調整的分次方式，把總劑量分 3–5 次給。</p>
-<h2>全腦放射（WBRT）：為什麼從主角退位</h2>
+<h2 id="bt-s3">全腦放射（WBRT）：為什麼從主角退位</h2>
 <p>WBRT 曾是腦轉移放射治療的歷史主力，典型劑量 <strong>20–30 Gy 分 5–10 次</strong>。它的問題在於：用在局部治療（手術或 SRS）之後當鞏固治療，雖然改善了局部與遠端的腦內控制，卻<strong>沒有改善整體存活，還對神經認知功能有害</strong>。在黑色素瘤、已對 1–3 顆病灶做過局部治療的病人身上，一項隨機第三期試驗更是看不到 WBRT 的好處。</p>
 <p>當作多顆腦轉移的初始治療時，WBRT 的中位存活只有 <strong>3–6 個月</strong>，一年存活率 <strong>10%–15%</strong>。最能說明問題的是 QUARTZ 試驗：不適合手術或 SRT 的 NSCLC 腦轉移病人，隨機分到「最佳支持性照護」或「最佳支持性照護加 WBRT（20 Gy 分 5 次）」，結果<strong>兩組中位存活都約 9 週</strong>，而且只做支持性照護的那組，生活品質沒有明顯比較差。這是把 WBRT 從「多顆就全腦照」的預設位置拉下來的關鍵一擊。</p>
 <p>WBRT 並非完全出局。新技術試著讓它更安全——同步整合加量（simultaneous integrated boost）能在全腦照射的基礎上，對明顯病灶額外加劑量；RTOG 0614 顯示 memantine 合併 WBRT 有神經保護的趨勢；NRG CC001 則比較「WBRT＋memantine」與「海馬迴迴避（HA）WBRT＋memantine」，後者顯著保住了病人自述的生活品質、也減少認知退化。不過 memantine 這些數據的臨床意涵仍不完全明朗。</p>
-<h2>預防性顱腦照射（PCI）：小細胞肺癌的特例</h2>
+<h2 id="bt-s4">預防性顱腦照射（PCI）：小細胞肺癌的特例</h2>
 <p><strong>PCI 在小細胞肺癌（SCLC）是標準治療</strong>，不論局限期或廣泛期都是。但在廣泛期，PCI 正受到挑戰——因為現在有了系列 MRI 追蹤與免疫檢查點抑制。此外，一項隨機第三期試驗顯示，把海馬迴迴避加進 PCI，並沒有降低認知退化的機率，兩年腦轉移發生率與存活也沒差；因此<strong>海馬迴保留在 PCI 這個情境還不能算標準做法</strong>。</p>
-<h2>局部治療的建議一覽</h2>
+<h2 id="bt-s5">局部治療的建議一覽</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>建議</th><th>證據等級</th></tr></thead>
 <tbody>

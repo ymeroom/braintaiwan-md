@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/dmrx02.html">
 </head>
@@ -97,8 +116,9 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 2 篇</strong>　新版 NG28 把起始用藥拆成七條路徑，依共病決定病人走哪一條。這個設計最違反直覺的地方是：七條裡面只有一條預設加上 GLP-1 受體促效劑，而那一條不是肥胖。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 3 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">臨床要點摘要</a></li><li><a href="#bt-s2">一、心衰竭那條，跟沒有共病那條長得一樣</a></li><li><a href="#bt-s3">二、唯一預設加 GLP-1 的是動脈硬化那條，而且指名到藥</a></li><li><a href="#bt-s4">三、肥胖那條反而沒有 GLP-1</a></li><li><a href="#bt-s5">四、一個病人同時符合好幾條怎麼辦</a></li></ol></details><!-- bt-toc:end -->
 <p>七條路徑分別對應無相關共病、心衰竭、動脈粥狀硬化心血管疾病、早發型第二型糖尿病、肥胖、慢性腎臟病、衰弱。起始治療寫在 1.13 到 1.19，後續治療調整在 1.25 到 1.31 重複同樣的七分法。</p>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s1">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>路徑</th><th>條號</th><th>起始治療</th></tr></thead>
 <tbody>
@@ -110,18 +130,18 @@ article, article *{overflow-wrap:break-word}
 <tr><td>慢性腎臟病</td><td>1.18</td><td>依 eGFR 分層，見第 4 篇</td></tr>
 <tr><td>衰弱</td><td>1.19</td><td>緩釋型 metformin；SGLT-2 抑制劑僅在安全時才給，見第 4 篇</td></tr>
 </tbody></table></div>
-<h2>一、心衰竭那條，跟沒有共病那條長得一樣</h2>
+<h2 id="bt-s2">一、心衰竭那條，跟沒有共病那條長得一樣</h2>
 <p>1.14.1 對第二型糖尿病合併心衰竭的成人，給的是緩釋型 metformin 與一個 SGLT-2 抑制劑；metformin 禁忌或不耐受時改為 SGLT-2 抑制劑單方。跟 1.13 無共病那條字面幾乎相同。</p>
 <p>差別在委員會的說明措辭。他們在心衰竭這一節寫的是：metformin 合併 SGLT-2 抑制劑是心衰竭病人<strong>最具臨床效益的選擇</strong>，並將其建議為標準的起始治療。同時也誠實記下：針對第二型糖尿病合併心衰竭的族群，證據是有限的。</p>
-<h2>二、唯一預設加 GLP-1 的是動脈硬化那條，而且指名到藥</h2>
+<h2 id="bt-s3">二、唯一預設加 GLP-1 的是動脈硬化那條，而且指名到藥</h2>
 <p>1.15.1 是七條裡唯一一條起始就給三種藥的：緩釋型 metformin、一個 SGLT-2 抑制劑，再加上<strong>皮下 semaglutide（Ozempic），每週最高 1 mg</strong>，理由寫明是為了它的心血管、腎臟與血糖效益。</p>
 <p>這裡有兩個細節不能省。第一，指引指名了特定藥品與劑量上限，不是泛稱 GLP-1 受體促效劑。第二，metformin 禁忌時（1.15.2）拿掉的是 metformin，SGLT-2 抑制劑與 semaglutide 兩個都留著。</p>
-<h2>三、肥胖那條反而沒有 GLP-1</h2>
+<h2 id="bt-s4">三、肥胖那條反而沒有 GLP-1</h2>
 <p>這是整份改版最容易被誤讀的一條。1.17.1 對合併肥胖的第二型糖尿病成人，給的就是緩釋型 metformin 與一個 SGLT-2 抑制劑——和無共病那條完全相同。</p>
 <p>委員會的理由講得很坦白：比較各種降糖藥物的證據雖然涵蓋了肥胖者，但多數研究無法把這群人從整體研究族群中分離出來、辨識出專屬的效果。在證據有此限制的情況下，委員會決定給這群人和其他沒有特殊共病者相同的藥物。</p>
 <p>至於減重，委員會的說法是：體重下降可能是某些藥物的副作用，包括 GLP-1 受體促效劑與 tirzepatide、SGLT-2 抑制劑與 metformin，這對病人與醫療人員可能很重要；但<strong>如果減重是治療的主要目標，就應該改依 NICE 的過重與肥胖處理指引，而不是這份指引</strong>。</p>
 <p>換句話說，在 NG28 裡想靠肥胖這條路徑拿到 GLP-1，方向是錯的。</p>
-<h2>四、一個病人同時符合好幾條怎麼辦</h2>
+<h2 id="bt-s5">四、一個病人同時符合好幾條怎麼辦</h2>
 <p>這是七分法最現實的問題，而指引有直接回答。1.9.3 說，如果病人有一種以上的共病（舉的例子正是動脈粥狀硬化心血管疾病合併肥胖），要與病人<strong>共同決定</strong>在選藥時優先處理哪一個共病。</p>
 <p>搭配 1.9.2 的討論清單：與病人討論每種藥物選項的效益與風險並支持其做出知情決定，要考量各藥物對 HbA1c 與體重的影響、各藥物在預防與處理心血管與腎臟疾病上的效力、可能讓病人無法遵循某個選項的因素（指引舉的例子是 pioglitazone 對心衰竭病人為禁忌），以及成本——當同一藥物類別中有一種以上同樣適合這位病人時，使用最便宜的那個。</p>
 <blockquote class="commentary">

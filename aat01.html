@@ -66,6 +66,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/aat01.html">
 </head>
@@ -88,15 +107,16 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 1 篇</strong>　以 CLARITY-AD（NEJM 2023）為主軸 三十年來阿茲海默症的藥都在「補神經傳導物質」這條路上打轉，效果有限。lecanemab 是第一個在大型第三期試驗裡，真的把腦中類澱粉清掉、又同時讓退化變慢的單株抗體。問題只剩一個：清掉之後，病人實際換回了多少東西，這個交換划不划算。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 7 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、它打的不是斑塊，是「正在結塊的那一段」</a></li><li><a href="#bt-s2">二、CLARITY-AD：27% 到底是怎麼算出來的</a></li><li><a href="#bt-s3">三、ARIA：這類藥真正要盯的東西</a></li><li><a href="#bt-s4">四、誰能用、怎麼用、怎麼盯</a></li><li><a href="#bt-s5">五、27% 換得回什麼：那場「有沒有意義」的辯論</a></li><li><a href="#bt-s6">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>aducanumab 那場爭議之後，很多人對「抗類澱粉」這四個字已經免疫了——數據漂亮但臨床看不出差別、補體投票否決卻照樣加速核准，整件事留下的印象並不好。所以 2022 年底 CLARITY-AD 的結果出來時，神經科醫師的第一反應多半不是興奮，而是戒備：這次的數字，到底是真的能換成病人的日子，還是又一個統計上顯著、生活上無感的故事。這一篇就把這個問句拆開來看。</p>
 <hr>
-<h2>一、它打的不是斑塊，是「正在結塊的那一段」</h2>
+<h2 id="bt-s1">一、它打的不是斑塊，是「正在結塊的那一段」</h2>
 <p>類澱粉從單體（monomer）聚集成最終的老年斑（plaque），中間會經過一個叫 <strong>protofibril（原纖維）</strong> 的可溶性中間態。近幾年的看法是：真正對突觸有毒、對神經傷害最大的，往往不是那塊已經沉下來的硬斑，而是這些還飄在組織液裡、正在結塊的可溶性聚合體。</p>
 <p>lecanemab 的設計就卡在這個位置——它對 protofibril 的親和力特別高，主要去抓「正在結塊的那一段」。這跟它的雙胞胎對手 donanemab 形成有趣對照：donanemab 專打「已經沉積的斑塊」（下一篇細講）。一個攔在路上、一個清理戰場，兩種策略後面其實是同一個假說——<strong>把類澱粉這條路斷在不同的點，看哪裡能換到臨床好處</strong>。</p>
 <p>理解這個標靶，後面所有數字才站得穩：lecanemab 不是「溶解失智」，它是「在疾病早期、類澱粉還在堆的時候，把堆積的速度按下去」。所以它的適應症是 early AD，不是中重度——病人腦子已經燒成灰的階段，再去清正在結塊的中間態，意義不大。</p>
 <hr>
-<h2>二、CLARITY-AD：27% 到底是怎麼算出來的</h2>
+<h2 id="bt-s2">二、CLARITY-AD：27% 到底是怎麼算出來的</h2>
 <p>CLARITY-AD 是一個收了 <strong>1795 人</strong>的第三期、隨機、雙盲、安慰劑對照試驗，做了 <strong>18 個月</strong>。收的是 early AD——也就是 MCI due to AD 或輕度 AD 失智，而且都先用 PET 或腦脊液<strong>證實腦中真的有類澱粉</strong>（這點很關鍵，等下談用藥條件會再回來）。劑量是 <strong>10 mg/kg 靜脈注射、每兩週一次</strong>。</p>
 <p>主要終點是 <strong>CDR-SB</strong>（臨床失智評估量表的盒分總和，0–18 分，越高越差）。18 個月後：</p>
 <ul>
@@ -107,7 +127,7 @@ article, article *{overflow-wrap:break-word}
 <p>所有關鍵次要終點也都同方向達標：認知量表 ADAS-Cog14 差 −1.44、整合量表 ADCOMS 差 −0.050、日常生活功能 ADCS-MCI-ADL 差 +2.0。而生物標記更是壓倒性——類澱粉 PET 平均下降 <strong>55 個 centiloid 以上</strong>，很多病人直接掉到「類澱粉陰性」的判讀區間。</p>
 <p>所以這次跟 aducanumab 那團迷霧不一樣的地方在於：<strong>生物標記、認知、功能三條線同方向、同時顯著</strong>。藥確實清掉了該清的東西，而且臨床指標也跟著動，不是只有 PET 漂亮而量表裝死。這是 lecanemab 拿到 FDA 傳統核准（2023/07，Leqembi）的底氣。</p>
 <hr>
-<h2>三、ARIA：這類藥真正要盯的東西</h2>
+<h2 id="bt-s3">三、ARIA：這類藥真正要盯的東西</h2>
 <p>抗類澱粉抗體最該記住的副作用只有一個字母組合——<strong>ARIA（amyloid-related imaging abnormalities，類澱粉相關影像異常）</strong>。把血管壁上的類澱粉一起鬆動，血管就變得會漏：漏水叫 <strong>ARIA-E</strong>（edema，水腫／積液），漏血叫 <strong>ARIA-H</strong>（hemorrhage，微出血／含鐵血黃素沉積）。</p>
 <p>CLARITY-AD 的數字：</p>
 <ul>
@@ -124,19 +144,19 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>差距大到不能忽視——<strong>ε4 同合子的症狀性 ARIA-E 風險，是不帶者的六倍以上</strong>。這也是為什麼後面講用藥流程時，「治療前先驗 APOE」不是建議、是基本動作。多數 ARIA 發生在治療頭三個月、且多會自行消退，但少數會嚴重到腦水腫或顱內出血，這就是為什麼要排定期 MRI。另外輸注反應 <strong>26.4%</strong> 雖然數字大，但多半輕微、可預處置，臨床上反而沒 ARIA 那麼讓人緊張。</p>
 <hr>
-<h2>四、誰能用、怎麼用、怎麼盯</h2>
+<h2 id="bt-s4">四、誰能用、怎麼用、怎麼盯</h2>
 <p>把試驗條件翻成臨床流程，大致是這四關：</p>
 <p><strong>第一關——選對病人。</strong> 只用在 <strong>early AD</strong>（MCI due to AD 或輕度 AD 失智）。而且不能光靠臨床診斷就開藥，<strong>要先用類澱粉 PET 或腦脊液生物標記證實腦中真的有類澱粉</strong>——這是抗類澱粉藥的鐵則，沒有靶就別打。中重度失智、或臨床像 AD 但生物標記陰性的，都不在適應症內。</p>
 <p><strong>第二關——驗 APOE。</strong> 治療前做 APOE 基因型分型，把 ε4 同合子這群高 ARIA 風險的人事先標出來，據以調整知情同意的風險討論與 MRI 頻率。這不是為了「篩掉」誰，而是讓病人在知道自己風險的前提下做決定。</p>
 <p><strong>第三關——排 MRI 監測。</strong> 因為 ARIA 多發生在早期，給藥前要有基線 MRI，之後在前幾劑的固定時間點排追蹤掃描；一旦出現症狀（頭痛、意識混亂、視覺或步態變化）隨時加掃。抗凝血劑、近期溶栓的病人要特別謹慎——血管本來就脆，再加上會漏的 ARIA，是出血風險的疊加。</p>
 <p><strong>第四關——持續給藥。</strong> lecanemab 沒有「打完一個療程」這回事，它是<strong>每兩週靜脈注射、持續進行</strong>的維持治療。這對病人與照護系統都是長期負擔：兩週跑一次醫院、定期 MRI、加上藥費，現實面的門檻不低。</p>
 <hr>
-<h2>五、27% 換得回什麼：那場「有沒有意義」的辯論</h2>
+<h2 id="bt-s5">五、27% 換得回什麼：那場「有沒有意義」的辯論</h2>
 <p>數字會顯著，是因為樣本夠大；但 −0.45 分這個差，在 18 分的量表上，病人和家屬「感覺得到」嗎？這正是 lecanemab 上市後吵得最兇的一題。</p>
 <p>務實地說：CDR-SB 慢 0.45 分，換算成時間大約是把疾病進程<strong>延後幾個月</strong>——對一個還在 MCI、想多保住幾個月自理能力與判斷力的人，這幾個月可能很關鍵；但對另一些人，這點差距未必抵得過兩週一針、定期 MRI、ARIA 風險與一年數萬美元藥費的總和。<strong>「值不值得」沒有標準答案，它取決於病人在病程的哪個點、最在乎什麼、能承受多少風險與負擔。</strong></p>
 <p>但有一件事是 CLARITY-AD 確定立下的里程碑，不該被這場辯論淹掉：<strong>在人身上，清掉類澱粉真的能讓退化變慢。</strong> 三十年來類澱粉假說一直被質疑「清了也沒用」，lecanemab 是第一個用第三期硬數據把這條因果鏈接起來的藥。它的臨床效益幅度可以辯論，但它對整個領域的意義是：<strong>這條路是通的，只是還不夠快、不夠乾淨。</strong> 下一篇的 donanemab，就是另一種試圖把它做得更徹底的答案。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s6">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>項目</th><th>lecanemab（CLARITY-AD）關鍵內容</th></tr></thead>
 <tbody>

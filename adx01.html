@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/adx01.html">
 </head>
@@ -97,10 +116,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 1 篇</strong>　2025 年 Alzheimer's Association 發布《DETeCD-ADRD 臨床實踐指引》——針對疑似阿茲海默症與相關失智症的診斷評估、檢測、諮詢與告知，特別整理出<strong>基層醫療摘要版</strong>。本系列七篇，依指引架構中的「七大核心元素」（CORE 1–7）逐一拆解：評估對象與目標、病史詢問、系統性回顧、危險因子病史、身體評估、診斷步驟與檢查分層、溝通與照護計畫。首篇談的是最根本的問題——<strong>誰該被評估？為什麼要評估？</strong></p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、為什麼基層醫療是這份指引的核心讀者</a></li><li><a href="#bt-s2">二、誰該被評估：三種觸發情境</a></li><li><a href="#bt-s3">三、評估的「共同目標」：為什麼診斷本身就有價值</a></li><li><a href="#bt-s4">四、七大核心元素：本系列的地圖</a></li><li><a href="#bt-s5">臨床要點摘要</a></li><li><a href="#bt-s6">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>指引最重要的立場改變，是把失智症診斷評估的起點，從「等到症狀很明顯才轉診」往前推到<strong>任何認知抱怨出現的第一時間</strong>。在疾病修飾治療（disease-modifying therapy）時代，「先觀察看看（watchful waiting）」這個長年存在於基層的預設做法，正式被指引點名是<strong>應該被淘汰的慣性</strong>。</p>
 <hr>
-<h2>一、為什麼基層醫療是這份指引的核心讀者</h2>
+<h2 id="bt-s1">一、為什麼基層醫療是這份指引的核心讀者</h2>
 <p>多數失智症患者最早接觸的醫療人員，是家醫科、內科或一般神經科醫師，而非失智症專科中心。指引特別製作「基層醫療執行摘要」，原因在於：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>現況</th><th>指引立場</th></tr></thead>
@@ -110,7 +130,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>失智症專科資源有限、等待時間長</td><td>七大核心元素（CORE 1–7）多數可在基層完成，僅複雜或不確定案例才需轉診</td></tr>
 </tbody></table></div>
 <hr>
-<h2>二、誰該被評估：三種觸發情境</h2>
+<h2 id="bt-s2">二、誰該被評估：三種觸發情境</h2>
 <p>指引列出三種應啟動評估的情境，缺一不可地都要認真對待：</p>
 <ol>
 <li><strong>病人自己抱怨</strong>：「我最近常忘記事情」「我講話會找不到字」——即使病人本身對自己病識感不足，主動陳述仍應視為紅旗。</li>
@@ -121,7 +141,7 @@ article, article *{overflow-wrap:break-word}
 <p>指引特別強調：<strong>不要等到功能明顯受損才開始評估</strong>。輕度認知障礙（MCI）階段就應該被識別，因為這正是早期介入與治療決策窗口最寬的階段。</p>
 </blockquote>
 <hr>
-<h2>三、評估的「共同目標」：為什麼診斷本身就有價值</h2>
+<h2 id="bt-s3">三、評估的「共同目標」：為什麼診斷本身就有價值</h2>
 <p>即使尚未確定病因或治療方案，及早完成結構化評估能達成多項目標：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>目標</th><th>具體意義</th></tr></thead>
@@ -134,7 +154,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>減少病人與家屬的不確定感</td><td>「不知道發生什麼事」本身就是巨大的心理負擔，明確診斷常能帶來解脫感</td></tr>
 </tbody></table></div>
 <hr>
-<h2>四、七大核心元素：本系列的地圖</h2>
+<h2 id="bt-s4">四、七大核心元素：本系列的地圖</h2>
 <p>指引把整個評估流程濃縮成 <strong>CORE 1–7</strong> 七大元素（Figure 1），本系列接下來六篇將逐一展開：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>CORE</th><th>內容</th><th>本系列對應</th></tr></thead>
@@ -148,7 +168,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>CORE 7</td><td>診斷溝通與照護計畫</td><td>第⑦篇</td></tr>
 </tbody></table></div>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s5">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>指引重點</th></tr></thead>
 <tbody>
@@ -166,7 +186,7 @@ article, article *{overflow-wrap:break-word}
 <p>給基層醫師的一句話：<strong>你不需要等到確定病因才開始評估，你只需要願意啟動評估。</strong> 後續六篇，我們一步步把這個流程拆解成你診間就能做的事。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s6">參考文獻</h2>
 <ol>
 <li>Atri A, Dickerson BC, Clevenger C, et al. Alzheimer's Association clinical practice guideline for the Diagnostic Evaluation, Testing, Counseling, and Disclosure of Suspected Alzheimer's Disease and Related Disorders (DETeCD-ADRD): Executive summary of recommendations for primary care. <em>Alzheimer's Dement</em>. 2025;21:e14333. doi:10.1002/alz.14333</li>
 <li>Alzheimer's Association. 2024 Alzheimer's Disease Facts and Figures. <em>Alzheimer's Dement</em>. 2024.</li>

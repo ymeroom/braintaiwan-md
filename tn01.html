@@ -72,6 +72,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/tn01.html">
 </head>
@@ -90,11 +109,12 @@ article, article *{overflow-wrap:break-word}
 <main>
   <div class="series-nav"><a href="tn01.html" class="series-link active">① 臨床困境與分類</a><a href="tn02.html" class="series-link">② 痛覺傳遞的 3D 迴路</a><a href="tn03.html" class="series-link">③ 離子通道微觀戰場</a><a href="tn04.html" class="series-link">④ 神經免疫與表觀遺傳</a><a href="tn05.html" class="series-link">⑤ 藥物進展與未來</a></div>
   <article class="article">
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">臨床診斷與 ICHD-3 分類矩陣</a></li><li><a href="#bt-s2">藥物治療的瓶頸：「療效衰退」的真相</a></li><li><a href="#bt-s3">為什麼我們需要深挖基礎機轉？</a></li></ol></details><!-- bt-toc:end -->
 <h1>三叉神經痛導讀 ①：從臨床困境到分類挑戰</h1>
 <blockquote>
 <p><strong>系列導讀．第 1 篇</strong> 被稱為「人類已知最痛疾病」的三叉神經痛 (TN)，其瞬間如電擊、刀割般的劇痛，對患者的身心造成毀滅性的打擊。然而，面對這種極端疼痛，第一線藥物往往在數年後出現「療效衰退」，迫使我們必須重新審視其臨床分類與底層機轉。</p>
 </blockquote>
-<h2>臨床診斷與 ICHD-3 分類矩陣</h2>
+<h2 id="bt-s1">臨床診斷與 ICHD-3 分類矩陣</h2>
 <p>根據國際頭痛學會 (IHS) 第三版分類 (ICHD-3)，三叉神經痛並非單一疾病，而是由不同病因所構成的症候群，精確的分類決定了後續的治療路徑：</p>
 <ol>
 <li><strong>經典型三叉神經痛 (Classical TN)</strong>：這是最常見的類型，核心病因為三叉神經根進入區 (root entry zone, REZ) 受到神經血管壓迫 (neurovascular compression)，並伴隨神經形態學的改變（如局部去髓鞘）。</li>
@@ -102,7 +122,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>特發性三叉神經痛 (Idiopathic TN)</strong>：在現有影像學與檢查技術下，找不到明確病因的個案。</li>
 <li><strong>家族性三叉神經痛 (Familial TN)</strong>：雖然未獨立列於 ICHD-3 的主分類中，但越來越多證據顯示，某些呈現散發性特徵的個案，實際上帶有特定的基因突變（如 <em>GABRG1</em> 或 <em>CACNA1G</em>）。</li>
 </ol>
-<h2>藥物治療的瓶頸：「療效衰退」的真相</h2>
+<h2 id="bt-s2">藥物治療的瓶頸：「療效衰退」的真相</h2>
 <p>藥物治療始終是 TN 的基石。第一線藥物 Carbamazepine (CBZ) 與 Oxcarbazepine (OXC) 透過阻斷電壓門控鈉離子通道 (VGSCs)，能迅速壓制神經的異常高頻放電，初期對 70%~90% 的患者具有極佳療效。</p>
 <p>然而，臨床醫師面臨的最大夢魘是<strong>「療效衰退 (loss of efficacy)」</strong>：大約 50% 的患者在服藥 5 到 10 年後，會發現藥物逐漸失效。</p>
 <p>面對這種衰退，我們必須釐清它究竟是「藥代動力學耐受性 (pharmacokinetic tolerance)」還是「真實的藥效學抗藥性 (pharmacodynamic resistance)」：</p>
@@ -111,7 +131,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>疾病進展與神經重塑</strong>：如果排除血中濃度不足，真正的藥效學抗藥性往往暗示著神經根的局部微環境發生了惡化（例如進一步的去髓鞘化），或是中樞痛覺傳遞迴路產生了不可逆的塑性變化。</li>
 </ul>
 <p>此外，劑量依賴性的副作用（如暈眩、嗜睡、低血鈉、肝功能異常與骨髓抑制）進一步限縮了加藥的空間。當第一線藥物撞牆，而二線藥物（如 Gabapentin, Pregabalin, Lamotrigine）只能作為輔助時，患者便不得不面臨手術的抉擇。</p>
-<h2>為什麼我們需要深挖基礎機轉？</h2>
+<h2 id="bt-s3">為什麼我們需要深挖基礎機轉？</h2>
 <p>雖然微血管減壓術 (MVD) 對於經典型 TN 是目前唯一能提供長期療效的治癒性手段，但開顱手術對患者體力要求高；而其他破壞性介入（如射頻燒灼、氣球壓迫、甘油注射）則不可避免地伴隨臉部麻木或角膜感覺喪失的風險。</p>
 <p>這正是為什麼 2026 年的神經科學界，正全力將視角轉向動物模型與分子靶點。研究指出，TN 的病理機制早已超越了單純的「神經根壓迫與去髓鞘」，它牽涉到多個腦區的情緒/痛覺共病迴路、特定離子通道的異常表達，以及神經膠質細胞的發炎對話。在下一篇文章中，我們將為您拆解這套複雜的 3D 痛覺傳遞迴路。</p>
 <hr>

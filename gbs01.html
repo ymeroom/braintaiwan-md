@@ -66,6 +66,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/gbs01.html">
 </head>
@@ -88,17 +107,18 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 1 篇</strong>　以 EAN/PNS 2023 指引的『分類與臨床診斷準則』、Table 1、Figure 1 與 PICO 1（前驅事件）為主軸 格林-巴利症候群（Guillain-Barré syndrome, GBS）是一種急性的多神經根神經病，從腳開始、一路往上爬的無力，常常在不到兩週內就把一個原本好好的人推到輪椅甚至呼吸器旁邊。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 7 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、免疫系統認錯人了：機轉怎麼回事</a></li><li><a href="#bt-s2">二、診斷的三根支柱：缺一不可</a></li><li><a href="#bt-s3">三、加分題與扣分題：支持與不利診斷的線索</a></li><li><a href="#bt-s4">四、GBS 是一個光譜，不是一個長相</a></li><li><a href="#bt-s5">五、PICO 1：問一句「最近有沒有拉肚子」</a></li><li><a href="#bt-s6">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>一個前一週還在拉肚子、這週開始覺得腳底發麻、走路像踩棉花的人，幾天後爬不上樓梯，再幾天連手都舉不太起來——這條「從遠端往近端爬、而且愈爬愈快」的時間線，就是 GBS 最典型的長相。它是急性軟癱（acute flaccid paralysis）最常見的原因，全球年發生率大約每十萬人 1 到 2 例，全世界一年約有十萬人發病。發生率會隨年齡上升，在 50 到 70 歲之間達到高峰，男性大約是女性的 1.5 倍。</p>
 <p>它不挑年齡，小孩也會得，只是在學齡前兒童身上因為表現不典型、又加上疼痛和罕見，特別容易被延誤。</p>
 <hr>
-<h2>一、免疫系統認錯人了：機轉怎麼回事</h2>
+<h2 id="bt-s1">一、免疫系統認錯人了：機轉怎麼回事</h2>
 <p>要理解 GBS，可以從一場「認錯臉」的烏龍說起。</p>
 <p>很多 GBS 病人發病前幾週感染過彎曲桿菌（<em>Campylobacter jejuni</em>，常見的腹瀉病原）。免疫系統為了打這隻細菌，做出了一批抗體；偏偏這隻細菌外殼上的某些醣分子，長得跟我們自己神經上的「神經節苷脂」（ganglioside，像 GM1、GD1a 這類分子）幾乎一模一樣。於是抗體打完細菌，回頭一看，把神經當成了同夥的敵人——這叫<strong>交叉反應（cross-reactivity）</strong>。</p>
 <p>這批認錯人的抗體，會結合到神經訊號傳遞最關鍵的兩個位置：<strong>蘭氏節（node of Ranvier）</strong>和<strong>運動神經末梢</strong>。蘭氏節是有髓鞘神經上一個個裸露的小缺口，鈉離子通道密密麻麻聚在這裡，電訊號靠著在這些節點間「跳著走」才能跑得又快又省力。抗體一旦黏上去，會把補體系統（complement）叫來、把原本排得整整齊齊的鈉離子通道叢集打散——通道一散，這個節點就沒辦法產生足夠的電流把訊號推到下一站，於是<strong>傳導失敗</strong>，力量與感覺就在這裡漏掉了。</p>
 <p>值得記住的一條對應關係：<em>C. jejuni</em> 特別關聯到<strong>純運動型（AMAN，acute motor axonal neuropathy）</strong>，而且通常<strong>預後較差</strong>。後面講治療與預後時還會回到這條線索。</p>
 <hr>
-<h2>二、診斷的三根支柱：缺一不可</h2>
+<h2 id="bt-s2">二、診斷的三根支柱：缺一不可</h2>
 <p>指引把運動感覺型或純運動型 GBS 的診斷，立在三個<strong>必要條件</strong>上（Table 1）：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>必要條件</th><th>白話</th></tr></thead>
@@ -110,7 +130,7 @@ article, article *{overflow-wrap:break-word}
 <p>第三條是最容易被忽略、卻最關鍵的一條。GBS 是「急性」的病：大型研究顯示多數病人在 2 週內惡化到谷底，幾乎不曾超過 4 週。這個 4 週的天花板不是隨便定的——它正是用來<strong>把 GBS 和 CIDP（慢性發炎性脫髓鞘多發性神經根神經病）這類慢性神經病分家</strong>的界線。如果一個人惡化超過 8 週還沒停，那他可能根本不是 GBS，而是急性起病的 CIDP（A-CIDP），這群人約佔最初診斷為 GBS 者的 5%，治療方向完全不同。</p>
 <p>要注意：第三條只有在「知道惡化持續多久」時才適用，而病人剛被送進來時，往往還不知道病程會走多遠。</p>
 <hr>
-<h2>三、加分題與扣分題：支持與不利診斷的線索</h2>
+<h2 id="bt-s3">三、加分題與扣分題：支持與不利診斷的線索</h2>
 <p>三根支柱之外，指引列了一串能<strong>增加診斷信心</strong>的特徵，可以把它們想成加分題：</p>
 <ul>
 <li>相對對稱（兩側差不多）</li>
@@ -132,7 +152,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>這兩張清單合起來，就是臨床上把 GBS 從一堆模仿者裡撈出來的篩網。</p>
 <hr>
-<h2>四、GBS 是一個光譜，不是一個長相</h2>
+<h2 id="bt-s4">四、GBS 是一個光譜，不是一個長相</h2>
 <p>GBS 最容易讓人誤會的地方，是以為它只有「四肢無力」一種臉。實際上它是一整個光譜（Figure 1），不同型在地理上分布還不一樣：</p>
 <ul>
 <li><strong>運動感覺型</strong>：又有無力又有感覺症狀，歐美最常見。</li>
@@ -143,12 +163,12 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>光譜這個概念之所以重要，是因為臨床上真正棘手的，往往不是課本上那個從腳麻到手的標準案例，而是這些只打半套、缺幾個特徵的變異型。</p>
 <hr>
-<h2>五、PICO 1：問一句「最近有沒有拉肚子」</h2>
+<h2 id="bt-s5">五、PICO 1：問一句「最近有沒有拉肚子」</h2>
 <p>指引的第一個臨床問題（PICO 1）談的是<strong>前驅事件</strong>——值不值得花力氣去問病人發病前發生過什麼。</p>
 <p>答案是值得。近 6 週內的腹瀉、呼吸道感染或發燒，都可以支持 GBS 的診斷。這裡有個檢測學上的細節要懂：以腹瀉來說，它的<strong>特異度很高（89%–100%）、但敏感度很低（13%–18%）</strong>。白話講就是——「有拉過肚子」這件事很能幫你把診斷坐實（因為其他病不太會有這段故事），但「沒拉過肚子」完全不能用來排除 GBS，因為大約有<strong>三分之一</strong>的病人根本沒有任何前驅事件。</p>
 <p>至於疫苗，這是門診常被問、也最容易被誤解的一塊。確實有少數疫苗（流感、帶狀皰疹、腺病毒載體的 COVID 疫苗）被報告過極小幅度增加 GBS 風險——以季節流感疫苗為例，大約是每打一百萬劑多出一例。但指引講得很清楚：<strong>疫苗帶來的效益遠遠大於這個極小的風險</strong>，而且疫苗所預防的感染（包括感染本身誘發的 GBS），危害比疫苗高得多。實務上，遇到一個 GBS 病人，「最近有打疫苗」這條病史對診斷的份量幾乎可以忽略。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s6">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>

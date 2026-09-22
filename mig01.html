@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/mig01.html">
 </head>
@@ -97,11 +116,12 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 1 篇</strong>　台灣頭痛學會於 2022 年更新《偏頭痛預防性治療準則》，距上一版（2017）相隔五年，最大的變化是把 <strong>CGRP 單株抗體</strong> 正式納入主流選項。本系列五篇依臨床思路拆解這份指引：先談「何時該開始、目標與原則」，再分別走過第一線口服藥、第二線與其他口服選擇、CGRP 單株抗體，最後收在慢性偏頭痛、肉毒桿菌素與特殊族群。首篇談一個比「用哪支藥」更前面、也更常被跳過的問題——<strong>這位病人到底需不需要開始預防？</strong></p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、什麼時候該開始預防？符合任一項即可評估</a></li><li><a href="#bt-s2">二、治療的目標：不是「斷根」，而是「拉低」</a></li><li><a href="#bt-s3">三、用藥的基本原則：start low, go slow</a></li><li><a href="#bt-s4">四、用頭痛日記來「客觀地」評估療效</a></li><li><a href="#bt-s5">五、要吃多久？穩定後何時漸減</a></li><li><a href="#bt-s6">六、別忘了：教育病人「不要過度使用急性藥」</a></li><li><a href="#bt-s7">臨床要點摘要</a></li><li><a href="#bt-s8">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>偏頭痛是全球第二大失能疾病，在 15–49 歲的年輕女性更高居失能原因之首。台灣的流行病學調查顯示，約 <strong>14.4% 女性、4.5% 男性</strong> 患有偏頭痛，其中 3.2% 屬於慢性、幾乎每天頭痛。然而國際資料指出，<strong>約 38% 的偏頭痛患者「需要」預防性治療，實際上卻只有 3–13% 真正接受</strong>——這個落差，正是這份指引想補上的缺口。</p>
 <p>急性止痛只處理「這一次發作」；預防性治療的目標，是<strong>從源頭把發作的頻率、強度與失能拉下來</strong>，並減少急性藥物用量、避免演變成藥物過度使用頭痛。這一篇先把「開始的時機、評估的方法、停藥的時機」說清楚。</p>
 <hr>
-<h2>一、什麼時候該開始預防？符合任一項即可評估</h2>
+<h2 id="bt-s1">一、什麼時候該開始預防？符合任一項即可評估</h2>
 <p>指引明列，當患者出現以下情形（<strong>任一項</strong>）時，就應評估是否開始預防性治療：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>啟動指標</th><th>說明</th></tr></thead>
@@ -113,7 +133,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>最後一類特別重要：<strong>偏癱型、腦幹先兆、長時間先兆</strong>這類「複雜型」偏頭痛，因為可能造成嚴重或不可逆的神經事件，即使發作不頻繁，也應積極考慮預防。</p>
 <hr>
-<h2>二、治療的目標：不是「斷根」，而是「拉低」</h2>
+<h2 id="bt-s2">二、治療的目標：不是「斷根」，而是「拉低」</h2>
 <p>預防性治療有效的常見定義是：<strong>每月發作天數相較治療前明顯減少</strong>，臨床上常用的門檻是——</p>
 <ul>
 <li>每月頭痛天數（或發作次數）<strong>減少一半以上（≥ 50%）</strong>；</li>
@@ -122,7 +142,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>美國的研究指出，有效的預防治療可降低 50% 以上的發作頻率，並大幅減少急診就診、影像檢查與住院。<strong>「完全不痛」不是務實的目標；把生活搶回來，才是。</strong></p>
 <hr>
-<h2>三、用藥的基本原則：start low, go slow</h2>
+<h2 id="bt-s3">三、用藥的基本原則：start low, go slow</h2>
 <p>口服預防藥的核心原則只有一句話——<strong>「低劑量起始、緩慢增加」（start low and go slow）</strong>：</p>
 <ul>
 <li>從低劑量開始，依耐受度逐步往上調，邊調邊監測副作用；</li>
@@ -130,7 +150,7 @@ article, article *{overflow-wrap:break-word}
 <li>多數口服藥需要 <strong>2–3 個月</strong> 才能評估真正療效，<strong>不要太早因為「沒效」而換藥或停藥</strong>。</li>
 </ul>
 <hr>
-<h2>四、用頭痛日記來「客觀地」評估療效</h2>
+<h2 id="bt-s4">四、用頭痛日記來「客觀地」評估療效</h2>
 <p>療效不能憑印象，要靠紀錄。指引建議：</p>
 <ul>
 <li>治療期間請患者持續記錄<strong>頭痛日記</strong>（每月頭痛天數、發作強度、急性藥物用量），作為療效指標；</li>
@@ -138,7 +158,7 @@ article, article *{overflow-wrap:break-word}
 <li>對單一藥物反應不理想者，可考慮<strong>合併使用一種以上預防藥</strong>，或藥物加上非藥物策略。</li>
 </ul>
 <hr>
-<h2>五、要吃多久？穩定後何時漸減</h2>
+<h2 id="bt-s5">五、要吃多久？穩定後何時漸減</h2>
 <p>預防治療不是吃一輩子。指引綜合 PROMPT 等研究與專家意見給出時間框架：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>類型</th><th>持續預防後評估漸減的時機</th></tr></thead>
@@ -148,10 +168,10 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>要提醒的是：停藥後頭痛頻率「可能」回升，但通常<strong>不會回到治療前的程度</strong>。因此「療效好就趕快停」並不可取，<strong>漸減要慢、要在穩定一段時間之後</strong>。</p>
 <hr>
-<h2>六、別忘了：教育病人「不要過度使用急性藥」</h2>
+<h2 id="bt-s6">六、別忘了：教育病人「不要過度使用急性藥」</h2>
 <p>這是貫穿整份指引、卻最容易被忽略的一條：<strong>對所有偏頭痛患者，都要衛教避免過度使用急性止痛藥</strong>。急性藥物用太勤（例如單方止痛藥每月 ≥ 15 天、複方或翠普登每月 ≥ 10 天）會造成<strong>藥物過度使用頭痛（MOH）</strong>，讓預防治療事倍功半。<strong>有時候，先把急性藥減下來，頭痛反而會變好。</strong></p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s7">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>2022 台灣指引重點</th></tr></thead>
 <tbody>
@@ -170,7 +190,7 @@ article, article *{overflow-wrap:break-word}
 <p>「start low, go slow」這六個字，配上一本願意好好記的頭痛日記，往往就決定了一次預防治療的成敗。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s8">參考文獻</h2>
 <ol>
 <li>Wu JW, Yang CP, and the Treatment Guideline Subcommittee of the Taiwan Headache Society. 2022 Taiwan Guidelines for Preventive Treatment of Migraine. <em>Acta Neurol Taiwan</em> 2022;31:164-202.</li>
 <li>Lipton RB, Bigal ME, Diamond M, et al. Migraine prevalence, disease burden, and the need for preventive therapy. <em>Neurology</em> 2007;68:343-349.</li>

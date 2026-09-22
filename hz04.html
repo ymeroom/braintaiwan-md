@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/hz04.html">
 </head>
@@ -97,17 +116,18 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 4 篇</strong>　帶狀皰疹大多自限，但併發症從皮膚到中樞神經都有，其中數個是不能漏的急症。本篇把併發症分皮膚、眼、神經三層整理，特別著墨神經科最該掌握的：眼帶狀皰疹、Ramsay Hunt、以及 VZV 血管病變。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、皮膚併發症</a></li><li><a href="#bt-s2">二、眼帶狀皰疹（Herpes Zoster Ophthalmicus, HZO）</a></li><li><a href="#bt-s3">三、Ramsay Hunt 症候群（herpes zoster oticus）</a></li><li><a href="#bt-s4">四、神經學併發症：神經科的主戰場</a></li><li><a href="#bt-s5">五、哪些情況要住院／升級處置？</a></li><li><a href="#bt-s6">臨床要點摘要</a></li><li><a href="#bt-s7">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>帶狀皰疹的併發症，輕者皮膚結疤，重者中風、失明、顏面癱瘓。神經科醫師要有的雷達，是辨認那幾個「看似皮膚病、其實是神經急症」的型態。</p>
 <hr>
-<h2>一、皮膚併發症</h2>
+<h2 id="bt-s1">一、皮膚併發症</h2>
 <ul>
 <li><strong>續發細菌感染</strong>（金黃色葡萄球菌、鏈球菌）：膿、紅、痛加劇、發燒——需抗生素</li>
 <li><strong>疤痕與色素變化</strong></li>
 <li><strong>播散性帶狀皰疹</strong>：原發外 &gt;20 顆病灶，常見於免疫低下，可累及內臟（肺炎、肝炎、腦炎），屬重症</li>
 </ul>
 <hr>
-<h2>二、眼帶狀皰疹（Herpes Zoster Ophthalmicus, HZO）</h2>
+<h2 id="bt-s2">二、眼帶狀皰疹（Herpes Zoster Ophthalmicus, HZO）</h2>
 <p>三叉神經<strong>第一分支（V1）</strong>受侵，佔帶狀皰疹約 10–20%，<strong>可致永久視力損害</strong>。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>重點</th><th>內容</th></tr></thead>
@@ -120,7 +140,7 @@ article, article *{overflow-wrap:break-word}
 <p>看到 V1 帶狀皰疹、尤其鼻尖有疹（Hutchinson 徵象），一律當眼科急症處理。</p>
 </blockquote>
 <hr>
-<h2>三、Ramsay Hunt 症候群（herpes zoster oticus）</h2>
+<h2 id="bt-s3">三、Ramsay Hunt 症候群（herpes zoster oticus）</h2>
 <p>VZV 於<strong>膝狀神經節（geniculate ganglion）</strong>活化，是貝爾氏麻痺以外重要的周邊顏面神經麻痺原因。</p>
 <ul>
 <li><strong>三聯徵</strong>：耳痛 ＋ 外耳道／耳廓水疱 ＋ <strong>同側周邊型顏面神經麻痺</strong></li>
@@ -132,7 +152,7 @@ article, article *{overflow-wrap:break-word}
 <p>臨床陷阱：顏面麻痺別一律當貝爾氏麻痺。<strong>檢查耳道與耳廓有沒有水疱</strong>，有就是 Ramsay Hunt，治療策略與預後告知都不同。另注意 zoster sine herpete 也可造成無疹型顏面麻痺。</p>
 </blockquote>
 <hr>
-<h2>四、神經學併發症：神經科的主戰場</h2>
+<h2 id="bt-s4">四、神經學併發症：神經科的主戰場</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>併發症</th><th>重點</th></tr></thead>
 <tbody>
@@ -155,7 +175,7 @@ article, article *{overflow-wrap:break-word}
 <p>神經科心法：年長或免疫低下患者<strong>近期有帶狀皰疹（尤其 HZO）後出現腦中風或 TIA</strong>，要把 VZV 血管病變放進病因鑑別，並考慮查腦脊髓液 VZV IgG，而不是只當成一般動脈硬化性中風。</p>
 </blockquote>
 <hr>
-<h2>五、哪些情況要住院／升級處置？</h2>
+<h2 id="bt-s5">五、哪些情況要住院／升級處置？</h2>
 <ul>
 <li>播散性帶狀皰疹、內臟侵犯</li>
 <li>腦炎、脊髓炎、VZV 血管病變</li>
@@ -164,7 +184,7 @@ article, article *{overflow-wrap:break-word}
 <li>上述多需<strong>靜脈 aciclovir</strong>、影像與腦脊髓液評估、跨科照會</li>
 </ul>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s6">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>併發症</th><th>一句話重點</th></tr></thead>
 <tbody>
@@ -183,7 +203,7 @@ article, article *{overflow-wrap:break-word}
 <p>帶狀皰疹從來不只是皮膚科的事。把神經併發症的雷達打開，是神經科醫師在這個病能提供的最大價值。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s7">參考文獻</h2>
 <ol>
 <li>Nagel MA, Gilden D. The relationship between herpes zoster and stroke. <em>Curr Neurol Neurosci Rep</em>. 2015;15(4):16.</li>
 <li>Gilden D, et al. Neurological disease produced by varicella zoster virus reactivation without rash. <em>Curr Top Microbiol Immunol</em>. 2010;342:243-253.</li>

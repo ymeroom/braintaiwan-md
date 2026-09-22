@@ -77,6 +77,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/fab04.html">
 </head>
@@ -99,10 +118,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 4 篇</strong>　根據 Germain 等人 2022 classic Fabry disease 專家共識 Germain DP, Altarescu G, Barriales-Villa R, et al. <em>Mol Genet Metab</em> 2022;137(1-2):49-61</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 3 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、腎臟侵犯：albuminuria 是最早的警報</a></li><li><a href="#bt-s2">二、腦血管侵犯：可能是疾病的第一個嚴重表現</a></li><li><a href="#bt-s3">三、Brain MRI 監測時程</a></li><li><a href="#bt-s4">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>對神經科醫師而言，腦血管侵犯是 Fabry 最切身的戰場——它可能是疾病的<strong>第一個嚴重表現</strong>。而腎病變不只本身致命，更會<strong>把中風風險再放大數倍</strong>。本篇把腎與腦兩條路徑放在一起談，因為它們在 Fabry 裡互相牽動。</p>
 <hr>
-<h2>一、腎臟侵犯：albuminuria 是最早的警報</h2>
+<h2 id="bt-s1">一、腎臟侵犯：albuminuria 是最早的警報</h2>
 <p>在男性 classic 患者，<strong>病理性白蛋白尿</strong>（尿白蛋白／肌酸酐比 UACR &gt; 30 mg/g、持續 &gt; 3 個月即符合 CKD）通常在<strong>二、三十歲</strong>出現，是腎病進展的獨立危險因子（治療與否皆然）。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>指標</th><th>重點</th></tr></thead>
@@ -121,7 +141,7 @@ article, article *{overflow-wrap:break-word}
 <p>提醒：在沒有疾病特異性治療下，男性（與少數進展的女性）約於<strong>中位年齡 38 歲</strong>就會 eGFR &lt; 10、需要腎臟替代治療。</p>
 </blockquote>
 <hr>
-<h2>二、腦血管侵犯：可能是疾病的第一個嚴重表現</h2>
+<h2 id="bt-s2">二、腦血管侵犯：可能是疾病的第一個嚴重表現</h2>
 <p>Fabry 的血管病變造成的腦血管併發症，是男女兩性的致病與早逝原因。臨床表現包括：</p>
 <ul>
 <li>短暫性腦缺血（TIA）與中風</li>
@@ -138,7 +158,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>ERT 與 BBB</td><td>ERT <strong>不通過血腦障壁</strong>，但仍應確診後儘早啟動，以延緩可導致中風的腎、心、腦血管進展</td></tr>
 </tbody></table></div>
 <hr>
-<h2>三、Brain MRI 監測時程</h2>
+<h2 id="bt-s3">三、Brain MRI 監測時程</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>對象</th><th>首次評估</th><th>之後</th></tr></thead>
 <tbody>
@@ -147,7 +167,7 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>腦 MRI 有助辨識白質高訊號與腦微出血等腦血管變化。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s4">臨床要點摘要</h2>
 <ul>
 <li><strong>Albuminuria（UACR）是最早的腎損傷標記</strong>，優於 proteinuria；以對肌酸酐比值表示</li>
 <li>拖到蛋白尿／明顯侵犯才治療，腎損傷難逆轉 → 早治療</li>

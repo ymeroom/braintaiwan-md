@@ -75,6 +75,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/trep01.html">
 </head>
@@ -97,7 +116,8 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 01 篇</strong>　這是 2018 年 AAN／AES 指引更新的姊妹篇——上一個系列處理「新診斷癲癇該用什麼藥」，這一篇處理的是完全不同的族群：已經試過藥、癲癇仍反覆發作的<strong>難治性（treatment-resistant, TR）</strong>病人。指引審查了 2003 年 1 月到 2015 年 11 月間、針對 8 個新藥的 42 篇研究，這一篇先看範圍怎麼定，再看兩個證據做得最完整的加藥選擇：pregabalin 與 lacosamide。</p>
 </blockquote>
-<h2>2004 年留下的框架，這次補了 8 個新藥</h2>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">2004 年留下的框架，這次補了 8 個新藥</a></li><li><a href="#bt-s2">Pregabalin：劑量反應清楚，但控釋劑型沒有跟上</a></li><li><a href="#bt-s3">Lacosamide：兩個劑量都有效，但起始劑量的教訓一樣</a></li><li><a href="#bt-s4">這兩個藥在整份指引裡的位置</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s1">2004 年留下的框架，這次補了 8 個新藥</h2>
 <p>2004 年 AAN 與 AES 發布過兩份指引：一份談 felbamate，一份談 8 種第二代抗癲癇藥。那份指引當年的 Level A／B 結論可以整理成一張表——留意欄位是「有沒有證據」，不是「效果多好」：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>抗癲癇藥</th><th>成人局部加藥</th><th>局部單一治療</th><th>IGE</th><th>LGS</th><th>兒童局部加藥</th></tr></thead>
@@ -125,7 +145,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>Vigabatrin</td><td>使 GABA 轉胺酶失活</td></tr>
 </tbody></table></div>
 <p>文獻搜尋止於 2015 年 11 月，之後核准的 brivaracetam 與 perampanel 新增的原發性全般性強直陣攣適應症都沒有納入——不是被忽略，是 AAN 指引流程規定搜尋期之後的文獻不能補進同一版系統性回顧。指引發展小組委員會 2015 年 7 月 18 日通過，實務委員會同年 12 月 2 日通過，AES 理事會 2018 年 1 月 16 日通過，AAN 理事會 2018 年 4 月 18 日通過——證據截止到正式問世，中間隔了兩年半。</p>
-<h2>Pregabalin：劑量反應清楚，但控釋劑型沒有跟上</h2>
+<h2 id="bt-s2">Pregabalin：劑量反應清楚，但控釋劑型沒有跟上</h2>
 <p>Pregabalin 免釋劑型（PGB-IR）有 2 篇 Class I、2 篇 Class II 研究，控釋劑型（PGB-CR）有 1 篇 Class I 研究。</p>
 <p>PGB-IR 在 150、300、600 mg/d 三個劑量都顯著優於安慰劑，responder rate（發作減少 ≥50% 的病人比例）與中位數發作減少幅度都隨劑量上升。最常見的不良反應是頭暈與嗜睡，且隨劑量增加而更常見。</p>
 <p>PGB-CR 的故事完全不同：1 篇 Class I 研究比較安慰劑與 165、330 mg/d 兩個劑量的 PGB-CR，<strong>三組結果沒有差異</strong>。不良反應與退出率在高劑量組較高，形狀跟 PGB-IR 的試驗相似，只是這次連藥效都沒有顯著跑出來。</p>
@@ -135,11 +155,11 @@ article, article *{overflow-wrap:break-word}
 </blockquote>
 <h3>結論與臨床脈絡</h3>
 <p>PGB-IR 作為難治性成人局部癲癇（TRAFE）的加藥治療確立有效（2 篇 Class I 研究）；PGB-CR 可能無效（1 篇 Class I 研究）。試驗起始劑量普遍高於臨床常用的 25–50 mg/d，這可能是不良反應發生率偏高的原因之一。</p>
-<h2>Lacosamide：兩個劑量都有效，但起始劑量的教訓一樣</h2>
+<h2 id="bt-s3">Lacosamide：兩個劑量都有效，但起始劑量的教訓一樣</h2>
 <p>Lacosamide（LCM）與安慰劑比較的研究有 1 篇 Class I、2 篇 Class II。400 與 600 mg/d 兩個劑量的 responder rate 與中位數發作減少幅度都顯著優於安慰劑；其中 1 篇 Class II 研究顯示 600 mg/d 對續發性全般性強直陣攣發作的減少幅度更大。不良反應在 Class I 研究裡是複視、眩暈、嘔吐，在 2 篇 Class II 研究裡是頭暈、噁心、疲倦、共濟失調、複視、眼球震顫；因不良反應而停藥的比例沒有一致地隨劑量上升。另外有 1 篇 Class III 研究評估針劑（靜脈）劑型，最常見不良反應是頭痛、頭暈、嗜睡，且在 &gt;400 mg/d 時更頻繁。</p>
 <h3>結論與臨床脈絡</h3>
 <p>LCM 很可能作為難治性成人局部癲癇的加藥治療有效（1 篇 Class I 研究）。試驗起始劑量（400–600 mg/d）高於臨床常用起始劑量（50–100 mg/d），可能墊高了不良反應發生率。彙整分析顯示，當 LCM 與其他作用於鈉通道的藥物併用時，頭暈的發生率是單獨使用的兩倍——這是選藥時值得記住的交互作用線索。</p>
-<h2>這兩個藥在整份指引裡的位置</h2>
+<h2 id="bt-s4">這兩個藥在整份指引裡的位置</h2>
 <p>Pregabalin（免釋）與 lacosamide 都通過了難治性成人局部癲癇加藥治療的檢驗，但證據強度不同：PGB-IR 有 2 篇 Class I 研究撐起 <strong>Level A</strong>（確立有效），LCM 只有 1 篇 Class I 撐起 <strong>Level B</strong>（很可能有效）。下一篇要談的是兩個同樣拿到 Level A、但指引明講「不建議當第一線」的藥——這組矛盾比 PGB 與 LCM 的故事更值得停下來想一想。</p>
 <p><strong>主要來源</strong></p>
 <p>Kanner AM, Ashman E, Gloss D, et al. Practice guideline update summary: Efficacy and tolerability of the new antiepileptic drugs II: Treatment-resistant epilepsy. <em>Epilepsy Currents</em>. 2018;18(4):269–278.</p>

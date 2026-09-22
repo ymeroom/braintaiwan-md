@@ -77,6 +77,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/cidp01.html">
 </head>
@@ -99,15 +118,16 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 1 篇</strong>　以 EAN/PNS 2021 指引與 van Doorn 2024、Kiers 2025 兩篇綜述為主軸 慢性發炎性脫髓鞘多發性神經根神經病（chronic inflammatory demyelinating polyradiculoneuropathy, CIDP）是少數「會進展、卻也治得動」的周邊神經病，但它最有名的不是有藥可醫，而是常常被認錯。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、它到底是什麼</a></li><li><a href="#bt-s2">二、免疫系統是怎麼動手的</a></li><li><a href="#bt-s3">三、為什麼要趕快認出來：軸突一旦死掉就回不來</a></li><li><a href="#bt-s4">四、它有名的不是難醫，是常被認錯</a></li><li><a href="#bt-s5">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>先把名字拆開來看，這個又臭又長的病名其實把整件事講完了。慢性，代表它拖很久、不是幾天的事；發炎、脫髓鞘，代表免疫系統跑去攻擊神經的「外皮」；多發性神經根神經病，代表它打的範圍很廣，從遠端的周邊神經一路打到靠近脊髓的神經根。把這幾個字翻成白話：<strong>你的免疫系統，正在慢慢地把神經這條電線的絕緣外皮一段一段剝掉。</strong></p>
 <p>絕緣外皮就是髓鞘（myelin）。神經訊號本來靠髓鞘讓電脈衝「跳著走」，跑得又快又省力；外皮被剝掉一段，訊號到那裡就卡住、變慢，甚至傳不過去。手腳的力量與感覺，就是這樣一點一點漏掉的。</p>
 <hr>
-<h2>一、它到底是什麼</h2>
+<h2 id="bt-s1">一、它到底是什麼</h2>
 <p>CIDP 是一群<strong>免疫媒介（immune-mediated）的周邊神經病</strong>的總稱，特徵是進展性、單相或反覆緩解復發的運動與感覺神經病變，同時侵犯周邊神經與神經根。發生率大約是每十萬人 0.5 到 3.3 例，會隨年齡上升，男性略多。</p>
 <p>它最關鍵的一句定位是：<strong>CIDP 不是一個界線清楚的單一疾病，而是一個光譜。</strong>這個觀念近年愈來愈被接受——它跟自體免疫結性神經病、多灶性運動神經病、單株球蛋白相關神經病這些鄰居共用「自體免疫攻擊周邊神經」這個底色，彼此邊界模糊，這也是後面好幾篇要反覆處理的麻煩來源。</p>
 <hr>
-<h2>二、免疫系統是怎麼動手的</h2>
+<h2 id="bt-s2">二、免疫系統是怎麼動手的</h2>
 <p>機轉到現在還沒完全解開，連「免疫系統一開始為什麼抓狂、攻擊的標靶抗原是什麼」在多數病人身上都還是個謎。但大致的劇情是這樣：</p>
 <ul>
 <li>抗原呈現細胞把某個（多半不明的）標靶拿給自體反應性的 T 細胞看，T 細胞被活化、釋出發炎介質</li>
@@ -116,7 +136,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>換句話說，這是一場<strong>細胞免疫與體液免疫一起上、補體幫忙收尾</strong>的混戰。記住「補體會參一腳」這件事，因為第 10 篇講新藥時，補體抑制劑就是衝著這一步來的。</p>
 <hr>
-<h2>三、為什麼要趕快認出來：軸突一旦死掉就回不來</h2>
+<h2 id="bt-s3">三、為什麼要趕快認出來：軸突一旦死掉就回不來</h2>
 <p>髓鞘被剝掉，只要外皮重新長回來，功能還救得回來。真正的麻煩是拖久了之後，發炎會從「剝外皮」惡化成「傷到電線本體」——也就是<strong>軸突損傷（axonal damage）</strong>。</p>
 <p>軸突死掉，是不可逆的。它對應的是永久性的無力與失能。所以 CIDP 的時間壓力不在於它致命，而在於：</p>
 <div class="bt-tablewrap"><table>
@@ -127,12 +147,12 @@ article, article *{overflow-wrap:break-word}
 </tbody></table></div>
 <p>這就是為什麼這個系列花這麼多力氣在「怎麼正確診斷」——不是學術潔癖，而是因為<strong>每拖一個月，可能就多一段救不回來的神經。</strong></p>
 <hr>
-<h2>四、它有名的不是難醫，是常被認錯</h2>
+<h2 id="bt-s4">四、它有名的不是難醫，是常被認錯</h2>
 <p>CIDP 有個很反直覺的特色：高達八成病人對第一線治療有反應，照理說應該很好處理。但臨床上反而充滿了「該治的沒治、不該治的一直治」的故事。</p>
 <p>原因是它沒有專屬的血液生物標記、沒有一槍斃命的檢查，診斷靠的是臨床、神經傳導、再加上一堆輔助線索拼出來的。有研究發現，被轉診來尋求第二意見的「疑似 CIDP」病人，將近一半最後拿到的是別的診斷。更尷尬的是，一群其實被誤診的人接受了免疫治療後，<strong>有 85% 自覺「有變好」</strong>——但那是純主觀感受，沒有任何客觀測量。</p>
 <p>這兩件事合起來，預告了整個系列的兩條主線：<strong>怎麼把 CIDP 跟它的模仿者分開（診斷）</strong>，以及<strong>怎麼用客觀量表確認治療真的有效（評估）</strong>。</p>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s5">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>

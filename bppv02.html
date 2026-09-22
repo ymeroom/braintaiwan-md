@@ -72,6 +72,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/bppv02.html">
 </head>
@@ -90,13 +109,14 @@ article, article *{overflow-wrap:break-word}
 <main>
   <div class="series-nav"><a href="bppv01.html" class="series-link">① 病生理與風險</a><a href="bppv02.html" class="series-link active">② 後半規管 BPPV</a><a href="bppv03.html" class="series-link">③ 水平半規管基本</a><a href="bppv04.html" class="series-link">④ 水平半規管進階</a><a href="bppv05.html" class="series-link">⑤ 前半規管與難治</a></div>
   <article class="article">
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">為什麼總是後半規管？</a></li><li><a href="#bt-s2">診斷的黃金標準與解剖學陷阱</a></li><li><a href="#bt-s3">第一線復位策略：Modified Epley Maneuver 的物理學</a></li><li><a href="#bt-s4">替代手法與殘餘症狀的處理</a></li></ol></details><!-- bt-toc:end -->
 <h1>BPPV（良性陣發性姿勢性眩暈／耳石症）導讀 ②：最常見的後半規管 BPPV (PC-BPPV)</h1>
 <blockquote>
 <p><strong>系列導讀．第 2 篇</strong> 後半規管 (Posterior Canal, PC) 由於其解剖位置處於迷路的最低點，成為游離耳石最容易沉積的「重力陷阱」。掌握 PC-BPPV，不僅是學會操作 Dix-Hallpike 測試與 Epley 復位法，更在於理解每一個動作背後的重力與流體力學轉化。</p>
 </blockquote>
-<h2>為什麼總是後半規管？</h2>
+<h2 id="bt-s1">為什麼總是後半規管？</h2>
 <p>在所有的 BPPV 案例中，後半規管 BPPV 佔據了壓倒性的多數（約 60% 至 90%）。這並非巧合，而是由人類內耳的立體空間配置所決定的。無論人體是處於直立坐姿還是平躺仰臥，後半規管的非壺腹端（non-ampullary arm）始終位於整個膜迷路（membranous labyrinth）的最底端。當耳石從胞囊（utricle）剝落後，如同石子落入水槽般，最容易受重力牽引而滑落並滯留於此。這種重力依賴的解剖學宿命，使得 PC-BPPV 成為臨床上最常需要處理的眩暈急症。患者典型的發作情境，多半發生在床上翻身、躺下、或是彎腰低頭與抬頭仰望時，伴隨著短暫（通常小於 1 分鐘）但極度劇烈的旋轉性眩暈，甚至引發嚴重的噁心與嘔吐。</p>
-<h2>診斷的黃金標準與解剖學陷阱</h2>
+<h2 id="bt-s2">診斷的黃金標準與解剖學陷阱</h2>
 <p><strong>Dix-Hallpike 測試</strong>是確診 PC-BPPV 的絕對主力。這項測試的核心邏輯，是刻意將後半規管置於受重力牽引最劇烈的平面上，藉以誘發耳石滾動。</p>
 <p>當臨床醫師將患者的頭部轉向受測側 45 度，並迅速將其放倒至頭部低於水平面 20 至 30 度的懸垂位置（head-hanging position）時，原本沉積的耳石會向管底（遠離壺腹的方向）移動。根據上一篇提到的 Ewald's Third Law，這種<strong>離壺腹流動（utriculofugal flow）</strong>會產生強烈的興奮性訊號。這股訊號激發了同側的上斜肌與對側的下直肌，進而產生臨床上最具鑑別度的<strong>向受測耳扭轉（torsional）且向上擊性（up-beating）</strong>的眼震。</p>
 <p>然而，在執行這項測試時，有幾個容易被忽略的臨床陷阱：</p>
@@ -104,7 +124,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>潛伏期的耐心</strong>：耳石需要時間克服內淋巴液的黏滯力，因此眼震通常在姿勢改變後的 5 到 20 秒才會出現。在極少數情況下，這段潛伏期甚至可達一分鐘。因此，醫師在測試時必須保持足夠的耐心，不可過早判定為陰性。</li>
 <li><strong>頸椎不穩的禁忌</strong>：對於患有頸椎疾病、嚴重視力障礙或無法耐受快速後仰的年長患者，強行執行 Dix-Hallpike 測試可能帶來頸部損傷的風險。此時，<strong>側躺測試（Side-lying test）</strong>便是極佳的安全替代方案。在此測試中，患者頭部先轉離患側 45 度，然後快速側躺向患側，同樣能將後半規管置於刺激平面，誘發出相同的扭轉上擊性眼震。</li>
 </ol>
-<h2>第一線復位策略：Modified Epley Maneuver 的物理學</h2>
+<h2 id="bt-s3">第一線復位策略：Modified Epley Maneuver 的物理學</h2>
 <p>確診後，<strong>Modified Epley maneuver（改良版 Epley 復位法）</strong>是目前公認首選的治療方式，其單次操作的成功率可達 84% 至 90%。這套手法的本質，是一次精密計算的「耳石 3D 導航」。</p>
 <p>如前所述，耳石無法穿過壺腹，因此必須將其沿著後半規管的管腔，一路引導至總腳（common crus），最後倒回胞囊中。</p>
 <ol>
@@ -113,7 +133,7 @@ article, article *{overflow-wrap:break-word}
 <li><strong>關鍵的翻轉（步驟 D）</strong>：這往往是患者覺得最暈的階段。患者的身體與頭部必須一起再向健側翻轉 90 度，使面部朝下傾斜。這個姿勢將總腳抬高，讓耳石像溜滑梯一樣順勢滑回胞囊。如果在這一階段，我們觀察到與初始誘發相同的眼震，代表耳石正循著正確的路徑前進；反之，若出現反向眼震，則可能意味著耳石滑回了壺腹，或是存在頂帽酸症，預示著治療可能失敗。</li>
 <li><strong>安全著陸（步驟 E-F）</strong>：最後，患者緩慢坐起，完成整個復位循環。</li>
 </ol>
-<h2>替代手法與殘餘症狀的處理</h2>
+<h2 id="bt-s4">替代手法與殘餘症狀的處理</h2>
 <p>對於無法耐受 Epley 手法中頸部長時間伸展的患者，<strong>Semont Liberatory Maneuver</strong> 提供了另一種選擇。有別於 Epley 利用重力緩慢引導，Semont 法更強調「慣性與重力」的瞬間結合。患者從轉向健側 45 度的坐姿，迅速側躺向患側，維持 5 分鐘後，以極快的速度越過坐姿，直接側躺向健側（面部朝下）。這種快速的 180 度翻轉，意圖在瞬間將耳石從頂帽上甩脫或直接甩出管外，特別適合可能合併頂帽酸症的頑固型案例。</p>
 <p>即使復位成功，患者也常在術後數天內感到輕微的頭暈或漂浮感。對於這類殘餘症狀，或是難以進行常規復位的患者，<strong>Brandt-Daroff 習慣性運動（Habituation exercise）</strong>是極佳的居家輔助療法。透過反覆讓大腦暴露於輕微的眩暈刺激中，它能訓練中樞神經系統降低敏感度，加速前庭代償的過程。</p>
 <p>最後，過去許多醫師會嚴格要求患者在復位後 24 至 48 小時內必須保持直立姿勢、甚至墊高枕頭睡覺，以防耳石再次掉落。但近年來多項系統性回顧與臨床指引皆已證實，<strong>嚴格的術後姿勢限制並不會顯著提升治療成功率</strong>。因此，現代的醫囑應更具彈性，在避免患者產生不必要焦慮的前提下，給予適切的衛教即可。</p>

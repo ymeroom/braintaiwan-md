@@ -77,6 +77,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/fs02.html">
 </head>
@@ -99,10 +118,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 2 篇</strong>　根據美國神經學學會（AAN）2025 功能性癲癇發作實踐指引執行摘要．對應 Recommendation 1 Tolchin B, Goldstein LH, Reuber M, et al. <em>Neurology</em> 2026;106:e214466</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、為什麼「及時診斷」本身就是治療</a></li><li><a href="#bt-s2">二、病史採集：患者與目擊者的資訊同等重要</a></li><li><a href="#bt-s3">三、急診現場：發作期身體檢查的角色</a></li><li><a href="#bt-s4">四、影像腦電圖（Video-EEG）：金標準，但非絕對必要</a></li><li><a href="#bt-s5">五、暈厥型功能性癲癇發作：勿忘心臟評估</a></li><li><a href="#bt-s6">六、其他診斷相關建議</a></li><li><a href="#bt-s7">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>功能性癲癇發作的診斷長期是臨床挑戰：沒有特異性的血液生物標記、沒有非做不可的影像，也沒有萬無一失的單一臨床特徵。AAN 指引基於系統性回顧，提供了一套<strong>分階段、可操作</strong>的診斷框架。本文聚焦 Recommendation 1，談如何在門診與急診建立及時且準確的診斷。</p>
 <hr>
-<h2>一、為什麼「及時診斷」本身就是治療</h2>
+<h2 id="bt-s1">一、為什麼「及時診斷」本身就是治療</h2>
 <p>功能性癲癇發作的平均診斷延誤達 <strong>7–8 年</strong>。延遲的代價包括：</p>
 <ul>
 <li>持續服用無效的抗癲癇藥物，承受副作用與費用</li>
@@ -112,7 +132,7 @@ article, article *{overflow-wrap:break-word}
 </ul>
 <p>指引第一條建議（<strong>1A，Level B</strong>）即要求：面對類癲癇或類暈厥發作的患者時，應將功能性癲癇發作納入鑑別診斷並啟動初步評估。</p>
 <hr>
-<h2>二、病史採集：患者與目擊者的資訊同等重要</h2>
+<h2 id="bt-s2">二、病史採集：患者與目擊者的資訊同等重要</h2>
 <p>詳細病史是診斷基石。指引（<strong>1B，Level B</strong>）建議：應從<strong>患者本人與目擊者雙方</strong>收集發作的歷史與症狀學（semiology）資訊。</p>
 <p><strong>有助於指向功能性癲癇發作的臨床特徵</strong>（綜合多項系統性回顧）：</p>
 <div class="bt-tablewrap"><table>
@@ -128,11 +148,11 @@ article, article *{overflow-wrap:break-word}
 <p><strong>關鍵提醒：</strong> 沒有任何單一症狀學特徵具有足夠特異性，診斷須綜合多項資訊（Gilmour et al., <em>Epilepsy Behav.</em> 2021）。</p>
 <p><strong>智慧型手機影片</strong>：Tatum et al.（<em>JAMA Neurol.</em> 2020）顯示，神經科醫師透過患者自錄的手機影片，能在多數病例做出準確診斷。指引（<strong>1F，Level B</strong>）建議在無法進行 VEEG 時善用手機影片。</p>
 <hr>
-<h2>三、急診現場：發作期身體檢查的角色</h2>
+<h2 id="bt-s3">三、急診現場：發作期身體檢查的角色</h2>
 <p>當患者因延長的類癲癇發作送達急診時，指引（<strong>1C，Level B</strong>）建議在安全前提下進行<strong>簡短的發作期身體檢查</strong>，可提供重要鑑別資訊（如眼球運動測試、對疼痛刺激的反應、上肢落下測試）。</p>
 <p><strong>注意實驗室檢查的局限</strong>：血清泌乳素、乳酸與肌酸激酶雖常被用來鑑別，但皆有相當的偽陽性與偽陰性率，<strong>不應作為確立或排除功能性癲癇發作的主要依據</strong>。</p>
 <hr>
-<h2>四、影像腦電圖（Video-EEG）：金標準，但非絕對必要</h2>
+<h2 id="bt-s4">四、影像腦電圖（Video-EEG）：金標準，但非絕對必要</h2>
 <p>定義性功能性癲癇發作的金標準為：在 VEEG 記錄下捕捉到典型發作時腦電圖為非癲癇性，同時有清晰的發作期影像。</p>
 <p>指引（<strong>1D，Level C</strong>）：完成病史與症狀學評估後仍存在診斷模糊性時，<strong>可（may）</strong> 在可行條件下安排 VEEG。此處用 Level C 而非 Level B，反映 VEEG 實際可及性的現實考量。</p>
 <p><strong>VEEG 的取得方式</strong>：癲癇監測病房、門診/住院 30–60 分鐘同步影像腦電圖、持續住院監測、居家影像腦電圖。</p>
@@ -145,10 +165,10 @@ article, article *{overflow-wrap:break-word}
 <tr><td>可能性（probable）</td><td>病史＋症狀學＋發作間期 EEG</td></tr>
 </tbody></table></div>
 <hr>
-<h2>五、暈厥型功能性癲癇發作：勿忘心臟評估</h2>
+<h2 id="bt-s5">五、暈厥型功能性癲癇發作：勿忘心臟評估</h2>
 <p>若症狀學貌似暈厥，指引（<strong>1E，Level B</strong>）建議同步進行長程心電圖監測（ECG）與傾斜試驗（tilt-table），以排除真正的心因性或神經心臟性暈厥。</p>
 <hr>
-<h2>六、其他診斷相關建議</h2>
+<h2 id="bt-s6">六、其他診斷相關建議</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>建議</th><th>內容</th><th>層級</th></tr></thead>
 <tbody>
@@ -156,7 +176,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>1H</td><td>超出自身專業範疇時應轉介至適當專科</td><td>Level B</td></tr>
 </tbody></table></div>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s7">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>建議</th><th>層級</th></tr></thead>
 <tbody>

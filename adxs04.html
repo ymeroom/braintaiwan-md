@@ -76,6 +76,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/adxs04.html">
 </head>
@@ -97,8 +116,9 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 4 篇</strong>　這是本系列的「鑑別診斷工具篇」，整理指引 Table 1–3 的核心架構：<strong>從症候群分類出發，對應到最可能的病理診斷</strong>，再搭配阿茲海默症最新的生物標記分期標準。內容較密集，建議當作臨床查詢工具搭配使用。</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、症候群—病因對照表（Table 1 精簡版）</a></li><li><a href="#bt-s2">二、NIA-AA 核心臨床診斷標準（Table 2A／2B 精簡版）</a></li><li><a href="#bt-s3">三、2024 修訂版生物標記分期標準（Table 2C 精簡版）</a></li><li><a href="#bt-s4">四、其他常見 ADRD 的診斷標準參考（Table 3 精簡版）</a></li><li><a href="#bt-s5">臨床要點摘要</a></li><li><a href="#bt-s6">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
-<h2>一、症候群—病因對照表（Table 1 精簡版）</h2>
+<h2 id="bt-s1">一、症候群—病因對照表（Table 1 精簡版）</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>認知行為症候群</th><th>最可能對應病因</th></tr></thead>
 <tbody>
@@ -113,7 +133,7 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p>關鍵提醒：<strong>語法障礙型 PPA（logopenic variant）幾乎總是由阿茲海默症病理造成</strong>，這與語意型、非流暢型主要對應 FTLD 形成鮮明對比——這也是為什麼語言型失智的亞型分類不能省略。</p>
 </blockquote>
-<h2>二、NIA-AA 核心臨床診斷標準（Table 2A／2B 精簡版）</h2>
+<h2 id="bt-s2">二、NIA-AA 核心臨床診斷標準（Table 2A／2B 精簡版）</h2>
 <h3>2A：可能阿茲海默症失智症（probable AD dementia）</h3>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>條件</th><th>內容</th></tr></thead>
@@ -128,7 +148,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>必要條件</td><td>病人/知情者認知抱怨、客觀認知測驗顯示一個或多個領域受損、日常功能基本保留（未達失智程度）、未達失智症診斷標準</td></tr>
 <tr><td>可能性分級</td><td>依生物標記結果分級：類澀蛋白陽性＋神經退化證據陽性 → 高可能性；僅一項陽性 → 中可能性；皆陰性 → 低可能性（病因可能為非阿茲海默症）</td></tr>
 </tbody></table></div>
-<h2>三、2024 修訂版生物標記分期標準（Table 2C 精簡版）</h2>
+<h2 id="bt-s3">三、2024 修訂版生物標記分期標準（Table 2C 精簡版）</h2>
 <p>2024 年修訂的 NIA-AA 標準，把阿茲海默症的定義從「臨床症候群」進一步推向「生物學定義」，核心架構分兩層：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>標記類別</th><th>內容</th></tr></thead>
@@ -138,7 +158,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td><strong>非阿茲海默症共病標記</strong></td><td>血管性 MRI 異常（如多發腔隙梗塞、白質病變）；α-突觸核蛋白 CSF 種子擴增分析（提示路易氏體共病）</td></tr>
 </tbody></table></div>
 <p>生物學分期分為 A–D 四級（依 Core 1/2 與共病標記組合而定），臨床分期則延續 0–6 級架構（無症狀 → 重度失智症）。<strong>這套分期最大的臨床意義是：生物標記陽性不等於必然發病，分期是用來描述「目前處於疾病軌跡的哪個位置」，而非單純的有/無診斷。</strong></p>
-<h2>四、其他常見 ADRD 的診斷標準參考（Table 3 精簡版）</h2>
+<h2 id="bt-s4">四、其他常見 ADRD 的診斷標準參考（Table 3 精簡版）</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>疾病</th><th>主要診斷標準參考來源</th></tr></thead>
 <tbody>
@@ -154,7 +174,7 @@ article, article *{overflow-wrap:break-word}
 <tr><td>庫賈氏病（CJD）</td><td>WHO/CDC 監測標準</td></tr>
 </tbody></table></div>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s5">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
@@ -170,7 +190,7 @@ article, article *{overflow-wrap:break-word}
 <p>2024 修訂版生物標記分期對臨床的最大衝擊，其實是溝通方式的改變——以前我們說「這個病人有沒有阿茲海默症」，現在更精確的問法是「這個病人目前處於哪個生物學分期、哪個臨床分期」。這個轉變剛開始會讓病人和家屬覺得抽象，但長期來看，這種「軌跡」式的理解，反而更貼近失智症作為慢性進展疾病的本質，也更有利於討論疾病修飾治療的時機（詳見<a href="adxs08.html">第⑧篇</a>）。</p>
 </blockquote>
 <hr>
-<h2>參考文獻</h2>
+<h2 id="bt-s6">參考文獻</h2>
 <ol>
 <li>Dickerson BC, Atri A, Clevenger C, et al. The Alzheimer's Association clinical practice guideline for the Diagnostic Evaluation, Testing, Counseling, and Disclosure of Suspected Alzheimer's Disease and Related Disorders (DETeCD-ADRD): Executive summary of recommendations for specialty care. <em>Alzheimer's Dement</em>. 2025;21:e14337. doi:10.1002/alz.14337</li>
 <li>McKhann GM, et al. The diagnosis of dementia due to Alzheimer's disease: recommendations from the NIA-AA workgroup. <em>Alzheimer's Dement</em>. 2011;7(3):263-269.</li>

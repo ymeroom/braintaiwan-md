@@ -77,6 +77,25 @@ article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
 .bt-tablewrap>table{margin:0}
 /* bt-mobile:end */
+/* bt-read:start */
+@media(max-width:600px){
+main{padding:16px 8px}
+.article{padding:22px 16px;border-radius:10px}
+blockquote{padding:12px 14px;margin:1.2em 0}
+.article p{font-size:13pt}
+.article li{font-size:13pt}
+}
+.bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
+.bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
+.bt-toc summary::-webkit-details-marker{display:none}
+.bt-toc summary::before{content:"▸ ";color:#1565c0}
+.bt-toc[open] summary::before{content:"▾ "}
+.bt-toc .bt-rt{font-weight:400;color:#607d8b;margin-left:8px}
+.bt-toc ol{margin:.6em 0 0;padding-left:1.4em;line-height:1.9}
+.bt-toc a{color:#1565c0;text-decoration:none}
+.bt-toc a:hover{text-decoration:underline}
+.article h2[id]{scroll-margin-top:16px}
+/* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/phn02.html">
 </head>
@@ -99,10 +118,11 @@ article, article *{overflow-wrap:break-word}
 <blockquote>
 <p><strong>系列導讀．第 2 篇</strong>　以疫苗試驗與 NEJM 綜述為主軸 Lal H, et al. ZOE-50. <em>N Engl J Med</em> 2015;372:2087-2096 ｜ Cunningham AL, et al. ZOE-70. <em>N Engl J Med</em> 2016;375:1019-1032</p>
 </blockquote>
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 3 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、誰容易發展成 PHN？</a></li><li><a href="#bt-s2">二、預防的核心：帶狀疱疹疫苗</a></li><li><a href="#bt-s3">三、急性帶狀疱疹的抗病毒治療</a></li><li><a href="#bt-s4">四、類固醇與急性期止痛的角色</a></li><li><a href="#bt-s5">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>第一篇說過：PHN 一旦慢性化就難纏，所以<strong>「不讓它發生」遠勝過「事後止痛」</strong>。這一篇談兩件事——誰容易得 PHN（危險因子），以及怎麼預防（疫苗、抗病毒、急性期疼痛控制）。</p>
 <hr>
-<h2>一、誰容易發展成 PHN？</h2>
+<h2 id="bt-s1">一、誰容易發展成 PHN？</h2>
 <p>掌握危險因子，才能在急性帶狀疱疹當下就判斷哪些人需要積極處置與追蹤。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>危險因子</th><th>說明</th></tr></thead>
@@ -118,7 +138,7 @@ article, article *{overflow-wrap:break-word}
 <p>臨床意義：一位 70 多歲、疹子大片、痛得厲害的患者，從第一天就應被視為 PHN 高風險，需要積極的急性期止痛與後續追蹤。</p>
 </blockquote>
 <hr>
-<h2>二、預防的核心：帶狀疱疹疫苗</h2>
+<h2 id="bt-s2">二、預防的核心：帶狀疱疹疫苗</h2>
 <p>預防帶狀疱疹本身，就是預防 PHN 最有效的方法。</p>
 <h3>重組型帶狀疱疹疫苗（RZV, Shingrix）為首選</h3>
 <p><strong>ZOE-50 / ZOE-70</strong> 兩項大型隨機對照試驗確立了佐劑重組型亞單位疫苗（RZV）的高保護力：</p>
@@ -137,7 +157,7 @@ article, article *{overflow-wrap:break-word}
 <p>一句話總結：與其等 PHN 發生再用 gabapentin 與貼片苦苦控制，不如在它發生前打兩劑疫苗。<strong>疫苗是 PHN 最強的「止痛藥」。</strong></p>
 </blockquote>
 <hr>
-<h2>三、急性帶狀疱疹的抗病毒治療</h2>
+<h2 id="bt-s3">三、急性帶狀疱疹的抗病毒治療</h2>
 <p>對已發作的帶狀疱疹，<strong>早期抗病毒治療</strong>可縮短病程、減輕急性疼痛：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>常用劑量（需依腎功能調整）</th></tr></thead>
@@ -151,13 +171,13 @@ article, article *{overflow-wrap:break-word}
 <li>抗病毒對<strong>縮短急性疼痛</strong>證據明確；對<strong>降低 PHN 發生率</strong>的效益較有限且結論不一，但因能減輕急性病情，仍是標準處置。</li>
 </ul>
 <hr>
-<h2>四、類固醇與急性期止痛的角色</h2>
+<h2 id="bt-s4">四、類固醇與急性期止痛的角色</h2>
 <ul>
 <li><strong>全身性類固醇</strong>：併用抗病毒可能改善急性期疼痛與生活品質，但<strong>並不能預防 PHN</strong>，不應僅為了預防 PHN 而使用；需權衡高齡族群的副作用。</li>
 <li><strong>積極控制急性期疼痛</strong>：由於急性疼痛劇烈本身是 PHN 危險因子，<strong>充分的急性期止痛</strong>（含必要時的神經痛用藥）在概念上有助於降低慢性化風險，也是對患者最直接的照護。</li>
 </ul>
 <hr>
-<h2>臨床要點摘要</h2>
+<h2 id="bt-s5">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>面向</th><th>重點</th></tr></thead>
 <tbody>
