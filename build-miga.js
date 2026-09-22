@@ -217,6 +217,7 @@ footer a{color:rgba(255,255,255,.55);text-decoration:none}
 <main>
   <div class="series-nav">${navHtml}</div>
   <article class="article">
+  <!-- new-edition:start --><div style="margin:0 0 22px;padding:14px 18px;border-radius:10px;background:#e0f2f1;border-left:4px solid #00897b;font-size:11pt;line-height:1.7;color:#004d40">📌 <strong>已有 2026 新版</strong>：台灣頭痛學會已發表 2026 年偏頭痛急性藥物治療指引（rimegepant 納入 Grade A、Group I，麥角胺複方改列 Group III）。本頁為 2022 年版導讀，僅供對照；最新內容請見 <a href="mgac01.html" style="color:#00695c;font-weight:700">2026 新版導讀 →</a></div><!-- new-edition:end -->
 ${contentHtml}
   </article>
   <nav class="pager">
