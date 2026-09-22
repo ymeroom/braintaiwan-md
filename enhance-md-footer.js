@@ -69,6 +69,7 @@ const SERIES = {
   rls:  { source: 'RLS 臨床導讀（流行病學與診斷準則彙編）' },
   rmt:  { source: '鎮靜安眠藥理之臨床導讀' },
   se:   { source: 'Neurocritical Care Society 癲癇重積狀態指引' },
+  srr:  { source: 'Richards LG, Ifejika NL, Stein J, et al. 2026 Guideline for Adult Stroke Rehabilitation and Recovery: A Guideline From the American Heart Association and American Stroke Association, Stroke 2026;57:e00–e00（正式排版前版本）', audience: '神經內科、復健科、物理／職能／語言治療、護理及中風照護團隊（教學與臨床參考）' },
   ssp:  { source: 'Furie KL, Kelly PJ. Secondary Prevention after Ischemic Stroke, N Engl J Med 2026;394(8):784–792（NEJM Clinical Practice 臨床實務綜論）', audience: '神經內科、中風、心臟科、家醫及相關專科醫療人員（教學與臨床參考）' },
   sjd:  { source: 'Price EJ, Benjamin S, Bombardieri M, et al. British Society for Rheumatology guideline on management of adult and juvenile onset Sjögren disease, Rheumatology (Oxford) 2025;64(2):409–439', audience: '風濕免疫科、神經內科、眼科、口腔醫學、牙科及基層醫療人員（教學與臨床參考）' },
   thy:  { source: 'Lee & Pearce, Hyperthyroidism: A Review, JAMA 2023' },
