@@ -83,6 +83,7 @@ main{padding:16px 8px}
 blockquote{padding:12px 14px;margin:1.2em 0}
 .article p{font-size:13pt}
 .article li{font-size:13pt}
+.bt-tablewrap th,.bt-tablewrap td{min-width:6.5em}
 }
 .bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
 .bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
@@ -94,6 +95,9 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 .bt-toc a{color:#1565c0;text-decoration:none}
 .bt-toc a:hover{text-decoration:underline}
 .article h2[id]{scroll-margin-top:16px}
+.bt-keypoints{margin:1.4em 0 1.2em;padding:6px 18px 12px;background:#fffdf5;border:1px solid #f3e3b5;border-radius:10px}
+.bt-keypoints h2{margin-top:.8em}
+@media(max-width:600px){.bt-keypoints{padding:4px 10px 10px}}
 /* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/mg05.html">
@@ -116,20 +120,32 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <blockquote>
 <p><strong>系列導讀．第 5 篇（完結）</strong>　以 StatPearls 與 FcRn／補體 C5 抑制劑核准資料為主軸 重症肌無力的治療這幾年被切成兩個世界：一邊是用了幾十年、便宜耐用的老藥，一邊是直接針對致病抗體與補體下手的新標靶。這篇把整張地圖攤開，看每個工具到底卡在傳遞失靈的哪一格。</p>
 </blockquote>
-<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、免疫抑制：把製造抗體的工廠調慢</a></li><li><a href="#bt-s2">二、快速起效療法：危象的第一手，也是術前的穩定劑</a></li><li><a href="#bt-s3">三、胸腺切除：少數能動結構的選項</a></li><li><a href="#bt-s4">四、新型標靶：不再廣泛壓免疫，而是精準掐斷兩個環節</a></li><li><a href="#bt-s5">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
+<!-- bt-key:start --><section class="bt-keypoints"><h2 id="bt-s1">臨床要點摘要</h2>
+<div class="bt-tablewrap"><table>
+<thead><tr><th>層級</th><th>代表治療</th><th>機轉／定位</th><th>重點備註</th></tr></thead>
+<tbody>
+<tr><td>症狀</td><td>pyridostigmine</td><td>抑制乙醯膽鹼酯酶、延長 ACh 作用</td><td>不改病程；MuSK 型反應差、需較高劑量</td></tr>
+<tr><td>免疫第一線</td><td>類固醇 ＋ azathioprine</td><td>壓抗體生產</td><td>類固醇快、azathioprine 慢搭配</td></tr>
+<tr><td>免疫第二線</td><td>cyclosporine／methotrexate／mycophenolate／cyclophosphamide／tacrolimus</td><td>進一步壓免疫</td><td>起效慢，數週到數月</td></tr>
+<tr><td>快速起效</td><td>IVIG／血漿置換</td><td>移除或干擾循環抗體</td><td>危象首選；術前穩定；不適合長期維持</td></tr>
+<tr><td>結構</td><td>胸腺切除</td><td>移除胸腺</td><td>胸腺瘤必做；AChR 全身型 15–50 歲、1–2 年內；MuSK／單純眼型不建議</td></tr>
+<tr><td>標靶 FcRn</td><td>efgartigimod／rozanolixizumab</td><td>降低致病性 IgG</td><td>efgartigimod 首個用於血清陰性；rozanolixizumab 同涵蓋 AChR 與 MuSK</td></tr>
+<tr><td>標靶 C5</td><td>eculizumab／ravulizumab／zilucoplan</td><td>阻斷終末補體破壞</td><td>ravulizumab 間隔 8 週；zilucoplan 每日皮下自打</td></tr>
+</tbody></table></div></section><!-- bt-key:end -->
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">臨床要點摘要</a></li><li><a href="#bt-s2">一、免疫抑制：把製造抗體的工廠調慢</a></li><li><a href="#bt-s3">二、快速起效療法：危象的第一手，也是術前的穩定劑</a></li><li><a href="#bt-s4">三、胸腺切除：少數能動結構的選項</a></li><li><a href="#bt-s5">四、新型標靶：不再廣泛壓免疫，而是精準掐斷兩個環節</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>把重症肌無力的治療擺在一起看，會發現它其實是順著「症狀—免疫—結構—精準」這條軸線堆上去的，每一層解決的問題不一樣。</p>
 <p>最表層、起效也最快的，是症狀治療。<strong>Pyridostigmine</strong> 是乙醯膽鹼酯酶抑制劑，它不去碰免疫系統，做的只有一件事：擋住分解乙醯膽鹼（ACh）的酶，讓本來就不夠用的 ACh 在接合處停留久一點，多撞幾下殘存的受體。它不改變病程，純粹買時間、買力氣。這裡有個前面第二篇就埋下的伏筆：<strong>MuSK 型對 pyridostigmine 反應較差，常需要更高劑量</strong>——因為 MuSK 抗體破壞的是受體叢集的維持機制，不是單純的受體數量問題，靠「延長 ACh」這招效果自然打折。</p>
 <hr>
-<h2 id="bt-s1">一、免疫抑制：把製造抗體的工廠調慢</h2>
+<h2 id="bt-s2">一、免疫抑制：把製造抗體的工廠調慢</h2>
 <p>症狀藥只是治標，要動到根本得壓免疫。第一線是<strong>類固醇（prednisone／prednisolone／methylprednisolone）搭配 azathioprine</strong>——類固醇快、azathioprine 慢但能當長期省類固醇的搭檔，兩者一前一後。</p>
 <p>第一線壓不住、或副作用受不了，才換第二線：<strong>cyclosporine、methotrexate、mycophenolate、cyclophosphamide、tacrolimus</strong>。這些藥共同的脾氣是慢——起效要數週到數月，靠的是逐漸把抗體生產線調降，不是當下救火。</p>
 <hr>
-<h2 id="bt-s2">二、快速起效療法：危象的第一手，也是術前的穩定劑</h2>
+<h2 id="bt-s3">二、快速起效療法：危象的第一手，也是術前的穩定劑</h2>
 <p>當病人掉進肌無力危象、呼吸肌罷工時，沒時間等免疫抑制慢慢生效。這時<strong>IVIG 與血漿置換</strong>是首選——血漿置換直接把循環裡的致病抗體濾掉，IVIG 則用大量外來抗體去干擾自體抗體的作用，兩者都能在幾天內把人從邊緣拉回來。</p>
 <p>它們的另一個位置呼應第三篇講過的手術前準備：<strong>在胸腺切除或其他手術前，先用 IVIG／血漿置換把病人穩下來</strong>，避免麻醉與手術壓力誘發危象。它們是強力的橋接工具，但不適合當長期維持，物流與成本都太重。</p>
 <hr>
-<h2 id="bt-s3">三、胸腺切除：少數能動結構的選項</h2>
+<h2 id="bt-s4">三、胸腺切除：少數能動結構的選項</h2>
 <p>前面幾篇談的都是藥，胸腺切除是唯一一個動到結構的處置，但它有清楚的適應與禁忌：</p>
 <ul>
 <li><strong>有胸腺瘤者一律建議</strong>——這時切除同時是腫瘤的處理。</li>
@@ -138,7 +154,7 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 </ul>
 <p>換句話說，胸腺切除不是「重症肌無力就該切」，而是挑對抗體型別、年齡與時機的一群人。</p>
 <hr>
-<h2 id="bt-s4">四、新型標靶：不再廣泛壓免疫，而是精準掐斷兩個環節</h2>
+<h2 id="bt-s5">四、新型標靶：不再廣泛壓免疫，而是精準掐斷兩個環節</h2>
 <p>新藥的思路和老藥完全不同。它們不去整體壓制免疫系統，而是回到第二篇講的致病鏈條，挑兩個具體環節下刀——一個管「抗體還在不在」，一個管「抗體造成的破壞能不能完成」。</p>
 <p><strong>第一條路：FcRn 抑制劑，降低循環中的致病性 IgG。</strong> FcRn 本來是替 IgG 續命的回收機制，把它擋住，致病抗體就被加速分解、濃度下降。</p>
 <ul>
@@ -152,18 +168,7 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <li><strong>Zilucoplan（Zilbrysq）</strong>：15 個胺基酸的大環胜肽 C5 抑制劑，<strong>每日一次皮下自行注射</strong>，雙重機轉——既阻斷 C5 裂解，也防止 C5b6 複合物組裝；2023 年核准。</li>
 </ul>
 <hr>
-<h2 id="bt-s5">臨床要點摘要</h2>
-<div class="bt-tablewrap"><table>
-<thead><tr><th>層級</th><th>代表治療</th><th>機轉／定位</th><th>重點備註</th></tr></thead>
-<tbody>
-<tr><td>症狀</td><td>pyridostigmine</td><td>抑制乙醯膽鹼酯酶、延長 ACh 作用</td><td>不改病程；MuSK 型反應差、需較高劑量</td></tr>
-<tr><td>免疫第一線</td><td>類固醇 ＋ azathioprine</td><td>壓抗體生產</td><td>類固醇快、azathioprine 慢搭配</td></tr>
-<tr><td>免疫第二線</td><td>cyclosporine／methotrexate／mycophenolate／cyclophosphamide／tacrolimus</td><td>進一步壓免疫</td><td>起效慢，數週到數月</td></tr>
-<tr><td>快速起效</td><td>IVIG／血漿置換</td><td>移除或干擾循環抗體</td><td>危象首選；術前穩定；不適合長期維持</td></tr>
-<tr><td>結構</td><td>胸腺切除</td><td>移除胸腺</td><td>胸腺瘤必做；AChR 全身型 15–50 歲、1–2 年內；MuSK／單純眼型不建議</td></tr>
-<tr><td>標靶 FcRn</td><td>efgartigimod／rozanolixizumab</td><td>降低致病性 IgG</td><td>efgartigimod 首個用於血清陰性；rozanolixizumab 同涵蓋 AChR 與 MuSK</td></tr>
-<tr><td>標靶 C5</td><td>eculizumab／ravulizumab／zilucoplan</td><td>阻斷終末補體破壞</td><td>ravulizumab 間隔 8 週；zilucoplan 每日皮下自打</td></tr>
-</tbody></table></div>
+
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

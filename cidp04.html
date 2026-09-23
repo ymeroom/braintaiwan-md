@@ -84,6 +84,7 @@ main{padding:16px 8px}
 blockquote{padding:12px 14px;margin:1.2em 0}
 .article p{font-size:13pt}
 .article li{font-size:13pt}
+.bt-tablewrap th,.bt-tablewrap td{min-width:6.5em}
 }
 .bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
 .bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
@@ -95,6 +96,9 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 .bt-toc a{color:#1565c0;text-decoration:none}
 .bt-toc a:hover{text-decoration:underline}
 .article h2[id]{scroll-margin-top:16px}
+.bt-keypoints{margin:1.4em 0 1.2em;padding:6px 18px 12px;background:#fffdf5;border:1px solid #f3e3b5;border-radius:10px}
+.bt-keypoints h2{margin-top:.8em}
+@media(max-width:600px){.bt-keypoints{padding:4px 10px 10px}}
 /* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/cidp04.html">
@@ -118,12 +122,22 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <blockquote>
 <p><strong>系列導讀．第 4 篇</strong>　以 EAN/PNS 2021 電生理準則為主軸 神經傳導檢查（nerve conduction study, NCS）是 CIDP 診斷最重要的工具——但它也是最常被誤判、進而造成誤診的環節。一份做得不夠、或讀得太草率的 NCS，可以同時製造假陽性與假陰性。</p>
 </blockquote>
-<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、什麼樣的數字算「支持脫髓鞘」</a></li><li><a href="#bt-s2">二、最大的陷阱：1.0 mV 這條線</a></li><li><a href="#bt-s3">三、其他容易翻車的地方</a></li><li><a href="#bt-s4">四、做得不夠，也會漏診</a></li><li><a href="#bt-s5">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
+<!-- bt-key:start --><section class="bt-keypoints"><h2 id="bt-s1">臨床要點摘要</h2>
+<div class="bt-tablewrap"><table>
+<thead><tr><th>面向</th><th>重點</th></tr></thead>
+<tbody>
+<tr><td>角色</td><td>NCS 是 CIDP 診斷最重要工具，但也最常被誤判</td></tr>
+<tr><td>運動準則</td><td>遠端潛時↑、速度↓、F 波異常、傳導阻斷、時間離散、CMAP 時程↑（強支持須 ≥2 條神經）</td></tr>
+<tr><td>感覺準則</td><td>2021 升級為電生理準則一環；sural sparing 具指向性</td></tr>
+<tr><td>1.0 mV 紅線</td><td>遠端 CMAP &lt;1.0 mV 時「脫髓鞘」徵象要存疑，慎防軸突流失偽裝</td></tr>
+<tr><td>廣度</td><td>至少測正中/尺/腓/脛；上肢近端最易找到脫髓鞘；陰性可擇期重做</td></tr>
+</tbody></table></div></section><!-- bt-key:end -->
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 4 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">臨床要點摘要</a></li><li><a href="#bt-s2">一、什麼樣的數字算「支持脫髓鞘」</a></li><li><a href="#bt-s3">二、最大的陷阱：1.0 mV 這條線</a></li><li><a href="#bt-s4">三、其他容易翻車的地方</a></li><li><a href="#bt-s5">四、做得不夠，也會漏診</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>CIDP 沒有專屬的血液生物標記，所以「證明這條神經真的脫髓鞘」這件事，幾乎全靠神經傳導扛。脫髓鞘會讓電訊號的「跳躍式傳導」失靈，於是 NCS 上會看到幾種特定的異常——傳導變慢、阻斷、時間離散。指引把這些整理成一套運動與感覺的準則，符合就算「支持脫髓鞘」。</p>
 <p>聽起來很客觀，但魔鬼藏在判讀裡。同樣一個看起來很「脫髓鞘」的數字，可能是真的脫髓鞘，也可能只是軸突大量流失之後的假象。把這兩者分開，是整個診斷裡最需要功力的地方。</p>
 <hr>
-<h2 id="bt-s1">一、什麼樣的數字算「支持脫髓鞘」</h2>
+<h2 id="bt-s2">一、什麼樣的數字算「支持脫髓鞘」</h2>
 <p>運動神經的「強烈支持脫髓鞘」準則，是下面任一項出現在<strong>至少兩條神經</strong>（單條神經只算「弱支持」）：</p>
 <ul>
 <li>遠端潛時延長 ≥50% 超過正常上限</li>
@@ -136,11 +150,11 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 </ul>
 <p>感覺準則在 2021 有個大改變——它<strong>從「輔助」升級成「電生理準則的一部分」</strong>。除了運動型（感覺傳導要正常）以外，其他表型現在都需要感覺傳導異常才符合。其中一個特別有用的型態是「<strong>腓腸神經豁免（sural sparing）</strong>」：手部正中或橈神經的感覺異常，但腓腸神經正常——在排除腕隧道後，這個型態對 CIDP 相當有指向性。</p>
 <hr>
-<h2 id="bt-s2">二、最大的陷阱：1.0 mV 這條線</h2>
+<h2 id="bt-s3">二、最大的陷阱：1.0 mV 這條線</h2>
 <p>這是整篇最該記住的一個數字。如果遠端 CMAP 波幅 <strong>&lt;1.0 mV</strong>，那些「看起來脫髓鞘」的徵象就要非常小心地解讀，<strong>官方上不算數</strong>。</p>
 <p>為什麼？因為當最快傳導的那批大軸突死掉之後，剩下慢的軸突會讓量到的傳導速度自然變慢——這是<strong>軸突流失偽裝成脫髓鞘</strong>。波幅太低時，傳導變慢可能根本不是外皮的問題，而是電線本體已經掉了一大半。把這種「振幅依賴的傳導變慢」誤讀成脫髓鞘，是 CIDP 過度診斷的常見源頭。</p>
 <hr>
-<h2 id="bt-s3">三、其他容易翻車的地方</h2>
+<h2 id="bt-s4">三、其他容易翻車的地方</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>陷阱</th><th>為什麼會誤判</th><th>怎麼處理</th></tr></thead>
 <tbody>
@@ -151,20 +165,11 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 </tbody></table></div>
 <p>最後一條最重要：符合電生理準則，不代表病理上真的有古典脫髓鞘。這些數字本質上是「跳躍傳導被打亂」的標記，而打亂它的可以是脫髓鞘，也可以是蘭氏結的失序。所以<strong>會符合 CIDP 電生理準則的，還包括自體免疫結性神經病、多灶性運動神經病、遺傳性脫髓鞘神經病、GBS、anti-MAG 神經病、類澱粉、血管炎等等</strong>——電生理給的是線索，不是判決。</p>
 <hr>
-<h2 id="bt-s4">四、做得不夠，也會漏診</h2>
+<h2 id="bt-s5">四、做得不夠，也會漏診</h2>
 <p>NCS 的「廣度」差很多。測太少神經、太少節段，就會漏掉診斷。指引建議的最低配備是：單側測<strong>正中、尺（肘下刺激）、腓、脛</strong>四條。若不符合，下一步是測對側，並把正中與尺神經往近端延伸到腋下與 Erb 點刺激（含 F 波）。</p>
 <p>有個實用觀念：<strong>脫髓鞘徵象在手臂、尤其肘到 Erb 點的近端節段更常見</strong>，比腿明顯。所以一開始就把上肢近端測進去，往往更有收穫。換句話說，一份陰性的 NCS 不必然排除 CIDP，可能只是測得不夠遠、不夠多——必要時，過一段時間重做也是合理的。</p>
 <hr>
-<h2 id="bt-s5">臨床要點摘要</h2>
-<div class="bt-tablewrap"><table>
-<thead><tr><th>面向</th><th>重點</th></tr></thead>
-<tbody>
-<tr><td>角色</td><td>NCS 是 CIDP 診斷最重要工具，但也最常被誤判</td></tr>
-<tr><td>運動準則</td><td>遠端潛時↑、速度↓、F 波異常、傳導阻斷、時間離散、CMAP 時程↑（強支持須 ≥2 條神經）</td></tr>
-<tr><td>感覺準則</td><td>2021 升級為電生理準則一環；sural sparing 具指向性</td></tr>
-<tr><td>1.0 mV 紅線</td><td>遠端 CMAP &lt;1.0 mV 時「脫髓鞘」徵象要存疑，慎防軸突流失偽裝</td></tr>
-<tr><td>廣度</td><td>至少測正中/尺/腓/脛；上肢近端最易找到脫髓鞘；陰性可擇期重做</td></tr>
-</tbody></table></div>
+
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

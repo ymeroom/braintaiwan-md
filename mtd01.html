@@ -82,6 +82,7 @@ main{padding:16px 8px}
 blockquote{padding:12px 14px;margin:1.2em 0}
 .article p{font-size:13pt}
 .article li{font-size:13pt}
+.bt-tablewrap th,.bt-tablewrap td{min-width:6.5em}
 }
 .bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
 .bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
@@ -93,6 +94,9 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 .bt-toc a{color:#1565c0;text-decoration:none}
 .bt-toc a:hover{text-decoration:underline}
 .article h2[id]{scroll-margin-top:16px}
+.bt-keypoints{margin:1.4em 0 1.2em;padding:6px 18px 12px;background:#fffdf5;border:1px solid #f3e3b5;border-radius:10px}
+.bt-keypoints h2{margin-top:.8em}
+@media(max-width:600px){.bt-keypoints{padding:4px 10px 10px}}
 /* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/mtd01.html">
@@ -116,8 +120,21 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <blockquote>
 <p><strong>系列導讀．第 01 篇</strong>　粒線體有自己的基因組，而細胞質裡的免疫感測器並不知道那是自家的。只要膜擋不住，mtDNA 一旦漏進細胞質，cGAS-STING 就會把它當成入侵者處理。Brain 2026 這篇來自劍橋的綜論，把「粒線體疾病」與「無菌性發炎」這兩條長期分開的線接了起來。這一篇先鋪底：粒線體疾病的規模與治療現況、mtDNA 被誤讀成危險訊號的三條感測路徑，以及整篇綜論真正懸而未決的那個問題。</p>
 </blockquote>
-<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 7 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">先把規模講清楚</a></li><li><a href="#bt-s2">異質性解釋不完的那一段</a></li><li><a href="#bt-s3">一個舊發現，換一個新讀法</a></li><li><a href="#bt-s4">三個入口，三條警報線</a></li><li><a href="#bt-s5">這不是只有動物模型</a></li><li><a href="#bt-s6">作者怎麼選文獻的</a></li><li><a href="#bt-s7">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
-<h2 id="bt-s1">先把規模講清楚</h2>
+<!-- bt-key:start --><section class="bt-keypoints"><h2 id="bt-s1">臨床判讀重點</h2>
+<div class="bt-tablewrap"><table>
+<thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
+<tbody>
+<tr><td>粒線體疾病是罕見病</td><td>盛行率 <strong>1/4300</strong>；作者同時指出粒線體功能失調也是常見遺傳性與後天性疾病的特徵</td></tr>
+<tr><td>診斷不出來才是問題</td><td>基因體學已能為多數粒線體疾病提供分子診斷；<strong>卡住的是治療端</strong>——多數無核可療法，近期試驗<strong>無一達到主要終點</strong></td></tr>
+<tr><td>表型變異靠異質性解釋</td><td><strong>異質性並不能完全解釋</strong> PMD 的表型變異；核基因變異（如 POLG）同樣造成高度變異</td></tr>
+<tr><td>mtDNA 漏出來只是細胞在死</td><td>它是<strong>訊號事件</strong>：經 cGAS→2',3'-cGAMP→STING 誘發第一型干擾素，另可活化 AIM2／NLRP3 與 TLR9-NF-κB</td></tr>
+<tr><td>mtDNA 只有一條出路</td><td>實驗模型顯示三條：<strong>mPTP、BAK/BAX 孔道、VDAC</strong>；Fig. 1 另分膜介導（破裂／囊泡出芽）與蛋白介導兩類</td></tr>
+<tr><td>只有動物模型有證據</td><td>病人循環 mtDNA 上升並伴隨發炎路徑活化；健康人的循環胞外囊泡 mtDNA 含量與促發炎細胞激素相關</td></tr>
+<tr><td>免疫參與＝自體免疫</td><td>Leigh 症候群 Ndufs4⁻/⁻ 模型指向<strong>先天免疫</strong>（微膠細胞／巨噬細胞、IFN-γ），<strong>而非後天免疫</strong></td></tr>
+<tr><td>發炎一定是壞事</td><td>作者明講<strong>尚不清楚</strong>這些路徑是惡化表型還是因代償上調而緩解症狀</td></tr>
+</tbody></table></div></section><!-- bt-key:end -->
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 7 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">臨床判讀重點</a></li><li><a href="#bt-s2">先把規模講清楚</a></li><li><a href="#bt-s3">異質性解釋不完的那一段</a></li><li><a href="#bt-s4">一個舊發現，換一個新讀法</a></li><li><a href="#bt-s5">三個入口，三條警報線</a></li><li><a href="#bt-s6">這不是只有動物模型</a></li><li><a href="#bt-s7">作者怎麼選文獻的</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s2">先把規模講清楚</h2>
 <p>原發性粒線體疾病（primary mitochondrial diseases, PMD）的盛行率是 <strong>1/4300</strong>。作者列出的常見表型是這幾樣：<strong>糖尿病、肌病變、心肌病變、失智、腦病變與癲癇發作</strong>——每一樣都不專屬於粒線體疾病，這也正是它難診斷的原因。</p>
 <p>遺傳學上的地圖已經畫得很細了：<strong>約 400 個基因</strong>與 PMD 相關，涵蓋 OXPHOS 的結構次單元與組裝因子、mtDNA 維持蛋白、粒線體轉譯、融合／分裂、代謝路徑與運輸過程。</p>
 <div class="bt-tablewrap"><table>
@@ -130,18 +147,18 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <tr><td>每個細胞的 mtDNA 拷貝數</td><td><strong>數百到數千</strong></td><td>分布在整個粒線體網絡上</td></tr>
 </tbody></table></div>
 <p>診斷端做得到，治療端做不到。作者的話很直白：<strong>治療仍以支持性為主</strong>，導致進行性失能與早期死亡；<strong>多數粒線體疾病沒有核可療法，而近期試驗沒有任何一個達到其主要終點</strong>。這句話是整篇綜論的動機——既然補能量、清自由基那一路走不通，就得換一個機轉來找標的。</p>
-<h2 id="bt-s2">異質性解釋不完的那一段</h2>
+<h2 id="bt-s3">異質性解釋不完的那一段</h2>
 <p>母系遺傳或新生的 mtDNA 突變，可能只存在於細胞中一部分的 mtDNA 拷貝（<strong>異質性 heteroplasmic</strong>），也可能存在於全部拷貝（<strong>同質性 homoplasmic</strong>）。<strong>有絲分裂後的細胞與組織傾向累積高突變負荷</strong>，因而出現臨床表現。</p>
 <p>但作者馬上把這個模型的極限講出來：<strong>mtDNA 異質性並不能完全解釋 PMD 的表型變異</strong>，它還受到其他細胞型別特異的機制影響。同樣地，常見的核基因變異（例如 <strong>POLG</strong>）也可以造成發病年齡、進展與嚴重度的高度變異，凸顯病理生理上還有其他貢獻因子。</p>
 <p>那個「其他貢獻因子」，就是這篇綜論要提名的候選人：<strong>發炎</strong>。</p>
-<h2 id="bt-s3">一個舊發現，換一個新讀法</h2>
+<h2 id="bt-s4">一個舊發現，換一個新讀法</h2>
 <p>粒線體被外膜與內膜（OMM 與 IMM）跟細胞質隔開。嚴重的粒線體損傷破壞這兩層膜的完整性時，內容物會經由孔道插入而釋放到細胞質。</p>
 <p>最經典的例子是 <strong>cytochrome c 經由 Bak/Bax 外膜孔道釋放，啟動凋亡級聯</strong>。作者特別指出，正是這項發現改變了我們對粒線體的理解——它不只是產能的胞器，而是<strong>編排細胞命運的關鍵訊號胞器</strong>。</p>
 <p>現在的新進展只是把同一個邏輯往前推一步：<strong>mtDNA 與粒線體 RNA（mtRNA）也會被釋放到細胞質，並作為損傷相關分子模式（DAMP）啟動強力的發炎反應。</strong></p>
 <blockquote>
 <p>這裡有一處值得標記的措辭落差。<strong>摘要寫的是「Free mtDNA acts as a pathogen-associated molecular pattern（PAMP）」，內文寫的是「act as damage-associated molecular patterns（DAMP）」。</strong> 同一份文件、同一件事，兩種歸類。從演化上說兩者都講得通——粒線體源自細菌內共生，它的環狀 DNA 帶未甲基化 CpG，本來就長得像病原體；但從觸發情境說，這是無菌性的自體損傷。讀者引用時要注意自己引的是哪一段。</p>
 </blockquote>
-<h2 id="bt-s4">三個入口，三條警報線</h2>
+<h2 id="bt-s5">三個入口，三條警報線</h2>
 <p>免疫端的接線是這樣的：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>感測器</th><th>訊號</th><th>下游</th></tr></thead>
@@ -153,7 +170,7 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <p>這些反應可以觸發<strong>細胞激素生成</strong>與<strong>焦亡（pyroptosis）</strong>——一種發炎性的程序性細胞死亡。</p>
 <p>而 mtDNA 出得去的門，作者在結論裡收斂成三個：<strong>mPTP（粒線體通透性轉換孔）、BAK/BAX 孔道、VDAC</strong>。原文的 Fig. 1 把釋放機制分成兩大類：<strong>膜介導</strong>（膜的物理性破裂，或含 mtDNA 的囊泡出芽）與<strong>蛋白介導</strong>（BAK/BAX 巨孔、VDAC 寡聚、mPTP 開放）。</p>
 <p>三個出口、三條警報線。作者也指出，<strong>多數被研究的粒線體模型顯示的是第一型干擾素反應的活化</strong>，使其成為傳遞胞器壓力最通用的管道。</p>
-<h2 id="bt-s5">這不是只有動物模型</h2>
+<h2 id="bt-s6">這不是只有動物模型</h2>
 <p>三組人體端的觀察撐住了這個假說：</p>
 <ul>
 <li>粒線體疾病病人的<strong>循環 mtDNA 濃度上升</strong>，同時伴隨關鍵發炎路徑的活化跡象。</li>
@@ -161,7 +178,7 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <li>在 Leigh 症候群的 <strong>Ndufs4⁻/⁻ 小鼠模型</strong>中，被認定為症狀發展關鍵貢獻者的是<strong>先天免疫</strong>的成分（特別是微膠細胞／巨噬細胞與 IFN-γ），<strong>而不是後天免疫</strong>。</li>
 </ul>
 <p>最後一點在後續篇章會反覆出現：這條路的主角是先天免疫，不是 T 細胞、B 細胞。</p>
-<h2 id="bt-s6">作者怎麼選文獻的</h2>
+<h2 id="bt-s7">作者怎麼選文獻的</h2>
 <p>這是一篇有明確納入程序的綜論。作者<strong>選了共 36 篇文獻，其中 24 篇聚焦於 PMD 相關基因，12 篇處理的基因不直接與 PMD 相關但仍與粒線體生物學有關</strong>，並依粒線體生物學的功能模組分類，整理成表 1 與表 2。</p>
 <p>值得核對的一件事：<strong>表 1 實列 24 筆，表 2 實列 11 筆，合計 35 筆</strong>，與內文寫的 36 篇差一筆。這不影響任何結論，但引用「36 篇」這個數字時值得知道表格本身數不出來。</p>
 <blockquote class="commentary">
@@ -173,19 +190,7 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <p>另外提醒一個實務上的讀法差異：摘要用 PAMP、內文用 DAMP。這兩個詞在演講投影片上常被混用，但在寫論文引用時是兩種不同的立場宣稱。這篇自己就沒統一。</p>
 </blockquote>
 <p>粒線體疾病的表型變異，長期以來被歸給異質性與組織閾值。作者提出的是另一個變數——同樣的突變，落在一個發炎反應設定值不同的人身上，走向可能不一樣。而如果那個設定值是可以被藥物調整的，這個領域的治療邏輯就得重寫一次。</p>
-<h2 id="bt-s7">臨床判讀重點</h2>
-<div class="bt-tablewrap"><table>
-<thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
-<tbody>
-<tr><td>粒線體疾病是罕見病</td><td>盛行率 <strong>1/4300</strong>；作者同時指出粒線體功能失調也是常見遺傳性與後天性疾病的特徵</td></tr>
-<tr><td>診斷不出來才是問題</td><td>基因體學已能為多數粒線體疾病提供分子診斷；<strong>卡住的是治療端</strong>——多數無核可療法，近期試驗<strong>無一達到主要終點</strong></td></tr>
-<tr><td>表型變異靠異質性解釋</td><td><strong>異質性並不能完全解釋</strong> PMD 的表型變異；核基因變異（如 POLG）同樣造成高度變異</td></tr>
-<tr><td>mtDNA 漏出來只是細胞在死</td><td>它是<strong>訊號事件</strong>：經 cGAS→2',3'-cGAMP→STING 誘發第一型干擾素，另可活化 AIM2／NLRP3 與 TLR9-NF-κB</td></tr>
-<tr><td>mtDNA 只有一條出路</td><td>實驗模型顯示三條：<strong>mPTP、BAK/BAX 孔道、VDAC</strong>；Fig. 1 另分膜介導（破裂／囊泡出芽）與蛋白介導兩類</td></tr>
-<tr><td>只有動物模型有證據</td><td>病人循環 mtDNA 上升並伴隨發炎路徑活化；健康人的循環胞外囊泡 mtDNA 含量與促發炎細胞激素相關</td></tr>
-<tr><td>免疫參與＝自體免疫</td><td>Leigh 症候群 Ndufs4⁻/⁻ 模型指向<strong>先天免疫</strong>（微膠細胞／巨噬細胞、IFN-γ），<strong>而非後天免疫</strong></td></tr>
-<tr><td>發炎一定是壞事</td><td>作者明講<strong>尚不清楚</strong>這些路徑是惡化表型還是因代償上調而緩解症狀</td></tr>
-</tbody></table></div>
+
 <p><strong>主要來源</strong></p>
 <p>Szabo M, Lagos D, Cross E, Collier JJ, Horvath R. Mitochondrial DNA release and inflammation in mitochondrial disease pathogenesis. <em>Brain</em> 2026;149(6):1874-1884. doi:<a href="https://doi.org/10.1093/brain/awag037">10.1093/brain/awag037</a></p>
 <p>本系列供醫療專業人員教學參考，不取代原始綜論全文、最新仿單、院內流程或個別臨床判斷。文中表格為原創整理；所有數字與機轉敘述均以原始 PDF 全文逐頁核校。</p>

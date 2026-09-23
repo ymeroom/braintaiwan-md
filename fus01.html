@@ -82,6 +82,7 @@ main{padding:16px 8px}
 blockquote{padding:12px 14px;margin:1.2em 0}
 .article p{font-size:13pt}
 .article li{font-size:13pt}
+.bt-tablewrap th,.bt-tablewrap td{min-width:6.5em}
 }
 .bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
 .bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
@@ -93,6 +94,9 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 .bt-toc a{color:#1565c0;text-decoration:none}
 .bt-toc a:hover{text-decoration:underline}
 .article h2[id]{scroll-margin-top:16px}
+.bt-keypoints{margin:1.4em 0 1.2em;padding:6px 18px 12px;background:#fffdf5;border:1px solid #f3e3b5;border-radius:10px}
+.bt-keypoints h2{margin-top:.8em}
+@media(max-width:600px){.bt-keypoints{padding:4px 10px 10px}}
 /* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/fus01.html">
@@ -116,15 +120,25 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <blockquote>
 <p><strong>系列導讀．第 01 篇</strong>　美國每年約有 15 萬名成人因為「第一次無誘發性癲癇發作」就醫。門診裡最先被問的問題永遠是同一個：還會不會再發作？AAN 與 AES 在 2015 年的這份指引把答案量化到 Level A，但它給出的「頭兩年 21% 到 45%」常被誤讀成信賴區間。這一篇處理定義、風險的時間分布，以及這個區間到底是什麼。</p>
 </blockquote>
-<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">先把「無誘發性」框出來</a></li><li><a href="#bt-s2">風險不是平均分布的</a></li><li><a href="#bt-s3">21%–45% 是全距，不是信賴區間</a></li><li><a href="#bt-s4">為什麼這些數字很可能是低估</a></li><li><a href="#bt-s5">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
-<h2 id="bt-s1">先把「無誘發性」框出來</h2>
+<!-- bt-key:start --><section class="bt-keypoints"><h2 id="bt-s1">臨床判讀重點</h2>
+<div class="bt-tablewrap"><table>
+<thead><tr><th>常見印象</th><th>文獻實際說法</th></tr></thead>
+<tbody>
+<tr><td>21%–45% 是復發風險的信賴區間</td><td>是各研究在 2 年時間點的全距，合併平均為 36%</td></tr>
+<tr><td>風險隨時間平均累積</td><td>五年風險的近七成在第一年內發生；頭一個月即 7%</td></tr>
+<tr><td>這些數字是真實風險的最佳估計</td><td>收案延遲與混入治療者兩項偏差，方向一致指向低估</td></tr>
+<tr><td>「第一次發作」是個直觀的臨床概念</td><td>就診時已有 &gt;1 次發作者被排除，定義比直覺窄</td></tr>
+<tr><td>誘發性與無誘發性發作可以一起談</td><td>指引明確排除急性症狀性發作，預後不同</td></tr>
+</tbody></table></div></section><!-- bt-key:end -->
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">臨床判讀重點</a></li><li><a href="#bt-s2">先把「無誘發性」框出來</a></li><li><a href="#bt-s3">風險不是平均分布的</a></li><li><a href="#bt-s4">21%–45% 是全距，不是信賴區間</a></li><li><a href="#bt-s5">為什麼這些數字很可能是低估</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s2">先把「無誘發性」框出來</h2>
 <p>這份指引處理的是一個定義相當窄的族群，而框線畫在哪裡會直接改變後面所有數字。</p>
 <p>無誘發性發作（unprovoked seizure）被歸進兩類其中之一：<strong>病因不明的發作</strong>，或是<strong>與既存腦部病灶、進行性中樞神經疾病相關的發作</strong>——後者就是所謂的「遠端症狀性」（remote symptomatic）發作。</p>
 <p>被排除在外的是誘發性發作（provoked seizure），也就是急性症狀性狀況造成的發作：代謝或毒性擾動、腦外傷急性期、中風急性期。指引明講這一群的預後與無誘發性發作不同，不能混談。</p>
 <p>另一條排除線同樣重要：<strong>就診時已經有超過一次發作的患者被排除</strong>。這件事在讀後面的復發率時要一直記著，因為它把族群限縮到真正只發作過一次的人。</p>
 <p>方法上，這是一份系統性回顧。搜尋 MEDLINE、Embase 與 Cochrane Central Register of Controlled Trials，涵蓋 <strong>1966 年到 2013 年 3 月</strong>，撈出 <strong>2,613 篇</strong>摘要，選出 <strong>281 篇</strong>做全文審查，最後 <strong>47 篇</strong>被判定相關且可接受，依 AAN 的證據分級標準評等。</p>
 <p>指引問了三個問題：復發風險有多高？立即用藥能不能改變短期復發或長期緩解？立即用藥的不良反應風險是多少？這個系列就沿著這三題走。</p>
-<h2 id="bt-s2">風險不是平均分布的</h2>
+<h2 id="bt-s3">風險不是平均分布的</h2>
 <p>回答第一題的證據是 <strong>2 篇 Class I</strong> 與 <strong>8 篇 Class II</strong> 研究，合計 <strong>3,212 位</strong>患者。這些研究混合了有用藥與沒用藥的受試者，而且用藥多半不是隨機分派的。</p>
 <p>把各時間點的合併復發率排出來，形狀比單一數字有用得多：</p>
 <div class="bt-tablewrap"><table>
@@ -142,27 +156,18 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <p>每個時間點的分母不同，因為不是每篇研究都回報每個時間點。</p>
 <p>這條曲線的重點在它的形狀而不是終點。<strong>一年就走到 32%，五年也才 46%</strong>——換句話說，五年份風險裡有將近七成在第一年就發生完了。指引自己的措辭是「32% at 1 year, compared with just 46% by 5 years」，那個 just 用得很準。</p>
 <p>再往前切，<strong>光是頭一個月就累積了 7%，三個月 18%</strong>。第一次發作後的頭幾週是整條曲線最陡的一段，而這正好是病人回到工作、開車、照顧小孩的那段時間。</p>
-<h2 id="bt-s3">21%–45% 是全距，不是信賴區間</h2>
+<h2 id="bt-s4">21%–45% 是全距，不是信賴區間</h2>
 <p>指引的 Level A 建議寫的是：應告知病人復發風險在<strong>頭兩年最高（21%–45%）</strong>。</p>
 <p>這個區間被誤讀的頻率很高。它不是信賴區間，也不是四分位距。<strong>它是各篇研究在兩年這個時間點上各自算出的復發率的全距。</strong></p>
 <p>把 Table 1 的兩年欄攤開就看得很清楚：21%、28%、41%、44%、45%、35%、43%。最低的 21% 與最高的 45% 就是那兩端，而合併平均是 <strong>36%</strong>。</p>
 <p>指引的 Figure 1 圖說也把這件事講明了——那張圖顯示的是「每個時間區段的累積平均值與<strong>全距</strong>」。誤差槓是研究間的散布，不是統計不確定性。</p>
 <p>實務上的差別在於怎麼跟病人講。如果那是信賴區間，合理的說法是「我們相當有把握真實風險落在這中間」；但它是全距，正確的說法比較接近「不同族群、不同收案方式的研究算出來的數字差很多，你的風險要看你屬於哪一種人」——而決定你屬於哪一種人的，就是下一篇要談的四個風險因子。</p>
-<h2 id="bt-s4">為什麼這些數字很可能是低估</h2>
+<h2 id="bt-s5">為什麼這些數字很可能是低估</h2>
 <p>指引在 Table 1 之後補了一段方法學上的自我批評，這段值得單獨看。</p>
 <p><strong>收案延遲會系統性地篩掉高風險的人。</strong> 如果研究是在第一次發作後數週甚至數月才把病人收進來，那些在這段空窗期內就復發的人已經不符合「只發作過一次」的納入條件，於是被排除。而我們剛看過，頭一個月就有 7% 復發。這種排除不是隨機的，它專門挑走風險最高的那群。</p>
 <p><strong>多數研究混入了已接受治療的患者。</strong> 全體 3,212 人中，有 <strong>1,196 人（43%）</strong>接受了抗癲癇藥治療（其中一篇研究未回報治療人數，這個百分比的分母是 2,788 人）。而在多數研究裡，治療組的復發率較低——但治療與否<strong>並非隨機分派</strong>，是醫師依臨床判斷決定的。</p>
 <p>指引的結論是這兩個因素「會導致變異性與復發風險的低估」。所以 Table 1 的那條曲線，比較合理的讀法是它的下緣而不是中位數。</p>
-<h2 id="bt-s5">臨床判讀重點</h2>
-<div class="bt-tablewrap"><table>
-<thead><tr><th>常見印象</th><th>文獻實際說法</th></tr></thead>
-<tbody>
-<tr><td>21%–45% 是復發風險的信賴區間</td><td>是各研究在 2 年時間點的全距，合併平均為 36%</td></tr>
-<tr><td>風險隨時間平均累積</td><td>五年風險的近七成在第一年內發生；頭一個月即 7%</td></tr>
-<tr><td>這些數字是真實風險的最佳估計</td><td>收案延遲與混入治療者兩項偏差，方向一致指向低估</td></tr>
-<tr><td>「第一次發作」是個直觀的臨床概念</td><td>就診時已有 &gt;1 次發作者被排除，定義比直覺窄</td></tr>
-<tr><td>誘發性與無誘發性發作可以一起談</td><td>指引明確排除急性症狀性發作，預後不同</td></tr>
-</tbody></table></div>
+
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>
 <p>我對這篇最在意的是「21%–45% 是全距」這件事。它不是吹毛求疵的統計潔癖——這兩種讀法會導出不一樣的門診對話。當成信賴區間，病人聽到的是一個他無能為力的機率；當成全距，接下來自然要問「那我是哪一種」，而這個問題是有答案的、也是我們接下來三篇要處理的。指引把風險分層放進 Level A 建議裡，其實就是在暗示不要停在那個區間上。</p>

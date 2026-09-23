@@ -17,6 +17,7 @@ main{padding:16px 8px}
 blockquote{padding:12px 14px;margin:1.2em 0}
 .article p{font-size:13pt}
 .article li{font-size:13pt}
+.bt-tablewrap th,.bt-tablewrap td{min-width:6.5em}
 }
 .bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
 .bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
@@ -28,6 +29,9 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 .bt-toc a{color:#1565c0;text-decoration:none}
 .bt-toc a:hover{text-decoration:underline}
 .article h2[id]{scroll-margin-top:16px}
+.bt-keypoints{margin:1.4em 0 1.2em;padding:6px 18px 12px;background:#fffdf5;border:1px solid #f3e3b5;border-radius:10px}
+.bt-keypoints h2{margin-top:.8em}
+@media(max-width:600px){.bt-keypoints{padding:4px 10px 10px}}
 /* bt-read:end */`;
 
 // CJK ≈ 400 字/分（專業文本放慢），拉丁詞 ≈ 200 詞/分
@@ -38,7 +42,7 @@ function readingMinutes(text) {
 }
 const strip = s => s.replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').trim();
 
-let articles = 0, tocs = 0;
+let articles = 0, tocs = 0, moved = 0;
 for (const file of fs.readdirSync(root).filter(f => f.endsWith('.html') && f !== 'index.html')) {
   const fp = path.join(root, file);
   let html = fs.readFileSync(fp, 'utf8');
@@ -50,8 +54,24 @@ for (const file of fs.readdirSync(root).filter(f => f.endsWith('.html') && f !==
   html = html.replace(/\/\* bt-read:start \*\/[\s\S]*?\/\* bt-read:end \*\/\n?/, '');
   html = html.replace('</style>', `${ARTICLE_CSS}\n</style>`);
 
-  // 2) TOC + reading time — rebuild from a clean <article>
   let body = m[1].replace(/\s*<!-- bt-toc:start -->[\s\S]*?<!-- bt-toc:end -->/, '');
+
+  // 1b) 重點前移：「臨床要點摘要…／臨床判讀重點」若標題下緊接表格或清單，整段（h2＋該表格/清單）
+  //     移到開頭導讀之後，包成 .bt-keypoints。散文型（標題下是段落）不動。已搬過的頁面有 marker，不重搬。
+  if (!body.includes('<!-- bt-key:start -->')) {
+    const blocks = [];
+    body = body.replace(
+      /<h2(?: id="bt-s\d+")?>((?:臨床要點摘要[^<]*|臨床判讀重點))<\/h2>(\s*(?:<div class="bt-tablewrap"><table[\s\S]*?<\/table><\/div>|<table[\s\S]*?<\/table>|<ul>[\s\S]*?<\/ul>))/g,
+      (_, title, block) => { blocks.push(`<h2>${title}</h2>${block}`); return ''; });
+    if (blocks.length) {
+      const key = `<!-- bt-key:start --><section class="bt-keypoints">${blocks.join('\n')}</section><!-- bt-key:end -->`;
+      const bq0 = body.match(/^\s*(?:<!-- new-edition:start -->[\s\S]*?<!-- new-edition:end -->\s*)?<blockquote>[\s\S]*?<\/blockquote>/);
+      body = bq0 ? body.slice(0, bq0[0].length) + '\n' + key + body.slice(bq0[0].length) : '\n' + key + body;
+      moved++;
+    }
+  }
+
+  // 2) TOC + reading time
   let n = 0;
   const heads = [];
   body = body.replace(/<h2(?: id="bt-s\d+")?>([\s\S]*?)<\/h2>/g, (_, inner) => {
@@ -63,7 +83,7 @@ for (const file of fs.readdirSync(root).filter(f => f.endsWith('.html') && f !==
     const mins = readingMinutes(strip(body));
     const toc = `<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 ${mins} 分鐘閱讀</span></summary><ol>${heads.map(h => `<li><a href="#${h.id}">${h.text}</a></li>`).join('')}</ol></details><!-- bt-toc:end -->`;
     // 放在開頭導讀 blockquote 之後；沒有就放在 article 最前面
-    const bq = body.match(/^\s*(?:<!-- new-edition:start -->[\s\S]*?<!-- new-edition:end -->\s*)?<blockquote>[\s\S]*?<\/blockquote>/);
+    const bq = body.match(/^\s*(?:<!-- new-edition:start -->[\s\S]*?<!-- new-edition:end -->\s*)?<blockquote>[\s\S]*?<\/blockquote>(?:\s*<!-- bt-key:start -->[\s\S]*?<!-- bt-key:end -->)?/);
     body = bq ? body.slice(0, bq[0].length) + '\n' + toc + body.slice(bq[0].length) : '\n' + toc + body;
     tocs++;
   }
@@ -136,4 +156,4 @@ const SEARCH_HTML = `<!-- bt-search:start -->
   fs.writeFileSync(fp, html, 'utf8');
 }
 
-console.log(`Readability: ${articles} article page(s), ${tocs} with TOC; index search installed.`);
+console.log(`Readability: ${articles} article page(s), ${tocs} with TOC, ${moved} key-points moved this run; index search installed.`);

@@ -82,6 +82,7 @@ main{padding:16px 8px}
 blockquote{padding:12px 14px;margin:1.2em 0}
 .article p{font-size:13pt}
 .article li{font-size:13pt}
+.bt-tablewrap th,.bt-tablewrap td{min-width:6.5em}
 }
 .bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
 .bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
@@ -93,6 +94,9 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 .bt-toc a{color:#1565c0;text-decoration:none}
 .bt-toc a:hover{text-decoration:underline}
 .article h2[id]{scroll-margin-top:16px}
+.bt-keypoints{margin:1.4em 0 1.2em;padding:6px 18px 12px;background:#fffdf5;border:1px solid #f3e3b5;border-radius:10px}
+.bt-keypoints h2{margin-top:.8em}
+@media(max-width:600px){.bt-keypoints{padding:4px 10px 10px}}
 /* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/pn01.html">
@@ -116,33 +120,7 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <blockquote>
 <p><strong>系列導讀．第 01 篇</strong>　周邊神經病變有兩百多種成因，但門診裡它們大多長成同一張臉——從腳趾開始的、對稱的、感覺重於運動的麻。這一篇先回答「為什麼是這張臉」：軸突有多長、背根神經節的血管為什麼特別漏、Schwann 細胞除了絕緣還做什麼，以及神經一旦斷了，重新長回來要花多久。後面四篇再談問診、檢查、病因與治療。</p>
 </blockquote>
-<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 7 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一個 1% 的病，卻是門診的常客</a></li><li><a href="#bt-s2">三種神經元，三組症狀</a></li><li><a href="#bt-s3">Schwann 細胞不只是絕緣皮</a></li><li><a href="#bt-s4">為什麼是腳趾，為什麼是感覺</a></li><li><a href="#bt-s5">原文的兩處鬆動</a></li><li><a href="#bt-s6">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
-<h2 id="bt-s1">一個 1% 的病，卻是門診的常客</h2>
-<p>先把規模擺出來。周邊神經病變的定義樸素到近乎廢話——<strong>周邊神經受損</strong>（damage to the peripheral nerves），但它影響<strong>全球約 1% 的成人</strong>。1% 聽起來不多，直到你把年齡切進去：盛行率隨年齡上升，<strong>六十歲以上族群估計有 6% 到 10%</strong>。</p>
-<p>糖尿病神經病變自己就是一個公共衛生量級的問題：<strong>全球約 2.06 億人</strong>，並在 2021 年被全球疾病負擔研究列為<strong>第五常見的神經性失能原因</strong>。在美國與歐洲，最常見的成因是糖尿病、酒精使用、神經毒性化療（paclitaxel、vincristine、cisplatin）與遺傳因素；在中低收入國家，痲瘋與 HIV 這類感染性病因則更常見。</p>
-<p>症狀的嚴重度跨度極大——從腳趾輕微發麻，到罕見情況下嚴重到需要輪椅。而這篇綜論鎖定的，是其中最常見的那一型：<strong>長度依賴型周邊神經病變</strong>（length-dependent peripheral neuropathy, LDPN），又稱<strong>遠端對稱性多發性神經病變</strong>（distal symmetric polyneuropathy）。它是一般科醫師最常遇到的型態，特徵是<strong>感覺症狀多於運動症狀</strong>。</p>
-<p>方法學也值得記一筆，因為它決定了這篇綜論的資訊密度：搜尋 2015 年 2 月 1 日到 2025 年 8 月 31 日的 PubMed 英文人體研究，787 篇中納入 100 篇，包含 13 篇隨機試驗、16 篇統合分析、9 份臨床指引、35 篇橫斷研究、11 篇縱貫世代與 16 篇綜論。隨機試驗只有 13 篇——這個比例本身就在說：這個領域的高等級證據並不厚。</p>
-<h2 id="bt-s2">三種神經元，三組症狀</h2>
-<p>要看懂周邊神經病變的症狀清單，先看細胞本體住在哪裡。</p>
-<p><strong>運動神經元</strong>的細胞本體在脊髓前角，軸突以大直徑、有髓鞘為主。它壞掉時的表現是肌肉萎縮、肌肉無力、肌束顫動（fasciculation），以及深部肌腱反射減弱或消失。</p>
-<p><strong>感覺神經元</strong>的細胞本體在背根神經節（dorsal root ganglia），軸突從大有髓鞘、小有髓鞘到小無髓鞘都有。症狀是感覺喪失／麻木、感覺異常（刺痛、灼熱、針扎感）、感覺性運動失調（sensory ataxia）、疼痛（刺痛、電擊感、痛覺過敏 hyperalgesia、觸覺誘發痛 allodynia），以及反射減弱或消失。</p>
-<p><strong>自律神經元</strong>的軸突全是小的、無髓鞘的。副交感神經節位於器官內或附近與腦幹，交感神經節則沿脊髓兩側排在交感神經幹上。它壞掉的表現最雜：姿勢性低血壓、口乾、眼乾、早飽、便秘、尿滯留、勃起功能障礙、排汗增加或減少。</p>
-<p>同一個病人身上這三組可以任意組合，而組合的比例，往往就是病因的線索——這條線索在第 04 篇會反覆用到。</p>
-<h2 id="bt-s3">Schwann 細胞不只是絕緣皮</h2>
-<p>高血糖透過幾條互相牽連的生化、血管與發炎機轉傷害周邊神經。而在這些機轉的下游，Schwann 細胞是關鍵角色。</p>
-<p>Schwann 細胞負責替大軸突包髓鞘、也包覆小的無髓鞘纖維，並透過<strong>生長因子</strong>（神經生長因子 NGF、腦源性神經滋養因子 BDNF、血管內皮生長因子 VEGF）以及<strong>調節軸突的鐵與乳酸代謝</strong>，來維持軸突的健康。換句話說，它不是被動的絕緣材料，而是軸突的後勤補給。Schwann 細胞受損會讓傳導變慢，並可能進一步造成軸突退化。</p>
-<p>綜論把神經病變的成因收斂成一句話：<strong>當神經元死亡、軸突退化、神經元興奮性改變，或 Schwann 細胞的支持失效時，神經病變就發生</strong>。而病理上的兩大類——<strong>軸突原發受損</strong>多半表現為華勒氏退化（Wallerian degeneration），<strong>髓鞘原發受損</strong>多半表現為脫髓鞘（demyelination）——正是第 03 篇電生理判讀的骨架。</p>
-<p>還有一個數字值得單獨記住：如果神經元本體存活下來，<strong>在病因被矯正之後，軸突再生的速度是每天 1 到 3 毫米</strong>。從腳趾長回來要多久，可以自己算——這也是為什麼「早點找出病因」在這個病不是口號，而是算術。</p>
-<h2 id="bt-s4">為什麼是腳趾，為什麼是感覺</h2>
-<p>這是整篇綜論最漂亮的一段推理，兩個機轉解釋了一張臉。</p>
-<p><strong>為什麼先麻腳趾。</strong> 支配腳趾的軸突<strong>可以長達三英尺</strong>（約 90 公分），而維持這麼長的軸突運輸需要極高的代謝支持。當全身性的代謝或毒性壓力壓下來，最先撐不住的就是這條最長、最耗能的線——所以 LDPN 先侵犯腳趾，之後才往上到小腿與手。</p>
-<p><strong>為什麼是感覺重於運動。</strong> 綜論很誠實地說這一點<strong>尚未完全清楚</strong>，但提出一個部分解釋：背根神經節裡存在<strong>有孔微血管</strong>（fenestrated capillaries），這會削弱血-神經屏障，使感覺神經元對高血糖、對神經毒性藥物這類全身性因子更敏感。屏障比較漏，就比較容易被波及。</p>
-<p>LDPN 的感覺症狀又可以拆成兩束纖維：大纖維感覺軸突負責本體感覺與振動覺，小纖維感覺軸突負責溫度與痛覺。臨床上麻木與感覺異常反映的就是這兩束的損傷——這個二分法會在第 03 篇決定你該做神經傳導檢查還是皮膚切片。</p>
-<h2 id="bt-s5">原文的兩處鬆動</h2>
-<p>導讀到這裡要標記兩個地方，它們不影響臨床決策，但引用時要小心。</p>
-<p><strong>第一處：糖尿病佔比的量詞方向與範圍都不一樣。</strong> 摘要寫的是糖尿病神經病變<strong>佔西方族群周邊神經病變的「超過 50%」</strong>（accounts for more than 50% of peripheral neuropathy in Western populations），正文的病因段落寫的卻是糖尿病<strong>佔全球所有周邊神經病變病例「高達 50%」</strong>（up to 50% of all peripheral neuropathy cases worldwide）。「超過」與「高達」是相反方向的量詞，母體也從西方族群換成全球。本系列引用時採正文版本，並保留「高達」這個上限語氣。</p>
-<p><strong>第二處：摘要有一個正文沒有接住的數字。</strong> 摘要說「<strong>高達 27% 的神經病變成人在完成診斷性檢查後仍找不到病因</strong>」，但這個 27% 在全文正文中沒有再出現，也沒有標註來源段落。正文對特發性神經病變只給了另一個角度的數字：<strong>所有特發性神經病變中，約三分之一到二分之一可能是遺傳性的，最常見的是 Charcot-Marie-Tooth 病</strong>。兩個數字並不衝突，但 27% 這一條在正文裡沒有落腳點，引用時建議直接標注來自摘要。</p>
-<h2 id="bt-s6">臨床判讀重點</h2>
+<!-- bt-key:start --><section class="bt-keypoints"><h2 id="bt-s1">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
 <tbody>
@@ -152,7 +130,34 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <tr><td>髓鞘細胞只負責絕緣</td><td>Schwann 細胞透過 NGF／BDNF／VEGF 與調節軸突鐵、乳酸代謝維持軸突健康</td></tr>
 <tr><td>找到病因就會好</td><td>神經元存活下軸突再生每天僅 1–3 mm，且須先矯正病因</td></tr>
 <tr><td>糖尿病佔比有單一數字</td><td>摘要「西方族群超過 50%」與正文「全球高達 50%」量詞方向與母體皆不同</td></tr>
-</tbody></table></div>
+</tbody></table></div></section><!-- bt-key:end -->
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 7 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">臨床判讀重點</a></li><li><a href="#bt-s2">一個 1% 的病，卻是門診的常客</a></li><li><a href="#bt-s3">三種神經元，三組症狀</a></li><li><a href="#bt-s4">Schwann 細胞不只是絕緣皮</a></li><li><a href="#bt-s5">為什麼是腳趾，為什麼是感覺</a></li><li><a href="#bt-s6">原文的兩處鬆動</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s2">一個 1% 的病，卻是門診的常客</h2>
+<p>先把規模擺出來。周邊神經病變的定義樸素到近乎廢話——<strong>周邊神經受損</strong>（damage to the peripheral nerves），但它影響<strong>全球約 1% 的成人</strong>。1% 聽起來不多，直到你把年齡切進去：盛行率隨年齡上升，<strong>六十歲以上族群估計有 6% 到 10%</strong>。</p>
+<p>糖尿病神經病變自己就是一個公共衛生量級的問題：<strong>全球約 2.06 億人</strong>，並在 2021 年被全球疾病負擔研究列為<strong>第五常見的神經性失能原因</strong>。在美國與歐洲，最常見的成因是糖尿病、酒精使用、神經毒性化療（paclitaxel、vincristine、cisplatin）與遺傳因素；在中低收入國家，痲瘋與 HIV 這類感染性病因則更常見。</p>
+<p>症狀的嚴重度跨度極大——從腳趾輕微發麻，到罕見情況下嚴重到需要輪椅。而這篇綜論鎖定的，是其中最常見的那一型：<strong>長度依賴型周邊神經病變</strong>（length-dependent peripheral neuropathy, LDPN），又稱<strong>遠端對稱性多發性神經病變</strong>（distal symmetric polyneuropathy）。它是一般科醫師最常遇到的型態，特徵是<strong>感覺症狀多於運動症狀</strong>。</p>
+<p>方法學也值得記一筆，因為它決定了這篇綜論的資訊密度：搜尋 2015 年 2 月 1 日到 2025 年 8 月 31 日的 PubMed 英文人體研究，787 篇中納入 100 篇，包含 13 篇隨機試驗、16 篇統合分析、9 份臨床指引、35 篇橫斷研究、11 篇縱貫世代與 16 篇綜論。隨機試驗只有 13 篇——這個比例本身就在說：這個領域的高等級證據並不厚。</p>
+<h2 id="bt-s3">三種神經元，三組症狀</h2>
+<p>要看懂周邊神經病變的症狀清單，先看細胞本體住在哪裡。</p>
+<p><strong>運動神經元</strong>的細胞本體在脊髓前角，軸突以大直徑、有髓鞘為主。它壞掉時的表現是肌肉萎縮、肌肉無力、肌束顫動（fasciculation），以及深部肌腱反射減弱或消失。</p>
+<p><strong>感覺神經元</strong>的細胞本體在背根神經節（dorsal root ganglia），軸突從大有髓鞘、小有髓鞘到小無髓鞘都有。症狀是感覺喪失／麻木、感覺異常（刺痛、灼熱、針扎感）、感覺性運動失調（sensory ataxia）、疼痛（刺痛、電擊感、痛覺過敏 hyperalgesia、觸覺誘發痛 allodynia），以及反射減弱或消失。</p>
+<p><strong>自律神經元</strong>的軸突全是小的、無髓鞘的。副交感神經節位於器官內或附近與腦幹，交感神經節則沿脊髓兩側排在交感神經幹上。它壞掉的表現最雜：姿勢性低血壓、口乾、眼乾、早飽、便秘、尿滯留、勃起功能障礙、排汗增加或減少。</p>
+<p>同一個病人身上這三組可以任意組合，而組合的比例，往往就是病因的線索——這條線索在第 04 篇會反覆用到。</p>
+<h2 id="bt-s4">Schwann 細胞不只是絕緣皮</h2>
+<p>高血糖透過幾條互相牽連的生化、血管與發炎機轉傷害周邊神經。而在這些機轉的下游，Schwann 細胞是關鍵角色。</p>
+<p>Schwann 細胞負責替大軸突包髓鞘、也包覆小的無髓鞘纖維，並透過<strong>生長因子</strong>（神經生長因子 NGF、腦源性神經滋養因子 BDNF、血管內皮生長因子 VEGF）以及<strong>調節軸突的鐵與乳酸代謝</strong>，來維持軸突的健康。換句話說，它不是被動的絕緣材料，而是軸突的後勤補給。Schwann 細胞受損會讓傳導變慢，並可能進一步造成軸突退化。</p>
+<p>綜論把神經病變的成因收斂成一句話：<strong>當神經元死亡、軸突退化、神經元興奮性改變，或 Schwann 細胞的支持失效時，神經病變就發生</strong>。而病理上的兩大類——<strong>軸突原發受損</strong>多半表現為華勒氏退化（Wallerian degeneration），<strong>髓鞘原發受損</strong>多半表現為脫髓鞘（demyelination）——正是第 03 篇電生理判讀的骨架。</p>
+<p>還有一個數字值得單獨記住：如果神經元本體存活下來，<strong>在病因被矯正之後，軸突再生的速度是每天 1 到 3 毫米</strong>。從腳趾長回來要多久，可以自己算——這也是為什麼「早點找出病因」在這個病不是口號，而是算術。</p>
+<h2 id="bt-s5">為什麼是腳趾，為什麼是感覺</h2>
+<p>這是整篇綜論最漂亮的一段推理，兩個機轉解釋了一張臉。</p>
+<p><strong>為什麼先麻腳趾。</strong> 支配腳趾的軸突<strong>可以長達三英尺</strong>（約 90 公分），而維持這麼長的軸突運輸需要極高的代謝支持。當全身性的代謝或毒性壓力壓下來，最先撐不住的就是這條最長、最耗能的線——所以 LDPN 先侵犯腳趾，之後才往上到小腿與手。</p>
+<p><strong>為什麼是感覺重於運動。</strong> 綜論很誠實地說這一點<strong>尚未完全清楚</strong>，但提出一個部分解釋：背根神經節裡存在<strong>有孔微血管</strong>（fenestrated capillaries），這會削弱血-神經屏障，使感覺神經元對高血糖、對神經毒性藥物這類全身性因子更敏感。屏障比較漏，就比較容易被波及。</p>
+<p>LDPN 的感覺症狀又可以拆成兩束纖維：大纖維感覺軸突負責本體感覺與振動覺，小纖維感覺軸突負責溫度與痛覺。臨床上麻木與感覺異常反映的就是這兩束的損傷——這個二分法會在第 03 篇決定你該做神經傳導檢查還是皮膚切片。</p>
+<h2 id="bt-s6">原文的兩處鬆動</h2>
+<p>導讀到這裡要標記兩個地方，它們不影響臨床決策，但引用時要小心。</p>
+<p><strong>第一處：糖尿病佔比的量詞方向與範圍都不一樣。</strong> 摘要寫的是糖尿病神經病變<strong>佔西方族群周邊神經病變的「超過 50%」</strong>（accounts for more than 50% of peripheral neuropathy in Western populations），正文的病因段落寫的卻是糖尿病<strong>佔全球所有周邊神經病變病例「高達 50%」</strong>（up to 50% of all peripheral neuropathy cases worldwide）。「超過」與「高達」是相反方向的量詞，母體也從西方族群換成全球。本系列引用時採正文版本，並保留「高達」這個上限語氣。</p>
+<p><strong>第二處：摘要有一個正文沒有接住的數字。</strong> 摘要說「<strong>高達 27% 的神經病變成人在完成診斷性檢查後仍找不到病因</strong>」，但這個 27% 在全文正文中沒有再出現，也沒有標註來源段落。正文對特發性神經病變只給了另一個角度的數字：<strong>所有特發性神經病變中，約三分之一到二分之一可能是遺傳性的，最常見的是 Charcot-Marie-Tooth 病</strong>。兩個數字並不衝突，但 27% 這一條在正文裡沒有落腳點，引用時建議直接標注來自摘要。</p>
+
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>
 <p>「腳麻」是神經內科門診最沒有辨識度的主訴之一，但它其實自帶一個很強的線索——<strong>分布</strong>。當一個病人告訴我兩腳從腳趾開始對稱地麻、慢慢往上爬，我心裡的鑑別診斷清單已經先收窄了一大半，因為這個形狀本身就在說：這不是某一條神經被壓到，而是全身性的東西正在同時修理所有最長的軸突。</p>

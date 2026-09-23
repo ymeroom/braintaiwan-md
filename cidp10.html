@@ -84,6 +84,7 @@ main{padding:16px 8px}
 blockquote{padding:12px 14px;margin:1.2em 0}
 .article p{font-size:13pt}
 .article li{font-size:13pt}
+.bt-tablewrap th,.bt-tablewrap td{min-width:6.5em}
 }
 .bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
 .bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
@@ -95,6 +96,9 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 .bt-toc a{color:#1565c0;text-decoration:none}
 .bt-toc a:hover{text-decoration:underline}
 .article h2[id]{scroll-margin-top:16px}
+.bt-keypoints{margin:1.4em 0 1.2em;padding:6px 18px 12px;background:#fffdf5;border:1px solid #f3e3b5;border-radius:10px}
+.bt-keypoints h2{margin-top:.8em}
+@media(max-width:600px){.bt-keypoints{padding:4px 10px 10px}}
 /* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/cidp10.html">
@@ -118,11 +122,20 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <blockquote>
 <p><strong>系列導讀．第 10 篇（完結）</strong>　以 Kiers &amp; Cruse 2025 綜述為主軸 第一線的三本柱是「廣譜」的——它們壓制整個免疫系統。新一代的藥不一樣，它們對準第 1 篇講過的那條致病路徑上的特定環節：回收致病抗體的 FcRn、收尾傷害的補體、製造抗體的 B 細胞。這是 CIDP 治療從「壓制」走向「精準」的一篇。</p>
 </blockquote>
-<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、FcRn 抑制劑：把致病抗體「丟進垃圾桶」</a></li><li><a href="#bt-s2">二、補體抑制劑：擋住「收尾的那一刀」</a></li><li><a href="#bt-s3">三、清掉 B 細胞與抗體工廠：CAR-T 的初登場</a></li><li><a href="#bt-s4">四、為什麼「機轉導向」是真正的轉折</a></li><li><a href="#bt-s5">臨床要點摘要</a></li></ol></details><!-- bt-toc:end -->
+<!-- bt-key:start --><section class="bt-keypoints"><h2 id="bt-s1">臨床要點摘要</h2>
+<div class="bt-tablewrap"><table>
+<thead><tr><th>類別</th><th>代表藥</th><th>機轉</th><th>現況</th></tr></thead>
+<tbody>
+<tr><td>FcRn 抑制劑</td><td>efgartigimod</td><td>加速 IgG 分解、降致病抗體</td><td>ADHERE 陽性；rozanolixizumab 陰性；部分病人非 IgG 驅動</td></tr>
+<tr><td>補體抑制劑</td><td>riliprubart / eculizumab</td><td>擋補體傷害（C1s / C5）</td><td>riliprubart 第 2 期佳、NfL↓35%，第 3 期進行中</td></tr>
+<tr><td>CAR-T</td><td>抗 BCMA / 抗 CD19</td><td>清除 B 細胞/漿細胞</td><td>個案層級，難治與結性神經病值得研究</td></tr>
+<tr><td>共同課題</td><td>—</td><td>—</td><td>CIDP 異質，缺生物標記預測機轉 → 難「依機轉選藥」</td></tr>
+</tbody></table></div></section><!-- bt-key:end -->
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">臨床要點摘要</a></li><li><a href="#bt-s2">一、FcRn 抑制劑：把致病抗體「丟進垃圾桶」</a></li><li><a href="#bt-s3">二、補體抑制劑：擋住「收尾的那一刀」</a></li><li><a href="#bt-s4">三、清掉 B 細胞與抗體工廠：CAR-T 的初登場</a></li><li><a href="#bt-s5">四、為什麼「機轉導向」是真正的轉折</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>回到第 1 篇那條致病路徑：自體抗體滲進神經、巨噬細胞吃髓鞘、補體沉積收尾。第一線三本柱是「大水漫灌」式地壓制整個免疫系統；而新一代的藥，是看著這條路徑上的某一個環節下手——把致病抗體回收掉、把補體這一步擋住、或乾脆清掉製造抗體的細胞。對那群難治、或受不了第一線副作用的病人，這是最值得期待的方向。</p>
 <hr>
-<h2 id="bt-s1">一、FcRn 抑制劑：把致病抗體「丟進垃圾桶」</h2>
+<h2 id="bt-s2">一、FcRn 抑制劑：把致病抗體「丟進垃圾桶」</h2>
 <p>身體有個叫<strong>新生兒 Fc 受體（FcRn）</strong>的回收機制，會把 IgG 抗體不斷回收再利用、延長它的壽命。FcRn 抑制劑的概念很聰明：<strong>擋住這個回收，讓 IgG（包括致病自體抗體）加速被分解、整體血中 IgG 濃度下降。</strong></p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>藥物</th><th>設計</th><th>關鍵結果</th></tr></thead>
@@ -132,7 +145,7 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 </tbody></table></div>
 <p>Efgartigimod 的 ADHERE 試驗成功了，但有兩個耐人尋味的細節提醒我們別過度樂觀：開放標籤期就有約 <strong>32% 原本打免疫球蛋白的人因惡化退出</strong>；另有報告指出，9 位從 IVIg 轉換的穩定病人中，<strong>4 位在轉換後 2–9 天內快速惡化</strong>。這暗示了一件深刻的事——<strong>有些 CIDP 病人的病，可能不是由 IgG 自體抗體驅動的</strong>，所以單純降 IgG 對他們沒用，甚至更糟。Rozanolixizumab 的陰性結果（IgG 都降了八成，臨床卻沒進步）也指向同一個訊息。</p>
 <hr>
-<h2 id="bt-s2">二、補體抑制劑：擋住「收尾的那一刀」</h2>
+<h2 id="bt-s3">二、補體抑制劑：擋住「收尾的那一刀」</h2>
 <p>第 1 篇說過補體會參與巨噬細胞媒介的脫髓鞘、是多條免疫路徑的終末效應。補體抑制劑就是衝著這一步來的：</p>
 <ul>
 <li><strong>Eculizumab</strong>：抗 C5 單抗，阻止攻膜複合體形成。目前 CIDP 只有單一案例報告顯示顯著改善（INCAT 從 8 降到 2），尚無臨床試驗；在 GBS 的試驗則令人失望。</li>
@@ -140,7 +153,7 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 </ul>
 <p>抑制近端 C1（而非 C5）的好處之一，是替代與凝集素路徑仍保留、對抗感染的防禦較完整，理論上安全性可能更好。</p>
 <hr>
-<h2 id="bt-s3">三、清掉 B 細胞與抗體工廠：CAR-T 的初登場</h2>
+<h2 id="bt-s4">三、清掉 B 細胞與抗體工廠：CAR-T 的初登場</h2>
 <p>更激進的方向是直接清掉製造抗體的細胞。<strong>抗 BCMA 或抗 CD19 的 CAR-T 細胞療法</strong>在難治自體免疫病嶄露頭角，目前在難治 CIDP 有兩篇報告、共四位病人：</p>
 <ul>
 <li>一位運動型、一位典型 CIDP（抗 BCMA）：一位持續緩解超過兩年，一位 12 個月後復發</li>
@@ -148,19 +161,11 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 </ul>
 <p>安全性都算可控。鑑於 B 細胞與自體抗體在 CIDP 的潛在角色，這個方向值得對<strong>高度難治、嚴重失能、以及自體免疫結性神經病</strong>的病人進一步研究。</p>
 <hr>
-<h2 id="bt-s4">四、為什麼「機轉導向」是真正的轉折</h2>
+<h2 id="bt-s5">四、為什麼「機轉導向」是真正的轉折</h2>
 <p>把這些新藥放在一起看，會發現它們共同回答了一個老問題：第一線三本柱雖然有效，但它們是「廣譜壓制」，副作用、成本、長期負擔都不小。新一代的藥對準特定環節——FcRn、補體、B 細胞——讓我們第一次有機會「依機轉選藥」。</p>
 <p>但 ADHERE 與 rozanolixizumab 那些不一致的結果，也誠實地揭露了 CIDP 最根本的難題：<strong>它是一個異質的光譜，不同病人由不同機轉驅動，而我們現在還沒有生物標記能事先分辨誰是誰。</strong>有人靠 IgG 抗體驅動（適合 FcRn），有人靠補體（適合 riliprubart），有人靠別的。這也讓整個系列繞回了起點——CIDP 至今仍是個臨床診斷，找到能標出個別病人致病機轉的可靠生物標記，會是讓這些精準武器真正用對人的那把鑰匙。</p>
 <hr>
-<h2 id="bt-s5">臨床要點摘要</h2>
-<div class="bt-tablewrap"><table>
-<thead><tr><th>類別</th><th>代表藥</th><th>機轉</th><th>現況</th></tr></thead>
-<tbody>
-<tr><td>FcRn 抑制劑</td><td>efgartigimod</td><td>加速 IgG 分解、降致病抗體</td><td>ADHERE 陽性；rozanolixizumab 陰性；部分病人非 IgG 驅動</td></tr>
-<tr><td>補體抑制劑</td><td>riliprubart / eculizumab</td><td>擋補體傷害（C1s / C5）</td><td>riliprubart 第 2 期佳、NfL↓35%，第 3 期進行中</td></tr>
-<tr><td>CAR-T</td><td>抗 BCMA / 抗 CD19</td><td>清除 B 細胞/漿細胞</td><td>個案層級，難治與結性神經病值得研究</td></tr>
-<tr><td>共同課題</td><td>—</td><td>—</td><td>CIDP 異質，缺生物標記預測機轉 → 難「依機轉選藥」</td></tr>
-</tbody></table></div>
+
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

@@ -83,6 +83,7 @@ main{padding:16px 8px}
 blockquote{padding:12px 14px;margin:1.2em 0}
 .article p{font-size:13pt}
 .article li{font-size:13pt}
+.bt-tablewrap th,.bt-tablewrap td{min-width:6.5em}
 }
 .bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
 .bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
@@ -94,6 +95,9 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 .bt-toc a{color:#1565c0;text-decoration:none}
 .bt-toc a:hover{text-decoration:underline}
 .article h2[id]{scroll-margin-top:16px}
+.bt-keypoints{margin:1.4em 0 1.2em;padding:6px 18px 12px;background:#fffdf5;border:1px solid #f3e3b5;border-radius:10px}
+.bt-keypoints h2{margin-top:.8em}
+@media(max-width:600px){.bt-keypoints{padding:4px 10px 10px}}
 /* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/mg02.html">
@@ -116,29 +120,7 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <blockquote>
 <p><strong>系列導讀．第 2 篇</strong>　第一篇我們把神經肌肉接合處（NMJ）想成一道閘口，重症肌無力（MG）的問題就是「閘口被堵住、訊號傳不過去」。這一篇接著問兩個更具體的問題：<strong>到底是誰在堵，又是怎麼堵的？</strong> 答案是一群自體抗體，而它們各自堵的方式、堵的位置都不一樣。理解這幾種抗體，也等於為後面幾篇的治療標靶埋好伏筆。本篇取材自 StatPearls《Myasthenia Gravis》第 2、4 節。</p>
 </blockquote>
-<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、AChR 抗體：不只是「卡住插座」，還會招來補體</a></li><li><a href="#bt-s2">二、驗不到 AChR，不代表沒病：MuSK 與 LRP4</a></li><li><a href="#bt-s3">三、胸腺：另一個常被牽連的角色</a></li><li><a href="#bt-s4">臨床要點摘要</a></li><li><a href="#bt-s5">參考文獻</a></li></ol></details><!-- bt-toc:end -->
-<hr>
-<p>堵住閘口的不是一種東西，而是一群名字長得很像、脾氣卻各不相同的自體抗體。把它們分清楚，臨床上才知道這個病人「屬於哪一型」，也才知道後面該打哪一種藥。</p>
-<p>最常見、也最經典的那一個，叫 <strong>AChR 抗體</strong>——乙醯膽鹼受體（acetylcholine receptor）的抗體。乙醯膽鹼是神經那一側放出來的訊號分子，AChR 就是肌肉那一側用來接收訊號的「插座」。AChR 抗體做的事，就是去攻擊這些插座。在<strong>全身型 MG</strong> 的病人裡，大約<strong>五分之四（約 80%）</strong> 驗得到這種抗體；但如果是只影響眼睛的<strong>純眼型</strong>，比例就降到只有<strong>一半</strong>左右。光是這個落差就提醒我們：眼睛動不了、眼皮垂下來的病人，抽血沒驗到 AChR 抗體，一點都不奇怪。</p>
-<hr>
-<h2 id="bt-s1">一、AChR 抗體：不只是「卡住插座」，還會招來補體</h2>
-<p>如果 AChR 抗體只是黏在受體上、把乙醯膽鹼擋在門外，那還算「物理性」的堵。但它真正狠的地方，在於它會<strong>活化補體（complement）</strong>。</p>
-<p>補體是一串免疫系統的連鎖反應，平常用來對付細菌——一旦被啟動，最後會在目標的細胞膜上鑽洞、把膜打穿。AChR 抗體黏到突觸後膜上之後，就像幫補體系統貼了一張「攻擊這裡」的標籤，整串補體串級被點燃，<strong>直接破壞突觸後膜本身</strong>。於是肌肉那一側的膜被打得坑坑疤疤，原本排列整齊、用來接收訊號的皺褶結構塌掉，插座數量也跟著少掉。閘口不只是被卡住，是連門框都被拆了。</p>
-<p>這個機轉值得特別記住，因為它正是本系列<strong>第五篇要談的補體抑制劑的標靶</strong>。後面那些針對 C5 的新藥，攔截的就是這條「AChR 抗體 → 活化補體 → 膜被打穿」的下游路徑。換句話說，今天這段機轉不是背景知識，而是後面治療故事的開頭。</p>
-<p>順帶一提，還有一種<strong>抗橫紋肌抗體（anti-striated muscle antibody）</strong>，見於約 <strong>30%</strong> 的 MG 患者。它不直接堵在閘口上，但在臨床上常被當成一條旁證線索——這一篇先點到，後面談胸腺時會再回來看它。</p>
-<hr>
-<h2 id="bt-s2">二、驗不到 AChR，不代表沒病：MuSK 與 LRP4</h2>
-<p>門診常見的一個誤會是：抽血沒驗到 AChR 抗體，就以為「應該不是肌無力」。這個推論是錯的。<strong>血清陰性（seronegative）不等於沒病，只是現有的這幾種抗體沒抓到而已。</strong> 同一道閘口可以從不同零件被破壞，而我們手上的檢驗工具，本來就只認得其中幾種抗體。</p>
-<p>在那些 AChR 驗不到的病人裡，第二常見的兇手是 <strong>MuSK 抗體</strong>，見於約 <strong>5% 到 10%</strong> 的血清陰性患者。MuSK 是一個負責「把 AChR 插座整理好、固定在正確位置」的分子；攻擊它，等於破壞插座的安裝與排列，結果同樣是訊號傳不過去，只是壞的環節不一樣。</p>
-<p>再來是 <strong>LRP4 抗體</strong>，見於其餘血清陰性者的 <strong>3% 到 50%</strong>——這個範圍很寬，反映各研究族群差異很大，但重點在於：當 AChR 和 MuSK 都驗不到時，LRP4 是下一個值得想到的候選。</p>
-<p>把這三個排在一起看，分型的邏輯就清楚了：先看是不是 AChR 陽性；不是，再看 MuSK；還不是，才輪到 LRP4。每往下一層，就是在說「上一種抗體沒抓到，但病還在」。所以面對一個臨床上很像 MG、抽血卻一片乾淨的病人，正確的想法不是「排除 MG」，而是「現在的抗體套組還沒抓到那個真正在堵的傢伙」。</p>
-<hr>
-<h2 id="bt-s3">三、胸腺：另一個常被牽連的角色</h2>
-<p>談 MG 不能不談胸腺。胸腺是免疫系統訓練 T 細胞的地方，而 MG 與它的關係相當密切——大約 <strong>10%</strong> 的 MG 患者，胸腺裡長了<strong>胸腺瘤（thymoma）</strong>。</p>
-<p>換個角度看，這代表每十個 MG 病人，就有一個合併胸腺瘤；也代表確診 MG 之後，去看一眼胸腺有沒有問題，是合理而必要的一步。胸腺瘤本身是一個獨立於肌無力之外、需要處理的腫瘤；而它與這個病的糾纏，也讓「<strong>把胸腺切掉</strong>」在 MG 的治療裡占有一席之地——這正是<strong>第五篇胸腺切除（thymectomy）</strong>要展開的另一條線。</p>
-<p>前面提到的抗橫紋肌抗體，在這裡可以再串一次：它在臨床上常被視為與胸腺瘤相關的線索之一。所以驗到它的時候，胸腺這個角色就更值得多看兩眼。</p>
-<hr>
-<h2 id="bt-s4">臨床要點摘要</h2>
+<!-- bt-key:start --><section class="bt-keypoints"><h2 id="bt-s1">臨床要點摘要</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>抗體／結構</th><th>出現比例（依 SOURCE）</th><th>重點</th></tr></thead>
 <tbody>
@@ -147,7 +129,30 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <tr><td>LRP4 抗體</td><td>其餘血清陰性者 3–50%</td><td>AChR、MuSK 都陰性時的候選</td></tr>
 <tr><td>抗橫紋肌抗體</td><td>約 30% 的 MG 患者</td><td>臨床旁證，與胸腺瘤相關</td></tr>
 <tr><td>胸腺瘤</td><td>約 10% 的 MG 患者</td><td>確診後須評估胸腺（第五篇胸腺切除）</td></tr>
-</tbody></table></div>
+</tbody></table></div></section><!-- bt-key:end -->
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">臨床要點摘要</a></li><li><a href="#bt-s2">一、AChR 抗體：不只是「卡住插座」，還會招來補體</a></li><li><a href="#bt-s3">二、驗不到 AChR，不代表沒病：MuSK 與 LRP4</a></li><li><a href="#bt-s4">三、胸腺：另一個常被牽連的角色</a></li><li><a href="#bt-s5">參考文獻</a></li></ol></details><!-- bt-toc:end -->
+<hr>
+<p>堵住閘口的不是一種東西，而是一群名字長得很像、脾氣卻各不相同的自體抗體。把它們分清楚，臨床上才知道這個病人「屬於哪一型」，也才知道後面該打哪一種藥。</p>
+<p>最常見、也最經典的那一個，叫 <strong>AChR 抗體</strong>——乙醯膽鹼受體（acetylcholine receptor）的抗體。乙醯膽鹼是神經那一側放出來的訊號分子，AChR 就是肌肉那一側用來接收訊號的「插座」。AChR 抗體做的事，就是去攻擊這些插座。在<strong>全身型 MG</strong> 的病人裡，大約<strong>五分之四（約 80%）</strong> 驗得到這種抗體；但如果是只影響眼睛的<strong>純眼型</strong>，比例就降到只有<strong>一半</strong>左右。光是這個落差就提醒我們：眼睛動不了、眼皮垂下來的病人，抽血沒驗到 AChR 抗體，一點都不奇怪。</p>
+<hr>
+<h2 id="bt-s2">一、AChR 抗體：不只是「卡住插座」，還會招來補體</h2>
+<p>如果 AChR 抗體只是黏在受體上、把乙醯膽鹼擋在門外，那還算「物理性」的堵。但它真正狠的地方，在於它會<strong>活化補體（complement）</strong>。</p>
+<p>補體是一串免疫系統的連鎖反應，平常用來對付細菌——一旦被啟動，最後會在目標的細胞膜上鑽洞、把膜打穿。AChR 抗體黏到突觸後膜上之後，就像幫補體系統貼了一張「攻擊這裡」的標籤，整串補體串級被點燃，<strong>直接破壞突觸後膜本身</strong>。於是肌肉那一側的膜被打得坑坑疤疤，原本排列整齊、用來接收訊號的皺褶結構塌掉，插座數量也跟著少掉。閘口不只是被卡住，是連門框都被拆了。</p>
+<p>這個機轉值得特別記住，因為它正是本系列<strong>第五篇要談的補體抑制劑的標靶</strong>。後面那些針對 C5 的新藥，攔截的就是這條「AChR 抗體 → 活化補體 → 膜被打穿」的下游路徑。換句話說，今天這段機轉不是背景知識，而是後面治療故事的開頭。</p>
+<p>順帶一提，還有一種<strong>抗橫紋肌抗體（anti-striated muscle antibody）</strong>，見於約 <strong>30%</strong> 的 MG 患者。它不直接堵在閘口上，但在臨床上常被當成一條旁證線索——這一篇先點到，後面談胸腺時會再回來看它。</p>
+<hr>
+<h2 id="bt-s3">二、驗不到 AChR，不代表沒病：MuSK 與 LRP4</h2>
+<p>門診常見的一個誤會是：抽血沒驗到 AChR 抗體，就以為「應該不是肌無力」。這個推論是錯的。<strong>血清陰性（seronegative）不等於沒病，只是現有的這幾種抗體沒抓到而已。</strong> 同一道閘口可以從不同零件被破壞，而我們手上的檢驗工具，本來就只認得其中幾種抗體。</p>
+<p>在那些 AChR 驗不到的病人裡，第二常見的兇手是 <strong>MuSK 抗體</strong>，見於約 <strong>5% 到 10%</strong> 的血清陰性患者。MuSK 是一個負責「把 AChR 插座整理好、固定在正確位置」的分子；攻擊它，等於破壞插座的安裝與排列，結果同樣是訊號傳不過去，只是壞的環節不一樣。</p>
+<p>再來是 <strong>LRP4 抗體</strong>，見於其餘血清陰性者的 <strong>3% 到 50%</strong>——這個範圍很寬，反映各研究族群差異很大，但重點在於：當 AChR 和 MuSK 都驗不到時，LRP4 是下一個值得想到的候選。</p>
+<p>把這三個排在一起看，分型的邏輯就清楚了：先看是不是 AChR 陽性；不是，再看 MuSK；還不是，才輪到 LRP4。每往下一層，就是在說「上一種抗體沒抓到，但病還在」。所以面對一個臨床上很像 MG、抽血卻一片乾淨的病人，正確的想法不是「排除 MG」，而是「現在的抗體套組還沒抓到那個真正在堵的傢伙」。</p>
+<hr>
+<h2 id="bt-s4">三、胸腺：另一個常被牽連的角色</h2>
+<p>談 MG 不能不談胸腺。胸腺是免疫系統訓練 T 細胞的地方，而 MG 與它的關係相當密切——大約 <strong>10%</strong> 的 MG 患者，胸腺裡長了<strong>胸腺瘤（thymoma）</strong>。</p>
+<p>換個角度看，這代表每十個 MG 病人，就有一個合併胸腺瘤；也代表確診 MG 之後，去看一眼胸腺有沒有問題，是合理而必要的一步。胸腺瘤本身是一個獨立於肌無力之外、需要處理的腫瘤；而它與這個病的糾纏，也讓「<strong>把胸腺切掉</strong>」在 MG 的治療裡占有一席之地——這正是<strong>第五篇胸腺切除（thymectomy）</strong>要展開的另一條線。</p>
+<p>前面提到的抗橫紋肌抗體，在這裡可以再串一次：它在臨床上常被視為與胸腺瘤相關的線索之一。所以驗到它的時候，胸腺這個角色就更值得多看兩眼。</p>
+<hr>
+
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

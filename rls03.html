@@ -83,6 +83,7 @@ main{padding:16px 8px}
 blockquote{padding:12px 14px;margin:1.2em 0}
 .article p{font-size:13pt}
 .article li{font-size:13pt}
+.bt-tablewrap th,.bt-tablewrap td{min-width:6.5em}
 }
 .bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
 .bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
@@ -94,6 +95,9 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 .bt-toc a{color:#1565c0;text-decoration:none}
 .bt-toc a:hover{text-decoration:underline}
 .article h2[id]{scroll-margin-top:16px}
+.bt-keypoints{margin:1.4em 0 1.2em;padding:6px 18px 12px;background:#fffdf5;border:1px solid #f3e3b5;border-radius:10px}
+.bt-keypoints h2{margin-top:.8em}
+@media(max-width:600px){.bt-keypoints{padding:4px 10px 10px}}
 /* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/rls03.html">
@@ -116,10 +120,21 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <blockquote>
 <p><strong>系列導讀．第 3 篇</strong>　上一篇談 RLS 的診斷與週期性肢動，這篇把處置的順序講清楚：在你開出任何一種會跟病人糾纏好幾年的藥物之前，先停下來問兩件事——這條腿背後有沒有一個可以修掉的原因？病人現在的鐵存夠不夠？這兩個問題答對了，後面的藥可能根本不必開那麼重。</p>
 </blockquote>
-<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一、次發性 RLS 的常見源頭</a></li><li><a href="#bt-s2">二、會誘發或惡化的藥物——值得逐一點名</a></li><li><a href="#bt-s3">三、鐵：RLS 處置的第一步</a></li><li><a href="#bt-s4">四、補鐵怎麼補</a></li><li><a href="#bt-s5">臨床要點摘要</a></li><li><a href="#bt-s6">參考文獻</a></li></ol></details><!-- bt-toc:end -->
+<!-- bt-key:start --><section class="bt-keypoints"><h2 id="bt-s1">臨床要點摘要</h2>
+<div class="bt-tablewrap"><table>
+<thead><tr><th>面向</th><th>重點</th></tr></thead>
+<tbody>
+<tr><td>次發性常見源頭</td><td>缺鐵、末期腎病、糖尿病、風濕病、靜脈功能不全、周邊神經病變、葉酸／鎂缺乏、懷孕</td></tr>
+<tr><td>會誘發／惡化的藥物</td><td>抗多巴胺藥、diphenhydramine、三環抗憂鬱劑、SSRI、SNRI、酒精、咖啡因、鋰鹽、乙型阻斷劑</td></tr>
+<tr><td>該查的鐵指標</td><td>serum iron、transferrin saturation、ferritin、TIBC（一整組，不只一個）</td></tr>
+<tr><td>補鐵切點</td><td>ferritin &lt; 50 ng/mL 即補——不必等到貧血</td></tr>
+<tr><td>口服方案</td><td>ferrous sulfate 325 mg + 維生素 C 250 mg，空腹，服後 60 分鐘內不進食</td></tr>
+<tr><td>口服不行時</td><td>改靜脈補鐵</td></tr>
+</tbody></table></div></section><!-- bt-key:end -->
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 5 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">臨床要點摘要</a></li><li><a href="#bt-s2">一、次發性 RLS 的常見源頭</a></li><li><a href="#bt-s3">二、會誘發或惡化的藥物——值得逐一點名</a></li><li><a href="#bt-s4">三、鐵：RLS 處置的第一步</a></li><li><a href="#bt-s5">四、補鐵怎麼補</a></li><li><a href="#bt-s6">參考文獻</a></li></ol></details><!-- bt-toc:end -->
 <hr>
 <p>很多被當成「原發性」在治療的不寧腿，其實背後藏著一個還沒被看見的原因。RLS 分原發與次發兩種，次發性的意思很直白：腿之所以鬧，是因為身體別的地方出了狀況。把那個狀況處理掉，腿就可能跟著安靜下來。所以正確的開場不是「該用哪種藥」，而是「這是不是次發性的，有沒有我能逆轉的源頭」。</p>
-<h2 id="bt-s1">一、次發性 RLS 的常見源頭</h2>
+<h2 id="bt-s2">一、次發性 RLS 的常見源頭</h2>
 <p>會推著一個人走進不寧腿的，往往是這幾類底牌：</p>
 <ul>
 <li><strong>缺鐵</strong>——這是次發性裡最重要、也最值得追的一個，後面整篇的主軸都在它身上。</li>
@@ -131,7 +146,7 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <li><strong>懷孕</strong>——孕婦的盛行率是非孕婦的約三倍，多數在生產後緩解，所以更該往「可逆」這邊想。</li>
 </ul>
 <p>這些放在一起看，會發現一個共通的態度：RLS 不是一個只能靠藥壓住的終點站，它常常是一個指標，指向別處某個沒處理好的問題。先把可逆的修掉，是省力也省藥的做法。</p>
-<h2 id="bt-s2">二、會誘發或惡化的藥物——值得逐一點名</h2>
+<h2 id="bt-s3">二、會誘發或惡化的藥物——值得逐一點名</h2>
 <p>比「漏掉次發原因」更尷尬的，是醫師自己開的藥把腿給點著了。有一份名單，臨床上很值得記在心裡：</p>
 <ul>
 <li><strong>抗多巴胺藥</strong>——RLS 的根本失調就在多巴胺系統，擋它等於正中要害。</li>
@@ -143,14 +158,14 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <li><strong>乙型阻斷劑（beta-blockers）</strong>——心血管病人很常在用。</li>
 </ul>
 <p>把這份名單擺在床邊問診裡，常常會發現病人「最近變嚴重」的時間點，剛好對上某顆新藥的開始。停掉或換掉一個惡化因子，有時候比加藥更乾淨。</p>
-<h2 id="bt-s3">三、鐵：RLS 處置的第一步</h2>
+<h2 id="bt-s4">三、鐵：RLS 處置的第一步</h2>
 <p>鐵代謝是整個 RLS 處置的起點，不是配角。要查的不只一個數字，而是一組——<strong>serum iron、transferrin saturation、ferritin、TIBC</strong> 都該看，這樣才看得出鐵到底是不足、是運送出了問題、還是儲存空掉了。</p>
 <p>這裡有一個最容易被誤解的切點：</p>
 <blockquote>
 <p><strong>ferritin &lt; 50 ng/mL 的患者就該補鐵——不是等到貧血才補。</strong></p>
 </blockquote>
 <p>這句話值得停一下。一般人對「缺鐵」的直覺是綁在貧血上的：血色素還沒掉，就覺得鐵夠了。但 RLS 不照這個規矩走。它在意的是<strong>腦子裡</strong>的鐵夠不夠，而腦內的鐵儲存可能在全身血色素還很漂亮的時候就已經見底。ferritin 50 這個門檻，比一般「缺鐵」的標準寬鬆得多，正是為了把這群「血不貧、腦缺鐵」的人撈出來。</p>
-<h2 id="bt-s4">四、補鐵怎麼補</h2>
+<h2 id="bt-s5">四、補鐵怎麼補</h2>
 <p>口服方案本身不複雜，但細節決定吸收：</p>
 <ul>
 <li><strong>ferrous sulfate 325 mg</strong>，搭配<strong>維生素 C 250 mg</strong>——維生素 C 是來幫鐵的吸收一把。</li>
@@ -160,17 +175,7 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <p>這幾個動作的共同目的只有一個：讓更多的鐵真的進到身體裡，而不是隨著食物一起被擋在門外。鐵的吸收率本來就不高，食物、鈣、茶咖啡都會搶位子，所以「空腹、加維生素 C、吃完忍一小時」這套組合，是把效率榨到最高的標準動作。</p>
 <p>如果口服這條路走不通——吸收太差、腸胃受不了、或者鐵掉得比補得還快——還有<strong>靜脈補鐵</strong>這條路可以走。</p>
 <hr>
-<h2 id="bt-s5">臨床要點摘要</h2>
-<div class="bt-tablewrap"><table>
-<thead><tr><th>面向</th><th>重點</th></tr></thead>
-<tbody>
-<tr><td>次發性常見源頭</td><td>缺鐵、末期腎病、糖尿病、風濕病、靜脈功能不全、周邊神經病變、葉酸／鎂缺乏、懷孕</td></tr>
-<tr><td>會誘發／惡化的藥物</td><td>抗多巴胺藥、diphenhydramine、三環抗憂鬱劑、SSRI、SNRI、酒精、咖啡因、鋰鹽、乙型阻斷劑</td></tr>
-<tr><td>該查的鐵指標</td><td>serum iron、transferrin saturation、ferritin、TIBC（一整組，不只一個）</td></tr>
-<tr><td>補鐵切點</td><td>ferritin &lt; 50 ng/mL 即補——不必等到貧血</td></tr>
-<tr><td>口服方案</td><td>ferrous sulfate 325 mg + 維生素 C 250 mg，空腹，服後 60 分鐘內不進食</td></tr>
-<tr><td>口服不行時</td><td>改靜脈補鐵</td></tr>
-</tbody></table></div>
+
 <hr>
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>

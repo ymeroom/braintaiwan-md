@@ -82,6 +82,7 @@ main{padding:16px 8px}
 blockquote{padding:12px 14px;margin:1.2em 0}
 .article p{font-size:13pt}
 .article li{font-size:13pt}
+.bt-tablewrap th,.bt-tablewrap td{min-width:6.5em}
 }
 .bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
 .bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
@@ -93,6 +94,9 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 .bt-toc a{color:#1565c0;text-decoration:none}
 .bt-toc a:hover{text-decoration:underline}
 .article h2[id]{scroll-margin-top:16px}
+.bt-keypoints{margin:1.4em 0 1.2em;padding:6px 18px 12px;background:#fffdf5;border:1px solid #f3e3b5;border-radius:10px}
+.bt-keypoints h2{margin-top:.8em}
+@media(max-width:600px){.bt-keypoints{padding:4px 10px 10px}}
 /* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/mtd02.html">
@@ -116,12 +120,27 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <blockquote>
 <p><strong>系列導讀．第 02 篇</strong>　粒線體膜的第一份工作是分隔，第二份工作才是訊號平台。但這篇綜論提出一個更基本的讀法：<strong>膜的存在，就是在保護 mtDNA 不被細胞質裡的 DNA 感測器看到</strong>。這一篇處理膜與嵴的維持——SAM50-MICOS-ATAD3 軸、PHB1、cardiolipin、OPA1 與 MFN2——以及一個違反直覺的觀察：粒線體變得太碎會發炎，變得太長也會。</p>
 </blockquote>
-<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 9 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">膜是一道免疫屏障</a></li><li><a href="#bt-s2">三個結構蛋白，一個共同結局</a></li><li><a href="#bt-s3">一場 CRISPR 篩選，把嵴基因掃出來</a></li><li><a href="#bt-s4">OPA1：從視神經萎縮到致命嬰兒腦肌病</a></li><li><a href="#bt-s5">ATAD3A：目前唯一走到病人血液的那一個</a></li><li><a href="#bt-s6">太碎會發炎，太長也會發炎</a></li><li><a href="#bt-s7">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
-<h2 id="bt-s1">膜是一道免疫屏障</h2>
+<!-- bt-key:start --><section class="bt-keypoints"><h2 id="bt-s1">臨床判讀重點</h2>
+<div class="bt-tablewrap"><table>
+<thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
+<tbody>
+<tr><td>粒線體膜的功能是能量代謝</td><td>作者明寫膜<strong>保護 mtDNA 不被細胞質 DNA 感測器偵測</strong>；OMM 是訊號平台，IMM 內摺成嵴支持 ATP 生成、mtDNA 維持與轉譯</td></tr>
+<tr><td>SAM50／PHB1／FABP5 是粒線體疾病基因</td><td><strong>除 ATAD3A 外，這些基因尚未被牽連到 PMD</strong>；它們是機轉洞見來源，不是致病基因清單</td></tr>
+<tr><td>嵴的形狀只影響 ATP</td><td>CRISPR 篩選顯示嵴架構受損會<strong>觸發 VDAC 寡聚</strong>進而釋放 mtDNA；撈出的基因（TAMM41、MT-ATP6、TMEM70、YME1L、OPA1、ATAD3A）全與 PMD 相關</td></tr>
+<tr><td>感染後惡化是能量儲備不足</td><td>作者提出這是與發炎的關鍵連結，但同時明講 <strong>cGAS-STING／第一型干擾素的參與尚未被探討</strong></td></tr>
+<tr><td>OPA1 就是顯性視神經萎縮</td><td>異合子多為顯性視神經萎縮；<strong>隱性突變造成致命嬰兒腦肌病、肥厚性心肌病變與肌肉 mtDNA 耗竭</strong></td></tr>
+<tr><td>Opa1 小鼠的發炎資料可直接外推病人</td><td>作者明講這在 OPA1 變異病人身上<strong>看來尚未被檢驗</strong></td></tr>
+<tr><td>肌肉發炎是免疫細胞跑進去造成的</td><td>Opa1⁻/⁻ 骨骼肌的<strong>發炎出現在早期、早於巨噬細胞浸潤</strong>；阻斷 TLR9 可預防</td></tr>
+<tr><td>粒線體碎裂才會發炎</td><td><strong>融合缺陷（Mfn1/2）與分裂缺陷（Fis1／Drp1）都會</strong>活化 NF-κB 與第一型干擾素並造成肌肉萎縮</td></tr>
+<tr><td>MFN2 只會造成 CMT2A</td><td>異合子錯義變異造成 CMT2A；另有 <strong>p.Q367H</strong> 於遠端肌病變病人被發現，誘發 mtDNA 釋放並活化 TLR9 與 cGAS-STING</td></tr>
+<tr><td>發炎是不可逆的下游結果</td><td>融合／分裂缺陷造成的<strong>肌肉萎縮可被抗發炎治療預防</strong>；破壞 cardiolipin 生合成可挽救部分顯性 OPA1 病人細胞的表型</td></tr>
+</tbody></table></div></section><!-- bt-key:end -->
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 9 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">臨床判讀重點</a></li><li><a href="#bt-s2">膜是一道免疫屏障</a></li><li><a href="#bt-s3">三個結構蛋白，一個共同結局</a></li><li><a href="#bt-s4">一場 CRISPR 篩選，把嵴基因掃出來</a></li><li><a href="#bt-s5">OPA1：從視神經萎縮到致命嬰兒腦肌病</a></li><li><a href="#bt-s6">ATAD3A：目前唯一走到病人血液的那一個</a></li><li><a href="#bt-s7">太碎會發炎，太長也會發炎</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s2">膜是一道免疫屏障</h2>
 <p>作者對粒線體膜的定義寫得很乾脆：粒線體膜界定不同的粒線體區室，並把粒線體內容物與細胞質分開；<strong>因此，粒線體膜保護 mtDNA 不被細胞質 DNA 感測器偵測。</strong></p>
 <p>分隔之外，兩層膜各有分工——<strong>OMM 作為訊號平台，可以直接接觸其他細胞區室；IMM 則向內摺疊形成嵴（cristae）</strong>，而嵴支持有效率的 ATP 生成、mtDNA 維持與蛋白質轉譯。兩層膜也都參與調節粒線體的動態、汰換與脂質代謝。</p>
 <p>所以「維持膜的組織與組成」不是背景設定，它同時是能量問題與免疫問題。</p>
-<h2 id="bt-s2">三個結構蛋白，一個共同結局</h2>
+<h2 id="bt-s3">三個結構蛋白，一個共同結局</h2>
 <p>作者點名了幾組維持膜架構的基因：控制嵴與 mtDNA 組織的支架與伴護蛋白——<strong>SAM50-MICOS-ATAD3 軸</strong>與 <strong>prohibitin 1（PHB1）</strong>——以及脂質代謝的 <strong>FABP5</strong>。</p>
 <p>它們被耗竭之後，mtDNA 出得去的方式相當多元：</p>
 <div class="bt-tablewrap"><table>
@@ -134,7 +153,7 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 </tbody></table></div>
 <p>此外，<strong>ATAD3 基因剔除細胞株</strong>顯示 mtDNA 的釋放是經由 <strong>VDAC 寡聚形成的孔道</strong>——一個已被完整描述、能促進發炎的釋放機制。這些改變最後都收斂到同一條路：<strong>活化 cGAS-STING</strong>。</p>
 <p>作者接著劃出這段論述的邊界：<strong>除了 ATAD3A 之外，這些基因目前尚未被牽連到 PMD</strong>。它們的價值在於凸顯膜完整性對限制 mtDNA 釋放的關鍵重要性，為「因膜完整性與脂質代謝受損而發生的 PMD」提供洞見——這是外推，不是直接證據。</p>
-<h2 id="bt-s3">一場 CRISPR 篩選，把嵴基因掃出來</h2>
+<h2 id="bt-s4">一場 CRISPR 篩選，把嵴基因掃出來</h2>
 <p>支持這個概念的是一項近期的 CRISPR 篩選：<strong>繪製哪些粒線體成分被耗竭後會誘發 cGAS/STING 依賴的第一型干擾素訊號，結果辨識出數十個維持嵴組織的蛋白編碼基因</strong>。</p>
 <p>機轉上，該篩選揭示<strong>膜的破壞損害了嵴的架構，觸發 VDAC 寡聚，mtDNA 由此釋放</strong>。被點出的基因裡，有幾組是熟面孔：</p>
 <div class="bt-tablewrap"><table>
@@ -148,7 +167,7 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <p>作者特別註明：<strong>這些基因全部都與表型範圍很廣的 PMD 相關</strong>。也就是說，一個以「發炎訊號」為讀出值的篩選，撈出來的是一份粒線體疾病基因清單。</p>
 <p>而這裡藏著整篇綜論最貼近臨床的一句話。這些疾病典型上侵犯眼、腦、肌肉與心臟，但<strong>與發炎和免疫訊號的關鍵病理連結在於：病人的表型經常在感染後出現亞急性惡化</strong>。</p>
 <p>接著是那句必須跟著一起引的但書：<strong>cGAS-STING／第一型干擾素在此觀察中的參與，尚未被探討過。</strong></p>
-<h2 id="bt-s4">OPA1：從視神經萎縮到致命嬰兒腦肌病</h2>
+<h2 id="bt-s5">OPA1：從視神經萎縮到致命嬰兒腦肌病</h2>
 <p>OPA1 是這一段最好的示範，因為它同一個基因、兩種遺傳模式、兩個世界。</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>基因型</th><th>表型</th></tr></thead>
@@ -160,10 +179,10 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <p>發炎早於免疫細胞進場，意思是這是肌纖維自己的細胞內在反應，不是外來免疫細胞跑進來造成的。</p>
 <p>但作者在這裡踩了煞車：<strong>這在帶有 OPA1 變異的病人身上看來尚未被檢驗。</strong> 一部分顯性 OPA1 與 ATAD3A 變異會造成更嚴重的全身性疾病，<strong>但 mtDNA 介導的發炎訊號是否參與這些更廣泛的表型，仍屬未知</strong>。</p>
 <p>唯一一個帶治療味道的線索是：<strong>近期一項篩選發現，破壞 cardiolipin 生合成可以挽救部分來自顯性 OPA1 變異（造成全身性疾病）病人細胞的表型</strong>——作者用這件事來說明 mtDNA 介導的發炎可能參與病理。順著這條線，作者推測 mtDNA 釋放與發炎反應也可能參與其他粒線體膜維持與 cardiolipin 代謝的缺陷，例如 <strong>Barth 症候群與 Senger 症候群</strong>，並指出這需要未來研究去探索。</p>
-<h2 id="bt-s5">ATAD3A：目前唯一走到病人血液的那一個</h2>
+<h2 id="bt-s6">ATAD3A：目前唯一走到病人血液的那一個</h2>
 <p>在膜完整性這一組裡，<strong>ATAD3A 是唯一有病人層級資料的</strong>。帶有致病性 ATAD3A 變異的病人<strong>在血液中顯示第一型干擾素訊號增加</strong>；病人來源細胞的研究則揭示<strong>細胞質 mtDNA 的累積驅動了 cGAS/STING 活化</strong>。原始研究另記錄到血中<strong>干擾素刺激基因（ISG）與 TNF 表現上升</strong>，以及 mtDNA 經 <strong>VDAC 孔道</strong>釋放後的 STING 活化。</p>
 <p>這是整個膜組裡最完整的一條因果鏈：致病變異 → 細胞質 mtDNA 累積 → cGAS/STING → 病人血中干擾素特徵。</p>
-<h2 id="bt-s6">太碎會發炎，太長也會發炎</h2>
+<h2 id="bt-s7">太碎會發炎，太長也會發炎</h2>
 <p>除了 OPA1，更廣義的融合與分裂機器也參與 mtDNA 的維持。OMM 的融合由 GTP 酶 <strong>mitofusin 1 與 2（MFN1/2）</strong>介導。</p>
 <p><strong>MFN2 的異合子錯義致病變異造成軸突型周邊神經病變 Charcot-Marie-Tooth 2A（CMT2A）</strong>，表現為進行性肌無力與感覺喪失。而一個<strong>新的 MFN2 變異 p.Q367H</strong> 在一位遠端肌病變病人身上被發現，並被證實會<strong>誘發 mtDNA 釋放並活化 TLR9 與 cGAS-STING 路徑</strong>。</p>
 <p>再往下是這一節最有意思的地方：</p>
@@ -186,21 +205,7 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <p>至於「太碎跟太長都會發炎」，臨床上的翻譯是：不要看到粒線體形態異常就急著推論方向。電顯下的碎裂與拉長在這個框架裡是同一件事的兩種外觀。</p>
 </blockquote>
 <p>膜的完整性在這篇裡被當成一道免疫防線來寫。但防線之內，還有一層更根本的東西要維持——mtDNA 本身的複製與拷貝數。那些機器如果出錯，膜就算完好，nucleoid 一樣會變成問題。</p>
-<h2 id="bt-s7">臨床判讀重點</h2>
-<div class="bt-tablewrap"><table>
-<thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
-<tbody>
-<tr><td>粒線體膜的功能是能量代謝</td><td>作者明寫膜<strong>保護 mtDNA 不被細胞質 DNA 感測器偵測</strong>；OMM 是訊號平台，IMM 內摺成嵴支持 ATP 生成、mtDNA 維持與轉譯</td></tr>
-<tr><td>SAM50／PHB1／FABP5 是粒線體疾病基因</td><td><strong>除 ATAD3A 外，這些基因尚未被牽連到 PMD</strong>；它們是機轉洞見來源，不是致病基因清單</td></tr>
-<tr><td>嵴的形狀只影響 ATP</td><td>CRISPR 篩選顯示嵴架構受損會<strong>觸發 VDAC 寡聚</strong>進而釋放 mtDNA；撈出的基因（TAMM41、MT-ATP6、TMEM70、YME1L、OPA1、ATAD3A）全與 PMD 相關</td></tr>
-<tr><td>感染後惡化是能量儲備不足</td><td>作者提出這是與發炎的關鍵連結，但同時明講 <strong>cGAS-STING／第一型干擾素的參與尚未被探討</strong></td></tr>
-<tr><td>OPA1 就是顯性視神經萎縮</td><td>異合子多為顯性視神經萎縮；<strong>隱性突變造成致命嬰兒腦肌病、肥厚性心肌病變與肌肉 mtDNA 耗竭</strong></td></tr>
-<tr><td>Opa1 小鼠的發炎資料可直接外推病人</td><td>作者明講這在 OPA1 變異病人身上<strong>看來尚未被檢驗</strong></td></tr>
-<tr><td>肌肉發炎是免疫細胞跑進去造成的</td><td>Opa1⁻/⁻ 骨骼肌的<strong>發炎出現在早期、早於巨噬細胞浸潤</strong>；阻斷 TLR9 可預防</td></tr>
-<tr><td>粒線體碎裂才會發炎</td><td><strong>融合缺陷（Mfn1/2）與分裂缺陷（Fis1／Drp1）都會</strong>活化 NF-κB 與第一型干擾素並造成肌肉萎縮</td></tr>
-<tr><td>MFN2 只會造成 CMT2A</td><td>異合子錯義變異造成 CMT2A；另有 <strong>p.Q367H</strong> 於遠端肌病變病人被發現，誘發 mtDNA 釋放並活化 TLR9 與 cGAS-STING</td></tr>
-<tr><td>發炎是不可逆的下游結果</td><td>融合／分裂缺陷造成的<strong>肌肉萎縮可被抗發炎治療預防</strong>；破壞 cardiolipin 生合成可挽救部分顯性 OPA1 病人細胞的表型</td></tr>
-</tbody></table></div>
+
 <p><strong>主要來源</strong></p>
 <p>Szabo M, Lagos D, Cross E, Collier JJ, Horvath R. Mitochondrial DNA release and inflammation in mitochondrial disease pathogenesis. <em>Brain</em> 2026;149(6):1874-1884. doi:<a href="https://doi.org/10.1093/brain/awag037">10.1093/brain/awag037</a></p>
 <p>本系列供醫療專業人員教學參考，不取代原始綜論全文、最新仿單、院內流程或個別臨床判斷。文中表格為原創整理；所有數字與機轉敘述均以原始 PDF 全文逐頁核校。</p>

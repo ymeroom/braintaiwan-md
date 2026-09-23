@@ -82,6 +82,7 @@ main{padding:16px 8px}
 blockquote{padding:12px 14px;margin:1.2em 0}
 .article p{font-size:13pt}
 .article li{font-size:13pt}
+.bt-tablewrap th,.bt-tablewrap td{min-width:6.5em}
 }
 .bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
 .bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
@@ -93,6 +94,9 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 .bt-toc a{color:#1565c0;text-decoration:none}
 .bt-toc a:hover{text-decoration:underline}
 .article h2[id]{scroll-margin-top:16px}
+.bt-keypoints{margin:1.4em 0 1.2em;padding:6px 18px 12px;background:#fffdf5;border:1px solid #f3e3b5;border-radius:10px}
+.bt-keypoints h2{margin-top:.8em}
+@media(max-width:600px){.bt-keypoints{padding:4px 10px 10px}}
 /* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/hunger01.html">
@@ -116,55 +120,7 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <blockquote>
 <p><strong>系列導讀．第 01 篇</strong>　飢餓不是一個訊號，是一整套彼此重疊、可以互相頂替的神經內分泌迴路。NEJM 這篇 2025 年的營養醫學綜論把它拆成三個機制：恆定性（homeostatic）、享樂性（hedonic）、微生物驅動（microbiota-driven）。這一篇處理最古老的那個——由熱量缺乏直接觸發、走下視丘–腸道軸的恆定性飢餓，以及進食後那條同樣精密的反向路徑：早期、中期、晚期飽足是三套不同的機制。</p>
 </blockquote>
-<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 7 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">一個被農業打斷的兩百萬年</a></li><li><a href="#bt-s2">先把 hunger 和 appetite 分開</a></li><li><a href="#bt-s3">恆定性飢餓：從空胃到 AgRP 神經元</a></li><li><a href="#bt-s4">飽足不是一件事，是三件事</a></li><li><a href="#bt-s5">那條沒被算進去的迴路</a></li><li><a href="#bt-s6">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
-<h2 id="bt-s1">一個被農業打斷的兩百萬年</h2>
-<p>作者一開場就把時間尺度攤開：人類的飢餓生理，是在農業出現之前的<strong>兩百萬年</strong>裡塑造出來的。那段時間食物供應不可預測，飢餓調節的主要工作是<strong>維持熱量攝取與消耗之間的代謝平衡</strong>。<strong>一萬兩千年前農業出現</strong>，讓可負擔、高能量密度、可口的食物大量供應，對這套已經成形的生理機制造成了實質衝擊。</p>
-<p>這個框架決定了後面所有內容的讀法。這套系統當初被演化調校成<strong>偏向過度攝取熱量</strong>，並且允許正熱量平衡以便囤積脂肪、作為狩獵採集者的能量儲備。同一套設計，在食物不再稀缺的環境裡，開始產生負面的醫療後果。</p>
-<p>作者也提醒，體重在任一時間點的相對穩定，本身就說明了代謝機器的複雜度——它同時在調節可預測的變數（基礎代謝率）與不可預測的變數（攝食的品質與數量、食物的產熱效應、巨量營養素組成、活動量）。</p>
-<h2 id="bt-s2">先把 hunger 和 appetite 分開</h2>
-<p>這篇綜論在名詞上劃了一條線，而且整篇都靠這條線運作：</p>
-<div class="bt-tablewrap"><table>
-<thead><tr><th>名詞</th><th>定義</th><th>驅動力</th></tr></thead>
-<tbody>
-<tr><td>飢餓（hunger）</td><td>由<strong>飢餓（急性能量剝奪）</strong>觸發、為維持能量平衡而產生的生理性進食衝動</td><td>代謝必要性</td></tr>
-<tr><td>食慾／享樂性飢餓（appetite, hedonic hunger）</td><td>由<strong>愉悅</strong>而非代謝必要性驅動的進食</td><td>獎賞</td></tr>
-</tbody></table></div>
-<p>兩者都需要腦與腸道之間的精密協調——作者稱之為腸腦軸最精緻的例子之一。功能上與演化上，飢餓被拆成三個<strong>彼此不同但高度互相連動</strong>的機制：恆定性、享樂性、微生物驅動。三者的關係在原文的 Fig. 1 三個 panel 裡分開畫，但它們共用同一批荷爾蒙與同一群下視丘神經元。</p>
-<h2 id="bt-s3">恆定性飢餓：從空胃到 AgRP 神經元</h2>
-<p>恆定性飢餓是最古老的機制，走的是腦–腸軸，更精確地說是<strong>下視丘–腸道軸</strong>。這個模型最早由 <strong>Walter Cannon 於 1929 年</strong>描述，當時把飢餓刻畫成一個被動過程：由營養素耗竭觸發、由營養素吸收解除。</p>
-<p>現在動物模型與人體都有紮實證據顯示，控制飢餓的下視丘迴路是被<strong>主要來自胃腸道的感覺訊號</strong>調節的。整條上行路徑是這樣接的：</p>
-<ul>
-<li><strong>空胃</strong>同時刺激<strong>迷走神經</strong>與 <strong>ghrelin</strong> 分泌。原文對 ghrelin 的稱謂是「<strong>食慾荷爾蒙</strong>」（appetite hormone），不是中文常見的「飢餓荷爾蒙」——依這篇綜論開頭劃下的定義，appetite 指的是享樂驅動的那一端。</li>
-<li>傳入的神經與內分泌訊號被轉送到下視丘，傳達「需要進食」。</li>
-<li><strong>傳入迷走神經纖維刺激多巴胺釋放</strong>，強化飢餓訊號。</li>
-<li><strong>ghrelin 透過活化其受體 GHSR1a 增強食慾</strong>，該受體位於下視丘中負責感知飢餓的 <strong>γ- 胺基丁酸（GABA）能神經元</strong>上，這群神經元會製造 <strong>agouti-related peptide（AgRP）</strong>。</li>
-<li>關鍵的一筆：<strong>AgRP 神經元會被視覺、嗅覺或味覺對食物的感知快速抑制</strong>——也就是在任何營養素被吸收之前就先被關掉。</li>
-</ul>
-<p>除了 ghrelin，<strong>低血糖</strong>也會透過調節特定下視丘神經元對血糖濃度的反應來觸發飢餓。神經內分泌之外，<strong>motilin 誘發的餐間第三期胃腸收縮</strong>看起來也會透過<strong>膽鹼性路徑</strong>控制人類的飢餓與食物攝取，健康與疾病狀態下皆然。管腔內的刺激，例如<strong>苦味物質（bitter tastants）</strong>，已被辨識為 motilin 釋放的調節者，因而影響飢餓與食物攝取。</p>
-<h2 id="bt-s4">飽足不是一件事，是三件事</h2>
-<p>進食啟動的抑制路徑同樣分層，而且<strong>每一層的訊號來源完全不同</strong>。這是這一篇最值得記住的結構：</p>
-<div class="bt-tablewrap"><table>
-<thead><tr><th>階段</th><th>訊號</th><th>機制</th></tr></thead>
-<tbody>
-<tr><td><strong>初始飽足訊號</strong></td><td>胃擴張</td><td>由偵測<strong>張力、伸展與體積</strong>的特定機械受器感知，經<strong>迷走與脊髓神經</strong>把訊號轉送到後腦</td></tr>
-<tr><td><strong>早期飽足強化</strong></td><td>胃腸道內特定<strong>胺基酸與脂肪酸</strong>的存在</td><td>導致飢餓被抑制</td></tr>
-<tr><td><strong>中期飽足</strong></td><td><strong>GLP-1、CCK、PYY</strong> 等腸道荷爾蒙</td><td>在已消化食物存在時由<strong>近端小腸</strong>分泌，在腦部產生抑制性訊號</td></tr>
-<tr><td><strong>晚期／代謝性飽足</strong></td><td>血漿<strong>胺基酸、葡萄糖、胰島素</strong>上升</td><td>在消化過程完成時達成</td></tr>
-</tbody></table></div>
-<p><strong>胃排空</strong>以及胃腸道內的<strong>滲透壓負荷</strong>，則提供關於餐食品質與數量的額外資訊，並促成早期飽足。最後，代謝性飽足連同感覺訊號、以及所有這些過程在中樞神經系統的整合，完成整個恆定性飢餓控制的循環。</p>
-<p>三層飽足彼此的時間軸不同，這解釋了一件臨床上很常見的事：一個機制被繞過（例如流質、高能量密度、快速進食）不會讓人立刻停止進食，因為還有另外兩層——但那兩層抵達的時間都太晚。</p>
-<h2 id="bt-s5">那條沒被算進去的迴路</h2>
-<p>恆定性飢餓不是只看腸道。原文的 Fig. 1A 把身體組成也接了進來：<strong>去脂組織與脂肪細胞</strong>提供受身體組成與組織能量儲備影響的<strong>張力性（tonic）飢餓訊號</strong>，其中<strong>脂肪組織釋放的 leptin 抑制飢餓</strong>；而胃腸道提供的是由進食狀態觸發的<strong>陣發性（episodic）飢餓訊號</strong>。肝臟與胰臟的葡萄糖恆定——胰島素、糖質新生、肝醣儲存——則同時接在能量平衡這一格上。</p>
-<p>換句話說，恆定性飢餓有一組<strong>長期</strong>輸入（脂肪量、leptin）與一組<strong>短期</strong>輸入（空胃、ghrelin、腸道荷爾蒙），兩組在下視丘匯流。這個雙時間尺度的設計，是後面幾篇談 leptin 阻抗、談 GLP-1 受體促效劑為什麼有效的前提。</p>
-<blockquote class="commentary">
-<h3>🩺 神經專科醫師　施懿恩・小評論</h3>
-<p>這一篇最該被帶走的，不是任何一個荷爾蒙的名字，而是「<strong>冗餘</strong>」這兩個字。作者在重點摘要第一句就寫明：飢餓由<strong>冗餘的神經內分泌迴路</strong>控制以維持代謝平衡。冗餘的意思是，你阻斷任何單一節點，系統都還會從別的地方把飢餓找回來——這正是單一標的減重藥物長期效果會鈍化的結構性原因，也是為什麼綜論最後把希望放在「個人化」而不是「更強的單一標的」。</p>
-<p>AgRP 神經元被<strong>看到、聞到、嚐到食物</strong>就快速抑制這件事，值得單獨拉出來。它意味著下視丘不是等營養素進來才反應的偵測器，而是一個<strong>預測器</strong>——它在熱量抵達之前就先調整輸出。這一點把恆定性飢餓和下一篇的享樂性飢餓在解剖上連了起來：感官輸入同時是這兩條路的入口。門診談「用餐環境」「先看到什麼」不是心理學的軟建議，它有明確的神經基質。</p>
-<p>三層飽足的時間軸我會直接拿來衛教。胃擴張是機械受器、中期靠近端小腸的 GLP-1／CCK／PYY、晚期才輪到血漿葡萄糖與胰島素——三者依序抵達。這給了「吃慢一點」一個具體的生理理由，而不是一句勸告：吃太快的問題不是意志力，是<strong>你在第二層與第三層訊號抵達之前就已經吃完了</strong>。</p>
-<p>至於 motilin 與苦味物質那一段，作者用的是「seem to control」這種保留語氣，而且引的是相對少數的研究。這條線目前不足以改變任何處置，但它是少數把「餐間」而非「餐後」納入飢餓調節的機制，值得留著看。</p>
-</blockquote>
-<p>作者把這一切放回一句話：這個原本被演化調校成偏向過度攝取熱量的精密調節過程，現在正在產生負面的醫療後果。恆定性飢餓本身沒有壞掉——壞掉的是它所處的環境。而當食物隨時可得、熱量不再是限制因素時，真正接管進食行為的是另一套迴路。那是下一篇的主題。</p>
-<h2 id="bt-s6">臨床判讀重點</h2>
+<!-- bt-key:start --><section class="bt-keypoints"><h2 id="bt-s1">臨床判讀重點</h2>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>常見印象</th><th>綜論實際說法</th></tr></thead>
 <tbody>
@@ -176,7 +132,56 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <tr><td>GLP-1、CCK、PYY 由整段腸道分泌</td><td>原文明指由<strong>近端小腸</strong>在已消化食物存在時分泌</td></tr>
 <tr><td>飢餓迴路是線性的</td><td>原文用語為<strong>冗餘（redundant）</strong>的神經內分泌迴路；三機制高度互相連動</td></tr>
 <tr><td>Cannon 的被動模型仍適用</td><td>1929 年模型把飢餓視為營養素耗竭觸發、吸收解除的被動過程；現有證據顯示下視丘迴路受胃腸道感覺訊號主動調節</td></tr>
+</tbody></table></div></section><!-- bt-key:end -->
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 7 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">臨床判讀重點</a></li><li><a href="#bt-s2">一個被農業打斷的兩百萬年</a></li><li><a href="#bt-s3">先把 hunger 和 appetite 分開</a></li><li><a href="#bt-s4">恆定性飢餓：從空胃到 AgRP 神經元</a></li><li><a href="#bt-s5">飽足不是一件事，是三件事</a></li><li><a href="#bt-s6">那條沒被算進去的迴路</a></li></ol></details><!-- bt-toc:end -->
+<h2 id="bt-s2">一個被農業打斷的兩百萬年</h2>
+<p>作者一開場就把時間尺度攤開：人類的飢餓生理，是在農業出現之前的<strong>兩百萬年</strong>裡塑造出來的。那段時間食物供應不可預測，飢餓調節的主要工作是<strong>維持熱量攝取與消耗之間的代謝平衡</strong>。<strong>一萬兩千年前農業出現</strong>，讓可負擔、高能量密度、可口的食物大量供應，對這套已經成形的生理機制造成了實質衝擊。</p>
+<p>這個框架決定了後面所有內容的讀法。這套系統當初被演化調校成<strong>偏向過度攝取熱量</strong>，並且允許正熱量平衡以便囤積脂肪、作為狩獵採集者的能量儲備。同一套設計，在食物不再稀缺的環境裡，開始產生負面的醫療後果。</p>
+<p>作者也提醒，體重在任一時間點的相對穩定，本身就說明了代謝機器的複雜度——它同時在調節可預測的變數（基礎代謝率）與不可預測的變數（攝食的品質與數量、食物的產熱效應、巨量營養素組成、活動量）。</p>
+<h2 id="bt-s3">先把 hunger 和 appetite 分開</h2>
+<p>這篇綜論在名詞上劃了一條線，而且整篇都靠這條線運作：</p>
+<div class="bt-tablewrap"><table>
+<thead><tr><th>名詞</th><th>定義</th><th>驅動力</th></tr></thead>
+<tbody>
+<tr><td>飢餓（hunger）</td><td>由<strong>飢餓（急性能量剝奪）</strong>觸發、為維持能量平衡而產生的生理性進食衝動</td><td>代謝必要性</td></tr>
+<tr><td>食慾／享樂性飢餓（appetite, hedonic hunger）</td><td>由<strong>愉悅</strong>而非代謝必要性驅動的進食</td><td>獎賞</td></tr>
 </tbody></table></div>
+<p>兩者都需要腦與腸道之間的精密協調——作者稱之為腸腦軸最精緻的例子之一。功能上與演化上，飢餓被拆成三個<strong>彼此不同但高度互相連動</strong>的機制：恆定性、享樂性、微生物驅動。三者的關係在原文的 Fig. 1 三個 panel 裡分開畫，但它們共用同一批荷爾蒙與同一群下視丘神經元。</p>
+<h2 id="bt-s4">恆定性飢餓：從空胃到 AgRP 神經元</h2>
+<p>恆定性飢餓是最古老的機制，走的是腦–腸軸，更精確地說是<strong>下視丘–腸道軸</strong>。這個模型最早由 <strong>Walter Cannon 於 1929 年</strong>描述，當時把飢餓刻畫成一個被動過程：由營養素耗竭觸發、由營養素吸收解除。</p>
+<p>現在動物模型與人體都有紮實證據顯示，控制飢餓的下視丘迴路是被<strong>主要來自胃腸道的感覺訊號</strong>調節的。整條上行路徑是這樣接的：</p>
+<ul>
+<li><strong>空胃</strong>同時刺激<strong>迷走神經</strong>與 <strong>ghrelin</strong> 分泌。原文對 ghrelin 的稱謂是「<strong>食慾荷爾蒙</strong>」（appetite hormone），不是中文常見的「飢餓荷爾蒙」——依這篇綜論開頭劃下的定義，appetite 指的是享樂驅動的那一端。</li>
+<li>傳入的神經與內分泌訊號被轉送到下視丘，傳達「需要進食」。</li>
+<li><strong>傳入迷走神經纖維刺激多巴胺釋放</strong>，強化飢餓訊號。</li>
+<li><strong>ghrelin 透過活化其受體 GHSR1a 增強食慾</strong>，該受體位於下視丘中負責感知飢餓的 <strong>γ- 胺基丁酸（GABA）能神經元</strong>上，這群神經元會製造 <strong>agouti-related peptide（AgRP）</strong>。</li>
+<li>關鍵的一筆：<strong>AgRP 神經元會被視覺、嗅覺或味覺對食物的感知快速抑制</strong>——也就是在任何營養素被吸收之前就先被關掉。</li>
+</ul>
+<p>除了 ghrelin，<strong>低血糖</strong>也會透過調節特定下視丘神經元對血糖濃度的反應來觸發飢餓。神經內分泌之外，<strong>motilin 誘發的餐間第三期胃腸收縮</strong>看起來也會透過<strong>膽鹼性路徑</strong>控制人類的飢餓與食物攝取，健康與疾病狀態下皆然。管腔內的刺激，例如<strong>苦味物質（bitter tastants）</strong>，已被辨識為 motilin 釋放的調節者，因而影響飢餓與食物攝取。</p>
+<h2 id="bt-s5">飽足不是一件事，是三件事</h2>
+<p>進食啟動的抑制路徑同樣分層，而且<strong>每一層的訊號來源完全不同</strong>。這是這一篇最值得記住的結構：</p>
+<div class="bt-tablewrap"><table>
+<thead><tr><th>階段</th><th>訊號</th><th>機制</th></tr></thead>
+<tbody>
+<tr><td><strong>初始飽足訊號</strong></td><td>胃擴張</td><td>由偵測<strong>張力、伸展與體積</strong>的特定機械受器感知，經<strong>迷走與脊髓神經</strong>把訊號轉送到後腦</td></tr>
+<tr><td><strong>早期飽足強化</strong></td><td>胃腸道內特定<strong>胺基酸與脂肪酸</strong>的存在</td><td>導致飢餓被抑制</td></tr>
+<tr><td><strong>中期飽足</strong></td><td><strong>GLP-1、CCK、PYY</strong> 等腸道荷爾蒙</td><td>在已消化食物存在時由<strong>近端小腸</strong>分泌，在腦部產生抑制性訊號</td></tr>
+<tr><td><strong>晚期／代謝性飽足</strong></td><td>血漿<strong>胺基酸、葡萄糖、胰島素</strong>上升</td><td>在消化過程完成時達成</td></tr>
+</tbody></table></div>
+<p><strong>胃排空</strong>以及胃腸道內的<strong>滲透壓負荷</strong>，則提供關於餐食品質與數量的額外資訊，並促成早期飽足。最後，代謝性飽足連同感覺訊號、以及所有這些過程在中樞神經系統的整合，完成整個恆定性飢餓控制的循環。</p>
+<p>三層飽足彼此的時間軸不同，這解釋了一件臨床上很常見的事：一個機制被繞過（例如流質、高能量密度、快速進食）不會讓人立刻停止進食，因為還有另外兩層——但那兩層抵達的時間都太晚。</p>
+<h2 id="bt-s6">那條沒被算進去的迴路</h2>
+<p>恆定性飢餓不是只看腸道。原文的 Fig. 1A 把身體組成也接了進來：<strong>去脂組織與脂肪細胞</strong>提供受身體組成與組織能量儲備影響的<strong>張力性（tonic）飢餓訊號</strong>，其中<strong>脂肪組織釋放的 leptin 抑制飢餓</strong>；而胃腸道提供的是由進食狀態觸發的<strong>陣發性（episodic）飢餓訊號</strong>。肝臟與胰臟的葡萄糖恆定——胰島素、糖質新生、肝醣儲存——則同時接在能量平衡這一格上。</p>
+<p>換句話說，恆定性飢餓有一組<strong>長期</strong>輸入（脂肪量、leptin）與一組<strong>短期</strong>輸入（空胃、ghrelin、腸道荷爾蒙），兩組在下視丘匯流。這個雙時間尺度的設計，是後面幾篇談 leptin 阻抗、談 GLP-1 受體促效劑為什麼有效的前提。</p>
+<blockquote class="commentary">
+<h3>🩺 神經專科醫師　施懿恩・小評論</h3>
+<p>這一篇最該被帶走的，不是任何一個荷爾蒙的名字，而是「<strong>冗餘</strong>」這兩個字。作者在重點摘要第一句就寫明：飢餓由<strong>冗餘的神經內分泌迴路</strong>控制以維持代謝平衡。冗餘的意思是，你阻斷任何單一節點，系統都還會從別的地方把飢餓找回來——這正是單一標的減重藥物長期效果會鈍化的結構性原因，也是為什麼綜論最後把希望放在「個人化」而不是「更強的單一標的」。</p>
+<p>AgRP 神經元被<strong>看到、聞到、嚐到食物</strong>就快速抑制這件事，值得單獨拉出來。它意味著下視丘不是等營養素進來才反應的偵測器，而是一個<strong>預測器</strong>——它在熱量抵達之前就先調整輸出。這一點把恆定性飢餓和下一篇的享樂性飢餓在解剖上連了起來：感官輸入同時是這兩條路的入口。門診談「用餐環境」「先看到什麼」不是心理學的軟建議，它有明確的神經基質。</p>
+<p>三層飽足的時間軸我會直接拿來衛教。胃擴張是機械受器、中期靠近端小腸的 GLP-1／CCK／PYY、晚期才輪到血漿葡萄糖與胰島素——三者依序抵達。這給了「吃慢一點」一個具體的生理理由，而不是一句勸告：吃太快的問題不是意志力，是<strong>你在第二層與第三層訊號抵達之前就已經吃完了</strong>。</p>
+<p>至於 motilin 與苦味物質那一段，作者用的是「seem to control」這種保留語氣，而且引的是相對少數的研究。這條線目前不足以改變任何處置，但它是少數把「餐間」而非「餐後」納入飢餓調節的機制，值得留著看。</p>
+</blockquote>
+<p>作者把這一切放回一句話：這個原本被演化調校成偏向過度攝取熱量的精密調節過程，現在正在產生負面的醫療後果。恆定性飢餓本身沒有壞掉——壞掉的是它所處的環境。而當食物隨時可得、熱量不再是限制因素時，真正接管進食行為的是另一套迴路。那是下一篇的主題。</p>
+
 <p><strong>主要來源</strong></p>
 <p>Fasano A. The Physiology of Hunger. <em>N Engl J Med</em> 2025;392(4):372-381. doi:<a href="https://doi.org/10.1056/NEJMra2402679">10.1056/NEJMra2402679</a></p>
 <p>本系列供醫療專業人員教學參考，不取代原始綜論全文、最新仿單、院內流程或個別臨床判斷。文中表格為原創整理；所有數字與機轉敘述均以原始 PDF 全文逐頁核校。</p>

@@ -82,6 +82,7 @@ main{padding:16px 8px}
 blockquote{padding:12px 14px;margin:1.2em 0}
 .article p{font-size:13pt}
 .article li{font-size:13pt}
+.bt-tablewrap th,.bt-tablewrap td{min-width:6.5em}
 }
 .bt-toc{margin:1.2em 0 1.6em;padding:14px 18px;background:#f5f8fc;border:1px solid #e0e8f5;border-radius:10px;font-size:11.5pt}
 .bt-toc summary{cursor:pointer;font-weight:700;color:#0f2142;list-style:none}
@@ -93,6 +94,9 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 .bt-toc a{color:#1565c0;text-decoration:none}
 .bt-toc a:hover{text-decoration:underline}
 .article h2[id]{scroll-margin-top:16px}
+.bt-keypoints{margin:1.4em 0 1.2em;padding:6px 18px 12px;background:#fffdf5;border:1px solid #f3e3b5;border-radius:10px}
+.bt-keypoints h2{margin-top:.8em}
+@media(max-width:600px){.bt-keypoints{padding:4px 10px 10px}}
 /* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/mgp01.html">
@@ -116,12 +120,21 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <blockquote>
 <p><strong>系列導讀．第 01 篇</strong>　以 Brown, St George-Hyslop, Paolicelli &amp; Lemke（<em>Nat Rev Neurol</em> 2026;22:54–69）為主軸 阿茲海默症最矛盾的地方之一，是同一群細胞、同一個動作——吞噬——被認為既是保護者也是加害者。要看懂後面五篇怎麼吵這件事，得先弄清楚微膠細胞（microglia）到底靠什麼決定「這個要吃、那個不吃」。這一篇把整張受體與訊號的地圖攤開。</p>
 </blockquote>
-<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">吞噬的門檻：0.5 微米</a></li><li><a href="#bt-s2">三個決定因素：吃我信號、別吃我信號、opsonin</a></li><li><a href="#bt-s3">Table 1 裡一個值得核對的細節：UDP 到底接哪個受體</a></li><li><a href="#bt-s4">微膠細胞的五種狀態</a></li><li><a href="#bt-s5">脂滴：一個會反過來鎖死吞噬的煞車</a></li><li><a href="#bt-s6">臨床判讀重點</a></li></ol></details><!-- bt-toc:end -->
+<!-- bt-key:start --><section class="bt-keypoints"><h2 id="bt-s1">臨床判讀重點</h2>
+<div class="bt-tablewrap"><table>
+<thead><tr><th>常見印象</th><th>文獻實際說法</th></tr></thead>
+<tbody>
+<tr><td>DAM＝「清除力全開」的微膠細胞</td><td>DAM 上調吞噬相關基因，但吞噬能力增加「尚未被直接證實」，且可能因脂滴堆積而反被抑制</td></tr>
+<tr><td>UDP／P2Y6 只跟吞噬有關、ATP／P2Y12 只跟趨化有關，兩者涇渭分明</td><td>本文 Table 1 與內文對這兩個受體的配對並不完全一致，讀者對照原文時可能看到相反的寫法</td></tr>
+<tr><td>CD33 只是眾多吞噬抑制受體之一</td><td>CD33 是第 6 篇會回頭深談的 AD 主要風險基因之一</td></tr>
+<tr><td>微膠細胞的狀態是固定分類</td><td>至少五種可辨識轉錄狀態，且會隨吞噬負荷、脂滴堆積動態轉換</td></tr>
+</tbody></table></div></section><!-- bt-key:end -->
+<!-- bt-toc:start --><details class="bt-toc" open><summary>本文目錄<span class="bt-rt">約 6 分鐘閱讀</span></summary><ol><li><a href="#bt-s1">臨床判讀重點</a></li><li><a href="#bt-s2">吞噬的門檻：0.5 微米</a></li><li><a href="#bt-s3">三個決定因素：吃我信號、別吃我信號、opsonin</a></li><li><a href="#bt-s4">Table 1 裡一個值得核對的細節：UDP 到底接哪個受體</a></li><li><a href="#bt-s5">微膠細胞的五種狀態</a></li><li><a href="#bt-s6">脂滴：一個會反過來鎖死吞噬的煞車</a></li></ol></details><!-- bt-toc:end -->
 <hr>
-<h2 id="bt-s1">吞噬的門檻：0.5 微米</h2>
+<h2 id="bt-s2">吞噬的門檻：0.5 微米</h2>
 <p>微膠細胞是中樞神經系統裡數量最多的巨噬細胞（macrophage）類型。平常它們高度分枝、突起細長而活動，各自佔據一塊互不重疊的腦實質領地；一旦遇到發炎刺激，它們會收回突起、往發炎部位遷移。除了典型的先天免疫功能（被模式辨識受體活化後釋放細胞激素、趨化、吞噬），微膠細胞還有非免疫性的獨特任務，例如發育期吞噬神經與膠質前驅細胞、修剪突觸。</p>
 <p>吞噬（phagocytosis）在這篇綜論裡有明確定義：細胞吞下<strong>大於 0.5 微米</strong>的胞外顆粒。這個門檻把吞噬和更小分子的胞吞（endocytosis）、飲液作用（pinocytosis）區分開來——後面幾篇會看到，這個區分在 Aβ 與 tau 的處理上非常關鍵，因為可溶性聚合體與已成形的纖維，走的常常是不同的路徑。</p>
-<h2 id="bt-s2">三個決定因素：吃我信號、別吃我信號、opsonin</h2>
+<h2 id="bt-s3">三個決定因素：吃我信號、別吃我信號、opsonin</h2>
 <p>一個目標會不會被吞，取決於三件事同時到位：目標本身有沒有表現「吃我」（eat-me）信號、有沒有表現「別吃我」（don't-eat-me）信號、以及有沒有 opsonin（調理素）——一種橋接目標與吞噬受體的胞外蛋白——把兩者牽起來。同時，微膠細胞本身表現哪些吞噬受體也決定了結果。</p>
 <p><strong>促進吞噬的受體</strong>這篇文章列出一整組：</p>
 <ul>
@@ -135,10 +148,10 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 </ul>
 <p>比較特別的是 <strong>P2Y6 受體</strong>：它不靠 opsonin 橋接，而是直接被胞外 UDP（一種受壓力神經元釋放的訊號分子）活化，誘發微膠細胞吞噬。這個受體會在第 4 篇（吃掉活神經元）反覆出現。</p>
 <p><strong>煞車端</strong>同樣有一組受體：SIRPα（由突觸或神經元上的 CD47 活化）、以及唾液酸結合免疫球蛋白樣凝集素（siglec）家族——siglec-2（也稱 CD22）、CD33（也稱 siglec-3）、siglec-8、siglec-9、siglec-10、siglec-11。這些受體被唾液酸化配體（例如神經節苷脂）結合後會抑制吞噬。CD33 這個名字值得記住，它會是第 6 篇風險基因的主角之一。</p>
-<h2 id="bt-s3">Table 1 裡一個值得核對的細節：UDP 到底接哪個受體</h2>
+<h2 id="bt-s4">Table 1 裡一個值得核對的細節：UDP 到底接哪個受體</h2>
 <p>原文 Table 1 把「find-me signal」欄位裡的 ATP／tau 與 UDP，都標記為由 <strong>P2Y12 受體</strong>接收。但本文正文在至少三處——「Regulation of microglial phagocytosis」段落說 P2Y6 受體被 UDP 活化而誘發吞噬；第 4 篇會引用的 Aβ 誘發神經元吞噬實驗，用的是 <em>P2ry6</em> 剔除鼠；老化與記憶力那段同樣用 P2Y6 剔除鼠——都一致把「UDP 誘發吞噬」這個功能歸給 <strong>P2Y6</strong>，而不是 P2Y12。另一段落則反過來，把 ADGRG1 之後的訊號路徑寫成「P2Y6R mediates microglial migration and phagocytosis in response to <strong>ATP and tau</strong>」，這句話裡的配體（ATP、tau）又跟本文 Tau 段落（第 5 篇）里胞外 tau 胞吞歸給 P2Y12 的敘述對不上。</p>
 <p>換句話說，這篇綜論在 P2Y6（UDP→吞噬）與 P2Y12（ATP／tau→趨化、find-me）這兩個受體的配對上，內文與 Table 1、乃至內文不同段落之間，並不完全一致。多數段落與後續實驗證據都指向「UDP 誘發吞噬＝P2Y6」，這也是微膠細胞文獻裡較確立的分工（P2Y12 主司趨化定位，P2Y6 主司吞噬觸發），所以本系列後續統一採用這個配對，讀者若對照原文 Table 1 或那句 ADGRG1 段落，看到 P2Y12 字樣不必意外。</p>
-<h2 id="bt-s4">微膠細胞的五種狀態</h2>
+<h2 id="bt-s5">微膠細胞的五種狀態</h2>
 <p>微膠細胞不是單一狀態的細胞，而是依轉錄特徵切成幾種可辨識的類型，這些狀態在阿茲海默症裡的比例會明顯改變：</p>
 <div class="bt-tablewrap"><table>
 <thead><tr><th>狀態</th><th>標記基因</th></tr></thead>
@@ -150,18 +163,10 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <tr><td>增殖態</td><td><em>MKI67</em>、<em>TOP2A</em></td></tr>
 </tbody></table></div>
 <p>DAM 狀態不只在小鼠 AD 模型的斑塊周圍微膠細胞裡明顯增加，這個表現特徵在人類 AD 腦組織裡也部分保留。許多 DAM 上調的基因本身就與吞噬相關，包括 <em>APOE</em>、<em>TREM2</em>、<em>DAP12</em>、<em>CLEC7A</em>、<em>AXL</em>、<em>LGALS3</em>、<em>GPNMB</em>、<em>LPL</em>、<em>ABCA1</em>——因此推論 DAM 狀態的微膠細胞吞噬能力增加，但作者也坦白承認<strong>這一點尚未被直接證實</strong>，而且不同吞噬標的（Aβ、突觸、神經元）的表現可能不一樣。</p>
-<h2 id="bt-s5">脂滴：一個會反過來鎖死吞噬的煞車</h2>
+<h2 id="bt-s6">脂滴：一個會反過來鎖死吞噬的煞車</h2>
 <p>老年小鼠與老年人腦中還有一種「脂滴堆積型微膠細胞」，特徵是吞噬能力下降、發炎性細胞激素分泌增加。在類澱粉小鼠模型裡，斑塊周圍的微膠細胞被發現堆積脂滴，吞噬能力比沒有跟斑塊接觸的微膠細胞來得差；把脂滴堆積降下來之後，吞噬能力回升，病理表現也隨之減輕。</p>
 <p>把這幾條線索接起來，作者給出一個總結：斑塊周圍的微膠細胞處於 DAM 狀態、吞噬基因表現升高，但也許正是因為吞噬量增加，這些細胞後續反而堆積起抑制吞噬的脂滴——直到脂質被代謝掉為止。這代表 DAM 狀態不是一個穩定不變的「開足火力清除模式」，而更像一個會隨吞噬負荷自我踩煞車的迴圈。這幾種微膠細胞狀態在 AD 不同階段究竟是保護、有害還是中性，作者明白寫出：目前仍不清楚。</p>
-<h2 id="bt-s6">臨床判讀重點</h2>
-<div class="bt-tablewrap"><table>
-<thead><tr><th>常見印象</th><th>文獻實際說法</th></tr></thead>
-<tbody>
-<tr><td>DAM＝「清除力全開」的微膠細胞</td><td>DAM 上調吞噬相關基因，但吞噬能力增加「尚未被直接證實」，且可能因脂滴堆積而反被抑制</td></tr>
-<tr><td>UDP／P2Y6 只跟吞噬有關、ATP／P2Y12 只跟趨化有關，兩者涇渭分明</td><td>本文 Table 1 與內文對這兩個受體的配對並不完全一致，讀者對照原文時可能看到相反的寫法</td></tr>
-<tr><td>CD33 只是眾多吞噬抑制受體之一</td><td>CD33 是第 6 篇會回頭深談的 AD 主要風險基因之一</td></tr>
-<tr><td>微膠細胞的狀態是固定分類</td><td>至少五種可辨識轉錄狀態，且會隨吞噬負荷、脂滴堆積動態轉換</td></tr>
-</tbody></table></div>
+
 <blockquote class="commentary">
 <h3>🩺 神經專科醫師　施懿恩・小評論</h3>
 <p>這篇綜論最有意思的地方，不是列出多少個受體，而是它老實承認「DAM 吞噬能力增加尚未被直接證實」——這種語氣在臨床文獻裡其實不常見，多數綜論會把假說寫得比證據紮實。我特別留意這句話，是因為它提醒我們：轉錄體上看到的「疾病相關」標籤，不等於功能上真的做了那件事。</p>
