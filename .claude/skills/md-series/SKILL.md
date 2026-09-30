@@ -100,11 +100,14 @@ loop 裡完成。
 node build.js <srcDir>/series.json      # 併入既有分類時改用 build-pages.js
 node enhance-md-footer.js               # 需先在 SERIES map 註冊 prefix，否則整個系列被 skip
 node enhance-md-mobile.js
+node enhance-md-readability.js          # 目錄＋閱讀時間、判讀重點前移、首頁搜尋
 node seo-build.js
+node enhance-md-schema.js               # JSON-LD（作者／日期／引用），須在 seo-build 之後
 node --test                             # 既有測試須全綠
 ```
 
-三個 enhancer 的順序不可調換。跑完檢查：分類內卡片數、`<div>` 開閉平衡、每張卡對應的
+五個 enhancer 的順序不可調換。頁尾「最後更新」與 JSON-LD 日期來自 `page-dates.json`
+（`lib/page-dates.js`：只有正文變動才更新日期），新頁面第一次跑就會登記，記得一併 commit。跑完檢查：分類內卡片數、`<div>` 開閉平衡、每張卡對應的
 HTML 檔存在、無亂碼（搜 `�`）。
 
 commit 前確認沒有夾帶不相干的改動。**若 worktree 裡有別人未完成的工作共用同幾個檔案**

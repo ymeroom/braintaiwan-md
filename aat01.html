@@ -61,6 +61,15 @@ ol,ul{padding-left:1.5em;margin:.6em 0}
 li{margin:.3em 0;font-size:14pt;color:#263238}
 footer{background:#0f2142;color:rgba(255,255,255,.45);text-align:center;padding:20px;font-size:10.5pt;margin-top:40px}
 footer a{color:rgba(255,255,255,.55);text-decoration:none}
+.md-foot{margin:26px 0 0}
+.md-foot-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.md-foot-item{background:#fff;border:1px solid #e0e8f5;border-left:4px solid #1565c0;border-radius:10px;padding:13px 16px}
+.md-foot-k{font-size:9.5pt;font-weight:800;letter-spacing:.4px;color:#1565c0;margin-bottom:5px}
+.md-foot-v{font-size:10.5pt;line-height:1.55;color:#46506a}
+.md-foot-cta{display:inline-flex;align-items:center;gap:6px;margin-top:16px;padding:9px 18px;border-radius:22px;background:#0f2142;color:#fff;text-decoration:none;font-size:10.5pt;font-weight:700}
+.md-foot-cta:hover{background:#1a3975}
+.md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
+@media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}
 /* bt-mobile:start */
 article, article *{overflow-wrap:break-word}
 .bt-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:1.3em 0}
@@ -91,6 +100,69 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 /* bt-read:end */
 </style>
 <link rel="canonical" href="https://md.braintaiwan.com/aat01.html">
+<!-- bt-ld:start -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "MedicalWebPage",
+   "@id": "https://md.braintaiwan.com/aat01.html",
+   "url": "https://md.braintaiwan.com/aat01.html",
+   "name": "失智症治療新藥（一）：lecanemab——把類澱粉洗掉，到底換得回多少時間？",
+   "inLanguage": "zh-TW",
+   "isPartOf": {
+    "@type": "WebSite",
+    "name": "BrainTaiwan MD",
+    "url": "https://md.braintaiwan.com/"
+   },
+   "mainEntity": {
+    "@id": "https://md.braintaiwan.com/aat01.html#article"
+   }
+  },
+  {
+   "@type": "Article",
+   "@id": "https://md.braintaiwan.com/aat01.html#article",
+   "headline": "失智症治療新藥（一）：lecanemab——把類澱粉洗掉，到底換得回多少時間？",
+   "description": "以 CLARITY-AD（NEJM 2023）為主軸 三十年來阿茲海默症的藥都在「補神經傳導物質」這條路上打轉，效果有限。lecanemab 是第一個在大型第三期試驗裡，真的把腦中類澱粉清掉、又同時讓退化變慢的單株抗體。…",
+   "image": "https://md.braintaiwan.com/og.png",
+   "inLanguage": "zh-TW",
+   "datePublished": "2026-06-26",
+   "dateModified": "2026-06-26",
+   "author": {
+    "@type": "Person",
+    "@id": "https://braintaiwan.com/#person",
+    "name": "施懿恩",
+    "alternateName": "Ian Shih",
+    "honorificSuffix": "M.D., Ph.D.",
+    "jobTitle": "神經內科主任",
+    "url": "https://braintaiwan.com/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "BrainTaiwan",
+    "url": "https://braintaiwan.com/"
+   },
+   "mainEntityOfPage": {
+    "@id": "https://md.braintaiwan.com/aat01.html"
+   },
+   "citation": [
+    {
+     "@type": "CreativeWork",
+     "name": "van Dyck CH, Swanson CJ, Aisen P, et al. Lecanemab in Early Alzheimer’s Disease. N Engl J Med 2023;388(1):9–21",
+     "url": "https://doi.org/10.1056/NEJMoa2212948"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "Sims JR, Zimmer JA, Evans CD, et al. Donanemab in Early Symptomatic Alzheimer Disease: The TRAILBLAZER-ALZ 2 Randomized Clinical Trial. JAMA 2023;330(6):512–527",
+     "url": "https://doi.org/10.1001/jama.2023.13239"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- bt-ld:end -->
 </head>
 <body>
 <header>
@@ -187,7 +259,18 @@ blockquote{padding:12px 14px;margin:1.2em 0}
 <p><em>本篇為 lecanemab 之臨床導讀整理，主要參考 van Dyck 等人 2023 CLARITY-AD（NEJM 2023;388:9-21）及開放取得之審查資料，供醫療專業人員教學參考，不取代個別臨床判斷、藥品仿單或原始文獻。文中表格為原創整理，數字以原文為準。</em></p>
 
   </article>
-  <nav class="pager">
+<!-- bt-md-footer -->
+<section class="md-foot" aria-label="版本與訂閱">
+  <div class="md-foot-grid">
+    <div class="md-foot-item"><div class="md-foot-k">指引版本／來源</div><div class="md-foot-v">van Dyck CH, et al. Lecanemab in Early Alzheimer’s Disease, N Engl J Med 2023;388(1):9–21（CLARITY AD）；Sims JR, et al. Donanemab in Early Symptomatic Alzheimer Disease, JAMA 2023;330(6):512–527（TRAILBLAZER-ALZ 2）</div></div>
+    <div class="md-foot-item"><div class="md-foot-k">最後更新</div><div class="md-foot-v">2026.06.26</div></div>
+    <div class="md-foot-item"><div class="md-foot-k">適用對象</div><div class="md-foot-v">神經科及相關專科醫療人員（教學與臨床參考）</div></div>
+  </div>
+  <a class="md-foot-cta" href="https://media.braintaiwan.com/subscribe.html">訂閱臨床導讀更新 →</a>
+  <p class="md-foot-note">本導讀為教育用途，不取代原始指引全文、最新仿單或個別臨床判斷。</p>
+</section>
+<!-- /bt-md-footer -->
+<nav class="pager">
     <span></span>
     <a class="pager-link next" href="aat02.html"><span class="pager-dir">下一篇 →</span><span class="pager-ttl">② donanemab</span></a>
   </nav>

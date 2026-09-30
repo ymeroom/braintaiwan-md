@@ -8,7 +8,8 @@ const glob = (dir, re) => fs.readdirSync(dir).filter(f => re.test(f));
 const root = __dirname;
 const START = '<!-- bt-md-footer -->';
 const END = '<!-- /bt-md-footer -->';
-const UPDATED = '2026.07';
+const dates = require('./lib/page-dates'); // 最後更新＝正文內容最後變動日（見 lib/page-dates.js）
+const dot = d => d.replace(/-/g, '.');
 const SUBSCRIBE = 'https://media.braintaiwan.com/subscribe.html';
 
 // Source strings are summarised from each series' own published end-of-article
@@ -79,6 +80,40 @@ const SERIES = {
   trep: { source: 'Kanner AM, Ashman E, Gloss D, et al. Practice guideline update summary: Efficacy and tolerability of the new antiepileptic drugs II: Treatment-resistant epilepsy, Epilepsy Currents 2018;18(4):269–278（AAN／AES 實務指引更新）', audience: '神經內科、小兒神經、家醫及相關專科醫療人員（教學與臨床參考）' },
   tnk:  { source: '台灣腦中風學會 2026 TNK 共識' },
   vpnd: { source: 'Chow FC, Granerod J, Kim CY, Nurye T, Thakur KT. The global threat of vaccine-preventable neurological diseases, Nat Rev Neurol 2026;22(2):110–122', audience: '神經內科、感染科、小兒科、家醫、公共衛生及相關專科醫療人員（教學與臨床參考）' },
+
+  // 2026-09-30 補登：書目逐筆以 Crossref／PubMed／NICE 官網核對。
+  // refs（選填）＝完整文獻清單，給 enhance-md-schema.js 產生逐篇 citation；頁尾只顯示 source。
+  aat:  { source: 'van Dyck CH, et al. Lecanemab in Early Alzheimer’s Disease, N Engl J Med 2023;388(1):9–21（CLARITY AD）；Sims JR, et al. Donanemab in Early Symptomatic Alzheimer Disease, JAMA 2023;330(6):512–527（TRAILBLAZER-ALZ 2）',
+          refs: [
+            { name: 'van Dyck CH, Swanson CJ, Aisen P, et al. Lecanemab in Early Alzheimer’s Disease. N Engl J Med 2023;388(1):9–21', doi: '10.1056/NEJMoa2212948' },
+            { name: 'Sims JR, Zimmer JA, Evans CD, et al. Donanemab in Early Symptomatic Alzheimer Disease: The TRAILBLAZER-ALZ 2 Randomized Clinical Trial. JAMA 2023;330(6):512–527', doi: '10.1001/jama.2023.13239' },
+          ] },
+  b:    { source: 'NICE guideline NG239, Vitamin B12 deficiency in over 16s: diagnosis and management（2024 年 3 月 6 日發布）',
+          refs: [{ name: 'National Institute for Health and Care Excellence. Vitamin B12 deficiency in over 16s: diagnosis and management. NICE guideline NG239. Published 6 March 2024', url: 'https://www.nice.org.uk/guidance/ng239' }] }, // b1201–b1205：prefixOf 去掉結尾數字後只剩 "b"
+  gbs:  { source: 'van Doorn PA, Van den Bergh PYK, Hadden RDM, et al. European Academy of Neurology/Peripheral Nerve Society Guideline on diagnosis and treatment of Guillain–Barré syndrome, Eur J Neurol 2023;30(12):3646–3674. doi:10.1111/ene.16073（EAN／PNS 指引）' },
+  ich:  { source: 'Steiner T, Purrucker JC, Aguiar de Sousa D, et al. European Stroke Organisation (ESO) and European Association of Neurosurgical Societies (EANS) guideline on stroke due to spontaneous intracerebral haemorrhage, Eur Stroke J 2025;10(4):1007–1086. doi:10.1177/23969873251340815（ESO／EANS 指引）' },
+  lfm_crhm:    { source: '2026 Boehringer ClinicalPath Forum（CRHM Track）學術演講學習心得（非文獻導讀）' },
+  lfm_regalin: { source: '2026 Regalin Launch Symposium（立佳寧® 上市研討會）學習心得（非文獻導讀）' },
+  nmdar: { source: 'Dalmau J, et al. Lancet Neurol 2019;18(11):1045–1057（機轉綜論）；Graus F, et al. Lancet Neurol 2016;15(4):391–404（自體免疫腦炎診斷準則）；Titulaer MJ, et al. Lancet Neurol 2013;12(2):157–165（治療與長期預後世代研究）；並引用 Dalmau 2008、Gable 2012、Armangué 2018 原始數據',
+          refs: [
+            { name: 'Dalmau J, Armangué T, Planagumà J, et al. An update on anti-NMDA receptor encephalitis for neurologists and psychiatrists: mechanisms and models. Lancet Neurol 2019;18(11):1045–1057', doi: '10.1016/S1474-4422(19)30244-3' },
+            { name: 'Graus F, Titulaer MJ, Balu R, et al. A clinical approach to diagnosis of autoimmune encephalitis. Lancet Neurol 2016;15(4):391–404', doi: '10.1016/S1474-4422(15)00401-9' },
+            { name: 'Titulaer MJ, McCracken L, Gabilondo I, et al. Treatment and prognostic factors for long-term outcome in patients with anti-NMDA receptor encephalitis: an observational cohort study. Lancet Neurol 2013;12(2):157–165', doi: '10.1016/S1474-4422(12)70310-1' },
+            { name: 'Dalmau J, Gleichman AJ, Hughes EG, et al. Anti-NMDA-receptor encephalitis: case series and analysis of the effects of antibodies. Lancet Neurol 2008;7(12):1091–1098', doi: '10.1016/S1474-4422(08)70224-2' },
+            { name: 'Gable MS, Sheriff H, Dalmau J, et al. The frequency of autoimmune N-methyl-D-aspartate receptor encephalitis surpasses that of individual viral etiologies in young individuals enrolled in the California Encephalitis Project. Clin Infect Dis 2012;54(7):899–904', doi: '10.1093/cid/cir1038' },
+            { name: 'Armangue T, Spatola M, Vlagea A, et al. Frequency, symptoms, risk factors, and outcomes of autoimmune encephalitis after herpes simplex encephalitis: a prospective observational study and retrospective analysis. Lancet Neurol 2018;17(9):760–772', doi: '10.1016/S1474-4422(18)30244-8' },
+          ] },
+  nph:  { source: 'Nakajima M, Yamada S, Miyajima M, et al. Guidelines for Management of Idiopathic Normal Pressure Hydrocephalus (Third Edition), Neurol Med Chir (Tokyo) 2021;61(2):63–97. doi:10.2176/nmc.st.2020-0292（日本 iNPH 指引第三版）；另參考影像、tap test 與流行病學研究 6 篇',
+          refs: [
+            { name: 'Nakajima M, Yamada S, Miyajima M, et al. Guidelines for Management of Idiopathic Normal Pressure Hydrocephalus (Third Edition): Endorsed by the Japanese Society of Normal Pressure Hydrocephalus. Neurol Med Chir (Tokyo) 2021;61(2):63–97', doi: '10.2176/nmc.st.2020-0292' },
+            { name: 'Thavarajasingam SG, El-Khatib M, Vemulapalli K, et al. Radiological predictors of shunt response in the diagnosis and treatment of idiopathic normal pressure hydrocephalus: a systematic review and meta-analysis. Acta Neurochir (Wien) 2023;165(2):369–419', doi: '10.1007/s00701-022-05402-8' },
+            { name: 'Gao W, Liu W, Ying Y, et al. Preoperative imaging biomarkers combined with tap test for predicting shunt surgery outcome in idiopathic normal pressure hydrocephalus: a multicenter retrospective study. Front Aging Neurosci 2025;17:1509493', doi: '10.3389/fnagi.2025.1509493' },
+            { name: 'Margetis K, Das JM, Biagioni MC. Idiopathic Normal Pressure Hydrocephalus. StatPearls. Treasure Island (FL): StatPearls Publishing', url: 'https://www.ncbi.nlm.nih.gov/books/NBK542247/' },
+            { name: 'Petrella G, Ciarlo S, Elia S, et al. Idiopathic Normal Pressure Hydrocephalus: The Real Social and Economic Burden of a Possibly Enormous Underdiagnosis Problem. Tomography 2023;9(6):2006–2015', doi: '10.3390/tomography9060157' },
+            { name: 'Giannini G, Baiardi S, Dellavalle S, et al. In vivo assessment of Lewy body and beta-amyloid copathologies in idiopathic normal pressure hydrocephalus: prevalence and associations with clinical features and surgery outcome. Fluids Barriers CNS 2022;19(1):71', doi: '10.1186/s12987-022-00368-2' },
+            { name: 'Constantinescu C, Wikkelsø C, Westman E, et al. Prevalence of Possible Idiopathic Normal Pressure Hydrocephalus in Sweden. Neurology 2024;102(2):e208037', doi: '10.1212/WNL.0000000000208037' },
+          ] },
+  thyro: { source: 'Chaker L, Bianco AC, Jonklaas J, Peeters RP. Hypothyroidism, Lancet 2017;390(10101):1550–1562. doi:10.1016/S0140-6736(17)30703-1（Lancet 綜論）' },
 };
 
 const css = `.md-foot{margin:26px 0 0}
@@ -91,12 +126,13 @@ const css = `.md-foot{margin:26px 0 0}
 .md-foot-note{margin-top:12px;font-size:9.5pt;color:#7a849c;line-height:1.6}
 @media(max-width:680px){.md-foot-grid{grid-template-columns:1fr}}`;
 
-function block(meta) {
+function block(meta, d) {
+  const updated = d.modified === d.published ? dot(d.modified) : `${dot(d.modified)}（首次發布 ${dot(d.published)}）`;
   return `${START}
 <section class="md-foot" aria-label="版本與訂閱">
   <div class="md-foot-grid">
     <div class="md-foot-item"><div class="md-foot-k">指引版本／來源</div><div class="md-foot-v">${meta.source}</div></div>
-    <div class="md-foot-item"><div class="md-foot-k">最後更新</div><div class="md-foot-v">${UPDATED}</div></div>
+    <div class="md-foot-item"><div class="md-foot-k">最後更新</div><div class="md-foot-v">${updated}</div></div>
     <div class="md-foot-item"><div class="md-foot-k">適用對象</div><div class="md-foot-v">${meta.audience || DEFAULT_AUDIENCE}</div></div>
   </div>
   <a class="md-foot-cta" href="${SUBSCRIBE}">訂閱臨床導讀更新 →</a>
@@ -109,8 +145,15 @@ function prefixOf(file) {
   return file.replace(/\.html$/, '').replace(/\d+$/, '');
 }
 
+module.exports = { SERIES, DEFAULT_AUDIENCE, prefixOf };
+if (require.main !== module) return;
+
+// optional file args limit the run (preview a few pages before a full pass)
+const only = process.argv.slice(2).filter(a => a.endsWith('.html'));
+const store = dates.load();
 let changed = 0, skipped = 0;
 for (const file of glob(root, /\.html$/)) {
+  if (only.length && !only.includes(file)) continue;
   const meta = SERIES[prefixOf(file)];
   if (!meta) { skipped++; continue; }              // not a known series (index/dem/infographic)
 
@@ -119,6 +162,7 @@ for (const file of glob(root, /\.html$/)) {
   if (!html.includes('</main>')) { skipped++; continue; } // non-article layout
 
   const before = html;
+  const d = dates.dateFor(store, file, html);
 
   if (!html.includes('.md-foot{')) {
     html = html.replace('</style>', `${css}\n</style>`);
@@ -128,7 +172,7 @@ for (const file of glob(root, /\.html$/)) {
   // Normalise leading whitespace at the anchor so the result is stable on re-run.
   html = html.replace(new RegExp(`\\n\\s*${START}[\\s\\S]*?${END}`), '');
   const anchorRe = html.includes('<nav class="pager">') ? /[ \t]*<nav class="pager">/ : /[ \t]*<\/main>/;
-  html = html.replace(anchorRe, m => `${block(meta)}\n${m.trim()}`);
+  html = html.replace(anchorRe, m => `${block(meta, d)}\n${m.trim()}`);
 
   if (html !== before) {
     fs.writeFileSync(filePath, html, 'utf8');
@@ -136,4 +180,5 @@ for (const file of glob(root, /\.html$/)) {
   }
 }
 
+dates.save(store);
 console.log(`Enhanced ${changed} MD article footer(s); skipped ${skipped} non-series/non-article file(s).`);
