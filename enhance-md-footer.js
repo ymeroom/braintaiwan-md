@@ -77,6 +77,12 @@ const SERIES = {
   thy:  { source: 'Lee & Pearce, Hyperthyroidism: A Review, JAMA 2023' },
   tn:   { source: '三叉神經痛分子機轉導讀（J Headache Pain 2026）' },
   tth:  { source: 'Bendtsen L, Evers S, Linde M, et al. EFNS guideline on the treatment of tension-type headache, Eur J Neurol 2010;17(11):1318–1325；Lee HJ, Cho SJ, Seo JG, Schytz HW. Update on tension-type headache, Headache Pain Res 2025;26(1):38–47', audience: '神經內科、家醫、疼痛科、復健科及基層醫療人員（教學與臨床參考）' },
+  sih:  { source: 'Cheema S, Mehta D, Qureshi A, et al. Spontaneous intracranial hypotension, Pract Neurol 2024;24:98–105. doi:10.1136/pn-2023-003986；Dalby SW, Smilkov EA, Santos SG, et al. Spontaneous intracranial hypotension — Neurological symptoms, diagnosis, and outcome, Eur J Neurol 2025;32(1):e16579. doi:10.1111/ene.16579；Mehta D, Cheema S, Glover S, et al. Defining the typical characteristics of orthostatic headache in patients with spontaneous intracranial hypotension, Cephalalgia 2025;45(1):1–10. doi:10.1177/03331024241308154', audience: '神經內科、神經放射科、麻醉科、神經外科、急診及基層醫療人員（教學與臨床參考）',
+          refs: [
+            { name: 'Cheema S, Mehta D, Qureshi A, Sayal P, Kamourieh S, Davagnanam I, Matharu M. Spontaneous intracranial hypotension. Pract Neurol 2024;24:98–105', doi: '10.1136/pn-2023-003986' },
+            { name: 'Dalby SW, Smilkov EA, Santos SG, et al. Spontaneous intracranial hypotension — Neurological symptoms, diagnosis, and outcome. Eur J Neurol 2025;32(1):e16579', doi: '10.1111/ene.16579' },
+            { name: 'Mehta D, Cheema S, Glover S, et al. Defining the typical characteristics of orthostatic headache in patients with spontaneous intracranial hypotension. Cephalalgia 2025;45(1):1–10', doi: '10.1177/03331024241308154' },
+          ] },
   trep: { source: 'Kanner AM, Ashman E, Gloss D, et al. Practice guideline update summary: Efficacy and tolerability of the new antiepileptic drugs II: Treatment-resistant epilepsy, Epilepsy Currents 2018;18(4):269–278（AAN／AES 實務指引更新）', audience: '神經內科、小兒神經、家醫及相關專科醫療人員（教學與臨床參考）' },
   tnk:  { source: '台灣腦中風學會 2026 TNK 共識' },
   vpnd: { source: 'Chow FC, Granerod J, Kim CY, Nurye T, Thakur KT. The global threat of vaccine-preventable neurological diseases, Nat Rev Neurol 2026;22(2):110–122', audience: '神經內科、感染科、小兒科、家醫、公共衛生及相關專科醫療人員（教學與臨床參考）' },
